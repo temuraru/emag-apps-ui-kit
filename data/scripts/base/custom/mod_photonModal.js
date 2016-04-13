@@ -1,0 +1,536 @@
+/**
+ * Created by valentin.bica on 02.12.2015.
+ */
+(function(window, $) {
+    "use strict";
+
+    /**
+     * ------------------- Private variables that can only be accessed from this execution context -------------------
+     */
+    /**
+     * The container id where the modal will pe appended
+     * @private
+     * @type {String}
+     */
+    var _containerId = 'popSpace';
+    /**
+     * Html template for modal
+     * @private
+     * @type {String}
+     */
+    var _template = '';
+    /**
+     * Test to see if modal is visible
+     * @private
+     * @type {Boolean}
+     */
+    var _isVisible = false;
+    /**
+     * Types of modal that have a special styling. These modals will have a background change
+     * @private
+     * @type {Array}
+     */
+    var _modalNotificationType = ['has-error', 'has-warning', 'has-info'];
+    /**
+     * Savel label text
+     * @private
+     * @type {String}
+     */
+    var _saveLabel = (typeof Translator != "undefined" ? Translator.trans('label.save') : "Save");
+    /**
+     * Cancel label text
+     * @private
+     * @type {String}
+     */
+    var _cancelLabel = (typeof Translator != "undefined" ? Translator.trans('label.cancel') : "Cancel");
+    /**
+     * Show modal loader variable
+     * @private
+     * @type {Boolean}
+     */
+    var _loaderIsVisible = false;
+
+    /**
+     * ------------------------- Create private functions and bind the behaviour to PhotonModal -------------------------
+     * Create modal hide and show callbacks
+     */
+    function buildModalEventsCallbacks() {
+        setHideCallback.call(this, this.defaults.hideCallback || function(){});
+        setShowCallback.call(this, this.defaults.showCallback || function(){});
+    }
+    /**
+     * This is a container used for setting custom events on modals
+     */
+    function createCustomEvents() {
+
+        var $this = this;
+        /**
+         * When user inserts content into modal through ajax the modal should show NOT when .show() function is called BUT
+         * when the content is received so a special event is needed
+         */
+        $(document).on('showModalAfterDomRenderedEvent', "#" + $this.defaults.id, function () {
+            _isVisible ? $("#" + $this.defaults.id).modal('show') : '';
+        });
+        /**
+         * Event for submitting the form
+         * @event click
+         */
+        $(document).on('click', "." + $this.defaults.id + 'btnSubmit', function () {
+            saveFormActionUsingAjax.call($this);
+        });
+        /**
+         * Show modal loader
+         * @event showModalLoader
+         */
+        $(document).on('showModalLoader', "#" + $this.defaults.id, function () {
+            _loaderIsVisible = true;
+            var modalBody = $("#" + $this.defaults.id).find('.modal-body');
+            $(modalBody).addClass('pad-top-40').blockControl();
+        });
+        /**
+         * Hide modal loader
+         * @event hideModalLoader
+         */
+        $(document).on('hideModalLoader', "#" + $this.defaults.id, function () {
+            _loaderIsVisible = false;
+            var modalBody = $("#" + $this.defaults.id).find('.modal-body');
+            $(modalBody).removeClass('pad-top-40').unblockControl();
+        });
+    }
+    /**
+     * Set callback for show and shown event
+     * @param showCallback
+     */
+    function setShowCallback (showCallback) {
+        var $this = this;
+        $(document).on("shown.bs.modal", "#" + this.defaults.id, function (e) {
+            showCallback(e);
+           _loaderIsVisible ? $("#" + $this.defaults.id).trigger('showModalLoader') : '';
+        });
+    }
+    /**
+     * Set callback for hidden event
+     * @param hiddenCallback
+     */
+    function setHideCallback (hiddenCallback) {
+        $(document).on("hidden.bs.modal", "#" + this.defaults.id, function (e) {
+            hiddenCallback(e);
+        });
+    }
+    /**
+     * Create modal and insert content from request using ajax
+     */
+    function createModalUsingAjax () {
+
+        var $this = this;
+        buildStaticModal.call(this);
+        $this.setModalLoader(true);
+
+        $.ajax($this.defaults.ajaxModalParams).done(function (data) {
+            $this.defaults.content = data;
+            $this.setModalContent(data);
+            $("#" + $this.defaults.id).trigger('hideModalLoader');
+            $this.defaults.ajaxDoneCallback(data);
+        }).fail(function (data) {
+            $this.defaults.ajaxFailCallback(data);
+        }).always(function() {
+
+        });
+    }
+    /**
+     * Save form function
+     */
+    function saveFormActionUsingAjax () {
+
+        var $this = this;
+        /**
+         * Append options to ajax request or override default ones for creating the ajax request
+         */
+        $this.defaults.ajaxFormSubmitParams.data = new FormData($("#" + $this.defaults.id).find('form')[0]);
+        $this.defaults.ajaxFormSubmitParams.processData =  false;
+        $this.defaults.ajaxFormSubmitParams.cache = false;
+        $this.defaults.ajaxFormSubmitParams.contentType = false;
+
+        var submitBtn = $("." + $this.defaults.id + 'btnSubmit');
+        var modalBody = $("#" + $this.defaults.id).find('.modal-body');
+
+        $(submitBtn).blockControl();
+        $("#" + $this.defaults.id).trigger('showModalLoader');
+
+        $.ajax($this.defaults.ajaxFormSubmitParams).done(function (data) {
+            /**
+             * Custom callback
+             */
+            $this.defaults.ajaxSubmitDoneCallback(data);
+            $this.setModalContent(data);
+            $("#" + $this.defaults.id).trigger('hideModalLoader');
+        }).fail(function (data) {
+            /**
+             * Custom callback
+             */
+            $this.defaults.ajaxSubmitFailCallback(data);
+        }).always(function() {
+            $(submitBtn).unblockControl();
+            $this.initPlugins(modalBody);
+        });
+
+    }
+    /**
+     * Create html for modal
+     */
+    function buildStaticModal() {
+        /**
+         * Buttons html variable
+         * @type {string}
+         */
+        var buttonsHtml = '';
+        /**
+         * Buttons in modal. Override them if user sent them in constructor
+         */
+        var buttons = this.defaults.buttons || this.geFormStylingJson().buttons;
+        /**
+         * Type of modal
+         * @type {string|string|string|string|string}
+         */
+        var classOfModal = this.geFormStylingJson().class;
+
+        /**
+         * Create buttons html having the following cases:
+         * - if the button json have the key 'formSubmitter' on true than a special class is appended and an event for ajax submit is created for that class
+         * - the following infos are appended also: button class, button icon, button label
+         */
+        for (var button in buttons) {
+            buttonsHtml +=
+                '<button class="btn ' + (buttons[button].formSubmitter ? this.defaults.id + 'btnSubmit ' : '')
+                + buttons[button].class + '"' + (button == 'cancel' || buttons[button].closeModal ? 'data-dismiss="modal">' : '>')
+                + '<span>' + (buttons[button].icon != undefined ? '<i class="' + buttons[button].icon + '"></i> ' : '') + buttons[button].label + '</span></button>';
+        }
+        /**
+         * Create the html for the page and append it into container that has a containerId
+         */
+        _template =
+            '<div class="modal fade" id="' + this.defaults.id + '" tabindex="-1" role="dialog" aria-labelledby="' +  this.defaults.id + 'Label' + '">' +
+            '<div class="modal-dialog ' + (_modalNotificationType.indexOf(this.geFormStylingJson().class) !== -1 ? 'modal-feedback ' + (classOfModal ? ' ' + classOfModal : '') + ' ' : '') + this.getSizeCssClass() + '" role="document">' +
+            '<div class="modal-content">' +
+            '<div class="modal-header">' +
+            '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>' +
+            '<h4 class="modal-title" id="' + this.defaults.id + 'Label' + '">' + this.defaults.title + '</h4>' +
+            '</div>' +
+            '<div class="modal-body">' +
+            this.defaults.content +
+            '</div>' +
+            '<div class="modal-footer">' +
+            '<div class="pull-right panel-controls">' +
+            buttonsHtml +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>';
+
+        /**
+         * If div already exists you should replace only the html and NOT append it again
+         */
+        if(this.defaults.recreateOnShow) {
+            if($('#' + this.defaults.id).length) {
+                $('#' + this.defaults.id).replaceWith(_template);
+            }
+            else {
+                $('#' + _containerId).append(_template);
+            }
+        } else {
+            if(!$('#' + this.defaults.id).length) {
+                $('#' + _containerId).append(_template);
+            }
+        }
+        $("#" + this.defaults.id).trigger('showModalAfterDomRenderedEvent');
+    }
+
+    /**
+     * @param options {Object} Json with options for modal
+     * @constructor
+     */
+    var PhotonModal = function (options) {
+        /**
+         * Options used on class instantiation that will override default ones
+         */
+        /**
+         * Default class options
+         * @type {Object}
+         */
+        this.defaults = {
+            /**
+             * How the modal will be rendered. It accepts the following parameters: small, large, default size
+             * @public
+             * @type {String}
+             */
+             size: 'default',
+            /**
+             * Id of modal
+             * @public
+             * @type {String}
+             */
+            id: '',
+            /**
+             * Recreate modal on show
+             * @public
+             * @type {Boolean}
+             */
+            recreateOnShow: true,
+            /**
+             * Use ajax in modal
+             * @public
+             * @type {Boolean}
+             */
+            useAjax: false,
+            /**
+             *  Buttons for modal
+             *  @public
+             *  @type {Object}
+             */
+            buttons: '',
+            /**
+             * The content of the modal
+             * @public
+             * @type {String}
+             */
+            content: '',
+            /**
+             * Title of modal
+             * @public
+             * @type {String}
+             */
+            title: '',
+            /**
+             * Type of modal
+             * @private
+             * @type {String}
+             */
+            type: 'default',
+            /**
+             * Modal parameters for ajax call
+             * @public
+             * @type {Object}
+             */
+            ajaxModalParams: {
+                method: 'POST',
+                url: ''
+            },
+            /**
+             * Modal save parameters for form submit
+             * @public
+             * @type {Object}
+             */
+            ajaxFormSubmitParams: {
+                method: 'POST',
+                url: ''
+            },
+            /**
+             * Ajax done callback
+             * @public
+             * @type {function}
+             */
+            ajaxDoneCallback: function (data) {},
+            /**
+             * Ajax fail callback
+             * @param data
+             * @function
+             */
+            ajaxFailCallback: function (data) {},
+            /**
+             * Ajax form done submit callback
+             * @param data
+             * @function
+             */
+            ajaxSubmitDoneCallback: function (data) {},
+            /**
+             * Ajax form fail submit callback
+             * @param data
+             * @function
+             */
+            ajaxSubmitFailCallback: function (data) {},
+            /**
+             * Modal hide callback
+             * @param data
+             * @function
+             */
+            hideCallback: function (data) {},
+            /**
+             * Modal show callback
+             * @param data
+             * @function
+             */
+            showCallback: function (data) {}
+        };
+
+        /**
+         * Extend default options of class with the ones received from class instantiation
+         */
+        this.options = options;
+        for(var option in options) {
+            this.defaults[option] = options[option];
+        }
+        /**
+         * Set modal callbacks for both hide and show events
+         */
+        buildModalEventsCallbacks.call(this);
+        /**
+         * Create custom events for modal
+         */
+        createCustomEvents.call(this);
+    };
+
+
+    /**
+     * Photon prototype
+     */
+    PhotonModal.prototype = {
+
+        //------------------------------------ Getters ------------------------------------
+        /**
+         * Get message of modal
+         * @returns {*}
+         */
+        getContent: function () {
+            return this.defaults.content;
+        },
+        /**
+         * Get css class for modal based on the size passed as parameter by user
+         * @returns {*}
+         */
+        getSizeCssClass: function () {
+            switch (this.defaults.size) {
+                case 'small':
+                    return 'modal-sm';
+                case 'large':
+                    return 'modal-lg';
+                default:
+                    return '';
+            }
+        },
+        /**
+         * Get css class for modal based on the type passed as parameter by user
+         */
+        geFormStylingJson: function () {
+            switch (this.defaults.type) {
+                case 'info':
+                    return {
+                        type: 'info',
+                        class: 'has-info',
+                        buttons: {
+                            cancel: {
+                                label: _cancelLabel,
+                                class: 'btn-link',
+                                icon: 'fa fa-times'
+                            }
+                        }
+                    };
+                case 'warning':
+                    return {
+                        type: 'warning',
+                        class: 'has-warning',
+                        buttons: {
+                            cancel: {
+                                label: _cancelLabel,
+                                class: 'btn-link',
+                                icon: 'fa fa-times'
+                            }
+                        }
+                    };
+                case 'error':
+                    return {
+                        type: 'error',
+                        class: 'has-error',
+                        buttons: {
+                            cancel: {
+                                label: _cancelLabel,
+                                class: 'btn-link',
+                                icon: 'fa fa-times'
+                            }
+                        }
+                    };
+                case 'form':
+                    return {
+                        type: 'form',
+                        class: '',
+                        buttons: {
+                            save: {
+                                label: _saveLabel,
+                                class: 'btn-success',
+                                icon: 'fa fa-check',
+                                formSubmitter: true
+                            },
+                            cancel: {
+                                label: _cancelLabel,
+                                class: 'btn-link',
+                                icon: 'fa fa-times'
+                            }
+                        }
+                    };
+                case 'preview':
+                    return {
+                        type: 'preview',
+                        class: '',
+                        buttons: {
+                            cancel: {
+                                label: _cancelLabel,
+                                class: 'btn-link',
+                                icon: 'fa fa-times'
+                            }
+                        }
+                    };
+                default:
+                    return {
+                        type: 'default',
+                        class: ''
+                    };
+            }
+        },
+        //------------------------------------ End of getters ------------------------------------
+
+        //------------------------------------ Setters -------------------------------------------
+        /**
+         * Set modal loader variable
+         * @param modalLoader
+         */
+        setModalLoader: function (modalLoader) {
+            _loaderIsVisible = modalLoader;
+        },
+        /**
+         * Change modal content dynamically
+         * @param content
+         */
+        setModalContent: function (content) {
+            this.defaults.content = content;
+            $("#" + this.defaults.id).find('.modal-body').html(content);
+        },
+
+        //------------------------------------ End of Setters -------------------------------------------
+        /**
+         * Use init function from layout.html.twig for plugins instantiation
+         */
+        initPlugins: function () {
+            window.initPlugins($("#" + this.defaults.id).find('.modal-body'));
+        },
+        /**
+         * Show modal
+         */
+        show: function () {
+            _isVisible = true;
+            /**
+             * Build modal through ajax or with static content
+             */
+            this.defaults.useAjax ? createModalUsingAjax.call(this) : buildStaticModal.call(this);
+        },
+        hide: function () {
+            _isVisible = false;
+            /**
+             * Hide modal
+             */
+            $("#" + this.defaults.id).modal('hide');
+        }
+    };
+
+    window.PhotonModal = PhotonModal;
+
+}(window, jQuery));

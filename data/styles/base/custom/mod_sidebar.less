@@ -1,0 +1,382 @@
+
+
+//
+// Sidebar
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.sidebar {
+   width: @sidebar-max-width;
+   top: 0px;   
+   left: -100%; 
+   bottom: 0;
+   position: absolute;
+   padding-left: 0;
+   padding-right: 0;
+   background-color: @sidebar-first-level-bg;
+   border-style: solid;
+   border-color: @sidebar-outer-border-color;
+   border-width: 0 @sidebar-border-width 0 0;
+   z-index: 100;
+   display:block;
+   
+   &:before {
+     content: "";
+     display: block;
+     width: inherit;
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     z-index: 2;
+     background-color: inherit;
+     .box-shadow(@sidebar-shadow);
+   }
+   .sidebar-inner {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position:relative;      
+      display:block;
+      z-index: 3;
+      .menu-item {
+         display: block;
+         position: relative;
+         padding: 0;
+         margin: 0;
+         border-style: solid;
+         border-width: 0 0 @sidebar-border-width;
+         border-color: darken(@sidebar-first-level-bg, 5%);
+         &:first-child{
+             border-width: 0 0 @sidebar-border-width;
+         }
+         a {
+            display: block;
+            min-height:@sidebar-cell-height;
+            line-height: @sidebar-lineheight;
+            padding: ((@sidebar-cell-height - @sidebar-lineheight) / 2) 40px;
+            padding-left:45px;
+            font-size: @sidebar-fontsize;
+            text-decoration: none;
+            background-color: @sidebar-first-level-bg;
+            color: @sidebar-cell-font-color;
+            position:relative;
+            .menu-icon {
+                  display: inline-block;
+                  position:absolute;
+                  top:50%;
+                  left:15px;
+                  .translate(0; -50%);
+                  vertical-align: middle;
+                  text-align: center;
+                  line-height: inherit;
+                  font-size: @sidebar-iconsize;
+                  font-weight: 400;
+            }
+            .menu-text {
+               display:block;
+            }
+            &:hover, &:active, &:focus {
+                  background-color: darken(@sidebar-first-level-bg,3%);
+                  color: @sidebar-cell-font-color-hover;
+            }
+         }
+         
+         .sidebar-submenu {
+            display:none;
+            position:relative;
+            margin-left:-40px;
+            > .menu-item {
+               border-color: darken(@sidebar-second-level-bg, 5%);
+               > a {
+                    background-color:@sidebar-second-level-bg;
+                    padding-left: 52px;
+                    color: #fff;                    
+                    .menu-icon {
+                        left:30px;
+                        font-size: (@sidebar-iconsize - 4px);
+                    }
+                    .menu-text {
+                        font-size: (@sidebar-fontsize - 2px);
+                    }
+               }
+               &:last-child {
+                   border-bottom: none;
+               }
+               &:not(.active){
+                    > a {
+                        &:hover, &:active, &:focus {
+                            background-color: lighten(@sidebar-second-level-bg,5%);
+                        }
+                    }
+               }
+               .sidebar-submenu {
+                  .menu-item {
+                     border-color: darken(@sidebar-third-level-bg, 5%);
+                     > a {
+                        background-color:@sidebar-third-level-bg;                        
+                     }
+                     &:not(.active){
+                        > a {
+                            &:hover, &:active, &:focus {
+                                background-color: lighten(@sidebar-third-level-bg,5%);
+                            }
+                        }
+                    }
+                  }
+               }
+            }
+         }
+         
+         &.menu-item-has-children {
+            & > a {
+               &:after {
+                  display: inline-block;
+                  position:absolute;
+                  top:50%;
+                  right:15px;
+                  .translate(0; -50%);
+                  vertical-align: middle;
+                  text-align: center;
+                  line-height: inherit;
+                  font-size: @sidebar-iconsize;
+                  font-weight: 700;
+                  font-family: FontAwesome;
+                  content: '\f107';
+               }
+            }            
+         }
+         &.active {
+             &:not(.menu-item-has-children) {
+                 > a {
+                    background-color: @sidebar-submenu-active-cell-bg;
+                    color: #fff;
+                 }
+             }
+             &.menu-item-has-children {
+                 > a {
+                    color: @brand-primary;
+                    z-index: 1;
+                    .box-shadow(0px 3px 3px -3px rgba(0,0,0,.2));
+                    &:after {
+                        content: '\f106';
+                    }
+                 }
+                 & > .sidebar-submenu {
+                    display:block;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 40px;
+                        bottom: 0;
+                        width: 5px;
+                        background-color: @sidebar-submenu-mark-color;
+                        z-index: 3;
+                    }
+                }
+             }
+         }
+      }
+   }
+   
+   // The toggle button that minimizez/expands the sidebar;
+
+   .sidebar-control {
+      position: fixed;
+      z-index:4;
+      bottom: 0;
+      left:0;
+      width: @sidebar-max-width;
+      border-style: solid;
+      border-color: @sidebar-outer-border-color;
+      border-width: @sidebar-border-width 0 0 0;
+      display:none;
+      .sidebar-toggle {
+        display: block;
+        position: relative;
+        text-align:center;
+        margin: 0;
+        height: @sidebar-cell-height;
+        line-height: @sidebar-lineheight;
+        padding: ((@sidebar-lineheight/2) + @sidebar-border-width) 15px;
+        font-size: @sidebar-fontsize;
+        text-shadow: none;
+        text-decoration: none;
+        background-color: @sidebar-first-level-bg;
+        color: @sidebar-cell-font-color;
+        position: relative;
+        .menu-text {
+          display: inline-block;
+          margin:0 10px;
+        }
+      }
+   }
+   
+   // Making the sidebar fixed.
+   
+    &.sidebar-fixed {
+        .sidebar-outer {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: (@sidebar-max-width - @sidebar-border-width); //substract border width
+            overflow:hidden;
+            overflow-y: auto;    
+            z-index:3;
+        }
+        .sidebar-inner {
+            width: (@sidebar-max-width - @sidebar-border-width + 17px);
+            padding: 0;
+            overflow:hidden;
+            overflow-y: scroll;
+            height: 100%;
+        }
+    }
+    
+    // On mobile, the sidebar is initially hidden;
+    @media (max-width: @screen-sm) {
+        .transition(left .1s ease-in-out);
+    }
+    & + .main-content {
+        margin-left:0;               
+        @media (min-width: @screen-sm-min) {
+            margin-left:@sidebar-max-width;
+        }
+    }
+      
+    // On larger than mobile;
+    @media (min-width: @screen-sm-min) {
+        & {
+            top: 0px;
+            left: 0;            
+        }
+        .sidebar-outer {
+            padding-bottom: @sidebar-cell-height;
+        }
+        &.sidebar-min {
+            width: @sidebar-min-width;
+            & + .main-content {
+                margin-left:@sidebar-min-width;
+            }
+            .sidebar-inner {
+                .menu-item {
+                    a {
+                        padding:0;
+                        padding-bottom: @sidebar-cell-height;
+                        .menu-icon {
+                        left:50%;
+                        .translate(-50%; -50%);
+                        }
+                        .menu-text {
+                            font-size: @sidebar-fontsize;
+                            background-color: @sidebar-tooltip-preview-bg;
+                            color: @sidebar-tooltip-preview-text-color;
+                            max-width: 200px;
+                            padding: 5px 8px;
+                            text-align: center;
+                            text-shadow:none;
+                            position: absolute;
+                            left: 110%;
+                            border-radius: @border-radius-base;
+                            top: 50%;
+                            .translate(0%; -50%);
+                            display:none;
+                            &:before {
+                            position:absolute;
+                            content:'';
+                            top: 50%;
+                            left: 0;
+                            .translate(-100%; -50%);
+                            border-style: solid;
+                            border-width: 8px 10px 8px 0;
+                            border-color: transparent @sidebar-tooltip-preview-bg transparent transparent;
+                        }
+                        }
+                        &:hover {
+                            .menu-text {
+                                display:block;
+                            }
+                        }
+                    }
+                    .sidebar-submenu {
+                        > .menu-item {
+                        > a {
+                            .menu-icon {
+                            left:50%;
+                            }
+                        }
+                        }
+                    }
+                    &.menu-item-has-children {
+                        & > a {
+                            &:after {
+                                display:none;
+                            }
+                            &:before {
+                                position:absolute;
+                                bottom:0;
+                                right:0;
+                                content:'';
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 0 0 7px 7px;
+                                border-color: transparent transparent @sidebar-submenu-mark-color transparent;
+                            }
+                        }
+                    }
+                }
+            }
+            .sidebar-control {
+                width: @sidebar-min-width;
+                .sidebar-toggle {
+                    padding: ((@sidebar-lineheight/2)+@sidebar-border-width) 10px;
+                    .menu-text {
+                        display:none;
+                    }
+                }
+            }
+        }
+        .sidebar-control {
+            display:block;
+        }
+        &.sidebar-fixed {
+            &.sidebar-min {
+                .sidebar-outer {
+                    width: @sidebar-min-width;  
+                    bottom: @sidebar-cell-height;                  
+                }
+                .sidebar-inner {
+                    width: (@sidebar-min-width + @sidebar-border-width + 17px);
+                }
+            }
+        }
+    }
+    
+    &.open {
+        left:0;
+    }
+}
+
+// What happens when there's a navbar at a top.
+.navbar + .main-container {
+    .main-container-inner {
+        .sidebar {
+            top: @navbar-height;
+            &:before {
+                top: @navbar-height;
+            }
+            .sidebar-outer {
+                top: @navbar-height;
+            }
+        }
+    }
+}
+
+// What happens when there's a fixed navbar at the top.
+.navbar-fixed-top + .main-container {
+    padding-top: @navbar-height;
+}

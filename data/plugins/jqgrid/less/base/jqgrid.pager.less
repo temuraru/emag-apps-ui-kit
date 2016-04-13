@@ -1,0 +1,134 @@
+/* Pager*/
+.ui-jqgrid {
+  .ui-pager-table>tbody>tr>td{
+      border: none;
+  }
+  .ui-jqgrid-pager,
+  .ui-jqgrid-toppager {
+    border-left-width: 0px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    .ui-pager-control {
+      position: relative;
+      border-left: 0;
+      border-bottom: 0;
+      border-top: 0;
+    }
+  }
+  .ui-jqgrid-toppager {
+    border-top-width :0;
+    border-bottom : 1px solid #ddd;
+  }
+  .ui-pg-table {
+    position: relative;
+    padding: 1px 0;
+    width:auto;
+    margin: 0;
+    td {
+      font-weight:normal;
+      vertical-align:middle;
+    }
+  }
+  .ui-pager-control .ui-pager-table td {
+    min-height : 20px !important;
+  }
+  .ui-pg-button  {
+    height:auto;
+    margin:0 3px;
+  }
+  .ui-paging-pager td {}
+  .ui-pg-button {
+    span {
+      display: block;
+    }
+    &:hover {}
+  }
+  .ui-disabled:hover {}
+  .ui-pg-input,
+  .ui-jqgrid-toppager .ui-pg-input,
+  .ui-pg-selbox,
+  .ui-jqgrid-toppager .ui-pg-selbox {
+    display: inline-block;
+    height:auto;
+    width: auto;
+    font-size: @font-size-small;
+    margin:0 10px;
+    padding: 0px 3px;
+    text-align: center;
+  }
+  .ui-pg-selbox,
+  .ui-jqgrid-toppager .ui-pg-selbox {
+    border:none;
+  }
+  .ui-separator {
+    height: 18px;
+    border : none;
+    border-left: 2px solid #ccc ; /*default*/
+    margin: 0 17px;
+  }
+  .ui-separator-li {
+    height: 2px;
+    border : none;
+    border-top: 2px solid #ccc ;  /*default*/
+    margin: 0; padding: 0; width:100%
+  }
+}
+
+  .ui-jqgrid .ui-jqgrid-pager .ui-pg-div,
+  .ui-jqgrid .ui-jqgrid-toppager .ui-pg-div
+  {
+    float:left;
+    position:relative;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .ui-pg-button,
+  .ui-jqgrid .ui-jqgrid-toppager .ui-pg-button
+  {
+    cursor:pointer;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .ui-pg-div  span,
+  .ui-jqgrid .ui-jqgrid-toppager .ui-pg-div  span
+  {
+    float:left;
+  }
+  .ui-jqgrid td input,
+  .ui-jqgrid td select,
+  .ui-jqgrid td textarea {  }
+  .ui-jqgrid td textarea {
+    width:auto;
+    height:auto;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .ui-pager-table,
+  .ui-jqgrid .ui-jqgrid-toppager .ui-pager-table
+  {
+    width:100%;
+    table-layout:fixed;
+    height:100%;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .ui-paging-info,
+  .ui-jqgrid .ui-jqgrid-toppager .ui-paging-info
+  {
+    font-weight: normal;
+    height:auto;
+    margin-right:20px;
+    display: inline;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .ui-paging-pager,
+  .ui-jqgrid .ui-jqgrid-toppager .ui-paging-pager
+  {
+    table-layout:auto;
+    height:100%;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .navtable,
+  .ui-jqgrid .ui-jqgrid-toppager .navtable
+  {
+    float:left;
+    table-layout:auto;
+    height:100%;
+  }
+  .ui-jqgrid .ui-jqgrid-pager .navtable td,
+  .ui-jqgrid .ui-jqgrid-toppager .navtable td
+  {
+    padding : 0 5px;
+  }

@@ -1,0 +1,91 @@
+///* GENERAL FUNCTIONALITY */
+@wba-showcasing: true;
+
+///* MAIN LAYOUT */
+
+@content-page-pad-top:        20px;
+@content-page-pad-side:       20px;
+@content-page-pad-bottom:     20px;
+
+///* SIDEBAR */
+// --------------------------------------------------
+
+@sidebar-max-width:                     200px;
+@sidebar-cell-height:                   53px;
+@sidebar-min-width:                     @sidebar-cell-height;
+@sidebar-border-width:                  1px;
+@sidebar-outer-border-color:            darken(@sidebar-first-level-bg,6%);
+@sidebar-shadow:                        0px 0px 4px 0px rgba(0,0,0,.2);
+
+@sidebar-fontsize:                      @font-size-base;
+@sidebar-lineheight:                    @line-height-computed;
+@sidebar-iconsize:                      18px;
+
+@sidebar-cell-font-color:               @gray-lighter;
+@sidebar-cell-font-color-hover:         @brand-primary;
+
+@sidebar-first-level-bg:                @body-bg-alt;
+@sidebar-second-level-bg:               #22313F;
+@sidebar-third-level-bg:                darken(@sidebar-second-level-bg,10%);
+
+@sidebar-submenu-mark-color:            @brand-primary;
+@sidebar-submenu-active-cell-bg:        @brand-primary;
+
+@sidebar-tooltip-preview-bg:            #333;
+@sidebar-tooltip-preview-text-color:    #fff;
+
+///* FOOTER */
+
+@footer-minheight:            @sidebar-cell-height;
+@footer-text-align:           center;
+@footer-font-size:            @font-size-small;
+
+///* FORM ELEMENTS */
+
+@track-color:                 #eee;
+@thumb-color:                 #fff;
+
+@thumb-radius:                100%;
+@thumb-height:                20px;
+@thumb-width:                 20px;
+@thumb-shadow-size:           1px;
+@thumb-shadow-blur:           4px;
+@thumb-shadow-color:          rgba(0,0,0,.2);
+@thumb-border-width:          1px;
+@thumb-border-color:          white;
+
+@track-width:                 100%;
+@track-height:                10px;
+@track-shadow-size:           0;
+@track-shadow-blur:           0;
+@track-shadow-color:          #222;
+@track-border-width:          1px;
+@track-border-color:          #ccc;
+
+@track-radius:                1px;
+@contrast:                    5%;
+
+///* FLIP SWITCH */
+
+@flip-switch-width:             56px;
+@flip-switch-height:            26px;
+@flip-switch-internal-padding:  3px;
+@flip-switch-color-off:         #e4e4e4;
+@flip-switch-transition:        .15s ease-out;
+@switchTransition:              .15s ease-out;
+
+///* WIDGETS */
+
+@panel-title-padding:         10px 15px;
+@panel-toolbox-padding:       8px 15px 7px;
+
+///* PROGRESS BARS */
+
+@internal-padding:            2px;
+@internal-line-height:        (@line-height-computed - @internal-padding * 2);
+
+///* MODALS */
+
+@modal-footer-padding:        10px 15px;
+@modal-footer-bg:             15px;
+@modal-footer-bg:             #fafafa;

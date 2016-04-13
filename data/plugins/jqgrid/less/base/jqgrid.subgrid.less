@@ -1,0 +1,62 @@
+
+
+/*Subgrid*/
+
+.ui-jqgrid .ui-jqgrid-btable .ui-sgcollapsed span {
+  display: block;
+}
+.ui-jqgrid {
+  .ui-subgrid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table {
+      table-layout: fixed;
+    }
+    tr.ui-subtblcell td {
+    }
+    td.subgrid-data {
+      border-top: 0 none !important;
+    }
+    td.subgrid-cell {
+      vertical-align: middle
+    }
+  }
+  a.ui-sghref {
+    text-decoration: none;
+    color : #010101; /*default*/
+  }
+  .ui-th-subgrid {
+    height:20px;
+  }
+}
+
+.tablediv > .row { margin: 0 0}
+/* loading */
+.ui-jqgrid .loading {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: auto;
+  z-index:101;
+  padding: 6px;
+  margin: 5px;
+  text-align: center;
+  display: none;
+  border: 1px solid #ddd;  /*default*/
+  font-size: 14px;
+  background-color: #d9edf7;
+}
+.ui-jqgrid .jqgrid-overlay {
+  display:none;
+  z-index:100;
+}
+/* IE * html .jqgrid-overlay {width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');} */
+* .jqgrid-overlay iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+/* IE width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');}*/
+/* end loading div */
