@@ -1,11 +1,11 @@
 {
-  "name": "WBA",
+  "name": "photon-power-ui-kit",
   "version": "1.0.0",
   "description": "A Bootstrap-based UI KIT/Admin layout, developed and used by eMAG",
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "http://git.emag.ro/eis/emag-lib_ui-bundle.git"
+    "url": "git//git@github.com:eMAGTechLabs/PhotonPowerUIKit.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
