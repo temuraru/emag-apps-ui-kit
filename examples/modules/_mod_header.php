@@ -6,7 +6,7 @@
                     <span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i>
                 </button>
             </div>
-            <a class="navbar-brand" href="javascript:void(0)"><img src="../dist/css/img/logo-eMAG.png" alt="EIS App">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="../dist/css/img/photon-power-logo.png" alt="Admin App">
                 <span class="hidden-xs">| PHOTON</span>
             </a>
             <div class="nav-controls visible-xs-inline-block pull-right">

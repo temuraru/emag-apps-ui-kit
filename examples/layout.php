@@ -9,8 +9,7 @@
         <meta name="author" content="eMAG CORE UI Team">
 
         <!-- The favicon -->
-        <link rel="apple-touch-icon" href="../dist/css/icons/favicon.ico">
-        <link rel="icon" type="image/png" href="../dist/css/icons/favicon.ico">
+        <?php include_once "modules/_mod_favicon.php"?>
 
         <!-- PHOTON main styles -->
         <link rel="stylesheet" href="../dist/css/main_style.min.css">
@@ -151,7 +150,7 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/logo-eMAG.png">
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
                                                             <span class="hidden-xs">| Title</span>
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
@@ -173,7 +172,7 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/logo-eMAG.png"><span class="hidden-xs">| Title</span>
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png"><span class="hidden-xs">| Title</span>
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i></button>
@@ -213,7 +212,7 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/logo-eMAG.png"><span class="hidden-xs">| Title</span>
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png"><span class="hidden-xs">| Title</span>
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -278,7 +277,7 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/logo-eMAG.png"><span class="hidden-xs">| Title</span>
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png"><span class="hidden-xs">| Title</span>
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">

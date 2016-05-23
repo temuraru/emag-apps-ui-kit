@@ -9,8 +9,7 @@
         <meta name="author" content="eMAG CORE UI Team">
 
         <!-- The favicon -->
-        <link rel="apple-touch-icon" href="../dist/css/icons/favicon.ico">
-        <link rel="icon" type="image/png" href="../dist/css/icons/favicon.ico">
+        <?php include_once "modules/_mod_favicon.php"?>
 
         <!-- PLUGIN: Summernote -->
         <link rel="stylesheet" href="../dist/plugins/summernote/summernote.min.css">

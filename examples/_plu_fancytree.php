@@ -9,8 +9,7 @@
     <meta name="author" content="eMAG CORE UI Team">
 
     <!-- The favicon -->
-    <link rel="apple-touch-icon" href="../dist/css/icons/favicon.ico">
-    <link rel="icon" type="image/png" href="../dist/css/icons/favicon.ico">
+    <?php include_once "modules/_mod_favicon.php"?>
 
     <!-- PLUGIN: Fancytree -->
     <link rel="stylesheet" href="../dist/plugins/fancytree/fancytree.min.css">
@@ -103,7 +102,7 @@
                                 <div class="show-panel-body">
                                     <label for="category_treeDefault">Category tree</label>
                                     <div class="hide-with-opacity">
-                                        <select id="category_treeDefault" multiple="multiple">
+                                        <select id="category_tree_default" multiple="multiple">
                                             <option value=""></option>
                                             <option value="31">Software</option>
                                             <option value="175">Antivirus</option>
@@ -151,12 +150,68 @@
                                         </select>
                                     </div>
                                     <div class="input-group">
-                                        <div class="form-control" id="id_category_treeDefault"></div>
+                                        <div class="form-control" id="id_category_tree_default"></div>
                                         <span class="input-group-addon">
                                             <i class="ace-icon fa fa-sitemap"></i>
                                         </span>
                                     </div>
-
+                                </div>
+                                <div class="show-panel-body">
+                                    <label for="category_treeDefault">Category tree</label>
+                                    <div class="hide-with-opacity">
+                                        <select id="category_tree_onlyleafs" multiple="multiple">
+                                            <option value=""></option>
+                                            <option value="31">Software</option>
+                                            <option value="175">Antivirus</option>
+                                            <option value="221">Sisteme de operare</option>
+                                            <option value="225">Aplicatii desktop OEM</option>
+                                            <option value="226" selected="selected">Medii de dezvoltare OEM</option>
+                                            <option value="227" selected="selected">Sisteme de operare server OEM</option>
+                                            <option value="228">Aplicatii server OEM</option>
+                                            <option value="340">Clienti server OEM</option>
+                                            <option value="222">Office & Aplicatii Desktop</option>
+                                            <option value="229">Sisteme de operare Retail</option>
+                                            <option value="230">Aplicatii desktop Retail</option>
+                                            <option value="231">Medii de dezvoltare Retail</option>
+                                            <option value="232">Sisteme de operare server Retail</option>
+                                            <option value="233">Aplicatii server Retail</option>
+                                            <option value="274">Documentatii Retail</option>
+                                            <option value="344">Clienti server retail</option>
+                                            <option value="361">Editare foto-video</option>
+                                            <option value="1512">AC</option>
+                                            <option value="1513">Photo DSLR</option>
+                                            <option value="378">Aparate foto D-SLR</option>
+                                            <option value="407">Accesorii aparate foto DSLR si Mirrorless</option>
+                                            <option value="443">Kit curatare DSLR</option>
+                                            <option value="1117">Aparate foto Mirrorless</option>
+                                            <option value="1514">Photo Compact</option>
+                                            <option value="54">Aparate foto compacte</option>
+                                            <option value="1517">AV & HiFi</option>
+                                            <option value="80">Videoproiectoare</option>
+                                            <option value="117">DVD & Blu-Ray Playere</option>
+                                            <option value="408">Audio HI-FI</option>
+                                            <option value="204">Playere & Receivere</option>
+                                            <option value="539">Amplificatoare</option>
+                                            <option value="540">Playere</option>
+                                            <option value="542">Boxe</option>
+                                            <option value="635">Sisteme audio wireless</option>
+                                            <option value="1061">Pick-Up</option>
+                                            <option value="1150">Accesorii Audio Hi-Fi</option>
+                                            <option value="467">Mediaplayere</option>
+                                            <option value="1133">Home Audio</option>
+                                            <option value="113">Sisteme Home Cinema</option>
+                                            <option value="124">Sisteme audio</option>
+                                            <option value="162">Radiocasetofoane</option>
+                                            <option value="1140">Docking</option>
+                                            <option value="1534">Other Products</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="form-control" id="id_category_tree_onlyleafs"></div>
+                                        <span class="input-group-addon">
+                                            <i class="ace-icon fa fa-sitemap"></i>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="show-panel-example">
                                     <div class="show-panel-footer">
@@ -187,7 +242,6 @@
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
 <!-- PLUGIN: Fancytree -->
 <script src="../dist/plugins/fancytree/fancytree.min.js"></script>
-<script src="../data/scripts/base/custom/mod_photonFancytree.js"></script>
 
 <!-- PLUGIN: This script file helps display demo code. Don't add it everywhere -->
 <script src="../dist/js/demo_helpers.js"></script>
@@ -259,6 +313,100 @@
         }, {
             "key": 1517,
             "title": "AV & HiFi",
+            "children": [{"key": 80, "title": "Videoproiectoare", "children": []}, {
+                "key": 117,
+                "title": "DVD & Blu-Ray Playere",
+                "children": []
+            }, {
+                "key": 408,
+                "title": "Audio HI-FI",
+                "children": [{"key": 204, "title": "Playere & Receivere", "children": []}, {
+                    "key": 539,
+                    "title": "Amplificatoare",
+                    "children": []
+                }, {"key": 540, "title": "Playere", "children": []}, {
+                    "key": 542,
+                    "title": "Boxe",
+                    "children": []
+                }, {"key": 635, "title": "Sisteme audio wireless", "children": []}, {
+                    "key": 1061,
+                    "title": "Pick-Up",
+                    "children": []
+                }, {"key": 1150, "title": "Accesorii Audio Hi-Fi", "children": []}],
+                "folder": true
+            }, {"key": 467, "title": "Mediaplayere", "children": []}, {
+                "key": 1133,
+                "title": "Home Audio",
+                "children": [{"key": 113, "title": "Sisteme Home Cinema", "children": []}, {
+                    "key": 124,
+                    "title": "Sisteme audio",
+                    "children": []
+                }, {"key": 162, "title": "Radiocasetofoane", "children": []}, {
+                    "key": 1140,
+                    "title": "Docking",
+                    "children": []
+                }],
+                "folder": true
+            }],
+            "folder": true
+        }, {"key": 1534, "title": "Other Products", "children": [], "folder": true}];
+        window.fancytreeContentSelectOnlyLeafs = [{
+            "key": 31,
+            "title": "Software",
+            "hideCheckbox": true,
+            "children": [{"key": 175, "title": "Antivirus", "children": [], "folder": true}, {
+                "key": 221,
+                "title": "Sisteme de operare",
+                "children": [{"key": 225, "title": "Aplicatii desktop OEM", "children": []}, {
+                    "key": 226,
+                    "title": "Medii de dezvoltare OEM",
+                    "children": []
+                }, {"key": 227, "title": "Sisteme de operare server OEM", "children": []}, {
+                    "key": 228,
+                    "title": "Aplicatii server OEM",
+                    "children": []
+                }, {"key": 340, "title": "Clienti server OEM", "children": []}],
+                "folder": true
+            }, {
+                "key": 222,
+                "title": "Office & Aplicatii Desktop",
+                "children": [{"key": 229, "title": "Sisteme de operare Retail", "children": []}, {
+                    "key": 230,
+                    "title": "Aplicatii desktop Retail",
+                    "children": []
+                }, {"key": 231, "title": "Medii de dezvoltare Retail", "children": []}, {
+                    "key": 232,
+                    "title": "Sisteme de operare server Retail",
+                    "children": []
+                }, {"key": 233, "title": "Aplicatii server Retail", "children": []}, {
+                    "key": 274,
+                    "title": "Documentatii Retail",
+                    "children": []
+                }, {"key": 344, "title": "Clienti server retail", "children": []}],
+                "folder": true
+            }, {"key": 361, "title": "Editare foto-video", "children": []}],
+            "folder": true
+        }, {"key": 1512, "title": "AC", "children": []}, {
+            "key": 1513,
+            "title": "Photo DSLR",
+            "hideCheckbox": true,
+            "children": [{"key": 378, "title": "Aparate foto D-SLR", "children": []}, {
+                "key": 407,
+                "title": "Accesorii aparate foto DSLR si Mirrorless",
+                "children": [{"key": 443, "title": "Kit curatare DSLR", "children": []}],
+                "folder": true
+            }, {"key": 1117, "title": "Aparate foto Mirrorless", "children": []}],
+            "folder": true
+        }, {
+            "key": 1514,
+            "title": "Photo Compact",
+            "hideCheckbox": true,
+            "children": [{"key": 54, "title": "Aparate foto compacte", "children": []}],
+            "folder": true
+        }, {
+            "key": 1517,
+            "title": "AV & HiFi",
+            "hideCheckbox": true,
             "children": [{"key": 80, "title": "Videoproiectoare", "children": []}, {
                 "key": 117,
                 "title": "DVD & Blu-Ray Playere",
@@ -376,9 +524,14 @@
             fancytreeModal.show();
         });
 
-        TreeTypeObject = $("#id_category_treeDefault").TreeType({
+        TreeTypeObject = $("#id_category_tree_default").TreeType({
             treeData: fancytreeContent,
-            selectId: "category_treeDefault",
+            selectId: "category_tree_default"
+        });
+        TreeTypeObject = $("#id_category_tree_onlyleafs").TreeType({
+            treeData: fancytreeContentSelectOnlyLeafs,
+            selectId: "category_tree_onlyleafs",
+            selectOnlyLeaves: 1
         });
     });
 

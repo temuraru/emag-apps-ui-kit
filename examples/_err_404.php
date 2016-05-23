@@ -9,8 +9,7 @@
         <meta name="author" content="eMAG CORE UI Team">
 
         <!-- The favicon -->
-        <link rel="apple-touch-icon" href="../dist/css/icons/favicon.ico">
-        <link rel="icon" type="image/png" href="../dist/css/icons/favicon.ico">
+        <?php include_once "modules/_mod_favicon.php"?>
 
         <!-- PHOTON main styles -->
         <link rel="stylesheet" href="../dist/css/main_style.min.css">

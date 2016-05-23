@@ -8,6 +8,10 @@
     }
 
     var Class = {
+        $widget: {},
+        options: {},
+        element: {},
+        modalContentInitialized: false,
         create: function() {
             return function() {
                 this.initialize.apply(this, arguments);
@@ -38,6 +42,9 @@
             $this.options.treeSearchId = this.options.typeId + '_treeSearch';
             $this.options.treeUnmatchedId = this.options.typeId + '_treeUnmatched';
             $this.options.treeSelectHierarchyId = this.options.typeId + '_treeSelectHierarchy';
+            $this.options.modalOkBtnClass = this.options.typeId + '_category-modal-ok-btn';
+            $this.options.modalResetBtnClass = this.options.typeId + '_category-modal-reset-btn';
+            $this.options.modalCancelBtnClass = this.options.typeId + '_category-modal-cancel-btn';
 
             /**
              * Construct modal
@@ -110,18 +117,18 @@
                     'reset': {
                         label: $this.options.modalResetLabel,
                         icon:  'fa fa-undo',
-                        class: 'btn-default pull-left category-modal-reset-btn'
+                        class: 'btn-default pull-left ' + $this.options.modalResetBtnClass
                     },
                     'ok': {
                         label:  $this.options.modalOkLabel,
                         icon:  'fa fa-check',
-                        class: 'btn-success category-modal-ok-btn',
+                        class: 'btn-success ' + $this.options.modalOkBtnClass,
                         closeModal: true
                     },
                     'cancel': {
                         label: $this.options.modalCancelLabel,
                         icon:  'fa fa-times',
-                        class: 'btn-default category-modal-cancel-btn',
+                        class: 'btn-default ' + $this.options.modalCancelBtnClass,
                         closeModal: true
                     }
                 },
@@ -157,7 +164,7 @@
             /**
              * Reset button action
              */
-            $('body').on('click', '.category-modal-reset-btn', function(e) {
+            $('body').on('click', '.' + $this.options.modalResetBtnClass, function(e) {
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
@@ -168,7 +175,7 @@
             /**
              * OK button action
              */
-            $('body').on('click', '.category-modal-ok-btn', function(e) {
+            $('body').on('click', '.' + $this.options.modalOkBtnClass, function(e) {
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
@@ -182,7 +189,7 @@
             /**
              * Cancel button action
              */
-            $('body').on('click', '.category-modal-cancel-btn', function(e) {
+            $('body').on('click', '.' + $this.options.modalCancelBtnClass, function(e) {
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
@@ -217,6 +224,7 @@
                     icon: false,
                     toggleEffect: false,
                     activeVisible: true,
+                    debugLevel: 0,
                     selectMode: $this.options.selectMode,
                     select: $this._checkPartialSelection
                 });
@@ -228,6 +236,7 @@
                     icon: false,
                     toggleEffect: false,
                     activeVisible: true,
+                    debugLevel: 0,
                     selectMode: $this.options.selectMode,
                     select: $this._checkPartialSelection,
                     lazyLoad: function(event, data) {
@@ -311,13 +320,15 @@
 
                 var node = $this.$tree.getNodeByKey(optionValue);
 
-                node.setSelected(true);
+                if (node) {
+                    node.setSelected(true);
 
-                node.makeVisible({
-                    noAnimation: true,
-                    noEvents: false,
-                    scrollIntoView: false
-                });
+                    node.makeVisible({
+                        noAnimation: true,
+                        noEvents: false,
+                        scrollIntoView: false
+                    });
+                }
             });
         },
 
@@ -379,7 +390,6 @@
                 /** Check all parents if they have to disable partial selection property */
                 var nodeParents = data.node.getParentList(false, data.node.hasChildren());
                 $.each(nodeParents, function(index, parentNode){
-                    console.log(parentNode);
                     if (!parentNode.selected) {
                         /**
                          * If parent it is not selected, check if there are any child nodes selected.

@@ -4860,6 +4860,20 @@ function addNotification(message,type){
     });
 }
 
+/* Function for finding the highest z-index */
+
+function findHighestZIndex(elem) {
+    var elems = document.getElementsByTagName(elem);
+    var highest = 0;
+    for (var i = 0; i < elems.length; i++) {
+        var zindex = document.defaultView.getComputedStyle(elems[i], null).getPropertyValue("z-index");
+        if ((zindex > highest) && (zindex != 'auto')) {
+            highest = zindex;
+        }
+    }
+    return highest;
+}
+
 /* Function for enabling/disabling a blocking overlay */
 
 function showThisLoader(type, colorClass) {
