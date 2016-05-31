@@ -221,10 +221,6 @@ photon/
                                                         <br>
                                                     </li>
                                                     <li>
-                                                        <h4 class="text-primary">Become a contributor</h4>
-                                                        <br>
-                                                    </li>
-                                                    <li>
                                                         <h4 class="text-primary">License</h4>
                                                         <br>
                                                         <p>Photon is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
