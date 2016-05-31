@@ -163,6 +163,24 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
+                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;
+                &#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
+            &#x3C;/a&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test1_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;
+                    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
+                &#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
                                         </div>
                                         <div class="show-panel-body">
                                             <nav class="navbar navbar-default">
@@ -203,6 +221,42 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
+                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;&#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
+            &#x3C;/a&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test2_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test2_navbar&#x22;&#x3E;
+            &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-danger navbar-btn&#x22;&#x3E;Don&#x27;t press this button!&#x3C;/button&#x3E;
+            &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
+                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+                        &#x3C;div class=&#x22;profile-thumb hidden-xs&#x22;&#x3E;
+                            &#x3C;img class=&#x22;nav-user-photo&#x22; src=&#x22;../dist/css/img/jon_snow.jpg&#x22; onerror=&#x22;this.src=&#x27;../dist/css/icons/default_user.png&#x27;&#x22; alt=&#x22;&#x22; height=&#x22;36&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        Jon Snow
+                        &#x3C;i class=&#x22;fa fa-caret-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;&#x3C;span&#x3E;User actions&#x3C;/span&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog nav-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Account settings&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog nav-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Support&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-power-off nav-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Log out&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
                                         </div>
                                         <div class="show-panel-body">
                                             <nav class="navbar navbar-default">
@@ -268,6 +322,67 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
+                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;&#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
+            &#x3C;/a&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test3_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;
+                    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
+                &#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test3_navbar&#x22;&#x3E;
+            &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
+                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+                        &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Limb&#x103;&#x3C;/span&#x3E;
+                        &#x3C;span&#x3E;&#x3C;strong&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E; RO &#x3C;/strong&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;i class=&#x22;fa fa-caret-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;&#x3C;span&#x3E;Limb&#x103;&#x3C;/span&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; rom&#xE2;n&#x103; (rom&#xE2;n&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#n&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-gb&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; english (englez&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-bg&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; &#x431;&#x44A;&#x43B;&#x433;&#x430;&#x440;&#x441;&#x43A;&#x438; (bulgar&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-hu&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; magyar (maghiar&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-pl&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; polski (polonez&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notifications&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;jewel&#x22;&#x3E;3&#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;
+                            &#x3C;span&#x3E;Notifications&#x3C;/span&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have an invalidated offer&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Your account is not up to date&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have a new order&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li role=&#x22;separator&#x22; class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;text-center&#x22;&#x3E;&#x3C;span&#x3E;view all&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
                                         </div>
                                         <div class="show-panel-body">
                                             <nav class="navbar navbar-default">
@@ -325,7 +440,62 @@
                                                 </div>
                                             </nav>
                                         </div>
-                                        <div class="show-panel-footer"></div>
+                                        <div class="show-panel-footer">
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
+                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;&#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
+            &#x3C;/a&#x3E;
+            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
+                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test4_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;
+                    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;
+                    &#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
+                &#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test4_navbar&#x22;&#x3E;
+            &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
+                &#x3C;li class=&#x22;nav-input-group&#x22;&#x3E;
+                    &#x3C;div class=&#x22;input-group&#x22;&#x3E;
+                        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; name=&#x22;example1&#x22; id=&#x22;example1&#x22; placeholder=&#x22;Searchbox&#x22;&#x3E;
+                        &#x3C;div class=&#x22;input-group-btn&#x22;&#x3E;
+                            &#x3C;button class=&#x22;btn btn-info&#x22; type=&#x22;submit&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notificare&#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;
+                            &#x3C;span&#x3E;Notifications&#x3C;/span&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have an invalidated offer&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Your account is not up to date&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have a new order&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li role=&#x22;separator&#x22; class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                            &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;text-center&#x22;&#x3E;&#x3C;span&#x3E;view all&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -338,68 +508,109 @@
                                             <h2><strong>Sidebar</strong></h2>
                                             <p><strong>Photon's unique sidebar menu.</strong></p>
                                             <p>You can use the buttons below to toggle different sidebar states.</p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-success">UN-Fixed</button>
-                                                            </div>
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-default">Visible</button>
-                                                            </div>
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-default">Minimized</button>
-                                                            </div>
-                                                        </div>
+<!--                                            <div class="pad-sep-20">-->
+<!--                                                <div class="row">-->
+<!--                                                    <div class="col-lg-8 col-lg-offset-2">-->
+<!--                                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">-->
+<!--                                                            <div class="btn-group" role="group">-->
+<!--                                                                <button type="button" class="btn btn-success">UN-Fixed</button>-->
+<!--                                                            </div>-->
+<!--                                                            <div class="btn-group" role="group">-->
+<!--                                                                <button type="button" class="btn btn-default">Visible</button>-->
+<!--                                                            </div>-->
+<!--                                                            <div class="btn-group" role="group">-->
+<!--                                                                <button type="button" class="btn btn-default">Minimized</button>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p><strong>Fixed status</strong></p>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_fixed_status" class="form-radio-control" value="fixed" checked="checked">
+                                                            Fixed
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_fixed_status" class="form-radio-control" value="unfixed">
+                                                            UN-Fixed
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><strong>Expanded status</strong></p>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_expanded_status" class="form-radio-control" value="expanded" checked="checked">
+                                                            Expanded
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_expanded_status" class="form-radio-control" value="collapsed">
+                                                            Collapsed
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="show-panel-footer">
-<pre>&lt;div id=&quot;sidebar&quot; class=&quot;sidebar&quot;&gt;
-    &lt;ul class=&quot;sidebar-inner&quot;&gt;
-        &lt;li class=&quot;menu-item&quot;&gt;
-            &lt;a href=&quot;/your/path&quot;&gt;
-                &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
-                &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>First level</strong></span>&lt;/span&gt;
-            &lt;/a&gt;                    
-        &lt;/li&gt;
-        &lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;
-                &lt;i class=&quot;menu-icon fa fa-bolt&quot;&gt;&lt;/i&gt;
-                &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>First level with children</strong></span>&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;ul class=&quot;sidebar-submenu&quot;&gt;
-                &lt;li class=&quot;menu-item&quot;&gt;
-                    &lt;a href=&quot;/your/path/1&quot;&gt;
-                        &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Second level</strong></span>&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
-                    &lt;a href=&quot;/your/path/2&quot;&gt;
-                        &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Second level with children</strong></span>&lt;/span&gt;
-                    &lt;/a&gt; 
-                    &lt;ul class=&quot;sidebar-submenu&quot;&gt;
-                        &lt;li class=&quot;menu-item&quot;&gt;
-                            &lt;a href=&quot;/your/path/2/2&quot;&gt;
-                                &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
-                                &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Third level</strong></span>&lt;/span&gt;
-                            &lt;/a&gt;
-                        &lt;/li&gt;
-                        &lt;li class=&quot;menu-item&quot;&gt;
-                            &lt;a href=&quot;/your/path/2/3&quot;&gt;
-                                &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
-                                &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Third level</strong></span>&lt;/span&gt;
-                            &lt;/a&gt;                    
-                        &lt;/li&gt;
-                    &lt;/ul&gt;                   
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
+<pre>&lt;div id=&quot;sidebar&quot; class=&quot;<mark id="sidebar_classes" class="text-danger">sidebar sidebar-fixed</mark>&quot;&gt;
+    &lt;div class=&quot;sidebar-outer&quot;&gt;
+        &lt;ul class=&quot;sidebar-inner&quot;&gt;
+            &lt;li class=&quot;menu-item&quot;&gt;
+                &lt;a href=&quot;/your/path&quot;&gt;
+                    &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>First level</strong></span>&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;i class=&quot;menu-icon fa fa-bolt&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>First level with children</strong></span>&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;ul class=&quot;sidebar-submenu&quot;&gt;
+                    &lt;li class=&quot;menu-item&quot;&gt;
+                        &lt;a href=&quot;/your/path/1&quot;&gt;
+                            &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                            &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Second level</strong></span>&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
+                        &lt;a href=&quot;/your/path/2&quot;&gt;
+                            &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                            &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Second level with children</strong></span>&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;sidebar-submenu&quot;&gt;
+                            &lt;li class=&quot;menu-item&quot;&gt;
+                                &lt;a href=&quot;/your/path/2/2&quot;&gt;
+                                    &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Third level</strong></span>&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;menu-item&quot;&gt;
+                                &lt;a href=&quot;/your/path/2/3&quot;&gt;
+                                    &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Third level</strong></span>&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sidebar-control&quot;&gt;
+        &#x3C;div class=&#x22;sidebar-toggle&#x22;&#x3E;
+            &#x3C;button type=&#x22;button&#x22; id=&#x22;toggle-sidebar-size-btn&#x22; class=&#x22;btn btn-default btn-sm&#x22;&#x3E;
+                &#x3C;i class=&#x22;<mark id="sidebar_control_button_icon_classes" class="text-danger">menu-icon fa fa-arrow-left</mark>&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &lt;/div&gt;
 &lt;/div&gt;
 </pre>
                                         </div>
@@ -414,23 +625,65 @@
                                         <div class="show-panel-body">
                                             <h2><strong>Footer</strong></h2>
                                             <p><strong>Photon's unique CSS footer</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-success">UN-Fixed</button>
-                                                            </div>
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-default">Complex</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+<!--                                            <div class="pad-sep-20">-->
+<!--                                                <div class="row">-->
+<!--                                                    <div class="col-lg-8 col-lg-offset-2">-->
+<!--                                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">-->
+<!--                                                            <div class="btn-group" role="group">-->
+<!--                                                                <button type="button" class="btn btn-success">UN-Fixed</button>-->
+<!--                                                            </div>-->
+<!--                                                            <div class="btn-group" role="group">-->
+<!--                                                                <button type="button" class="btn btn-default">Complex</button>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+                                            <p><strong>Fixed status</strong></p>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="footer_fixed_status" class="form-radio-control" value="unfixed" checked="checked">
+                                                    UN-Fixed
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="footer_fixed_status" class="form-radio-control" value="fixed">
+                                                    Fixed
+                                                </label>
                                             </div>
                                         </div>
                                         <div class="show-panel-footer">
-                                            <pre></pre>
+<pre><span id="footer_fixed_code" class="hide">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer footer-fixed&#x22;&#x3E;
+    &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
+        &#x3C;div class=&#x22;footer-content&#x22;&#x3E;
+            &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+                &#x3C;div class=&#x22;pull-left hidden-xs&#x22;&#x3E;
+                    &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;panel-controls pull-right&#x22;&#x3E;
+                    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; id=&#x22;save-action-ft&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fa fa-check&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span&#x3E;Salveaz&#x103;&#x3C;/span&#x3E;
+                    &#x3C;/button&#x3E;
+                    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; id=&#x22;cancel-action-ft&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fa fa-close&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span&#x3E;Anuleaz&#x103;&#x3C;/span&#x3E;
+                    &#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;clearfix text-center pad-top-20 visible-xs-block&#x22;&#x3E;
+                &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</span><span id="footer_unfixed_code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
+    &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
+        &#x3C;div class=&#x22;footer-content text-center&#x22;&#x3E;
+            &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</span></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -524,11 +777,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
             $(document).ready(function() {
                 console.log('Ready, Captain!');
+
+                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
+                    updateSideBarCode();
+                });
+
+                $('input[name="footer_fixed_status"]').on('change', function() {
+                    updateFooterBarCode();
+                });
             });
         </script>
         <!-- DOCUMENT-READY:End -->

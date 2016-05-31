@@ -66,12 +66,12 @@
                                                         <br>                                                        
                                                     </li>
                                                     <li>
-                                                        <p>If you really want to get a hold of the source code, you can <a href="#">download the latest release</a> from GitHub.</p>   
+                                                        <p>If you really want to get a hold of the source code, you can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
                                                         <br>                                                     
                                                     </li>
                                                     <li>
-                                                        <p>Or clone the <a href="#">Git repository</a> by running the following command:</p>
-                                                        <pre>[sudo] git clone git@github.com:emag/photon.git</pre>
+                                                        <p>Or clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
+                                                        <pre>[sudo] git clone https://github.com/eMAGTechLabs/PhotonPowerUIKit</pre>
                                                     </li>
                                                 </ol>
                                             </div>
@@ -91,9 +91,9 @@
                                                 <ol>
                                                     <li>
                                                         <h4 class="text-primary">Based on Bootstrap 3.3.5.</h4>
-                                                            <p>PHOTON is based on the Twitter Bootstrap architecture <a href="http://getbootstrap.com/getting-started/"><u>GetBootstrap</u></a>. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!</p>
+                                                            <p>PHOTON is based on the Twitter Bootstrap architecture <a href="http://getbootstrap.com/getting-started/" target="_blank"><u>GetBootstrap</u></a>. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!</p>
                                                             <p>Aside from the elements provided by bootstrap, PHOTON comes with its own set of unique components, styling and useful plugins that you can use in your project.</p>
-                                                            <p>The fun part about PHOTON is that you can configure it however you want. Wether if it's for speed, mobile devices, lots of features or a usability unicorn.</p>
+                                                            <p>The fun part about PHOTON is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.</p>
                                                             <br>
                                                             <p><strong>Features:</strong></p>
                                                             <ol>
@@ -122,6 +122,15 @@
                                                         <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
                                                         <br>
                                                         <p><strong>Available Grunt commands:</strong></p>
+<pre>
+<code class="language-bash" data-lang="bash">
+grunt styles            - CSS distribution task
+grunt scripts           - JS distribution task
+grunt plugin_styles     - Generate plugin styles
+grunt plugin_scripts    - Generate plugin scripts
+grunt default           - Generate main styles and scripts
+</code>
+</pre>
                                                         <br>
                                                     </li>
                                                     <li>
@@ -159,16 +168,56 @@ photon/
     └── glyphicons-halflings-regular.woff2
 </code>
 </pre>
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
+                                                        <br>
                                                     </li>
                                                     <li>
                                                         <h4 class="text-primary">Precompiled files (dist)</h4>
                                                         <br>
+                                                        <ul>
+                                                            <li>css - Main style CSS files.
+                                                                <ul>
+                                                                    <li>flags - Countries flags as SVG file on 1:1 and 4:3 ratio.</li>
+                                                                    <li>fonts - Fonts files used in Photon.</li>
+                                                                    <li>icons - Icons used in Photon (created by eMag and from other libraries).</li>
+                                                                    <li>img - Images used in demo pages.</li>
+                                                                    <li>lib - Styles required by libraries used in Photon.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>js - Main JS script files.
+                                                                <ul>
+                                                                    <li>lib - Libraries' JS files.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>plugins - Plugins used in Photon (CSS and JS files).</li>
+                                                        </ul>
+                                                        <br>
                                                     </li>
                                                     <li>
                                                         <h4 class="text-primary">Photon source code (data)</h4>
+                                                        <br>
+                                                        <ul>
+                                                            <li>scripts - JS files.
+                                                                <ul>
+                                                                    <li>base - Main JS files.
+                                                                        <ul>
+                                                                            <li>custom - Custom wrappers over certain plugins.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>lib - Libraries' JS files.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>styles - LESS files.
+                                                                <ul>
+                                                                    <li>base - Main style LESS files
+                                                                        <ul>
+                                                                            <li>custom - Custom wrappers' LESS files.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>lib - Libraries' LESS files.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>plugins - Plugins used in Photon (LESS and JS files).</li>
+                                                        </ul>
                                                         <br>
                                                     </li>
                                                     <li>
@@ -178,6 +227,111 @@ photon/
                                                     <li>
                                                         <h4 class="text-primary">License</h4>
                                                         <br>
+                                                        <p>Photon is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
+
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="panel panel-success">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">You can</h4>
+                                                                    </div>
+                                                                    <div class="list-group">
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_comercial_use" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-money" aria-hidden="true"></i> Comercial Use</span>
+                                                                            <div id="license_comercial_use" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You may use the work commercially.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_modify" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-pencil" aria-hidden="true"></i> Modify</span>
+                                                                            <div id="license_modify" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You may make changes to the work.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_distribute" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-share-alt" aria-hidden="true"></i> Distribute</span>
+                                                                            <div id="license_distribute" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You may distribute the compiled code and/or source.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_sublicense" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-file-text-o" aria-hidden="true"></i> Sublicense</span>
+                                                                            <div id="license_sublicense" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You may incorporate the work into something that has a more restrictive license.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_private_use" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-lock" aria-hidden="true"></i> Private Use</span>
+                                                                            <div id="license_private_use" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You may use the work for private use.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="panel panel-danger">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">You cannot</h4>
+                                                                    </div>
+                                                                    <div class="list-group">
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_hold_liable" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hold Liable</span>
+                                                                            <div id="license_hold_liable" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    The work is provided "as is". You may not hold the author liable.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="panel panel-primary">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">You must</h4>
+                                                                    </div>
+                                                                    <div class="list-group">
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_copyright" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-copyright" aria-hidden="true"></i> Include Copyright</span>
+                                                                            <div id="license_copyright" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You must include the copyright notice in all copies or substantial uses of the work.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_include_license" aria-expanded="false">
+                                                                            <span class="list-group-item-heading"><i class="fa fa-file-text-o" aria-hidden="true"></i> Include License</span>
+                                                                            <div id="license_include_license" class="list-group-item-text collapse">
+                                                                                <br>
+                                                                                <p>
+                                                                                    You must include the license notice in all copies or substantial uses of the work.
+                                                                                </p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p>The full Photon license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
                                                     </li>
                                                 </ol>
                                             </div>
@@ -202,13 +356,12 @@ photon/
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">            
             $(document).ready(function () {
                 console.log('Ready, Captain!');
-                
-                staticNavigation(); // Requires demo_helpers.js
             });
         </script>
         <!-- DOCUMENT-READY:End -->
