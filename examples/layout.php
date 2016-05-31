@@ -508,23 +508,6 @@
                                             <h2><strong>Sidebar</strong></h2>
                                             <p><strong>Photon's unique sidebar menu.</strong></p>
                                             <p>You can use the buttons below to toggle different sidebar states.</p>
-<!--                                            <div class="pad-sep-20">-->
-<!--                                                <div class="row">-->
-<!--                                                    <div class="col-lg-8 col-lg-offset-2">-->
-<!--                                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">-->
-<!--                                                            <div class="btn-group" role="group">-->
-<!--                                                                <button type="button" class="btn btn-success">UN-Fixed</button>-->
-<!--                                                            </div>-->
-<!--                                                            <div class="btn-group" role="group">-->
-<!--                                                                <button type="button" class="btn btn-default">Visible</button>-->
-<!--                                                            </div>-->
-<!--                                                            <div class="btn-group" role="group">-->
-<!--                                                                <button type="button" class="btn btn-default">Minimized</button>-->
-<!--                                                            </div>-->
-<!--                                                        </div>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
                                             <div class="row">
                                                 <div class="col-md-3">
                                                     <p><strong>Fixed status</strong></p>
@@ -625,20 +608,6 @@
                                         <div class="show-panel-body">
                                             <h2><strong>Footer</strong></h2>
                                             <p><strong>Photon's unique CSS footer</strong></p>
-<!--                                            <div class="pad-sep-20">-->
-<!--                                                <div class="row">-->
-<!--                                                    <div class="col-lg-8 col-lg-offset-2">-->
-<!--                                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">-->
-<!--                                                            <div class="btn-group" role="group">-->
-<!--                                                                <button type="button" class="btn btn-success">UN-Fixed</button>-->
-<!--                                                            </div>-->
-<!--                                                            <div class="btn-group" role="group">-->
-<!--                                                                <button type="button" class="btn btn-default">Complex</button>-->
-<!--                                                            </div>-->
-<!--                                                        </div>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
                                             <p><strong>Fixed status</strong></p>
                                             <div class="radio">
                                                 <label>
