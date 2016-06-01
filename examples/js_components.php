@@ -297,6 +297,8 @@
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
+                demoHelpers();  //Requires demo_helpers.js
+
                 //This function is just fo sho. You don't really have to include it in your app, man.
                 function modalSizing() {
                     $('#mySmallDemoModal').on('click', function () {

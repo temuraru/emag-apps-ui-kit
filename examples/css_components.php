@@ -2583,6 +2583,8 @@
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
+                demoHelpers();  //Requires demo_helpers.js
+
                 // This script is just for demo purposes //
                 ///////////////////////////////////////////
                 var i = 1;

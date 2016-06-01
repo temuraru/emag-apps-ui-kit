@@ -89,9 +89,9 @@ function staticNavigation() {
     });
 }
 
-$(document).ready(function() {
+function demoHelpers() {
     staticNavigation();
-    $(window).bind('hashchange', function() {
+    $(window).on('hashchange', function() {
         staticNavigation();
     });
-});
+}

@@ -144,9 +144,9 @@
                 }
             });      
             $(document).ready(function () {
-                console.log('Ready, Captain!');   
-                
-                staticNavigation(); // This little old script is just for demo purposes. Chill!  
+                console.log('Ready, Captain!');
+
+                demoHelpers();  //Requires demo_helpers.js
 
                 showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
                 

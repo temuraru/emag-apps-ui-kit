@@ -115,6 +115,8 @@
             $(document).ready(function() {
                 console.log('Ready, Captain!');
 
+                demoHelpers();  //Requires demo_helpers.js
+
                 //$('#summernote1').summernote({
                 //    minHeight: 300,
                 //    maxHeight: 600

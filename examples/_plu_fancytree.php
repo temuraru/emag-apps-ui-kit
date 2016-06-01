@@ -259,7 +259,9 @@
     $(document).ready(function() {
         console.log('Ready, Captain!');
 
-        showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
+        demoHelpers();  //Requires demo_helpers.js
+
+        showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
 
         window.fancytreeContent = [{
             "key": 31,

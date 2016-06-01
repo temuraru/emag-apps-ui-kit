@@ -88,6 +88,8 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  //Requires demo_helpers.js
             });
         </script>
         <!-- DOCUMENT-READY:End -->

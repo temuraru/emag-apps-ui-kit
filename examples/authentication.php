@@ -170,6 +170,8 @@
 
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  //Requires demo_helpers.js
                
                 // This little old script is just for demo purposes. Chill!
                 $('.user-actions').on('click', function (e) {

@@ -753,6 +753,8 @@
             $(document).ready(function() {
                 console.log('Ready, Captain!');
 
+                demoHelpers();  //Requires demo_helpers.js
+
                 $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
                     updateSideBarCode();
                 });
