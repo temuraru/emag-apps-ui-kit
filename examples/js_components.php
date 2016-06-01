@@ -290,11 +290,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  //Requires demo_helpers.js
 
                 //This function is just fo sho. You don't really have to include it in your app, man.
                 function modalSizing() {

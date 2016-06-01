@@ -153,12 +153,15 @@
 
         <!--MAIN SCRIPT-->
         <script src="../dist/js/main_script.min.js"></script>
-        
+
+        <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">      
             $(document).ready(function () {
-                console.log('Ready, Captain!');                
+                console.log('Ready, Captain!');
+
+                demoHelpers();  //Requires demo_helpers.js
 
                 showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
 

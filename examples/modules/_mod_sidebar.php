@@ -2,7 +2,7 @@
     <div class="sidebar-outer">
     <ul class="sidebar-inner">
         <li class="menu-item menu-item-has-children">
-            <a href="#">
+            <a href="#" data-href="/examples/overview.php">
                 <i class="menu-icon fa fa-bolt"></i>
                 <span class="menu-text">Start</span>
             </a>
@@ -22,7 +22,7 @@
             </ul>
         </li>
         <li class="menu-item menu-item-has-children">
-            <a href="#">
+            <a href="#" data-href="/examples/layout.php">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">Layout</span>
             </a>
@@ -60,7 +60,7 @@
             </ul>
         </li>
         <li class="menu-item menu-item-has-children">
-            <a href="#">
+            <a href="#" data-href="/examples/branding.php">
                 <i class="menu-icon fa fa-dashboard"></i>
                 <span class="menu-text">Branding</span>
             </a>
@@ -92,7 +92,7 @@
             </ul>
         </li>
         <li class="menu-item menu-item-has-children">
-            <a href="#">
+            <a href="#" data-href="/examples/css_components.php">
                 <i class="menu-icon fa fa-archive"></i>
                 <span class="menu-text">CSS Components</span>
             </a>
@@ -202,7 +202,7 @@
             </ul>
         </li>
         <li class="menu-item menu-item-has-children">
-            <a href="#">
+            <a href="#" data-href="/examples/js_components.php">
                 <i class="menu-icon fa fa-archive"></i>
                 <span class="menu-text">JS Components</span>
             </a>

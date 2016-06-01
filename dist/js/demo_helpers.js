@@ -32,20 +32,66 @@ function showcasing() {
     });
 };
 
+function updateSideBarCode() {
+    var fixedStatus = $('input[name="sidebar_fixed_status"]:checked').val();
+    var expandedStatus = $('input[name="sidebar_expanded_status"]:checked').val();
+    var sidebarClasses = 'sidebar';
+    var controlButtonIconClasses = 'menu-icon fa';
+
+    if (fixedStatus == 'fixed') {
+        sidebarClasses += ' sidebar-fixed';
+    }
+
+    switch (expandedStatus) {
+        case 'expanded' :
+            controlButtonIconClasses += ' fa-arrow-left';
+            break;
+        case 'collapsed' :
+            sidebarClasses += ' sidebar-min';
+            controlButtonIconClasses += ' fa-arrow-right';
+            break;
+    }
+
+    $('#sidebar_classes').html(sidebarClasses);
+    $('#sidebar_control_button_icon_classes').html(controlButtonIconClasses);
+}
+
+function updateFooterBarCode() {
+    var fixedStatus = $('input[name="footer_fixed_status"]:checked').val();
+    switch (fixedStatus) {
+        case 'fixed' :
+            $('#footer_fixed_code').removeClass('hide');
+            $('#footer_unfixed_code').addClass('hide');
+            break;
+        case 'unfixed' :
+            $('#footer_fixed_code').addClass('hide');
+            $('#footer_unfixed_code').removeClass('hide');
+            break;
+    }
+}
+
 // This function is just for demo purposes. It controls the way the expanding sidebar menu is displayed.
 function staticNavigation() {
-    var path = window.location.pathname;
-    path = path.replace(/\/$/, "").replace('_new', '').replace('_edit', '').replace('_result', '');
-    path = decodeURIComponent(path);
+    var path = window.location.pathname + window.location.hash;
 
-    //console.log("path: " + path);
+    $("#sidebar .menu-item").removeClass('active');
 
     $("#sidebar .menu-item > a").each(function () {
         var href = $(this).attr('href');
-        console.log("menu: " + href);
-        if (path.match(href)) {
+        if (href == '#') {
+            href = $(this).attr('data-href');
+        }
+
+        if (path == href) {
             $(this).parents('.menu-item-has-children').addClass('active');
             $(this).closest('.menu-item').addClass('active');
         }
+    });
+}
+
+function demoHelpers() {
+    staticNavigation();
+    $(window).on('hashchange', function() {
+        staticNavigation();
     });
 }
