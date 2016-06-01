@@ -156,6 +156,7 @@ module.exports = function (grunt) {
             },
             frontend: {
                 src: [
+                    '<%= pkg.data_scripts%>/base/custom/mod_photonTranslations.js',
                     '<%= pkg.data_plugins %>/nprogress/js/nprogress.js',
                     '<%= pkg.data_scripts %>/base/util.bs4.js',
                     '<%= pkg.data_scripts %>/base/transition.js',
@@ -226,7 +227,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.js': '<%= pkg.data_plugins %>/selectize/js/selectize.js',
                     '<%= pkg.dist_plugins %>/inputlimiter/jQuery.inputlimiter.1.3.1.min.js': '<%= pkg.data_plugins %>/inputLimiter/js/jQuery.inputlimiter.1.3.1.js',
-                    '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js',
+                    '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : ['<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js', '<%= pkg.data_scripts%>/base/custom/mod_photonJqGrid.js'],
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.js':'<%= pkg.data_plugins %>/dropzone/js/dropzone.js',
                     '<%= pkg.dist_plugins %>/magnific/magnific.min.js':'<%= pkg.data_plugins %>/magnific/js/magnific.js',
