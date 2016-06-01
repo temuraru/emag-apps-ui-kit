@@ -36,11 +36,10 @@
             loadComplete: function () {
 
                 var table = gridOpts.table;
-                var jqGridOverlay = $("#lui_" + table.substr(1));
+                var jqGridOverlay = getJqGridOverlay();
 
                 //Make overlay background active
-                jqGridOverlay.addClass('ui-overlay');
-
+                jqGridOverlay.addClass('custom-overlay');
 
                 //Display no records message.
                 var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
@@ -62,7 +61,7 @@
                 }
 
                 //Make jqgrid overlay inactive
-                jqGridOverlay.removeClass('ui-overlay');
+                jqGridOverlay.removeClass('custom-overlay');
             },
             mergeGridComplete:true,
             gridComplete: function() {
@@ -75,6 +74,12 @@
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
+
+        function getJqGridOverlay()
+        {
+            var table = gridOpts.table;
+            return $("#lui_" + table.substr(1));
+        }
 
         if (gridOpts.mergeGridComplete && typeof(parameters) !== 'undefined' && typeof(parameters.gridComplete) !== 'undefined') {
             var defaultGridComplete = defaultParams.gridComplete;
@@ -96,6 +101,8 @@
 
         this.init = function () {
             $this.grid = $(gridOpts.table).jqGrid(gridOpts);
+            var jqGridOverlay = getJqGridOverlay();
+            jqGridOverlay.removeClass('ui-overlay').addClass('custom-overlay');
         };
     }
 
