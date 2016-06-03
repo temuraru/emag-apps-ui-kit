@@ -86,12 +86,15 @@
 
         <!--MAIN SCRIPT-->
         <script src="../dist/js/main_script.min.js"></script>
-        
+
+        <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
             $(document).ready(function() {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  //Requires demo_helpers.js
             });
         </script>
         <!-- DOCUMENT-READY:End -->

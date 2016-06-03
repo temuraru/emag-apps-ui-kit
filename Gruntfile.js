@@ -288,8 +288,6 @@ module.exports = function (grunt) {
         'csscomb:frontend',
         'cssmin:frontend',
         'concat:frontend',
-        'uglify:frontend',
-        'concat:frontend',
         'uglify:frontend'
     ]);
 };
