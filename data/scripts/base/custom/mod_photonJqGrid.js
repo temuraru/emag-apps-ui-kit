@@ -32,14 +32,16 @@
             width: 'auto',
             height: '100%',
 
-            mergeLoadComplete:true,
-            loadComplete: function () {
-
-                var table = gridOpts.table;
-                var jqGridOverlay = getJqGridOverlay();
-
-                //Make overlay background active
+            mergeOnPaging: true,
+            onPaging: function() {
+                var jqGridOverlay = _getJqGridOverlay();
                 jqGridOverlay.addClass('custom-overlay');
+            },
+
+            mergeLoadComplete: true,
+            loadComplete: function () {
+                var table = gridOpts.table;
+                var jqGridOverlay = _getJqGridOverlay();
 
                 //Display no records message.
                 var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
@@ -59,12 +61,14 @@
                     $('#'+ table.id ).removeClass('hide');
                     $('.custom-jqgrid-messages-' + table.id).remove();
                 }
-
-                //Make jqgrid overlay inactive
                 jqGridOverlay.removeClass('custom-overlay');
+
             },
             mergeGridComplete:true,
             gridComplete: function() {
+                var jqGridOverlay = _getJqGridOverlay();
+                //Make overlay background active
+                jqGridOverlay.addClass('custom-overlay');
             },
             caption: 'Listing default caption, please provide "caption" parameter',
             filterToolbar: {
@@ -75,7 +79,7 @@
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
 
-        function getJqGridOverlay()
+        function _getJqGridOverlay()
         {
             var table = gridOpts.table;
             return $("#lui_" + table.substr(1));
@@ -99,12 +103,26 @@
             }
         }
 
+        if(gridOpts.mergeOnPaging && typeof (parameters) !== 'undefined' && typeof(parameters.onPaging) !== 'undefined') {
+            var defaultOnPaging = defaultParams.onPaging;
+            var parametersOnPaging = parameters.onPaging;
+            gridOpts.onPaging = function () {
+                defaultOnPaging();
+                parametersOnPaging();
+            }
+        }
+
         this.init = function () {
             $this.grid = $(gridOpts.table).jqGrid(gridOpts);
-            var jqGridOverlay = getJqGridOverlay();
-            jqGridOverlay.removeClass('ui-overlay').addClass('custom-overlay');
+            var jqGridOverlay = _getJqGridOverlay();
+            //The overlay class should be added if data is added through ajax
+            if(gridOpts.datatype &&  gridOpts.datatype !== 'jsonstring') {
+                jqGridOverlay.removeClass('ui-overlay').addClass('custom-overlay');
+            }
         };
     }
+
+
 
     function photonAddGridError(message, gridId){
         if(gridId == undefined || gridId == ''){
