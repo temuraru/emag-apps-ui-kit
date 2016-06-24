@@ -70,11 +70,7 @@
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
             },
-            caption: 'Listing default caption, please provide "caption" parameter',
-            filterToolbar: {
-                show: false,
-                searchOperators: false
-            }
+            caption: 'Listing default caption, please provide "caption" parameter'
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
