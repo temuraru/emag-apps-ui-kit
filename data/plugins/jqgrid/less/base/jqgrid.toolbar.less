@@ -72,13 +72,25 @@ a.g-menu-item, a.soptclass, a.clearsearchclass {
   background-image: none;
 }
 .ui-overlay {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   opacity: .3;
+  cursor: wait;
+  filter: Alpha(Opacity=30); /* support: IE8 */
+  display: none;
+}
+
+.custom-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: .3;
+  cursor: wait;
   filter: Alpha(Opacity=30); /* support: IE8 */
 }
 
