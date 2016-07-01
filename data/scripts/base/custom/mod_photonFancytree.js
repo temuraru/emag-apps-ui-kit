@@ -199,7 +199,7 @@
             });
 
             $(document).keyup(function(e) {
-                if (e.keyCode == 27) { /** When ESC key it is pressed */
+                if (e.keyCode == 27 && $this.$tree) { /** When ESC key it is pressed */
 
                     //class for hiding icon for collapse
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
