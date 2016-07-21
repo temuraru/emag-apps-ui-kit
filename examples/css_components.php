@@ -1685,36 +1685,33 @@
                                             <div class="alert alert-info" role="alert"><p><i class="fa fa-info-circle fonts-up-140"></i>
                                                 The flip-switch items are based on a checkbox form-element. In order to display the flip-switch in the "on" or "off" state, make sure to add or remove the "checked" attribute from the "checkbox" input type.
                                                 </p></div>
-                                            <div class="alert alert-danger" role="alert"><p><i class="fa fa-info-circle fonts-up-140"></i>
-                                                The flipswitches are <b>not designed to display large amounts of text</b>.
-                                                </p></div>
                                             <div class="pad-sep-20 pad-top-40">
                                                 <div class="row">
                                                     <div class="col-lg-8 col-lg-offset-2 text-center">
                                                         <p>
                                                             <label class="switch switch-primary">
                                                                 <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                                                <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
                                                             <label class="switch switch-info">
                                                                 <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                                                <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
                                                             <label class="switch switch-success">
                                                                 <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                                                <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
                                                             <label class="switch switch-warning">
                                                                 <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                                                <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
                                                             <label class="switch switch-danger">
                                                                 <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                                                <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
                                                         </p>
