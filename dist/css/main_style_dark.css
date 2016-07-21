@@ -52,7 +52,7 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -1831,7 +1831,7 @@ th {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+      transform: translate(0, 0);
 
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -1911,34 +1911,34 @@ th {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      transform: rotate(90deg);
 }
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+      transform: rotate(180deg);
 }
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+      transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+      transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
+      transform: scale(1, -1);
 }
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+          filter: none;
 
   -webkit-filter: none;
 }
@@ -5533,12 +5533,12 @@ select[multiple].input-lg {
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-  touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -8081,11 +8081,11 @@ button.close {
 .modal.fade .modal-dialog {
   transition: transform .3s ease-out;
   -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
+      transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+      transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -9078,7 +9078,7 @@ button.close {
   z-index: 3;
   margin: 0 !important;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .lock-center.fixed {
   position: fixed;
@@ -9221,7 +9221,7 @@ button.close {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .color-swatches .swatch-primary {
   background-color: #337ab7;
@@ -9359,7 +9359,7 @@ button.close {
   width: auto;
   height: 100%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .dropdown-menu {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .15);
@@ -9514,7 +9514,7 @@ button.close {
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1.0;
   -ms-transform: rotate(3deg) translate(0px, -4px);
-  transform: rotate(3deg) translate(0px, -4px);
+      transform: rotate(3deg) translate(0px, -4px);
 }
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
@@ -9734,7 +9734,7 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 56px;
+  width: 42px;
   height: 26px;
   padding: 3px;
   margin: 0;
@@ -9762,27 +9762,6 @@ body {
   transition: .15s ease-out;
   transition-property: opacity background;
 }
-.switch-label:before,
-.switch-label:after {
-  position: absolute;
-  top: 50%;
-  margin-top: -.5em;
-  line-height: 1;
-  transition: inherit;
-}
-.switch-label:before {
-  right: 9px;
-  color: #aaa;
-  text-shadow: 0 1px rgba(255, 255, 255, .5);
-  content: attr(data-off);
-}
-.switch-label:after {
-  left: 9px;
-  color: white;
-  text-shadow: 0 1px rgba(0, 0, 0, .2);
-  content: attr(data-on);
-  opacity: 0;
-}
 .switch-input:checked ~ .switch-label {
   background: #47a8d8;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15), inset 0 0 3px rgba(0, 0, 0, .2);
@@ -9805,7 +9784,7 @@ body {
   transition: left .15s ease-out;
 }
 .switch-input:checked ~ .switch-handle {
-  left: 34px;
+  left: 20px;
   box-shadow: -1px 1px 5px rgba(0, 0, 0, .2);
 }
 .switch-primary > .switch-input:checked ~ .switch-label {
@@ -9922,7 +9901,7 @@ body {
   text-align: center;
   vertical-align: middle;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
@@ -9985,7 +9964,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a {
   color: #fff;
@@ -10091,7 +10070,7 @@ body {
   .sidebar.sidebar-min .sidebar-inner .menu-item a .menu-icon {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
   }
   .sidebar.sidebar-min .sidebar-inner .menu-item a .menu-text {
     position: absolute;
@@ -10107,7 +10086,7 @@ body {
     background-color: #333;
     border-radius: 2px;
     -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
   }
   .sidebar.sidebar-min .sidebar-inner .menu-item a .menu-text:before {
     position: absolute;
@@ -10118,7 +10097,7 @@ body {
     border-style: solid;
     border-width: 8px 10px 8px 0;
     -ms-transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
   }
   .sidebar.sidebar-min .sidebar-inner .menu-item a:hover .menu-text {
     display: block;
@@ -10980,7 +10959,7 @@ body {
   color: #eee;
   opacity: .1;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .modal-feedback.has-info .modal-header {
   border-top: 6px solid #55acee;
@@ -11196,9 +11175,9 @@ input[type="checkbox"].form-checkbox-control {
   border-radius: 2px;
   outline: none;
 
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
 }
 input[type="checkbox"].form-checkbox-control:hover {
   background-color: #20232b;
@@ -11228,9 +11207,9 @@ input[type="radio"].form-radio-control {
   border-radius: 100%;
   outline: none;
 
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
 }
 input[type="radio"].form-radio-control:hover {
   background-color: #20232b;
@@ -11283,7 +11262,7 @@ input[type="radio"].form-radio-control:disabled {
   background-color: #000;
   border-radius: 2px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip:after {
   position: absolute;
@@ -11300,7 +11279,7 @@ input[type="radio"].form-radio-control:disabled {
   border-style: solid;
   border-width: 15px 12px 0 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-right:before {
   top: 50%;
@@ -11308,7 +11287,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: 105%;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-right:after {
   top: 50%;
@@ -11318,7 +11297,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent #000 transparent transparent;
   border-width: 10px 12px 10px 0;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-bottom:before {
   top: 115%;
@@ -11326,7 +11305,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: 50%;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-bottom:after {
   top: auto;
@@ -11336,7 +11315,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent transparent #000 transparent;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-left:before {
   top: 50%;
@@ -11344,7 +11323,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: auto;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-left:after {
   top: 50%;
@@ -11354,7 +11333,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent transparent transparent #000;
   border-width: 10px 0 10px 12px;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip:hover,
 .info-tooltip:focus {
@@ -11475,7 +11454,7 @@ input[type="radio"].form-radio-control:disabled {
   border-style: solid;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .auth-box {
   width: 100%;
