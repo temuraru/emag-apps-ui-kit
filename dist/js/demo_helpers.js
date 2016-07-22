@@ -26,7 +26,10 @@ function showcasing() {
     $('.show-panel-example').each(function () {
         var example = $(this).find('[data-showcase="example"]').html();        
         if(example){
-            
+            var offset = escapeHtml(example).match(/^\s+/)[0].length;
+            code = escapeHtml(example).split('\n').map(function (line) {
+                return line.slice(offset - 1);
+            });
             $(this).find('[data-showcase="code"]').append(code.join('\n'));
         }
     });
