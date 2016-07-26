@@ -70,7 +70,8 @@
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
             },
-            caption: 'Listing default caption, please provide "caption" parameter'
+            caption: 'Listing default caption, please provide "caption" parameter',
+            useCustomColumnChooser: false
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
@@ -81,31 +82,16 @@
             return $("#lui_" + table.substr(1));
         }
 
-        if (gridOpts.mergeGridComplete && typeof(parameters) !== 'undefined' && typeof(parameters.gridComplete) !== 'undefined') {
-            var defaultGridComplete = defaultParams.gridComplete;
-            var parametersGridComplete = parameters.gridComplete;
-            gridOpts.gridComplete = function () {
-                defaultGridComplete();
-                parametersGridComplete();
-            }
+        if(_hasCustomCallback('mergeGridComplete', 'gridComplete')) {
+            _mergeCustomCallback('gridComplete');
         }
 
-        if (gridOpts.mergeLoadComplete && typeof(parameters) !== 'undefined' && typeof(parameters.loadComplete) !== 'undefined') {
-            var defaultLoadComplete = defaultParams.loadComplete;
-            var parametersLoadComplete = parameters.loadComplete;
-            gridOpts.loadComplete = function () {
-                defaultLoadComplete();
-                parametersLoadComplete();
-            }
+        if(_hasCustomCallback('mergeLoadComplete', 'loadComplete')) {
+            _mergeCustomCallback('loadComplete');
         }
 
-        if(gridOpts.mergeOnPaging && typeof (parameters) !== 'undefined' && typeof(parameters.onPaging) !== 'undefined') {
-            var defaultOnPaging = defaultParams.onPaging;
-            var parametersOnPaging = parameters.onPaging;
-            gridOpts.onPaging = function () {
-                defaultOnPaging();
-                parametersOnPaging();
-            }
+        if(_hasCustomCallback('mergeOnPaging', 'onPaging')) {
+            _mergeCustomCallback('onPaging');
         }
 
         this.init = function () {
@@ -116,8 +102,20 @@
                 jqGridOverlay.removeClass('ui-overlay').addClass('custom-overlay');
             }
         };
-    }
 
+        function _mergeCustomCallback(callback) {
+            var defaultCallback = defaultParams[callback];
+            var customCallback = parameters[callback];
+            gridOpts[callback] = function () {
+                defaultCallback();
+                customCallback($this);
+            }
+        }
+
+        function _hasCustomCallback(isCallbackAvailable, callback) {
+            return gridOpts[isCallbackAvailable] && typeof (parameters) !== 'undefined' && typeof(parameters[callback]) !== 'undefined';
+        }
+    }
 
 
     function photonAddGridError(message, gridId){
