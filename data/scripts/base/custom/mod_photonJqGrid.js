@@ -8,6 +8,12 @@
 
         var $this = this;
 
+        var customCallbacks = {
+            'mergeGridComplete': 'gridComplete',
+            'mergeLoadComplete': 'loadComplete',
+            'mergeOnPaging': 'onPaging'
+        };
+
         var defaultParams = {
             //For options details check here: http://www.trirand.com/jqgridwiki/doku.php?id=wiki:options
             table: '#grid-table',
@@ -82,23 +88,17 @@
             return $("#lui_" + table.substr(1));
         }
 
-        if(_hasCustomCallback('mergeGridComplete', 'gridComplete')) {
-            _mergeCustomCallback('gridComplete');
-        }
-
-        if(_hasCustomCallback('mergeLoadComplete', 'loadComplete')) {
-            _mergeCustomCallback('loadComplete');
-        }
-
-        if(_hasCustomCallback('mergeOnPaging', 'onPaging')) {
-            _mergeCustomCallback('onPaging');
+        for(var mergeCallbackOption in customCallbacks) {
+            if(_hasCustomCallback(mergeCallbackOption, customCallbacks[mergeCallbackOption])) {
+                _mergeCustomCallback(customCallbacks[mergeCallbackOption]);
+            }
         }
 
         this.init = function () {
             $this.grid = $(gridOpts.table).jqGrid(gridOpts);
             var jqGridOverlay = _getJqGridOverlay();
             //The overlay class should be added if data is added through ajax
-            if(gridOpts.datatype &&  gridOpts.datatype !== 'jsonstring') {
+            if(gridOpts.datatype && gridOpts.datatype !== 'jsonstring') {
                 jqGridOverlay.removeClass('ui-overlay').addClass('custom-overlay');
             }
         };
@@ -108,12 +108,12 @@
             var customCallback = parameters[callback];
             gridOpts[callback] = function () {
                 defaultCallback();
-                customCallback($this);
+                customCallback(gridOpts.table);
             }
         }
 
-        function _hasCustomCallback(isCallbackAvailable, callback) {
-            return gridOpts[isCallbackAvailable] && typeof (parameters) !== 'undefined' && typeof(parameters[callback]) !== 'undefined';
+        function _hasCustomCallback(mergeCallbackOption, callback) {
+            return gridOpts[mergeCallbackOption] && typeof (parameters) !== 'undefined' && typeof(parameters[callback]) !== 'undefined';
         }
     }
 
