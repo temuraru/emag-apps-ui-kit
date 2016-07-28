@@ -109,8 +109,8 @@
                     var self = this;
 
                     var modalId = self[0].id + '_modal';
-                    var selectContainer = '<div class="form-group" id="colchooser_' + this[0].p.id + '">' +
-                        '<select multiple="multiple" class="form-control" id="select_' + this[0].p.id + '">' +
+                    var selectContainer = '<div class="form-group" id="colchooser_' + self[0].p.id + '">' +
+                        '<select multiple="multiple" class="form-control" id="select_' + self[0].p.id + '">' +
                         '</select>' +
                         '</div>';
                     var $body = $('body');
