@@ -8,6 +8,12 @@
 
         var $this = this;
 
+        var customCallbacks = {
+            'mergeGridComplete': 'gridComplete',
+            'mergeLoadComplete': 'loadComplete',
+            'mergeOnPaging': 'onPaging'
+        };
+
         var defaultParams = {
             //For options details check here: http://www.trirand.com/jqgridwiki/doku.php?id=wiki:options
             table: '#grid-table',
@@ -70,7 +76,9 @@
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
             },
-            caption: 'Listing default caption, please provide "caption" parameter'
+            caption: 'Listing default caption, please provide "caption" parameter',
+            useCustomColumnChooser: false,
+            columnChooserOptions: {}
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
@@ -81,43 +89,131 @@
             return $("#lui_" + table.substr(1));
         }
 
-        if (gridOpts.mergeGridComplete && typeof(parameters) !== 'undefined' && typeof(parameters.gridComplete) !== 'undefined') {
-            var defaultGridComplete = defaultParams.gridComplete;
-            var parametersGridComplete = parameters.gridComplete;
-            gridOpts.gridComplete = function () {
-                defaultGridComplete();
-                parametersGridComplete();
+        for(var mergeCallbackOption in customCallbacks) {
+            if(customCallbacks.hasOwnProperty(mergeCallbackOption) && _hasCustomCallback(mergeCallbackOption, customCallbacks[mergeCallbackOption])) {
+                _mergeCustomCallback(customCallbacks[mergeCallbackOption]);
             }
         }
 
-        if (gridOpts.mergeLoadComplete && typeof(parameters) !== 'undefined' && typeof(parameters.loadComplete) !== 'undefined') {
-            var defaultLoadComplete = defaultParams.loadComplete;
-            var parametersLoadComplete = parameters.loadComplete;
-            gridOpts.loadComplete = function () {
-                defaultLoadComplete();
-                parametersLoadComplete();
-            }
-        }
+        function _initCustomColumnChooser() {
 
-        if(gridOpts.mergeOnPaging && typeof (parameters) !== 'undefined' && typeof(parameters.onPaging) !== 'undefined') {
-            var defaultOnPaging = defaultParams.onPaging;
-            var parametersOnPaging = parameters.onPaging;
-            gridOpts.onPaging = function () {
-                defaultOnPaging();
-                parametersOnPaging();
-            }
+            $.jgrid.extend({
+                columnChooser: function() {
+
+                    var defaultOptions = {
+                        title: 'Choose columns',
+                        saveBtnLabel: 'Save',
+                        cancelBtnLabel: 'Cancel'
+                    };
+                    var opts = $.extend(defaultOptions, gridOpts.columnChooserOptions);
+                    var self = this;
+
+                    var modalId = self[0].id + '_modal';
+                    var selectContainer = '<div class="form-group" id="colchooser_' + self[0].p.id + '">' +
+                        '<select multiple="multiple" class="form-control" id="select_' + self[0].p.id + '">' +
+                        '</select>' +
+                        '</div>';
+                    var $body = $('body');
+                    var $modal = _getColumnChooserModal();
+                    _initColumnChooserEvents();
+
+                    function _initColumnChooserEvents() {
+                        $body.off('click', '.col-ch-save-btn');
+                        $body.on('click','.col-ch-save-btn', function() {
+                            var colModel = self.jqGrid('getGridParam', 'colModel');
+                            var select = $('#select_' + self[0].p.id);
+
+                            select.find('option').each(function(i) {
+                                if (this.selected) {
+                                    self.jqGrid('showCol', colModel[this.value].name);
+                                } else {
+                                    self.jqGrid('hideCol', colModel[this.value].name);
+                                }
+                            });
+                            photonResizeGrid();
+                        });
+                        $(window).on(self[0].id + '.column.chooser.show', function() {
+                            $modal.show();
+                            hideBodyOverlayer();
+                            activateDraggableForModal($('#' + modalId));
+                            _insertOptionValuesToModal();
+                        });
+                        $(window).on(self[0].id + '.column.chooser.hide', function() {
+                            $modal.hide();
+                        });
+                    }
+
+                    function _getColumnChooserModal() {
+
+                        return new PhotonModal({
+                            id: modalId,
+                            title: opts.title,
+                            content: selectContainer,
+                            size: 'small',
+                            type: 'preview',
+                            recreateOnShow: false,
+                            buttons: {
+                                save: {
+                                    label: opts.saveBtnLabel,
+                                    class: 'btn-success col-ch-save-btn',
+                                    icon: 'fa fa-check',
+                                    closeModal: true
+                                },
+                                cancel: {
+                                    label: opts.cancelBtnLabel,
+                                    class: 'col-ch-cancel-btn',
+                                    icon: 'fa fa-times',
+                                    closeModal: true
+                                }
+                            }});
+                    }
+
+                    function _insertOptionValuesToModal() {
+                        var select = $('#select_' + self[0].p.id);
+                        var colModel = self.jqGrid('getGridParam', 'colModel');
+                        var colNames = self.jqGrid('getGridParam', 'colNames');
+                        var colMap = {}, fixedCols = [];
+                        select.empty();
+                        $.each(colModel, function(i) {
+                            colMap[this.name] = i;
+                            if (this.hidedlg) {
+                                if (!this.hidden) {
+                                    fixedCols.push(i);
+                                }
+                                return;
+                            }
+                            select.append("<option value='" + i + "' " + (this.hidden? "" : "selected='selected'") + ">" + colNames[i] + "</option>");
+                        });
+                    }
+                }
+            });
         }
 
         this.init = function () {
             $this.grid = $(gridOpts.table).jqGrid(gridOpts);
             var jqGridOverlay = _getJqGridOverlay();
             //The overlay class should be added if data is added through ajax
-            if(gridOpts.datatype &&  gridOpts.datatype !== 'jsonstring') {
+            if(gridOpts.datatype && gridOpts.datatype !== 'jsonstring') {
                 jqGridOverlay.removeClass('ui-overlay').addClass('custom-overlay');
             }
+            if(gridOpts.useCustomColumnChooser) {
+                _initCustomColumnChooser();
+            }
         };
-    }
 
+        function _mergeCustomCallback(callback) {
+            var defaultCallback = defaultParams[callback];
+            var customCallback = parameters[callback];
+            gridOpts[callback] = function () {
+                defaultCallback();
+                customCallback(gridOpts.table);
+            }
+        }
+
+        function _hasCustomCallback(mergeCallbackOption, callback) {
+            return gridOpts[mergeCallbackOption] && typeof (parameters) !== 'undefined' && typeof(parameters[callback]) !== 'undefined';
+        }
+    }
 
 
     function photonAddGridError(message, gridId){
