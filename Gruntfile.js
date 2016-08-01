@@ -172,6 +172,7 @@ module.exports = function (grunt) {
                     '<%= pkg.data_scripts %>/base/tab.js',
                     '<%= pkg.data_scripts %>/base/affix.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_sidebar.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_photonDataFormatter.js',
                     '<%= pkg.data_plugins%>/notify/js/bootstrap-notify.js',
                     '<%= pkg.data_plugins%>/blockui/js/jquery.blockUI.2.70.0.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonModal.js',
