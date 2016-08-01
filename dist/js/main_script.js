@@ -3284,8 +3284,6 @@ var Popover = (function ($) {
         /**
          * Not Available Formatter
          * @param item
-         * @param options
-         * @param rowObject
          * @return {string}
          */
         this.notAvailable = function (item) {
@@ -3301,8 +3299,6 @@ var Popover = (function ($) {
         /**
          * DateTime Formatter
          * @param item
-         * @param options
-         * @param rowObject
          * @return {string}
          */
         this.dateTime = function (item) {
@@ -3312,8 +3308,6 @@ var Popover = (function ($) {
         /**
          * Date Formatter
          * @param item
-         * @param options
-         * @param rowObject
          * @return {string}
          */
         this.date = function (item) {
@@ -3323,8 +3317,6 @@ var Popover = (function ($) {
         /**
          * Time Formatter
          * @param item
-         * @param options
-         * @param rowObject
          * @return {string}
          */
         this.time = function (item) {
@@ -3334,8 +3326,6 @@ var Popover = (function ($) {
         /**
          * Id Formatter
          * @param item
-         * @param options
-         * @param rowObject
          * @returns {string}
          */
         this.id = function (item) {
@@ -3351,8 +3341,6 @@ var Popover = (function ($) {
         /**
          * Cell UserEmail Formatter
          * @param item
-         * @param options
-         * @param rowObject
          * @return {string}
          */
         this.userEmail = function (item) {
@@ -3390,12 +3378,13 @@ var Popover = (function ($) {
          */
         this.country = function (item, options, rowObject) {
             var i = getItemStatus(item);
-            var r = getItemStatus(rowObject);
-            var rCountryCode = getItemStatus(rowObject.countryCode);
 
             if (i.hasNoValue || i.isNumber) {
                 return self.notAvailable();
             }
+
+            var r = getItemStatus(rowObject);
+            var rCountryCode = getItemStatus(rowObject.countryCode);
 
             if (r.hasNoValue || rCountryCode.hasNoValue) {
                 if (i.isJson) {
@@ -3420,7 +3409,8 @@ var Popover = (function ($) {
                 isJson: isJson(item),
                 isObject: ( Object.prototype.toString.call(item) === '[object Object]' ),
                 isString: ( typeof(item) == 'string' ),
-                isArray: ( item instanceof Array )
+                isArray: ( item instanceof Array ),
+                isDateTimeArray: ( item instanceof Array && (item.length == 1 || item.length == 2) )
             };
         };
 
@@ -3445,42 +3435,38 @@ var Popover = (function ($) {
          * @return {string}
          */
         function dateTimeFormatter(item, type) {
-            var pdf = PhotonDataFormatter;
+            if ($.inArray(type, ['datetime', 'date', 'time']) == -1) {
+                return item;
+            }
 
-            if ($.inArray(type, ['datetime', 'date', 'time']) > -1) {
-                var i = getItemStatus(item);
+            var i = getItemStatus(item);
 
-                if (i.hasNoValue || i.isNumber) {
-                    return self.notAvailable();
+            if (i.hasNoValue || i.isNumber) {
+                return self.notAvailable();
+            }
+
+            if ((i.isString && !i.isJson) || (i.isArray && i.isDateTimeArray)) {
+                var dateTimeArray = item;
+                if (i.isString) {
+                    dateTimeArray = item.split(' ');
                 }
 
-                if ((i.isString && !i.isJson) || (i.isArray && (item.length == 1 || item.length == 2))) {
-                    var dateTimeArray = item;
-                    if (i.isString) {
-                        if (type == 'datetime') {
-                            dateTimeArray = item.split(' ');
-                        } else {
-                            dateTimeArray = [item];
-                        }
-                    }
+                if (type == 'datetime') {
+                    return dateTimeFormatterString({date: dateTimeArray[0], time: dateTimeArray[1]}, type);
+                } else {
+                    var dateOrTime = {};
+                    dateOrTime[type] = dateTimeArray[0];
+                    return dateTimeFormatterString(dateOrTime, type);
+                }
+            }
 
-                    if (type == 'datetime') {
-                        return dateTimeFormatterString({date: dateTimeArray[0], time: dateTimeArray[1]}, type);
-                    } else {
-                        var dateOrTime = {};
-                        dateOrTime[type] = dateTimeArray[0];
-                        return dateTimeFormatterString(dateOrTime, type);
-                    }
+            if (i.isJson || i.isObject) {
+                var dateTimeObject = item;
+                if (i.isJson) {
+                    dateTimeObject = JSON.parse(item);
                 }
 
-                if (i.isJson || i.isObject) {
-                    var dateTimeObject = item;
-                    if (i.isJson) {
-                        dateTimeObject = JSON.parse(item);
-                    }
-
-                    return dateTimeFormatterString(dateTimeObject, type);
-                }
+                return dateTimeFormatterString(dateTimeObject, type);
             }
 
             return item;
