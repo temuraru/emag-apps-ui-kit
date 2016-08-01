@@ -176,7 +176,6 @@ $(document).ready(function() {
 &lt;div id="grid_with_formatter_pager"&gt;&lt;/div&gt;
                                         </code>
                                     </pre>
-
                                     <b>Javascript</b>
                                     <pre class="language-javascript">
                                         <code class="language-javascript" data-showcase="code">
