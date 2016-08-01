@@ -49,15 +49,15 @@
                         </div>
                     </div>
                 </div>
-                <section id="summernoteStandard" class="pad-top-20">
+                <section id="jqgridStandard" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
                                     <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQgrid Documentation</a></p>
 
-                                    <table id="grid-table" class="table table-bordered"></table>
-                                    <div id="grid-pager"></div>
+                                    <table id="grid_table" class="table table-bordered"></table>
+                                    <div id="grid_pager"></div>
                                 </div>
                                 <div class="show-panel-footer">
                                     <!-- @TODO make a function to remove space and reuse the code from examples. -->
@@ -79,8 +79,8 @@
                                     <b>HTML</b>
                                     <pre class="language-html">
                                         <code class="language-html">
-&lt;table id="grid-table" class="table table-bordered"&gt;&lt;/table&gt;
-&lt;div id="grid-pager"&gt;&lt;/div&gt;
+&lt;table id="grid_table" class="table table-bordered"&gt;&lt;/table&gt;
+&lt;div id="grid_pager"&gt;&lt;/div&gt;
                                         </code>
                                     </pre>
 
@@ -89,11 +89,32 @@
                                         <code class="language-javascript" data-showcase="code">
 $(document).ready(function() {
 
+    var actions =
+        '&lt;div class="btn-group">' +
+            '&lt;button type="button" class="btn btn-sm btn-default">' +
+                '&lt;i class="fa fa-trash text-danger">&lt;/i>' +
+                '&lt;span class="sr-only">Delete&lt;/span>' +
+            '&lt;/button>' +
+        '&lt;/div>';
+
+    var data = {
+        'page': '1',
+        'records': '6',
+        'rows': [
+            { 'name': 'Lorem ipsum dolor sit amet', 'status': "&lt;span class='label label-success'>Live&lt;/span>", 'platform': 'google.ro', 'products': '0', 'actions': actions },
+            { 'name': 'Name', 'status': "&lt;span class='label label-success'>Live&lt;/span>", 'platform': 'google.ro', 'products': '23.232', 'actions': actions },
+            { 'name': 'Name', 'status': "&lt;span class='label label-success'>Live&lt;/span>", 'platform': 'google.ro', 'products': '560.032', 'actions': actions },
+            { 'name': 'Name', 'status': "&lt;span class='label label-default'>Inactive&lt;/span>", 'platform': 'google.hu', 'products': '88.932', 'actions': actions },
+            { 'name': 'Name', 'status': "&lt;span class='label label-default'>Inactive&lt;/span>", 'platform': 'google.bg', 'products': '76.999', 'actions': actions },
+            { 'name': 'Name', 'status': "&lt;span class='label label-default'>Inactive&lt;/span>", 'platform': 'google.bg', 'products': '76.999', 'actions': actions }
+        ]
+    };
+
     var listingParameters = {
-        table: '#grid-table',
-        pager: '#grid-pager',
-        datatype: "jsonstring",
-        caption: "Listing caption",
+        table: '#grid_table',
+        pager: '#grid_pager',
+        datatype: 'jsonstring',
+        caption: 'Listing caption',
         datastr: data,
         colNames: [
         'Name',
@@ -113,27 +134,6 @@ $(document).ready(function() {
 
     new PhotonJqGrid(listingParameters).init();
 
-    var actions =
-    '&lt;div class="btn-group">' +
-        '&lt;button type="button" class="btn btn-sm btn-default">' +
-            '&lt;i class="fa fa-trash text-danger">&lt;/i>' +
-            '&lt;span class="sr-only">Delete&lt;/span>' +
-        '&lt;/button>' +
-    '&lt;/div>';
-
-    var data = {
-        "page": "1",
-        "records": "6",
-        "rows": [
-            { "name": 'Lorem ipsum dolor sit amet', "status": "&lt;span class='label label-success'>Live&lt;/span>", "platform": 'google.ro',"products": '0',"actions": actions},
-            { "name": 'Name', "status": "&lt;span class='label label-success'>Live&lt;/span>", "platform": 'google.ro',"products": '23.232',"actions": actions},
-            { "name": 'Name', "status": "&lt;span class='label label-success'>Live&lt;/span>", "platform": 'google.ro',"products": '560.032',"actions": actions},
-            { "name": 'Name', "status": "&lt;span class='label label-default'>Inactive&lt;/span>", "platform": 'google.hu',"products": '88.932',"actions": actions},
-            { "name": 'Name', "status": "&lt;span class='label label-default'>Inactive&lt;/span>", "platform": 'google.bg',"products": '76.999',"actions": actions},
-            { "name": 'Name', "status": "&lt;span class='label label-default'>Inactive&lt;/span>", "platform": 'google.bg',"products": '76.999',"actions": actions}
-        ]
-    };
-
 });
                                         </code>
                                     </pre>
@@ -141,7 +141,144 @@ $(document).ready(function() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> <!-- #jqgridStandard -->
+
+                <section id="jqgridWithFormmaters" class="pad-top-20">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="show-panel show-panel-example">
+                                <div class="show-panel-body">
+                                    <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQgrid Documentation</a></p>
+
+                                    <table id="grid_with_formatter_table" class="table table-bordered"></table>
+                                    <div id="grid_with_formatter_pager"></div>
+                                </div>
+                                <div class="show-panel-footer">
+                                    <b>Include CSS</b>
+                                    <pre class="language-html">
+                                        <code class="language-html">
+&lt;link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+                                        </code>
+                                    </pre>
+                                    <b>Include JS</b>
+                                    <pre class="language-html">
+                                        <code class="language-html">
+&lt;script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js">&lt;/script>
+&lt;script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js">&lt;/script>
+&lt;script src="../data/scripts/base/custom/mod_photonTranslations.js">&lt;/script>
+&lt;script src="../data/scripts/base/custom/mod_photonJqGrid.js">&lt;/script>
+                                        </code>
+                                    </pre>
+                                    <b>HTML</b>
+                                    <pre class="language-html">
+                                        <code class="language-html">
+&lt;table id="grid_with_formatter_table" class="table table-bordered"&gt;&lt;/table&gt;
+&lt;div id="grid_with_formatter_pager"&gt;&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                    <b>Javascript</b>
+                                    <pre class="language-javascript">
+                                        <code class="language-javascript" data-showcase="code">
+function getListingWithFormatterDummyData() {
+    var data = {
+        'page': '1',
+        'records': '6',
+        'rows': [
+            {
+                'id': '0',
+                'notAvailable': 'String value',
+                'dateTime': '2016-07-29 11:53:59',
+                'date': '2016-07-29',
+                'time': '11:53:59',
+                'userEmail': 'john.doe@emag.ro',
+                'country': 'RO',
+                'countryCode': 'ro'
+            },
+            {
+                'id': 1,
+                'notAvailable': '',
+                'dateTime': ['2016-07-29', '11:53:59'],
+                'date': ['2016-07-29'],
+                'time': ['11:53:59'],
+                'userEmail': '{"email": "john.doe@emag.ro"}',
+                'country': '{"country": "RO", "countryCode": "ro"}'
+            },
+            {
+                'id': null,
+                'notAvailable': null,
+                'dateTime': '{"date": "2016-07-29", "time": "11:53:59"}',
+                'date': '{"date": "2016-07-29"}',
+                'time': '{"time": "11:53:59"}',
+                'userEmail': '{"user": "John Doe","email": "john.doe@emag.ro"}',
+                'country': '{"country": "GB", "countryCode": "gb"}'
+            },
+            {
+                /** 'id': 3, */
+                /** 'notAvailable': 'String value', */
+                /** 'dateTime': '2016-07-29 11:53:59', */
+                /** 'date': '2016-07-29', */
+                /** 'time': '11:53:59', */
+                /** 'userEmail': 'john.doe@emag.ro', */
+                /** 'country': 'RO' */
+            },
+            {
+                'id': 4,
+                'notAvailable': ['array val 1', 'array val 2'],
+                'dateTime': {date: '2016-07-29', time: '11:53:59'},
+                'date': {date: '2016-07-29'},
+                'time': {time: '11:53:59'},
+                'userEmail': {displayname: 'John Doe', email: 'john.doe@emag.ro'},
+                'country': {country: 'RO', countryCode: 'ro'}
+            },
+            {
+                'id': 5,
+                'notAvailable': 1024,
+                'dateTime': 1024,
+                'date': 1024,
+                'time': 1024,
+                'userEmail': 1024,
+                'country': 1024
+            }
+        ]
+    };
+
+    return data;
+}
+
+var listingWithFormatterParameters = {
+    table: '#grid_with_formatter_table',
+    pager: '#grid_with_formatter_pager',
+    datatype: 'jsonstring',
+    caption: 'jqGrid with data formatters',
+    datastr: getListingWithFormatterDummyData(),
+    colNames: [
+        'id',
+        'notAvailable',
+        'dateTime',
+        'date',
+        'time',
+        'userEmail',
+        'country'
+    ],
+    colModel: [
+        {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
+        {name: 'notAvailable', index: 'notAvailable', sortable: false, width: 3, formatter: PhotonDataFormatter.notAvailable },
+        {name: 'dateTime', index: 'dateTime', sortable: false, width: 3, formatter: PhotonDataFormatter.dateTime },
+        {name: 'date', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.date },
+        {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
+        {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
+        {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
+    ]
+};
+
+new PhotonJqGrid(listingWithFormatterParameters).init();
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- #jqgridWithFormmaters -->
             </div>
         </div>
         <!-- CONTENT:End -->
@@ -171,6 +308,7 @@ $(document).ready(function() {
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
 <script src="../data/scripts/base/custom/mod_photonTranslations.js"></script>
+<script src="../data/scripts/base/custom/mod_photonDataFormatter.js"></script>
 <script src="../data/scripts/base/custom/mod_photonJqGrid.js"></script>
 
 <script src="../dist/js/main_script.min.js"></script>
@@ -189,8 +327,8 @@ $(document).ready(function() {
 
         function getListingDummyData() {
 
-            var statusLive = "<span class='label label-success'>Live</span>";
-            var statusInactive = "<span class='label label-default'>Inactive</span>";
+            var statusLive = '<span class="label label-success">Live</span>';
+            var statusInactive = '<span class="label label-default">Inactive</span>';
             var actions =
                 '<div class="btn-group">' +
                     '<button type="button" class="btn btn-sm btn-default">' +
@@ -200,25 +338,25 @@ $(document).ready(function() {
                 '</div>';
 
             var data = {
-                "page": "1",
-                "records": "6",
-                "rows": [
-                    { "name": 'Lorem ipsum dolor sit amet', "status": statusLive, "platform": 'google.ro',"products": '0',"actions": actions},
-                    { "name": 'Name', "status": statusInactive, "platform": 'google.ro',"products": '23.232',"actions": actions},
-                    { "name": 'Name', "status": statusInactive, "platform": 'google.ro',"products": '560.032',"actions": actions},
-                    { "name": 'Name', "status": statusLive, "platform": 'google.hu',"products": '88.932',"actions": actions},
-                    { "name": 'Name', "status": statusLive, "platform": 'google.bg',"products": '76.999',"actions": actions},
-                    { "name": 'Name', "status": statusLive, "platform": 'google.bg',"products": '76.999',"actions": actions}
+                'page': '1',
+                'records': '6',
+                'rows': [
+                    { 'name': 'Lorem ipsum dolor sit amet', 'status': statusLive, 'platform': 'google.ro', 'products': '0', 'actions': actions },
+                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '23.232', 'actions': actions },
+                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '560.032', 'actions': actions },
+                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.hu', 'products': '88.932', 'actions': actions },
+                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions },
+                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions }
                 ]
             };
             return data;
         }
 
         var listingParameters = {
-            table: '#grid-table',
-            pager: '#grid-pager',
-            datatype: "jsonstring",
-            caption: "Listing caption",
+            table: '#grid_table',
+            pager: '#grid_pager',
+            datatype: 'jsonstring',
+            caption: 'Listing caption',
             datastr: getListingDummyData(),
             colNames: [
                 'Name',
@@ -237,6 +375,100 @@ $(document).ready(function() {
         };
 
         new PhotonJqGrid(listingParameters).init();
+
+        function getListingWithFormatterDummyData() {
+            var data = {
+                'page': '1',
+                'records': '6',
+                'rows': [
+                    {
+                        'id': '0',
+                        'notAvailable': 'String value',
+                        'dateTime': '2016-07-29 11:53:59',
+                        'date': '2016-07-29',
+                        'time': '11:53:59',
+                        'userEmail': 'john.doe@emag.ro',
+                        'country': 'RO',
+                        'countryCode': 'ro'
+                    },
+                    {
+                        'id': 1,
+                        'notAvailable': '',
+                        'dateTime': ['2016-07-29', '11:53:59'],
+                        'date': ['2016-07-29'],
+                        'time': ['11:53:59'],
+                        'userEmail': '{"email": "john.doe@emag.ro"}',
+                        'country': '{"country": "RO", "countryCode": "ro"}'
+                    },
+                    {
+                        'id': null,
+                        'notAvailable': null,
+                        'dateTime': '{"date": "2016-07-29", "time": "11:53:59"}',
+                        'date': '{"date": "2016-07-29"}',
+                        'time': '{"time": "11:53:59"}',
+                        'userEmail': '{"user": "John Doe","email": "john.doe@emag.ro"}',
+                        'country': '{"country": "GB", "countryCode": "gb"}'
+                    },
+                    {
+                        /** 'id': 3, */
+                        /** 'notAvailable': 'String value', */
+                        /** 'dateTime': '2016-07-29 11:53:59', */
+                        /** 'date': '2016-07-29', */
+                        /** 'time': '11:53:59', */
+                        /** 'userEmail': 'john.doe@emag.ro', */
+                        /** 'country': 'RO' */
+                    },
+                    {
+                        'id': 4,
+                        'notAvailable': ['array val 1', 'array val 2'],
+                        'dateTime': {date: '2016-07-29', time: '11:53:59'},
+                        'date': {date: '2016-07-29'},
+                        'time': {time: '11:53:59'},
+                        'userEmail': {displayname: 'John Doe', email: 'john.doe@emag.ro'},
+                        'country': {country: 'RO', countryCode: 'ro'}
+                    },
+                    {
+                        'id': 5,
+                        'notAvailable': 1024,
+                        'dateTime': 1024,
+                        'date': 1024,
+                        'time': 1024,
+                        'userEmail': 1024,
+                        'country': 1024
+                    }
+                ]
+            };
+
+            return data;
+        }
+
+        var listingWithFormatterParameters = {
+            table: '#grid_with_formatter_table',
+            pager: '#grid_with_formatter_pager',
+            datatype: 'jsonstring',
+            caption: 'jqGrid with data formatters',
+            datastr: getListingWithFormatterDummyData(),
+            colNames: [
+                'id',
+                'notAvailable',
+                'dateTime',
+                'date',
+                'time',
+                'userEmail',
+                'country'
+            ],
+            colModel: [
+                {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
+                {name: 'notAvailable', index: 'notAvailable', sortable: false, width: 3, formatter: PhotonDataFormatter.notAvailable },
+                {name: 'dateTime', index: 'dateTime', sortable: false, width: 3, formatter: PhotonDataFormatter.dateTime },
+                {name: 'date', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.date },
+                {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
+                {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
+                {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
+            ]
+        };
+
+        new PhotonJqGrid(listingWithFormatterParameters).init();
 
     });
 </script>
