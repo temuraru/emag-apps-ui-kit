@@ -180,7 +180,99 @@ $(document).ready(function() {
                                     <b>Javascript</b>
                                     <pre class="language-javascript">
                                         <code class="language-javascript" data-showcase="code">
+function getListingWithFormatterDummyData() {
+    var data = {
+        'page': '1',
+        'records': '6',
+        'rows': [
+            {
+                'id': '0',
+                'notAvailable': 'String value',
+                'dateTime': '2016-07-29 11:53:59',
+                'date': '2016-07-29',
+                'time': '11:53:59',
+                'userEmail': 'john.doe@emag.ro',
+                'country': 'RO',
+                'countryCode': 'ro'
+            },
+            {
+                'id': 1,
+                'notAvailable': '',
+                'dateTime': ['2016-07-29', '11:53:59'],
+                'date': ['2016-07-29'],
+                'time': ['11:53:59'],
+                'userEmail': '{"email": "john.doe@emag.ro"}',
+                'country': '{"country": "RO", "countryCode": "ro"}'
+            },
+            {
+                'id': null,
+                'notAvailable': null,
+                'dateTime': '{"date": "2016-07-29", "time": "11:53:59"}',
+                'date': '{"date": "2016-07-29"}',
+                'time': '{"time": "11:53:59"}',
+                'userEmail': '{"user": "John Doe","email": "john.doe@emag.ro"}',
+                'country': '{"country": "GB", "countryCode": "gb"}'
+            },
+            {
+                /** 'id': 3, */
+                /** 'notAvailable': 'String value', */
+                /** 'dateTime': '2016-07-29 11:53:59', */
+                /** 'date': '2016-07-29', */
+                /** 'time': '11:53:59', */
+                /** 'userEmail': 'john.doe@emag.ro', */
+                /** 'country': 'RO' */
+            },
+            {
+                'id': 4,
+                'notAvailable': ['array val 1', 'array val 2'],
+                'dateTime': {date: '2016-07-29', time: '11:53:59'},
+                'date': {date: '2016-07-29'},
+                'time': {time: '11:53:59'},
+                'userEmail': {displayname: 'John Doe', email: 'john.doe@emag.ro'},
+                'country': {country: 'RO', countryCode: 'ro'}
+            },
+            {
+                'id': 5,
+                'notAvailable': 1024,
+                'dateTime': 1024,
+                'date': 1024,
+                'time': 1024,
+                'userEmail': 1024,
+                'country': 1024
+            }
+        ]
+    };
 
+    return data;
+}
+
+var listingWithFormatterParameters = {
+    table: '#grid_with_formatter_table',
+    pager: '#grid_with_formatter_pager',
+    datatype: 'jsonstring',
+    caption: 'jqGrid with data formatters',
+    datastr: getListingWithFormatterDummyData(),
+    colNames: [
+        'id',
+        'notAvailable',
+        'dateTime',
+        'date',
+        'time',
+        'userEmail',
+        'country'
+    ],
+    colModel: [
+        {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
+        {name: 'notAvailable', index: 'notAvailable', sortable: false, width: 3, formatter: PhotonDataFormatter.notAvailable },
+        {name: 'dateTime', index: 'dateTime', sortable: false, width: 3, formatter: PhotonDataFormatter.dateTime },
+        {name: 'date', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.date },
+        {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
+        {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
+        {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
+    ]
+};
+
+new PhotonJqGrid(listingWithFormatterParameters).init();
                                         </code>
                                     </pre>
                                 </div>
