@@ -3445,7 +3445,7 @@ var Popover = (function ($) {
                 return self.notAvailable();
             }
 
-            if ((i.isString && !i.isJson) || (i.isArray && i.isDateTimeArray)) {
+            if ((i.isString && !i.isJson) || i.isDateTimeArray) {
                 var dateTimeArray = item;
                 if (i.isString) {
                     dateTimeArray = item.split(' ');
