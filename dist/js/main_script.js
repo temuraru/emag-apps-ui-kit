@@ -5159,6 +5159,17 @@ function addNotification(message,type){
     });
 }
 
+function hideBodyOverlayer() {
+    $('.modal-backdrop').addClass('hidden');
+}
+
+function activateDraggableForModal($modal) {
+    $modal.find('.modal-content:first').draggable({
+        containment: 'body',
+        cancel : '.modal-body'
+    });
+}
+
 /* Function for finding the highest z-index */
 
 function findHighestZIndex(elem) {
