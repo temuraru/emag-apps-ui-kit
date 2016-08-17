@@ -92,9 +92,9 @@
 
                             $(selectOptions).each(function() {
                                 if(isMultiple) {
-                                    createSelectOptionsWithMultiple($(this), itemsLength);
+                                    createSelectOptionsWithMultiple($(this));
                                 } else {
-                                    createSelectOptionsWithoutMultiple($(this));
+                                    createSelectOptionsWithoutMultiple($(this), itemsLength);
                                 }
                             });
                             select.find('optgroup:empty').each(function () {
