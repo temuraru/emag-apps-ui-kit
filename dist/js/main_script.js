@@ -4976,7 +4976,7 @@ var Popover = (function ($) {
                         buttons: {
                             cancel: {
                                 label: _cancelLabel,
-                                class: 'btn-link',
+                                class: 'btn-default',
                                 icon: 'fa fa-times'
                             }
                         }
@@ -4988,7 +4988,7 @@ var Popover = (function ($) {
                         buttons: {
                             cancel: {
                                 label: _cancelLabel,
-                                class: 'btn-link',
+                                class: 'btn-default',
                                 icon: 'fa fa-times'
                             }
                         }
@@ -5000,7 +5000,7 @@ var Popover = (function ($) {
                         buttons: {
                             cancel: {
                                 label: _cancelLabel,
-                                class: 'btn-link',
+                                class: 'btn-default',
                                 icon: 'fa fa-times'
                             }
                         }
@@ -5013,12 +5013,12 @@ var Popover = (function ($) {
                             save: {
                                 label: _saveLabel,
                                 class: 'btn-success',
-                                icon: 'fa fa-check',
+                                icon: 'btn-default',
                                 formSubmitter: true
                             },
                             cancel: {
                                 label: _cancelLabel,
-                                class: 'btn-link',
+                                class: 'btn-default',
                                 icon: 'fa fa-times'
                             }
                         }
