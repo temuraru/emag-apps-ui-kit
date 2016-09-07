@@ -6,7 +6,6 @@ function initPhotonStick(container) {
     var $stickElements = $container.find(stickSelector);
 
     var offsetTop = $('.navbar-fixed-top').outerHeight();
-    var minParentHeightPosibleForInitElement = 3;
 
     var MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT = 3;
     var BORDER_BOTTOM = 1;
