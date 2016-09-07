@@ -1,4 +1,4 @@
-function updateStick(container) {
+function initPhotonStick(container) {
 
     var $container = $(container || 'body');
 
@@ -8,7 +8,10 @@ function updateStick(container) {
     var offsetTop = $('.navbar-fixed-top').outerHeight();
     var minParentHeightPosibleForInitElement = 3;
 
-    resetParams($stickElements);
+    var MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT = 3;
+    var BORDER_BOTTOM = 1;
+
+    resetStickElementsToDefault($stickElements);
 
     $.each($stickElements, function () {
         var $this = $(this);
@@ -23,7 +26,7 @@ function updateStick(container) {
         });
 
         if(!isHidden){
-            $this.parent().css({'min-height':$this.outerHeight()+minParentHeightPosibleForInitElement});
+            $this.parent().css({'min-height': calculateMinHeightOfElement($this)});
             var $siblingsAndChildren = $this.parent().find(stickSelector);
 
             $siblingsAndChildren.each(function () {
@@ -54,6 +57,10 @@ function updateStick(container) {
         });
     }
 
+    function calculateMinHeightOfElement($this){
+        return $this.outerHeight() + MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT;
+    }
+
     function setMaxIndexToChildren(stickyContainer) {
         var highestIndex = getMaxIndexOfChildren(stickyContainer)
         $(stickyContainer).find(stickSelector).each(function () {
@@ -76,12 +83,12 @@ function updateStick(container) {
     function addOffsetTopValue(stickElement) {
         $stickElement = $(stickElement);
 
-        if (stickElement.posTop == null) {
+        if (stickElement.posTop) {
+            $stickElement.stick_in_parent({'offset_top': offsetTop + stickElement.posTop});
+        } else {
             //has no parent
             $stickElement.parent().addClass('stick-with-no-parent');
             $stickElement.stick_in_parent({'offset_top': offsetTop});
-        } else {
-            $stickElement.stick_in_parent({'offset_top': offsetTop + stickElement.posTop});
         }
     }
 
@@ -91,17 +98,17 @@ function updateStick(container) {
     }
 
     function setPositionTop(siblingAndChildren, $stickElement) {
-        //daca nu este obiectul curent
+        //if is not current obj
         if (!$(siblingAndChildren).is($stickElement)) {
-            if (siblingAndChildren.posTop == null) {
-                siblingAndChildren.posTop = $stickElement.outerHeight() - 1;
+            if (siblingAndChildren.posTop) {
+                siblingAndChildren.posTop += $stickElement.outerHeight() - BORDER_BOTTOM;
             } else {
-                siblingAndChildren.posTop += $stickElement.outerHeight() - 1;
+                siblingAndChildren.posTop = $stickElement.outerHeight() - BORDER_BOTTOM;
             }
         }
     }
 
-    function resetParams($stickElements){
+    function resetStickElementsToDefault($stickElements){
         $.each($stickElements, function() {
             this.posTop = null;
             this.minPosibleIndex = null;
