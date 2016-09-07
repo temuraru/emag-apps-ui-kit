@@ -117,10 +117,8 @@ function initPhotonStick(container) {
     }
 }
 
-$(document.body).on('click', '#toggle-sidebar-size-btn', function () {
-    setTimeout(function () {
-        $(window).resize();
-    }, 50);
+$(window).on('minimize.photon.sidebar maximize.photon.sidebar', function () {
+    $(window).resize();
 }).on('hidden.bs.collapse hidden.bs.tab', function () {
-        $(window).scroll();
+    $(window).scroll();
 });
