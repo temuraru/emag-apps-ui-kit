@@ -119,6 +119,10 @@ function initPhotonStick(container) {
 
 $(window).on('minimize.photon.sidebar maximize.photon.sidebar', function () {
     $(window).resize();
-}).on('hidden.bs.collapse hidden.bs.tab', function () {
+}).on('hidden.bs.collapse hidden.bs.tab shown.bs.collapse shown.bs.tab', function () {
     $(window).scroll();
+}).on('show.bs.tab show.bs.collapse', function () {
+    setTimeout(function () {
+        $(window).scroll();
+    }, 0)
 });
