@@ -17,7 +17,18 @@
 @sidebar-outer-border-color:            darken(@sidebar-first-level-bg,6%);
 @sidebar-shadow:                        0px 0px 4px 0px rgba(0,0,0,.2);
 
+@sidebar-fontfamily:                    "Open_sans", Helvetica, Arial, sans-serif;
+
+@sidebar-fontweight-first-level:        600;
+@sidebar-fontweight-second-level:       400;
+@sidebar-fontweight-third-level:        400;
+
+@sidebar-fontsize-first-level:          (@font-size-base + 1);
+@sidebar-fontsize-second-level:         @font-size-base;
+@sidebar-fontsize-third-level:          (@font-size-base - 1);
+
 @sidebar-fontsize:                      @font-size-base;
+
 @sidebar-lineheight:                    @line-height-computed;
 @sidebar-iconsize:                      18px;
 
@@ -25,14 +36,18 @@
 @sidebar-cell-font-color-hover:         @brand-primary;
 
 @sidebar-first-level-bg:                #fff;
-@sidebar-second-level-bg:               #22313F;
-@sidebar-third-level-bg:                darken(@sidebar-second-level-bg,10%);
+@sidebar-second-level-bg:               #fff;
+@sidebar-third-level-bg:                #fff;
+
+@sidebar-menu-active-cell-bg:           #dedede;
+@sidebar-menu-hover-cell-bg:            @gray-lighter;
 
 @sidebar-submenu-mark-color:            @brand-primary;
-@sidebar-submenu-active-cell-bg:        @brand-primary;
+@sidebar-submenu-active-cell-bg:        #dedede;
+@sidebar-submenu-hover-cell-bg:         @gray-lighter;
 
-@sidebar-tooltip-preview-bg:            #333;
-@sidebar-tooltip-preview-text-color:    #fff;
+@sidebar-tooltip-preview-bg:            #fff;
+@sidebar-tooltip-preview-text-color:    @gray-base;
 
 ///* FOOTER */
 
