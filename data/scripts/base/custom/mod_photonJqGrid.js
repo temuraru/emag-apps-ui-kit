@@ -96,8 +96,6 @@
             }
         }
 
-
-
         function _initCustomColumnChooser() {
 
             $.jgrid.extend({
@@ -203,8 +201,6 @@
                 _initCustomColumnChooser();
             }
             if(gridOpts.useAutocompleteRow) {
-                console.log( $($this.grid).parents('.ui-jqgrid-view:first'));
-
                 $($this.grid).parents('.ui-jqgrid-bdiv:first').addClass('reset-overflow');
                 $($this.grid).parents('.ui-jqgrid-view:first').removeClass('table-responsive');
             }
