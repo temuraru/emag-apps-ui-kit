@@ -39,6 +39,7 @@
             height: '100%',
 
             mergeOnPaging: true,
+            useAutocompleteRow: false,
             onPaging: function() {
                 var jqGridOverlay = _getJqGridOverlay();
                 jqGridOverlay.addClass('custom-overlay');
@@ -70,7 +71,7 @@
                 jqGridOverlay.removeClass('custom-overlay');
 
             },
-            mergeGridComplete:true,
+            mergeGridComplete: true,
             gridComplete: function() {
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
@@ -94,6 +95,8 @@
                 _mergeCustomCallback(customCallbacks[mergeCallbackOption]);
             }
         }
+
+
 
         function _initCustomColumnChooser() {
 
@@ -198,6 +201,12 @@
             }
             if(gridOpts.useCustomColumnChooser) {
                 _initCustomColumnChooser();
+            }
+            if(gridOpts.useAutocompleteRow) {
+                console.log( $($this.grid).parents('.ui-jqgrid-view:first'));
+
+                $($this.grid).parents('.ui-jqgrid-bdiv:first').addClass('reset-overflow');
+                $($this.grid).parents('.ui-jqgrid-view:first').removeClass('table-responsive');
             }
         };
 
