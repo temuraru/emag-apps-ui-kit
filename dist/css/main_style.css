@@ -10053,7 +10053,6 @@ body {
   z-index: 1;
   color: #000;
   background-color: #dedede;
-  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
 }
 .sidebar .sidebar-inner .menu-item.active.menu-item-has-children > a:after {
   content: '\f106';

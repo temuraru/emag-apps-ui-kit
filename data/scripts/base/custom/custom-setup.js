@@ -2,12 +2,19 @@
  * Sidebar navigation
  */
 
-function initiateScrollbarForSidebar() {
+function initScrollbarForSidebar() {
     $("#sidebar .sidebar-outer").customScrollbar({
         skin: "default-skin",
         hScroll: false,
         updateOnWindowResize: true
     });
+}
+
+function newScrollbarHeight($sidebarInner, $menuItem) {
+    return Math.max(
+        ((54 * ($sidebarInner.find(' > .menu-item').index($menuItem) + 1)) + $menuItem.find('.sidebar-submenu').outerHeight()),
+        $sidebarInner.height()
+    );
 }
 
 function updateSidebarHeight($menuItem) {
@@ -17,10 +24,7 @@ function updateSidebarHeight($menuItem) {
         $sidebarInner.css('height', '');
 
         if ($menuItem.hasClass('active')) {
-            var newHeight = Math.max(
-                ((54 * ($sidebarInner.find(' > .menu-item').index($menuItem) + 1)) + $menuItem.find('.sidebar-submenu').outerHeight()),
-                $sidebarInner.height()
-            );
+            var newHeight = newScrollbarHeight($sidebarInner, $menuItem);
 
             $sidebarInner.height(newHeight);
         }
@@ -41,7 +45,7 @@ function updateSidebarHeight($menuItem) {
         $(this).find('i.fa').toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-    initiateScrollbarForSidebar();
+    initScrollbarForSidebar();
 
     $(document).on('click', '.menu-item > a', function (e) {
         if ($('#sidebar').hasClass('sidebar-min')) {
