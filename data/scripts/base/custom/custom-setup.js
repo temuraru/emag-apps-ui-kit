@@ -1,16 +1,65 @@
+/**
+ * Sidebar navigation
+ */
 
+function initScrollbarForSidebar() {
+    $("#sidebar .sidebar-outer").customScrollbar({
+        skin: "default-skin",
+        hScroll: false,
+        updateOnWindowResize: true
+    });
+}
 
-/* Function to toggle the navbar minimization */
+function updateScrollbar() {
+    $("#sidebar .sidebar-outer").customScrollbar("resize", true);
+}
 
-+function ($) {
+function newScrollbarHeight($sidebarInner, $menuItem) {
+    return Math.max(
+        ((54 * ($sidebarInner.find(' > .menu-item').index($menuItem) + 1)) + $menuItem.find('.sidebar-submenu').outerHeight()),
+        $sidebarInner.height()
+    );
+}
 
+function updateSidebarHeight($menuItem) {
+    var $sidebarInner = $('#sidebar .sidebar-inner');
+
+    if ($menuItem.parent().is($sidebarInner)) {
+        $sidebarInner.css('height', '');
+
+        if ($menuItem.hasClass('active')) {
+            var newHeight = newScrollbarHeight($sidebarInner, $menuItem);
+
+            $sidebarInner.height(newHeight);
+        }
+    } else {
+        if ($menuItem.hasClass('active')) {
+            $sidebarInner.height($sidebarInner.height() + $menuItem.find('.sidebar-submenu').outerHeight());
+        } else {
+            $sidebarInner.height($sidebarInner.height() - $menuItem.find('.sidebar-submenu').outerHeight());
+        }
+    }
+}
+
+(function ($) {
+    /** Function to toggle the navbar minimization */
     $(document).on('click', '#toggle-nav-btn', function (e) {
         e.preventDefault();
         $(this).toggleClass('btn-primary');
         $(this).find('i.fa').toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-}(jQuery);
+    initScrollbarForSidebar();
+
+    $(document).on('click', '.menu-item > a', function (e) {
+        if ($('#sidebar').hasClass('sidebar-min')) {
+            var $menuItem = $(this).parent();
+            updateSidebarHeight($menuItem);
+        }
+
+        updateScrollbar();
+    });
+})(jQuery);
 
 /* Function for displaying notifications */
 /* Ex. usage: addNotifications("This is an informational message", "info") */

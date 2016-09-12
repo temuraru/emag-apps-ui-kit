@@ -8063,6 +8063,79 @@ button.close {
   background: transparent;
   border: 0;
 }
+/**
+ * jQuery Custom Scrollbar 0.5.5
+ * GitHub: https://github.com/mzubala/jquery-custom-scrollbar
+ */
+.scrollable {
+  position: relative;
+}
+.scrollable:focus {
+  outline: 0;
+}
+.scrollable .viewport {
+  position: relative;
+  overflow: hidden;
+}
+.scrollable .viewport .overview {
+  position: absolute;
+}
+.scrollable .scroll-bar {
+  display: none;
+}
+.scrollable .scroll-bar .thumb {
+  position: absolute;
+}
+.scrollable .scroll-bar.vertical {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.scrollable .scroll-bar.vertical .thumb {
+  width: 100%;
+  min-height: 10px;
+}
+.scrollable .scroll-bar.horizontal {
+  position: relative;
+  width: 100%;
+}
+.scrollable .scroll-bar.horizontal .thumb {
+  left: 0;
+  min-width: 10px;
+  height: 100%;
+}
+.not-selectable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+   -khtml-user-select: none;
+  -webkit-touch-callout: none;
+}
+.scrollable.default-skin {
+  padding-right: 10px;
+  padding-bottom: 6px;
+}
+.scrollable.default-skin .scroll-bar.vertical {
+  width: 6px;
+}
+.scrollable.default-skin .scroll-bar.horizontal {
+  height: 6px;
+}
+.scrollable.default-skin .scroll-bar .thumb {
+  background-color: black;
+          border-radius: 3px;
+  opacity: .4;
+
+     -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.scrollable.default-skin .scroll-bar:hover .thumb {
+  opacity: .6;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -9856,7 +9929,6 @@ body {
   width: inherit;
   content: "";
   background-color: inherit;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
 }
 .sidebar .sidebar-inner {
   position: relative;
@@ -9883,8 +9955,10 @@ body {
   display: block;
   min-height: 53px;
   padding: 16.5px 40px;
-  padding-left: 45px;
-  font-size: 14px;
+  padding-left: 54px;
+  font-family: "Open_sans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   line-height: 20px;
   color: #eee;
   text-decoration: none;
@@ -9895,6 +9969,7 @@ body {
   top: 50%;
   left: 15px;
   display: inline-block;
+  width: 23px;
   font-size: 18px;
   font-weight: 400;
   line-height: inherit;
@@ -9905,12 +9980,12 @@ body {
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
+  width: 106px;
 }
 .sidebar .sidebar-inner .menu-item a:hover,
 .sidebar .sidebar-inner .menu-item a:active,
 .sidebar .sidebar-inner .menu-item a:focus {
-  color: #337ab7;
-  background-color: #111217;
+  background-color: #eee;
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu {
   position: relative;
@@ -9921,16 +9996,12 @@ body {
   border-color: #19242e;
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item > a {
-  padding-left: 52px;
-  color: #fff;
-  background-color: #22313f;
-}
-.sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item > a .menu-icon {
-  left: 30px;
+  padding-left: 53px;
+  font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
-}
-.sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item > a .menu-text {
-  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  background-color: #22313f;
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item:last-child {
   border-bottom: none;
@@ -9938,18 +10009,25 @@ body {
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item:not(.active) > a:hover,
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item:not(.active) > a:active,
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item:not(.active) > a:focus {
-  background-color: #2b3e50;
+  background-color: #eee;
+}
+.sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
+.sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item.active.menu-item-has-children > a {
+  background-color: #337ab7;
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item {
   border-color: #070a0d;
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item > a {
+  font-family: "Open_sans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   background-color: #10171e;
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:hover,
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:active,
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:focus {
-  background-color: #19242e;
+  background-color: #eee;
 }
 .sidebar .sidebar-inner .menu-item.menu-item-has-children > a:after {
   position: absolute;
@@ -9967,29 +10045,19 @@ body {
       transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a {
-  color: #fff;
-  background-color: #337ab7;
+  color: #000;
+  background-color: #dedede;
 }
 .sidebar .sidebar-inner .menu-item.active.menu-item-has-children > a {
   z-index: 1;
-  color: #337ab7;
-  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  color: #000;
+  background-color: #dedede;
 }
 .sidebar .sidebar-inner .menu-item.active.menu-item-has-children > a:after {
   content: '\f106';
 }
 .sidebar .sidebar-inner .menu-item.active.menu-item-has-children > .sidebar-submenu {
   display: block;
-}
-.sidebar .sidebar-inner .menu-item.active.menu-item-has-children > .sidebar-submenu:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 40px;
-  z-index: 3;
-  width: 5px;
-  content: '';
-  background-color: #337ab7;
 }
 .sidebar .sidebar-control {
   position: fixed;
@@ -10026,15 +10094,20 @@ body {
   bottom: 0;
   z-index: 3;
   width: 199px;
-  overflow: hidden;
-  overflow-y: auto;
+}
+.sidebar.sidebar-fixed .sidebar-outer.scrollable {
+  padding-right: 0;
+}
+.sidebar.sidebar-fixed .sidebar-outer.scrollable .scroll-bar {
+  opacity: 0;
+}
+.sidebar.sidebar-fixed .sidebar-outer.scrollable .viewport {
+  overflow: inherit;
 }
 .sidebar.sidebar-fixed .sidebar-inner {
-  width: 216px;
+  width: 199px;
   height: 100%;
   padding: 0;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 @media (max-width: 768px) {
   .sidebar {
@@ -10063,61 +10136,24 @@ body {
   .sidebar.sidebar-min + .main-content {
     margin-left: 53px;
   }
-  .sidebar.sidebar-min .sidebar-inner .menu-item a {
-    padding: 0;
-    padding-bottom: 53px;
+  .sidebar.sidebar-min .sidebar-inner > .menu-item {
+    width: 53px;
+    overflow: hidden;
   }
-  .sidebar.sidebar-min .sidebar-inner .menu-item a .menu-icon {
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+  .sidebar.sidebar-min .sidebar-inner > .menu-item:hover {
+    width: 214px;
+    overflow: inherit;
   }
-  .sidebar.sidebar-min .sidebar-inner .menu-item a .menu-text {
-    position: absolute;
-    top: 50%;
-    left: 110%;
-    display: none;
-    max-width: 200px;
-    padding: 5px 8px;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    text-shadow: none;
-    background-color: #333;
-    border-radius: 2px;
-    -ms-transform: translate(0%, -50%);
-        transform: translate(0%, -50%);
-  }
-  .sidebar.sidebar-min .sidebar-inner .menu-item a .menu-text:before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    content: '';
-    border-color: transparent #333 transparent transparent;
-    border-style: solid;
-    border-width: 8px 10px 8px 0;
-    -ms-transform: translate(-100%, -50%);
-        transform: translate(-100%, -50%);
-  }
-  .sidebar.sidebar-min .sidebar-inner .menu-item a:hover .menu-text {
+  .sidebar.sidebar-min .sidebar-inner > .menu-item:hover.active > .sidebar-submenu {
     display: block;
   }
-  .sidebar.sidebar-min .sidebar-inner .menu-item .sidebar-submenu > .menu-item > a .menu-icon {
-    left: 50%;
-  }
-  .sidebar.sidebar-min .sidebar-inner .menu-item.menu-item-has-children > a:after {
-    display: none;
-  }
-  .sidebar.sidebar-min .sidebar-inner .menu-item.menu-item-has-children > a:before {
+  .sidebar.sidebar-min .sidebar-inner > .menu-item > .sidebar-submenu {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    content: '';
-    border-color: transparent transparent #337ab7 transparent;
-    border-style: solid;
-    border-width: 0 0 7px 7px;
+    left: 54px;
+    width: 200px;
+  }
+  .sidebar.sidebar-min .sidebar-inner > .menu-item > .sidebar-submenu .menu-item a {
+    padding-left: 10px;
   }
   .sidebar.sidebar-min .sidebar-control {
     width: 53px;

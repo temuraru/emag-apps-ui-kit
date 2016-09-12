@@ -90,6 +90,8 @@ function staticNavigation() {
             $(this).closest('.menu-item').addClass('active');
         }
     });
+
+    $(window).resize();
 }
 
 function demoHelpers() {

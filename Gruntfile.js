@@ -69,7 +69,8 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/drop/drop.min.css':'<%= pkg.data_plugins %>/drop/less/drop.less',
                     '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.data_plugins %>/summernote/less/summernote.less',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.data_plugins %>/fancytree/less/ui.fancytree.less',
-                    '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.data_plugins %>/prism/less/prism.less'
+                    '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.data_plugins %>/prism/less/prism.less',
+                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css':'<%= pkg.data_plugins %>/jquery-custom-scrollbar//less/jquery-custom-scrollbar-0.5.5.custom.less'
                 }
             },
 
@@ -140,7 +141,8 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/drop/drop.min.css':'<%= pkg.dist_plugins %>/drop/drop.min.css',
                     '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.dist_plugins %>/summernote/summernote.min.css',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.dist_plugins %>/fancytree/fancytree.min.css',
-                    '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.dist_plugins %>/prism/prism.min.css'
+                    '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.dist_plugins %>/prism/prism.min.css',
+                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css':'<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css'
                 }
             },
             jquery: {
@@ -177,6 +179,7 @@ module.exports = function (grunt) {
                     '<%= pkg.data_plugins%>/blockui/js/jQuery.blockui.2.70.0.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonModal.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_customInput.js',
+                    '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/custom-setup.js'
                 ],
                 dest: '<%= pkg.dist_scripts %>/main_script.js'
@@ -238,7 +241,8 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/jQueryCookie/jQueryCookie.min.js':'<%= pkg.data_plugins %>/jQueryCookie/js/jquery.cookie.js',
                     '<%= pkg.dist_plugins %>/summernote/summernote.min.js':'<%= pkg.data_plugins %>/summernote/js/summernote.js',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.js':['<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.js', '<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.filter.js', '<%= pkg.data_scripts %>/base/custom/mod_photonFancytree.js'],
-                    '<%= pkg.dist_plugins %>/prism/prism.min.js':'<%= pkg.data_plugins %>/prism/js/prism.js'
+                    '<%= pkg.dist_plugins %>/prism/prism.min.js':'<%= pkg.data_plugins %>/prism/js/prism.js',
+                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery.custom-scrollbar.min.js':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js'
                 }
             }
         }
