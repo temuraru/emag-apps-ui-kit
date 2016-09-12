@@ -10,6 +10,10 @@ function initScrollbarForSidebar() {
     });
 }
 
+function updateScrollbar() {
+    $("#sidebar .sidebar-outer").customScrollbar("resize", true);
+}
+
 function newScrollbarHeight($sidebarInner, $menuItem) {
     return Math.max(
         ((54 * ($sidebarInner.find(' > .menu-item').index($menuItem) + 1)) + $menuItem.find('.sidebar-submenu').outerHeight()),
@@ -53,7 +57,7 @@ function updateSidebarHeight($menuItem) {
             updateSidebarHeight($menuItem);
         }
 
-        $(window).resize();
+        updateScrollbar();
     });
 })(jQuery);
 
