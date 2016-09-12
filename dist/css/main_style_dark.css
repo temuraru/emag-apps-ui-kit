@@ -9929,7 +9929,6 @@ body {
   width: inherit;
   content: "";
   background-color: inherit;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
 }
 .sidebar .sidebar-inner {
   position: relative;
