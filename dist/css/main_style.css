@@ -10142,10 +10142,12 @@ body {
     width: 53px;
     overflow: hidden;
   }
-  .sidebar.sidebar-min .sidebar-inner > .menu-item:hover,
-  .sidebar.sidebar-min .sidebar-inner > .menu-item.active {
+  .sidebar.sidebar-min .sidebar-inner > .menu-item:hover {
     width: 214px;
     overflow: inherit;
+  }
+  .sidebar.sidebar-min .sidebar-inner > .menu-item:hover.active > .sidebar-submenu {
+    display: block;
   }
   .sidebar.sidebar-min .sidebar-inner > .menu-item > .sidebar-submenu {
     position: absolute;

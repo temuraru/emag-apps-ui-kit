@@ -41,7 +41,7 @@ function updateSidebarHeight($menuItem) {
         $(this).find('i.fa').toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-    initiateScrollbarForSidebar()
+    initiateScrollbarForSidebar();
 
     $(document).on('click', '.menu-item > a', function (e) {
         if ($('#sidebar').hasClass('sidebar-min')) {

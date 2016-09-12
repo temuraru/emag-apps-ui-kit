@@ -275,10 +275,13 @@
                   overflow: hidden;
                   width: @sidebar-min-width;
 
-                  &:hover,
-                  &.active {
+                  &:hover {
                     overflow: inherit;
                     width: (@sidebar-max-width + @sidebar-border-width + 13);
+
+                    &.active > .sidebar-submenu {
+                      display:block;
+                    }
                   }
 
                   & > .sidebar-submenu {
