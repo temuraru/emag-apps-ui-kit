@@ -15,7 +15,8 @@ The purpose of this collection is to help you build amazing software easier and 
 4. [Become a contributor] [become_a_contributor_link]
 5. [License] [license_link]
 
-## Getting started
+## Getting started  
+[[Back to summary] [summary_link]]  
 **There are a couple of ways to install PHOTON:**  
 1. The easiest is to install the following css in the head of your webpage:  
   ```HTML  
@@ -30,9 +31,11 @@ The purpose of this collection is to help you build amazing software easier and 
 2. If you really want to get a hold of the source code, you can [download the latest release] [photon_github] from GitHub.
 3. Or clone the [Git repository] [photon_github] by running the following command:
 
-## Overview
+## Overview  
+[[Back to summary] [summary_link]]  
 **A short description about what's it like to work with PHOTON:**
 ### Based on Bootstrap 3.3.5.  
+[[Back to summary] [summary_link]]  
 PHOTON is based on the Twitter Bootstrap architecture [GetBootstrap] [bootstrap_getstarted]. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!  
 Aside from the elements provided by bootstrap, PHOTON comes with its own set of unique components, styling and useful plugins that you can use in your project.  
 The fun part about PHOTON is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.  
@@ -42,6 +45,7 @@ The fun part about PHOTON is that you can configure it however you want. Whether
 3. WCAG 2.0 Compliant
 4. Average page-load time of 1s
 ### Working with Grunt.js  
+[[Back to summary] [summary_link]]  
 **Installing Grunt:**  
 To install Grunt, you must first download and install [node.js] [nodejs_download] (which includes npm). Believe it or not, npm stands for node packaged modules and is a way to manage development dependencies through node.js.  
 Once you've installed node.js, open up the command line in the root directory.  
@@ -58,7 +62,8 @@ grunt plugin_scripts    - Generate plugin scripts
 grunt default           - Generate main styles and scripts
 ```
 
-### Working with Photon's folder structure:
+### Working with Photon's folder structure:  
+[[Back to summary] [summary_link]]  
 Once downloaded, unzip the compressed folder to find the three main folders:
 ```
 photon/  
@@ -90,7 +95,8 @@ photon/
     └── glyphicons-halflings-regular.woff2  
 ```
 
-### Precompiled files (dist)
+### Precompiled files (dist)  
+[[Back to summary] [summary_link]]  
 - css - Main style CSS files.
     - flags - Countries flags as SVG file on 1:1 and 4:3 ratio.
     - fonts - Fonts files used in Photon.
@@ -101,7 +107,8 @@ photon/
     - lib - Libraries' JS files.
 - plugins - Plugins used in Photon (CSS and JS files).
 
-### Photon source code (data)
+### Photon source code (data)  
+[[Back to summary] [summary_link]]  
 - scripts - JS files.
     - base - Main JS files.
         - custom - Custom wrappers over certain plugins.
@@ -112,7 +119,8 @@ photon/
     - lib - Libraries' LESS files.
 - plugins - Plugins used in Photon (LESS and JS files).
 
-## License
+## License  
+[[Back to summary] [summary_link]]  
 Photon is released under the [MIT license] [photon_license], this means:
 - **You can**
     - **Comercial Use**  
