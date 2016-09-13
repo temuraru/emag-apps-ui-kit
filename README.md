@@ -12,8 +12,7 @@ The purpose of this collection is to help you build amazing software easier and 
   3. [Working with Photon's folder structure] [working_with_photons_folder_structure_link]
   4. [Precompiled files (dist)] [precompiled_files_dist_link]
   5. [Photon source code (data)] [photon_source_code_data_link]
-4. [Become a contributor] [become_a_contributor_link]
-5. [License] [license_link]
+4. [License] [license_link]
 
 ## Getting started  
 [[Back to summary] [summary_link]]  
@@ -158,5 +157,4 @@ The full Photon license can be found in [project repository] [photon_license].
 [working_with_photons_folder_structure_link]: #working-with-photons-folder-structure
 [precompiled_files_dist_link]: #precompiled-files-dist
 [photon_source_code_data_link]: #photon-source-code-data
-[become_a_contributor_link]: #become-a-contributor
 [license_link]: #license
