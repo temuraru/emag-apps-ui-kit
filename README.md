@@ -38,11 +38,11 @@ The purpose of this collection is to help you build amazing software easier and 
 PHOTON is based on the Twitter Bootstrap architecture [GetBootstrap] [bootstrap_getstarted]. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!  
 Aside from the elements provided by bootstrap, PHOTON comes with its own set of unique components, styling and useful plugins that you can use in your project.  
 The fun part about PHOTON is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.  
-**Features:**
-1. Keeping it light with an average page weight of 500Kb
-2. W3C Compliant
-3. WCAG 2.0 Compliant
-4. Average page-load time of 1s
+**Features:**  
+1. Keeping it light with an average page weight of 500Kb  
+2. W3C Compliant  
+3. WCAG 2.0 Compliant  
+4. Average page-load time of 1s  
 ### Working with Grunt.js  
 [[Back to summary] [summary_link]]  
 **Installing Grunt:**  
