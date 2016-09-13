@@ -72,15 +72,15 @@
                 }
                 jqGridOverlay.removeClass('custom-overlay');
 
-                _initStickyOnJqGrid(gridOpts);
+                if(gridOpts.stickyButtons) {
+                    _initStickyOnJqGrid(gridOpts);
+                }
             },
             mergeGridComplete: true,
             gridComplete: function() {
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
-
-
             },
             caption: 'Listing default caption, please provide "caption" parameter',
             useCustomColumnChooser: false,
@@ -91,10 +91,9 @@
 
         function _initStickyOnJqGrid(gridOpts){
             var tableId = '#gbox_'+ gridOpts.table.slice(1);
-            if(gridOpts.stickyButtons){
-                _addClassForStickElements(tableId);
-                initPhotonStick(tableId);
-            }
+
+            _addClassForStickElements(tableId);
+            initPhotonStick(tableId);
         }
 
         function _addClassForStickElements(tableId){
