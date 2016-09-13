@@ -38,6 +38,8 @@
             width: 'auto',
             height: '100%',
 
+            stickyButtons: false,
+
             mergeOnPaging: true,
             useAutocompleteRow: false,
             onPaging: function() {
@@ -70,6 +72,9 @@
                 }
                 jqGridOverlay.removeClass('custom-overlay');
 
+                if(gridOpts.stickyButtons) {
+                    _initStickyOnJqGrid(gridOpts);
+                }
             },
             mergeGridComplete: true,
             gridComplete: function() {
@@ -83,6 +88,17 @@
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
+
+        function _initStickyOnJqGrid(gridOpts){
+            var tableId = '#gbox_'+ gridOpts.table.slice(1);
+
+            _addClassForStickElements(tableId);
+            initPhotonStick(tableId);
+        }
+
+        function _addClassForStickElements(tableId){
+            $(tableId +' .ui-jqgrid-hdiv, ' + tableId +' .ui-jqgrid-titlebar').addClass('stick');
+        }
 
         function _getJqGridOverlay()
         {
