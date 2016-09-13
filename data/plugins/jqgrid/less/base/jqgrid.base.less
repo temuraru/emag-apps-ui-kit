@@ -1,5 +1,6 @@
 @jqgrid-border-color: #ddd;
 @jqgrid-border-radius: 3px;
+@jqgrid-th-bg-color: #fff;
 
 @jqgrid-caption-padding-vertical: 10px;
 @jqgrid-caption-padding-horizontal: 15px;
@@ -71,6 +72,7 @@
 
   ///* Header*/
   .ui-jqgrid-hdiv {
+    background: @jqgrid-th-bg-color;
     position: relative;
     margin: 0;
     padding: 0;
@@ -213,6 +215,9 @@
       &, &.ui-th-ltr {
         border-left: 0px none !important;
       }
+    }
+    tr.ui-jqgrid-labels th:first-child, tr.ui-search-toolbar th:first-child{
+      border-left: 1px solid @jqgrid-border-color !important;
     }
     th {
       .ui-th-rtl {

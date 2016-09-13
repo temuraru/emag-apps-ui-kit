@@ -38,6 +38,8 @@
             width: 'auto',
             height: '100%',
 
+            stickyButtons: false,
+
             mergeOnPaging: true,
             useAutocompleteRow: false,
             onPaging: function() {
@@ -70,12 +72,15 @@
                 }
                 jqGridOverlay.removeClass('custom-overlay');
 
+                _initStickyOnJqGrid(gridOpts);
             },
             mergeGridComplete: true,
             gridComplete: function() {
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
+
+
             },
             caption: 'Listing default caption, please provide "caption" parameter',
             useCustomColumnChooser: false,
@@ -83,6 +88,18 @@
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
+
+        function _initStickyOnJqGrid(gridOpts){
+            var tableId = '#gbox_'+ gridOpts.table.slice(1);
+            if(gridOpts.stickyButtons){
+                _addClassForStickElements(tableId);
+                initPhotonStick(tableId);
+            }
+        }
+
+        function _addClassForStickElements(tableId){
+            $(tableId +' .ui-jqgrid-hdiv, ' + tableId +' .ui-jqgrid-titlebar').addClass('stick');
+        }
 
         function _getJqGridOverlay()
         {
