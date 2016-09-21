@@ -8,7 +8,7 @@ function initPhotonStick(container) {
     var offsetTop = $('.navbar-fixed-top').outerHeight();
 
     var MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT = 3;
-    var BORDER_BOTTOM = 1;
+    var BORDER_BOTTOM = 2;
 
     resetStickElementsToDefault($stickElements);
 
@@ -61,7 +61,7 @@ function initPhotonStick(container) {
     }
 
     function setMaxIndexToChildren(stickyContainer) {
-        var highestIndex = getMaxIndexOfChildren(stickyContainer)
+        var highestIndex = getMaxIndexOfChildren(stickyContainer);
         $(stickyContainer).find(stickSelector).each(function () {
             var minPosibleIndex = this.minPosibleIndex;
             $(this).css({'z-index': minPosibleIndex + highestIndex});
