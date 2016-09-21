@@ -114,6 +114,7 @@
      */
     function setHideCallback (hiddenCallback) {
         $(document).on("hidden.bs.modal", "#" + this.defaults.id, function (e) {
+            _isVisible = false;
             hiddenCallback(e);
         });
     }
@@ -516,11 +517,13 @@
          * Show modal
          */
         show: function () {
-            _isVisible = true;
-            /**
-             * Build modal through ajax or with static content
-             */
-            this.defaults.useAjax ? createModalUsingAjax.call(this) : buildStaticModal.call(this);
+            if (!_isVisible) {
+                _isVisible = true;
+                /**
+                 * Build modal through ajax or with static content
+                 */
+                this.defaults.useAjax ? createModalUsingAjax.call(this) : buildStaticModal.call(this);
+            }
         },
         hide: function () {
             _isVisible = false;

@@ -83,11 +83,11 @@ function initPhotonStick(container) {
         $stickElement = $(stickElement);
 
         if (stickElement.posTop) {
-            $stickElement.stick_in_parent({'offset_top': offsetTop + stickElement.posTop});
+            $stickElement.stick_in_parent({'offset_top': offsetTop + stickElement.posTop, 'recalc_every': 1});
         } else {
             //has no parent
             $stickElement.parent().addClass('stick-with-no-parent');
-            $stickElement.stick_in_parent({'offset_top': offsetTop});
+            $stickElement.stick_in_parent({'offset_top': offsetTop, 'recalc_every': 1});
         }
     }
 
