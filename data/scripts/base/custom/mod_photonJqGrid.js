@@ -82,12 +82,13 @@
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
             },
-            caption: 'Listing default caption, please provide "caption" parameter',
+            caption: null,
             useCustomColumnChooser: false,
             columnChooserOptions: {}
         };
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
+        gridOpts.caption = null;
 
         function _initStickyOnJqGrid(gridOpts){
             var tableId = '#gbox_'+ gridOpts.table.slice(1);
@@ -97,7 +98,7 @@
         }
 
         function _addClassForStickElements(tableId){
-            $(tableId +' .ui-jqgrid-hdiv, ' + tableId +' .ui-jqgrid-titlebar').addClass('stick');
+            $(tableId +' .ui-jqgrid-hdiv').addClass('stick');
         }
 
         function _getJqGridOverlay()
