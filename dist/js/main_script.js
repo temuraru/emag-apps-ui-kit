@@ -4576,12 +4576,6 @@ var Popover = (function ($) {
      */
     var _template = '';
     /**
-     * Test to see if modal is visible
-     * @private
-     * @type {Boolean}
-     */
-    var _isVisible = false;
-    /**
      * Types of modal that have a special styling. These modals will have a background change
      * @private
      * @type {Array}
@@ -4625,7 +4619,7 @@ var Popover = (function ($) {
          * when the content is received so a special event is needed
          */
         $(document).on('showModalAfterDomRenderedEvent', "#" + $this.defaults.id, function () {
-            _isVisible ? $("#" + $this.defaults.id).modal('show') : '';
+            $this._isVisible ? $("#" + $this.defaults.id).modal('show') : '';
         });
         /**
          * Event for submitting the form
@@ -4669,8 +4663,9 @@ var Popover = (function ($) {
      * @param hiddenCallback
      */
     function setHideCallback (hiddenCallback) {
+        var $this = this;
         $(document).on("hidden.bs.modal", "#" + this.defaults.id, function (e) {
-            _isVisible = false;
+            $this._isVisible = false;
             hiddenCallback(e);
         });
     }
@@ -4921,6 +4916,13 @@ var Popover = (function ($) {
         };
 
         /**
+         * Test to see if modal is visible
+         * @private
+         * @type {Boolean}
+         */
+        this._isVisible = false;
+
+        /**
          * Extend default options of class with the ones received from class instantiation
          */
         this.options = options;
@@ -5073,8 +5075,8 @@ var Popover = (function ($) {
          * Show modal
          */
         show: function () {
-            if (!_isVisible) {
-                _isVisible = true;
+            if (!this._isVisible) {
+                this._isVisible = true;
                 /**
                  * Build modal through ajax or with static content
                  */
@@ -5082,7 +5084,7 @@ var Popover = (function ($) {
             }
         },
         hide: function () {
-            _isVisible = false;
+            this._isVisible = false;
             /**
              * Hide modal
              */
