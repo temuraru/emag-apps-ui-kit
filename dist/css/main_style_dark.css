@@ -9724,6 +9724,9 @@ button.close {
   background-position: center;
   background-size: cover;
 }
+.display-widget {
+  border: 0;
+}
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
