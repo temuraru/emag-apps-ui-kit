@@ -407,7 +407,7 @@
                                                                 <div class="input-group">
                                                                     <input type="text" class="form-control" name="example1" id="example1" placeholder="Searchbox">
                                                                     <div class="input-group-btn">
-                                                                        <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
+                                                                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -463,7 +463,7 @@
                     &#x3C;div class=&#x22;input-group&#x22;&#x3E;
                         &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; name=&#x22;example1&#x22; id=&#x22;example1&#x22; placeholder=&#x22;Searchbox&#x22;&#x3E;
                         &#x3C;div class=&#x22;input-group-btn&#x22;&#x3E;
-                            &#x3C;button class=&#x22;btn btn-info&#x22; type=&#x22;submit&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+                            &#x3C;button class=&#x22;btn btn-primary&#x22; type=&#x22;submit&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
                         &#x3C;/div&#x3E;
                     &#x3C;/div&#x3E;
                 &#x3C;/li&#x3E;

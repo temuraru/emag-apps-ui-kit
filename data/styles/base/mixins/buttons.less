@@ -3,44 +3,37 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-.button-variant(@color; @background; @border) {
+.button-variant(@color; @background; @border; @background-hover; @border-hover; @background-active; @border-active; @color-disabled; @background-disabled; @border-disabled) {
   color: @color;
   background-color: @background;
   border-color: @border;
-  box-shadow: 0 0 30px -5px fade(@background, 80%);
 
+  &:hover,
   &:focus,
   &.focus {
     color: @color;
-    background-color: darken(@background, 10%);
-        border-color: darken(@border, 25%);
-  }
-  &:hover {
-    color: @color;
-    background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    background-color: @background-hover;
+        border-color: @border-hover;
   }
   &:active,
   &.active,
   .open > .dropdown-toggle& {
     color: @color;
-    background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
-          box-shadow: none;
+    background-color: @background-active;
+    border-color: @border-active;
 
     &:hover,
     &:focus,
     &.focus {
       color: @color;
-      background-color: darken(@background, 17%);
-          border-color: darken(@border, 25%);
+      background-color: @background-hover;
+          border-color: @border-hover;
     }
   }
   &:active,
   &.active,
   .open > .dropdown-toggle& {
     background-image: none;
-    box-shadow: none;
   }
   &.disabled,
   &[disabled],
@@ -51,9 +44,9 @@
     &.focus,
     &:active,
     &.active {
-      background-color: @background;
-          border-color: @border;
-          box-shadow: none;
+      color: @color-disabled;
+      background-color: @background-disabled;
+      border-color: @border-disabled;
     }
   }
 
