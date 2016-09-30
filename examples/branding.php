@@ -83,24 +83,32 @@
                                                         <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> The shades of gray can be used in LESS by calling their corresponding variable. Ex: <code>@gray-darker</code></div>
                                                         <div class="row color-swatches">
                                                             <div class="col-xs-6 col-sm-2">
-                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-darker"></div>
-                                                                <div class="pad-top-20"><small>@gray-darker</small></div>
+                                                                <div class="faux-elem ratio1-1 swatch swatch-black"></div>
+                                                                <div class="pad-top-20"><small>@black</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2">
-                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-dark"></div>
-                                                                <div class="pad-top-20"><small>@gray-dark</small></div>
+                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-76"></div>
+                                                                <div class="pad-top-20"><small>@gray-76</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2">
-                                                                <div class="faux-elem ratio1-1 swatch swatch-gray"></div>
-                                                                <div class="pad-top-20"><small>@gray</small></div>
+                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-80"></div>
+                                                                <div class="pad-top-20"><small>@gray-80</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2">
-                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-light"></div>
-                                                                <div class="pad-top-20"><small>@gray-light</small></div>
+                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-87"></div>
+                                                                <div class="pad-top-20"><small>@gray-87</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2">
-                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-lighter"></div>
-                                                                <div class="pad-top-20"><small>@gray-lighter</small></div>
+                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-93"></div>
+                                                                <div class="pad-top-20"><small>@gray-93</small></div>
+                                                            </div>
+                                                            <div class="col-xs-6 col-sm-2">
+                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-96"></div>
+                                                                <div class="pad-top-20"><small>@gray-96</small></div>
+                                                            </div>
+                                                            <div class="col-xs-6 col-sm-2">
+                                                                <div class="faux-elem ratio1-1 swatch swatch-gray-98"></div>
+                                                                <div class="pad-top-20"><small>@gray-98</small></div>
                                                             </div>
                                                         </div>
                                                     </div>
