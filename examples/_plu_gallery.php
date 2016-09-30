@@ -99,7 +99,7 @@
                                                 <div class="pad-sep-40">
                                                     <div class="row">
                                                         <div class="col-lg-10 col-lg-offset-1 text-center">
-                                                            <a href="../dist/css/img/photo-2.jpg" id="btnajax_magnific" class="btn btn-info">Show me an image of a house.</a><br>
+                                                            <a href="../dist/css/img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -114,7 +114,7 @@
                                                 <div class="pad-sep-40">
                                                     <div class="row">
                                                         <div class="col-lg-10 col-lg-offset-1 text-center">
-                                                            <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM" id="youtube_magnific" class="btn btn-info">Open YouTube video</a><br>
+                                                            <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM" id="youtube_magnific" class="btn btn-primary">Open YouTube video</a><br>
                                                         </div>
                                                     </div>
                                                 </div>

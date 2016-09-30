@@ -1381,18 +1381,14 @@
                                         </div>
                                         <div class="show-panel-body">
                                             <p><strong>Contextual classes:</strong></p>
-                                            <p>Use any of the available button classes to quickly create a styled button. ex: <mark>.btn-primary</mark>, <mark>.btn-success</mark>, <mark>.btn-warning</mark>...etc.</p>
+                                            <p>Use any of the available button classes to quickly create a styled button. ex: <mark>.btn-primary</mark>, <mark>.btn-success</mark>, <mark>.btn-danger</mark>...etc.</p>
                                             <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <button type="button" class="btn btn-default">Default</button>
-                                                        <button type="button" class="btn btn-primary">Primary</button>
-                                                        <button type="button" class="btn btn-success">Success</button>
-                                                        <button type="button" class="btn btn-info">Info</button>
-                                                        <button type="button" class="btn btn-warning">Warning</button>
-                                                        <button type="button" class="btn btn-danger">Danger</button>
-                                                        <button type="button" class="btn btn-link">Link</button>
-                                                    </div>
+                                                <div class="text-center">
+                                                    <button type="button" class="btn btn-default">Default</button>
+                                                    <button type="button" class="btn btn-primary">Primary</button>
+                                                    <button type="button" class="btn btn-success">Success</button>
+                                                    <button type="button" class="btn btn-danger">Danger</button>
+                                                    <button type="button" class="btn btn-link">Link</button>
                                                 </div>
                                             </div>
                                             <div class="alert alert-info">
@@ -1508,7 +1504,7 @@
                                                             <div class="btn-group" role="group" aria-label="...">
                                                                 <button type="button" class="btn btn-primary">X</button>
                                                                 <button type="button" class="btn btn-success">Y</button>
-                                                                <button type="button" class="btn btn-warning">X</button>
+                                                                <button type="button" class="btn btn-danger">X</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1550,8 +1546,8 @@
                                                 <div class="row">
                                                     <div class="col-lg-8 col-lg-offset-2">
                                                         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                                                            <button type="button" class="btn btn-info">Button</button>
-                                                            <button type="button" class="btn btn-info">Button</button>
+                                                            <button type="button" class="btn btn-primary">Button</button>
+                                                            <button type="button" class="btn btn-primary">Button</button>
                                                             <div class="btn-group" role="group">
                                                                 <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown <span class="caret"></span></button>
                                                                 <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
@@ -1559,8 +1555,8 @@
                                                                     <li><a href="#">Dropdown link</a></li>
                                                                 </ul>
                                                             </div>
-                                                            <button type="button" class="btn btn-info">Button</button>
-                                                            <button type="button" class="btn btn-info">Button</button>
+                                                            <button type="button" class="btn btn-primary">Button</button>
+                                                            <button type="button" class="btn btn-primary">Button</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1581,16 +1577,10 @@
                                                                 <div class="form-group">
                                                                     <button type="button" class="btn btn-block btn-primary">Primary</button>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <button type="button" class="btn btn-block btn-success">Success</button>
-                                                                </div>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <button type="button" class="btn btn-block btn-info">Info</button>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <button type="button" class="btn btn-block btn-warning">Warning</button>
+                                                                    <button type="button" class="btn btn-block btn-success">Success</button>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <button type="button" class="btn btn-block btn-danger">Danger</button>
