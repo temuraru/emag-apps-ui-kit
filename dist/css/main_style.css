@@ -10042,7 +10042,6 @@ body {
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item > a {
   padding-left: 53px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
-  font-size: 13px;
   font-weight: 400;
   color: #000;
   background-color: #fff;
@@ -10064,7 +10063,6 @@ body {
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item > a {
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
-  font-size: 13px;
   font-weight: 400;
   background-color: #fff;
 }
