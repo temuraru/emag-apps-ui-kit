@@ -1235,16 +1235,11 @@
                                                         <div class="form-group">
                                                             <input type="range" name="points" min="0" max="100" step="5" value="5">
                                                         </div>
-                                                        <p>Range inputs with validation:</p>
-                                                        <div class="form-group has-success">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
+                                                        <p>Disabled range input:</p>
+                                                        <div class="form-group">
+                                                            <input type="range" name="points" min="0" max="100" step="5" value="5" disabled>
                                                         </div>
-                                                        <div class="form-group has-warning">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
-                                                        </div>
-                                                        <div class="form-group has-error">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
-                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
