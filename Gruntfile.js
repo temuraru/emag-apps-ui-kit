@@ -60,6 +60,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.37.less',
+                    '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.data_plugins %>/daterangepicker/less/daterangepicker.less',
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css':'<%= pkg.data_plugins %>/chosen/less/jQuery.chosen-1.4.2.min.less',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.data_plugins %>/selectize/less/selectize.bootstrap3.less',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.data_plugins %>/css3spinners/less/css3-spinners.less',
@@ -70,7 +71,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.data_plugins %>/summernote/less/summernote.less',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.data_plugins %>/fancytree/less/ui.fancytree.less',
                     '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.data_plugins %>/prism/less/prism.less',
-                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css':'<%= pkg.data_plugins %>/jquery-custom-scrollbar//less/jquery-custom-scrollbar-0.5.5.custom.less'
+                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/less/jquery-custom-scrollbar-0.5.5.custom.less'
                 }
             },
 
@@ -132,6 +133,7 @@ module.exports = function (grunt) {
             plugins: {
                 files: {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css',
+                    '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css',
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css',
@@ -243,7 +245,8 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/summernote/summernote.min.js':'<%= pkg.data_plugins %>/summernote/js/summernote.js',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.js':['<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.js', '<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.filter.js', '<%= pkg.data_scripts %>/base/custom/mod_photonFancytree.js'],
                     '<%= pkg.dist_plugins %>/prism/prism.min.js':'<%= pkg.data_plugins %>/prism/js/prism.js',
-                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery.custom-scrollbar.min.js':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js'
+                    '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery.custom-scrollbar.min.js':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
+                    '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js'
                 }
             }
         }

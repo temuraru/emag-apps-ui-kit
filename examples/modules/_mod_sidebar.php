@@ -293,6 +293,11 @@
                         </a>
                     </li>
                     <li class="menu-item">
+                        <a href="/examples/_plu_datetime.php">
+                            <span class="menu-text">DateTime</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
                         <a href="#">
                             <span class="menu-text">jQuery UI</span>
                         </a>
