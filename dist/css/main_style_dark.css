@@ -212,7 +212,7 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -1991,7 +1991,7 @@ th {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2071,34 +2071,34 @@ th {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -ms-transform: rotate(270deg);
-      transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -ms-transform: scale(-1, 1);
-      transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -ms-transform: scale(1, -1);
-      transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-          filter: none;
+  filter: none;
 
   -webkit-filter: none;
 }
@@ -5693,12 +5693,12 @@ select[multiple].input-lg {
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -8098,13 +8098,13 @@ button.close {
 }
 .not-selectable {
   -webkit-user-select: none;
-     -moz-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-   -khtml-user-select: none;
+  -khtml-user-select: none;
   -webkit-touch-callout: none;
 }
 .scrollable.default-skin {
@@ -8119,10 +8119,10 @@ button.close {
 }
 .scrollable.default-skin .scroll-bar .thumb {
   background-color: black;
-          border-radius: 3px;
+  border-radius: 3px;
   opacity: .4;
 
-     -moz-border-radius: 4px;
+  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
 .scrollable.default-skin .scroll-bar:hover .thumb {
@@ -8146,11 +8146,11 @@ button.close {
 .modal.fade .modal-dialog {
   transition: transform .3s ease-out;
   -ms-transform: translate(0, -25%);
-      transform: translate(0, -25%);
+  transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
   -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -9143,7 +9143,7 @@ button.close {
   z-index: 3;
   margin: 0 !important;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .lock-center.fixed {
   position: fixed;
@@ -9286,7 +9286,7 @@ button.close {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .color-swatches .swatch-primary {
   background-color: #005eb7;
@@ -9473,7 +9473,7 @@ button.close {
   width: auto;
   height: 100%;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .dropdown-menu {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .15);
@@ -9631,7 +9631,7 @@ button.close {
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1.0;
   -ms-transform: rotate(3deg) translate(0px, -4px);
-      transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
 }
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
@@ -9874,14 +9874,15 @@ body {
   font-size: 10px;
   text-transform: uppercase;
   background: #e4e4e4;
+  border: 1px solid #ccc;
   border-radius: inherit;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .12), inset 0 0 2px rgba(0, 0, 0, .15);
+  box-shadow: none;
   transition: .15s ease-out;
   transition-property: opacity background;
 }
 .switch-input:checked ~ .switch-label {
   background: #47a8d8;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15), inset 0 0 3px rgba(0, 0, 0, .2);
+  box-shadow: none;
 }
 .switch-input:checked ~ .switch-label:before {
   opacity: 0;
@@ -9897,27 +9898,16 @@ body {
   height: 18px;
   background: white;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+  box-shadow: 4px 0 8px rgba(0, 0, 0, .1);
   transition: left .15s ease-out;
 }
 .switch-input:checked ~ .switch-handle {
-  left: 20px;
-  box-shadow: -1px 1px 5px rgba(0, 0, 0, .2);
+  left: 34px;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, .2);
 }
-.switch-primary > .switch-input:checked ~ .switch-label {
-  background: #005eb7;
-}
-.switch-info > .switch-input:checked ~ .switch-label {
+.switch > .switch-input:checked ~ .switch-label {
   background: #2790f3;
-}
-.switch-success > .switch-input:checked ~ .switch-label {
-  background: #38833a;
-}
-.switch-warning > .switch-input:checked ~ .switch-label {
-  background: #f4b350;
-}
-.switch-danger > .switch-input:checked ~ .switch-label {
-  background: #e1302b;
+  border: 1px solid #005eb7;
 }
 .input-group-addon > .switch {
   margin: -3px 0;
@@ -10020,7 +10010,7 @@ body {
   text-align: center;
   vertical-align: middle;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
@@ -10086,7 +10076,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a {
   color: #000;
@@ -11039,7 +11029,7 @@ body {
   color: #eee;
   opacity: .1;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .modal-feedback.has-info .modal-header {
   border-top: 6px solid #2790f3;
@@ -11097,39 +11087,35 @@ input[type=range]::-webkit-slider-runnable-track {
   background: #eee;
   border: 1px solid #ccc;
   border-radius: 1px;
-  box-shadow: 0 0 0 #222, 0 0 0 #2f2f2f;
 }
 input[type=range]::-webkit-slider-thumb {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   -webkit-appearance: none;
-  margin-top: -6px;
+  margin-top: -7px;
   cursor: pointer;
   background: #fff;
   border: 1px solid white;
   border-radius: 100%;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, .2), 0 0 1px rgba(13, 13, 13, .2);
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #fbfbfb;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 10px;
+  height: 8px;
   cursor: pointer;
   background: #eee;
   border: 1px solid #ccc;
   border-radius: 1px;
-  box-shadow: 0 0 0 #222, 0 0 0 #2f2f2f;
 }
 input[type=range]::-moz-range-thumb {
+  width: 22px;
   width: 20px;
+  height: 22px;
   height: 20px;
   cursor: pointer;
   background: #fff;
   border: 1px solid white;
   border-radius: 100%;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, .2), 0 0 1px rgba(13, 13, 13, .2);
 }
 input[type=range]::-ms-track {
   width: 100%;
@@ -11138,91 +11124,57 @@ input[type=range]::-ms-track {
   cursor: pointer;
   background: transparent;
   border-color: transparent;
-  border-width: 20px 0;
+  border-width: 22px 0;
 }
 input[type=range]::-ms-fill-lower {
   background: #e1e1e1;
   border: 1px solid #ccc;
   border-radius: 2px;
-  box-shadow: 0 0 0 #222, 0 0 0 #2f2f2f;
 }
 input[type=range]::-ms-fill-upper {
   background: #eee;
   border: 1px solid #ccc;
   border-radius: 2px;
-  box-shadow: 0 0 0 #222, 0 0 0 #2f2f2f;
 }
 input[type=range]::-ms-thumb {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
   background: #fff;
   border: 1px solid white;
   border-radius: 100%;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, .2), 0 0 1px rgba(13, 13, 13, .2);
 }
-input[type=range]:focus::-ms-fill-lower {
+input[type=range]:disabled::-webkit-slider-runnable-track {
+  cursor: not-allowed;
   background: #eee;
+  border-color: #ccc;
 }
-input[type=range]:focus::-ms-fill-upper {
-  background: #fbfbfb;
+input[type=range]:disabled::-moz-range-track {
+  cursor: not-allowed;
+  background: #eee;
+  border-color: #ccc;
 }
-.has-error input[type=range]::-webkit-slider-runnable-track {
-  background: #e1302b;
-  border-color: #be1f1b;
+input[type=range]:disabled::-ms-fill-lower {
+  cursor: not-allowed;
+  background: #eee;
+  border-color: #ccc;
 }
-.has-error input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #e44641;
+input[type=range]:disabled::-ms-fill-upper {
+  cursor: not-allowed;
+  background: #eee;
+  border-color: #ccc;
 }
-.has-error input[type=range]::-moz-range-track {
-  background: #e1302b;
-  border-color: #be1f1b;
+input[type=range]:disabled::-webkit-slider-thumb {
+  cursor: not-allowed;
+  border: 1px solid #ccc;
 }
-.has-error input[type=range]::-ms-fill-lower {
-  background: #e1302b;
-  border-color: #be1f1b;
+input[type=range]:disabled::-moz-range-thumb {
+  cursor: not-allowed;
+  border: 1px solid #ccc;
 }
-.has-error input[type=range]::-ms-fill-upper {
-  background: #e1302b;
-  border-color: #be1f1b;
-}
-.has-warning input[type=range]::-webkit-slider-runnable-track {
-  background: #f4b350;
-  border-color: #f19e20;
-}
-.has-warning input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #f6bd68;
-}
-.has-warning input[type=range]::-moz-range-track {
-  background: #f4b350;
-  border-color: #f19e20;
-}
-.has-warning input[type=range]::-ms-fill-lower {
-  background: #f4b350;
-  border-color: #f19e20;
-}
-.has-warning input[type=range]::-ms-fill-upper {
-  background: #f4b350;
-  border-color: #f19e20;
-}
-.has-success input[type=range]::-webkit-slider-runnable-track {
-  background: #38833a;
-  border-color: #295f2a;
-}
-.has-success input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #409542;
-}
-.has-success input[type=range]::-moz-range-track {
-  background: #38833a;
-  border-color: #295f2a;
-}
-.has-success input[type=range]::-ms-fill-lower {
-  background: #38833a;
-  border-color: #295f2a;
-}
-.has-success input[type=range]::-ms-fill-upper {
-  background: #38833a;
-  border-color: #295f2a;
+input[type=range]:disabled::-ms-thumb {
+  cursor: not-allowed;
+  border: 1px solid #ccc;
 }
 .form-input-control {
   position: absolute;
@@ -11243,8 +11195,8 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 input[type="checkbox"].form-checkbox-control {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: none;
   margin-top: 2px;
   background-color: #272a34;
@@ -11255,9 +11207,9 @@ input[type="checkbox"].form-checkbox-control {
   border-radius: 2px;
   outline: none;
 
-     -moz-appearance: none;
-      -ms-appearance: none;
-       -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
 }
 input[type="checkbox"].form-checkbox-control:hover {
   background-color: #20232b;
@@ -11275,8 +11227,8 @@ input[type="checkbox"].form-checkbox-control:disabled {
   border: 1px solid #aaa;
 }
 input[type="radio"].form-radio-control {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: none;
   margin-top: 2px;
   background-color: #272a34;
@@ -11287,9 +11239,9 @@ input[type="radio"].form-radio-control {
   border-radius: 100%;
   outline: none;
 
-     -moz-appearance: none;
-      -ms-appearance: none;
-       -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
 }
 input[type="radio"].form-radio-control:hover {
   background-color: #20232b;
@@ -11342,7 +11294,7 @@ input[type="radio"].form-radio-control:disabled {
   background-color: #000;
   border-radius: 2px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip:after {
   position: absolute;
@@ -11359,7 +11311,7 @@ input[type="radio"].form-radio-control:disabled {
   border-style: solid;
   border-width: 15px 12px 0 12px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip.tt-right:before {
   top: 50%;
@@ -11367,7 +11319,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: 105%;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-right:after {
   top: 50%;
@@ -11377,7 +11329,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent #000 transparent transparent;
   border-width: 10px 12px 10px 0;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-bottom:before {
   top: 115%;
@@ -11385,7 +11337,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: 50%;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip.tt-bottom:after {
   top: auto;
@@ -11395,7 +11347,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent transparent #000 transparent;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip.tt-left:before {
   top: 50%;
@@ -11403,7 +11355,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: auto;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-left:after {
   top: 50%;
@@ -11413,7 +11365,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent transparent transparent #000;
   border-width: 10px 0 10px 12px;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip:hover,
 .info-tooltip:focus {
@@ -11534,7 +11486,7 @@ input[type="radio"].form-radio-control:disabled {
   border-style: solid;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .auth-box {
   width: 100%;

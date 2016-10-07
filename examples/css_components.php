@@ -1235,16 +1235,11 @@
                                                         <div class="form-group">
                                                             <input type="range" name="points" min="0" max="100" step="5" value="5">
                                                         </div>
-                                                        <p>Range inputs with validation:</p>
-                                                        <div class="form-group has-success">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
+                                                        <p>Disabled range input:</p>
+                                                        <div class="form-group">
+                                                            <input type="range" name="points" min="0" max="100" step="5" value="5" disabled>
                                                         </div>
-                                                        <div class="form-group has-warning">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
-                                                        </div>
-                                                        <div class="form-group has-error">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
-                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1671,7 +1666,6 @@
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <h4 class="text-primary"><strong>CSS Flipswitch</strong></h4>
-                                            <p>You can change the contextual styling of the flipswitch by using any of the available <mark>switch-*</mark> classes.</p>
                                             <div class="alert alert-info" role="alert"><p><i class="fa fa-info-circle fonts-up-140"></i>
                                                 The flip-switch items are based on a checkbox form-element. In order to display the flip-switch in the "on" or "off" state, make sure to add or remove the "checked" attribute from the "checkbox" input type.
                                                 </p></div>
@@ -1679,28 +1673,13 @@
                                                 <div class="row">
                                                     <div class="col-lg-8 col-lg-offset-2 text-center">
                                                         <p>
-                                                            <label class="switch switch-primary">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
+                                                            <label class="switch">
+                                                                <input type="checkbox" class="switch-input" name="card_status_0" >
                                                                 <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
-                                                            <label class="switch switch-info">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label"></span>
-                                                                <span class="switch-handle"></span>
-                                                            </label>
-                                                            <label class="switch switch-success">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label"></span>
-                                                                <span class="switch-handle"></span>
-                                                            </label>
-                                                            <label class="switch switch-warning">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label"></span>
-                                                                <span class="switch-handle"></span>
-                                                            </label>
-                                                            <label class="switch switch-danger">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
+                                                            <label class="switch">
+                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked>
                                                                 <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
