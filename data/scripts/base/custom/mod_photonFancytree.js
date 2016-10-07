@@ -59,7 +59,7 @@
             /**
              * TreeType click
              */
-            $this.element.bind('click', function(e){
+            $this.element.on('click', function(e){
                 if(e.target != this) return;
                 $this.modal.show();
             });
@@ -265,17 +265,9 @@
 
             $this._syncSelectToTree();
 
-            $('form').bind('reset', function() {
-                /** Stops the form from resetting after this function */
-                event.preventDefault();
-
-                /** resets the form before continuing the function */
-                $(this).reset();
-
-                /** Reload tree */
+            $('form').on('reset', function() {
+                $this._resetSearch();
                 $this.$tree.reload();
-
-                /** Update displayed info */
                 $this._updateInfo();
             });
         },
@@ -285,11 +277,11 @@
 
             $this.$tree.options.filter.mode = $this.options.searchUnmatched ? 'hide' : 'dimm';
 
-            $('#' + $this.options.treeSearchId).bind('input', function (event) {
+            $('#' + $this.options.treeSearchId).on('input', function (event) {
                 $this._searchHandler.call($this);
             });
 
-            $('#' + $this.options.treeSelectHierarchyId).bind('change', function () {
+            $('#' + $this.options.treeSelectHierarchyId).on('change', function () {
                 if ($(this).is(':checked')) {
                     $this.tree.fancytree('option', 'selectMode', 3);
                 } else {
@@ -297,7 +289,7 @@
                 }
             });
 
-            $('#' + $this.options.treeUnmatchedId).bind('change', function () {
+            $('#' + $this.options.treeUnmatchedId).on('change', function () {
                 $this._unmatchedHandler.call($this);
             });
         },
