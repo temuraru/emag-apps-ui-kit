@@ -212,7 +212,7 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -1991,7 +1991,7 @@ th {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+      transform: translate(0, 0);
 
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2071,34 +2071,34 @@ th {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      transform: rotate(90deg);
 }
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+      transform: rotate(180deg);
 }
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+      transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+      transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
+      transform: scale(1, -1);
 }
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+          filter: none;
 
   -webkit-filter: none;
 }
@@ -5693,12 +5693,12 @@ select[multiple].input-lg {
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-  touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -8098,13 +8098,13 @@ button.close {
 }
 .not-selectable {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 
-  -khtml-user-select: none;
+   -khtml-user-select: none;
   -webkit-touch-callout: none;
 }
 .scrollable.default-skin {
@@ -8119,10 +8119,10 @@ button.close {
 }
 .scrollable.default-skin .scroll-bar .thumb {
   background-color: black;
-  border-radius: 3px;
+          border-radius: 3px;
   opacity: .4;
 
-  -moz-border-radius: 4px;
+     -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
 .scrollable.default-skin .scroll-bar:hover .thumb {
@@ -8146,11 +8146,11 @@ button.close {
 .modal.fade .modal-dialog {
   transition: transform .3s ease-out;
   -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
+      transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+      transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -9143,7 +9143,7 @@ button.close {
   z-index: 3;
   margin: 0 !important;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .lock-center.fixed {
   position: fixed;
@@ -9286,7 +9286,7 @@ button.close {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .color-swatches .swatch-primary {
   background-color: #005eb7;
@@ -9473,7 +9473,7 @@ button.close {
   width: auto;
   height: 100%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .dropdown-menu {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .15);
@@ -9631,7 +9631,7 @@ button.close {
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1.0;
   -ms-transform: rotate(3deg) translate(0px, -4px);
-  transform: rotate(3deg) translate(0px, -4px);
+      transform: rotate(3deg) translate(0px, -4px);
 }
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
@@ -9950,9 +9950,6 @@ body {
   padding-right: 0;
   padding-left: 0;
   background-color: #171920;
-  border-color: #0a0b0e;
-  border-style: solid;
-  border-width: 0 1px 0 0;
 }
 .sidebar:before {
   position: fixed;
@@ -9963,6 +9960,9 @@ body {
   width: inherit;
   content: "";
   background-color: inherit;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0 1px 0 0;
 }
 .sidebar .sidebar-inner {
   position: relative;
@@ -9991,7 +9991,7 @@ body {
   padding: 16.5px 40px;
   padding-left: 54px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 20px;
   color: #eee;
@@ -10010,7 +10010,7 @@ body {
   text-align: center;
   vertical-align: middle;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
@@ -10032,7 +10032,6 @@ body {
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item > a {
   padding-left: 53px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
   font-weight: 400;
   color: #000;
   background-color: #22313f;
@@ -10054,7 +10053,6 @@ body {
 }
 .sidebar .sidebar-inner .menu-item .sidebar-submenu > .menu-item .sidebar-submenu .menu-item > a {
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
-  font-size: 13px;
   font-weight: 400;
   background-color: #10171e;
 }
@@ -10076,7 +10074,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a {
   color: #000;
@@ -10100,9 +10098,9 @@ body {
   z-index: 4;
   display: none;
   width: 200px;
-  border-color: #0a0b0e;
+  border-color: #ccc;
   border-style: solid;
-  border-width: 1px 0 0 0;
+  border-width: 1px 1px 0 0;
 }
 .sidebar .sidebar-control .sidebar-toggle {
   position: relative;
@@ -10110,7 +10108,7 @@ body {
   height: 53px;
   padding: 11px 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   color: #eee;
   text-align: center;
@@ -10171,7 +10169,7 @@ body {
     margin-left: 53px;
   }
   .sidebar.sidebar-min .sidebar-inner > .menu-item {
-    width: 53px;
+    width: 52px;
     overflow: hidden;
   }
   .sidebar.sidebar-min .sidebar-inner > .menu-item:hover {
@@ -10277,7 +10275,7 @@ body {
   bottom: 0;
   left: 0;
   background-color: #171920;
-  border-color: #0a0b0e;
+  border-color: #ccc;
   border-style: solid;
   border-width: 1px 0 0 0;
 }
@@ -11029,7 +11027,7 @@ body {
   color: #eee;
   opacity: .1;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .modal-feedback.has-info .modal-header {
   border-top: 6px solid #2790f3;
@@ -11207,9 +11205,9 @@ input[type="checkbox"].form-checkbox-control {
   border-radius: 2px;
   outline: none;
 
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
 }
 input[type="checkbox"].form-checkbox-control:hover {
   background-color: #20232b;
@@ -11239,9 +11237,9 @@ input[type="radio"].form-radio-control {
   border-radius: 100%;
   outline: none;
 
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
 }
 input[type="radio"].form-radio-control:hover {
   background-color: #20232b;
@@ -11294,7 +11292,7 @@ input[type="radio"].form-radio-control:disabled {
   background-color: #000;
   border-radius: 2px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip:after {
   position: absolute;
@@ -11311,7 +11309,7 @@ input[type="radio"].form-radio-control:disabled {
   border-style: solid;
   border-width: 15px 12px 0 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-right:before {
   top: 50%;
@@ -11319,7 +11317,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: 105%;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-right:after {
   top: 50%;
@@ -11329,7 +11327,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent #000 transparent transparent;
   border-width: 10px 12px 10px 0;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-bottom:before {
   top: 115%;
@@ -11337,7 +11335,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: 50%;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-bottom:after {
   top: auto;
@@ -11347,7 +11345,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent transparent #000 transparent;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-left:before {
   top: 50%;
@@ -11355,7 +11353,7 @@ input[type="radio"].form-radio-control:disabled {
   bottom: auto;
   left: auto;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-left:after {
   top: 50%;
@@ -11365,7 +11363,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: transparent transparent transparent #000;
   border-width: 10px 0 10px 12px;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip:hover,
 .info-tooltip:focus {
@@ -11486,7 +11484,7 @@ input[type="radio"].form-radio-control:disabled {
   border-style: solid;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .auth-box {
   width: 100%;

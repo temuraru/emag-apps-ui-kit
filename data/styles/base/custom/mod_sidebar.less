@@ -15,9 +15,6 @@
    padding-left: 0;
    padding-right: 0;
    background-color: @sidebar-first-level-bg;
-   border-style: solid;
-   border-color: @sidebar-outer-border-color;
-   border-width: 0 @sidebar-border-width 0 0;
    z-index: 100;
    display:block;
    
@@ -29,6 +26,9 @@
      top: 0;
      bottom: 0;
      z-index: 2;
+     border-style: solid;
+     border-width: 0 @sidebar-border-width 0 0;
+     border-color: @sidebar-outer-border-color;
      background-color: inherit;
    }
    .sidebar-inner {
@@ -58,7 +58,7 @@
 
             font-family: @sidebar-fontfamily;
             font-weight: @sidebar-fontweight-first-level;
-            font-size: @sidebar-fontsize-first-level;
+            font-size: @sidebar-fontsize;
             text-decoration: none;
 
             background-color: @sidebar-first-level-bg;
@@ -100,7 +100,6 @@
 
                  font-family: @sidebar-fontfamily;
                  font-weight: @sidebar-fontweight-second-level;
-                 font-size: @sidebar-fontsize-second-level;
                }
                &:last-child {
                    border-bottom: none;
@@ -124,8 +123,6 @@
                      > a {
                         font-family: @sidebar-fontfamily;
                         font-weight: @sidebar-fontweight-third-level;
-                        font-size: @sidebar-fontsize-third-level;
-
                         background-color:@sidebar-third-level-bg;
                      }
                      &:not(.active){
@@ -192,7 +189,7 @@
       width: @sidebar-max-width;
       border-style: solid;
       border-color: @sidebar-outer-border-color;
-      border-width: @sidebar-border-width 0 0 0;
+      border-width: @sidebar-border-width @sidebar-border-width 0 0;
       display:none;
       .sidebar-toggle {
         display: block;
@@ -271,7 +268,7 @@
             .sidebar-inner {
                 & > .menu-item {
                   overflow: hidden;
-                  width: @sidebar-min-width;
+                  width: (@sidebar-min-width - 1);
 
                   &:hover {
                     overflow: inherit;
