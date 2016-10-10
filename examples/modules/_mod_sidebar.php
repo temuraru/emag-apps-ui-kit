@@ -4,11 +4,11 @@
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/overview.php">
                     <i class="menu-icon fa fa-bolt"></i>
-                    <span class="menu-text">Start<br>Start<br>Start</span>
+                    <span class="menu-text">Start</span>
                 </a>
                 <div class="menu-item-data">
                     <a href="/examples/overview.php" class="menu-item-min-link">
-                        <span class="menu-text">Start<br>Start<br>Start</span>
+                        <span class="menu-text">Start</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
