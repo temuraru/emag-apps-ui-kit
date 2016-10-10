@@ -4,20 +4,26 @@
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/overview.php">
                     <i class="menu-icon fa fa-bolt"></i>
-                    <span class="menu-text">Start</span>
+                    <span class="menu-text">Start<br>Start<br>Start</span>
                 </a>
-                <ul class="sidebar-submenu">
-                    <li class="menu-item">
-                        <a href="/examples/overview.php#gettingStarted">
-                            <span class="menu-text">Getting started</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/examples/overview.php#overview">
-                            <span class="menu-text">Overview</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="menu-item-data">
+                    <a href="/examples/overview.php" class="menu-item-min-link">
+                        <span class="menu-text">Start<br>Start<br>Start</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/examples/overview.php#gettingStarted">
+                                <span class="menu-text">Getting started</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/examples/overview.php#overview">
+                                <span class="menu-text">Overview</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/layout.php">
@@ -25,6 +31,11 @@
                     <span class="menu-text">Layout</span>
                 </a>
                 <ul class="sidebar-submenu">
+                    <li class="menu-item">
+                        <a href="/examples/layout.php">
+                            <span class="menu-text">Layout</span>
+                        </a>
+                    </li>
                     <li class="menu-item">
                         <a href="/examples/layout.php#boilerplate">
                             <span class="menu-text">Boilerplate</span>
@@ -59,6 +70,11 @@
                 </a>
                 <ul class="sidebar-submenu">
                     <li class="menu-item">
+                        <a href="/examples/branding.php">
+                            <span class="menu-text">Branding</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
                         <a href="/examples/branding.php#colourScheme">
                             <span class="menu-text">Color scheme</span>
                         </a>
@@ -86,6 +102,11 @@
                     <span class="menu-text">CSS Components</span>
                 </a>
                 <ul class="sidebar-submenu">
+                    <li class="menu-item">
+                        <a href="/examples/css_components.php">
+                            <span class="menu-text">CSS Components</span>
+                        </a>
+                    </li>
                     <li class="menu-item">
                         <a href="/examples/css_components.php#typeStyles">
                             <span class="menu-text">Type styles and print</span>
@@ -180,6 +201,11 @@
                 </a>
                 <ul class="sidebar-submenu">
                     <li class="menu-item">
+                        <a href="/examples/js_components.php">
+                            <span class="menu-text">JS Components</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
                         <a href="/examples/js_components.php#modals">
                             <span class="menu-text">Modals</span>
                         </a>
@@ -254,6 +280,11 @@
                 <ul class="sidebar-submenu">
                     <li class="menu-item">
                         <a href="#">
+                            <span class="menu-text">Plugins</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
                             <span class="menu-text">Form enhancements</span>
                         </a>
                     </li>
@@ -310,6 +341,11 @@
                     <span class="menu-text">Useful Pages</span>
                 </a>
                 <ul class="sidebar-submenu">
+                    <li class="menu-item">
+                        <a href="#">
+                            <span class="menu-text">Useful Pages</span>
+                        </a>
+                    </li>
                     <li class="menu-item">
                         <a href="/examples/authentication.php">
                             <span class="menu-text">Login /Register</span>
