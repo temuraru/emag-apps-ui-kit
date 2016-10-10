@@ -23,9 +23,9 @@
      * Sidebar elements
      * @event click
      */
-    sidebarJqObj.on('click', menuItemHasChildrenCssClass + ' > a', function (e) {
+    sidebarJqObj.on('click', menuItemHasChildrenCssClass + ' > a, ' + menuItemHasChildrenCssClass + ' .menu-item-data > a', function (e) {
         e.preventDefault();
-        var element = $(this).parent(menuItemHasChildrenCssClass);
+        var element = $(this).closest(menuItemHasChildrenCssClass);
 
         if (element.hasClass('active')) {
             element.removeClass('active');
