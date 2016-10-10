@@ -68,8 +68,7 @@
              * Parent form reset action
              */
             $('#' + $this.options.typeId).parents('form').on('reset', function() {
-                $('#' + $this.options.selectId + ' option[value!=""]:selected').removeAttr('selected')
-                $('#' + $this.options.selectId + ' option[value!=""]:selected').prop('selected', false);
+                $('#' + $this.options.selectId + ' option[value!=""]:selected').removeAttr('selected').prop('selected', false);
                 if ($this.$tree != undefined) {
                     $this._resetSearch();
                     $this.$tree.reload();
