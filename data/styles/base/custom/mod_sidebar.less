@@ -6,6 +6,7 @@
 // Base styles
 // --------------------------------------------------
 
+
 .sidebar {
    width: @sidebar-max-width;
    top: 0px;   
@@ -31,6 +32,49 @@
      border-color: @sidebar-outer-border-color;
      background-color: inherit;
    }
+
+  &.sidebar-min {
+    .sidebar-inner {
+      & > .menu-item {
+        & > a {
+          .menu-text {
+            display: none;
+          }
+        }
+
+        &.active,
+        &.active:hover {
+          & > .menu-item-data {
+            & > .menu-item-min-link {
+              background-color: @sidebar-menu-active-cell-bg;
+              color: @gray-base;
+            }
+          }
+        }
+
+        .menu-item-data {
+          display: block;
+
+          > .menu-item-min-link {
+            display: block;
+          }
+
+          .sidebar-submenu {
+            display: none;
+            width: 160px;
+          }
+        }
+      }
+
+      & > .menu-item:hover {
+        & > a,
+        & > .menu-item-data > .menu-item-min-link {
+          background-color: @sidebar-menu-hover-cell-bg;
+        }
+      }
+    }
+  }
+
    .sidebar-inner {
       margin: 0;
       padding: 0;
@@ -87,10 +131,20 @@
             }
          }
 
-         .sidebar-submenu {
-            display:none;
-            position:relative;
-            margin-left:-40px;
+         .menu-item-data {
+           display:none;
+           position:relative;
+
+           > .menu-item-min-link {
+             display: none;
+             padding-left: 10px;
+             width: 160px;
+           }
+
+           .sidebar-submenu {
+             padding-left: 0;
+           }
+
             > .menu-item {
                border-color: darken(@sidebar-second-level-bg, 5%);
                > a {
@@ -118,6 +172,8 @@
                  }
                }
                .sidebar-submenu {
+                 display: none;
+
                   .menu-item {
                      border-color: darken(@sidebar-third-level-bg, 5%);
                      > a {
@@ -153,7 +209,28 @@
                   font-family: FontAwesome;
                   content: '\f107';
                }
-            }            
+            }
+
+           & .menu-item-data > .menu-item-min-link {
+             &:after {
+               display: inline-block;
+               position:absolute;
+               top:50%;
+               right:15px;
+               .translate(0; -50%);
+               vertical-align: middle;
+               text-align: center;
+               line-height: inherit;
+               font-size: @sidebar-iconsize;
+               font-weight: 700;
+               font-family: FontAwesome;
+               content: '\f107';
+             }
+           }
+
+           .sidebar-submenu {
+             display: none;
+           }
          }
          &.active {
              &:not(.menu-item-has-children) {
@@ -171,8 +248,23 @@
                         content: '\f106';
                     }
                  }
-                 & > .sidebar-submenu {
-                    display:block;
+
+                & > .sidebar-submenu {
+                  display: block;
+                }
+
+                 & > .menu-item-data {
+                   display:block;
+
+                   & > .sidebar-submenu {
+                     display: block;
+                   }
+
+                   > .menu-item-min-link {
+                     &:after {
+                       content: '\f106';
+                     }
+                   }
                 }
              }
          }
@@ -274,14 +366,16 @@
                     overflow: inherit;
                     width: (@sidebar-max-width + @sidebar-border-width + 13);
 
-                    &.active > .sidebar-submenu {
-                      display:block;
+                    &.active > .menu-item-data {
+                      display: block;
                     }
                   }
 
-                  & > .sidebar-submenu {
+                  & > .menu-item-data {
                     position: absolute;
                     left: (@sidebar-min-width + @sidebar-border-width);
+                    top: 0;
+                    z-index: 1;
                     width: @sidebar-max-width;
 
                     .menu-item{
