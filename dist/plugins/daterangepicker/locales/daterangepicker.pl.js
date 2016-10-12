@@ -9,8 +9,8 @@
         toLabel: 'Do',
         customRangeLabel: 'Zwyczaj',
         weekLabel: 'T',
-        daysOfWeek: 'N_Pn_Wt_?r_Cz_Pt_So'.split('_'),
-        monthNames: 'stycze?_luty_marzec_kwiecie?_maj_czerwiec_lipiec_sierpie?_wrzesie?_pa?dziernik_listopad_grudzie?'.split('_'),
+        daysOfWeek: 'N_Pn_Wt_Śr_Cz_Pt_So'.split('_'),
+        monthNames: 'styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień'.split('_'),
         firstDay: 1
     }
 }(window));
