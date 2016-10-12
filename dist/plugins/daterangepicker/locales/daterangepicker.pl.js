@@ -1,5 +1,5 @@
 // Start of local namespace
-;(function(window, undefined) {
+;(function(window) {
     'use strict';
 
     window.daterangepicker_locale = {
