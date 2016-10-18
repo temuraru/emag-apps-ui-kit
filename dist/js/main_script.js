@@ -7,19 +7,39 @@ var photonTranslations = [];
 var photonTranslations = {
     "listing": {
         "en": {
-            noResults: 'No records to display in this listing.'
+            noResults: 'No records to display in this listing.',
+            view: 'View',
+            of: 'of',
+            items: 'items',
+            item: 'item'
         },
         "ro": {
-            noResults: 'No records to display in this listing.'
+            noResults: 'No records to display in this listing.',
+            view: 'View',
+            of: 'of',
+            items: 'items',
+            item: 'item'
         },
         "bg": {
-            noResults: 'No records to display in this listing.'
+            noResults: 'No records to display in this listing.',
+            view: 'View',
+            of: 'of',
+            items: 'items',
+            item: 'item'
         },
         "hu": {
-            noResults: 'No records to display in this listing.'
+            noResults: 'No records to display in this listing.',
+            view: 'View',
+            of: 'of',
+            items: 'items',
+            item: 'item'
         },
         "pl": {
-            noResults: 'No records to display in this listing.'
+            noResults: 'No records to display in this listing.',
+            view: 'View',
+            of: 'of',
+            items: 'items',
+            item: 'item'
         }
     }
 };
