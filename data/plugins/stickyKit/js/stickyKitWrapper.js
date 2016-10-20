@@ -7,7 +7,8 @@ function initPhotonStick(container) {
 
     var offsetTop = $('.navbar-fixed-top').outerHeight();
 
-    var MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT = 3;
+    //Min extra height for sticky parent element, if is less the stick element does not work correctly
+    var MIN_HEIGHT_STICKY_PARENT_ELEMENT = 3;
     var RECALCULATION_INTERVAL = 50;
 
     resetStickElementsToDefault($stickElements);
@@ -56,7 +57,7 @@ function initPhotonStick(container) {
     }
 
     function calculateMinHeightOfElement($this){
-        return $this.outerHeight() + MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT;
+        return $this.outerHeight() + MIN_HEIGHT_STICKY_PARENT_ELEMENT;
     }
 
     function setMaxIndexToChildren(stickyContainer) {
