@@ -10,7 +10,7 @@
 
 .nav-icon-lg {
     font-size: @font-size-large;
-    margin: ((@font-size-large - @font-size-base)*-1) 6px;
+    margin: ((@font-size-large - @font-size-base)*-1) 10px;
 }
 
 .nav-icon-sm,.nav-icon-md,.nav-icon-lg {
@@ -30,7 +30,61 @@
       padding-left:0;
     }
   }
+  .dd-notify {
+
+  }
+  .dd-language {
+    font-weight: 600;
+  }
+  .dropdown:last-of-type {
+    .dropdown-menu {
+      right: 0;
+    }
+  }
   .dropdown-menu {
+    padding: 0;
+    right: -1px;
+
+    &.dm-language {
+      min-width: 82px;
+
+      li {
+        a {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    > li {
+      padding: 0;
+      border-top: 1px solid @gray-80;
+
+      > a {
+        padding: 6px 10px;
+      }
+    }
+    > li:hover {
+      background: @gray-93;
+    }
+    .dm-header {
+      padding: 6px 10px;
+      border-top: none;
+    }
+    .dm-header:hover {
+      background: none;
+    }
+    .radio,
+    .radio + .radio {
+      margin: 0;
+    }
+    .radio {
+      label {
+        display: block;
+        padding: 6px 10px 6px 30px;
+      }
+    }
     .nav-icon-sm,.nav-icon-md,.nav-icon-lg {
         margin-left: 0;
         margin-right: 8px;
@@ -39,12 +93,15 @@
   .profile-thumb {
     margin: -15px 0;
     margin-right: 10px;
+    top: -2px;
   }
 }
 
 ///* Fix to centrate Nav-bar logo*/
 .navbar-brand {
   position: relative;
+  border-right: 1px solid @navbar-default-border;
+
   > img {
     display: inline-block;
     //position: absolute;
@@ -52,13 +109,13 @@
     //left: @navbar-padding-horizontal;
     height: (@navbar-height - @navbar-padding-vertical * 2);
     max-width: 200px;
-    margin: 0 8px 2px 0;
     //.translate(0; -50%);
   }
 }
 
 .navbar-default {
-    box-shadow: 0 1px 3px -1px rgba(0,0,0,.3);
+  box-shadow: none;
+  border-bottom: 1px solid @gray-80;
 }
 
 .nav-input-group {
@@ -76,6 +133,16 @@
             max-width: 300px;
         }
     }
+}
+
+.navbar-nav {
+  & > li:first-of-type {
+    border-left: 1px solid @navbar-default-border;
+  }
+
+  .page-settings-link {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: (@screen-sm-max)) {
@@ -121,7 +188,6 @@
 @media (min-width: @screen-sm) {
     .navbar-nav {
         & > li {
-            min-width: (@navbar-height + 10px);
             text-align: center;
             border-right: 1px solid @navbar-default-border;
 
@@ -132,8 +198,8 @@
                 .jewel {
                     margin: 0;
                     position: absolute;
-                    top: 8px;
-                    right: 10px;
+                    top: 6px;
+                    right: 11px;
                 }
             }
             .dropdown-menu {
@@ -149,12 +215,6 @@
                     &:after {
                         left: auto;
                         right: 11px;
-                    }
-                }
-
-                & > li {
-                    & > a {
-                        padding: 5px 10px;
                     }
                 }
             }

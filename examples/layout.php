@@ -151,13 +151,15 @@
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
                                                             <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
-                                                            <span class="hidden-xs">| Title</span>
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
                                                                 <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
                                                             </button>
                                                         </div>
+                                                    </div>
+                                                    <div class="collapse navbar-collapse" id="test2_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
                                                     </div>
                                                 </div>
                                             </nav>
@@ -190,13 +192,14 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png"><span class="hidden-xs">| Title</span>
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i></button>
                                                         </div>
                                                     </div>
                                                     <div class="collapse navbar-collapse" id="test2_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
                                                         <button type="button" class="btn btn-danger navbar-btn">Don't press this button!</button>
                                                         <ul class="nav navbar-nav navbar-right">
                                                             <li class="dropdown">
@@ -205,14 +208,13 @@
                                                                         <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
                                                                     </div>
                                                                     Jon Snow
-                                                                    <i class="fa fa-caret-down hidden-xs"></i>
+                                                                    <i class="fa fa-chevron-down hidden-xs"></i>
                                                                 </a>
-                                                                <ul class="dropdown-menu dropdown-caret">
+                                                                <ul class="dropdown-menu">
                                                                     <li class="dm-header hidden-xs"><span>User actions</span></li>
-                                                                    <li><a href="#"><i class="fa fa-cog nav-icon-md"></i><span>Account settings</span></a></li>
-                                                                    <li><a href="#"><i class="fa fa-cog nav-icon-md"></i><span>Support</span></a></li>
-                                                                    <li class="divider"></li>
-                                                                    <li><a href="#"><i class="fa fa-power-off nav-icon-md"></i><span>Log out</span></a></li>
+                                                                    <li><a href="#"><span>Account settings</span></a></li>
+                                                                    <li><a href="#"><span>Support</span></a></li>
+                                                                    <li><a href="#"><span>Log out</span></a></li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
@@ -243,14 +245,13 @@
                             &#x3C;img class=&#x22;nav-user-photo&#x22; src=&#x22;../dist/css/img/jon_snow.jpg&#x22; onerror=&#x22;this.src=&#x27;../dist/css/icons/default_user.png&#x27;&#x22; alt=&#x22;&#x22; height=&#x22;36&#x22;&#x3E;
                         &#x3C;/div&#x3E;
                         Jon Snow
-                        &#x3C;i class=&#x22;fa fa-caret-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;i class=&#x22;fa fa-chevron-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
                     &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
                         &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;&#x3C;span&#x3E;User actions&#x3C;/span&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog nav-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Account settings&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog nav-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Support&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-power-off nav-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Log out&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Account settings&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Support&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Log out&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                     &#x3C;/ul&#x3E;
                 &#x3C;/li&#x3E;
             &#x3C;/ul&#x3E;
@@ -266,7 +267,7 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png"><span class="hidden-xs">| Title</span>
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -275,29 +276,29 @@
                                                         </div>
                                                     </div>
                                                     <div class="collapse navbar-collapse" id="test3_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
                                                         <ul class="nav navbar-nav navbar-right">
                                                             <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                                     <span class="visible-xs-inline">Limbă</span>                        
-                                                                    <span><strong><i class="flag-icon flag-icon-ro"></i> RO </strong></span>
-                                                                    <i class="fa fa-caret-down hidden-xs"></i>
+                                                                    <span><i class="flag-icon flag-icon-ro"></i> RO</span>
+                                                                    <i class="fa fa-chevron-down hidden-xs"></i>
                                                                 </a>
-                                                                <ul class="dropdown-menu dropdown-caret">
-                                                                    <li class="dm-header hidden-xs"><span>Limbă</span></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> română (română)</span></a></li>
-                                                                    <li><a href="#n"><i class="flag-icon flag-icon-gb"></i><span> english (engleză)</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span> български (bulgară)</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span> magyar (maghiară)</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span> polski (poloneză)</span></a></li>
+                                                                <ul class="dropdown-menu dm-language">
+                                                                    <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> RO</span></a></li>
+                                                                    <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span> EN</span></a></li>
+                                                                    <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span> BG</span></a></li>
+                                                                    <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span> HU</span></a></li>
+                                                                    <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span> PL</span></a></li>
                                                                 </ul>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-notify" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                                                                     <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
                                                                     <span class="visible-xs-inline">Notifications</span>
                                                                     <span class="jewel">3</span>
                                                                 </a>
-                                                                <ul class="dropdown-menu dropdown-caret">
+                                                                <ul class="dropdown-menu">
                                                                     <li class="dm-header hidden-xs">
                                                                         <span>Notifications</span>
                                                                     </li>
@@ -310,7 +311,6 @@
                                                                     <li>
                                                                         <a href="#"><span>You have a new order</span></a>
                                                                     </li>
-                                                                    <li role="separator" class="divider"></li>
                                                                     <li>
                                                                         <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
                                                                     </li>
@@ -340,27 +340,26 @@
         &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test3_navbar&#x22;&#x3E;
             &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
                 &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle dd-language&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
                         &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Limb&#x103;&#x3C;/span&#x3E;
-                        &#x3C;span&#x3E;&#x3C;strong&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E; RO &#x3C;/strong&#x3E;&#x3C;/span&#x3E;
-                        &#x3C;i class=&#x22;fa fa-caret-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E; RO&#x3C;/span&#x3E;
+                        &#x3C;i class=&#x22;fa fa-chevron-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
                     &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
-                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;&#x3C;span&#x3E;Limb&#x103;&#x3C;/span&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; rom&#xE2;n&#x103; (rom&#xE2;n&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#n&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-gb&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; english (englez&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-bg&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; &#x431;&#x44A;&#x43B;&#x433;&#x430;&#x440;&#x441;&#x43A;&#x438; (bulgar&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-hu&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; magyar (maghiar&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-pl&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; polski (polonez&#x103;)&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu dm-language&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; RO&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-gb&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; EN&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-bg&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; BG&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-hu&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; HU&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-pl&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; PL&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                     &#x3C;/ul&#x3E;
                 &#x3C;/li&#x3E;
                 &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle dd-notify&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
                         &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
                         &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notifications&#x3C;/span&#x3E;
                         &#x3C;span class=&#x22;jewel&#x22;&#x3E;3&#x3C;/span&#x3E;
                     &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
                         &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;
                             &#x3C;span&#x3E;Notifications&#x3C;/span&#x3E;
                         &#x3C;/li&#x3E;
@@ -373,7 +372,6 @@
                         &#x3C;li&#x3E;
                             &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have a new order&#x3C;/span&#x3E;&#x3C;/a&#x3E;
                         &#x3C;/li&#x3E;
-                        &#x3C;li role=&#x22;separator&#x22; class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
                         &#x3C;li&#x3E;
                             &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;text-center&#x22;&#x3E;&#x3C;span&#x3E;view all&#x3C;/span&#x3E;&#x3C;/a&#x3E;
                         &#x3C;/li&#x3E;
@@ -392,7 +390,7 @@
                                                             <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                         </div>
                                                         <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png"><span class="hidden-xs">| Title</span>
+                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
                                                         </a>
                                                         <div class="nav-controls visible-xs-inline-block pull-right">
                                                             <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -402,6 +400,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="collapse navbar-collapse" id="test4_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
                                                         <ul class="nav navbar-nav navbar-right">
                                                             <li class="nav-input-group">
                                                                 <div class="input-group">
@@ -412,11 +411,11 @@
                                                                 </div>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-notify" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                                                                     <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
                                                                     <span class="visible-xs-inline">Notificare</span>
                                                                 </a>
-                                                                <ul class="dropdown-menu dropdown-caret">
+                                                                <ul class="dropdown-menu">
                                                                     <li class="dm-header hidden-xs">
                                                                         <span>Notifications</span>
                                                                     </li>
@@ -429,7 +428,6 @@
                                                                     <li>
                                                                         <a href="#"><span>You have a new order</span></a>
                                                                     </li>
-                                                                    <li role="separator" class="divider"></li>
                                                                     <li>
                                                                         <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
                                                                     </li>
@@ -468,11 +466,11 @@
                     &#x3C;/div&#x3E;
                 &#x3C;/li&#x3E;
                 &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle dd-notify&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
                         &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
                         &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notificare&#x3C;/span&#x3E;
                     &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu dropdown-caret&#x22;&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
                         &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;
                             &#x3C;span&#x3E;Notifications&#x3C;/span&#x3E;
                         &#x3C;/li&#x3E;
@@ -485,7 +483,6 @@
                         &#x3C;li&#x3E;
                             &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have a new order&#x3C;/span&#x3E;&#x3C;/a&#x3E;
                         &#x3C;/li&#x3E;
-                        &#x3C;li role=&#x22;separator&#x22; class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
                         &#x3C;li&#x3E;
                             &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;text-center&#x22;&#x3E;&#x3C;span&#x3E;view all&#x3C;/span&#x3E;&#x3C;/a&#x3E;
                         &#x3C;/li&#x3E;
