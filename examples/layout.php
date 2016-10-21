@@ -293,7 +293,7 @@
                                                                 </ul>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-notify" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                                                                     <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
                                                                     <span class="visible-xs-inline">Notifications</span>
                                                                     <span class="jewel">3</span>
@@ -354,7 +354,7 @@
                     &#x3C;/ul&#x3E;
                 &#x3C;/li&#x3E;
                 &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle dd-notify&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
                         &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
                         &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notifications&#x3C;/span&#x3E;
                         &#x3C;span class=&#x22;jewel&#x22;&#x3E;3&#x3C;/span&#x3E;
@@ -411,7 +411,7 @@
                                                                 </div>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-notify" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                                                                     <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
                                                                     <span class="visible-xs-inline">Notificare</span>
                                                                 </a>
@@ -466,7 +466,7 @@
                     &#x3C;/div&#x3E;
                 &#x3C;/li&#x3E;
                 &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle dd-notify&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
+                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
                         &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
                         &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notificare&#x3C;/span&#x3E;
                     &#x3C;/a&#x3E;

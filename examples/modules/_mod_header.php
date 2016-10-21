@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle dd-notify" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
                         <span class="visible-xs-inline">Notificări</span>
                         <span class="jewel">3</span>
