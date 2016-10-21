@@ -9692,6 +9692,16 @@ button.close {
 .navbar .nav-controls:last-child {
   padding-left: 0;
 }
+.navbar .nav-search input[type="text"] {
+  border-right: none;
+  box-shadow: none;
+}
+.navbar .nav-search .form-control:focus {
+  border-color: #ccc;
+}
+.navbar .nav-search button {
+  border-left: none;
+}
 .navbar .dd-language {
   font-weight: 600;
 }

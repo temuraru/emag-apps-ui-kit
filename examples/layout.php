@@ -402,11 +402,11 @@
                                                     <div class="collapse navbar-collapse" id="test4_navbar">
                                                         <h4 class="navbar-text">Title</h4>
                                                         <ul class="nav navbar-nav navbar-right">
-                                                            <li class="nav-input-group">
+                                                            <li class="nav-input-group nav-search">
                                                                 <div class="input-group">
-                                                                    <input type="text" class="form-control" name="example1" id="example1" placeholder="Searchbox">
+                                                                    <input type="text" class="form-control" name="example1" id="example1" placeholder="Search">
                                                                     <div class="input-group-btn">
-                                                                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                                                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -459,9 +459,9 @@
             &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
                 &#x3C;li class=&#x22;nav-input-group&#x22;&#x3E;
                     &#x3C;div class=&#x22;input-group&#x22;&#x3E;
-                        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; name=&#x22;example1&#x22; id=&#x22;example1&#x22; placeholder=&#x22;Searchbox&#x22;&#x3E;
+                        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; name=&#x22;example1&#x22; id=&#x22;example1&#x22; placeholder=&#x22;Search&#x22;&#x3E;
                         &#x3C;div class=&#x22;input-group-btn&#x22;&#x3E;
-                            &#x3C;button class=&#x22;btn btn-primary&#x22; type=&#x22;submit&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+                            &#x3C;button class=&#x22;btn btn-default&#x22; type=&#x22;submit&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
                         &#x3C;/div&#x3E;
                     &#x3C;/div&#x3E;
                 &#x3C;/li&#x3E;
