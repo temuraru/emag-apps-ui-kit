@@ -103,9 +103,17 @@
 
         function _initStickyOnJqGrid(gridOpts){
             var tableId = '#gbox_'+ gridOpts.table.slice(1);
+            var $tableHead = $(tableId + ' .ui-jqgrid-hdiv');
+            var $tableBody = $(tableId + ' .ui-jqgrid-bdiv');
 
             _addClassForStickElements(tableId);
             initPhotonStick(tableId);
+
+            $(window).on("sticky_kit:stick", function() {
+                $tableHead.scrollLeft($tableBody.scrollLeft());
+            }).on("sticky_kit:unstick", function() {
+                $tableHead.scrollLeft($tableBody.scrollLeft());
+            })
         }
 
         function _addClassForStickElements(tableId){

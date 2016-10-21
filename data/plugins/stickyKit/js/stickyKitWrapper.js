@@ -7,8 +7,9 @@ function initPhotonStick(container) {
 
     var offsetTop = $('.navbar-fixed-top').outerHeight();
 
-    var MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT = 3;
-    var BORDER_BOTTOM = 2;
+    //Min extra height for sticky parent element, if is less the stick element does not work correctly
+    var MIN_HEIGHT_STICKY_PARENT_ELEMENT = 3;
+    var RECALCULATION_INTERVAL = 50;
 
     resetStickElementsToDefault($stickElements);
 
@@ -42,7 +43,6 @@ function initPhotonStick(container) {
 
     setMaxIndexToAllElementSticked();
 
-    $(document.body).off('click', '.stick-with-no-parent');
     $(document.body).on('click', '.stick-with-no-parent', function () {
         setMaxIndexToChildren(this);
     });
@@ -57,7 +57,7 @@ function initPhotonStick(container) {
     }
 
     function calculateMinHeightOfElement($this){
-        return $this.outerHeight() + MIN_EXTRA_HEIGHT_TO_ADD_FOR_WORKING_OK_STIKY_ELEMENT;
+        return $this.outerHeight() + MIN_HEIGHT_STICKY_PARENT_ELEMENT;
     }
 
     function setMaxIndexToChildren(stickyContainer) {
@@ -83,11 +83,11 @@ function initPhotonStick(container) {
         $stickElement = $(stickElement);
 
         if (stickElement.posTop) {
-            $stickElement.stick_in_parent({'offset_top': offsetTop + stickElement.posTop, 'recalc_every': 1});
+            $stickElement.stick_in_parent({'offset_top': offsetTop + stickElement.posTop - parseInt($stickElement.css("marginTop")), 'recalc_every': RECALCULATION_INTERVAL}); //if RECALCULATION_INTERVAL = 1, the unstick event will not be triggered
         } else {
             //has no parent
             $stickElement.parent().addClass('stick-with-no-parent');
-            $stickElement.stick_in_parent({'offset_top': offsetTop, 'recalc_every': 1});
+            $stickElement.stick_in_parent({'offset_top': offsetTop - parseInt($stickElement.css("marginTop")), 'recalc_every': RECALCULATION_INTERVAL}); //if RECALCULATION_INTERVAL = 1, the unstick event will not be triggered
         }
     }
 
@@ -100,29 +100,27 @@ function initPhotonStick(container) {
         //if is not current obj
         if (!$(siblingAndChildren).is($stickElement)) {
             if (siblingAndChildren.posTop) {
-                siblingAndChildren.posTop += $stickElement.outerHeight() - BORDER_BOTTOM;
+                siblingAndChildren.posTop += $stickElement.outerHeight();
             } else {
-                siblingAndChildren.posTop = $stickElement.outerHeight() - BORDER_BOTTOM;
+                siblingAndChildren.posTop = $stickElement.outerHeight();
             }
         }
     }
 
     function resetStickElementsToDefault($stickElements){
+        $(document.body).off('click', '.stick-with-no-parent');
         $.each($stickElements, function() {
             this.posTop = null;
             this.minPosibleIndex = null;
-            $(this).trigger("sticky_kit:recalc");
-            $(this).trigger("sticky_kit:detach");
-        })
+            $this = $(this);
+            $this.trigger("sticky_kit:detach");
+            $this.parent().removeClass('stick-with-no-parent');
+        });
     }
 }
 
-$(window).on('minimize.photon.sidebar maximize.photon.sidebar', function () {
-    $(window).resize();
-}).on('hidden.bs.collapse hidden.bs.tab shown.bs.collapse shown.bs.tab', function () {
-    $(window).scroll();
-}).on('show.bs.tab show.bs.collapse', function () {
+$(window).on('minimize.photon.sidebar maximize.photon.sidebar hidden.bs.collapse hidden.bs.tab shown.bs.collapse shown.bs.tab show.bs.tab show.bs.collapse resize', function () {
     setTimeout(function () {
-        $(window).scroll();
+        $(document.body).trigger("sticky_kit:recalc");
     }, 0)
 });
