@@ -144,196 +144,203 @@
                                             <p><strong>The header navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
                                         </div>
                                     </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body" data-showcase="example">
-                                            <nav class="navbar navbar-default">
-                                                <div class="container-fluid">
-                                                    <div class="navbar-header">
-                                                        <div class="nav-controls visible-xs-inline-block pull-left">
-                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                    <div class="show-panel">
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body" data-showcase="example">
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
-                                                        </a>
-                                                        <div class="nav-controls visible-xs-inline-block pull-right">
-                                                            <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                                <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
-                                                            </button>
+                                                        <div class="collapse navbar-collapse" id="test2_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
                                                         </div>
                                                     </div>
-                                                    <div class="collapse navbar-collapse" id="test2_navbar">
-                                                        <h4 class="navbar-text">Title</h4>
-                                                    </div>
-                                                </div>
-                                            </nav>
+                                                </nav>
+                                            </div>
+                                            <div class="show-panel-footer">
+                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                            </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                        </div>
-                                        <div class="show-panel-body" data-showcase="example">
-                                            <nav class="navbar navbar-default">
-                                                <div class="container-fluid">
-                                                    <div class="navbar-header">
-                                                        <div class="nav-controls visible-xs-inline-block pull-left">
-                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body" data-showcase="example">
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i></button>
+                                                            </div>
                                                         </div>
-                                                        <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
-                                                        </a>
-                                                        <div class="nav-controls visible-xs-inline-block pull-right">
-                                                            <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i></button>
+                                                        <div class="collapse navbar-collapse" id="test2_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
+                                                            <button type="button" class="btn btn-danger navbar-btn">Don't press this button!</button>
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                <li class="dropdown">
+                                                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                        <div class="profile-thumb hidden-xs">
+                                                                            <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
+                                                                        </div>
+                                                                        Jon Snow
+                                                                        <i class="fa fa-chevron-down hidden-xs"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href="#"><span>Account settings</span></a></li>
+                                                                        <li><a href="#"><span>Support</span></a></li>
+                                                                        <li><a href="#"><span>Log out</span></a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="collapse navbar-collapse" id="test2_navbar">
-                                                        <h4 class="navbar-text">Title</h4>
-                                                        <button type="button" class="btn btn-danger navbar-btn">Don't press this button!</button>
-                                                        <ul class="nav navbar-nav navbar-right">
-                                                            <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <div class="profile-thumb hidden-xs">
-                                                                        <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
+                                                </nav>
+                                            </div>
+                                            <div class="show-panel-footer">
+                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body" data-showcase="example">
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse navbar-collapse" id="test3_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                <li class="dropdown">
+                                                                    <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                        <span class="visible-xs-inline">Limbă</span>
+                                                                        <span><i class="flag-icon flag-icon-ro"></i> RO</span>
+                                                                        <i class="fa fa-chevron-down hidden-xs"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dm-language">
+                                                                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> RO</span></a></li>
+                                                                        <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span> EN</span></a></li>
+                                                                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span> BG</span></a></li>
+                                                                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span> HU</span></a></li>
+                                                                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span> PL</span></a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown">
+                                                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                                                                        <span class="visible-xs-inline">Notifications</span>
+                                                                        <span class="jewel">3</span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li class="dm-header hidden-xs">
+                                                                            <span>Notifications</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>You have an invalidated offer</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>Your account is not up to date</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>You have a new order</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                            <div class="show-panel-footer">
+                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body" data-showcase="example">
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                    <span class="sr-only">Toggle navigation</span>
+                                                                    <i class="fa fa-chevron-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse navbar-collapse" id="test4_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                <li class="nav-input-group nav-search">
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" name="example1" id="example1" placeholder="Search">
+                                                                        <div class="input-group-btn">
+                                                                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                                                        </div>
                                                                     </div>
-                                                                    Jon Snow
-                                                                    <i class="fa fa-chevron-down hidden-xs"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li class="dm-header hidden-xs"><span>User actions</span></li>
-                                                                    <li><a href="#"><span>Account settings</span></a></li>
-                                                                    <li><a href="#"><span>Support</span></a></li>
-                                                                    <li><a href="#"><span>Log out</span></a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                        </div>
-                                        <div class="show-panel-body" data-showcase="example">
-                                            <nav class="navbar navbar-default">
-                                                <div class="container-fluid">
-                                                    <div class="navbar-header">
-                                                        <div class="nav-controls visible-xs-inline-block pull-left">
-                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
-                                                        </div>
-                                                        <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
-                                                        </a>
-                                                        <div class="nav-controls visible-xs-inline-block pull-right">
-                                                            <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                                <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
-                                                            </button>
+                                                                </li>
+                                                                <li class="dropdown">
+                                                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                                                                        <span class="visible-xs-inline">Notificare</span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li class="dm-header hidden-xs">
+                                                                            <span>Notifications</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>You have an invalidated offer</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>Your account is not up to date</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>You have a new order</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="collapse navbar-collapse" id="test3_navbar">
-                                                        <h4 class="navbar-text">Title</h4>
-                                                        <ul class="nav navbar-nav navbar-right">
-                                                            <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <span class="visible-xs-inline">Limbă</span>                        
-                                                                    <span><i class="flag-icon flag-icon-ro"></i> RO</span>
-                                                                    <i class="fa fa-chevron-down hidden-xs"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dm-language">
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> RO</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span> EN</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span> BG</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span> HU</span></a></li>
-                                                                    <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span> PL</span></a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                                                                    <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
-                                                                    <span class="visible-xs-inline">Notifications</span>
-                                                                    <span class="jewel">3</span>
-                                                                </a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li class="dm-header hidden-xs">
-                                                                        <span>Notifications</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"><span>You have an invalidated offer</span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"><span>Your account is not up to date</span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"><span>You have a new order</span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                        </div>
-                                        <div class="show-panel-body" data-showcase="example">
-                                            <nav class="navbar navbar-default">
-                                                <div class="container-fluid">
-                                                    <div class="navbar-header">
-                                                        <div class="nav-controls visible-xs-inline-block pull-left">
-                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
-                                                        </div>
-                                                        <a class="navbar-brand" href="javascript:void(0)">
-                                                            <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
-                                                        </a>
-                                                        <div class="nav-controls visible-xs-inline-block pull-right">
-                                                            <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                                <span class="sr-only">Toggle navigation</span>
-                                                                <i class="fa fa-chevron-down"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse navbar-collapse" id="test4_navbar">
-                                                        <h4 class="navbar-text">Title</h4>
-                                                        <ul class="nav navbar-nav navbar-right">
-                                                            <li class="nav-input-group nav-search">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" name="example1" id="example1" placeholder="Search">
-                                                                    <div class="input-group-btn">
-                                                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="dropdown">
-                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                                                                    <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
-                                                                    <span class="visible-xs-inline">Notificare</span>
-                                                                </a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li class="dm-header hidden-xs">
-                                                                        <span>Notifications</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"><span>You have an invalidated offer</span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"><span>Your account is not up to date</span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#"><span>You have a new order</span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>                                                               
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                </nav>
+                                            </div>
+                                            <div class="show-panel-footer">
+                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
