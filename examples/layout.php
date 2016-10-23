@@ -11,6 +11,9 @@
         <!-- The favicon -->
         <?php include_once "modules/_mod_favicon.php"?>
 
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+
         <!-- PHOTON main styles -->
         <link rel="stylesheet" href="../dist/css/main_style.min.css">
 
@@ -142,7 +145,7 @@
                                         </div>
                                     </div>
                                     <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
+                                        <div class="show-panel-body" data-showcase="example">
                                             <nav class="navbar navbar-default">
                                                 <div class="container-fluid">
                                                     <div class="navbar-header">
@@ -165,26 +168,9 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
-<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
-    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
-        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
-                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;
-                &#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
-            &#x3C;/a&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test1_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;
-                    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/nav&#x3E;</code></pre>
+                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                         </div>
-                                        <div class="show-panel-body">
+                                        <div class="show-panel-body" data-showcase="example">
                                             <nav class="navbar navbar-default">
                                                 <div class="container-fluid">
                                                     <div class="navbar-header">
@@ -223,43 +209,9 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
-<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
-    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
-        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
-                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;&#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
-            &#x3C;/a&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test2_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test2_navbar&#x22;&#x3E;
-            &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-danger navbar-btn&#x22;&#x3E;Don&#x27;t press this button!&#x3C;/button&#x3E;
-            &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
-                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
-                        &#x3C;div class=&#x22;profile-thumb hidden-xs&#x22;&#x3E;
-                            &#x3C;img class=&#x22;nav-user-photo&#x22; src=&#x22;../dist/css/img/jon_snow.jpg&#x22; onerror=&#x22;this.src=&#x27;../dist/css/icons/default_user.png&#x27;&#x22; alt=&#x22;&#x22; height=&#x22;36&#x22;&#x3E;
-                        &#x3C;/div&#x3E;
-                        Jon Snow
-                        &#x3C;i class=&#x22;fa fa-chevron-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
-                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;&#x3C;span&#x3E;User actions&#x3C;/span&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Account settings&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Support&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Log out&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                    &#x3C;/ul&#x3E;
-                &#x3C;/li&#x3E;
-            &#x3C;/ul&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/nav&#x3E;</code></pre>
+                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                         </div>
-                                        <div class="show-panel-body">
+                                        <div class="show-panel-body" data-showcase="example">
                                             <nav class="navbar navbar-default">
                                                 <div class="container-fluid">
                                                     <div class="navbar-header">
@@ -322,67 +274,9 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
-<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
-    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
-        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
-                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;&#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
-            &#x3C;/a&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test3_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;
-                    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test3_navbar&#x22;&#x3E;
-            &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
-                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle dd-language&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
-                        &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Limb&#x103;&#x3C;/span&#x3E;
-                        &#x3C;span&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E; RO&#x3C;/span&#x3E;
-                        &#x3C;i class=&#x22;fa fa-chevron-down hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu dm-language&#x22;&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-ro&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; RO&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-gb&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; EN&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-bg&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; BG&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-hu&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; HU&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;flag-icon flag-icon-pl&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E; PL&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                    &#x3C;/ul&#x3E;
-                &#x3C;/li&#x3E;
-                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
-                        &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notifications&#x3C;/span&#x3E;
-                        &#x3C;span class=&#x22;jewel&#x22;&#x3E;3&#x3C;/span&#x3E;
-                    &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
-                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;
-                            &#x3C;span&#x3E;Notifications&#x3C;/span&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have an invalidated offer&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Your account is not up to date&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have a new order&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;text-center&#x22;&#x3E;&#x3C;span&#x3E;view all&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                    &#x3C;/ul&#x3E;
-                &#x3C;/li&#x3E;
-            &#x3C;/ul&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/nav&#x3E;</code></pre>
+                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                         </div>
-                                        <div class="show-panel-body">
+                                        <div class="show-panel-body" data-showcase="example">
                                             <nav class="navbar navbar-default">
                                                 <div class="container-fluid">
                                                     <div class="navbar-header">
@@ -439,59 +333,7 @@
                                             </nav>
                                         </div>
                                         <div class="show-panel-footer">
-<pre><code>&#x3C;nav class=&#x22;navbar navbar-default navbar-fixed-top&#x22;&#x3E;
-    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
-        &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-left&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; id=&#x22;toggle-sidebar-btn&#x22; type=&#x22;button&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle sidepanel&#x3C;/span&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;javascript:void(0)&#x22;&#x3E;
-                &#x3C;img alt=&#x22;PHOTON Test&#x22; src=&#x22;../dist/css/img/photon-power-logo.png&#x22;&#x3E;&#x3C;span class=&#x22;hidden-xs&#x22;&#x3E;| Title&#x3C;/span&#x3E;
-            &#x3C;/a&#x3E;
-            &#x3C;div class=&#x22;nav-controls visible-xs-inline-block pull-right&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-default navbar-btn&#x22; data-target=&#x22;#test4_navbar&#x22; data-toggle=&#x22;collapse&#x22; id=&#x22;main-min-nav&#x22; type=&#x22;button&#x22;&#x3E;
-                    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;
-                    &#x3C;i class=&#x22;fa fa-chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;test4_navbar&#x22;&#x3E;
-            &#x3C;ul class=&#x22;nav navbar-nav navbar-right&#x22;&#x3E;
-                &#x3C;li class=&#x22;nav-input-group&#x22;&#x3E;
-                    &#x3C;div class=&#x22;input-group&#x22;&#x3E;
-                        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; name=&#x22;example1&#x22; id=&#x22;example1&#x22; placeholder=&#x22;Search&#x22;&#x3E;
-                        &#x3C;div class=&#x22;input-group-btn&#x22;&#x3E;
-                            &#x3C;button class=&#x22;btn btn-default&#x22; type=&#x22;submit&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
-                        &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
-                &#x3C;/li&#x3E;
-                &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
-                    &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;true&#x22;&#x3E;
-                        &#x3C;i class=&#x22;fa fa-bell nav-icon-lg hidden-xs&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;span class=&#x22;visible-xs-inline&#x22;&#x3E;Notificare&#x3C;/span&#x3E;
-                    &#x3C;/a&#x3E;
-                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
-                        &#x3C;li class=&#x22;dm-header hidden-xs&#x22;&#x3E;
-                            &#x3C;span&#x3E;Notifications&#x3C;/span&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have an invalidated offer&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;Your account is not up to date&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span&#x3E;You have a new order&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                        &#x3C;li&#x3E;
-                            &#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;text-center&#x22;&#x3E;&#x3C;span&#x3E;view all&#x3C;/span&#x3E;&#x3C;/a&#x3E;
-                        &#x3C;/li&#x3E;
-                    &#x3C;/ul&#x3E;
-                &#x3C;/li&#x3E;
-            &#x3C;/ul&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/nav&#x3E;</code></pre>
+                                            <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -744,13 +586,19 @@
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
+
         <!-- SCRIPTS:End -->
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
                 console.log('Ready, Captain!');
 
                 demoHelpers();  //Requires demo_helpers.js
+
+                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
 
                 $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
                     updateSideBarCode();
@@ -758,6 +606,11 @@
 
                 $('input[name="footer_fixed_status"]').on('change', function() {
                     updateFooterBarCode();
+                });
+            });
+            $(window).load(function () {
+                $('.language-markup .token.tag:contains("nav")+.token.attr-name:contains("class")+.token.attr-value').each(function (index, element) {
+                    $(element).find('.token.punctuation').eq(2).before(' navbar-fixed-top');
                 });
             });
         </script>
