@@ -9713,7 +9713,7 @@ button.close {
 }
 .navbar .dropdown a > .fa {
   font-size: 20px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .navbar .dropdown a > .fa.nav-icon-lg {
   font-size: 18px;
