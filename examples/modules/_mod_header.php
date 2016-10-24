@@ -53,15 +53,15 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
-                        <span class="visible-xs-inline">Notificări</span>
+                        <span class="visible-xs-inline">Notifications</span>
                         <span class="jewel">3</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="dm-header hidden-xs"><span>Notificări</span></li>
+                        <li class="dm-header hidden-xs"><span>Notifications</span></li>
                         <li><a href="#"><span>You have an invalidated offer</span></a></li>
                         <li><a href="#"><span>Your account is not up to date</span></a></li>
                         <li><a href="#"><span>You have a new order</span></a></li>
-                        <li><a href="javascript:void(0)" class="text-center"><span>Vizualizează totul</span></a></li>
+                        <li><a href="javascript:void(0)" class="text-center"><span>View all</span></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -73,8 +73,8 @@
                         <i class="fa fa-chevron-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/app_dev.php/ro_RO/profile"><span>Setările contului</span></a></li>
-                        <li><a href="/app_dev.php/logout"><span>Deconectare</span></a></li>
+                        <li><a href="/app_dev.php/ro_RO/profile"><span>Account settings</span></a></li>
+                        <li><a href="/app_dev.php/logout"><span>Logout</span></a></li>
                     </ul>
                 </li>
             </ul>

@@ -202,7 +202,7 @@
                                                                     <ul class="dropdown-menu">
                                                                         <li><a href="#"><span>Account settings</span></a></li>
                                                                         <li><a href="#"><span>Support</span></a></li>
-                                                                        <li><a href="#"><span>Log out</span></a></li>
+                                                                        <li><a href="#"><span>Logout</span></a></li>
                                                                     </ul>
                                                                 </li>
                                                             </ul>
@@ -268,7 +268,7 @@
                                                                             <a href="#"><span>You have a new order</span></a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
+                                                                            <a href="javascript:void(0)" class="text-center"><span>View all</span></a>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
@@ -329,7 +329,7 @@
                                                                             <a href="#"><span>You have a new order</span></a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="javascript:void(0)" class="text-center"><span>view all</span></a>
+                                                                            <a href="javascript:void(0)" class="text-center"><span>View all</span></a>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
