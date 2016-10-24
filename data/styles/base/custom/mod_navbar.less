@@ -77,9 +77,12 @@
     > li:hover {
       background: @gray-93;
     }
+    >li:first-of-type {
+      border-top: none;
+    }
+
     .dm-header {
       padding: 6px 10px;
-      border-top: none;
       white-space: nowrap;
     }
     .dm-header:hover {
@@ -162,11 +165,7 @@
     .navbar-nav {
         margin: 0 -15px;
         & > li {
-            border-bottom: 1px solid @navbar-default-border;
-
-            &:last-child {
-                border-bottom: none;
-            }
+            border-bottom: none;
         }
         .dropdown-menu {
             &.dropdown-caret {

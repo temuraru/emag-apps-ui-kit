@@ -9729,10 +9729,12 @@ button.close {
 .navbar .dropdown-menu > li:hover {
   background: #eee;
 }
+.navbar .dropdown-menu > li:first-of-type {
+  border-top: none;
+}
 .navbar .dropdown-menu .dm-header {
   padding: 6px 10px;
   white-space: nowrap;
-  border-top: none;
 }
 .navbar .dropdown-menu .dm-header:hover {
   background: none;
@@ -9799,9 +9801,6 @@ button.close {
     margin: 0 -15px;
   }
   .navbar-nav > li {
-    border-bottom: 1px solid #ccc;
-  }
-  .navbar-nav > li:last-child {
     border-bottom: none;
   }
   .navbar-nav .dropdown-menu {
