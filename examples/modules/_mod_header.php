@@ -38,16 +38,15 @@
                 </li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="visible-xs-inline">Language</span>                        
-                        <span><i class="flag-icon flag-icon-gb"></i> GB</span>
-                        <i class="fa fa-angle-down hidden-xs"></i>
+                        <span class="visible-xs-inline">Language</span>
+                        <span><i class="flag-icon flag-icon-gb"></i>GB</span><i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu dm-language">
-                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> RO</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span> GB</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span> BG</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span> HU</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span> PL</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span>GB</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -65,12 +64,10 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="profile-thumb hidden-xs">
                             <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" alt="">
-                        </div>
-                        Jon Snow
-                        <i class="fa fa-angle-down hidden-xs"></i>
+                        </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="/app_dev.php/ro_RO/profile"><span>Account settings</span></a></li>

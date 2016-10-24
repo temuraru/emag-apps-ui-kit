@@ -45,6 +45,16 @@
   .dd-language {
     span + span {
       font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .flag-icon {
+      margin-right: 7.5px;
+    }
+  }
+  .dd-user {
+    .fa {
+      margin-left: 10px;
     }
   }
   .dropdown {
@@ -79,7 +89,7 @@
     right: -1px;
 
     &.dm-language {
-      min-width: 82.5px;
+      min-width: 92px;
 
       li {
         a {
@@ -87,6 +97,10 @@
             font-weight: 600;
           }
         }
+      }
+
+      .flag-icon {
+        margin-right: 7.5px;
       }
     }
 
@@ -133,7 +147,7 @@
   .profile-thumb {
     margin: -15px 0;
     margin-right: 10px;
-    top: -4px;
+    top: -2px;
   }
 }
 
@@ -202,15 +216,6 @@
             padding:0;
             .divider {
               display:none;
-            }
-        }
-        .open {
-            .dropdown-menu {
-                & > li {
-                    & > a {
-                        padding: 10px 15px 10px 15px;
-                    }
-                }
             }
         }
     }

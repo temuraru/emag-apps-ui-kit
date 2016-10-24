@@ -9455,7 +9455,7 @@ button.close {
   width: 41px;
   height: 41px;
   padding: 0;
-  margin: 0;
+  margin: 0 10px 0 0;
   overflow: hidden;
   line-height: inherit;
   vertical-align: middle;
@@ -9702,7 +9702,14 @@ button.close {
   border-left: none;
 }
 .navbar .dd-language span + span {
+  margin-right: 10px;
   font-weight: 600;
+}
+.navbar .dd-language .flag-icon {
+  margin-right: 7.5px;
+}
+.navbar .dd-user .fa {
+  margin-left: 10px;
 }
 .navbar .dropdown a > .fa {
   font-size: 20px;
@@ -9727,10 +9734,13 @@ button.close {
   padding: 0;
 }
 .navbar .dropdown-menu.dm-language {
-  min-width: 82.5px;
+  min-width: 92px;
 }
 .navbar .dropdown-menu.dm-language li a span {
   font-weight: 600;
+}
+.navbar .dropdown-menu.dm-language .flag-icon {
+  margin-right: 7.5px;
 }
 .navbar .dropdown-menu > li {
   padding: 0;
@@ -9770,7 +9780,7 @@ button.close {
   margin-left: 0;
 }
 .navbar .profile-thumb {
-  top: -4px;
+  top: -2px;
   margin: -15px 0;
   margin-right: 10px;
 }
@@ -9825,9 +9835,6 @@ button.close {
   }
   .navbar-nav .dropdown-menu .divider {
     display: none;
-  }
-  .navbar-nav .open .dropdown-menu > li > a {
-    padding: 10px 15px 10px 15px;
   }
 }
 @media (min-width: 768px) {
