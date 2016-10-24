@@ -7,7 +7,7 @@
                 </button>
             </div>
             <a class="navbar-brand" href="javascript:void(0)">
-                <img src="../dist/css/img/photon-power-logo.png" alt="Admin App">
+                <img src="../dist/css/img/logo-eMAG.png" alt="Admin App">
             </a>
             <div class="nav-controls visible-xs-inline-block pull-right">
                 <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
