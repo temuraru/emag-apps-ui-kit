@@ -43,7 +43,20 @@
     }
   }
   .dd-language {
-    font-weight: 600;
+    span + span {
+      font-weight: 600;
+    }
+  }
+  .dropdown {
+    .dropdown-menu {
+      right: -1px;
+      border-top: none;
+      top: 51px;
+
+      > li {
+        border-bottom: none;
+      }
+    }
   }
   .dropdown:last-of-type {
     .dropdown-menu {
@@ -55,7 +68,7 @@
     right: -1px;
 
     &.dm-language {
-      min-width: 82px;
+      min-width: 82.5px;
 
       li {
         a {
@@ -152,21 +165,23 @@
 }
 
 .navbar-nav {
+  & > li {
+    border-bottom: 1px solid @navbar-default-border;
+  }
   & > li:first-of-type {
-    border-left: 1px solid @navbar-default-border;
+    border-top: 1px solid @navbar-default-border;
   }
 
   .page-settings-link {
-    font-size: 18px;
+    span + span {
+      font-size: 18px;
+    }
   }
 }
 
 @media (max-width: (@screen-sm-max)) {
     .navbar-nav {
         margin: 0 -15px;
-        & > li {
-            border-bottom: none;
-        }
         .dropdown-menu {
             &.dropdown-caret {
                 &:before, &:after {
@@ -174,13 +189,6 @@
                 }
             }
             padding:0;
-            & > li {
-                border-bottom: 1px solid @navbar-default-border;
-                background-color: darken(@navbar-default-bg, 3%);
-                &:last-child {
-                  border-bottom: none;
-                }
-            }
             .divider {
               display:none;
             }
@@ -199,12 +207,20 @@
 
 @media (min-width: @screen-sm) {
     .navbar-nav {
+      .page-settings-link {
+        height: 50px;
+      }
         & > li {
             text-align: center;
             border-right: 1px solid @navbar-default-border;
+            border-bottom: none;
 
+            &:first-child {
+              border-top: none;
+              border-left: 1px solid @navbar-default-border;
+            }
             &:last-child {
-                border-right: none;
+              border-right: none;
             }
             .dropdown-toggle {
                 .jewel {
@@ -215,7 +231,6 @@
                 }
             }
             .dropdown-menu {
-                .border-top-radius(2px);
                 .border-bottom-radius(2px);
 
                 &.dropdown-caret {

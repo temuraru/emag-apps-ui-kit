@@ -9703,8 +9703,16 @@ button.close {
 .navbar .nav-search button {
   border-left: none;
 }
-.navbar .dd-language {
+.navbar .dd-language span + span {
   font-weight: 600;
+}
+.navbar .dropdown .dropdown-menu {
+  top: 51px;
+  right: -1px;
+  border-top: none;
+}
+.navbar .dropdown .dropdown-menu > li {
+  border-bottom: none;
 }
 .navbar .dropdown:last-of-type .dropdown-menu {
   right: 0;
@@ -9714,7 +9722,7 @@ button.close {
   padding: 0;
 }
 .navbar .dropdown-menu.dm-language {
-  min-width: 82px;
+  min-width: 82.5px;
 }
 .navbar .dropdown-menu.dm-language li a span {
   font-weight: 600;
@@ -9790,18 +9798,18 @@ button.close {
     max-width: 300px;
   }
 }
-.navbar-nav > li:first-of-type {
-  border-left: 1px solid #ccc;
+.navbar-nav > li {
+  border-bottom: 1px solid #ccc;
 }
-.navbar-nav .page-settings-link {
+.navbar-nav > li:first-of-type {
+  border-top: 1px solid #ccc;
+}
+.navbar-nav .page-settings-link span + span {
   font-size: 18px;
 }
 @media (max-width: 991px) {
   .navbar-nav {
     margin: 0 -15px;
-  }
-  .navbar-nav > li {
-    border-bottom: none;
   }
   .navbar-nav .dropdown-menu {
     padding: 0;
@@ -9809,13 +9817,6 @@ button.close {
   .navbar-nav .dropdown-menu.dropdown-caret:before,
   .navbar-nav .dropdown-menu.dropdown-caret:after {
     display: none;
-  }
-  .navbar-nav .dropdown-menu > li {
-    background-color: #111217;
-    border-bottom: 1px solid #ccc;
-  }
-  .navbar-nav .dropdown-menu > li:last-child {
-    border-bottom: none;
   }
   .navbar-nav .dropdown-menu .divider {
     display: none;
@@ -9825,9 +9826,17 @@ button.close {
   }
 }
 @media (min-width: 768px) {
+  .navbar-nav .page-settings-link {
+    height: 50px;
+  }
   .navbar-nav > li {
     text-align: center;
     border-right: 1px solid #ccc;
+    border-bottom: none;
+  }
+  .navbar-nav > li:first-child {
+    border-top: none;
+    border-left: 1px solid #ccc;
   }
   .navbar-nav > li:last-child {
     border-right: none;
@@ -9839,8 +9848,6 @@ button.close {
     margin: 0;
   }
   .navbar-nav > li .dropdown-menu {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
   }
