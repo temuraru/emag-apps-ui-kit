@@ -9704,8 +9704,12 @@ button.close {
 .navbar .dd-language span + span {
   font-weight: 600;
 }
-.navbar .dropdown a .fa {
+.navbar .dropdown a > .fa {
   font-size: 20px;
+  vertical-align: middle;
+}
+.navbar .dropdown a > .fa.nav-icon-lg {
+  font-size: 18px;
 }
 .navbar .dropdown .dropdown-menu {
   top: 51px;
