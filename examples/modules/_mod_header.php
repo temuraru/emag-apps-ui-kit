@@ -11,7 +11,7 @@
             </a>
             <div class="nav-controls visible-xs-inline-block pull-right">
                 <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
                 </button>
             </div>
         </div><!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,7 +40,7 @@
                     <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="visible-xs-inline">Language</span>                        
                         <span><i class="flag-icon flag-icon-gb"></i> GB</span>
-                        <i class="fa fa-chevron-down hidden-xs"></i>
+                        <i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu dm-language">
                         <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> RO</span></a></li>
@@ -61,7 +61,7 @@
                         <li><a href="#"><span>You have an invalidated offer</span></a></li>
                         <li><a href="#"><span>Your account is not up to date</span></a></li>
                         <li><a href="#"><span>You have a new order</span></a></li>
-                        <li><a href="javascript:void(0)" class="text-center"><span>View all</span></a></li>
+                        <li><a href="javascript:void(0)"><span>View all</span></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -70,7 +70,7 @@
                             <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" alt="">
                         </div>
                         Jon Snow
-                        <i class="fa fa-chevron-down hidden-xs"></i>
+                        <i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="/app_dev.php/ro_RO/profile"><span>Account settings</span></a></li>

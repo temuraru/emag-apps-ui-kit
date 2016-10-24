@@ -11,7 +11,7 @@
             </a>
             <div class="nav-controls visible-xs-inline-block pull-right">
                 <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
                 </button>
             </div>
         </div><!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,7 +22,7 @@
                     <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="visible-xs-inline">Language</span>                        
                         <span><i class="flag-icon flag-icon-ro"></i> RO</span>
-                        <i class="fa fa-chevron-down hidden-xs"></i>
+                        <i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu dm-language">
                         <li class="dm-header hidden-xs"><span>Language</span></li>

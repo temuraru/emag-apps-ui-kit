@@ -48,6 +48,12 @@
     }
   }
   .dropdown {
+    a {
+      .fa {
+        font-size: 20px;
+      }
+    }
+
     .dropdown-menu {
       right: -1px;
       border-top: none;
@@ -207,8 +213,10 @@
 
 @media (min-width: @screen-sm) {
     .navbar-nav {
-      .page-settings-link {
-        height: 50px;
+      .dropdown {
+        > a {
+          height: 50px;
+        }
       }
         & > li {
             text-align: center;

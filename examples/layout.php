@@ -158,7 +158,7 @@
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
+                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -184,7 +184,7 @@
                                                                 <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
-                                                                <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i></button>
+                                                                <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i></button>
                                                             </div>
                                                         </div>
                                                         <div class="collapse navbar-collapse" id="test2_navbar">
@@ -197,7 +197,7 @@
                                                                             <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
                                                                         </div>
                                                                         Jon Snow
-                                                                        <i class="fa fa-chevron-down hidden-xs"></i>
+                                                                        <i class="fa fa-angle-down hidden-xs"></i>
                                                                     </a>
                                                                     <ul class="dropdown-menu">
                                                                         <li><a href="#"><span>Account settings</span></a></li>
@@ -227,7 +227,7 @@
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-chevron-down"></i>
+                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -238,7 +238,7 @@
                                                                     <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                                         <span class="visible-xs-inline">Limbă</span>
                                                                         <span><i class="flag-icon flag-icon-ro"></i> RO</span>
-                                                                        <i class="fa fa-chevron-down hidden-xs"></i>
+                                                                        <i class="fa fa-angle-down hidden-xs"></i>
                                                                     </a>
                                                                     <ul class="dropdown-menu dm-language">
                                                                         <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span> RO</span></a></li>
@@ -268,7 +268,7 @@
                                                                             <a href="#"><span>You have a new order</span></a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="javascript:void(0)" class="text-center"><span>View all</span></a>
+                                                                            <a href="javascript:void(0)"><span>View all</span></a>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
@@ -295,7 +295,7 @@
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
                                                                     <span class="sr-only">Toggle navigation</span>
-                                                                    <i class="fa fa-chevron-down"></i>
+                                                                    <i class="fa fa-angle-down"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -329,7 +329,7 @@
                                                                             <a href="#"><span>You have a new order</span></a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="javascript:void(0)" class="text-center"><span>View all</span></a>
+                                                                            <a href="javascript:void(0)"><span>View all</span></a>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
