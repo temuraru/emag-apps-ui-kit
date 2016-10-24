@@ -83,8 +83,11 @@
                 }
                 jqGridOverlay.removeClass('custom-overlay');
 
-                if(gridOpts.stickyButtons) {
+                if(gridOpts.stickyButtons && !$jqgridContainer[0].stickyButtonsInitialized) {
                     _initStickyOnJqGrid(gridOpts);
+                    $jqgridContainer[0].stickyButtonsInitialized = true;
+                }else if(gridOpts.stickyButtons){
+                    $(document.body).trigger("sticky_kit:recalc");
                 }
             },
             mergeGridComplete: true,
