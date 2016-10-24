@@ -9475,6 +9475,7 @@ button.close {
       transform: translate(-50%, -50%);
 }
 .dropdown-menu {
+  min-width: 50px;
   box-shadow: none;
 }
 .dropdown-menu.dropdown-caret:before,
@@ -9730,6 +9731,7 @@ button.close {
 }
 .navbar .dropdown-menu .dm-header {
   padding: 6px 10px;
+  white-space: nowrap;
   border-top: none;
 }
 .navbar .dropdown-menu .dm-header:hover {
@@ -9742,6 +9744,9 @@ button.close {
 .navbar .dropdown-menu .radio label {
   display: block;
   padding: 6px 10px 6px 30px;
+}
+.navbar .dropdown-menu label {
+  white-space: nowrap;
 }
 .navbar .dropdown-menu .nav-icon-sm,
 .navbar .dropdown-menu .nav-icon-md,
