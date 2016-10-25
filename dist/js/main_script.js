@@ -3254,9 +3254,11 @@ var Popover = (function ($) {
         if(sidebarJqObj.hasClass('sidebar-min')) {
             sidebarJqObj.removeClass('sidebar-min');
             $(window).trigger('maximize.photon.sidebar');
+            setCookie('sidebarStatus', 'open');
         } else {
             sidebarJqObj.addClass('sidebar-min');
             $(window).trigger('minimize.photon.sidebar');
+            setCookie('sidebarStatus', 'close');
         }
     });
     /**
@@ -3293,6 +3295,31 @@ var Popover = (function ($) {
             }
         }
     });
+
+    $(document).on('ready', function () {
+        var sidebarStatus = getCookie('sidebarStatus');
+
+        if (sidebarStatus == '') {
+            setCookie('sidebarStatus', 'open');
+        } else {
+            if (sidebarStatus == 'close' && window.innerWidth > SCREEN_XS_MAX) {
+                sidebarJqObj.addClass('sidebar-min');
+                sidebarJqObj.find('.menu-icon').removeClass('fa-arrow-left').addClass('fa-arrow-right');
+            }
+        }
+    });
+
+    $(window).on('resize', function () {
+        var sidebarStatus = getCookie('sidebarStatus');
+
+        if (sidebarStatus == 'close' && window.innerWidth > SCREEN_XS_MAX) {
+            sidebarJqObj.addClass('sidebar-min');
+            sidebarJqObj.find('.menu-icon').removeClass('fa-arrow-left').addClass('fa-arrow-right');
+        } else {
+            sidebarJqObj.removeClass('sidebar-min');
+            sidebarJqObj.find('.menu-icon').removeClass('fa-arrow-right').addClass('fa-arrow-left');
+        }
+    })
 }(jQuery);
 (function(window, $) {
     'use strict';
@@ -6150,3 +6177,25 @@ function showThisLoader(type, colorClass) {
     console.log("Browser: " + browser + " | Version: " + browserVersion + " | Product: " + browserEngine + " | OS: " + platform);
 
 }( jQuery ));
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length,c.length);
+        }
+    }
+    return "";
+}
