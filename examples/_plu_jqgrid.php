@@ -72,8 +72,6 @@
                                         <code class="language-html">
 &lt;script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js">&lt;/script>
 &lt;script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js">&lt;/script>
-&lt;script src="../data/scripts/base/custom/mod_photonTranslations.js">&lt;/script>
-&lt;script src="../data/scripts/base/custom/mod_photonJqGrid.js">&lt;/script>
                                         </code>
                                     </pre>
                                     <b>HTML</b>
@@ -165,8 +163,6 @@ $(document).ready(function() {
                                         <code class="language-html">
 &lt;script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js">&lt;/script>
 &lt;script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js">&lt;/script>
-&lt;script src="../data/scripts/base/custom/mod_photonTranslations.js">&lt;/script>
-&lt;script src="../data/scripts/base/custom/mod_photonJqGrid.js">&lt;/script>
                                         </code>
                                     </pre>
                                     <b>HTML</b>
@@ -307,9 +303,6 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
 
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
-<script src="../data/scripts/base/custom/mod_photonTranslations.js"></script>
-<script src="../data/scripts/base/custom/mod_photonDataFormatter.js"></script>
-<script src="../data/scripts/base/custom/mod_photonJqGrid.js"></script>
 
 <script src="../dist/js/main_script.min.js"></script>
 

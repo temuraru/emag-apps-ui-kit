@@ -23,7 +23,6 @@
                         </li>
                     </ul>
                 </div>
-
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/layout.php">
