@@ -9151,9 +9151,6 @@ button.close {
 .formatted-sans-serif {
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
 }
-.formatted-serif {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 .formatted-monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -9408,22 +9405,17 @@ button.close {
   content: '#fafafa';
 }
 .wba-font-primary,
-.wba-font-serif,
 .wba-font-monospace {
   position: relative;
   display: inline-block;
   line-height: inherit;
 }
 .wba-font-primary:before,
-.wba-font-serif:before,
 .wba-font-monospace:before {
   position: relative;
 }
 .wba-font-primary:before {
   content: '"Open_sans", Helvetica, Arial, sans-serif';
-}
-.wba-font-serif:before {
-  content: 'Georgia, "Times New Roman", Times, serif';
 }
 .wba-font-monospace:before {
   content: 'Menlo, Monaco, Consolas, "Courier New", monospace';
