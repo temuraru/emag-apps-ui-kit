@@ -3227,6 +3227,9 @@ var Popover = (function ($) {
      * @type {string}
      */
     var menuItemHasChildrenCssClass = '.menu-item-has-children';
+
+    const SCREEN_XS_MAX = 767;
+
     /**
      * Sidebar elements
      * @event click
