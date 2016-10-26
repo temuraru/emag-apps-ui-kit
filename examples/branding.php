@@ -135,13 +135,7 @@
                                                         <div class="pad-btm-20">
                                                             <h1>ABCDEFGHIÎJKLMNOPQRSȘTȚUVWXYZ<br>abcdefghiîjklmnopqrsștțuvwxyz<br>1234567890!@#$%^&amp;*()`~[{]}\|;:'",&lt;.&gt;/?</h1>
                                                         </div>
-                                                        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i> 
-                                                            The current serif font-family is <code><span class="wba-font-serif"></span></code>. To use this font-family, use the <mark>.formatted-serif</mark> class on the element or its parent or, in Less, use the <mark>@font-family-serif</mark>. You can view the font glyphs in the example below.
-                                                        </div>
-                                                        <div class="pad-btm-20">
-                                                            <h3 class="formatted-serif">ABCDEFGHIÎJKLMNOPQRSȘTȚUVWXYZ<br>abcdefghiîjklmnopqrsștțuvwxyz<br>1234567890!@#$%^&amp;*()`~[{]}\|;:'",&lt;.&gt;/?</h3>
-                                                        </div>
-                                                        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i> 
+                                                        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
                                                             The current monospace font-family is <code><span class="wba-font-monospace"></span></code>. To use this font-family, use the <mark>.formatted-monospace</mark> class on the element or its parent or, in LESS, use the <mark>@font-family-monospace</mark>. You can view the font glyphs in the example below.
                                                         </div>
                                                         <div class="pad-btm-20">
