@@ -6142,7 +6142,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   color: #262626;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #eee;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -9741,18 +9741,12 @@ button.close {
 .navbar .dropdown-menu > li > a {
   padding: 6px 10px;
 }
-.navbar .dropdown-menu > li:hover {
-  background: #eee;
-}
 .navbar .dropdown-menu > li:first-of-type {
   border-top: none;
 }
 .navbar .dropdown-menu .dm-header {
   padding: 6px 10px;
   white-space: nowrap;
-}
-.navbar .dropdown-menu .dm-header:hover {
-  background: none;
 }
 .navbar .dropdown-menu .radio,
 .navbar .dropdown-menu .radio + .radio {
