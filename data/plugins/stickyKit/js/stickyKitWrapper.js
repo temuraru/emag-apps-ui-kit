@@ -131,6 +131,6 @@ $(document.body).on('click', '.tool', function (event) {
         setTimeout(function () {
             var $tableBody = _this.parent().find('.ui-jqgrid-bdiv');
             _this.scrollLeft($tableBody.scrollLeft());
-        }, 200)
+        }, 100)
     });
 });
