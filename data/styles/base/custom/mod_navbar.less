@@ -10,7 +10,7 @@
 
 .nav-icon-lg {
     font-size: @font-size-large;
-    margin: ((@font-size-large - @font-size-base)*-1) 6px;
+    margin: ((@font-size-large - @font-size-base)*-1) 10px;
 }
 
 .nav-icon-sm,.nav-icon-md,.nav-icon-lg {
@@ -30,7 +30,115 @@
       padding-left:0;
     }
   }
+  .nav-search {
+    input[type="text"] {
+      box-shadow: none;
+      border-right: none;
+    }
+    .form-control:focus {
+      border-color: @gray-80;
+    }
+    button {
+      border-left: none;
+    }
+  }
+  .dd-language {
+    span + span {
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .flag-icon {
+      margin-right: 7.5px;
+    }
+  }
+  .dd-user {
+    .fa {
+      margin-left: 10px;
+    }
+  }
+  .dropdown {
+    a {
+      > .fa {
+        font-size: 20px;
+        vertical-align: bottom;
+
+        &.nav-icon-lg {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      right: -1px;
+      border-top: none;
+      top: 51px;
+
+      > li {
+        border-bottom: none;
+      }
+    }
+  }
+  .dropdown:last-of-type {
+    .dropdown-menu {
+      right: 0;
+    }
+  }
   .dropdown-menu {
+    padding: 0;
+    right: -1px;
+
+    &.dm-language {
+      min-width: 92px;
+
+      li {
+        a {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .flag-icon {
+        margin-right: 7.5px;
+      }
+    }
+
+    > li {
+      padding: 0;
+      border-top: 1px solid @gray-80;
+
+      > a {
+        padding: 6px 10px;
+      }
+    }
+    > li:hover {
+      background: @gray-93;
+    }
+    >li:first-of-type {
+      border-top: none;
+    }
+
+    .dm-header {
+      padding: 6px 10px;
+      white-space: nowrap;
+    }
+    .dm-header:hover {
+      background: none;
+    }
+    .radio,
+    .radio + .radio {
+      margin: 0;
+    }
+    .radio {
+      label {
+        display: block;
+        padding: 6px 10px 6px 30px;
+      }
+    }
+    label {
+      white-space: nowrap;
+    }
     .nav-icon-sm,.nav-icon-md,.nav-icon-lg {
         margin-left: 0;
         margin-right: 8px;
@@ -39,12 +147,15 @@
   .profile-thumb {
     margin: -15px 0;
     margin-right: 10px;
+    top: -2px;
   }
 }
 
 ///* Fix to centrate Nav-bar logo*/
 .navbar-brand {
   position: relative;
+  border-right: 1px solid @navbar-default-border;
+
   > img {
     display: inline-block;
     //position: absolute;
@@ -52,13 +163,13 @@
     //left: @navbar-padding-horizontal;
     height: (@navbar-height - @navbar-padding-vertical * 2);
     max-width: 200px;
-    margin: 0 8px 2px 0;
     //.translate(0; -50%);
   }
 }
 
 .navbar-default {
-    box-shadow: 0 1px 3px -1px rgba(0,0,0,.3);
+  box-shadow: none;
+  border-bottom: 1px solid @gray-80;
 }
 
 .nav-input-group {
@@ -78,16 +189,24 @@
     }
 }
 
+.navbar-nav {
+  & > li {
+    border-bottom: 1px solid @navbar-default-border;
+  }
+  & > li:first-of-type {
+    border-top: 1px solid @navbar-default-border;
+  }
+
+  .page-settings-link {
+    span + span {
+      font-size: 18px;
+    }
+  }
+}
+
 @media (max-width: (@screen-sm-max)) {
     .navbar-nav {
         margin: 0 -15px;
-        & > li {
-            border-bottom: 1px solid @navbar-default-border;
-
-            &:last-child {
-                border-bottom: none;
-            }
-        }
         .dropdown-menu {
             &.dropdown-caret {
                 &:before, &:after {
@@ -95,24 +214,8 @@
                 }
             }
             padding:0;
-            & > li {
-                border-bottom: 1px solid @navbar-default-border;
-                background-color: darken(@navbar-default-bg, 3%);
-                &:last-child {
-                  border-bottom: none;
-                }
-            }
             .divider {
               display:none;
-            }
-        }
-        .open {
-            .dropdown-menu {
-                & > li {
-                    & > a {
-                        padding: 10px 15px 10px 15px;
-                    }
-                }
             }
         }
     }
@@ -120,24 +223,32 @@
 
 @media (min-width: @screen-sm) {
     .navbar-nav {
+      .dropdown {
+        > a {
+          height: 50px;
+        }
+      }
         & > li {
-            min-width: (@navbar-height + 10px);
             text-align: center;
             border-right: 1px solid @navbar-default-border;
+            border-bottom: none;
 
+            &:first-child {
+              border-top: none;
+              border-left: 1px solid @navbar-default-border;
+            }
             &:last-child {
-                border-right: none;
+              border-right: none;
             }
             .dropdown-toggle {
                 .jewel {
                     margin: 0;
                     position: absolute;
-                    top: 8px;
-                    right: 10px;
+                    top: 6px;
+                    right: 11px;
                 }
             }
             .dropdown-menu {
-                .border-top-radius(2px);
                 .border-bottom-radius(2px);
 
                 &.dropdown-caret {
@@ -149,12 +260,6 @@
                     &:after {
                         left: auto;
                         right: 11px;
-                    }
-                }
-
-                & > li {
-                    & > a {
-                        padding: 5px 10px;
                     }
                 }
             }
