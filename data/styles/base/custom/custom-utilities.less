@@ -78,9 +78,6 @@
 .formatted-sans-serif {
   font-family: @font-family-sans-serif;
 }
-.formatted-serif {
-  font-family: @font-family-serif;
-}
 .formatted-monospace {
   font-family: @font-family-monospace;
 }
@@ -339,7 +336,7 @@
     }
   }
 
-  .wba-font-primary,.wba-font-serif,.wba-font-monospace {
+  .wba-font-primary,.wba-font-monospace {
     position:relative;
     display: inline-block;
     line-height: inherit;
@@ -349,9 +346,6 @@
   }
   .wba-font-primary:before {
     content: '@{font-family-sans-serif}';
-  }
-  .wba-font-serif:before {
-    content: '@{font-family-serif}';
   }
   .wba-font-monospace:before {
     content: '@{font-family-monospace}';
