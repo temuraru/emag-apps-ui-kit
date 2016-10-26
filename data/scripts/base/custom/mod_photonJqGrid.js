@@ -67,8 +67,8 @@
 
                 var emptyMessage = $(
                     '<div class="custom-jqgrid-messages-'+ table.id +' custom-jqgrid-no-records-'+ table.id +' alert alert-info no-margin">' +
-                        '<i class="fa fa-info-circle"></i>' +
-                        noRecordsMessage +
+                    '<i class="fa fa-info-circle"></i>' +
+                    noRecordsMessage +
                     '</div>'
                 );
 
@@ -82,11 +82,10 @@
                     $('.custom-jqgrid-messages-' + table.id).remove();
                 }
                 jqGridOverlay.removeClass('custom-overlay');
-
-                if(gridOpts.stickyButtons && !$jqgridContainer[0].stickyButtonsInitialized) {
+                if (gridOpts.stickyButtons && !gridOpts.stickyButtonsInitialized) {
                     _initStickyOnJqGrid(gridOpts);
-                    $jqgridContainer[0].stickyButtonsInitialized = true;
-                }else if(gridOpts.stickyButtons){
+                    gridOpts.stickyButtonsInitialized = true;
+                } else if (gridOpts.stickyButtons) {
                     $(document.body).trigger("sticky_kit:recalc");
                 }
             },
@@ -103,6 +102,7 @@
 
         var gridOpts = $.extend({}, defaultParams, parameters || {});
         gridOpts.caption = null;
+        gridOpts.altRows = null;
 
         function _initStickyOnJqGrid(gridOpts){
             var tableId = '#gbox_'+ gridOpts.table.slice(1);
@@ -236,12 +236,12 @@
         function _createContainerForPgSelbox($jqgridContainer, records) {
             $jqgridContainer.find('.ui-pager-control').append(
                 '<div class="ui-pg-selbox-container">' +
-                    photonTranslations.listing[photonPageLang].view +
-                    '<span></span>' +
-                    photonTranslations.listing[photonPageLang].of +
-                    ' <span class="no-items">' +
-                        records +
-                    '</span> ' +
+                photonTranslations.listing[photonPageLang].view +
+                '<span></span>' +
+                photonTranslations.listing[photonPageLang].of +
+                ' <span class="no-items">' +
+                records +
+                '</span> ' +
                 (records == 1 ? photonTranslations.listing[photonPageLang].item : photonTranslations.listing[photonPageLang].items) +
                 '</div>'
             );

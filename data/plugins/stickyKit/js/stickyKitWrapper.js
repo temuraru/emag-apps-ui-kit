@@ -124,3 +124,13 @@ $(window).on('minimize.photon.sidebar maximize.photon.sidebar hidden.bs.collapse
         $(document.body).trigger("sticky_kit:recalc");
     }, 0)
 });
+
+$(document.body).on('click', '.tool', function (event) {
+    $.each($(event.target).closest('.panel').find('.ui-jqgrid-hdiv'), function (index, value) {
+        var _this = $(this);
+        setTimeout(function () {
+            var $tableBody = _this.parent().find('.ui-jqgrid-bdiv');
+            _this.scrollLeft($tableBody.scrollLeft());
+        }, 200)
+    });
+});
