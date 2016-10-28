@@ -55,7 +55,7 @@
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
   //.box-shadow(0 3px 9px rgba(0,0,0,.5));
-  .box-shadow(0 10px 30px -5px rgba(0,0,0,.5));
+  //.box-shadow(0 10px 30px -5px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
@@ -78,9 +78,10 @@
 // Modal header
 // Top section of the modal w/ title and dismiss
 .modal-header {
-  padding: @modal-title-padding;
+  padding: @modal-title-top-bottom-padding @modal-title-left-right-padding;
   border-bottom: 1px solid @modal-header-border-color;
-  min-height: (@modal-title-padding + @modal-title-line-height);
+  min-height: (@modal-title-top-bottom-padding + @modal-title-line-height);
+  background: @gray-98;
 }
 // Close icon
 .modal-header .close {
@@ -138,9 +139,9 @@
     width: @modal-md;
     margin: 30px auto;
   }
-  .modal-content {
-    .box-shadow(0 10px 30px -5px rgba(0,0,0,.5));
-  }
+  //.modal-content {
+    //box-shadow:none
+  //}
 
   // Modal sizes
   .modal-sm { width: @modal-sm; }

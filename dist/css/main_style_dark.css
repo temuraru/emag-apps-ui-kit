@@ -8169,7 +8169,6 @@ button.close {
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 2px;
   outline: 0;
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, .5);
 }
 .modal-backdrop {
   position: fixed;
@@ -8189,8 +8188,9 @@ button.close {
   opacity: .5;
 }
 .modal-header {
-  min-height: 16.42857143px;
-  padding: 15px;
+  min-height: 8.42857143px;
+  padding: 7px 10px;
+  background: #fafafa;
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
@@ -8230,9 +8230,6 @@ button.close {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
-  }
-  .modal-content {
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, .5);
   }
   .modal-sm {
     width: 300px;
@@ -11737,7 +11734,7 @@ i {
   top: 0;
   right: 0;
   padding: 2px;
-  margin: 15px;
+  margin: 7px 10px;
 }
 .modal-header .close * {
   display: block;
@@ -11745,7 +11742,6 @@ i {
 .modal-footer {
   padding: 10px 15px;
   text-align: normal;
-  background-color: #fafafa;
 }
 [data-notify="container"] {
   box-shadow: 0 3px 7px -2px rgba(0, 0, 0, .5);
