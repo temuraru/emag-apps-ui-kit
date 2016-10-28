@@ -11340,6 +11340,9 @@ input[type="checkbox"].form-checkbox-control:disabled {
   background-color: #aaa;
   border: 1px solid #aaa;
 }
+input[type="checkbox"]:required {
+  box-shadow: none;
+}
 input[type="radio"].form-radio-control {
   width: 15px;
   height: 15px;
