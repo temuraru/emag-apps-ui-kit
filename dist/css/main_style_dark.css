@@ -8209,6 +8209,9 @@ button.close {
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
+.modal-footer .btn {
+  min-width: 100px;
+}
 .modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
@@ -9503,11 +9506,12 @@ button.close {
 .required:before {
   position: relative;
   padding-right: 3px;
-  font-family: FontAwesome;
-  font-size: 80%;
-  color: #f4b350;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #e1302b;
   vertical-align: middle;
-  content: "\f005";
+  content: "*";
 }
 .zoom-gallery:before,
 .zoom-gallery:after {

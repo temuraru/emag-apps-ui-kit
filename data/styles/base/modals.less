@@ -107,8 +107,10 @@
   text-align: right; // right align buttons
   border-top: 1px solid @modal-footer-border-color;
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
-
-  // Properly space out buttons
+  .btn {
+    min-width: 100px
+  }
+    // Properly space out buttons
   .btn + .btn {
     margin-left: 5px;
     margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs

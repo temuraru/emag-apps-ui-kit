@@ -85,12 +85,12 @@
                                                                 <div class="modal-footer">
                                                                     <div class="pull-left">
                                                                         <div class="form-sep">
-                                                                            <span class="required"><em>Some fields may be required.</em></span>
+                                                                            <span class="required">Some fields may be required.</span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="pull-right panel-controls">
-                                                                        <button type="button" id="special_submit" class="btn btn-success"><i class="fa fa-check"></i><span>Submit</span></button>
-                                                                        <button type="reset" id="special_reset" class="btn btn-default" data-dismiss="modal"><i class="fa fa-remove"></i><span>Cancel</span></button>
+                                                                        <button type="button" id="special_submit" class="btn btn-success"><span>Save</span></button>
+                                                                        <button type="reset" id="special_reset" class="btn btn-default" data-dismiss="modal"><span>Cancel</span></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
