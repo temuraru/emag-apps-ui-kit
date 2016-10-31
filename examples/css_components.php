@@ -793,11 +793,19 @@
                                                                 <div class="form-group has-error">
                                                                     <label class="control-label" for="exampleInputEmail1">Email address</label>
                                                                     <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
-                                                                    <div class="help-block"><i class="fa fa-info-circle fonts-up-120"></i> This is an example error message.</div>
+                                                                    <div class="help-block">This is an example error message.</div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="control-label" for="exampleInputPassword1">Password</label>
                                                                     <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="exampleSelect1">Select</label>
+                                                                    <select class="form-control">
+                                                                        <option value="">Select option</option>
+                                                                        <option value="1">First option</option>
+                                                                        <option value="2">Second option</option>
+                                                                    </select>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <div class="checkbox">
@@ -1057,6 +1065,13 @@
                                                             <div class="form-group has-error">
                                                                 <label class="control-label" for="inputError1">Input with error</label>
                                                                 <input type="text" class="form-control" id="inputError1">
+                                                                <div class="help-block">This is an example error message.</div>
+                                                            </div>
+                                                            <div class="form-group has-error">
+                                                                <label class="control-label" for="inputError2">Input with error</label>
+                                                                <div class="info-tooltip tt-block tt-danger" data-content="This is an example error message.">
+                                                                    <input type="text" class="form-control" id="inputError2">
+                                                                </div>
                                                             </div>
                                                             <div class="form-group has-error">
                                                                 <div class="checkbox">

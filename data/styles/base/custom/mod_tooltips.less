@@ -3,13 +3,13 @@
 ///* MIXINS */
 
 .tooltip-variant(@tool-bkg; @tool-bor; @tip-bkg; @tip-arrow) {
-  background-color: lighten(@tool-bkg, 5%);
+  background-color: @tool-bkg;
   border-color: @tool-bor;
   &:before {
-    background-color: lighten(@tip-bkg, 5%);
+    background-color: @tip-bkg;
   }
   &:after {
-    border-color: lighten(@tip-arrow, 5%) transparent transparent transparent;
+    border-color: @tip-arrow transparent transparent transparent;
   }
 }
 
@@ -77,7 +77,7 @@
     position:absolute;
     background-color: @tooltip-bg;
     padding: 5px 10px;
-    min-width: 100px;
+    min-width: 50px;
     max-width: 200px;
     content:attr(data-content);
     color:@tooltip-color;
@@ -126,6 +126,17 @@
       .tip-position   (@pos:left; @tip-tp:50%; @tip-rt:auto; @tip-bt:auto; @tip-lt:-12%; @tooltip-bg);
     }
   }
+  &.tt-block {
+    display: block;
+    margin: 0;
+
+    &:before {
+      bottom: 120%;
+    }
+    &:after {
+      bottom: 100%;
+    }
+  }
   &:hover, &:focus {
     outline: 0;
     &:before,&:after {
@@ -138,12 +149,17 @@
 .tt-default, .tt-primary, .tt-info, .tt-success, .tt-warning, .tt-danger {
   padding: .18em .50em;
   border: 2px solid transparent;
-  line-height:1;
-  border-radius:100%;
+  line-height: 1;
+  border-radius: 100%;
   color: #fff;
   &:hover, &:focus {
-    background-color:#fff;
+    background-color: #fff;
     color: inherit;
+  }
+  &.tt-block {
+    border: none;
+    border-radius: 0;
+    padding: 0;
   }
 }
 .tt-default {
