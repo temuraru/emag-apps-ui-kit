@@ -212,7 +212,7 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -1991,7 +1991,7 @@ th {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2071,34 +2071,34 @@ th {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -ms-transform: rotate(270deg);
-      transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -ms-transform: scale(-1, 1);
-      transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -ms-transform: scale(1, -1);
-      transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-          filter: none;
+  filter: none;
 
   -webkit-filter: none;
 }
@@ -5272,7 +5272,7 @@ fieldset[disabled] .form-control {
   opacity: 1;
 
   -moz-columns: #c3c3c3;
-       columns: #c3c3c3;
+  columns: #c3c3c3;
 }
 .form-control[disabled],
 fieldset[disabled] .form-control {
@@ -5690,12 +5690,12 @@ select[multiple].input-lg {
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -8095,13 +8095,13 @@ button.close {
 }
 .not-selectable {
   -webkit-user-select: none;
-     -moz-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-   -khtml-user-select: none;
+  -khtml-user-select: none;
   -webkit-touch-callout: none;
 }
 .scrollable.default-skin {
@@ -8116,10 +8116,10 @@ button.close {
 }
 .scrollable.default-skin .scroll-bar .thumb {
   background-color: black;
-          border-radius: 3px;
+  border-radius: 3px;
   opacity: .4;
 
-     -moz-border-radius: 4px;
+  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
 .scrollable.default-skin .scroll-bar:hover .thumb {
@@ -8143,11 +8143,11 @@ button.close {
 .modal.fade .modal-dialog {
   transition: transform .3s ease-out;
   -ms-transform: translate(0, -25%);
-      transform: translate(0, -25%);
+  transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
   -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -8162,11 +8162,9 @@ button.close {
   position: relative;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .2);
+  border: 1px solid #ccc;
   border-radius: 2px;
   outline: 0;
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, .5);
 }
 .modal-backdrop {
   position: fixed;
@@ -8186,9 +8184,10 @@ button.close {
   opacity: .5;
 }
 .modal-header {
-  min-height: 16.42857143px;
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  min-height: 8.42857143px;
+  padding: 7px 10px;
+  background: #fafafa;
+  border-bottom: 1px solid #ccc;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -8199,12 +8198,15 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 10px;
 }
 .modal-footer {
-  padding: 15px;
+  padding: 10px;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #ccc;
+}
+.modal-footer .btn {
+  min-width: 100px;
 }
 .modal-footer .btn + .btn {
   margin-bottom: 0;
@@ -8227,9 +8229,6 @@ button.close {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
-  }
-  .modal-content {
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, .5);
   }
   .modal-sm {
     width: 300px;
@@ -9140,7 +9139,7 @@ button.close {
   z-index: 3;
   margin: 0 !important;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .lock-center.fixed {
   position: fixed;
@@ -9280,7 +9279,7 @@ button.close {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .color-swatches .swatch-primary {
   background-color: #005eb7;
@@ -9459,7 +9458,7 @@ button.close {
   width: auto;
   height: 100%;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .dropdown-menu {
   min-width: 50px;
@@ -9503,11 +9502,12 @@ button.close {
 .required:before {
   position: relative;
   padding-right: 3px;
-  font-family: FontAwesome;
-  font-size: 80%;
-  color: #f4b350;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #e1302b;
   vertical-align: middle;
-  content: "\f005";
+  content: "*";
 }
 .zoom-gallery:before,
 .zoom-gallery:after {
@@ -9613,7 +9613,7 @@ button.close {
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1.0;
   -ms-transform: rotate(3deg) translate(0px, -4px);
-      transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
 }
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
@@ -10087,7 +10087,7 @@ body {
   text-align: center;
   vertical-align: middle;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
@@ -10161,7 +10161,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.menu-item-has-children .menu-item-data > .menu-item-min-link:after {
   position: absolute;
@@ -10176,7 +10176,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.menu-item-has-children .sidebar-submenu {
   display: none;
@@ -11143,7 +11143,7 @@ body {
   color: #333;
   opacity: .1;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .modal-feedback.has-info .modal-header {
   border-top: 6px solid #2790f3;
@@ -11321,9 +11321,9 @@ input[type="checkbox"].form-checkbox-control {
   border-radius: 2px;
   outline: none;
 
-     -moz-appearance: none;
-      -ms-appearance: none;
-       -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
 }
 input[type="checkbox"].form-checkbox-control:hover {
   background-color: #f7f7f7;
@@ -11356,9 +11356,9 @@ input[type="radio"].form-radio-control {
   border-radius: 100%;
   outline: none;
 
-     -moz-appearance: none;
-      -ms-appearance: none;
-       -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
 }
 input[type="radio"].form-radio-control:hover {
   background-color: #f7f7f7;
@@ -11430,7 +11430,7 @@ select.form-control option:hover {
   background-color: #000;
   border-radius: 2px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip:after {
   position: absolute;
@@ -11447,7 +11447,7 @@ select.form-control option:hover {
   border-style: solid;
   border-width: 15px 12px 0 12px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip.tt-right:before {
   top: 50%;
@@ -11455,7 +11455,7 @@ select.form-control option:hover {
   bottom: auto;
   left: 105%;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-right:after {
   top: 50%;
@@ -11465,7 +11465,7 @@ select.form-control option:hover {
   border-color: transparent #000 transparent transparent;
   border-width: 10px 12px 10px 0;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-bottom:before {
   top: 115%;
@@ -11473,7 +11473,7 @@ select.form-control option:hover {
   bottom: auto;
   left: 50%;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip.tt-bottom:after {
   top: auto;
@@ -11483,7 +11483,7 @@ select.form-control option:hover {
   border-color: transparent transparent #000 transparent;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .info-tooltip.tt-left:before {
   top: 50%;
@@ -11491,7 +11491,7 @@ select.form-control option:hover {
   bottom: auto;
   left: auto;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-left:after {
   top: 50%;
@@ -11501,7 +11501,7 @@ select.form-control option:hover {
   border-color: transparent transparent transparent #000;
   border-width: 10px 0 10px 12px;
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .info-tooltip.tt-block {
   display: block;
@@ -11642,7 +11642,7 @@ select.form-control option:hover {
   border-style: solid;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .auth-box {
   width: 100%;
@@ -11776,15 +11776,14 @@ i {
   top: 0;
   right: 0;
   padding: 2px;
-  margin: 15px;
+  margin: 7px 10px;
 }
 .modal-header .close * {
   display: block;
 }
 .modal-footer {
-  padding: 10px 15px;
+  padding: 10px;
   text-align: normal;
-  background-color: #fafafa;
 }
 [data-notify="container"] {
   box-shadow: 0 3px 7px -2px rgba(0, 0, 0, .5);
