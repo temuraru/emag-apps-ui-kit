@@ -9,9 +9,9 @@ The purpose of this collection is to help you build amazing software easier and 
 3. [Overview] [overview_link]
   1. [Based on Bootstrap 3.3.5] [based_on_bootstrap_link]
   2. [Working with Grunt.js] [working_with_gruntjs_link]
-  3. [Working with Photon's folder structure] [working_with_photons_folder_structure_link]
+  3. [Working with eMAG Apps UI KIT's folder structure] [working_with_uikit_folder_structure_link]
   4. [Precompiled files (dist)] [precompiled_files_dist_link]
-  5. [Photon source code (data)] [photon_source_code_data_link]
+  5. [eMAG Apps UI KIT source code (data)] [uikit_source_code_data_link]
 4. [License] [license_link]
 
 ## Getting started  
@@ -27,8 +27,8 @@ The purpose of this collection is to help you build amazing software easier and 
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>  
 <script src="../dist/js/main_script.min.js"></script>  
   ```  
-2. If you really want to get a hold of the source code, you can [download the latest release] [photon_github] from GitHub.
-3. Or clone the [Git repository] [photon_github] by running the following command:
+2. If you really want to get a hold of the source code, you can [download the latest release] [uikit_github] from GitHub.
+3. Or clone the [Git repository] [uikit_github] by running the following command:
 
 ## Overview  
 [[Back to summary] [summary_link]]  
@@ -61,7 +61,7 @@ grunt plugin_scripts    - Generate plugin scripts
 grunt default           - Generate main styles and scripts
 ```
 
-### Working with Photon's folder structure:  
+### Working with eMAG Apps UI KIT's folder structure:  
 [[Back to summary] [summary_link]]  
 Once downloaded, unzip the compressed folder to find the three main folders:
 ```
@@ -98,10 +98,10 @@ uikit/
 [[Back to summary] [summary_link]]  
 - css - Main style CSS files.
     - flags - Countries flags as SVG file on 1:1 and 4:3 ratio.
-    - fonts - Fonts files used in Photon.
-    - icons - Icons used in Photon (created by eMag and from other libraries).
+    - fonts - Fonts files used in eMAG Apps UI KIT.
+    - icons - Icons used in eMAG Apps UI KIT (created by eMag and from other libraries).
     - img - Images used in demo pages.
-    - lib - Styles required by libraries used in Photon.
+    - lib - Styles required by libraries used in eMAG Apps UI KIT.
 - js - Main JS script files.
     - lib - Libraries' JS files.
 - plugins - Plugins used in eMAG Apps UI KIT (CSS and JS files).
@@ -116,7 +116,7 @@ uikit/
     - base - Main style LESS files
         - custom - Custom wrappers' LESS files.
     - lib - Libraries' LESS files.
-- plugins - Plugins used in Photon (LESS and JS files).
+- plugins - Plugins used in eMAG Apps UI KIT (LESS and JS files).
 
 ## License  
 [[Back to summary] [summary_link]]  
@@ -154,7 +154,7 @@ The full eMAG Apps UI KIT license can be found in [project repository] [uikit_li
 [overview_link]: #overview
 [based_on_bootstrap_link]: #based-on-bootstrap-335
 [working_with_gruntjs_link]: #working-with-gruntjs
-[working_with_photons_folder_structure_link]: #working-with-photons-folder-structure
+[working_with_uikit_folder_structure_link]: #working-with-uikit-folder-structure
 [precompiled_files_dist_link]: #precompiled-files-dist
-[uikit_source_code_data_link]: #photon-source-code-data
+[uikit_source_code_data_link]: #uikit-source-code-data
 [license_link]: #license
