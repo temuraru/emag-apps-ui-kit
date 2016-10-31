@@ -258,7 +258,11 @@ input[type="checkbox"] {
             background-color: #aaa;
             border: 1px solid #aaa;
         }    
-    } 
+    }
+
+  &:required {
+    box-shadow: none;
+  }
 }
 
 
@@ -300,4 +304,26 @@ input[type="radio"] {
     > .form-radio-control, > .form-checkbox-control {
         margin-top: 2px!important;
     }
+}
+
+select.form-control {
+  padding-left: 5px;
+
+  option {
+    color: @input-color;
+    background-color: @input-bg;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    border-top: 1px solid @input-border;
+  }
+  option:first-of-type {
+    border-top: none;
+  }
+  option:hover {
+    color: @black;
+    background: @gray-93;
+  }
+}
+
+.form-control[disabled] {
+  color: @gray-80;
 }
