@@ -154,7 +154,7 @@ The full eMAG Apps UI KIT license can be found in [project repository] [uikit_li
 [overview_link]: #overview
 [based_on_bootstrap_link]: #based-on-bootstrap-335
 [working_with_gruntjs_link]: #working-with-gruntjs
-[working_with_uikit_folder_structure_link]: #working-with-emag-apps-ui-kit-folder-structure
+[working_with_uikit_folder_structure_link]: #working-with-emag-apps-ui-kits-folder-structure
 [precompiled_files_dist_link]: #precompiled-files-dist
-[uikit_source_code_data_link]: #emag-apps-ui-kit-source-code-data
+[uikit_source_code_data_link]: #emag-apps-ui-kits-source-code-data
 [license_link]: #license
