@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
 
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
+        <title>Get started - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
 
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header_simple.php"?>
         <!-- HEADER:End -->
@@ -39,11 +27,11 @@
                     <div class="page-content">
                         <div class="jumbotron">
                             <div class="container pad-sep-80 text-center">
-                                <h1>PHOTON</h1>
+                                <h1>eMAG Apps UI KIT</h1>
                                 <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                                 <small>Based on <a href="#">Twitter Bootstrap v3.3.5</a></small>
                                 <div class="pad-sep-20 pad-top-40">
-                                    <a href="/examples/overview.php" type="button" class="btn btn-primary btn-lg">Get started</a>
+                                    <a href="overview.php" type="button" class="btn btn-primary btn-lg">Get started</a>
                                 </div>
                                 <small>Currently at v0.8.1</small>
                             </div>

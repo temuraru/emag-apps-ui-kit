@@ -1,36 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Components | Photon - The Superfast, Supersimple UI Kit</title>
-    <meta name="description" content="Photon - The superfast, supersimple UI Kit"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="eMAG CORE UI Team">
-
-    <!-- The favicon -->
-    <?php include_once "modules/_mod_favicon.php" ?>
-
-    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-    <!-- PHOTON main styles -->
-    <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-    <![endif]-->
-    <script src="../dist/plugins/tether/tether.min.js"></script>
+    <title>JS Components - eMAG Apps UI KIT</title>
+    <?php include_once "modules/_mod_meta.php"?>
 </head>
 <body>
-<!--[if lt IE 9]>
-<body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-    href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+<?php include_once "modules/_mod_browser_upgrade.php"?>
+
 <!-- HEADER:Start -->
 <?php include_once "modules/_mod_header.php" ?>
 <!-- HEADER:End -->
+
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
     <div class="main-container-inner">
@@ -44,7 +25,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid pad-sep-60">
-                                <h1>PHOTON - Components</h1>
+                                <h1>eMAG Apps UI KIT - JS Components</h1>
                                 <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                             </div>
                         </div>
@@ -237,8 +218,7 @@
                                     </div>
                                 </div>
                                 <div class="show-panel-footer">
-                                    <pre class="language-markup"><code class="language-markup"
-                                                                       data-showcase="code"></code></pre>
+                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                 </div>
                             </div>
                         </div>
@@ -380,45 +360,8 @@
         </div>
     </div>
 </div>
-<!-- POPUPS:End -->
-<!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">" + "<" + "/script>")</script>
-<script src="../dist/js/main_script.min.js"></script>
-<script src="../dist/js/demo_helpers.js"></script>
 
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
-
-<!-- SCRIPTS:End -->
-<!-- DOCUMENT-READY:Start -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        console.log('Ready, Captain!');
-
-        demoHelpers();  //Requires demo_helpers.js
-
-        //This function is just fo sho. You don't really have to include it in your app, man.
-        function modalSizing() {
-            $('#mySmallDemoModal').on('click', function () {
-                var mode = $(this).data('target');
-                $(mode).find('.modal-dialog').addClass('modal-sm');
-            });
-            $('#myLargeDemoModal').on('click', function () {
-                var mode = $(this).data('target');
-                $(mode).find('.modal-dialog').addClass('modal-lg');
-            });
-            $('#myDemoModal').on('hidden.bs.modal', function (e) {
-                $(this).find('.modal-dialog').attr('class', 'modal-dialog');
-            });
-        }
-
-        modalSizing();
-
-        showcasing();
-    });
-</script>
-<!-- DOCUMENT-READY:End -->
+<?php include_once "modules/_mod_js_footer.php"?>
 
 </body>
 </html>

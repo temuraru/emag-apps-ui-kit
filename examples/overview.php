@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Start | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
 
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
-
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
+        <title>Start - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
+    
     </head>
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header.php"?>
         <!-- HEADER:End -->
+        
         <!-- PAGE:Start -->
             <div class="main-container" id="main-container">
                 <div class="main-container-inner">
@@ -38,7 +26,7 @@
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="container-fluid pad-sep-60">
-                                        <h1>PHOTON</h1>
+                                        <h1>eMAG Apps UI KIT</h1>
                                         <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                                     </div>
                                  </div>
@@ -50,7 +38,7 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Getting started</strong></h2>
-                                            <p><strong>There are a couple of ways to install PHOTON:</strong></p>
+                                            <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
                                             <div class="pad-sep-20">                                                
                                                 <ol>
                                                     <li>
@@ -61,7 +49,7 @@
 &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
 &lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</pre>
                                                         <div class="alert alert-info" role="alert">
-                                                            <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, PHOTON requires jQuery to run. 
+                                                            <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run. 
                                                         </div>
                                                         <br>                                                        
                                                     </li>
@@ -86,14 +74,14 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Overview</strong></h2>
-                                            <p><strong>A short description about what's it like to work with PHOTON:</strong></p>
+                                            <p><strong>A short description about what's it like to work with eMAG Apps UI KIT:</strong></p>
                                             <div class="pad-sep-20">
                                                 <ol>
                                                     <li>
                                                         <h4 class="text-primary">Based on Bootstrap 3.3.5.</h4>
-                                                            <p>PHOTON is based on the Twitter Bootstrap architecture <a href="http://getbootstrap.com/getting-started/" target="_blank"><u>GetBootstrap</u></a>. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!</p>
-                                                            <p>Aside from the elements provided by bootstrap, PHOTON comes with its own set of unique components, styling and useful plugins that you can use in your project.</p>
-                                                            <p>The fun part about PHOTON is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.</p>
+                                                            <p>eMAG Apps UI KIT is based on the Twitter Bootstrap architecture <a href="http://getbootstrap.com/getting-started/" target="_blank"><u>GetBootstrap</u></a>. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!</p>
+                                                            <p>Aside from the elements provided by bootstrap, eMAG Apps UI KIT comes with its own set of unique components, styling and useful plugins that you can use in your project.</p>
+                                                            <p>The fun part about eMAG Apps UI KIT is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.</p>
                                                             <br>
                                                             <p><strong>Features:</strong></p>
                                                             <ol>
@@ -134,12 +122,12 @@ grunt default           - Generate main styles and scripts
                                                         <br>
                                                     </li>
                                                     <li>
-                                                        <h4 class="text-primary">Working with Photon's folder structure:</h4>
+                                                        <h4 class="text-primary">Working with eMAG Apps UI KIT's folder structure:</h4>
                                                         <br>
                                                         <p>Once downloaded, unzip the compressed folder to find the three main folders:</p>
 <pre>
 <code class="language-bash" data-lang="bash">
-photon/
+eMAG Apps UI KIT/
 |
 ├── data/
 │   ├── scripts/
@@ -177,10 +165,10 @@ photon/
                                                             <li>css - Main style CSS files.
                                                                 <ul>
                                                                     <li>flags - Countries flags as SVG file on 1:1 and 4:3 ratio.</li>
-                                                                    <li>fonts - Fonts files used in Photon.</li>
-                                                                    <li>icons - Icons used in Photon (created by eMag and from other libraries).</li>
+                                                                    <li>fonts - Fonts files used in eMAG Apps UI KIT.</li>
+                                                                    <li>icons - Icons used in eMAG Apps UI KIT (created by eMag and from other libraries).</li>
                                                                     <li>img - Images used in demo pages.</li>
-                                                                    <li>lib - Styles required by libraries used in Photon.</li>
+                                                                    <li>lib - Styles required by libraries used in eMAG Apps UI KIT.</li>
                                                                 </ul>
                                                             </li>
                                                             <li>js - Main JS script files.
@@ -188,12 +176,12 @@ photon/
                                                                     <li>lib - Libraries' JS files.</li>
                                                                 </ul>
                                                             </li>
-                                                            <li>plugins - Plugins used in Photon (CSS and JS files).</li>
+                                                            <li>plugins - Plugins used in eMAG Apps UI KIT (CSS and JS files).</li>
                                                         </ul>
                                                         <br>
                                                     </li>
                                                     <li>
-                                                        <h4 class="text-primary">Photon source code (data)</h4>
+                                                        <h4 class="text-primary">eMAG Apps UI KIT source code (data)</h4>
                                                         <br>
                                                         <ul>
                                                             <li>scripts - JS files.
@@ -216,14 +204,14 @@ photon/
                                                                     <li>lib - Libraries' LESS files.</li>
                                                                 </ul>
                                                             </li>
-                                                            <li>plugins - Plugins used in Photon (LESS and JS files).</li>
+                                                            <li>plugins - Plugins used in eMAG Apps UI KIT (LESS and JS files).</li>
                                                         </ul>
                                                         <br>
                                                     </li>
                                                     <li>
                                                         <h4 class="text-primary">License</h4>
                                                         <br>
-                                                        <p>Photon is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
+                                                        <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
 
                                                         <div class="row">
                                                             <div class="col-md-4">
@@ -327,7 +315,7 @@ photon/
                                                             </div>
                                                         </div>
 
-                                                        <p>The full Photon license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
+                                                        <p>The full eMAG Apps UI KIT license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
                                                     </li>
                                                 </ol>
                                             </div>
@@ -345,23 +333,8 @@ photon/
                 </div>
             </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
-        
-        <!-- POPUPS:End -->
-        <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        <script src="../dist/js/main_script.min.js"></script>
-        <script src="../dist/js/demo_helpers.js"></script>
-        <!-- SCRIPTS:End -->
-        <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">            
-            $(document).ready(function () {
-                console.log('Ready, Captain!');
 
-                demoHelpers();  //Requires demo_helpers.js
-            });
-        </script>
-        <!-- DOCUMENT-READY:End -->
+        <?php include_once "modules/_mod_js_footer.php"?>
+
     </body>
 </html>

@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Layout | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
 
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
+        <title>Layout - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
 
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header.php"?>
         <!-- HEADER:End -->
+        
         <!-- PAGE:Start -->
             <div class="main-container" id="main-container">
                 <div class="main-container-inner">
@@ -41,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="container-fluid pad-sep-60">
-                                        <h1>PHOTON - Layout</h1>
+                                        <h1>eMAG Apps UI KIT - Layout</h1>
                                         <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                                     </div>
                                  </div>
@@ -62,14 +48,14 @@
         &lt;meta charset=&quot;utf-8&quot;&gt;
         &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
         &lt;title&gt;&lt;/title&gt;
-        &lt;meta name=&quot;description&quot; content=&quot;Photon - The superfast, supersimple UI Kit&quot;&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;eMAG Apps UI KIT - The superfast, supersimple UI Kit&quot;&gt;
         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-        &lt;meta name=&quot;author&quot; content=&quot;eMAG UI Team&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;eMAG HX Team&quot;&gt;
 
         &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;apple-touch-icon.png&quot;&gt;
         &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;favicon.ico&quot;&gt;
 
-        <span class="text-success">&lt;!-- The main stylesheet contains all the essential Bootstrap & Photon styling --&gt;</span>
+        <span class="text-success">&lt;!-- The main stylesheet contains all the essential Bootstrap & eMAG Apps UI KIT styling --&gt;</span>
         &lt;link rel=&quot;stylesheet&quot; href=&quot;css/main_style.min.css&quot;&gt;
         <span class="text-success">
         &lt;!--[if lt IE 9]&gt;
@@ -116,7 +102,7 @@
         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
         &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
         
-        <span class="text-success">&lt;!-- The main script file contains all the essential Bootstrap & Photon utilities --&gt;</span>
+        <span class="text-success">&lt;!-- The main script file contains all the essential Bootstrap & eMAG Apps UI KIT utilities --&gt;</span>
         &lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;
         <span class="text-success">&lt;!-- SCRIPTS:End --&gt;
 
@@ -154,7 +140,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                                <img alt="eMAG Apps UI KIT" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -168,10 +154,8 @@
                                                     </div>
                                                 </nav>
                                             </div>
-                                            <div class="show-panel-footer">
-                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                            </div>
                                         </div>
+
                                         <div class="show-panel-example">
                                             <div class="show-panel-body" data-showcase="example">
                                                 <nav class="navbar navbar-default">
@@ -181,7 +165,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                                <img alt="eMAG Apps UI KIT" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i></button>
@@ -208,10 +192,8 @@
                                                     </div>
                                                 </nav>
                                             </div>
-                                            <div class="show-panel-footer">
-                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                            </div>
                                         </div>
+
                                         <div class="show-panel-example">
                                             <div class="show-panel-body" data-showcase="example">
                                                 <nav class="navbar navbar-default">
@@ -221,7 +203,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                                <img alt="eMAG Apps UI KIT Test" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -239,7 +221,6 @@
                                                                         <i class="fa fa-angle-down hidden-xs"></i>
                                                                     </a>
                                                                     <ul class="dropdown-menu dm-language">
-                                                                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
                                                                         <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span>EN</span></a></li>
                                                                         <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
                                                                         <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
@@ -275,10 +256,8 @@
                                                     </div>
                                                 </nav>
                                             </div>
-                                            <div class="show-panel-footer">
-                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                            </div>
                                         </div>
+
                                         <div class="show-panel-example">
                                             <div class="show-panel-body" data-showcase="example">
                                                 <nav class="navbar navbar-default">
@@ -288,7 +267,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="PHOTON Test" src="../dist/css/img/photon-power-logo.png">
+                                                                <img alt="eMAG Apps UI KIT" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -336,21 +315,19 @@
                                                     </div>
                                                 </nav>
                                             </div>
-                                            <div class="show-panel-footer">
-                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
+
                         <section id="mainSidebar" class="pad-top-40">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Sidebar</strong></h2>
-                                            <p><strong>Photon's unique sidebar menu.</strong></p>
+                                            <p><strong>eMAG Apps UI KIT's unique sidebar menu.</strong></p>
                                             <p>You can use the buttons below to toggle different sidebar states.</p>
                                             <div class="row">
                                                 <div class="col-md-3">
@@ -451,7 +428,7 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Footer</strong></h2>
-                                            <p><strong>Photon's unique CSS footer</strong></p>
+                                            <p><strong>eMAG Apps UI KIT's unique CSS footer</strong></p>
                                             <p><strong>Fixed status</strong></p>
                                             <div class="radio">
                                                 <label>
@@ -583,42 +560,8 @@
                 </div>
             </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
-        
-        <!-- POPUPS:End -->
-        <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        <script src="../dist/js/main_script.min.js"></script>
-        <script src="../dist/js/demo_helpers.js"></script>
 
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <script src="../dist/plugins/prism/prism.min.js"></script>
+        <?php include_once "modules/_mod_js_footer.php"?>
 
-        <!-- SCRIPTS:End -->
-        <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                console.log('Ready, Captain!');
-
-                demoHelpers();  //Requires demo_helpers.js
-
-                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
-
-                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
-                    updateSideBarCode();
-                });
-
-                $('input[name="footer_fixed_status"]').on('change', function() {
-                    updateFooterBarCode();
-                });
-            });
-            $(window).load(function () {
-                $('.language-markup .token.tag:contains("nav")+.token.attr-name:contains("class")+.token.attr-value').each(function (index, element) {
-                    $(element).find('.token.punctuation').eq(2).before(' navbar-fixed-top');
-                });
-            });
-        </script>
-        <!-- DOCUMENT-READY:End -->
     </body>
 </html>

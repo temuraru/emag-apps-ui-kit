@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Plugins | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
-
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
-
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-        <!-- PLUGIN: Magnific -->
-        <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css">
-
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
+        <title>Plugins - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
     </head>
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header.php"?>
         <!-- HEADER:End -->
@@ -44,7 +23,7 @@
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="container-fluid pad-sep-60">
-                                        <h1>PHOTON - Image gallery</h1>
+                                        <h1>eMAG Apps UI KIT - Image gallery</h1>
                                         <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                                     </div>
                                  </div>
@@ -135,78 +114,8 @@
                 </div>
             </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
         
-        <!-- POPUPS:End -->
-        <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-
-        <!-- PLUGIN: This script file helps display demo code. Don't add it everywhere -->
-        <script src="../dist/js/demo_helpers.js"></script>
-
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <script src="../dist/plugins/prism/prism.min.js"></script>
-
-        <!-- PLUGIN: Magnific popup -->
-        <script src="../dist/plugins/magnific/magnific.min.js"></script>
-
-        <!--MAIN SCRIPT-->
-        <script src="../dist/js/main_script.min.js"></script>
-
-        <script src="../dist/js/demo_helpers.js"></script>
-        <!-- SCRIPTS:End -->
-        <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">      
-            $(document).ready(function () {
-                console.log('Ready, Captain!');
-
-                demoHelpers();  //Requires demo_helpers.js
-
-                showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
-
-                $('#default_magnific').magnificPopup({
-                    delegate: 'a',
-                    type: 'image',
-                    closeOnContentClick: false,
-                    closeBtnInside: false,
-                    mainClass: 'mfp-with-zoom mfp-img-mobile',
-                    image: {
-                        verticalFit: true,
-                        titleSrc: function (item) {
-                            return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
-                        }
-                    },
-                    gallery: {
-                        enabled: true
-                    },
-                    zoom: {
-                        enabled: true,
-                        duration: 300, // don't foget to change the duration also in CSS
-                        opener: function (element) {
-                            return element.find('img');
-                        }
-                    }
-                });
-
-                $('#btnajax_magnific').magnificPopup({
-                    type: 'image',
-                    closeOnContentClick: true,
-                    image: {
-                        verticalFit: true
-                    }
-
-                });
-                $('#youtube_magnific').magnificPopup({
-                    //disableOn: 700,
-                    type: 'iframe',
-                    mainClass: 'mfp-fade',
-                    removalDelay: 160,
-                    preloader: false,
-                    fixedContentPos: false
-                });
-            });
-        </script>
-        <!-- DOCUMENT-READY:End -->
+        <?php include_once "modules/_mod_js_footer.php"?>
+        
     </body>
 </html>

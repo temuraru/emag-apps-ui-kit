@@ -7,7 +7,7 @@
                 </button>
             </div>
             <a class="navbar-brand" href="javascript:void(0)">
-                <img src="../dist/css/img/eMAG_logo_92x24px.png" alt="Admin App">
+                <img src="../dist/css/img/logo-eMAG-apps-ui-kit.png" alt="Demo">
             </a>
             <div class="nav-controls visible-xs-inline-block pull-right">
                 <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
@@ -16,7 +16,7 @@
             </div>
         </div><!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-nav">
-            <h4 class="navbar-text">PHOTON</h4>
+            <h4 class="navbar-text">Demo</h4>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle page-settings-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -43,7 +43,6 @@
                     </a>
                     <ul class="dropdown-menu dm-language">
                         <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span>GB</span></a></li>
                         <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
                         <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
                         <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>

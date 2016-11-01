@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Components | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
-
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
-
-        <!-- PHOTON main stylesheet -->
-        <link rel="stylesheet" type="text/css" title="pho_main" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
+        <title>CSS Components - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
     </head>
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header.php"?>
         <!-- HEADER:End -->
+        
         <!-- PAGE:Start -->
         <div class="main-container" id="main-container">
             <div class="main-container-inner">
@@ -38,7 +24,7 @@
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="container-fluid pad-sep-60">
-                                        <h1>PHOTON - Components</h1>
+                                        <h1>eMAG Apps UI KIT - CSS Components</h1>
                                         <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                                     </div>
                                 </div>
@@ -449,7 +435,7 @@
                                         <div class="show-panel-body">
                                             <h4 class="text-primary"><strong>Tables</strong></h4>
                                             <p><strong>Basic example:</strong></p>
-                                            <p>As we've mentioned before, PHOTON is based on the Twitter Bootstrap v3 architecture and classes. You can find out more about Bootstrap Tables by checking out <a href="http://getbootstrap.com/css/#tables" target="_blank"><u>getbootstrap.com/css/#tables</u></a>.</p>
+                                            <p>As we've mentioned before, eMAG Apps UI KIT is based on the Twitter Bootstrap v3 architecture and classes. You can find out more about Bootstrap Tables by checking out <a href="http://getbootstrap.com/css/#tables" target="_blank"><u>getbootstrap.com/css/#tables</u></a>.</p>
                                             <p>For basic styling—light padding and only horizontal dividers—add the base class <mark>.table</mark> to any <code>&lt;table&gt;</code>.</p>
                                             <div class="pad-sep-20">
                                                 <table class="table">
@@ -1271,7 +1257,7 @@
                                                 <p><i class="fa fa-warning fonts-up-140"></i> Do not mix form groups or grid column classes directly with input groups. Instead, nest the input group inside of the form group or grid-related element.</p>
                                             </div>
                                             <div class="alert alert-danger">
-                                                <p><i class="fa fa-remove fonts-up-140"></i> PHOTON does not support multiple add-ons (<mark>.input-group-addon</mark> or <mark>.input-group-btn</mark>) on a single side. It also does not support multiple form-controls in a single input group.</p>
+                                                <p><i class="fa fa-remove fonts-up-140"></i> eMAG Apps UI KIT does not support multiple add-ons (<mark>.input-group-addon</mark> or <mark>.input-group-btn</mark>) on a single side. It also does not support multiple form-controls in a single input group.</p>
                                             </div>
                                             <div class="pad-sep-20">
                                                 <div class="row">
@@ -2492,101 +2478,8 @@
             </div>
         </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
-        <!-- POPUPS:End -->
-        <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        <script src="../dist/js/main_script.min.js"></script>
-        <script src="../dist/js/demo_helpers.js"></script>
-        <!-- SCRIPTS:End -->
-        <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">
-            function nano(template, data) {
-                return template.replace(/\{([\w\.]*)\}/g, function (str, key) {
-                    var keys = key.split("."), v = data[keys.shift()];
-                    for (var i = 0, l = keys.length; i < l; i++) v = v[keys[i]];
-                    return (typeof v !== "undefined" && v !== null) ? v : "";
-                });
-            };
-            function escapeHtml(unsafe) {
-                return unsafe
-                     .replace(/&/g, "&amp;")
-                     .replace(/</g, "&lt;")
-                     .replace(/>/g, "&gt;")
-                     .replace(/"/g, "&quot;")
-                     .replace(/'/g, "&#039;");
-            };
-            function showExamples() {
-                var sectionTemplate = '<section id="{sectionID}" class="pad-top-40">'
-                                            + '<div class="row">'
-                                                + '<div class="col-md-8 col-md-offset-2">'
-                                                    + '<div class="show-panel">'
-                                                        + '<div class="show-panel-body">'
-                                                            + '<h2><strong>{sectionTitle}</strong></h2>'
-                                                            + '<p>{sectionSubtitle}</p>'
-                                                        + '</div>'
-                                                        + '<div class="show-panel-example">'
-                                                            + '<div class="show-panel-body">'
-                                                                + '<div class="pad-sep-20">'
-                                                                    + '<div class="row"><div class="col-md-8 col-md-offset-2">{sectionExample}</div></div>'
-                                                                + '</div>'
-                                                                + '{sectionAlerts}'
-                                                            + '</div>'                                                            
-                                                            + '<div class="show-panel-footer"></div>'
-                                                        + '</div>'
-                                                    + '</div>'
-                                                + '</div>'
-                                            + '</div>'
-                                        + '</section>';
 
-                var pageData = [{
-                    "sectionID": "testID",
-                    "sectionTitle": "testTitle",
-                    "sectionSubtitle": "testSubtitle",
-                    "sectionExample": "testExample",
-                    "sectionAlerts": "testAlert"
-                },
-                {
-                    "sectionID": "testID2",
-                    "sectionTitle": "testTitle2",
-                    "sectionSubtitle": "testSubtitle2",
-                    "sectionExample": "testExample2",
-                    "sectionAlerts": "testAlert2"
-                }];
-
-                for (i = 0; i < pageData.length; i++) {
-                    console.log(i);
-                    $('#examples').append(nano(sectionTemplate, pageData[i]));
-                }
-            };
-
-            $(document).ready(function () {
-                console.log('Ready, Captain!');
-
-                demoHelpers();  //Requires demo_helpers.js
-
-                // This script is just for demo purposes //
-                ///////////////////////////////////////////
-                var i = 1;
-                function blowWorld(selector, no) {
-                    var thing = document.getElementById(selector);
-                    thing.getElementsByClassName("badge")[0].innerHTML = no;
-                };
-                $('#blow_my_world').on('click', function () {
-                    var no = i++;
-                    if (no >= 100) {
-                        alert("Yeah, alright, we get it buddy... It's cool, chill!");
-                    } else {
-                        blowWorld(this.id, no);
-                    }
-                });
-                ///////////////////////////////////////////
-                // That script was just for demo purposes //
-
-                //showExamples();
-            });
-        </script>
-        <!-- DOCUMENT-READY:End -->
+        <?php include_once "modules/_mod_js_footer.php"?>
+        
     </body>
 </html>
