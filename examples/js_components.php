@@ -63,7 +63,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -211,13 +211,12 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
-                                    <h4 class="text-primary" data-toggle="tooltip" data-placement="top"
-                                        title="Tooltip on top"><strong>Tooltips</strong></h4>
+                                    <h4 class="text-primary"><strong>Tooltips</strong></h4>
                                     <div class="pad-sep-40" data-showcase="example">
                                         <button type="button" class="btn btn-default" data-toggle="tooltip"
                                                 data-placement="left" title="Tooltip type danger" data-type="danger">
@@ -244,7 +243,27 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="show-panel show-panel-example">
+                                <div class="show-panel-body">
+                                    <h4 class="text-primary"><strong>Popovers</strong></h4>
+                                    <div class="pad-sep-40" data-showcase="example">
+                                        <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
+                                        <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
+                                        <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
+                                        <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
+                                    </div>
+                                </div>
+                                <div class="show-panel-footer">
+                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -414,11 +433,9 @@
         }
 
         modalSizing();
-
         showcasing();
     });
 </script>
 <!-- DOCUMENT-READY:End -->
-
 </body>
 </html>
