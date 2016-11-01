@@ -181,6 +181,7 @@ module.exports = function (grunt) {
                     '<%= pkg.data_plugins%>/blockui/js/jQuery.blockui.2.70.0.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonModal.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_customInput.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_tooltip.js',
                     '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/custom-setup.js'
                 ],
