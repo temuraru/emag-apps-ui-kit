@@ -1,6 +1,5 @@
 /*!
- * Photon Gruntfile
- * http://photon.emag.ro
+ * eMAG Apps UI KIT Gruntfile
  * Copyright 2011-2016 eMAG.
  * Licensed under MIT License
  */
@@ -15,7 +14,7 @@ module.exports = function (grunt) {
         // Metadata.
         pkg: grunt.file.readJSON('package.json'),  
         banner: '/*!\n' +
-            ' * Photon UI Bundle v<%= pkg.version %>' +
+            ' * eMAG Apps UI KIT v<%= pkg.version %>' +
             ' * Copyright 2001-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
             ' */\n',  
@@ -181,6 +180,7 @@ module.exports = function (grunt) {
                     '<%= pkg.data_plugins%>/blockui/js/jQuery.blockui.2.70.0.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonModal.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_customInput.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_tooltip.js',
                     '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/custom-setup.js'
                 ],

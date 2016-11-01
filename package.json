@@ -1,7 +1,7 @@
 {
   "name": "photon-power-ui-kit",
   "version": "1.0.0",
-  "description": "A Bootstrap-based UI KIT/Admin layout, developed and used by eMAG",
+  "description": "A Bootstrap-based UI KIT for admin applications, developed by eMAG HX Team",
   "dependencies": {},
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "stylelint-config-standard": "^3.0.0",
     "time-grunt": "^1.3.0"
   },
-  "author": "eMAG UI/UX Core team",
+  "author": "eMAG HX Team",
   "private": true,
   "license": "ISC",
   "dist_scripts": "dist/js",
