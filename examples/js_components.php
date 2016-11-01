@@ -63,7 +63,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="cssListGroups" class="pad-top-20">
+                <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -437,9 +437,5 @@
     });
 </script>
 <!-- DOCUMENT-READY:End -->
-<style>
-
-
-</style>
 </body>
 </html>
