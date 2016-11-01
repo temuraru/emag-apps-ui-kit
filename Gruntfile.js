@@ -13,12 +13,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         // Metadata.
-        pkg: grunt.file.readJSON('package.json'),  
+        pkg: grunt.file.readJSON('package.json'),
         banner: '/*!\n' +
             ' * Photon UI Bundle v<%= pkg.version %>' +
             ' * Copyright 2001-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
-            ' */\n',  
+            ' */\n',
 
         // Task configuration:
         // Compiles the .less files into a readable .css file.
@@ -209,6 +209,35 @@ module.exports = function (grunt) {
             }
         },
 
+        php2html: {
+           default: {
+             options: {
+               htmlhint: {
+                 'doctype-first': false
+               },
+               processLinks: true
+             },
+             files: [
+                {
+                  expand: true,
+                  cwd: 'examples/',
+                  src: ['overview.php'],
+                  dest: 'demo/',
+                  ext: '.html'
+                }
+              ]
+           }
+        },
+        'html-prettyprinter': {
+          custom: {
+              src: 'demo/overview.html',
+              dest: 'demo/overview.html',
+              options: {
+                indent_size: 2,
+                indent_char: '\t'
+              }
+            }
+        },
         // Minifies JS files
         uglify: {
             options: {
@@ -259,6 +288,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-php2html');
+    grunt.loadNpmTasks('grunt-html-prettyprinter');
 
     // Custom task(s).
     // CSS distribution task.
@@ -289,7 +320,7 @@ module.exports = function (grunt) {
         'concat:jq_grid',
         'uglify:plugins',
         'uglify:jquery'
-    ]);  
+    ]);
 
     // Default: Generate main styles and scripts
     grunt.registerTask('default', [
