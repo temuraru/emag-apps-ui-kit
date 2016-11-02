@@ -1,5 +1,5 @@
 /*!
- * Photon UI Bundle v1.0.0 * Copyright 2001-2016 eMAG UI/UX Core team
+ * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2016 eMAG HX Team
  * Licensed under the ISC license
  */
 /*!
@@ -8536,6 +8536,108 @@ button.close {
 .popover-arrow:after {
   content: "";
   border-width: 10px;
+}
+.popover {
+  box-shadow: none;
+}
+.popover.popover-danger {
+  color: #fff;
+  background: #e1302b;
+  border: 1px solid transparent;
+}
+.popover.popover-danger .popover-title {
+  background: #e1302b;
+  border-bottom: 1px solid #d42e2a;
+}
+.popover.bs-tether-element-attached-bottom.popover-danger .popover-arrow {
+  border-top-color: #e1302b;
+}
+.popover.bs-tether-element-attached-bottom.popover-danger .popover-arrow:after {
+  border-top-color: #e1302b;
+}
+.popover.bs-tether-element-attached-top.popover-danger .popover-arrow {
+  border-bottom-color: #e1302b;
+}
+.popover.bs-tether-element-attached-top.popover-danger .popover-arrow:after {
+  border-bottom-color: #e1302b;
+}
+.popover.bs-tether-element-attached-left.popover-danger .popover-arrow {
+  border-right-color: #e1302b;
+}
+.popover.bs-tether-element-attached-left.popover-danger .popover-arrow:after {
+  border-right-color: #e1302b;
+}
+.popover.bs-tether-element-attached-right.popover-danger .popover-arrow {
+  border-left-color: #e1302b;
+}
+.popover.bs-tether-element-attached-right.popover-danger .popover-arrow:after {
+  border-left-color: #e1302b;
+}
+.popover.popover-warning {
+  color: #fff;
+  background: #f4b350;
+  border: 1px solid transparent;
+}
+.popover.popover-warning .popover-title {
+  background: #f4b350;
+  border-bottom: 1px solid #eaad50;
+}
+.popover.bs-tether-element-attached-bottom.popover-warning .popover-arrow {
+  border-top-color: #f4b350;
+}
+.popover.bs-tether-element-attached-bottom.popover-warning .popover-arrow:after {
+  border-top-color: #f4b350;
+}
+.popover.bs-tether-element-attached-top.popover-warning .popover-arrow {
+  border-bottom-color: #f4b350;
+}
+.popover.bs-tether-element-attached-top.popover-warning .popover-arrow:after {
+  border-bottom-color: #f4b350;
+}
+.popover.bs-tether-element-attached-left.popover-warning .popover-arrow {
+  border-right-color: #f4b350;
+}
+.popover.bs-tether-element-attached-left.popover-warning .popover-arrow:after {
+  border-right-color: #f4b350;
+}
+.popover.bs-tether-element-attached-right.popover-warning .popover-arrow {
+  border-left-color: #f4b350;
+}
+.popover.bs-tether-element-attached-right.popover-warning .popover-arrow:after {
+  border-left-color: #f4b350;
+}
+.popover.popover-default {
+  color: #fff;
+  background: #000;
+  border: 1px solid transparent;
+}
+.popover.popover-default .popover-title {
+  background: #000;
+  border-bottom: 1px solid #2d2d2d;
+}
+.popover.bs-tether-element-attached-bottom.popover-default .popover-arrow {
+  border-top-color: #000;
+}
+.popover.bs-tether-element-attached-bottom.popover-default .popover-arrow:after {
+  border-top-color: #000;
+}
+.popover.bs-tether-element-attached-top.popover-default .popover-arrow {
+  border-bottom-color: #000;
+}
+.popover.bs-tether-element-attached-top.popover-default .popover-arrow:after {
+  border-bottom-color: #000;
+}
+.popover.bs-tether-element-attached-left.popover-default .popover-arrow {
+  border-right-color: #000;
+}
+.popover.bs-tether-element-attached-left.popover-default .popover-arrow:after {
+  border-right-color: #000;
+}
+.popover.bs-tether-element-attached-right.popover-default .popover-arrow {
+  border-left-color: #000;
+}
+.popover.bs-tether-element-attached-right.popover-default .popover-arrow:after {
+  border-left-color: #000;
 }
 .carousel {
   position: relative;
