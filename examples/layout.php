@@ -4,6 +4,7 @@
 
         <title>Layout - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        <?php include_once "modules/_mod_top_include.php"?>
 
     </head>
     <body>
@@ -48,9 +49,9 @@
         &lt;meta charset=&quot;utf-8&quot;&gt;
         &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
         &lt;title&gt;&lt;/title&gt;
-        &lt;meta name=&quot;description&quot; content=&quot;eMAG Apps UI KIT - The superfast, supersimple UI Kit&quot;&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;YOUR DESCRIPTION&quot;&gt;
         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-        &lt;meta name=&quot;author&quot; content=&quot;eMAG HX Team&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;YOUR APPLICATION AUTHOR&quot;&gt;
 
         &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;apple-touch-icon.png&quot;&gt;
         &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;favicon.ico&quot;&gt;
@@ -66,7 +67,12 @@
     &lt;/head&gt;
     &lt;body&gt;<span class="text-success">
         &lt;!--[if lt IE 9]&gt;&lt;body class=&quot;lt-ie9&quot;&gt; &lt;![endif]--&gt;
-        &lt;!--[if lt IE 9]&gt;&lt;p class=&quot;browserupgrade&quot;&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;&lt;![endif]--&gt;
+        &lt;!--[if lt IE 9]&gt;
+            &lt;p class=&quot;browserupgrade&quot;&gt;
+                You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. 
+                Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.
+            &lt;/p&gt;
+        &lt;![endif]--&gt;
         &lt;!-- HEADER:Start --&gt;
         &lt;!-- HEADER:End --&gt;
 
@@ -140,7 +146,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="eMAG Apps UI KIT" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -165,7 +171,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="eMAG Apps UI KIT" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i></button>
@@ -178,7 +184,7 @@
                                                                 <li class="dropdown">
                                                                     <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                                         <div class="profile-thumb hidden-xs">
-                                                                            <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
+                                                                            <img class="nav-user-photo" src="img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
                                                                         </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
                                                                     </a>
                                                                     <ul class="dropdown-menu">
@@ -203,7 +209,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="eMAG Apps UI KIT Test" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -267,7 +273,7 @@
                                                                 <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
                                                             </div>
                                                             <a class="navbar-brand" href="javascript:void(0)">
-                                                                <img alt="eMAG Apps UI KIT" src="../dist/css/img/logo-eMAG-apps-ui-kit.png">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
                                                             </a>
                                                             <div class="nav-controls visible-xs-inline-block pull-right">
                                                                 <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
@@ -561,7 +567,27 @@
             </div>
         <!-- PAGE:End -->
 
-        <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
+                    updateSideBarCode();
+                });
+                $('input[name="footer_fixed_status"]').on('change', function() {
+                    updateFooterBarCode();
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
     </body>
 </html>

@@ -3,6 +3,11 @@
 <head>
         <title>Plugins - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        
+        <!-- PLUGIN: DateRangePicker -->
+        <link rel="stylesheet" href="../dist/plugins/daterangepicker/daterangepicker.min.css">
+        
+        <?php include_once "modules/_mod_top_include.php"?>
 </head>
 <body>
 
@@ -156,7 +161,57 @@
     </div>
 </div>
 
-<?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: moment.js -->
+        <script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
+        <!-- PLUGIN: DateRangePicker -->
+        <script src="../dist/plugins/daterangepicker/daterangepicker.min.js"></script>
+        
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                $('#daterangepicker_standard').daterangepicker();
+                $('#daterangepicker_standard_with_value').daterangepicker();
+                $('#daterangepicker_standard_with_format').daterangepicker({
+                    timePicker: true,
+                    timePicker24Hour: true,
+                    locale: {
+                        format: "YYYY-MM-DD HH:mm"
+                    }
+                });
+                $('#daterangepicker_standard_with_predefined_intervals').daterangepicker({
+                    alwaysShowCalendars: true,
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                    },
+                    locale: {
+                        format: 'YYYY-MM-DD'
+                    }
+                });$('#daterangepicker_standard_with_predefined_intervals_no_calendar').daterangepicker({
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                    },
+                    locale: {
+                        format: 'YYYY-MM-DD'
+                    }
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
+
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <title>JS Components - eMAG Apps UI KIT</title>
     <?php include_once "modules/_mod_meta.php"?>
+    <?php include_once "modules/_mod_top_include.php"?>
 </head>
 <body>
 
@@ -381,7 +382,42 @@
     </div>
 </div>
 
-<?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<script src="../dist/plugins/prism/prism.min.js"></script>
+
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
+                
+                //This function is just fo sho. You don't really have to include it in your app, man.
+                function modalSizing() {
+                    $('#mySmallDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-sm');
+                    });
+                    $('#myLargeDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-lg');
+                    });
+                    $('#myDemoModal').on('hidden.bs.modal', function (e) {
+                        $(this).find('.modal-dialog').attr('class', 'modal-dialog');
+                    });
+                }
+                modalSizing();
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
 </body>
 </html>

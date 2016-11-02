@@ -3,6 +3,7 @@
     <head>
         <title>JS Components - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        <?php include_once "modules/_mod_top_include.php"?>
     </head>
     <body>
         
@@ -42,29 +43,30 @@
                                         </div>
                                         <div class="show-panel-example">                                       
                                             <div class="show-panel-footer">
-                                                <pre class="language-javascript"><code class="language-javascript">
-                                                    var modalTest = new PhotonModal({
-                                                        id: 'testModal',
-                                                        title: 'This is an AJAX modal',
-                                                        content: modalContent,
-                                                        size: 'default',
-                                                        type: 'preview',
-                                                        buttons: {
-                                                            save: {
-                                                                label: 'Wow, much save',
-                                                                class: 'btn-success',
-                                                                icon: 'fa fa-check',
-                                                                closeModal: true
-                                                            },
-                                                            cancel: {
-                                                                label: 'Very cancel',
-                                                                class: 'btn-default',
-                                                                icon: 'fa fa-times',
-                                                                closeModal: true
-                                                            }
-                                                        }
-                                                    }); 
-                                                </code></pre>
+                                                <pre class="language-javascript">
+                                                    <code class="language-javascript">
+var modalTest = new PhotonModal({
+    id: 'testModal',
+    title: 'This is an AJAX modal',
+    content: modalContent,
+    size: 'default',
+    type: 'preview',
+    buttons: {
+        save: {
+            label: 'Wow, much save',
+            class: 'btn-success',
+            icon: 'fa fa-check'
+        },
+        cancel: {
+            label: 'Cancel',
+            class: 'btn-default',
+            icon: 'fa fa-times',
+            closeModal: true
+        }
+    }
+}); 
+                                                    </code>
+                                                </pre>
                                             </div>
                                         </div>
                                     </div>
@@ -85,7 +87,57 @@
         <div id="popSpace"></div>
         <!-- POPUPS:End -->
         
-        <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">
+
+            var modalContent =      
+                '<div class="pad-btm-20 text-center">' +
+                    'This modal can contain any kind of info.<br>' +
+                    'Check out the code documentation on the main page.' +
+                '</div>' + 
+                '<div class="embed-responsive embed-responsive-16by9">' + 
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/HL1UzIK-flA" allowfullscreen="">' + 
+                    '</iframe>' + 
+                '</div>';
+            
+            var modalTest = new PhotonModal({
+                id: 'testModal',
+                title: 'This is an AJAX modal',
+                content: modalContent,
+                size: 'default',
+                type: 'preview',
+                buttons: {
+                    save: {
+                        label: 'Wow, much save',
+                        class: 'btn-success',
+                        icon: 'fa fa-check',
+                        closeModal: true
+                    },
+                    cancel: {
+                        label: 'Very cancel',
+                        class: 'btn-default',
+                        icon: 'fa fa-times',
+                        closeModal: true
+                    }
+                }
+            });
+
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                $('#ajax_modal_start').on('click', function(){
+                    modalTest.show();
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
     </body>
 </html>

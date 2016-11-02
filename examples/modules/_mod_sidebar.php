@@ -246,6 +246,11 @@
                                 <span class="menu-text">DateTime</span>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="_plu_jqgrid.php">
+                                <span class="menu-text">JqGrid</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>

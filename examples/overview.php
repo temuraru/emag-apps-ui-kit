@@ -4,6 +4,7 @@
 
         <title>Start - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        <?php include_once "modules/_mod_top_include.php"?>
     
     </head>
     <body>
@@ -152,8 +153,7 @@ eMAG Apps UI KIT/
 |   └── plugins/
 |
 └── examples/
-    ├── modules/
-    └── glyphicons-halflings-regular.woff2
+    └── modules/
 </code>
 </pre>
                                                         <br>
@@ -334,7 +334,20 @@ eMAG Apps UI KIT/
             </div>
         <!-- PAGE:End -->
 
-        <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
     </body>
 </html>

@@ -3,6 +3,8 @@
     <head>
         <title>Plugins - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css">
+        <?php include_once "modules/_mod_top_include.php"?>
     </head>
     <body>
         <?php include_once "modules/_mod_browser_upgrade.php"?>
@@ -115,7 +117,65 @@
             </div>
         <!-- PAGE:End -->
         
-        <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: Magnific popup -->
+        <script src="../dist/plugins/magnific/magnific.min.js"></script>
+        
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                $('#default_magnific').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                        verticalFit: true,
+                        titleSrc: function (item) {
+                            return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+                        }
+                    },
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't foget to change the duration also in CSS
+                        opener: function (element) {
+                            return element.find('img');
+                        }
+                    }
+                });
+
+                $('#btnajax_magnific').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    image: {
+                        verticalFit: true
+                    }
+
+                });
+                $('#youtube_magnific').magnificPopup({
+                    //disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+                    fixedContentPos: false
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
         
     </body>
 </html>

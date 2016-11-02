@@ -3,6 +3,7 @@
     <head>
         <title>Sign in - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        <?php include_once "modules/_mod_top_include.php"?>
     </head>
 
     <body>
@@ -22,7 +23,7 @@
                             <div id="login_box" class="auth-box">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h1 class="auth-title">Sign into your account</h1>
+                                        <h2>Sign into your account</h2>
                                         <form id="user_auth">
                                             <div class="form-group">
                                                 <label for="user_username" class="control-label">Username</label>
@@ -59,7 +60,7 @@
                             <div id="recover_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h1 class="auth-title">Reset your password</h1>
+                                        <h2>Reset your password</h2>
                                         <form id="user_recover_password">
                                             <div class="form-group">
                                                 <label for="user_email" class="control-label">Email address</label>
@@ -84,7 +85,7 @@
                             <div id="register_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h1 class="auth-title">Sign up for an account</h1>
+                                        <h2>Sign up for an account</h2>
                                         <form id="user_register">
                                             <div class="form-group">
                                                 <label for="user_reg_email" class="control-label">Email address</label>
@@ -145,7 +146,27 @@
             </div>
         <!-- PAGE:End -->
         
-        <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+                
+                $('.user-actions').on('click', function (e) {
+                    e.preventDefault();
+                    $('.auth-box').addClass('hidden');
+                    var link = $(this).attr('href');
+                    $(link).toggleClass('hidden');
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
 
     </body>

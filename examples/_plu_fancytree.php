@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <!-- PLUGIN: Fancytree -->
-    <link rel="stylesheet" href="../dist/plugins/fancytree/fancytree.min.css">
     <title>JS Components - eMAG Apps UI KIT</title>
     <?php include_once "modules/_mod_meta.php"?>
+
+    <link rel="stylesheet" href="../dist/plugins/fancytree/fancytree.min.css">
+
+    <?php include_once "modules/_mod_top_include.php"?>
+
 </head>
 <body>
 
@@ -232,7 +235,301 @@
     </div>
 </div>
     
-    <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
+        <script src="../dist/plugins/fancytree/fancytree.min.js"></script>
+
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">
+
+        window.fancytreeContent = [{
+            "key": 31,
+            "title": "Software",
+            "children": [{"key": 175, "title": "Antivirus", "children": [], "folder": true}, {
+                "key": 221,
+                "title": "Sisteme de operare",
+                "children": [{"key": 225, "title": "Aplicatii desktop OEM", "children": []}, {
+                    "key": 226,
+                    "title": "Medii de dezvoltare OEM",
+                    "children": []
+                }, {"key": 227, "title": "Sisteme de operare server OEM", "children": []}, {
+                    "key": 228,
+                    "title": "Aplicatii server OEM",
+                    "children": []
+                }, {"key": 340, "title": "Clienti server OEM", "children": []}],
+                "folder": true
+            }, {
+                "key": 222,
+                "title": "Office & Aplicatii Desktop",
+                "children": [{"key": 229, "title": "Sisteme de operare Retail", "children": []}, {
+                    "key": 230,
+                    "title": "Aplicatii desktop Retail",
+                    "children": []
+                }, {"key": 231, "title": "Medii de dezvoltare Retail", "children": []}, {
+                    "key": 232,
+                    "title": "Sisteme de operare server Retail",
+                    "children": []
+                }, {"key": 233, "title": "Aplicatii server Retail", "children": []}, {
+                    "key": 274,
+                    "title": "Documentatii Retail",
+                    "children": []
+                }, {"key": 344, "title": "Clienti server retail", "children": []}],
+                "folder": true
+            }, {"key": 361, "title": "Editare foto-video", "children": []}],
+            "folder": true
+        }, {"key": 1512, "title": "AC", "children": []}, {
+            "key": 1513,
+            "title": "Photo DSLR",
+            "children": [{"key": 378, "title": "Aparate foto D-SLR", "children": []}, {
+                "key": 407,
+                "title": "Accesorii aparate foto DSLR si Mirrorless",
+                "children": [{"key": 443, "title": "Kit curatare DSLR", "children": []}],
+                "folder": true
+            }, {"key": 1117, "title": "Aparate foto Mirrorless", "children": []}],
+            "folder": true
+        }, {
+            "key": 1514,
+            "title": "Photo Compact",
+            "children": [{"key": 54, "title": "Aparate foto compacte", "children": []}],
+            "folder": true
+        }, {
+            "key": 1517,
+            "title": "AV & HiFi",
+            "children": [{"key": 80, "title": "Videoproiectoare", "children": []}, {
+                "key": 117,
+                "title": "DVD & Blu-Ray Playere",
+                "children": []
+            }, {
+                "key": 408,
+                "title": "Audio HI-FI",
+                "children": [{"key": 204, "title": "Playere & Receivere", "children": []}, {
+                    "key": 539,
+                    "title": "Amplificatoare",
+                    "children": []
+                }, {"key": 540, "title": "Playere", "children": []}, {
+                    "key": 542,
+                    "title": "Boxe",
+                    "children": []
+                }, {"key": 635, "title": "Sisteme audio wireless", "children": []}, {
+                    "key": 1061,
+                    "title": "Pick-Up",
+                    "children": []
+                }, {"key": 1150, "title": "Accesorii Audio Hi-Fi", "children": []}],
+                "folder": true
+            }, {"key": 467, "title": "Mediaplayere", "children": []}, {
+                "key": 1133,
+                "title": "Home Audio",
+                "children": [{"key": 113, "title": "Sisteme Home Cinema", "children": []}, {
+                    "key": 124,
+                    "title": "Sisteme audio",
+                    "children": []
+                }, {"key": 162, "title": "Radiocasetofoane", "children": []}, {
+                    "key": 1140,
+                    "title": "Docking",
+                    "children": []
+                }],
+                "folder": true
+            }],
+            "folder": true
+        }, {"key": 1534, "title": "Other Products", "children": [], "folder": true}];
+
+        window.fancytreeContentSelectOnlyLeafs = [{
+            "key": 31,
+            "title": "Software",
+            "hideCheckbox": true,
+            "children": [{"key": 175, "title": "Antivirus", "children": [], "folder": true}, {
+                "key": 221,
+                "title": "Sisteme de operare",
+                "children": [{"key": 225, "title": "Aplicatii desktop OEM", "children": []}, {
+                    "key": 226,
+                    "title": "Medii de dezvoltare OEM",
+                    "children": []
+                }, {"key": 227, "title": "Sisteme de operare server OEM", "children": []}, {
+                    "key": 228,
+                    "title": "Aplicatii server OEM",
+                    "children": []
+                }, {"key": 340, "title": "Clienti server OEM", "children": []}],
+                "folder": true
+            }, {
+                "key": 222,
+                "title": "Office & Aplicatii Desktop",
+                "children": [{"key": 229, "title": "Sisteme de operare Retail", "children": []}, {
+                    "key": 230,
+                    "title": "Aplicatii desktop Retail",
+                    "children": []
+                }, {"key": 231, "title": "Medii de dezvoltare Retail", "children": []}, {
+                    "key": 232,
+                    "title": "Sisteme de operare server Retail",
+                    "children": []
+                }, {"key": 233, "title": "Aplicatii server Retail", "children": []}, {
+                    "key": 274,
+                    "title": "Documentatii Retail",
+                    "children": []
+                }, {"key": 344, "title": "Clienti server retail", "children": []}],
+                "folder": true
+            }, {"key": 361, "title": "Editare foto-video", "children": []}],
+            "folder": true
+        }, {"key": 1512, "title": "AC", "children": []}, {
+            "key": 1513,
+            "title": "Photo DSLR",
+            "hideCheckbox": true,
+            "children": [{"key": 378, "title": "Aparate foto D-SLR", "children": []}, {
+                "key": 407,
+                "title": "Accesorii aparate foto DSLR si Mirrorless",
+                "children": [{"key": 443, "title": "Kit curatare DSLR", "children": []}],
+                "folder": true
+            }, {"key": 1117, "title": "Aparate foto Mirrorless", "children": []}],
+            "folder": true
+        }, {
+            "key": 1514,
+            "title": "Photo Compact",
+            "hideCheckbox": true,
+            "children": [{"key": 54, "title": "Aparate foto compacte", "children": []}],
+            "folder": true
+        }, {
+            "key": 1517,
+            "title": "AV & HiFi",
+            "hideCheckbox": true,
+            "children": [{"key": 80, "title": "Videoproiectoare", "children": []}, {
+                "key": 117,
+                "title": "DVD & Blu-Ray Playere",
+                "children": []
+            }, {
+                "key": 408,
+                "title": "Audio HI-FI",
+                "children": [{"key": 204, "title": "Playere & Receivere", "children": []}, {
+                    "key": 539,
+                    "title": "Amplificatoare",
+                    "children": []
+                }, {"key": 540, "title": "Playere", "children": []}, {
+                    "key": 542,
+                    "title": "Boxe",
+                    "children": []
+                }, {"key": 635, "title": "Sisteme audio wireless", "children": []}, {
+                    "key": 1061,
+                    "title": "Pick-Up",
+                    "children": []
+                }, {"key": 1150, "title": "Accesorii Audio Hi-Fi", "children": []}],
+                "folder": true
+            }, {"key": 467, "title": "Mediaplayere", "children": []}, {
+                "key": 1133,
+                "title": "Home Audio",
+                "children": [{"key": 113, "title": "Sisteme Home Cinema", "children": []}, {
+                    "key": 124,
+                    "title": "Sisteme audio",
+                    "children": []
+                }, {"key": 162, "title": "Radiocasetofoane", "children": []}, {
+                    "key": 1140,
+                    "title": "Docking",
+                    "children": []
+                }],
+                "folder": true
+            }],
+            "folder": true
+        }, {"key": 1534, "title": "Other Products", "children": [], "folder": true}];
+
+        var modalContent =
+            "<div class='row'>" +
+                "<div class='col-lg-12'>" +
+                    "<div>" +
+                        "<label for='exampleInputEmail1'>Search an item</label>" +
+                        "<input type='text' class='form-control'>" +
+                    "</div>" +
+                "</div>" +
+            "</div>" +
+            "<div class='row'>" +
+                "<div class='col-lg-4'>" +
+                    "<div class='checkbox'>" +
+                        "<label>" +
+                            "<input type='checkbox'> Hide unmatched " +
+                        "</label>" +
+                    "</div>" +
+                "</div>" +
+                "<div class='col-lg-5'>" +
+                    "<div class='checkbox'>" +
+                        "<label>" +
+                            "<input type='checkbox'> Hierarchical multi-selection " +
+                        "</label>" +
+                    "</div>" +
+                "</div>" +
+            "</div>" +
+            "<div class='row'>" +
+                "<div class='col-lg-12'>" +
+                    "<div id='modalTree'></div>" +
+                "</div>" +
+            "</div>";
+
+
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                //Fancytree inits
+                $("#tree").fancytree({
+                    icon: false,
+                    checkbox: true,
+                    source: fancytreeContent
+                });
+
+                $("#show-fancytree-modal").on("click", function() {
+                    console.log("Show fancytree modal");
+                    var fancytreeModal = new PhotonModal({
+                        id: 'fancytreeModalId',
+                        title: 'Fancytree in modal',
+                        content: modalContent,
+                        type: 'preview',
+                        buttons: {
+                            save: {
+                                label: 'Select',
+                                class: 'btn-success',
+                                icon: 'fa fa-check',
+                                closeModal: true
+                            },
+                            cancel: {
+                                label: 'Cancel',
+                                class: 'btn-default',
+                                icon: 'fa fa-times',
+                                closeModal: true
+                            }
+                        },
+                        showCallback: function() {
+                            //Todo: Make modal display buttons on left or right as user chooses (on the moment they are only displayed on right
+                            //Task: http://jira:8080/browse/UI-3125
+                            if(!$("#reset-btn-id").length) {
+                                $("#fancytreeModalId").find(".modal-footer").append(
+                                    '<div class="pull-left panel-controls">' +
+                                    '<button class="btn btn-default" id="reset-btn-id" data-dismiss="modal"><span><i class="fa fa-undo"></i> Reset</span></button>' +
+                                    '</div>'
+                                );
+                            }
+                            $("#modalTree").fancytree({
+                                icon: false,
+                                checkbox: true,
+                                source: fancytreeContent
+                            });
+                        }
+                    });
+                    fancytreeModal.show();
+                });
+
+                TreeTypeObject = $("#id_category_tree_default").TreeType({
+                    treeData: fancytreeContent,
+                    selectId: "category_tree_default"
+                });
+                TreeTypeObject = $("#id_category_tree_onlyleafs").TreeType({
+                    treeData: fancytreeContentSelectOnlyLeafs,
+                    selectId: "category_tree_onlyleafs",
+                    selectOnlyLeaves: 1
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
 </body>
 </html>

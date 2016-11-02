@@ -3,6 +3,7 @@
     <head>
         <title>CSS Components - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
+        <?php include_once "modules/_mod_top_include.php"?>
     </head>
     <body>
         <?php include_once "modules/_mod_browser_upgrade.php"?>
@@ -2479,7 +2480,34 @@
         </div>
         <!-- PAGE:End -->
 
-        <?php include_once "modules/_mod_js_footer.php"?>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+                
+                var i = 1;
+                function blowWorld(selector, no) {
+                    var thing = document.getElementById(selector);
+                    thing.getElementsByClassName("badge")[0].innerHTML = no;
+                };
+                $('#blow_my_world').on('click', function () {
+                    var no = i++;
+                    if (no >= 100) {
+                        alert("Yeah, alright, we get it buddy... It's cool, chill!");
+                    } else {
+                        blowWorld(this.id, no);
+                    }
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End --> 
         
     </body>
 </html>
