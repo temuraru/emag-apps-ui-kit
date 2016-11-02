@@ -238,3 +238,20 @@ function getCookie(cname) {
     }
     return "";
 }
+
+function addMoreActions(context) {
+    $(context).find('.more-actions').each(function() {
+        var drop = new Drop({
+            target: $(this)[0],
+            classes: 'drop-actions',
+            content:    $(this).attr('data-content'),
+            position: 'bottom right',
+            openOn: 'click',
+            constrainToWindow: true,
+            constrainToScrollParent: false,
+            tetherOptions: {
+                offset: '-5px 0'
+            }
+        });
+    });
+}

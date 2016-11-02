@@ -13,6 +13,7 @@
 
 
     <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
 
     <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
     <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
@@ -300,9 +301,10 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
 
-
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+<script src="../dist/plugins/tether/tether.min.js"></script>
+<script src="../dist/plugins/drop/drop.min.js"></script>
 
 <script src="../dist/js/main_script.min.js"></script>
 
@@ -322,24 +324,129 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
 
             var statusLive = '<span class="label label-success">Live</span>';
             var statusInactive = '<span class="label label-default">Inactive</span>';
-            var actions =
-                '<div class="btn-group">' +
-                    '<button type="button" class="btn btn-sm btn-default">' +
-                        '<i class="fa fa-trash text-danger"></i>' +
-                        '<span class="sr-only">Delete</span>' +
-                    '</button>' +
-                '</div>';
+//            var actions =
+//                '<div class="btn-group">' +
+//                    '<button type="button" class="btn btn-sm btn-default">' +
+//                        '<i class="fa fa-trash text-danger"></i>' +
+//                        '<span class="sr-only">Delete</span>' +
+//                    '</button>' +
+//                '</div>';
+            var actions1 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-ellipsis-h',
+                    attr: {
+                        title: 'More actions'
+                    },
+                    group: 0,
+                    dropdown: [
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 1',
+                            attr: {
+                                title: 'Action 1'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 2',
+                            attr: {
+                                title: 'Action 2'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 3',
+                            attr: {
+                                title: 'Action 3'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 4',
+                            attr: {
+                                title: 'Action 4'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 5',
+                            attr: {
+                                title: 'Action 5'
+                            }
+                        }
+                    ]
+                },
+            ];
+            var actions2 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete'
+                    },
+                    group: 0
+                },
+                {
+                    label: 'Special action',
+                    attr: {
+                        title: 'Special action'
+                    }
+                }
+            ];
+            var actions3 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete'
+                    },
+                    group: 1
+                },
+                {
+                    label: 'Action',
+                    attr: {
+                        title: 'Action'
+                    },
+                    group: 1
+                }
+            ];
 
             var data = {
                 'page': '1',
                 'records': '6',
                 'rows': [
-                    { 'name': 'Lorem ipsum dolor sit amet', 'status': statusLive, 'platform': 'google.ro', 'products': '0', 'actions': actions },
-                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '23.232', 'actions': actions },
-                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '560.032', 'actions': actions },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.hu', 'products': '88.932', 'actions': actions },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions }
+                    { 'name': 'Lorem ipsum dolor sit amet', 'status': statusLive, 'platform': 'google.ro', 'products': '0', 'actions': actions1 },
+                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '23.232', 'actions': actions1 },
+                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '560.032', 'actions': actions2 },
+                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.hu', 'products': '88.932', 'actions': actions2 },
+                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 },
+                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 }
                 ]
             };
             return data;
@@ -363,8 +470,11 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
                 {name: 'status', index: 'status', width: 1, sorttype: "text"},
                 {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
-                {name: 'actions', index: 'actions', width: 1, sortable: false, align:"center" }
-            ]
+                {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
+            ],
+            gridComplete: function() {
+                addMoreActions('#grid_table');
+            },
         };
 
         new PhotonJqGrid(listingParameters).init();

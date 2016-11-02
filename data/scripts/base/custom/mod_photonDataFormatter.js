@@ -107,19 +107,75 @@
                 return self.notAvailable();
             }
 
-            var r = getItemStatus(rowObject);
             var rCountryCode = getItemStatus(rowObject.countryCode);
 
-            if (r.hasNoValue || rCountryCode.hasNoValue) {
+            if (rCountryCode.hasNoValue) {
+                if (i.isString && !i.isJson) {
+                    var countryCode = item.toString();
+                    return countryFormatterString({country: item, countryCode: countryCode.toLowerCase()});
+                }
+
                 if (i.isJson) {
                     item = JSON.parse(item);
                 }
-
                 return countryFormatterString(item);
             }
 
             return countryFormatterString({country: item, countryCode: rowObject.countryCode});
         };
+
+        this.actionsButtons = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (!i.isArray) {
+                console.error('jQrid actions buttons cell data must be array of objects.');
+                return '';
+            }
+
+
+
+            var buttonsGroups = {};
+
+            $.each(item, function(index, element) {
+                var currentButtonGroup;
+
+                if (typeof(element.group) == 'undefined') {
+                    var buttonsGroupsKeys = Object.keys(buttonsGroups);
+                    currentButtonGroup = buttonsGroupsKeys[buttonsGroupsKeys.length - 1] + 1;
+                    buttonsGroups[currentButtonGroup] = $('<div>', { class: 'btn-group' });
+                } else {
+                    currentButtonGroup = element.group;
+                    if (typeof(buttonsGroups[currentButtonGroup]) == 'undefined') {
+                        buttonsGroups[currentButtonGroup] = $('<div>', { class: 'btn-group' });
+                    }
+                }
+
+                var attr = makeButtonSetup(element);
+
+                if (element.dropdown instanceof Array && element.dropdown.length > 0) {
+                    var dropdownContent = $('<ul>', { class: 'dropdown-menu dropdown-default' });;
+
+                    $.each(element.dropdown, function(subIndex, subElement) {
+                        var liContent = $('<li>');
+                        liContent.append( $('<a>', makeButtonSetup(subElement, false)) );
+                        dropdownContent.append(liContent);
+                    });
+
+                    attr['data-content'] = dropdownContent.prop('outerHTML');
+                }
+
+                buttonsGroups[currentButtonGroup].append($('<a>', attr));
+            });
+
+            var actionsButtons = '';
+
+            $.each(buttonsGroups, function(index, element) {
+                actionsButtons += $(element).prop('outerHTML');
+            });
+
+
+            return actionsButtons;
+        }
 
         /**
          * Check item properties
@@ -264,6 +320,41 @@
          */
         function countryFormatterString (item) {
             return '<span class="formatter-country" data-country="' + item.country + '"><i class="flag-icon flag-icon-' + item.countryCode + '"></i>'+ " " + item.country + '</span>';
+        };
+
+        /**
+         *
+         * @param buttonData
+         * @return {object}
+         */
+        function makeButtonSetup(buttonData, isButton) {
+            var buttonSetup = buttonData.attr || {};
+            buttonSetup.class = buttonSetup.class || '';
+
+            if (isButton == undefined) {
+                isButton = true;
+            }
+
+            if (isButton) {
+                buttonSetup.class += ' btn btn-default btn-sm';
+            }
+
+            if (buttonData.dropdown instanceof Array && buttonData.dropdown.length > 0) {
+                buttonSetup.class += ' more-actions';
+            }
+
+            buttonSetup.href = buttonSetup.href || 'javascript:void(0);';
+
+            var buttonContentArray = [];
+            if (buttonData.icon) {
+                buttonContentArray.push('<i class="fa ' + buttonData.icon + '" aria-hidden="true"></i>');
+            }
+            if (buttonData.label) {
+                buttonContentArray.push('<span>' + buttonData.label + '</span>');
+            }
+            buttonSetup.html = buttonContentArray.join(' ');
+
+            return buttonSetup;
         };
     };
 
