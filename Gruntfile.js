@@ -208,7 +208,6 @@ module.exports = function (grunt) {
                 dest: '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js'
             }
         },
-
         php2html: {
            default: {
              options: {
@@ -330,5 +329,11 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'concat:frontend',
         'uglify:frontend'
+    ]);
+
+    //Convert php to html and use pretify for it
+    grunt.registerTask('convert_php', [
+        'php2html',
+        'html-prettyprinter'
     ]);
 };
