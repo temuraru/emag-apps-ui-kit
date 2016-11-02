@@ -322,15 +322,11 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
 
         function getListingDummyData() {
 
-            var statusLive = '<span class="label label-success">Live</span>';
-            var statusInactive = '<span class="label label-default">Inactive</span>';
-//            var actions =
-//                '<div class="btn-group">' +
-//                    '<button type="button" class="btn btn-sm btn-default">' +
-//                        '<i class="fa fa-trash text-danger"></i>' +
-//                        '<span class="sr-only">Delete</span>' +
-//                    '</button>' +
-//                '</div>';
+            var status1 = '{"label": "Live", "labelClass": "label-success", "tooltip": "Default tooltip"}';
+            var status2 = '{"label": "Deleted", "labelClass": "label-danger", "tooltip": "Danger tooltip", "tooltipType": "danger"}';
+            var status3 = '{"label": "Warning", "labelClass": "label-warning", "tooltip": "Warning tooltip", "tooltipType": "warning"}';
+            var status4 = 'Inactive';
+
             var actions1 = [
                 {
                     icon: 'fa-pencil',
@@ -436,17 +432,31 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
                     group: 1
                 }
             ];
+            var actions4 = '[' +
+                '{' +
+                    '"icon": "fa-pencil",' +
+                    '"attr": {' +
+                        '"title": "Edit"' +
+                    '}' +
+                '},' +
+                '{' +
+                    '"icon": "fa-trash",' +
+                    '"attr": {' +
+                        '"title": "Delete"' +
+                    '}' +
+                '}' +
+            ']';
 
             var data = {
                 'page': '1',
                 'records': '6',
                 'rows': [
-                    { 'name': 'Lorem ipsum dolor sit amet', 'status': statusLive, 'platform': 'google.ro', 'products': '0', 'actions': actions1 },
-                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '23.232', 'actions': actions1 },
-                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '560.032', 'actions': actions2 },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.hu', 'products': '88.932', 'actions': actions2 },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 }
+                    { 'name': 'Lorem ipsum dolor sit amet', 'status': status1, 'platform': 'google.ro', 'products': '0', 'actions': actions1 },
+                    { 'name': 'Name', 'status': status1, 'platform': 'google.ro', 'products': '23.232', 'actions': actions1 },
+                    { 'name': 'Name', 'status': status2, 'platform': 'google.ro', 'products': '560.032', 'actions': actions2 },
+                    { 'name': 'Name', 'status': status3, 'platform': 'google.hu', 'products': '88.932', 'actions': actions2 },
+                    { 'name': 'Name', 'status': status4, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 },
+                    { 'name': 'Name', 'status': status4, 'platform': 'google.bg', 'products': '76.999', 'actions': actions4 }
                 ]
             };
             return data;
@@ -467,13 +477,14 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
             ],
             colModel: [
                 {name: 'name', index: 'name', width: 2, sortable: false},
-                {name: 'status', index: 'status', width: 1, sorttype: "text"},
+                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.badgeAndTooltip },
                 {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
             ],
             gridComplete: function() {
                 addMoreActions('#grid_table');
+                $('#grid_table .label-with-tooltip').tooltip();
             },
         };
 

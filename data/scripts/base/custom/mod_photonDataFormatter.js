@@ -124,8 +124,20 @@
             return countryFormatterString({country: item, countryCode: rowObject.countryCode});
         };
 
+        /**
+         * Actions buttons Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
         this.actionsButtons = function (item, options, rowObject) {
             var i = getItemStatus(item);
+
+            if (i.isJson) {
+                item = JSON.parse(item);
+                i = getItemStatus(item);
+            }
 
             if (!i.isArray) {
                 console.error('jqGrid actions buttons cell data must be array of objects.');
@@ -163,6 +175,45 @@
 
 
             return actionsButtons;
+        }
+
+        /**
+         * Badge and info Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
+        this.badgeAndTooltip = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (i.hasNoValue) {
+                return self.notAvailable();
+            }
+
+            if (i.isJson) {
+                item = JSON.parse(item);
+                i = getItemStatus(item);
+            }
+
+            var labelClass = 'label-default';
+
+            if (i.isString) {
+                return '<span class="label ' + labelClass + '">' + item + '</span>';
+            }
+
+            labelClass = item.labelClass || 'label-default';
+
+            if (item.tooltip) {
+                var tooltipType = item.tooltipType || 'default';
+
+                item.tooltip = ' data-toggle="tooltip" data-placement="top" data-type="' + tooltipType + '" data-original-title="' + item.tooltip + '"';
+                labelClass += ' label-with-tooltip';
+            } else {
+                item.tooltip = '';
+            }
+
+            return '<span class="label ' + labelClass + '"' + item.tooltip + '>' + item.label + '</span>';
         }
 
         /**
