@@ -7,7 +7,7 @@
                 </button>
             </div>
             <a class="navbar-brand" href="javascript:void(0)">
-                <img src="../dist/css/img/logo-eMAG-apps-ui-kit.png" alt="Demo">
+                <img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">
             </a>
             <div class="nav-controls visible-xs-inline-block pull-right">
                 <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
@@ -65,7 +65,7 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="profile-thumb hidden-xs">
-                            <img class="nav-user-photo" src="../dist/css/img/jon_snow.jpg" alt="">
+                            <img class="nav-user-photo" src="img/jon_snow.jpg" alt="">
                         </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu">

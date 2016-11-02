@@ -44,23 +44,23 @@
                                                     <div class="row">
                                                         <div class="col-lg-10 col-lg-offset-1" data-showcase="example">
                                                             <div id="default_magnific" class="zoom-gallery zg-grid">
-                                                                <a href="../dist/css/img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
-                                                                    <img src="../dist/css/img/photo-1.jpg" alt="gallery-image">
+                                                                <a href="img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
+                                                                    <img src="img/photo-1.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-4.jpg" data-source="https://unsplash.com/photos/BeIvjuz6k2k" title="by Adrian Pelletier">
-                                                                    <img src="../dist/css/img/photo-4.jpg" alt="gallery-image">
+                                                                <a href="img/photo-4.jpg" data-source="https://unsplash.com/photos/BeIvjuz6k2k" title="by Adrian Pelletier">
+                                                                    <img src="img/photo-4.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-5.jpg" data-source="https://unsplash.com/photos/DjlKxYFJlTc" title="by Elliott Engelmann">
-                                                                    <img src="../dist/css/img/photo-5.jpg" alt="gallery-image">
+                                                                <a href="img/photo-5.jpg" data-source="https://unsplash.com/photos/DjlKxYFJlTc" title="by Elliott Engelmann">
+                                                                    <img src="img/photo-5.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-6.jpg" data-source="http://www.gettyimages.com/license/484398332" title="by Carl Court">
-                                                                    <img src="../dist/css/img/photo-6.jpg" alt="gallery-image">
+                                                                <a href="img/photo-6.jpg" data-source="http://www.gettyimages.com/license/484398332" title="by Carl Court">
+                                                                    <img src="img/photo-6.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-7.jpg" data-source="http://www.volvooceanrace.com/en/home.html" title="Volvo Ocean Race/Team Vestas Wind/2015">
-                                                                    <img src="../dist/css/img/photo-7.jpg" alt="gallery-image">
+                                                                <a href="img/photo-7.jpg" data-source="http://www.volvooceanrace.com/en/home.html" title="Volvo Ocean Race/Team Vestas Wind/2015">
+                                                                    <img src="img/photo-7.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-8.gif" data-source="https://www.youtube.com/watch?v=o0u4M6vppCI" title="'Shia LaBeouf' Live - Rob Cantor">
-                                                                    <img src="../dist/css/img/photo-8.gif" alt="gallery-image">
+                                                                <a href="img/photo-8.gif" data-source="https://www.youtube.com/watch?v=o0u4M6vppCI" title="'Shia LaBeouf' Live - Rob Cantor">
+                                                                    <img src="img/photo-8.gif" alt="gallery-image">
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -78,7 +78,7 @@
                                                 <div class="pad-sep-40">
                                                     <div class="row">
                                                         <div class="col-lg-10 col-lg-offset-1 text-center">
-                                                            <a href="../dist/css/img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a><br>
+                                                            <a href="img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a><br>
                                                         </div>
                                                     </div>
                                                 </div>
