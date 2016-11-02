@@ -128,38 +128,26 @@
             var i = getItemStatus(item);
 
             if (!i.isArray) {
-                console.error('jQrid actions buttons cell data must be array of objects.');
+                console.error('jqGrid actions buttons cell data must be array of objects.');
                 return '';
             }
-
-
 
             var buttonsGroups = {};
 
             $.each(item, function(index, element) {
                 var currentButtonGroup;
 
-                if (typeof(element.group) == 'undefined') {
-                    var buttonsGroupsKeys = Object.keys(buttonsGroups);
-                    currentButtonGroup = buttonsGroupsKeys[buttonsGroupsKeys.length - 1] + 1;
+
+                currentButtonGroup = getCurrentButtonGroup(buttonsGroups, element.group);
+
+                if (typeof(buttonsGroups[currentButtonGroup]) == 'undefined') {
                     buttonsGroups[currentButtonGroup] = $('<div>', { class: 'btn-group' });
-                } else {
-                    currentButtonGroup = element.group;
-                    if (typeof(buttonsGroups[currentButtonGroup]) == 'undefined') {
-                        buttonsGroups[currentButtonGroup] = $('<div>', { class: 'btn-group' });
-                    }
                 }
 
                 var attr = makeButtonSetup(element);
 
                 if (element.dropdown instanceof Array && element.dropdown.length > 0) {
-                    var dropdownContent = $('<ul>', { class: 'dropdown-menu dropdown-default' });;
-
-                    $.each(element.dropdown, function(subIndex, subElement) {
-                        var liContent = $('<li>');
-                        liContent.append( $('<a>', makeButtonSetup(subElement, false)) );
-                        dropdownContent.append(liContent);
-                    });
+                    var dropdownContent = getDropdownContent(element.dropdown);
 
                     attr['data-content'] = dropdownContent.prop('outerHTML');
                 }
@@ -321,6 +309,41 @@
         function countryFormatterString (item) {
             return '<span class="formatter-country" data-country="' + item.country + '"><i class="flag-icon flag-icon-' + item.countryCode + '"></i>'+ " " + item.country + '</span>';
         };
+
+        /**
+         * Get current button group
+         * @param buttonsGroups
+         * @param elementGroup
+         * @return {*}
+         */
+        function getCurrentButtonGroup(buttonsGroups, elementGroup) {
+            var currentButtonGroup;
+            if (typeof(elementGroup) == 'undefined') {
+                var buttonsGroupsKeys = Object.keys(buttonsGroups);
+                currentButtonGroup = buttonsGroupsKeys[buttonsGroupsKeys.length - 1] + 1;
+            } else {
+                currentButtonGroup = elementGroup;
+            }
+
+            return currentButtonGroup;
+        }
+
+        /**
+         * Create HTML for dropdown
+         * @param elementDropdown
+         * @return {object}
+         */
+        function getDropdownContent(elementDropdown) {
+            var dropdownContent = $('<ul>', { class: 'dropdown-menu dropdown-default' });;
+
+            $.each(elementDropdown, function(index, subElement) {
+                var liContent = $('<li>');
+                liContent.append( $('<a>', makeButtonSetup(subElement, false)) );
+                dropdownContent.append(liContent);
+            });
+
+            return dropdownContent;
+        }
 
         /**
          *
