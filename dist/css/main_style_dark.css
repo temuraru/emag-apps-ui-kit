@@ -10686,14 +10686,14 @@ body {
 }
 .panel-heading .panel-toolbox .tool {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 11px;
   line-height: 37px;
   color: inherit;
 }
 .panel-heading .panel-toolbox .tool[data-action]:after {
   position: relative;
   font-family: FontAwesome;
-  font-size: 18px;
+  font-size: 15px;
 }
 .panel-heading .panel-toolbox .tool[data-action="close"]:after {
   content: "\f00d";
