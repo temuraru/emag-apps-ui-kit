@@ -2098,9 +2098,7 @@ th {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-          filter: none;
-
-  -webkit-filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
@@ -11064,9 +11062,6 @@ body {
   color: transparent;
   background-color: #333;
 }
-.panel > .panel-heading > .panel-toolbox {
-  background-color: rgba(0, 0, 0, 0);
-}
 .panel > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
   background-color: transparent;
@@ -11096,9 +11091,6 @@ body {
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
   background-color: #333;
-}
-.panel-default > .panel-heading > .panel-toolbox {
-  background-color: #e8e8e8;
 }
 .panel-default > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
@@ -11130,9 +11122,6 @@ body {
   color: #005eb7;
   background-color: #fff;
 }
-.panel-primary > .panel-heading > .panel-toolbox {
-  background-color: #00519e;
-}
 .panel-primary > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
   background-color: transparent;
@@ -11162,9 +11151,6 @@ body {
 .panel-success > .panel-heading .badge {
   color: #38833a;
   background-color: #fff;
-}
-.panel-success > .panel-heading > .panel-toolbox {
-  background-color: #307132;
 }
 .panel-success > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
@@ -11196,9 +11182,6 @@ body {
   color: #2790f3;
   background-color: #fff;
 }
-.panel-info > .panel-heading > .panel-toolbox {
-  background-color: #0f84f2;
-}
 .panel-info > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
   background-color: transparent;
@@ -11229,9 +11212,6 @@ body {
   color: #f4b350;
   background-color: #fff;
 }
-.panel-warning > .panel-heading > .panel-toolbox {
-  background-color: #f2a938;
-}
 .panel-warning > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
   background-color: transparent;
@@ -11261,9 +11241,6 @@ body {
 .panel-danger > .panel-heading .badge {
   color: #e1302b;
   background-color: #fff;
-}
-.panel-danger > .panel-heading > .panel-toolbox {
-  background-color: #d4231e;
 }
 .panel-danger > .panel-heading > .panel-toolbox > li > .tool[data-action] {
   text-decoration: none;
