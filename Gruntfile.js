@@ -220,23 +220,13 @@ module.exports = function (grunt) {
              files: [
                 {
                   expand: true,
-                  cwd: 'examples/',
+                  cwd: 'demo/php/',
                   src: ['*.php'],
                   dest: 'demo/',
                   ext: '.html'
                 }
               ]
            }
-        },
-        'html-prettyprinter': {
-          custom: {
-              src: 'demo/*.html',
-              dest: 'demo/*.html',
-              options: {
-                indent_size: 4,
-                indent_char: '\t'
-              }
-            }
         },
         // Minifies JS files
         uglify: {
@@ -333,8 +323,7 @@ module.exports = function (grunt) {
     ]);
 
     //Convert php to html and use pretify for it
-    grunt.registerTask('convert_php', [
-        'php2html',
-        'html-prettyprinter'
+    grunt.registerTask('convert_demo', [
+        'php2html'
     ]);
 };
