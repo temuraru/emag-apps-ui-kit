@@ -208,7 +208,10 @@
 
         showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
 
-        $('#daterangepicker_standard').daterangepicker();
+        $('#daterangepicker_standard').daterangepicker({
+            isCustomDate: function() {
+                return 'custom_date';
+            }});
         $('#daterangepicker_standard_with_value').daterangepicker();
         $('#daterangepicker_standard_with_format').daterangepicker({
             timePicker: true,
