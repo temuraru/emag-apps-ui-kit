@@ -77,32 +77,46 @@ div.drop-actions.drop-target-attached-bottom {
 }
 
 div.drop-actions {
-  .dropdown-menu {
-    border: 0;
-    box-shadow: none;
-    display: block;
-    float: none;
-    max-width: 300px;
-    position: relative;
-    li {
-      .fa {
-        left: 10px;
-        position: absolute;
-        top: 5px;
-        width: 15px;
-      }
-      a {
-        padding-left: 35px;
-        position: relative;
-        white-space: normal;
-        &:hover {
-          background: #337ab7;
-          color: #ffffff;
+  .drop-content {
+    margin: 0;
+    padding: 0;
+
+    .dropdown-menu {
+      border: 0;
+      box-shadow: none;
+      display: block;
+      float: none;
+      max-width: 300px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+
+      li {
+        border-top: 1px solid @gray-80;
+
+        &:first-of-type {
+          border-top: none;
+        }
+        .fa {
+          left: 10px;
+          position: absolute;
+          top: 10px;
+          width: 14px;
+        }
+        a {
+          padding: 6px 10px 6px 35px;
+          position: relative;
+          white-space: normal;
+          &:hover {
+            text-decoration: none;
+            color: @black;
+            background-color: @gray-93;
+          }
         }
       }
     }
-  }
-  .dropdown-menu > li > a {
-    white-space: normal;
+    .dropdown-menu > li > a {
+      white-space: normal;
+    }
   }
 }

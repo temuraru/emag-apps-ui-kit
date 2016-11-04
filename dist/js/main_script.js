@@ -3433,19 +3433,114 @@ var Popover = (function ($) {
                 return self.notAvailable();
             }
 
-            var r = getItemStatus(rowObject);
             var rCountryCode = getItemStatus(rowObject.countryCode);
 
-            if (r.hasNoValue || rCountryCode.hasNoValue) {
+            if (rCountryCode.hasNoValue) {
+                if (i.isString && !i.isJson) {
+                    var countryCode = item.toString();
+                    return countryFormatterString({country: item, countryCode: countryCode.toLowerCase()});
+                }
+
                 if (i.isJson) {
                     item = JSON.parse(item);
                 }
-
                 return countryFormatterString(item);
             }
 
             return countryFormatterString({country: item, countryCode: rowObject.countryCode});
         };
+
+        /**
+         * Actions buttons Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
+        this.actionsButtons = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (i.isJson) {
+                item = JSON.parse(item);
+                i = getItemStatus(item);
+            }
+
+            if (!i.isArray) {
+                console.error('jqGrid actions buttons cell data must be array of objects.');
+                return '';
+            }
+
+            var buttonsGroups = {};
+
+            $.each(item, function(index, element) {
+                var currentButtonGroup;
+
+
+                currentButtonGroup = getCurrentButtonGroup(buttonsGroups, element.group);
+
+                if (typeof(buttonsGroups[currentButtonGroup]) == 'undefined') {
+                    buttonsGroups[currentButtonGroup] = $('<div>', { class: 'btn-group' });
+                }
+
+                var attr = makeButtonSetup(element);
+
+                if (element.dropdown instanceof Array && element.dropdown.length > 0) {
+                    var dropdownContent = getDropdownContent(element.dropdown);
+
+                    attr['data-content'] = dropdownContent.prop('outerHTML');
+                }
+
+                buttonsGroups[currentButtonGroup].append($('<a>', attr));
+            });
+
+            var actionsButtons = '';
+
+            $.each(buttonsGroups, function(index, element) {
+                actionsButtons += $(element).prop('outerHTML');
+            });
+
+
+            return actionsButtons;
+        }
+
+        /**
+         * Badge and info Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
+        this.badgeAndTooltip = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (i.hasNoValue) {
+                return self.notAvailable();
+            }
+
+            if (i.isJson) {
+                item = JSON.parse(item);
+                i = getItemStatus(item);
+            }
+
+            var labelClass = 'label-default';
+
+            if (i.isString) {
+                return '<span class="label ' + labelClass + '">' + item + '</span>';
+            }
+
+            labelClass = item.labelClass || 'label-default';
+
+            if (item.tooltip) {
+                var tooltipType = item.tooltipType || 'default';
+
+                item.tooltip = ' data-toggle="tooltip" data-placement="top" data-type="' + tooltipType + '" data-original-title="' + item.tooltip + '"';
+                labelClass += ' label-with-tooltip';
+            } else {
+                item.tooltip = '';
+            }
+
+            return '<span class="label ' + labelClass + '"' + item.tooltip + '>' + item.label + '</span>';
+        }
 
         /**
          * Check item properties
@@ -3590,6 +3685,76 @@ var Popover = (function ($) {
          */
         function countryFormatterString (item) {
             return '<span class="formatter-country" data-country="' + item.country + '"><i class="flag-icon flag-icon-' + item.countryCode + '"></i>'+ " " + item.country + '</span>';
+        };
+
+        /**
+         * Get current button group
+         * @param buttonsGroups
+         * @param elementGroup
+         * @return {*}
+         */
+        function getCurrentButtonGroup(buttonsGroups, elementGroup) {
+            var currentButtonGroup;
+            if (typeof(elementGroup) == 'undefined') {
+                var buttonsGroupsKeys = Object.keys(buttonsGroups);
+                currentButtonGroup = buttonsGroupsKeys[buttonsGroupsKeys.length - 1] + 1;
+            } else {
+                currentButtonGroup = elementGroup;
+            }
+
+            return currentButtonGroup;
+        }
+
+        /**
+         * Create HTML for dropdown
+         * @param elementDropdown
+         * @return {object}
+         */
+        function getDropdownContent(elementDropdown) {
+            var dropdownContent = $('<ul>', { class: 'dropdown-menu dropdown-default' });;
+
+            $.each(elementDropdown, function(index, subElement) {
+                var liContent = $('<li>');
+                liContent.append( $('<a>', makeButtonSetup(subElement, false)) );
+                dropdownContent.append(liContent);
+            });
+
+            return dropdownContent;
+        }
+
+        /**
+         *
+         * @param buttonData
+         * @return {object}
+         */
+        function makeButtonSetup(buttonData, isButton) {
+            var buttonSetup = buttonData.attr || {};
+            buttonSetup.class = buttonSetup.class || '';
+
+            if (isButton == undefined) {
+                isButton = true;
+            }
+
+            if (isButton) {
+                buttonSetup.class += ' btn btn-default btn-sm';
+            }
+
+            if (buttonData.dropdown instanceof Array && buttonData.dropdown.length > 0) {
+                buttonSetup.class += ' more-actions';
+            }
+
+            buttonSetup.href = buttonSetup.href || 'javascript:void(0);';
+
+            var buttonContentArray = [];
+            if (buttonData.icon) {
+                buttonContentArray.push('<i class="fa ' + buttonData.icon + '" aria-hidden="true"></i>');
+            }
+            if (buttonData.label) {
+                buttonContentArray.push('<span>' + buttonData.label + '</span>');
+            }
+            buttonSetup.html = buttonContentArray.join(' ');
+
+            return buttonSetup;
         };
     };
 
@@ -4825,16 +4990,20 @@ var Popover = (function ($) {
             closeButtonHtml = '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>';
         }
 
+        /**
+         * Footer text
+         * @type {string}
+         */
         var footerHtml = '';
-        if(this.defaults.footerText != '' || buttonsHtml != ''){
+        if (this.defaults.footerText != '' || buttonsHtml != '') {
             footerHtml = '<div class="modal-footer">' +
                 '<div class="pull-left">' +
-                    this.defaults.footerText +
+                this.defaults.footerText +
                 '</div>' +
                 '<div class="pull-right panel-controls">' +
-                    buttonsHtml +
+                buttonsHtml +
                 '</div>' +
-                '</div>' +'<div class="pull-left"></div>';
+                '</div>' + '<div class="pull-left"></div>';
         }
         /**
          * Create the html for the page and append it into container that has a containerId
@@ -6282,4 +6451,21 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+
+function addMoreActions(context) {
+    $(context).find('.more-actions').each(function() {
+        var drop = new Drop({
+            target: $(this)[0],
+            classes: 'drop-actions',
+            content:    $(this).attr('data-content'),
+            position: 'bottom right',
+            openOn: 'click',
+            constrainToWindow: true,
+            constrainToScrollParent: false,
+            tetherOptions: {
+                offset: '-5px 0'
+            }
+        });
+    });
 }
