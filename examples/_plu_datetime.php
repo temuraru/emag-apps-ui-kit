@@ -210,7 +210,7 @@
 
         $('#daterangepicker_standard').daterangepicker({
             isCustomDate: function() {
-                return 'custom_date';
+                return 'custom-range';
             }});
         $('#daterangepicker_standard_with_value').daterangepicker();
         $('#daterangepicker_standard_with_format').daterangepicker({
