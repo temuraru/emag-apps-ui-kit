@@ -11070,6 +11070,7 @@ body {
 .panel > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: rgba(0, 0, 0, 0);
+  outline: none;
 }
 .panel > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: rgba(0, 0, 0, 0);
@@ -11100,6 +11101,7 @@ body {
 .panel-default > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel-default > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: #dcdcdc;
+  outline: none;
 }
 .panel-default > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: #cfcfcf;
@@ -11130,6 +11132,7 @@ body {
 .panel-primary > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel-primary > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: #004484;
+  outline: none;
 }
 .panel-primary > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: #00376b;
@@ -11160,6 +11163,7 @@ body {
 .panel-success > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel-success > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: #295f2a;
+  outline: none;
 }
 .panel-success > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: #214d22;
@@ -11190,6 +11194,7 @@ body {
 .panel-info > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel-info > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: #0c77db;
+  outline: none;
 }
 .panel-info > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: #0b69c3;
@@ -11220,6 +11225,7 @@ body {
 .panel-warning > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel-warning > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: #f19e20;
+  outline: none;
 }
 .panel-warning > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: #e9920f;
@@ -11250,6 +11256,7 @@ body {
 .panel-danger > .panel-heading > .panel-toolbox > li > .tool[data-action]:hover,
 .panel-danger > .panel-heading > .panel-toolbox > li > .tool[data-action]:focus {
   background-color: #be1f1b;
+  outline: none;
 }
 .panel-danger > .panel-heading > .panel-toolbox > li > .tool[data-action]:active {
   background-color: #a81c18;
