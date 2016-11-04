@@ -2098,7 +2098,9 @@ th {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+          filter: none;
+
+  -webkit-filter: none;
 }
 .fa-stack {
   position: relative;
@@ -4949,6 +4951,8 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
+  font-size: 13px;
+  color: #000;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -4963,7 +4967,7 @@ th {
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #0d0e11;
+  border-bottom: 1px solid #0d0e11;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -4974,7 +4978,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #0d0e11;
+  border-top: 1px solid #0d0e11;
 }
 .table .table {
   background-color: #272a34;
@@ -5000,10 +5004,13 @@ th {
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
 }
-.table-striped > tbody > tr:nth-of-type(odd) {
+.table-striped > tbody > tr:nth-of-type(even) {
   background-color: #272a34;
+}
+.table-striped th {
+  background-color: #eee;
 }
 .table-hover > tbody > tr:hover {
   background-color: #0d0e11;
