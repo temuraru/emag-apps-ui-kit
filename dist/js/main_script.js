@@ -4630,7 +4630,7 @@ var Popover = (function ($) {
      * @private
      * @type {Array}
      */
-    var _modalNotificationType = ['has-error', 'has-warning', 'has-info'];
+    var _modalNotificationType = ['has-error', 'has-warning', 'has-info', 'has-success'];
     /**
      * Savel label text
      * @private
@@ -4807,25 +4807,50 @@ var Popover = (function ($) {
                 + buttons[button].class + '"' + (button == 'cancel' || buttons[button].closeModal ? 'data-dismiss="modal">' : '>')
                 + '<span>' + (buttons[button].icon != undefined ? '<i class="' + buttons[button].icon + '"></i> ' : '') + buttons[button].label + '</span></button>';
         }
+
+        /**
+         * Close modal on click outside
+         * @type {string}
+         */
+        var closeOnClickOutsideAttr = '';
+        if(this.defaults.closeOnClickOutside == false) {
+            closeOnClickOutsideAttr = ' data-backdrop="static" data-keyboard="false"';
+        }
+        /**
+         * Close modal on click outside
+         * @type {string}
+         */
+        var closeButtonHtml = '';
+        if(this.defaults.showCloseButton == true) {
+            closeButtonHtml = '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>';
+        }
+
+        var footerHtml = '';
+        if(this.defaults.footerText != '' || buttonsHtml != ''){
+            footerHtml = '<div class="modal-footer">' +
+                '<div class="pull-left">' +
+                    this.defaults.footerText +
+                '</div>' +
+                '<div class="pull-right panel-controls">' +
+                    buttonsHtml +
+                '</div>' +
+                '</div>' +'<div class="pull-left"></div>';
+        }
         /**
          * Create the html for the page and append it into container that has a containerId
          */
         _template =
-            '<div class="modal fade" id="' + this.defaults.id + '" tabindex="-1" role="dialog" aria-labelledby="' +  this.defaults.id + 'Label' + '">' +
+            '<div class="modal fade" id="' + this.defaults.id + '" tabindex="-1" role="dialog" aria-labelledby="' +  this.defaults.id + 'Label' + '"' + closeOnClickOutsideAttr + '>' +
             '<div class="modal-dialog ' + (_modalNotificationType.indexOf(this.geFormStylingJson().class) !== -1 ? 'modal-feedback ' + (classOfModal ? ' ' + classOfModal : '') + ' ' : '') + this.getSizeCssClass() + '" role="document">' +
             '<div class="modal-content">' +
             '<div class="modal-header">' +
-            '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>' +
+            closeButtonHtml +
             '<h4 class="modal-title" id="' + this.defaults.id + 'Label' + '">' + this.defaults.title + '</h4>' +
             '</div>' +
             '<div class="modal-body">' +
             this.defaults.content +
             '</div>' +
-            '<div class="modal-footer">' +
-            '<div class="pull-right panel-controls">' +
-            buttonsHtml +
-            '</div>' +
-            '</div>' +
+            footerHtml +
             '</div>' +
             '</div>' +
             '</div>';
@@ -4927,6 +4952,24 @@ var Popover = (function ($) {
                 method: 'POST',
                 url: ''
             },
+            /**
+             * Show modal close button
+             * @public
+             * @type {boolean}
+             */
+            showCloseButton: true,
+            /**
+             * Show modal close button
+             * @public
+             * @type {String}
+             */
+            footerText: '',
+            /**
+             * Close modal on click outside
+             * @public
+             * @type {boolean}
+             */
+            closeOnClickOutside: true,
             /**
              * Ajax done callback
              * @public
@@ -5057,6 +5100,12 @@ var Popover = (function ($) {
                                 icon: 'fa fa-times'
                             }
                         }
+                    };
+                case 'success':
+                    return {
+                        type: 'success',
+                        class: 'has-success',
+                        buttons: {}
                     };
                 case 'form':
                     return {

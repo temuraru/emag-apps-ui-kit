@@ -11285,60 +11285,45 @@ body {
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #e1302b;
 }
-.modal-feedback .modal-header {
-  border-top: 5px solid #ccc;
-}
-.modal-feedback .modal-body:before {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  font-family: FontAwesome;
-  font-size: 180px;
-  line-height: 160px;
-  color: #333;
-  opacity: .1;
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+.modal-feedback.has-info .modal-content {
+  border: 1px solid #2790f3;
 }
 .modal-feedback.has-info .modal-header {
-  border-top: 6px solid #2790f3;
-}
-.modal-feedback.has-info .modal-body:before {
-  color: #2790f3;
-  content: "\f05a";
+  color: #fff;
+  background: #2790f3;
 }
 .modal-feedback.has-info .modal-footer {
-  background-color: #d0e7fc;
+  background-color: #fff;
+}
+.modal-feedback.has-success .modal-content {
+  border: 1px solid #38833a;
 }
 .modal-feedback.has-success .modal-header {
-  border-top: 6px solid #38833a;
-}
-.modal-feedback.has-success .modal-body:before {
-  color: #38833a;
-  content: "\f058";
+  color: #fff;
+  background: #38833a;
 }
 .modal-feedback.has-success .modal-footer {
-  background-color: #9ad49b;
+  background-color: #fff;
+}
+.modal-feedback.has-warning .modal-content {
+  border: 1px solid #f4b350;
 }
 .modal-feedback.has-warning .modal-header {
-  border-top: 6px solid #f4b350;
-}
-.modal-feedback.has-warning .modal-body:before {
-  color: #f4b350;
-  content: "\f06a";
+  color: #fff;
+  background: #f4b350;
 }
 .modal-feedback.has-warning .modal-footer {
-  background-color: #fffcf8;
+  background-color: #fff;
+}
+.modal-feedback.has-error .modal-content {
+  border: 1px solid #e1302b;
 }
 .modal-feedback.has-error .modal-header {
-  border-top: 6px solid #e1302b;
-}
-.modal-feedback.has-error .modal-body:before {
-  color: #e1302b;
-  content: "\f057";
+  color: #fff;
+  background: #e1302b;
 }
 .modal-feedback.has-error .modal-footer {
-  background-color: #f7c9c7;
+  background-color: #fff;
 }
 input[type=range] {
   width: 100%;
