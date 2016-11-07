@@ -11513,7 +11513,7 @@ select.form-control {
   height: 34px;
   padding-left: 5px;
   margin-left: 20px;
-  visibility: hidden;
+  opacity: 0;
 }
 select.form-control option {
   padding: 6px 10px;
