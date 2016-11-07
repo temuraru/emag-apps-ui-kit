@@ -82,18 +82,19 @@
                     $('.custom-jqgrid-messages-' + table.id).remove();
                 }
                 jqGridOverlay.removeClass('custom-overlay');
-                if (gridOpts.stickyButtons && !gridOpts.stickyButtonsInitialized) {
-                    _initStickyOnJqGrid(gridOpts);
-                    gridOpts.stickyButtonsInitialized = true;
-                } else if (gridOpts.stickyButtons) {
-                    $(document.body).trigger("sticky_kit:recalc");
-                }
             },
             mergeGridComplete: true,
             gridComplete: function() {
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
+
+                if (gridOpts.stickyButtons && !gridOpts.stickyButtonsInitialized) {
+                    _initStickyOnJqGrid(gridOpts);
+                    gridOpts.stickyButtonsInitialized = true;
+                } else if (gridOpts.stickyButtons) {
+                    $(document.body).trigger("sticky_kit:recalc");
+                }
             },
             caption: null,
             useCustomColumnChooser: false,

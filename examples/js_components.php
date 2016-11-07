@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Components | Photon - The Superfast, Supersimple UI Kit</title>
-    <meta name="description" content="Photon - The superfast, supersimple UI Kit"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="eMAG CORE UI Team">
-
-    <!-- The favicon -->
-    <?php include_once "modules/_mod_favicon.php" ?>
-
-    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-    <!-- PHOTON main styles -->
-    <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-    <![endif]-->
-    <script src="../dist/plugins/tether/tether.min.js"></script>
+    <title>JS Components - eMAG Apps UI KIT</title>
+    <?php include_once "modules/_mod_meta.php"?>
+    <?php include_once "modules/_mod_top_include.php"?>
 </head>
 <body>
-<!--[if lt IE 9]>
-<body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-    href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+<?php include_once "modules/_mod_browser_upgrade.php"?>
+
 <!-- HEADER:Start -->
 <?php include_once "modules/_mod_header.php" ?>
 <!-- HEADER:End -->
+
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
     <div class="main-container-inner">
@@ -44,7 +26,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid pad-sep-60">
-                                <h1>PHOTON - Components</h1>
+                                <h1>eMAG Apps UI KIT - JS Components</h1>
                                 <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                             </div>
                         </div>
@@ -158,19 +140,18 @@
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group btn-group-justified" role="group"
-                                                     aria-label="...">
+                                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Info modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default info-modal-button">Info modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Warning modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Danger modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default error-modal-button">Error modal</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default success-modal-button">Success modal</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -236,8 +217,7 @@
                                     </div>
                                 </div>
                                 <div class="show-panel-footer">
-                                    <pre class="language-markup"><code class="language-markup"
-                                                                       data-showcase="code"></code></pre>
+                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                 </div>
                             </div>
                         </div>
@@ -366,6 +346,7 @@
 </div>
 </div>
 <!-- PAGE:End -->
+
 <!-- POPUPS:Start -->
 <div id="popSpace">
     <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -399,43 +380,121 @@
         </div>
     </div>
 </div>
-<!-- POPUPS:End -->
-<!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">" + "<" + "/script>")</script>
-<script src="../dist/js/main_script.min.js"></script>
-<script src="../dist/js/demo_helpers.js"></script>
 
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
 
-<!-- SCRIPTS:End -->
-<!-- DOCUMENT-READY:Start -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        console.log('Ready, Captain!');
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
 
-        demoHelpers();  //Requires demo_helpers.js
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+                
+                //This function is just fo sho. You don't really have to include it in your app, man.
+                function modalSizing() {
+                    $('#mySmallDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-sm');
+                    });
+                    $('#myLargeDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-lg');
+                    });
+                    $('#myDemoModal').on('hidden.bs.modal', function (e) {
+                        $(this).find('.modal-dialog').attr('class', 'modal-dialog');
+                    });
+                }
 
-        //This function is just fo sho. You don't really have to include it in your app, man.
-        function modalSizing() {
-            $('#mySmallDemoModal').on('click', function () {
-                var mode = $(this).data('target');
-                $(mode).find('.modal-dialog').addClass('modal-sm');
+                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
+                modalSizing();
+
+                var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
+
+                var infoModal = new PhotonModal({
+                    id: 'info_modal',
+                    title: 'Info modal',
+                    content: dummyModalContent,
+                    buttons: {},
+                    size: 'medium',
+                    type: 'info',
+                    closeOnClickOutside: false,
+                    showCloseButton: true
+                });
+
+                var warningModal = new PhotonModal({
+                    id: 'warning_modal',
+                    title: 'Warning modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'warning',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                var errorModal = new PhotonModal({
+                    id: 'danger_modal',
+                    title: 'Danger modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'error',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                var successModal = new PhotonModal({
+                    id: 'success_modal',
+                    title: 'Success modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'success',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                $(document.body).on('click', '.info-modal-button', function () {
+                    infoModal.show();
+                });
+
+                $(document.body).on('click', '.warning-modal-button', function () {
+                    warningModal.show();
+                });
+
+                $(document.body).on('click', '.error-modal-button', function () {
+                    errorModal.show();
+                });
+
+                $(document.body).on('click', '.success-modal-button', function () {
+                    successModal.show();
+                });
+
             });
-            $('#myLargeDemoModal').on('click', function () {
-                var mode = $(this).data('target');
-                $(mode).find('.modal-dialog').addClass('modal-lg');
-            });
-            $('#myDemoModal').on('hidden.bs.modal', function (e) {
-                $(this).find('.modal-dialog').attr('class', 'modal-dialog');
-            });
-        }
-
-        modalSizing();
-        showcasing();
-    });
-</script>
-<!-- DOCUMENT-READY:End -->
+        </script>
+        <!-- DOCUMENT-READY:End -->
+        
 </body>
 </html>

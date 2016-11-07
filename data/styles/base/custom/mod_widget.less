@@ -25,7 +25,6 @@
       background-color: @heading-text-color;
     }
     & > .panel-toolbox {
-      background-color: darken(@heading-bg-color,5%);
       & > li {
         & > .tool {
           &[data-action] {
@@ -34,6 +33,7 @@
             background-color: transparent;
             &:hover, &:focus {
               background-color: darken(@heading-bg-color, 10%);
+              outline: none;
             }
             &:active {
               background-color: darken(@heading-bg-color, 15%);
@@ -100,13 +100,13 @@
     }
     .tool {
       display: inline-block;
-      padding: 0 15px;
+      padding: 0 11px;
       line-height: 37px;
       color: inherit;
       &[data-action] {
         &:after {
           position:relative;
-          font-size: 18px;
+          font-size: 15px;
           font-family: FontAwesome;
         }
       }
