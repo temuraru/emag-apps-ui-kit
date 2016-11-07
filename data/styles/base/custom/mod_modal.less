@@ -4,51 +4,33 @@
 
 ///* VARIATIONS MIXIN */
 
-.modal-feedback-variations(@color:#ccc;@icon:"!"){
-  .modal-header {
-    border-top: 6px solid @color;
+.modal-feedback-variations(@color:#ccc){
+  .modal-content{
+    border:1px solid @color
   }
-  .modal-body {
-    &:before {
-      content: @icon;
-      color: @color;
-    }
+  .modal-header {
+    background:@color;
+    color:@white;
   }
   .modal-footer {
-    background-color: lighten(@color, 35%);
+    background-color: @white;
   }
 }
 
 ///* BASE */
 
 .modal-feedback {
-  .modal-header {
-    border-top: 5px solid #ccc;
-  }
-  .modal-body {
-    &:before {
-      font-family: FontAwesome;
-      font-size: 180px;
-      line-height:160px;
-      left: 20px;
-      opacity: .1;
-      position: absolute;
-      top: 50%;
-      .translate(0;-50%);
-      color:@text-color;
-    }
-  }
   &.has-info {
-    .modal-feedback-variations(@brand-info;"\f05a");
+    .modal-feedback-variations(@brand-info);
   }
   &.has-success {
-    .modal-feedback-variations(@brand-success;"\f058");
+    .modal-feedback-variations(@brand-success);
   }
   &.has-warning {
-    .modal-feedback-variations(@brand-warning;"\f06a");
+    .modal-feedback-variations(@brand-warning);
   }
   &.has-error {
-    .modal-feedback-variations(@brand-danger;"\f057");
+    .modal-feedback-variations(@brand-danger);
   }
 }
 

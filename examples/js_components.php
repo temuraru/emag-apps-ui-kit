@@ -140,19 +140,18 @@
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group btn-group-justified" role="group"
-                                                     aria-label="...">
+                                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Info modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default info-modal-button">Info modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Warning modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Danger modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default error-modal-button">Error modal</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default success-modal-button">Success modal</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -387,7 +386,7 @@
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
+        <script src="../dist/plugins/prism/prism.min.js"></script>
 
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
@@ -397,8 +396,6 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
-
-                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
                 
                 //This function is just fo sho. You don't really have to include it in your app, man.
                 function modalSizing() {
@@ -414,10 +411,90 @@
                         $(this).find('.modal-dialog').attr('class', 'modal-dialog');
                     });
                 }
+
+                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
                 modalSizing();
+
+                var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
+
+                var infoModal = new PhotonModal({
+                    id: 'info_modal',
+                    title: 'Info modal',
+                    content: dummyModalContent,
+                    buttons: {},
+                    size: 'medium',
+                    type: 'info',
+                    closeOnClickOutside: false,
+                    showCloseButton: true
+                });
+
+                var warningModal = new PhotonModal({
+                    id: 'warning_modal',
+                    title: 'Warning modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'warning',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                var errorModal = new PhotonModal({
+                    id: 'danger_modal',
+                    title: 'Danger modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'error',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                var successModal = new PhotonModal({
+                    id: 'success_modal',
+                    title: 'Success modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'success',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                $(document.body).on('click', '.info-modal-button', function () {
+                    infoModal.show();
+                });
+
+                $(document.body).on('click', '.warning-modal-button', function () {
+                    warningModal.show();
+                });
+
+                $(document.body).on('click', '.error-modal-button', function () {
+                    errorModal.show();
+                });
+
+                $(document.body).on('click', '.success-modal-button', function () {
+                    successModal.show();
+                });
+
             });
         </script>
         <!-- DOCUMENT-READY:End -->
-
+        
 </body>
 </html>

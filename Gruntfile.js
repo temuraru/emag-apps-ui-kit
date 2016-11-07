@@ -250,11 +250,28 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js'
                 }
             }
+        },
+        watch: {		
+            styles: {		
+                files: ['<%= pkg.data_styles %>/**/*.less'],		
+                tasks: ['styles'],		
+                options: {		
+                    nospawn: true		
+                }		
+            },		
+            plugin_styles: {		
+                files: ['<%= pkg.data_plugins %>/**/*.less'],		
+                tasks: ['plugin_styles'],		
+                options: {		
+                    nospawn: true		
+                }		
+            }
         }
     });
 
     // Load the grunt plugin(s)
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -300,5 +317,13 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'concat:frontend',
         'uglify:frontend'
+    ]);
+    		
+    grunt.registerTask('watch_styles', [		
+        'watch:styles'		
+    ]);		
+    
+    grunt.registerTask('watch_plugin_styles', [		
+        'watch:plugin_styles'		
     ]);
 };

@@ -179,7 +179,10 @@
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
-                $('#daterangepicker_standard').daterangepicker();
+                $('#daterangepicker_standard').daterangepicker({
+                    isCustomDate: function() {
+                        return 'custom-range';
+                    }});
                 $('#daterangepicker_standard_with_value').daterangepicker();
                 $('#daterangepicker_standard_with_format').daterangepicker({
                     timePicker: true,
