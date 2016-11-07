@@ -11506,7 +11506,13 @@ input[type="radio"].form-radio-control:disabled {
   margin-top: 2px!important;
 }
 select.form-control {
+  position: absolute;
+  display: block !important;
+  width: 80%;
+  height: 34px;
   padding-left: 5px;
+  margin-left: 20px;
+  visibility: hidden;
 }
 select.form-control option {
   padding: 6px 10px;
