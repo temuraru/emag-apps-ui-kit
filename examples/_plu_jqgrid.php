@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Photon - The Superfast, Supersimple UI Kit</title>
-    <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="eMAG HX Team">
 
-    <!-- The favicon -->
-    <?php include_once "modules/_mod_favicon.php"?>
+        <title>JqGrid - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
+        
+        <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+        <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
+        <?php include_once "modules/_mod_top_include.php"?>
 
-    <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
-    <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
-
-    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-    <!-- PHOTON main styles -->
-    <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-    <![endif]-->
 </head>
-<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-<!-- HEADER:Start -->
+
+<?php include_once "modules/_mod_browser_upgrade.php"?>
 <?php include_once "modules/_mod_header.php"?>
+
 <!-- HEADER:End -->
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
@@ -44,7 +31,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid pad-sep-60">
-                                <h1>PHOTON - JqGrid implementation</h1>
+                                <h1>eMAG Apps UI KIT - JqGrid implementation</h1>
                                 <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                             </div>
                         </div>
@@ -315,8 +302,6 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
 <script type="text/javascript">
     $(document).ready(function() {
         console.log('Ready, Captain!');
-
-        demoHelpers();  //Requires demo_helpers.js
 
         showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
 
