@@ -88,7 +88,10 @@
                     '<div class="col-lg-12">' +
                         '<div>' +
                             '<label for="' + $this.options.treeSearchId + '">' + $this.options.searchPlaceholder + '</label>' +
-                            '<input type="text" id="' + $this.options.treeSearchId + '" class="form-control">' +
+                            '<div class="input-group input-group-no-separation">' +
+                                '<input type="text" id="' + $this.options.treeSearchId + '" class="form-control">' +
+                                '<span class="input-group-addon"><i class="fa fa-search"></i></span>' +
+                            '</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
@@ -96,7 +99,7 @@
                     '<div class="col-lg-6">' +
                         '<div class="checkbox">' +
                             '<label>' +
-                                '<input type="checkbox" id="' + this.options.treeUnmatchedId + '" ' + unmatched + ' /> ' + $this.options.textUnmatched + ' ' +
+                                '<input type="checkbox" id="' + this.options.treeUnmatchedId + '" ' + unmatched + ' class="form-checkbox-control" /> ' + $this.options.textUnmatched + ' ' +
                             '</label>' +
                         '</div>' +
                     '</div>';
@@ -105,7 +108,7 @@
                     '<div class="col-lg-6">' +
                         '<div class="checkbox">' +
                             '<label>' +
-                                '<input type="checkbox" id="' + this.options.treeSelectHierarchyId + '" ' + selectHierarchyChecked + ' /> ' + $this.options.textSelectHierarchy + ' ' +
+                                '<input type="checkbox" id="' + this.options.treeSelectHierarchyId + '" ' + selectHierarchyChecked + ' class="form-checkbox-control" /> ' + $this.options.textSelectHierarchy + ' ' +
                             '</label>' +
                         '</div>' +
                     '</div>';
@@ -128,18 +131,15 @@
                 buttons: {
                     'reset': {
                         label: $this.options.modalResetLabel,
-                        icon:  'fa fa-undo',
                         class: 'btn-default pull-left ' + $this.options.modalResetBtnClass
                     },
                     'ok': {
                         label:  $this.options.modalOkLabel,
-                        icon:  'fa fa-check',
                         class: 'btn-success ' + $this.options.modalOkBtnClass,
                         closeModal: true
                     },
                     'cancel': {
                         label: $this.options.modalCancelLabel,
-                        icon:  'fa fa-times',
                         class: 'btn-default ' + $this.options.modalCancelBtnClass,
                         closeModal: true
                     }
