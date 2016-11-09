@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Components | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
-
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
-
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
+        <title>Sign in - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
+        <?php include_once "modules/_mod_top_include.php"?>
     </head>
+
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header_auth.php"?>
         <!-- HEADER:End -->
+        
         <!-- PAGE:Start -->
             <div class="main-container" id="main-container">
                 <div class="main-container-inner">
@@ -34,7 +23,7 @@
                             <div id="login_box" class="auth-box">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h1 class="auth-title">Sign into your account</h1>
+                                        <h2>Sign into your account</h2>
                                         <form id="user_auth">
                                             <div class="form-group">
                                                 <label for="user_username" class="control-label">Username</label>
@@ -57,7 +46,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="/examples/overview.php" id="special_submit" class="btn btn-primary"><i class="fa fa-check"></i><span>Sign in</span></a>
+                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Sign in</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -71,7 +60,7 @@
                             <div id="recover_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h1 class="auth-title">Reset your password</h1>
+                                        <h2>Reset your password</h2>
                                         <form id="user_recover_password">
                                             <div class="form-group">
                                                 <label for="user_email" class="control-label">Email address</label>
@@ -85,7 +74,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="/examples/overview.php" id="special_submit" class="btn btn-primary"><i class="fa fa-check"></i><span>Confirm</span></a>
+                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Confirm</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -96,7 +85,7 @@
                             <div id="register_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h1 class="auth-title">Sign up for an account</h1>
+                                        <h2>Sign up for an account</h2>
                                         <form id="user_register">
                                             <div class="form-group">
                                                 <label for="user_reg_email" class="control-label">Email address</label>
@@ -139,7 +128,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="/examples/overview.php" id="special_submit" class="btn btn-primary"><i class="fa fa-check"></i><span>Register</span></a>
+                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Register</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -156,24 +145,19 @@
                 </div>
             </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
         
-        <!-- POPUPS:End -->
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
-        <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">                
 
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
-
-                demoHelpers();  //Requires demo_helpers.js
-               
-                // This little old script is just for demo purposes. Chill!
+                
                 $('.user-actions').on('click', function (e) {
                     e.preventDefault();
                     $('.auth-box').addClass('hidden');
@@ -183,5 +167,7 @@
             });
         </script>
         <!-- DOCUMENT-READY:End -->
+
+
     </body>
 </html>

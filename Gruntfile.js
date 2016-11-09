@@ -12,12 +12,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         // Metadata.
-        pkg: grunt.file.readJSON('package.json'),  
+        pkg: grunt.file.readJSON('package.json'),
         banner: '/*!\n' +
             ' * eMAG Apps UI KIT v<%= pkg.version %>' +
             ' * Copyright 2001-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
-            ' */\n',  
+            ' */\n',
 
         // Task configuration:
         // Compiles the .less files into a readable .css file.
@@ -181,6 +181,7 @@ module.exports = function (grunt) {
                     '<%= pkg.data_scripts %>/base/custom/mod_photonModal.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_customInput.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_tooltip.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_popover.js',
                     '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/custom-setup.js'
                 ],
@@ -249,11 +250,42 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js'
                 }
             }
+        },
+        watch: {
+            styles: {
+                files: ['<%= pkg.data_styles %>/**/*.less'],
+                tasks: ['styles'],
+                options: {
+                    nospawn: true
+                }
+            },
+            plugin_styles: {
+                files: ['<%= pkg.data_plugins %>/**/*.less'],
+                tasks: ['plugin_styles'],
+                options: {
+                    nospawn: true
+                }
+            },
+            plugin_scripts: {
+              files: ['<%= pkg.data_plugins %>/**/*.js'],
+              tasks: ['plugin_scripts'],
+              options: {
+                  nospawn: true
+              }
+            },
+            scripts: {
+              files: ['<%= pkg.data_scripts%>/**/*.js'],
+              tasks: ['scripts'],
+              options: {
+                  nospawn: true
+              }
+            }
         }
     });
 
     // Load the grunt plugin(s)
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -289,7 +321,7 @@ module.exports = function (grunt) {
         'concat:jq_grid',
         'uglify:plugins',
         'uglify:jquery'
-    ]);  
+    ]);
 
     // Default: Generate main styles and scripts
     grunt.registerTask('default', [
@@ -299,5 +331,21 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'concat:frontend',
         'uglify:frontend'
+    ]);
+
+    grunt.registerTask('watch_styles', [
+        'watch:styles'
+    ]);
+
+    grunt.registerTask('watch_plugin_styles', [
+        'watch:plugin_styles'
+    ]);
+
+    grunt.registerTask('watch_plugin_scripts', [
+        'watch:plugin_scripts'
+    ]);
+
+    grunt.registerTask('watch_scripts', [
+        'watch:scripts'
     ]);
 };

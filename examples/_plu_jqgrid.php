@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Photon - The Superfast, Supersimple UI Kit</title>
-    <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="eMAG HX Team">
 
-    <!-- The favicon -->
-    <?php include_once "modules/_mod_favicon.php"?>
+        <title>JqGrid - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
+        
+        <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+        <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
+        <?php include_once "modules/_mod_top_include.php"?>
 
-    <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
-
-    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-    <!-- PHOTON main styles -->
-    <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-    <![endif]-->
 </head>
-<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-<!-- HEADER:Start -->
+
+<?php include_once "modules/_mod_browser_upgrade.php"?>
 <?php include_once "modules/_mod_header.php"?>
+
 <!-- HEADER:End -->
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
@@ -43,7 +31,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid pad-sep-60">
-                                <h1>PHOTON - JqGrid implementation</h1>
+                                <h1>eMAG Apps UI KIT - JqGrid implementation</h1>
                                 <p>The lightning-fast, modular, mobile-friendly admin template.</p>
                             </div>
                         </div>
@@ -300,9 +288,10 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
 
-
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+<script src="../dist/plugins/tether/tether.min.js"></script>
+<script src="../dist/plugins/drop/drop.min.js"></script>
 
 <script src="../dist/js/main_script.min.js"></script>
 
@@ -314,32 +303,145 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
     $(document).ready(function() {
         console.log('Ready, Captain!');
 
-        demoHelpers();  //Requires demo_helpers.js
-
         showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
 
         function getListingDummyData() {
 
-            var statusLive = '<span class="label label-success">Live</span>';
-            var statusInactive = '<span class="label label-default">Inactive</span>';
-            var actions =
-                '<div class="btn-group">' +
-                    '<button type="button" class="btn btn-sm btn-default">' +
-                        '<i class="fa fa-trash text-danger"></i>' +
-                        '<span class="sr-only">Delete</span>' +
-                    '</button>' +
-                '</div>';
+            var status1 = '{"label": "Live", "labelClass": "label-success", "tooltip": "Default tooltip"}';
+            var status2 = '{"label": "Deleted", "labelClass": "label-danger", "tooltip": "Danger tooltip", "tooltipType": "danger"}';
+            var status3 = '{"label": "Warning", "labelClass": "label-warning", "tooltip": "Warning tooltip", "tooltipType": "warning"}';
+            var status4 = 'Inactive';
+
+            var actions1 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-ellipsis-h',
+                    attr: {
+                        title: 'More actions'
+                    },
+                    group: 0,
+                    dropdown: [
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 1',
+                            attr: {
+                                title: 'Action 1'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 2',
+                            attr: {
+                                title: 'Action 2'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 3',
+                            attr: {
+                                title: 'Action 3'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 4',
+                            attr: {
+                                title: 'Action 4'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 5',
+                            attr: {
+                                title: 'Action 5'
+                            }
+                        }
+                    ]
+                },
+            ];
+            var actions2 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete'
+                    },
+                    group: 0
+                },
+                {
+                    label: 'Special action',
+                    attr: {
+                        title: 'Special action'
+                    }
+                }
+            ];
+            var actions3 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete'
+                    },
+                    group: 1
+                },
+                {
+                    label: 'Action',
+                    attr: {
+                        title: 'Action'
+                    },
+                    group: 1
+                }
+            ];
+            var actions4 = '[' +
+                '{' +
+                    '"icon": "fa-pencil",' +
+                    '"attr": {' +
+                        '"title": "Edit"' +
+                    '}' +
+                '},' +
+                '{' +
+                    '"icon": "fa-trash",' +
+                    '"attr": {' +
+                        '"title": "Delete"' +
+                    '}' +
+                '}' +
+            ']';
 
             var data = {
                 'page': '1',
                 'records': '6',
                 'rows': [
-                    { 'name': 'Lorem ipsum dolor sit amet', 'status': statusLive, 'platform': 'google.ro', 'products': '0', 'actions': actions },
-                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '23.232', 'actions': actions },
-                    { 'name': 'Name', 'status': statusInactive, 'platform': 'google.ro', 'products': '560.032', 'actions': actions },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.hu', 'products': '88.932', 'actions': actions },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions },
-                    { 'name': 'Name', 'status': statusLive, 'platform': 'google.bg', 'products': '76.999', 'actions': actions }
+                    { 'name': 'Lorem ipsum dolor sit amet', 'status': status1, 'platform': 'google.ro', 'products': '0', 'actions': actions1 },
+                    { 'name': 'Name', 'status': status1, 'platform': 'google.ro', 'products': '23.232', 'actions': actions1 },
+                    { 'name': 'Name', 'status': status2, 'platform': 'google.ro', 'products': '560.032', 'actions': actions2 },
+                    { 'name': 'Name', 'status': status3, 'platform': 'google.hu', 'products': '88.932', 'actions': actions2 },
+                    { 'name': 'Name', 'status': status4, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 },
+                    { 'name': 'Name', 'status': status4, 'platform': 'google.bg', 'products': '76.999', 'actions': actions4 }
                 ]
             };
             return data;
@@ -360,11 +462,15 @@ new PhotonJqGrid(listingWithFormatterParameters).init();
             ],
             colModel: [
                 {name: 'name', index: 'name', width: 2, sortable: false},
-                {name: 'status', index: 'status', width: 1, sorttype: "text"},
+                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.badgeAndTooltip },
                 {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
-                {name: 'actions', index: 'actions', width: 1, sortable: false, align:"center" }
-            ]
+                {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
+            ],
+            gridComplete: function() {
+                addMoreActions('#grid_table');
+                $('#grid_table .label-with-tooltip').tooltip();
+            },
         };
 
         new PhotonJqGrid(listingParameters).init();
