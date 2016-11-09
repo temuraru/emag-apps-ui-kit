@@ -300,6 +300,22 @@ input[type="radio"] {
     }
 }
 
+.input-group {
+  &.input-group-no-separation {
+    .form-control {
+      box-shadow: none;
+      border-right: none;
+    }
+    .form-control:focus {
+      border-color: @gray-80;
+    }
+    .input-group-addon {
+      border-left: none;
+      background: none;
+    }
+  }
+}
+
 .input-group-addon {
     > .form-radio-control, > .form-checkbox-control {
         margin-top: 2px!important;

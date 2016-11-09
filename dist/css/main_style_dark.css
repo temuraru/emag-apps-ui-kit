@@ -11502,6 +11502,17 @@ input[type="radio"].form-radio-control:disabled {
   background-color: #aaa;
   border: 1px solid #aaa;
 }
+.input-group.input-group-no-separation .form-control {
+  border-right: none;
+  box-shadow: none;
+}
+.input-group.input-group-no-separation .form-control:focus {
+  border-color: #ccc;
+}
+.input-group.input-group-no-separation .input-group-addon {
+  background: none;
+  border-left: none;
+}
 .input-group-addon > .form-radio-control,
 .input-group-addon > .form-checkbox-control {
   margin-top: 2px!important;
