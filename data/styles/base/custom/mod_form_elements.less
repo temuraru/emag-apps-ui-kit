@@ -325,13 +325,14 @@ input[type="radio"] {
 select.form-control {
   padding-left: @padding-base-horizontal-select;
 
-  &[data-photon-type="entity_ajax_widget"] {
+  &[data-photon-type="entity_ajax_widget"],
+  &[data-photon-type="choice_widget"] {
     display: block !important;
     height: @input-height-base;
     margin-left: @form-group-margin-bottom;
     position: absolute;
     opacity: 0;
-    width: 80%;
+    width: 0;
   }
   option {
     color: @input-color;
