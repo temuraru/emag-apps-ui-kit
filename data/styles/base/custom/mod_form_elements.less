@@ -323,8 +323,16 @@ input[type="radio"] {
 }
 
 select.form-control {
-  padding-left: 5px;
+  padding-left: @padding-base-horizontal-select;
 
+  &[data-photon-type="entity_ajax_widget"] {
+    display: block !important;
+    height: @input-height-base;
+    margin-left: @form-group-margin-bottom;
+    position: absolute;
+    opacity: 0;
+    width: 80%;
+  }
   option {
     color: @input-color;
     background-color: @input-bg;
