@@ -1,6 +1,9 @@
-$(document).ready(function() {        
+$(document).ready(function() {  
+	
+	$('.red-line').addClass('animate-line');
+      
     $('#fullpage').fullpage({
-        anchors: ['homePage', 'aboutPage'],
+        anchors: ['home_page', 'about_page'],
         css3: true,
         onLeave: function(index, nextIndex, direction){
             if(nextIndex == 2){

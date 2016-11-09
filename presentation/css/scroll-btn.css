@@ -73,18 +73,7 @@
     color: #ffffff;
     letter-spacing: 2px;
 }
-.scroll-btn > *:hover,
-.scroll-btn > *:focus,
-.scroll-btn > *.active {
-    color: #ffffff;
-}
-.scroll-btn > *:hover,
-.scroll-btn > *:focus,
-.scroll-btn > *:active,
-.scroll-btn > *.active {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-}
+
 .scroll-btn .mouse {
     position: relative;
     display: block;

@@ -15,6 +15,20 @@ body {
     font-size: 20px;
 }
 
+::selection {
+  background: none; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: none; /* Gecko Browsers */
+}
+
+p::selection, p *::selection {
+  background: #ef280a; /* WebKit/Blink Browsers */
+}
+p::-moz-selection, p *::selection  {
+  background: #ef280a; /* Gecko Browsers */
+}
+
 #header {
     height: 180px;
     background-image: url(images/bgHeader.png);
@@ -71,6 +85,18 @@ p {
     font-size: 1px;
     background: red;
     margin: 15px auto;
+	width: 0;
+	-webkit-transition: all 0.5s;
+    /* Safari */
+
+    -moz-transition: all 0.5s;
+    /* Safari */
+
+    transition: all 0.5s;
+}
+
+.animate-line{
+	width: 100%;
 }
 
 .content {
@@ -102,10 +128,10 @@ p {
 .logo {
     display: inline-block;
     width: 400px;
-    -webkit-transition: all 2s;
+    -webkit-transition: all 0.5s;
     /* Safari */
 
-    -moz-transition: all 2s;
+    -moz-transition: all 0.5s;
     /* Safari */
 
     transition: all 0.5s;
@@ -135,6 +161,13 @@ a {
     text-decoration: none;
     padding: 8px 15px;
     font-weight: 600;
+	-webkit-transition: all 0.35s;
+    /* Safari */
+
+    -moz-transition: all 0.35s;
+    /* Safari */
+
+    transition: all 0.35s;
 }
 
 .blue-button:hover {
@@ -174,6 +207,13 @@ a {
 .menu-top li a {
     color: #fff;
     text-decoration: none;
+		-webkit-transition: all 0.35s;
+    /* Safari */
+
+    -moz-transition: all 0.35s;
+    /* Safari */
+
+    transition: all 0.35s;
 }
 
 .menu-top li a.active,
