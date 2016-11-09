@@ -11524,7 +11524,7 @@ select.form-control[data-photon-type="entity_ajax_widget"],
 select.form-control[data-photon-type="choice_widget"] {
   position: absolute;
   display: block !important;
-  width: 80%;
+  width: 0;
   height: 34px;
   margin-left: 20px;
   opacity: 0;
