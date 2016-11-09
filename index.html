@@ -1,22 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" class="js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>eMAG Apps UI KIT - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG HX Team">
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon"  href="presentation/css/images/favicon.png">
+	<title>eMAG Apps UI KIT</title>
+	<meta name="description" content="eMAG Apps UI KIT, a collection of visual elements and guidelines." />
+    <link rel="stylesheet" type="text/css" href="presentation/css/formater.css">
+    <link rel="stylesheet" type="text/css" href="presentation/css/main.css">
+    <link rel="stylesheet" type="text/css" href="presentation/css/scroll-btn.css">
+    <link rel="stylesheet" type="text/css" href="presentation/css/media-queries.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="presentation/js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="presentation/js/main.js"></script>
 
-        <!-- main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="logo">
+        <img src="presentation/css/images/eMAG_Apps_UI_KIT_logo.svg" alt="eMAG Apps UI KIT logo">
+        <div class="red-line"></div>
+    </div>
+    <ul class="menu-top">
+        <li><a href="#homePage">Home</a></li>
+        <li><a href="#" class="active">About</a></li>
+        <li><a href="http://emagtechlabs.github.io/emag-apps-ui-kit/demo" target="_blank">Demo</a></li>
+        <li><a href="https://github.com/eMAGTechLabs/emag-apps-ui-kit" target="_blank">Github</a></li>
+    </ul>   
+</div>
+<div id="footer">Copyright © 2011 - 2016 eMAG. All rights reserved.</div>
+<div id="fullpage">
+	<div class="section" id="home">
+		<div class="content">
+            <p class="text-bigger">We've launched eMAG Apps UI KIT, a collection of visual elements<br> and guidelines we use for our internal applications.</p>
+            <p class="text-big">The purpose of this collection is to help the community<br> to build amazing web applications easier and faster.</p><br>
+            <a href="#aboutPage" class="blue-button">FIND OUT MORE</a>
+             <span class="scroll-btn">
+                <a href="#">
+                    <span class="mouse">
+                        <span></span>
+                    </span>
+                </a>
+            </span>
+        </div>
+	</div>
+	<div class="section" id="about">
+        <div class="content">
+            <p class="text-big">Our <em><b>open source UI KIT</b></em> is based on the Bootstrap architecture.<br>
+            If you're not familiarized with it, check-out their stuff from <a href="http://getbootstrap.com/" target="_blank" class="effect-underline">getbootstrap.com</a><br>
+            Aside from the elements provided by Bootstrap, it comes with its own set of unique<br> components, styling and useful plugins that you can use in your project.</p>
+            <p class="text-small"><em>Carefully built with:</em></p>
+            <div class="logos">
+                <span><img src="presentation/css/images/html_Logo.svg" alt="html logo"></span>
+                <span><img src="presentation/css/images/css_Logo.svg" alt="css logo"></span>
+                <span><img src="presentation/css/images/js_Logo.svg" alt="js logo"></span>
+            </div>
+            <p class="text-big">To find out more, check it on <a href="https://github.com/eMAGTechLabs/emag-apps-ui-kit" target="_blank"  class="effect-underline">GitHub</a> now!<br><em class="text-small">or</em></p>
+            <a href="http://emagtechlabs.github.io/emag-apps-ui-kit/demo" target="_blank" class="blue-button">VIEW DEMO</a>
+        </div>
+	</div>
+</div>
 
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-
-    </body>
+</body>
 </html>
