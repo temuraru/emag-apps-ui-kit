@@ -266,16 +266,16 @@ module.exports = function (grunt) {
                     nospawn: true
                 }
             },
-            plugin_scripts: {
-              files: ['<%= pkg.data_plugins %>/**/*.js'],
-              tasks: ['plugin_scripts'],
+            scripts: {
+              files: ['<%= pkg.data_scripts%>/**/*.js'],
+              tasks: ['scripts'],
               options: {
                   nospawn: true
               }
             },
-            scripts: {
-              files: ['<%= pkg.data_scripts%>/**/*.js'],
-              tasks: ['scripts'],
+            plugin_scripts: {
+              files: ['<%= pkg.data_plugins %>/**/*.js'],
+              tasks: ['plugin_scripts'],
               options: {
                   nospawn: true
               }
