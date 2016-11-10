@@ -5,21 +5,21 @@ The purpose of this collection is to help you build amazing software easier and 
 
 ## Summary
 1. [Summary] [summary_link]
-2. [Getting started] [getting_started_link]
-3. [Overview] [overview_link]
+2. [Overview] [overview_link]
   1. [Based on Bootstrap 3.3.5] [based_on_bootstrap_link]
   2. [Working with Grunt.js] [working_with_gruntjs_link]
   3. [Working with eMAG Apps UI KIT's folder structure] [working_with_uikit_folder_structure_link]
   4. [Precompiled files (dist)] [precompiled_files_dist_link]
   5. [eMAG Apps UI KIT source code (data)] [uikit_source_code_data_link]
-4. [License] [license_link]
+3. [License] [license_link]
+4. [Getting started] [getting_started_link]
 
 ## Overview
 [[Back to summary] [summary_link]]  
 **A short description about what's it like to work with eMAG Apps UI KIT:**
 ### Based on Bootstrap 3.3.5.  
 [[Back to summary] [summary_link]]  
-Our open source UI KIT is based on the Bootstrap architecture. If you're not familiarized with it, check-out their stuff from getbootstrap.com Aside from the elements provided by Bootstrap, it comes with its own set of unique components, styling and useful plugins that you can use in your project.
+Our open source UI KIT is based on the Bootstrap architecture. If you're not familiarized with it, check-out their stuff from getbootstrap.com Aside from the elements provided by Bootstrap, it comes with its own set of unique components, styling and useful plugins that you can use in your project.  
 **Features:**  
 1. Keeping it light with an average page weight of 500Kb  
 2. W3C Compliant  
@@ -140,7 +140,7 @@ The full eMAG Apps UI KIT license can be found in [project repository] [uikit_li
   ```
 2. You can [download the latest release] [uikit_github] from GitHub.
 3. You can also clone clone the [Git repository] [uikit_github] by running the following command:
-  ```HTML
+  ```
 [sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git
   ```
 
