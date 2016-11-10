@@ -182,7 +182,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <input type="reset" class="btn btn-primary pull-right" />
+                                                <input type="reset" class="btn btn-primary pull-right" value="Reset" />
                                             </div>
                                         </fieldset>
                                     </form>
