@@ -291,7 +291,7 @@
                                             </li>
                                             <li>
                                                 <p>You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
-                                                <pre>[sudo] git clone https://github.com/eMAGTechLabs/PhotonPowerUIKit</pre>
+                                                <pre>[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</pre>
                                             </li>
                                         </ol>
                                     </div>

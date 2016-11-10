@@ -14,30 +14,12 @@ The purpose of this collection is to help you build amazing software easier and 
   5. [eMAG Apps UI KIT source code (data)] [uikit_source_code_data_link]
 4. [License] [license_link]
 
-## Getting started  
-[[Back to summary] [summary_link]]  
-**There are a couple of ways to install eMAG Apps UI KIT:**  
-1. The easiest is to install the following css in the head of your webpage:  
-  ```HTML  
-<link rel="stylesheet" type="text/css" href="examplepath/to/main_style.min.css">
-  ```  
-  And the following javascript files before the end ``</body>`` tag:  
-  ```HTML  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>  
-<script src="../dist/js/main_script.min.js"></script>  
-  ```  
-2. If you really want to get a hold of the source code, you can [download the latest release] [uikit_github] from GitHub.
-3. Or clone the [Git repository] [uikit_github] by running the following command:
-
-## Overview  
+## Overview
 [[Back to summary] [summary_link]]  
 **A short description about what's it like to work with eMAG Apps UI KIT:**
 ### Based on Bootstrap 3.3.5.  
 [[Back to summary] [summary_link]]  
-eMAG Apps UI KIT is based on the Twitter Bootstrap architecture [GetBootstrap] [bootstrap_getstarted]. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!  
-Aside from the elements provided by bootstrap, eMAG Apps UI KIT comes with its own set of unique components, styling and useful plugins that you can use in your project.  
-The fun part about eMAG Apps UI KIT is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.  
+Our open source UI KIT is based on the Bootstrap architecture. If you're not familiarized with it, check-out their stuff from getbootstrap.com Aside from the elements provided by Bootstrap, it comes with its own set of unique components, styling and useful plugins that you can use in your project.
 **Features:**  
 1. Keeping it light with an average page weight of 500Kb  
 2. W3C Compliant  
@@ -143,9 +125,27 @@ eMAG Apps UI KIT is released under the [MIT license] [uikit_license], this means
 
 The full eMAG Apps UI KIT license can be found in [project repository] [uikit_license].
 
+## Getting started
+[[Back to summary] [summary_link]]
+**There are a couple of ways to install eMAG Apps UI KIT:**
+1. The easiest way to install is to add the following css line in the head of your webpage:
+  ```HTML
+<link rel="stylesheet" type="text/css" href="examplepath/to/main_style.min.css">
+  ```
+  And the following javascript files before the end ``</body>`` tag:
+  ```HTML
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="../dist/js/main_script.min.js"></script>
+  ```
+2. You can [download the latest release] [uikit_github] from GitHub.
+3. You can also clone clone the [Git repository] [uikit_github] by running the following command:
+  ```HTML
+  [sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git
+  ```
 
-[uikit_github]: https://github.com/eMAGTechLabs/PhotonPowerUIKit
-[uikit_license]: https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE
+[uikit_github]: https://github.com/eMAGTechLabs/emag-apps-ui-kit
+[uikit_license]: https://github.com/eMAGTechLabs/emag-apps-ui-kit/blob/master/LICENSE
 [bootstrap_getstarted]: http://getbootstrap.com/getting-started/
 [nodejs_download]: https://nodejs.org/en/
 
