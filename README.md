@@ -138,8 +138,8 @@ The full eMAG Apps UI KIT license can be found in [project repository] [uikit_li
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 <script src="../dist/js/main_script.min.js"></script>
   ```  
-2. You can [download the latest release] [uikit_github] from GitHub.
-3. You can also clone clone the [Git repository] [uikit_github] by running the following command:  
+ 2. You can [download the latest release] [uikit_github] from GitHub.
+ 3. You can also clone clone the [Git repository] [uikit_github] by running the following command:  
 ```
 [sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git
 ```
