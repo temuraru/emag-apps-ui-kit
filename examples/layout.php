@@ -179,12 +179,11 @@
                                                         </div>
                                                         <div class="collapse navbar-collapse" id="test2_navbar">
                                                             <h4 class="navbar-text">Title</h4>
-                                                            <button type="button" class="btn btn-danger navbar-btn">Don't press this button!</button>
                                                             <ul class="nav navbar-nav navbar-right">
                                                                 <li class="dropdown">
                                                                     <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                                         <div class="profile-thumb hidden-xs">
-                                                                            <img class="nav-user-photo" src="img/jon_snow.jpg" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
+                                                                            <img class="nav-user-photo" src="img/profile_image.png" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
                                                                         </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
                                                                     </a>
                                                                     <ul class="dropdown-menu">
@@ -334,7 +333,7 @@
                                         <div class="show-panel-body">
                                             <h2><strong>Sidebar</strong></h2>
                                             <p><strong>eMAG Apps UI KIT's unique sidebar menu.</strong></p>
-                                            <p>You can use the buttons below to toggle different sidebar states.</p>
+                                            <p>You can check below the different sidebar states.</p>
                                             <div class="row">
                                                 <div class="col-md-3">
                                                     <p><strong>Fixed status</strong></p>
@@ -352,7 +351,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <p><strong>Expanded status</strong></p>
+                                                    <p><strong>Expanded state</strong></p>
                                                     <div class="radio">
                                                         <label>
                                                             <input type="radio" name="sidebar_expanded_status" class="form-radio-control" value="expanded" checked="checked">
@@ -435,7 +434,7 @@
                                         <div class="show-panel-body">
                                             <h2><strong>Footer</strong></h2>
                                             <p><strong>eMAG Apps UI KIT's unique CSS footer</strong></p>
-                                            <p><strong>Fixed status</strong></p>
+                                            <p><strong>Fixed state</strong></p>
                                             <div class="radio">
                                                 <label>
                                                     <input type="radio" name="footer_fixed_status" class="form-radio-control" value="unfixed" checked="checked">
@@ -491,7 +490,7 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Grid Layout</strong></h2>
-                                            <p><strong>Based on Bootstrap's original grid layout, you can customize the main content strip.</strong></p>                                            
+                                            <p><strong>See below how you can customize the main content width.</strong></p>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -500,7 +499,7 @@
                                 <div class="panel">
                                     <div class="panel-body text-center">
                                         <div class="pad-sep-60">
-                                            <strong>Maybe a full-width layout is your thing.</strong>
+                                            <strong>Full-width container</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -511,7 +510,7 @@
                                         <div class="panel">
                                             <div class="panel-body text-center">
                                                 <div class="pad-sep-60">
-                                                    <p><strong>Double the trouble?</strong></p>
+                                                    <p><strong>Half-width containers</strong></p>
 <pre>&lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-lg-6&quot;&gt; One panel here &lt;/div&gt;
 ...
@@ -524,7 +523,7 @@
                                         <div class="panel">
                                             <div class="panel-body text-center">
                                                 <div class="pad-sep-60">
-                                                    <p></p><strong>Double the trouble?</strong>
+                                                    <p></p><strong>Half-width containers</strong>
 <pre>&lt;div class=&quot;row&quot;&gt;
 ...
 &lt;div class=&quot;col-lg-6&quot;&gt; The other one here &lt;/div&gt;
@@ -541,7 +540,7 @@
                                         <div class="panel">
                                             <div class="panel-body text-center">
                                                 <div class="pad-sep-60">
-                                                    <p><strong>Or maybe the presentation-style centered strip?</strong></p>
+                                                    <p><strong>Centered container</strong></p>
                                                     <pre>&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-8 col-lg-offset-2&quot;&gt; Your panel here &lt;/div&gt;&lt;/div&gt;</pre>
                                                 </div>
                                             </div>
@@ -578,6 +577,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
                     updateSideBarCode();

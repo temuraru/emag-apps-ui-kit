@@ -60,10 +60,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -81,10 +80,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -102,10 +100,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -123,10 +120,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -143,9 +139,6 @@
                                                 </div>
                                             </fieldset>
                                         </form>
-                                    </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                     </div>
                                 </div>
                             </div>
@@ -178,6 +171,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#daterangepicker_standard').daterangepicker({
                     isCustomDate: function() {

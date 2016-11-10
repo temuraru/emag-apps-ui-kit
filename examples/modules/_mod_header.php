@@ -65,7 +65,7 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="profile-thumb hidden-xs">
-                            <img class="nav-user-photo" src="img/jon_snow.jpg" alt="">
+                            <img class="nav-user-photo" src="img/profile_image.png" alt="">
                         </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu">

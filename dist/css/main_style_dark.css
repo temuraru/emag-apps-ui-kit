@@ -5725,7 +5725,7 @@ select[multiple].input-lg {
 .btn.active {
   background-image: none;
   outline: 0;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: none;
 }
 .btn.disabled,
 .btn[disabled],
@@ -11709,14 +11709,14 @@ select.form-control option:hover {
   border-radius: 0;
 }
 .tt-default {
-  background-color: #555;
-  border-color: #555;
+  background-color: #000;
+  border-color: #000;
 }
 .tt-default:before {
-  background-color: #555;
+  background-color: #000;
 }
 .tt-default:after {
-  border-color: #555 transparent transparent transparent;
+  border-color: #000 transparent transparent transparent;
 }
 .tt-primary {
   background-color: #005eb7;
@@ -11907,6 +11907,19 @@ i {
 }
 .page-content > .jumbotron {
   margin: 0 0 30px;
+}
+.jumbotron.content-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: -20px;
+  box-shadow: none;
+}
+.jumbotron.content-header p {
+  margin-bottom: 0;
+}
+.jumbotron.content-header b,
+.jumbotron.content-header strong {
+  font-weight: 600;
 }
 .progress {
   padding: 2px;

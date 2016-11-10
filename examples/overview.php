@@ -23,52 +23,16 @@
                 <!-- CONTENT:Start -->
                 <div class="main-content">
                     <div class="page-content">
-                        <div class="jumbotron">
+                        <div class="jumbotron content-header">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
-                                    <div class="container-fluid pad-sep-60">
-                                        <h1>eMAG Apps UI KIT</h1>
-                                        <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                                    <div class="container-fluid">
+                                        <p>eMAG Apps UI KIT</p>
+                                        <p><b>Start</b></p>
                                     </div>
                                  </div>
                             </div>
                         </div>
-                        <section id="getStarted" class="pad-top-40">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel">
-                                        <div class="show-panel-body">
-                                            <h2><strong>Getting started</strong></h2>
-                                            <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
-                                            <div class="pad-sep-20">                                                
-                                                <ol>
-                                                    <li>
-                                                        <p>The easiest is to install the following css in the head of your webpage:</p>
-                                                        <pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</pre>
-                                                        <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
-                                                        <pre>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
-&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</pre>
-                                                        <div class="alert alert-info" role="alert">
-                                                            <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run. 
-                                                        </div>
-                                                        <br>                                                        
-                                                    </li>
-                                                    <li>
-                                                        <p>If you really want to get a hold of the source code, you can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
-                                                        <br>                                                     
-                                                    </li>
-                                                    <li>
-                                                        <p>Or clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
-                                                        <pre>[sudo] git clone https://github.com/eMAGTechLabs/PhotonPowerUIKit</pre>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                         <section id="overview" class="pad-top-40">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
@@ -80,9 +44,13 @@
                                                 <ol>
                                                     <li>
                                                         <h4 class="text-primary">Based on Bootstrap 3.3.5.</h4>
-                                                            <p>eMAG Apps UI KIT is based on the Twitter Bootstrap architecture <a href="http://getbootstrap.com/getting-started/" target="_blank"><u>GetBootstrap</u></a>. If you're not familiarized with Twitter Bootstrap, head on over to their website and check-out their stuff. It's great!</p>
-                                                            <p>Aside from the elements provided by bootstrap, eMAG Apps UI KIT comes with its own set of unique components, styling and useful plugins that you can use in your project.</p>
-                                                            <p>The fun part about eMAG Apps UI KIT is that you can configure it however you want. Whether if it's for speed, mobile devices, lots of features or a usability unicorn.</p>
+                                                            <p>
+                                                                Our open source UI KIT is based on the Bootstrap architecture. If you're
+                                                                not familiarized with it, check-out their stuff from getbootstrap.com Aside
+                                                                from the elements provided by Bootstrap, it comes with its own set of
+                                                                unique components, styling and useful plugins that you can use in your
+                                                                project.
+                                                            </p>
                                                             <br>
                                                             <p><strong>Features:</strong></p>
                                                             <ol>
@@ -213,111 +181,122 @@ eMAG Apps UI KIT/
                                                         <br>
                                                         <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
 
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <div class="panel panel-success">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">You can</h4>
-                                                                    </div>
-                                                                    <div class="list-group">
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_comercial_use" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-money" aria-hidden="true"></i> Comercial Use</span>
-                                                                            <div id="license_comercial_use" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You may use the work commercially.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_modify" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-pencil" aria-hidden="true"></i> Modify</span>
-                                                                            <div id="license_modify" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You may make changes to the work.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_distribute" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-share-alt" aria-hidden="true"></i> Distribute</span>
-                                                                            <div id="license_distribute" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You may distribute the compiled code and/or source.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_sublicense" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-file-text-o" aria-hidden="true"></i> Sublicense</span>
-                                                                            <div id="license_sublicense" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You may incorporate the work into something that has a more restrictive license.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_private_use" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-lock" aria-hidden="true"></i> Private Use</span>
-                                                                            <div id="license_private_use" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You may use the work for private use.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="panel panel-danger">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">You cannot</h4>
-                                                                    </div>
-                                                                    <div class="list-group">
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_hold_liable" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hold Liable</span>
-                                                                            <div id="license_hold_liable" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    The work is provided "as is". You may not hold the author liable.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="panel panel-primary">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">You must</h4>
-                                                                    </div>
-                                                                    <div class="list-group">
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_copyright" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-copyright" aria-hidden="true"></i> Include Copyright</span>
-                                                                            <div id="license_copyright" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You must include the copyright notice in all copies or substantial uses of the work.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                        <a href="javascript:void(0);" class="list-group-item" data-action="toggle" data-toggle="collapse" data-target="#license_include_license" aria-expanded="false">
-                                                                            <span class="list-group-item-heading"><i class="fa fa-file-text-o" aria-hidden="true"></i> Include License</span>
-                                                                            <div id="license_include_license" class="list-group-item-text collapse">
-                                                                                <br>
-                                                                                <p>
-                                                                                    You must include the license notice in all copies or substantial uses of the work.
-                                                                                </p>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <p><b>You can</b></p>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <i class="fa fa-money" aria-hidden="true"></i> Comercial Use
+                                                                <ul>
+                                                                    <li>
+                                                                        You may use the work commercially.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-pencil" aria-hidden="true"></i> Modify
+                                                                <ul>
+                                                                    <li>
+                                                                        You may make changes to the work.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-share-alt" aria-hidden="true"></i> Distribute
+                                                                <ul>
+                                                                    <li>
+                                                                        You may distribute the compiled code and/or source.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Sublicense
+                                                                <ul>
+                                                                    <li>
+                                                                        You may incorporate the work into something that has a more restrictive license.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-lock" aria-hidden="true"></i> Private Use
+                                                                <ul>
+                                                                    <li>
+                                                                        You may use the work for private use.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <p><b>You cannot</b></p>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hold Liable
+                                                                <ul>
+                                                                    <li>
+                                                                        The work is provided "as is". You may not hold the author liable.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <p><b>You must</b></p>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <i class="fa fa-copyright" aria-hidden="true"></i> Include Copyright
+                                                                <ul>
+                                                                    <li>
+                                                                        You must include the copyright notice in all copies or substantial uses of the work.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Include License
+                                                                <ul>
+                                                                    <li>
+                                                                        You must include the license notice in all copies or substantial uses of the work.<br><br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
 
                                                         <p>The full eMAG Apps UI KIT license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
                                                     </li>
                                                 </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="gettingStarted" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h2><strong>Getting started</strong></h2>
+                                            <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
+                                            <div class="pad-sep-20">
+                                                <ol>
+                                                    <li>
+                                                        <p>The easiest way to install is to add the following css line in the head of your webpage:</p>
+                                                        <pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</pre>
+                                                        <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
+                                                        <pre>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
+&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</pre>
+                                                        <div class="alert alert-info" role="alert">
+                                                            <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
+                                                        </div>
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <p>You can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <p>You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
+                                                        <pre>[sudo] git clone https://github.com/eMAGTechLabs/PhotonPowerUIKit</pre>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class="alert alert-info" role="alert">
+                                                <i class="fa fa-info-circle"></i> Be W3C compliant and everything will be alright!
                                             </div>
                                         </div>
                                     </div>
@@ -345,6 +324,8 @@ eMAG Apps UI KIT/
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
             });
         </script>
         <!-- DOCUMENT-READY:End -->

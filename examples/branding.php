@@ -49,23 +49,23 @@
                                                         <div class="row color-swatches">
                                                             <div class="col-xs-6 col-sm-2 text-center">
                                                                 <div class="faux-elem ratio1-1 swatch swatch-primary"></div>
-                                                                <div class="pad-top-20"><small>@branding-primary</small></div>
+                                                                <div class="pad-top-20"><small>@brand-primary</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2 text-center">
                                                                 <div class="faux-elem ratio1-1 swatch swatch-info"></div>
-                                                                <div class="pad-top-20"><small>@branding-info</small></div>
+                                                                <div class="pad-top-20"><small>@brand-info</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2 text-center">
                                                                 <div class="faux-elem ratio1-1 swatch swatch-success"></div>
-                                                                <div class="pad-top-20"><small>@branding-success</small></div>
+                                                                <div class="pad-top-20"><small>@brand-success</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2 text-center">
                                                                 <div class="faux-elem ratio1-1 swatch swatch-warning"></div>
-                                                                <div class="pad-top-20"><small>@branding-warning</small></div>
+                                                                <div class="pad-top-20"><small>@brand-warning</small></div>
                                                             </div>
                                                             <div class="col-xs-6 col-sm-2 text-center">
                                                                 <div class="faux-elem ratio1-1 swatch swatch-danger"></div>
-                                                                <div class="pad-top-20"><small>@branding-danger</small></div>
+                                                                <div class="pad-top-20"><small>@brand-danger</small></div>
                                                             </div>
                                                         </div>
                                                         <div class="pad-top-40"></div>
@@ -114,7 +114,7 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Typography</strong></h2>
-                                            <p><strong>You are just my type ;)</strong></p>
+                                            <p><strong>See below the font families you can use.</strong></p>
                                             <div class="pad-sep-20">
                                                 <div class="row">
                                                     <div class="col-lg-10 col-lg-offset-1">
@@ -236,21 +236,6 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="usage" class="pad-top-40">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel">
-                                        <div class="show-panel-body">
-                                            <h2><strong>Recommended usage</strong></h2>
-                                            <p><strong>Be W3C compliant and everything will be alright!</strong></p>
-                                            <div class="pad-sep-20">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                     </div>
                 </div>
                 <!-- CONTENT:End -->
@@ -272,6 +257,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
             });
         </script>
         <!-- DOCUMENT-READY:End -->    

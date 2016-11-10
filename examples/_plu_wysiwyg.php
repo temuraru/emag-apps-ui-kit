@@ -53,7 +53,8 @@
                                                     </div>
                                                 </div>
                                             </div>                                        
-                                            <div class="show-panel-footer"></div>
+                                        </div>
+                                        <div class="show-panel show-panel-example">
                                             <div class="show-panel-body">
                                                 <p><strong>Air mode</strong></p>
                                                 <p>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" target="_blank">summernote.org</a></p>
@@ -68,8 +69,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -98,6 +98,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#summernote1').summernote({
                     minHeight: 300,

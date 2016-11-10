@@ -56,34 +56,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="show-panel-example">
-                                    <div class="show-panel-footer">
-                                        <pre class="language-javascript">
-                                                        <code class="language-javascript">
-                                                            $("#tree").fancytree({
-                                                                icon: false,
-                                                                checkbox: true,
-                                                                source: source.json
-                                                            });
-                                                        </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                                <div class="show-panel-body">
-                                    <p>
-                                        <strong>Fancytree in modal</strong>
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <button class="btn btn-primary" id="show-fancytree-modal">Show fancytree modal</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="show-panel-example">
-                                    <div class="show-panel-footer">
-                                        To be completed...
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <div class="form-group">
                                         <label for="category_treeDefault">Category tree</label>
@@ -142,8 +116,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="show-panel-body">
+
                                     <form>
                                         <fieldset>
                                             <legend class="sr-only">TreeType example form</legend>
@@ -213,11 +186,6 @@
                                             </div>
                                         </fieldset>
                                     </form>
-                                </div>
-                                <div class="show-panel-example">
-                                    <div class="show-panel-footer">
-                                        To be completed...
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -471,6 +439,8 @@
 
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 //Fancytree inits
                 $("#tree").fancytree({

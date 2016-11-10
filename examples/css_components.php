@@ -66,8 +66,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Utilities:</strong></p>
                                             <div class="pad-sep-20">
@@ -89,8 +89,8 @@
                                                 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> You can <strong>enlarge the font-sizing</strong> of any element by adding one of the classes from the following range:<code>.fonts-up-120</code> to <code>.fonts-up-200</code>. Please take into consideration that these classes have a step of <code><strong>20</strong></code>.</div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Alignment:</strong></p>
                                             <div class="pad-sep-20">
@@ -105,8 +105,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Address:</strong></p>
                                             <div class="pad-sep-20">
@@ -126,8 +126,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Contextual classes:</strong></p>
                                             <div class="pad-sep-20">
@@ -143,8 +143,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Text case and capitalization:</strong></p>
                                             <div class="pad-sep-20">
@@ -157,8 +157,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Block quotes:</strong></p>
                                             <div class="pad-sep-20">
@@ -173,8 +173,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Print</strong></p>
                                             <div class="pad-sep-20">
@@ -211,8 +211,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Code:</strong></p>
                                             <p>You can wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
@@ -224,8 +224,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>User input:</strong></p>
                                             <p>You can use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
@@ -238,8 +238,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Preformatted block:</strong></p>
                                             <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
@@ -254,8 +254,8 @@
                                                  You may optionally add the <mark>.pre-scrollable</mark> class, which will set a max-height of 350px and provide a y-axis scrollbar.
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Variables:</strong></p>
                                             <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
@@ -267,8 +267,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Sample output:</strong></p>
                                             <p>For indicating blocks sample output from a program use the  <code>&lt;samp&gt;</code> tag.</p>
@@ -280,8 +280,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Descriptions:</strong></p>
                                             <p>You can display a list of terms with their associated descriptions.</p>
@@ -301,8 +301,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Horizontal descriptions:</strong></p>
                                             <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
@@ -324,8 +324,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Unordered list:</strong></p>
                                             <p>A list of items in which the order does <strong>not</strong> explicitly matter.</p>
@@ -353,8 +353,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Ordered list:</strong></p>
                                             <p>A list of items in which the order <strong>does</strong> explicitly matter.</p>
@@ -375,8 +375,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Unstyled list:</strong></p>
                                             <p>You can remove the default list-style and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
@@ -404,8 +404,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Inline list:</strong></p>
                                             <p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
@@ -423,8 +423,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +434,7 @@
                                         <div class="show-panel-body">
                                             <h4 class="text-primary"><strong>Tables</strong></h4>
                                             <p><strong>Basic example:</strong></p>
-                                            <p>As we've mentioned before, eMAG Apps UI KIT is based on the Twitter Bootstrap v3 architecture and classes. You can find out more about Bootstrap Tables by checking out <a href="http://getbootstrap.com/css/#tables" target="_blank"><u>getbootstrap.com/css/#tables</u></a>.</p>
+                                            <p>You can find out more about Bootstrap Tables by checking out <a href="http://getbootstrap.com/css/#tables" target="_blank"><u>getbootstrap.com/css/#tables</u></a>.</p>
                                             <p>For basic styling—light padding and only horizontal dividers—add the base class <mark>.table</mark> to any <code>&lt;table&gt;</code>.</p>
                                             <div class="pad-sep-20">
                                                 <table class="table">
@@ -475,9 +473,8 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Striped rows</strong></p>
                                             <p>Use <mark>.table-striped</mark> to add zebra-striping to any table row within the  <code>&lt;table&gt;</code>.</p>
@@ -518,9 +515,8 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Bordered table</strong></p>
                                             <p>Add <mark>.table-bordered</mark> for borders on all sides of the table and cells.</p>
@@ -561,9 +557,8 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Hover rows</strong></p>
                                             <p>Add <mark>.table-hover</mark> to enable a hover state on table rows within a <code>&lt;table&gt;</code>.</p>
@@ -604,9 +599,8 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Condensed table</strong></p>
                                             <p>Add <mark>.table-hover</mark> to make tables more compact by cutting cell padding in half.</p>
@@ -647,9 +641,8 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Resposive table </strong></p>
                                             <p>Create responsive tables by wrapping any <mark>.table</mark> in <mark>.table-responsive</mark> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
@@ -709,9 +702,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Contextual classes</strong></p>
                                             <p>You can use contextual classes to color table rows or individual cells.</p>
@@ -755,9 +747,6 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                            <pre>This is a test</pre>
                                         </div>
                                     </div>
                                 </div>
@@ -813,8 +802,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Inline form example:</strong></p>
                                             <p>Add <mark>.form-inline</mark> to your form (which doesn't have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. This only applies to forms within viewports that are at least <b>768px</b> wide.</p>
@@ -845,8 +834,8 @@
                                                 </form>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Horizontal form example:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -888,8 +877,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Form with column sizing example:</strong></p>
                                             <p>You can also benefit from a mix between the inline form and the regular form display, by using the <b>grid system</b> to your advantage. This is especially helpful whenever forms fields need to be displayed in a certain way, depending on the device width.</p>
@@ -936,8 +925,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Input types sizing:</strong></p>
                                             <p>Individual form controls.</p>
@@ -980,8 +969,8 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Input types states:</strong></p>
                                             <div class="pad-sep-20">
@@ -1016,8 +1005,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Input types validation:</strong></p>
                                             <div class="pad-sep-20">
@@ -1073,8 +1062,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Input types with feedback:</strong></p>
                                             <div class="pad-sep-20">
@@ -1102,8 +1091,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Checkboxes and radio buttons:</strong></p>
 
@@ -1173,8 +1162,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Custom checkboxes and radio buttons:</strong></p>
                                             <div class="pad-sep-20">
@@ -1226,8 +1215,8 @@
                                                 <p><i class="fa fa-warning fonts-up-140"></i> The custom checkboxes and radio buttons don't work on firefox. They just fallback to their standard styling. </p>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Range input types:</strong></p>
                                             <div class="pad-sep-20">
@@ -1246,8 +1235,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Input groups:</strong></p>
                                             <p>Extend form controls by adding text or buttons before, after, or on both sides of any text-based <code>&lt;input&gt;</code>. Use <mark>.input-group</mark> with an <mark>.input-group-addon</mark> or <mark>.input-group-btn</mark> to prepend or append elements to a single <mark>.form-control</mark>.</p>
@@ -1289,8 +1278,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Input groups with checkboxes and radio buttons:</strong></p>
                                             <div class="pad-sep-20">
@@ -1332,93 +1321,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Input groups with buttons:</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="row">
-                                                            <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-default" type="button">Go!</button>
-                                                                    </span>
-                                                                    <input type="text" class="form-control" placeholder="Search for...">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" placeholder="Search for...">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-default" type="button">Go!</button>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Input groups with dropdowns:</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="input-group">
-                                                            <div class="input-group-btn">
-                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a href="#">Action</a></li>
-                                                                    <li><a href="#">Another action</a></li>
-                                                                    <li><a href="#">Something else here</a></li>
-                                                                    <li role="separator" class="divider"></li>
-                                                                    <li><a href="#">Separated link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <input type="text" class="form-control" aria-label="...">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Input groups with multiple buttons:</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-md-offset-2">
-                                                        <div class="input-group">
-                                                            <div class="input-group-btn">
-                                                                <button type="button" class="btn btn-default" aria-label="Bold">
-                                                                    <span class="fa fa-bold"></span>
-                                                                </button>
-                                                                <button type="button" class="btn btn-default" aria-label="Italic">
-                                                                    <span class="fa fa-italic"></span>
-                                                                </button>
-                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                    <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span>
-                                                                </button>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a href="#">Action</a></li>
-                                                                    <li><a href="#">Another action</a></li>
-                                                                    <li><a href="#">Something else here</a></li>
-                                                                    <li role="separator" class="divider"></li>
-                                                                    <li><a href="#">Separated link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <input type="text" class="form-control" aria-label="Text input with multiple buttons">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1442,8 +1344,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Contextual classes:</strong></p>
                                             <p>Use any of the available button classes to quickly create a styled button. ex: <mark>.btn-primary</mark>, <mark>.btn-success</mark>, <mark>.btn-danger</mark>...etc.</p>
@@ -1460,22 +1362,20 @@
                                                 <i class="fa fa-info-circle fonts-up-140"></i> Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <mark>.sr-only</mark> class.
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button sizing:</strong></p>
                                             <div class="pad-sep-20 pad-top-40 text-center">
                                                 <p>
-                                                    <button type="button" class="btn btn-primary btn-lg fonts-up-200"><i class="fa fa-cog"></i><span>Enhanced</span></button>
                                                     <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-cog"></i><span>Large button</span></button>
                                                     <button type="button" class="btn btn-primary"><i class="fa fa-cog"></i><span>Default button</span></button>
                                                     <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-cog"></i><span>Small button</span></button>
-                                                    <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-cog"></i><span>Extra small button</span></button>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button states:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1499,8 +1399,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button groups:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1515,8 +1415,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Justified button groups:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1543,8 +1443,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button toolbar:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1576,8 +1476,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button groups sizing:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1595,16 +1495,12 @@
                                                             <button type="button" class="btn btn-default">SM</button>
                                                             <button type="button" class="btn btn-default">SM</button>
                                                         </div>
-                                                        <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                                                            <button type="button" class="btn btn-default">XS</button>
-                                                            <button type="button" class="btn btn-default">XS</button>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Vertical button groups:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1627,8 +1523,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button blocks:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
@@ -1655,8 +1551,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="show-panel-footer">
                                         </div>
                                     </div>
                                 </div>
@@ -1690,232 +1584,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssPagination" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Pagination</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pagination">
-                                                                <li>
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#">4</a></li>
-                                                                <li><a href="#">5</a></li>
-                                                                <li>
-                                                                    <a href="#" aria-label="Next">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Disabled and active states:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pagination">
-                                                                <li class="disabled">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#">4</a></li>
-                                                                <li><a href="#">5</a></li>
-                                                                <li>
-                                                                    <a href="#" aria-label="Next">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Pagination sizing:</strong></p>
-                                            <p>So hey, listen! You can add <mark>.pagination-lg</mark> or <mark>.pagination-sm</mark> for additional sizes.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pagination pagination-lg">
-                                                                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-arrow-left"></i></span></a></li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-arrow-right"></i></span></a></li>
-                                                            </ul>
-                                                        </nav>
-                                                        <nav>
-                                                            <ul class="pagination">
-                                                                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-arrow-left"></i></span></a></li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-arrow-right"></i></span></a></li>
-                                                            </ul>
-                                                        </nav>
-                                                        <nav>
-                                                            <ul class="pagination pagination-sm">
-                                                                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-arrow-left"></i></span></a></li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-arrow-right"></i></span></a></li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Default pager:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pager">
-                                                                <li><a href="#">Previous</a></li>
-                                                                <li><a href="#">Next</a></li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Aligned pager:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pager">
-                                                                <li class="previous">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i> Older</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="next">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true">Newer <i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Optional pager states:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pager">
-                                                                <li class="previous disabled">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i> Older</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="next">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true">Newer <i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssNavs" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Navs</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssNavs" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Pills</strong><small> (Yeah, not that kind of pills)</small></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssBreadcrumbs" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Breadcrumbs</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <div class="pad-sep-20 text-center">
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1933,8 +1601,8 @@
                                                 <p><a href="javascript:void(0)" class="info-tooltip" data-content="Wow, such tooltip. Very fast. Much style."><strong>Regular text can have a tooltip too!</strong></a></p>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Contextual alternatives:</strong></p>
                                             <div class="pad-sep-20 text-center">
@@ -1954,8 +1622,8 @@
                                                 </h4>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Button integration:</strong></p>
                                             <div class="pad-sep-20 text-center">
@@ -1966,8 +1634,6 @@
                                                     <a href="javascript:void(0)" class="btn btn-sm btn-default info-tooltip tt-right" data-content="This is a test to see if this stuff works as predicted."><strong>On the right</strong></a>
                                                 </p>
                                             </div>
-                                        </div>
-                                        <div class="show-panel-footer">
                                         </div>
                                     </div>
                                 </div>
@@ -1990,8 +1656,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Contextual alternatives:</strong></p>
                                             <div class="pad-sep-20 text-center">
@@ -2007,8 +1673,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Default badge:</strong></p>                                            
                                             <div class="pad-sep-20 text-center">
@@ -2026,8 +1692,6 @@
                                             <div class="alert alert-warning"><p><i class="fa fa-warning fonts-up-140"></i>
                                                 Badges do not have contextual alternatives because they are badges. <strong>Use labels instead.</strong>
                                             </div>
-                                        </div>
-                                        <div class="show-panel-footer">
                                         </div>
                                     </div>
                                 </div>
@@ -2059,8 +1723,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Dismissible alerts:</strong></p>
                                             <div class="pad-sep-20">
@@ -2074,8 +1738,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Links in alerts:</strong></p>
                                             <div class="pad-sep-20">
@@ -2089,8 +1753,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Alerts with buttons:</strong></p>
                                             <div class="pad-sep-20">
@@ -2107,25 +1771,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssProgressBars" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Progress bars</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
                                         </div>
                                     </div>
                                 </div>
@@ -2152,53 +1797,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Panel with heading:</strong></p>
-                                            <div class="pad-sep-20 ">
-                                                <div class="row">
-                                                    <div class="col-lg-10 col-lg-offset-1">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                        <div class="show-panel-body">
-                                            <p><strong>Panel with footer:</strong></p>
-                                            <div class="pad-sep-20 ">
-                                                <div class="row">
-                                                    <div class="col-lg-10 col-lg-offset-1">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Contextual alternatives:</strong></p>
                                             <div class="alert alert-info" role="alert">
-                                                <i class="fa fa-info-circle"></i> You can basically change the appearance of the panel by replacing the <code>panel-default</code> class from the example below, with the standard contextual alternatives: <code>panel-primary</code>, <code>panel-info</code>, <code>panel-success</code>, <code>panel-warning</code>, <code>panel-danger</code></div>
+                                                <i class="fa fa-info-circle"></i> You can basically change the appearance of the panel ussing one of the following classes: <code>panel-primary</code>, <code>panel-info</code>
                                             </div>
                                             <div class="pad-sep-20 ">
                                                 <div class="row">
@@ -2224,42 +1828,12 @@
                                                                 Panel footer
                                                             </div>
                                                         </div>
-                                                        <div class="panel panel-success">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel panel-warning">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div><div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel panel-danger">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div><div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>                                            
-                                        <div class="show-panel-footer">
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Panel with table:</strong></p>
                                             <div class="pad-sep-20 ">
@@ -2320,8 +1894,8 @@
                                                 <i class="fa fa-info-circle"></i> You can also use the standard bootstrap alternatives for styling a table: <a href="http://getbootstrap.com/css/#tables">Show me how Bootstrap does table stuff.</a>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <p><strong>Panel with standard list group:</strong></p>
                                             <div class="pad-sep-20 ">
@@ -2356,25 +1930,6 @@
                                                 <i class="fa fa-info-circle"></i> You can also use the standard bootstrap alternatives for styling a list group: <a href="http://getbootstrap.com/components/#list-group">Show me how Bootstrap does list group stuff.</a>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssListGroups" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>List groups</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2395,8 +1950,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2414,8 +1967,6 @@
                                                     <h1>Example page header <small>Subtext for header</small></h1>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="show-panel-footer">
                                         </div>
                                     </div>
                                 </div>
@@ -2447,25 +1998,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssUtilities" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Utilities</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-footer">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2491,7 +2023,9 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
-                
+
+                demoHelpers();  // Require demo_helpers.js
+
                 var i = 1;
                 function blowWorld(selector, no) {
                     var thing = document.getElementById(selector);

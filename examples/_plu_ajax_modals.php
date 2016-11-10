@@ -53,14 +53,12 @@ var modalTest = new PhotonModal({
     type: 'preview',
     buttons: {
         save: {
-            label: 'Wow, much save',
-            class: 'btn-success',
-            icon: 'fa fa-check'
+            label: 'Save',
+            class: 'btn-success'
         },
         cancel: {
             label: 'Cancel',
             class: 'btn-default',
-            icon: 'fa fa-times',
             closeModal: true
         }
     }
@@ -103,7 +101,7 @@ var modalTest = new PhotonModal({
                     'Check out the code documentation on the main page.' +
                 '</div>' + 
                 '<div class="embed-responsive embed-responsive-16by9">' + 
-                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/HL1UzIK-flA" allowfullscreen="">' + 
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/9cNpKRXwaj4" allowfullscreen="">' +
                     '</iframe>' + 
                 '</div>';
             
@@ -115,15 +113,13 @@ var modalTest = new PhotonModal({
                 type: 'preview',
                 buttons: {
                     save: {
-                        label: 'Wow, much save',
+                        label: 'Save',
                         class: 'btn-success',
-                        icon: 'fa fa-check',
                         closeModal: true
                     },
                     cancel: {
-                        label: 'Very cancel',
+                        label: 'Cancel',
                         class: 'btn-default',
-                        icon: 'fa fa-times',
                         closeModal: true
                     }
                 }
@@ -131,6 +127,8 @@ var modalTest = new PhotonModal({
 
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#ajax_modal_start').on('click', function(){
                     modalTest.show();

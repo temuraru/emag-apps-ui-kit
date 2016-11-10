@@ -68,11 +68,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer">
-                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="show-panel">
                                         <div class="show-panel-example">
                                             <div class="show-panel-body">
                                                 <p><strong>All AJAX</strong></p>
@@ -84,10 +83,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer">
+                                            </div>
                                         </div>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel">
                                         <div class="show-panel-example">
                                             <div class="show-panel-body">
                                                 <p><strong>Youtube/Vimeo/etc. embeds</strong></p>
@@ -99,8 +98,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer">
                                             </div>
                                         </div>
                                     </div>
@@ -132,6 +129,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#default_magnific').magnificPopup({
                     delegate: 'a',

@@ -84,7 +84,6 @@ function staticNavigation() {
         if (href == '#') {
             href = $(this).attr('data-href');
         }
-
         if (path == href) {
             $(this).parents('.menu-item-has-children').addClass('active');
             $(this).closest('.menu-item').addClass('active');
