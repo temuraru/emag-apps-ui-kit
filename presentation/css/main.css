@@ -16,17 +16,17 @@ body {
 }
 
 ::selection {
-  background: none; /* WebKit/Blink Browsers */
+  background: none; 
 }
 ::-moz-selection {
-  background: none; /* Gecko Browsers */
+  background: none;
 }
 
 p::selection, p *::selection {
-  background: #ef280a; /* WebKit/Blink Browsers */
+  background: #ef280a; 
 }
 p::-moz-selection, p *::selection  {
-  background: #ef280a; /* Gecko Browsers */
+  background: #ef280a; 
 }
 
 #header {
@@ -87,11 +87,7 @@ p {
     margin: 15px auto;
 	width: 0;
 	-webkit-transition: all 0.5s;
-    /* Safari */
-
     -moz-transition: all 0.5s;
-    /* Safari */
-
     transition: all 0.5s;
 }
 
@@ -129,11 +125,7 @@ p {
     display: inline-block;
     width: 400px;
     -webkit-transition: all 0.5s;
-    /* Safari */
-
     -moz-transition: all 0.5s;
-    /* Safari */
-
     transition: all 0.5s;
     margin-top: 30px;
 }
@@ -162,11 +154,7 @@ a {
     padding: 8px 15px;
     font-weight: 600;
 	-webkit-transition: all 0.35s;
-    /* Safari */
-
     -moz-transition: all 0.35s;
-    /* Safari */
-
     transition: all 0.35s;
 }
 
@@ -208,11 +196,7 @@ a {
     color: #fff;
     text-decoration: none;
 		-webkit-transition: all 0.35s;
-    /* Safari */
-
     -moz-transition: all 0.35s;
-    /* Safari */
-
     transition: all 0.35s;
 }
 
