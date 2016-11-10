@@ -46,7 +46,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Log in</span></a>
+                                                        <a href="index.php" id="special_submit" class="btn btn-primary"><span>Log in</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -74,7 +74,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Confirm</span></a>
+                                                        <a href="index.php" id="special_submit" class="btn btn-primary"><span>Confirm</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,7 +128,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Sign up</span></a>
+                                                        <a href="index.php" id="special_submit" class="btn btn-primary"><span>Sign up</span></a>
                                                     </div>
                                                 </div>
                                             </div>

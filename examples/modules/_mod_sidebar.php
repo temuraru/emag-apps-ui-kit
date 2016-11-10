@@ -2,22 +2,22 @@
     <div class="sidebar-outer">
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/overview.php">
+                <a href="#" data-href="/examples/index.php">
                     <i class="menu-icon fa fa-bolt"></i>
                     <span class="menu-text">Start</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="/examples/overview.php" class="menu-item-min-link">
+                    <a href="/examples/index.php" class="menu-item-min-link">
                         <span class="menu-text">Start</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/overview.php#overview">
+                            <a href="/examples/index.php#overview">
                                 <span class="menu-text">Overview</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/overview.php#gettingStarted">
+                            <a href="/examples/index.php#gettingStarted">
                                 <span class="menu-text">Getting started</span>
                             </a>
                         </li>

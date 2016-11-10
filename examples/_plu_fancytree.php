@@ -25,17 +25,17 @@
         <!-- CONTENT:Start -->
         <div class="main-content">
             <div class="page-content">
-                <div class="jumbotron">
+                <div class="jumbotron content-header">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid pad-sep-20">
-                                <h1>eMAG Apps UI KIT - Fancytree</h1>
-                                <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT - Fancytree</p>
+                                <p><b>The lightning-fast, modular, mobile-friendly admin template.</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <section id="fancytreeStandardId" class="pad-top-20">
+                <section id="fancytreeStandardId" class="pad-top-40">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel">
