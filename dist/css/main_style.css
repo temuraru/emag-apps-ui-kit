@@ -10265,43 +10265,43 @@ body {
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu {
   padding-left: 0;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item {
   border-color: #f2f2f2;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item > a {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item > a {
   padding-left: 53px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #000;
   background-color: #fff;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item:last-child {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item:last-child {
   border-bottom: none;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item:not(.active) > a:hover,
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item:not(.active) > a:active,
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item:not(.active) > a:focus {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item:not(.active) > a:hover,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item:not(.active) > a:active,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item:not(.active) > a:focus {
   background-color: #eee;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item.active:not(.menu-item-has-children) > a,
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item.active.menu-item-has-children > a {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a {
   background-color: #dedede;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu {
-  display: none;
-}
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu .menu-item {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item {
   border-color: #f2f2f2;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu .menu-item > a {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item > a {
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   background-color: #fff;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu .menu-item:not(.active) > a:hover,
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu .menu-item:not(.active) > a:active,
-.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu .menu-item:not(.active) > a:focus {
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:hover,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:active,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:focus {
   background-color: #eee;
+}
+.sidebar .sidebar-inner .menu-item .menu-item-data > .menu-item .sidebar-submenu {
+  display: none;
 }
 .sidebar .sidebar-inner .menu-item.menu-item-has-children > a:after {
   position: absolute;
