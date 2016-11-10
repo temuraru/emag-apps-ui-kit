@@ -449,55 +449,30 @@
                     source: fancytreeContent
                 });
 
-                $("#show-fancytree-modal").on("click", function() {
-                    console.log("Show fancytree modal");
-                    var fancytreeModal = new PhotonModal({
-                        id: 'fancytreeModalId',
-                        title: 'Fancytree in modal',
-                        content: modalContent,
-                        type: 'preview',
-                        buttons: {
-                            save: {
-                                label: 'Select',
-                                class: 'btn-success',
-                                icon: 'fa fa-check',
-                                closeModal: true
-                            },
-                            cancel: {
-                                label: 'Cancel',
-                                class: 'btn-default',
-                                icon: 'fa fa-times',
-                                closeModal: true
-                            }
-                        },
-                        showCallback: function() {
-                            //Todo: Make modal display buttons on left or right as user chooses (on the moment they are only displayed on right
-                            //Task: http://jira:8080/browse/UI-3125
-                            if(!$("#reset-btn-id").length) {
-                                $("#fancytreeModalId").find(".modal-footer").append(
-                                    '<div class="pull-left panel-controls">' +
-                                    '<button class="btn btn-default" id="reset-btn-id" data-dismiss="modal"><span><i class="fa fa-undo"></i> Reset</span></button>' +
-                                    '</div>'
-                                );
-                            }
-                            $("#modalTree").fancytree({
-                                icon: false,
-                                checkbox: true,
-                                source: fancytreeContent
-                            });
-                        }
-                    });
-                    fancytreeModal.show();
-                });
-
                 TreeTypeObject = $("#id_category_tree_default").TreeType({
                     treeData: fancytreeContent,
-                    selectId: "category_tree_default"
+                    selectId: "category_tree_default",
+                    modalTitle: 'Select',
+                    modalResetLabel: 'Reset',
+                    modalCancelLabel: 'Cancel',
+                    modalOkLabel: 'Select',
+                    textUnmatched: 'Hide unmatched',
+                    textSelectHierarchy: 'Hierarchical multi-selection',
+                    textSelected: 'selected',
+                    searchPlaceholder: 'Search'
                 });
                 TreeTypeObject = $("#id_category_tree_onlyleafs").TreeType({
                     treeData: fancytreeContentSelectOnlyLeafs,
                     selectId: "category_tree_onlyleafs",
-                    selectOnlyLeaves: 1
+                    selectOnlyLeaves: 1,
+                    modalTitle: 'Select',
+                    modalResetLabel: 'Reset',
+                    modalCancelLabel: 'Cancel',
+                    modalOkLabel: 'Select',
+                    textUnmatched: 'Hide unmatched',
+                    textSelectHierarchy: 'Hierarchical multi-selection',
+                    textSelected: 'selected',
+                    searchPlaceholder: 'Search'
                 });
             });
         </script>
