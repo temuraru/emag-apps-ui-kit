@@ -98,30 +98,30 @@
 <code class="language-bash" data-lang="bash">
     eMAG Apps UI KIT/
     |
-    ??? data/
-    ?   ??? scripts/
-    |   |   ??? base/
-    |   |   |   ??? custom/
-    |   |   ??? lib/
-    ?   ??? styles/
-    |   |   ??? base/
-    |   |   |   ??? custom/
-    |   |   ??? lib/
-    |   ??? plugins/
+    ├── data/
+    │   ├── scripts/
+    |   |   ├── base/
+    |   |   |   └── custom/
+    |   |   └── lib/
+    │   ├── styles/
+    |   |   ├── base/
+    |   |   |   └── custom/
+    |   |   └── lib/
+    |   └── plugins/
     |
-    ??? dist/
-    ?   ??? css/
-    |   |   ??? flags/
-    |   |   ??? fonts/
-    |   |   ??? icons/
-    |   |   ??? img/
-    |   |   ??? lib/
-    ?   ??? js/
-    |   |   ??? lib/
-    |   ??? plugins/
+    ├── dist/
+    │   ├── css/
+    |   |   ├── flags/
+    |   |   ├── fonts/
+    |   |   ├── icons/
+    |   |   ├── img/
+    |   |   └── lib/
+    │   ├── js/
+    |   |   └── lib/
+    |   └── plugins/
     |
-    ??? examples/
-    ??? modules/
+    └── examples/
+    └── modules/
 </code>
 </pre>
                                                 <br>
