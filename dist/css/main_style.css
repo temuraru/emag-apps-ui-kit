@@ -9878,7 +9878,7 @@ button.close {
   padding: 0;
 }
 .navbar .dropdown-menu.dm-language {
-  min-width: 92px;
+  min-width: 92.5px;
 }
 .navbar .dropdown-menu.dm-language li a span {
   font-weight: 600;
