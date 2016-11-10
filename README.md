@@ -129,15 +129,15 @@ The full eMAG Apps UI KIT license can be found in [project repository] [uikit_li
 [[Back to summary] [summary_link]]  
 **There are a couple of ways to install eMAG Apps UI KIT:**  
 1. The easiest way to install is to add the following css line in the head of your webpage:
-    ```HTML
-  <link rel="stylesheet" type="text/css" href="examplepath/to/main_style.min.css">
-    ```
-    And the following javascript files before the end ``</body>`` tag:
-    ```HTML
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-  <script src="../dist/js/main_script.min.js"></script>
-    ```
+  ```HTML
+<link rel="stylesheet" type="text/css" href="examplepath/to/main_style.min.css">
+  ```
+  And the following javascript files before the end ``</body>`` tag:
+  ```HTML
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="../dist/js/main_script.min.js"></script>
+  ```  
 2. You can [download the latest release] [uikit_github] from GitHub.
 3. You can also clone clone the [Git repository] [uikit_github] by running the following command:  
 ```
