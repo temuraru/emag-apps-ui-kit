@@ -221,9 +221,8 @@
                                                             <ul class="nav navbar-nav navbar-right">
                                                                 <li class="dropdown">
                                                                     <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                        <span class="visible-xs-inline">Limbă</span>
-                                                                        <span><i class="flag-icon flag-icon-ro"></i>RO</span>
-                                                                        <i class="fa fa-angle-down hidden-xs"></i>
+                                                                        <span class="visible-xs-inline">Language</span>
+                                                                        <span><i class="flag-icon flag-icon-ro"></i>RO</span><i class="fa fa-angle-down hidden-xs"></i>
                                                                     </a>
                                                                     <ul class="dropdown-menu dm-language">
                                                                         <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span>EN</span></a></li>
@@ -459,11 +458,11 @@
                 &#x3C;div class=&#x22;panel-controls pull-right&#x22;&#x3E;
                     &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; id=&#x22;save-action-ft&#x22;&#x3E;
                         &#x3C;i class=&#x22;fa fa-check&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;span&#x3E;Salveaz&#x103;&#x3C;/span&#x3E;
+                        &#x3C;span&#x3E;Save&#x3C;/span&#x3E;
                     &#x3C;/button&#x3E;
                     &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; id=&#x22;cancel-action-ft&#x22;&#x3E;
                         &#x3C;i class=&#x22;fa fa-close&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;span&#x3E;Anuleaz&#x103;&#x3C;/span&#x3E;
+                        &#x3C;span&#x3E;Cancel&#x3C;/span&#x3E;
                     &#x3C;/button&#x3E;
                 &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;

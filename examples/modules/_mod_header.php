@@ -19,24 +19,6 @@
             <h4 class="navbar-text">Demo</h4>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle page-settings-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="visible-xs-inline">Settings</span>
-                        <span class="hidden-xs"><i class="fa fa-cog" aria-hidden="true"></i></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dm-header hidden-xs"><span>Scenario selector</span></li>
-                        <li class="radio">
-                            <label><input type="radio" name="scenarioSelector" class="form-radio-control scenarioSelector" value="1" checked=""> Scenario 1</label>
-                        </li>
-                        <li class="radio">
-                            <label><input type="radio" name="scenarioSelector" class="form-radio-control scenarioSelector" value="2"> Scenario 2</label>
-                        </li>
-                        <li class="radio">
-                            <label><input type="radio" name="scenarioSelector" class="form-radio-control scenarioSelector" value="3"> Scenario 3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="visible-xs-inline">Language</span>
                         <span><i class="flag-icon flag-icon-gb"></i>GB</span><i class="fa fa-angle-down hidden-xs"></i>
