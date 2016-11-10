@@ -126,8 +126,8 @@ eMAG Apps UI KIT is released under the [MIT license] [uikit_license], this means
 The full eMAG Apps UI KIT license can be found in [project repository] [uikit_license].
 
 ## Getting started
-[[Back to summary] [summary_link]]
-**There are a couple of ways to install eMAG Apps UI KIT:**
+[[Back to summary] [summary_link]]  
+**There are a couple of ways to install eMAG Apps UI KIT:**  
 1. The easiest way to install is to add the following css line in the head of your webpage:
   ```HTML
 <link rel="stylesheet" type="text/css" href="examplepath/to/main_style.min.css">
@@ -139,10 +139,10 @@ The full eMAG Apps UI KIT license can be found in [project repository] [uikit_li
 <script src="../dist/js/main_script.min.js"></script>
   ```
 2. You can [download the latest release] [uikit_github] from GitHub.
-3. You can also clone clone the [Git repository] [uikit_github] by running the following command:
-  ```
+3. You can also clone clone the [Git repository] [uikit_github] by running the following command:  
+```
 [sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git
-  ```
+```
 
 [uikit_github]: https://github.com/eMAGTechLabs/emag-apps-ui-kit
 [uikit_license]: https://github.com/eMAGTechLabs/emag-apps-ui-kit/blob/master/LICENSE
