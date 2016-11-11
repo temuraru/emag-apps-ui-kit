@@ -490,7 +490,7 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Grid Layout</strong></h2>
-                                            <p><strong>See below how you can customize the main content width.</strong></p>
+                                            <p><strong>See how you can customize the main content width below.</strong></p>
                                         </div>
                                     </div>                                    
                                 </div>
