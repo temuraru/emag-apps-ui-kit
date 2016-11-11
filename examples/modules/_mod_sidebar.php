@@ -3,7 +3,7 @@
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/index.php">
-                    <i class="menu-icon fa fa-bolt"></i>
+                    <i class="menu-icon fa fa-flag-checkered"></i>
                     <span class="menu-text">Start</span>
                 </a>
                 <div class="menu-item-data">
@@ -26,7 +26,7 @@
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/layout.php">
-                    <i class="menu-icon fa fa-gear"></i>
+                    <i class="menu-icon fa fa-columns"></i>
                     <span class="menu-text">Layout</span>
                 </a>
                 <div class="menu-item-data">
@@ -64,7 +64,7 @@
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/branding.php">
-                    <i class="menu-icon fa fa-dashboard"></i>
+                    <i class="menu-icon fa fa-paint-brush"></i>
                     <span class="menu-text">Branding</span>
                 </a>
                 <div class="menu-item-data">
@@ -160,7 +160,7 @@
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/js_components.php">
-                    <i class="menu-icon fa fa-archive"></i>
+                    <i class="menu-icon fa fa-code"></i>
                     <span class="menu-text">JS Components</span>
                 </a>
                 <div class="menu-item-data">

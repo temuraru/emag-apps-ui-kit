@@ -26,8 +26,8 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid">
-                                <p>eMAG Apps UI KIT - JS Components</p>
-                                <p><b>The lightning-fast, modular, mobile-friendly admin template.</b></p>
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>JS Components</b></p>
                             </div>
                         </div>
                     </div>

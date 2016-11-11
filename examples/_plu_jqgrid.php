@@ -31,8 +31,8 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid">
-                                <p>eMAG Apps UI KIT - JqGrid implementation</p>
-                                <p><b>The lightning-fast, modular, mobile-friendly admin template.</b></p>
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>JqGrid</b></p>
                             </div>
                         </div>
                     </div>
