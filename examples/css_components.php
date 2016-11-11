@@ -1502,30 +1502,6 @@
                                     </div>
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
-                                            <p><strong>Vertical button groups:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                            <div class="btn-group" role="group">
-                                                                <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown <span class="caret"></span></button>
-                                                                <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                                                                    <li><a href="#">Dropdown link</a></li>
-                                                                    <li><a href="#">Dropdown link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
                                             <p><strong>Button blocks:</strong></p>
                                             <div class="pad-sep-20 pad-top-40">
                                                 <div class="row">
