@@ -24,7 +24,7 @@
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="container-fluid">
-                                        <p>eMAG Apps Ui KIT</p>
+                                        <p>eMAG Apps UI KIT</p>
                                         <p><b>AJAX Modals</b></p>
                                     </div>
                                  </div>
