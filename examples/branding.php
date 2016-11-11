@@ -114,7 +114,7 @@
                                     <div class="show-panel">
                                         <div class="show-panel-body">
                                             <h2><strong>Typography</strong></h2>
-                                            <p><strong>See below the font families you can use.</strong></p>
+                                            <p><strong>See the font families you can use, below.</strong></p>
                                             <div class="pad-sep-20">
                                                 <div class="row">
                                                     <div class="col-lg-10 col-lg-offset-1">
