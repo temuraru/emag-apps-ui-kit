@@ -49,7 +49,7 @@
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Type variations and print</strong></h4>
+                                            <h4 class="text-primary"><strong>Typefaces variations</strong></h4>
                                             <p><strong>Headings and Paragraphs:</strong></p>
                                             <div class="pad-sep-20">
                                                 <div class="row">
