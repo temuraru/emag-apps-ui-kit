@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <title>Sign in - eMAG Apps UI KIT</title>
+        <title>Log in - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         <?php include_once "modules/_mod_top_include.php"?>
     </head>
