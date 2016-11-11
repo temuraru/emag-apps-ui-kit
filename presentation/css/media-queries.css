@@ -2,48 +2,20 @@
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
-    .logo {
-        width: 600px;
-    }
-
-    .menu-top {
-        font-size: 30px;
-    }
-
-    .menu-top li {
-        margin: 0 30px;
-    }
-
-    .text-small {
-        font-size: 3.2vmin;
-    }
-	#footer {
-		font-size: 30px;
-	}
+   
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (min-width: 321px)and (max-width: 1024px) {
-    .text-big {
-        margin-bottom: 10px;
-    }
+   
+	
+}
 
-    .text-big {
-        font-size: 1.8vw;
-    }
+@media only screen
+and (max-width: 620px) {
 
-    .text-bigger {
-        font-size: 2.4vw;
-    }
-
-    .content {
-        padding-top: 50px;
-    }
-
-    #about .content {
-        padding-top: 50px;
-    }
+	
 }
 
 /* Smartphones (portrait) ----------- */
@@ -57,28 +29,80 @@ and (max-width: 320px) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
     /* STYLES GO HERE */
+	
 }
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width: 1366px) {
+    /* STYLES GO HERE */
+	  .logos img {
+		width: 30px;
+	}
+	.logo {
+    width: 30%;
+	margin-top:60px;
+	}
+	.logo-small{
+		width: 23%;
+		margin-top:30px;
+	}
+	#header{ height:160px}
+	.red-line{ 
+		margin:10px auto
+	}
+	.container{
+		padding-top:160px
+	}
+}
+
+@media only screen
+and (max-width: 1024px) {
+    /* STYLES GO HERE */
+	  .logos img {
+		width: 30px;
+	}
+	.logo {
+    width: 30%;
+	margin-top:10px;
+	}
+	.logo-small{
+		width: 23%;
+		margin-top:10px;
+	}
+	#header{ height:110px}
+	.red-line{ 
+		margin:10px auto
+	}
+	.container{
+		padding-top:100px
+	}
+}
+
 
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape) {
-    .logo {
-        margin-top: 60px;
-    }
-
-    .content {
-        padding: 10px 0;
-    }
-
-    .text-big {
-        font-size: 2.1vw;
-    }
-
-    .text-bigger {
-        font-size: 2.4vw;
-    }
+    .logos img {
+		width: 30px;
+	}
+	.logo {
+    width: 40%;
+	margin-top:100px;
+	}
+	.logo-small{
+		width: 30%;
+		margin-top:30px;
+	}
+	#header{ height:180px}
+	.red-line{ 
+		margin:10px auto
+	}
+	.container{
+		padding-top:200px
+	}
 	
 }
 
@@ -87,54 +111,32 @@ and (orientation: landscape) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: portrait) {
-    .content {
-        padding: 10px 10%;
-    }
-
-    .text-big {
-        font-size: 3.5vw;
-    }
-
-    .text-bigger {
-        font-size: 4.5vw;
-    }
-
-    .blue-button {
-        font-size: 3.5vw;
-    }
-
-    .logo {
-        width: 600px;
-    }
-
-    .menu-top {
-        font-size: 30px;
-    }
-
-    .menu-top li {
-        margin: 0 30px;
-    }
-
     .logos img {
-        width: 70px;
-    }
-	#footer {
-		font-size: 20px;
+		width: 30px;
 	}
+	.logo {
+    width: 70% ;
+	margin-top:20px;
+	}
+	.logo-small{
+		width: 60%;
+		margin-top:20px;
+	}
+	#header{ height:170px}
+	.red-line{ 
+		margin:10px auto
+	}
+	.container{
+		padding-top:200px
+	}
+	.menu-top li { margin:0 39px}
 }
 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width: 1224px) {
-    /* STYLES GO HERE */
-}
 
 /* Large screens ----------- */
 @media only screen
 and (min-width: 1824px) {
-    .logo {
-        margin-top: 150px;
-    }
+   
 }
 
 /* iPhone 5 (portrait &amp; landscape)----------- */
@@ -142,6 +144,7 @@ and (min-width: 1824px) {
 and (min-device-width: 320px)
 and (max-device-width: 568px) {
     /* STYLES GO HERE */
+	
 }
 
 /* iPhone 5 (landscape)----------- */
@@ -149,34 +152,33 @@ and (max-device-width: 568px) {
 and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (orientation: landscape) {
-    .content {
-        padding: 10px 0;
-        margin-top: 150px !important;
-    }
-
-    .text-big {
-        font-size: 1.8vw;
-    }
-
-    .text-bigger {
-        font-size: 2.8vw;
-    }
-
-    .logos img {
-        width: 30px;
-    }
-
-    .logos {
-        margin-bottom: 0;
-    }
-
-    .scroll-btn {
-        margin-top: 40px;
-    }
-
-    #about .content {
-        padding-top: 20px;
-    }
+	.logos img {
+		width: 30px;
+	}
+	.logo {
+    width: 50%;
+	margin-top:5px;
+	}
+	.logo-small{
+		width: 30%;
+	}
+	#header{ height:100px}
+	.red-line{ 
+		margin:5px auto
+	}
+	.container{
+		padding-top:100px
+	}
+	.text-big {	
+		font-size: 8px;
+	}
+	.text-bigger {	
+		font-size: 12px;		
+	}
+	.text-small{	
+		font-size: 8px;		
+	}
+   
 }
 
 /* iPhone 5 (portrait)----------- */
@@ -184,35 +186,33 @@ and (orientation: landscape) {
 and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (orientation: portrait) {
-    .content {
-        padding: 10px 0;
-        margin-top: 250px !important;
-    }
-
-    .content {
-        padding: 10px 10%;
-    }
-
-    .text-big {
-        font-size: 4vw;
-        margin-bottom: 40px;
-    }
-
-    .text-bigger {
-        font-size: 5vw;
-        margin-bottom: 40px
-    }
-
-    .blue-button {
-        font-size: 4vw;
-        display: inline-block;
-    }
-
-    .logos {
-        margin-bottom: 50px;
-    }
-
     .logos img {
-        width: 80px;
-    }
+		width: 30px;
+	}
+	.logo {
+    width: 88% ;
+	margin-top:10px;
+	}
+	.logo-small{
+		width: 70%;
+		margin-top:5px;
+	}
+	#header{ height:110px}
+	.red-line{ 
+		margin:5px auto
+	}
+	.container{
+		padding-top:100px
+	}
+	.menu-top li { margin:0 7px}
+	.text-big {	
+		font-size: 16px;
+		margin-bottom:10px;
+	}
+	.text-bigger {	
+		font-size: 20px;		
+	}
+	.text-small{	
+		font-size: 16px;		
+	}
 }
