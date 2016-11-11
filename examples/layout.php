@@ -332,7 +332,7 @@
                                         <div class="show-panel-body">
                                             <h2><strong>Sidebar</strong></h2>
                                             <p><strong>eMAG Apps UI KIT's unique sidebar menu.</strong></p>
-                                            <p>You can check below the different sidebar states.</p>
+                                            <p>You can check the different sidebar states below.</p>
                                             <div class="row">
                                                 <div class="col-md-3">
                                                     <p><strong>Fixed state</strong></p>
@@ -433,6 +433,7 @@
                                         <div class="show-panel-body">
                                             <h2><strong>Footer</strong></h2>
                                             <p><strong>eMAG Apps UI KIT's unique CSS footer</strong></p>
+                                            <p>You can check the different footer states below.</p>
                                             <p><strong>Fixed state</strong></p>
                                             <div class="radio">
                                                 <label>
