@@ -11,6 +11,7 @@ $(document).ready(function() {
 	
 	setPageHeight();
 	showMenu();
+	disableArrowKeys();
 	
     $window.on('resize', function(){
 		resetPage();
@@ -58,4 +59,16 @@ $(document).ready(function() {
 			$logo.removeClass('logo-small');
 		}
 	}
+	
+	function disableArrowKeys() {
+        var ar = new Array(37, 39);
+        $(document).keydown(function(e) {
+            var key = e.which;
+			if ($.inArray(key, ar) > -1) {
+                e.preventDefault();
+                return false; 
+           }
+            return true;
+        });
+    }
 });
