@@ -3307,7 +3307,7 @@ var Popover = (function ($) {
         } else {
             if (sidebarStatus == 'close' && window.innerWidth > SCREEN_XS_MAX) {
                 sidebarJqObj.addClass('sidebar-min');
-                sidebarJqObj.find('.menu-icon').removeClass('fa-arrow-left').addClass('fa-arrow-right');
+                sidebarJqObj.find('#toggle-sidebar-size-btn .menu-icon').removeClass('fa-arrow-left').addClass('fa-arrow-right');
             }
         }
     });
@@ -3317,10 +3317,10 @@ var Popover = (function ($) {
 
         if (sidebarStatus == 'close' && window.innerWidth > SCREEN_XS_MAX) {
             sidebarJqObj.addClass('sidebar-min');
-            sidebarJqObj.find('.menu-icon').removeClass('fa-arrow-left').addClass('fa-arrow-right');
+            sidebarJqObj.find('#toggle-sidebar-size-btn .menu-icon').removeClass('fa-arrow-left').addClass('fa-arrow-right');
         } else {
             sidebarJqObj.removeClass('sidebar-min');
-            sidebarJqObj.find('.menu-icon').removeClass('fa-arrow-right').addClass('fa-arrow-left');
+            sidebarJqObj.find('#toggle-sidebar-size-btn .menu-icon').removeClass('fa-arrow-right').addClass('fa-arrow-left');
         }
     })
 }(jQuery);
@@ -3340,7 +3340,7 @@ var Popover = (function ($) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
-                return '<span class="formatter-notavailable badge">N/A</span>';
+                return '<span class="formatter-notavailable label label-default">N/A</span>';
             }
 
             return item;

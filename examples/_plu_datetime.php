@@ -24,17 +24,17 @@
         <!-- CONTENT:Start -->
         <div class="main-content">
             <div class="page-content">
-                <div class="jumbotron">
+                <div class="jumbotron content-header">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid pad-sep-60">
-                                <h1>eMAG Apps UI KIT - DateTime</h1>
-                                <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>DateTime</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <section id="summernoteStandard" class="pad-top-20">
+                <section id="summernoteStandard" class="pad-top-40">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel">
@@ -60,10 +60,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -81,10 +80,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -102,10 +100,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -123,10 +120,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -143,9 +139,6 @@
                                                 </div>
                                             </fieldset>
                                         </form>
-                                    </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                     </div>
                                 </div>
                             </div>
@@ -178,6 +171,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#daterangepicker_standard').daterangepicker({
                     isCustomDate: function() {

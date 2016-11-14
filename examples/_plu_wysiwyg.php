@@ -27,17 +27,17 @@
                     <!-- CONTENT:Start -->
                     <div class="main-content">
                         <div class="page-content">
-                            <div class="jumbotron">
+                            <div class="jumbotron content-header">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2">
-                                        <div class="container-fluid pad-sep-60">
-                                            <h1>eMAG Apps UI KIT - Wysiwyg editor</h1>
-                                            <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                                        <div class="container-fluid">
+                                            <p>eMAG Apps UI KIT</p>
+                                            <p><b>Wysiwyg editor</b></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <section id="summernoteStandard" class="pad-top-20">
+                            <section id="summernoteStandard" class="pad-top-40">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="show-panel show-panel-example">
@@ -53,7 +53,8 @@
                                                     </div>
                                                 </div>
                                             </div>                                        
-                                            <div class="show-panel-footer"></div>
+                                        </div>
+                                        <div class="show-panel show-panel-example">
                                             <div class="show-panel-body">
                                                 <p><strong>Air mode</strong></p>
                                                 <p>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" target="_blank">summernote.org</a></p>
@@ -68,8 +69,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -98,6 +98,8 @@
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#summernote1').summernote({
                     minHeight: 300,

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <title>Sign in - eMAG Apps UI KIT</title>
+        <title>Log in - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         <?php include_once "modules/_mod_top_include.php"?>
     </head>
@@ -23,7 +23,7 @@
                             <div id="login_box" class="auth-box">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h2>Sign into your account</h2>
+                                        <h2 class="auth-title">Log in</h2>
                                         <form id="user_auth">
                                             <div class="form-group">
                                                 <label for="user_username" class="control-label">Username</label>
@@ -46,7 +46,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Sign in</span></a>
+                                                        <a href="index.php" id="special_submit" class="btn btn-primary"><span>Log in</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -60,7 +60,7 @@
                             <div id="recover_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h2>Reset your password</h2>
+                                        <h2 class="auth-title">Reset your password</h2>
                                         <form id="user_recover_password">
                                             <div class="form-group">
                                                 <label for="user_email" class="control-label">Email address</label>
@@ -74,7 +74,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Confirm</span></a>
+                                                        <a href="index.php" id="special_submit" class="btn btn-primary"><span>Confirm</span></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -85,7 +85,7 @@
                             <div id="register_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h2>Sign up for an account</h2>
+                                        <h2 class="auth-title">Sign up</h2>
                                         <form id="user_register">
                                             <div class="form-group">
                                                 <label for="user_reg_email" class="control-label">Email address</label>
@@ -128,7 +128,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="pull-right panel-controls">
-                                                        <a href="overview.php" id="special_submit" class="btn btn-primary"><span>Register</span></a>
+                                                        <a href="index.php" id="special_submit" class="btn btn-primary"><span>Sign up</span></a>
                                                     </div>
                                                 </div>
                                             </div>
