@@ -102,7 +102,7 @@
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
                             <a href="/examples/css_components.php">
-                                <span class="menu-text">Type styles and print</span>
+                                <span class="menu-text">Typefaces variations</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -198,19 +198,6 @@
                                 <span class="menu-text">Fancytree</span>
                             </a>
                         </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#">
-                    <i class="menu-icon fa fa-plug"></i>
-                    <span class="menu-text">Plugins</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" class="menu-item-min-link">
-                        <span class="menu-text">Plugins</span>
-                    </a>
-                    <ul class="sidebar-submenu">
                         <li class="menu-item">
                             <a href="/examples/_plu_wysiwyg.php">
                                 <span class="menu-text">Wysiwyg editor</span>

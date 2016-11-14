@@ -9555,6 +9555,13 @@ button.close {
   color: #000;
   content: '#fafafa';
 }
+.color-swatches .swatch-white {
+  background-color: #fff;
+}
+.color-swatches .swatch-white:before {
+  color: #000;
+  content: '#fff';
+}
 .wba-font-primary,
 .wba-font-monospace {
   position: relative;
@@ -11509,6 +11516,7 @@ input[type="radio"].form-radio-control:disabled {
   border-color: #ccc;
 }
 .input-group.input-group-no-separation .input-group-addon {
+  cursor: default;
   background: none;
   border-left: none;
 }

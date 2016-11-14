@@ -116,76 +116,6 @@
                                             </span>
                                         </div>
                                     </div>
-
-                                    <form>
-                                        <fieldset>
-                                            <legend class="sr-only">TreeType example form</legend>
-                                            <div class="form-group">
-                                                <label for="test_input" class="control-label">Test input</label>
-                                                <input type="text" id="test_input" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="category_treeDefault">Category tree</label>
-                                                <div class="hide-with-opacity">
-                                                    <select id="category_tree_onlyleafs" multiple="multiple">
-                                                        <option value=""></option>
-                                                        <option value="31">Software</option>
-                                                        <option value="175">Antivirus</option>
-                                                        <option value="221">Sisteme de operare</option>
-                                                        <option value="225">Aplicatii desktop OEM</option>
-                                                        <option value="226" selected="selected">Medii de dezvoltare OEM</option>
-                                                        <option value="227" selected="selected">Sisteme de operare server OEM</option>
-                                                        <option value="228">Aplicatii server OEM</option>
-                                                        <option value="340">Clienti server OEM</option>
-                                                        <option value="222">Office & Aplicatii Desktop</option>
-                                                        <option value="229">Sisteme de operare Retail</option>
-                                                        <option value="230">Aplicatii desktop Retail</option>
-                                                        <option value="231">Medii de dezvoltare Retail</option>
-                                                        <option value="232">Sisteme de operare server Retail</option>
-                                                        <option value="233">Aplicatii server Retail</option>
-                                                        <option value="274">Documentatii Retail</option>
-                                                        <option value="344">Clienti server retail</option>
-                                                        <option value="361">Editare foto-video</option>
-                                                        <option value="1512">AC</option>
-                                                        <option value="1513">Photo DSLR</option>
-                                                        <option value="378">Aparate foto D-SLR</option>
-                                                        <option value="407">Accesorii aparate foto DSLR si Mirrorless</option>
-                                                        <option value="443">Kit curatare DSLR</option>
-                                                        <option value="1117">Aparate foto Mirrorless</option>
-                                                        <option value="1514">Photo Compact</option>
-                                                        <option value="54">Aparate foto compacte</option>
-                                                        <option value="1517">AV & HiFi</option>
-                                                        <option value="80">Videoproiectoare</option>
-                                                        <option value="117">DVD & Blu-Ray Playere</option>
-                                                        <option value="408">Audio HI-FI</option>
-                                                        <option value="204">Playere & Receivere</option>
-                                                        <option value="539">Amplificatoare</option>
-                                                        <option value="540">Playere</option>
-                                                        <option value="542">Boxe</option>
-                                                        <option value="635">Sisteme audio wireless</option>
-                                                        <option value="1061">Pick-Up</option>
-                                                        <option value="1150">Accesorii Audio Hi-Fi</option>
-                                                        <option value="467">Mediaplayere</option>
-                                                        <option value="1133">Home Audio</option>
-                                                        <option value="113">Sisteme Home Cinema</option>
-                                                        <option value="124">Sisteme audio</option>
-                                                        <option value="162">Radiocasetofoane</option>
-                                                        <option value="1140">Docking</option>
-                                                        <option value="1534">Other Products</option>
-                                                    </select>
-                                                </div>
-                                                <div class="input-group input-group-no-separation">
-                                                    <div class="form-control" id="id_category_tree_onlyleafs"></div>
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-sitemap"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="reset" class="btn btn-primary pull-right" value="Reset" />
-                                            </div>
-                                        </fieldset>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -452,19 +382,6 @@
                 TreeTypeObject = $("#id_category_tree_default").TreeType({
                     treeData: fancytreeContent,
                     selectId: "category_tree_default",
-                    modalTitle: 'Select',
-                    modalResetLabel: 'Reset',
-                    modalCancelLabel: 'Cancel',
-                    modalOkLabel: 'Select',
-                    textUnmatched: 'Hide unmatched',
-                    textSelectHierarchy: 'Hierarchical multi-selection',
-                    textSelected: 'selected',
-                    searchPlaceholder: 'Search'
-                });
-                TreeTypeObject = $("#id_category_tree_onlyleafs").TreeType({
-                    treeData: fancytreeContentSelectOnlyLeafs,
-                    selectId: "category_tree_onlyleafs",
-                    selectOnlyLeaves: 1,
                     modalTitle: 'Select',
                     modalResetLabel: 'Reset',
                     modalCancelLabel: 'Cancel',

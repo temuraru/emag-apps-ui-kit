@@ -99,6 +99,10 @@
                                                                 <div class="faux-elem ratio1-1 swatch swatch-gray-98"></div>
                                                                 <div class="pad-top-20"><small>@gray-98</small></div>
                                                             </div>
+                                                            <div class="col-xs-6 col-sm-2">
+                                                                <div class="faux-elem ratio1-1 swatch swatch-white"></div>
+                                                                <div class="pad-top-20"><small>@white</small></div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>                                                                                                

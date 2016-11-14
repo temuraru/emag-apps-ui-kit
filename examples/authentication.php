@@ -60,7 +60,7 @@
                             <div id="recover_box" class="auth-box hidden">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <h2>Reset your password</h2>
+                                        <h2 class="auth-title">Reset your password</h2>
                                         <form id="user_recover_password">
                                             <div class="form-group">
                                                 <label for="user_email" class="control-label">Email address</label>

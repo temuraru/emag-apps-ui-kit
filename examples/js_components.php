@@ -425,7 +425,7 @@
 
                 var errorModal = new PhotonModal({
                     id: 'danger_modal',
-                    title: 'Danger modal',
+                    title: 'Error modal',
                     content: dummyModalContent,
                     buttons: {
                         cancel: {
