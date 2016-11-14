@@ -3,10 +3,10 @@
 <head>
         <title>Plugins - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
-        
+
         <!-- PLUGIN: DateRangePicker -->
         <link rel="stylesheet" href="../dist/plugins/daterangepicker/daterangepicker.min.css">
-        
+
         <?php include_once "modules/_mod_top_include.php"?>
 </head>
 <body>
@@ -164,25 +164,22 @@
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        
+
         <!-- PLUGIN: moment.js -->
         <script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
         <!-- PLUGIN: DateRangePicker -->
         <script src="../dist/plugins/daterangepicker/daterangepicker.min.js"></script>
-        
+
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">               
+        <script type="text/javascript">
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
-                $('#daterangepicker_standard').daterangepicker({
-                    isCustomDate: function() {
-                        return 'custom-range';
-                    }});
+                $('#daterangepicker_standard').daterangepicker();
                 $('#daterangepicker_standard_with_value').daterangepicker();
                 $('#daterangepicker_standard_with_format').daterangepicker({
                     timePicker: true,
