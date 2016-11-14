@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Plugins | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
-
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
-
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-        <!-- PLUGIN: Magnific -->
+        <title>Plugins - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
         <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css">
-
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
+        <?php include_once "modules/_mod_top_include.php"?>
     </head>
     <body>
-        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <?php include_once "modules/_mod_browser_upgrade.php"?>
+
         <!-- HEADER:Start -->
         <?php include_once "modules/_mod_header.php"?>
         <!-- HEADER:End -->
@@ -40,17 +21,17 @@
                 <!-- CONTENT:Start -->
                 <div class="main-content">
                     <div class="page-content">
-                        <div class="jumbotron">
+                        <div class="jumbotron content-header">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
-                                    <div class="container-fluid pad-sep-60">
-                                        <h1>PHOTON - Image gallery</h1>
-                                        <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                                    <div class="container-fluid">
+                                        <p>eMAG Apps UI KIT</p>
+                                        <p><b>Image gallery</b></p>
                                     </div>
                                  </div>
                             </div>
                         </div>
-                        <section id="summernoteStandard" class="pad-top-20">
+                        <section id="summernoteStandard" class="pad-top-40">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="show-panel">
@@ -65,33 +46,32 @@
                                                     <div class="row">
                                                         <div class="col-lg-10 col-lg-offset-1" data-showcase="example">
                                                             <div id="default_magnific" class="zoom-gallery zg-grid">
-                                                                <a href="../dist/css/img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
-                                                                    <img src="../dist/css/img/photo-1.jpg" alt="gallery-image">
+                                                                <a href="img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
+                                                                    <img src="img/photo-1.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-4.jpg" data-source="https://unsplash.com/photos/BeIvjuz6k2k" title="by Adrian Pelletier">
-                                                                    <img src="../dist/css/img/photo-4.jpg" alt="gallery-image">
+                                                                <a href="img/photo-4.jpg" data-source="https://unsplash.com/photos/BeIvjuz6k2k" title="by Adrian Pelletier">
+                                                                    <img src="img/photo-4.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-5.jpg" data-source="https://unsplash.com/photos/DjlKxYFJlTc" title="by Elliott Engelmann">
-                                                                    <img src="../dist/css/img/photo-5.jpg" alt="gallery-image">
+                                                                <a href="img/photo-5.jpg" data-source="https://unsplash.com/photos/DjlKxYFJlTc" title="by Elliott Engelmann">
+                                                                    <img src="img/photo-5.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-6.jpg" data-source="http://www.gettyimages.com/license/484398332" title="by Carl Court">
-                                                                    <img src="../dist/css/img/photo-6.jpg" alt="gallery-image">
+                                                                <a href="img/photo-6.jpg" data-source="http://www.gettyimages.com/license/484398332" title="by Carl Court">
+                                                                    <img src="img/photo-6.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-7.jpg" data-source="http://www.volvooceanrace.com/en/home.html" title="Volvo Ocean Race/Team Vestas Wind/2015">
-                                                                    <img src="../dist/css/img/photo-7.jpg" alt="gallery-image">
+                                                                <a href="img/photo-7.jpg" data-source="http://www.volvooceanrace.com/en/home.html" title="Volvo Ocean Race/Team Vestas Wind/2015">
+                                                                    <img src="img/photo-7.jpg" alt="gallery-image">
                                                                 </a>
-                                                                <a href="../dist/css/img/photo-8.gif" data-source="https://www.youtube.com/watch?v=o0u4M6vppCI" title="'Shia LaBeouf' Live - Rob Cantor">
-                                                                    <img src="../dist/css/img/photo-8.gif" alt="gallery-image">
+                                                                <a href="img/photo-8.gif" data-source="https://www.youtube.com/watch?v=o0u4M6vppCI" title="'Shia LaBeouf' Live - Rob Cantor">
+                                                                    <img src="img/photo-8.gif" alt="gallery-image">
                                                                 </a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer">
-                                                <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="show-panel">
                                         <div class="show-panel-example">
                                             <div class="show-panel-body">
                                                 <p><strong>All AJAX</strong></p>
@@ -99,14 +79,14 @@
                                                 <div class="pad-sep-40">
                                                     <div class="row">
                                                         <div class="col-lg-10 col-lg-offset-1 text-center">
-                                                            <a href="../dist/css/img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a><br>
+                                                            <a href="img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a><br>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer">
+                                            </div>
                                         </div>
-                                        </div>
+                                    </div>
+                                    <div class="show-panel">
                                         <div class="show-panel-example">
                                             <div class="show-panel-body">
                                                 <p><strong>Youtube/Vimeo/etc. embeds</strong></p>
@@ -118,8 +98,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                        
-                                            <div class="show-panel-footer">
                                             </div>
                                         </div>
                                     </div>
@@ -135,35 +113,24 @@
                 </div>
             </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
         
-        <!-- POPUPS:End -->
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-
-        <!-- PLUGIN: This script file helps display demo code. Don't add it everywhere -->
-        <script src="../dist/js/demo_helpers.js"></script>
-
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <script src="../dist/plugins/prism/prism.min.js"></script>
-
+        
         <!-- PLUGIN: Magnific popup -->
         <script src="../dist/plugins/magnific/magnific.min.js"></script>
-
-        <!--MAIN SCRIPT-->
+        
         <script src="../dist/js/main_script.min.js"></script>
-
         <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
+
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">      
+        <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
-                demoHelpers();  //Requires demo_helpers.js
-
-                showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
+                demoHelpers();  // Require demo_helpers.js
 
                 $('#default_magnific').magnificPopup({
                     delegate: 'a',
@@ -208,5 +175,6 @@
             });
         </script>
         <!-- DOCUMENT-READY:End -->
+        
     </body>
 </html>

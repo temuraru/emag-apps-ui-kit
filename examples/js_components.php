@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Components | Photon - The Superfast, Supersimple UI Kit</title>
-    <meta name="description" content="Photon - The superfast, supersimple UI Kit"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="eMAG CORE UI Team">
-
-    <!-- The favicon -->
-    <?php include_once "modules/_mod_favicon.php" ?>
-
-    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-    <!-- PHOTON main styles -->
-    <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-    <![endif]-->
-    <script src="../dist/plugins/tether/tether.min.js"></script>
+    <title>JS Components - eMAG Apps UI KIT</title>
+    <?php include_once "modules/_mod_meta.php"?>
+    <?php include_once "modules/_mod_top_include.php"?>
 </head>
 <body>
-<!--[if lt IE 9]>
-<body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-    href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+<?php include_once "modules/_mod_browser_upgrade.php"?>
+
 <!-- HEADER:Start -->
 <?php include_once "modules/_mod_header.php" ?>
 <!-- HEADER:End -->
+
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
     <div class="main-container-inner">
@@ -40,12 +22,12 @@
         <!-- CONTENT:Start -->
         <div class="main-content">
             <section class="page-content">
-                <div class="jumbotron">
+                <div class="jumbotron content-header">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid pad-sep-60">
-                                <h1>PHOTON - Components</h1>
-                                <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>JS Components</b></p>
                             </div>
                         </div>
                     </div>
@@ -70,58 +52,72 @@
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Modals</strong></h4>
                                     <p><strong>Default styling:</strong></p>
-                                    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
-                                        functionality and smart defaults.</p>
-                                    <div class="alert alert-warning">
-                                        <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
-                                            supported</strong> Be sure not to open a modal while another is still
-                                        visible. Showing more than one modal at a time requires custom code.
-                                    </div>
-                                    <div class="alert alert-warning">
-                                        <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
-                                            placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
-                                            id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
-                                        components affecting the modal's appearance and/or functionality.
-                                    </div>
-                                    <div class="pad-sep-40">
-                                        <div class="show-example-modal" data-example-id="static-modal">
-                                            <div class="modal" tabindex="-1" role="dialog">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                    aria-label="Close"><i class="fa fa-close"
-                                                                                          aria-hidden="true"></i>
-                                                            </button>
-                                                            <h4 class="modal-title">Modal title</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <p>This is </p>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <div class="pull-left">
-                                                                <div class="form-sep">
+
+                                    <div class="show-example-modal" data-example-id="static-modal">
+                                        <div class="modal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close"><i class="fa fa-close"
+                                                                                      aria-hidden="true"></i>
+                                                        </button>
+                                                        <h4 class="modal-title">Modal title</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Modal with form</p>
+                                                        <form id="exampleForm1" action="" method="post">
+                                                            <fieldset>
+                                                                <legend class="sr-only">Simple form</legend>
+                                                                <div class="form-group has-error">
+                                                                    <label class="control-label required" for="exampleInputEmail1">Email address</label>
+                                                                    <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
+                                                                    <div class="help-block">Please complete this field.</div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label required" for="exampleInputPassword1">Password</label>
+                                                                    <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
+                                                                </div>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div class="pull-left">
+                                                            <div class="form-sep">
                                                                     <span
                                                                         class="required">Some fields may be required.</span>
-                                                                </div>
                                                             </div>
-                                                            <div class="pull-right panel-controls">
-                                                                <button type="button" id="special_submit"
-                                                                        class="btn btn-success"><span>Save</span>
-                                                                </button>
-                                                                <button type="reset" id="special_reset"
-                                                                        class="btn btn-default" data-dismiss="modal">
-                                                                    <span>Cancel</span></button>
-                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right panel-controls">
+                                                            <button type="button" id="special_submit"
+                                                                    class="btn btn-success"><span>Save</span>
+                                                            </button>
+                                                            <button type="reset" id="special_reset"
+                                                                    class="btn btn-default" data-dismiss="modal">
+                                                                <span>Cancel</span></button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
+                                        functionality and smart defaults.</p>
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
+                                            supported</strong> Be sure not to open a modal while another is still
+                                        visible. Showing more than one modal at a time requires custom code.
+                                    </div>
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
+                                            placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
+                                            id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
+                                        components affecting the modal's appearance and/or functionality.
+                                    </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                </div>
+                            </div>
+                            <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
                                     <p><strong>Demo modals with different sizing:</strong></p>
                                     <div class="pad-sep-20">
@@ -151,67 +147,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                </div>
+                            </div>
+                            <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
                                     <p><strong>Informational modals:</strong></p>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group btn-group-justified" role="group"
-                                                     aria-label="...">
+                                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Info modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default info-modal-button">Info modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Warning modal
-                                                        </button>
+                                                        <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">Danger modal
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="show-panel-footer">
-                                </div>
-                                <div class="show-panel-body">
-                                    <p><strong>Varying modal content based on trigger button:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group btn-group-justified" role="group"
-                                                     aria-label="...">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">@Rob Stark
-                                                        </button>
+                                                        <button type="button" class="btn btn-default error-modal-button">Error modal</button>
                                                     </div>
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">@Daenerys
-                                                            Targaryen
-                                                        </button>
-                                                    </div>
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default">@Tyrion
-                                                            Lannister
-                                                        </button>
+                                                        <button type="button" class="btn btn-default success-modal-button">Success modal</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="show-panel-footer">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="pad-top-20">
+                <section id="jsTooltips" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -235,15 +200,11 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                    <pre class="language-markup"><code class="language-markup"
-                                                                       data-showcase="code"></code></pre>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="pad-top-20">
+                <section id="jsPopovers" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -256,14 +217,11 @@
                                         <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="pad-top-20">
+                <section id="jsUtilities" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
@@ -295,8 +253,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                </div>
+                            </div>
+                            <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
                                     <p><strong>Checkboxes disguised as buttons:</strong></p>
                                     <p>Add
@@ -325,8 +283,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                </div>
+                            </div>
+                            <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
                                     <p><strong>Radio buttons disguised as regular buttons:</strong></p>
                                     <div class="pad-sep-20">
@@ -350,8 +308,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -366,6 +322,7 @@
 </div>
 </div>
 <!-- PAGE:End -->
+
 <!-- POPUPS:Start -->
 <div id="popSpace">
     <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -377,18 +334,14 @@
                     <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
                 </div>
                 <div class="modal-body">
-                    <h2>This is bacon ipsum</h2>
-                    <p class="lead">Bacon ipsum dolor amet pork fatback elit dolor, short loin t-bone drumstick fugiat
-                        ribeye. </p>
+                    <h2>Suspendisse rutrum</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="pad-sep-20">
-                        <span class="caption">MODAL, 8hrs ago</span>
+                        <span class="caption">Nam scelerisque nunc</span>
                     </div>
-                    <p>Ribeye tempor jerky cupidatat ea tongue. Ribeye strip steak meatloaf nostrud, alcatra ullamco
-                        doner ad magna beef ribs excepteur qui duis leberkas. Sirloin spare ribs dolore aliquip, jowl
-                        prosciutto nulla ribeye beef ribs. Tenderloin proident tail exercitation spare ribs tempor.
-                        Short loin turkey ad, ut cupim pig jowl landjaeger frankfurter picanha strip steak. Labore esse
-                        cillum minim ea, turducken leberkas alcatra cupidatat doner pig occaecat non ground round pork
-                        loin.</p>
+                    <p>
+                        Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Mauris tristique pellentesque ante ullamcorper aliquam. Maecenas dignissim porta turpis, interdum tempus velit aliquam ac. Morbi a risus a purus porttitor efficitur. Donec laoreet condimentum nisi nec bibendum. Sed non neque mollis, rutrum tellus ac, porttitor elit. Pellentesque sed magna nisi. Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc. Quisque vel quam quis sapien ornare porta nec a purus. Nullam finibus convallis mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <div class="pull-right panel-controls">
@@ -399,43 +352,128 @@
         </div>
     </div>
 </div>
-<!-- POPUPS:End -->
-<!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">" + "<" + "/script>")</script>
-<script src="../dist/js/main_script.min.js"></script>
-<script src="../dist/js/demo_helpers.js"></script>
 
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
 
-<!-- SCRIPTS:End -->
-<!-- DOCUMENT-READY:Start -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        console.log('Ready, Captain!');
+        <script src="../dist/plugins/tether/tether.min.js"></script>
 
-        demoHelpers();  //Requires demo_helpers.js
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
 
-        //This function is just fo sho. You don't really have to include it in your app, man.
-        function modalSizing() {
-            $('#mySmallDemoModal').on('click', function () {
-                var mode = $(this).data('target');
-                $(mode).find('.modal-dialog').addClass('modal-sm');
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
+
+                //This function is just fo sho. You don't really have to include it in your app, man.
+                function modalSizing() {
+                    $('#mySmallDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-sm');
+                        $('#myModalLabel').html('Standard modal - Small');
+                    });
+                    $('#myLargeDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-lg');
+                        $('#myModalLabel').html('Standard modal - Large');
+                    });
+                    $('#myDemoModal').on('hidden.bs.modal', function (e) {
+                        $(this).find('.modal-dialog').attr('class', 'modal-dialog');
+                        $('#myModalLabel').html('Standard modal');
+                    });
+                }
+
+                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
+                modalSizing();
+
+                var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
+
+                var infoModal = new PhotonModal({
+                    id: 'info_modal',
+                    title: 'Info modal',
+                    content: dummyModalContent,
+                    buttons: {},
+                    size: 'medium',
+                    type: 'info',
+                    closeOnClickOutside: false,
+                    showCloseButton: true
+                });
+
+                var warningModal = new PhotonModal({
+                    id: 'warning_modal',
+                    title: 'Warning modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'warning',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                var errorModal = new PhotonModal({
+                    id: 'danger_modal',
+                    title: 'Error modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'error',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                var successModal = new PhotonModal({
+                    id: 'success_modal',
+                    title: 'Success modal',
+                    content: dummyModalContent,
+                    buttons: {
+                        cancel: {
+                            label: 'OK',
+                            class: 'btn btn-default'
+                        }
+                    },
+                    size: 'medium',
+                    type: 'success',
+                    closeOnClickOutside: false,
+                    showCloseButton: false
+                });
+
+                $(document.body).on('click', '.info-modal-button', function () {
+                    infoModal.show();
+                });
+
+                $(document.body).on('click', '.warning-modal-button', function () {
+                    warningModal.show();
+                });
+
+                $(document.body).on('click', '.error-modal-button', function () {
+                    errorModal.show();
+                });
+
+                $(document.body).on('click', '.success-modal-button', function () {
+                    successModal.show();
+                });
+
             });
-            $('#myLargeDemoModal').on('click', function () {
-                var mode = $(this).data('target');
-                $(mode).find('.modal-dialog').addClass('modal-lg');
-            });
-            $('#myDemoModal').on('hidden.bs.modal', function (e) {
-                $(this).find('.modal-dialog').attr('class', 'modal-dialog');
-            });
-        }
-
-        modalSizing();
-        showcasing();
-    });
-</script>
-<!-- DOCUMENT-READY:End -->
+        </script>
+        <!-- DOCUMENT-READY:End -->
+        
 </body>
 </html>

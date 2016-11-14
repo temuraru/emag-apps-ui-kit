@@ -2,23 +2,23 @@
     <div class="sidebar-outer">
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/overview.php">
-                    <i class="menu-icon fa fa-bolt"></i>
+                <a href="#" data-href="/examples/index.php">
+                    <i class="menu-icon fa fa-flag-checkered"></i>
                     <span class="menu-text">Start</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="/examples/overview.php" class="menu-item-min-link">
+                    <a href="/examples/index.php" class="menu-item-min-link">
                         <span class="menu-text">Start</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/overview.php#gettingStarted">
-                                <span class="menu-text">Getting started</span>
+                            <a href="/examples/index.php#overview">
+                                <span class="menu-text">Overview</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/overview.php#overview">
-                                <span class="menu-text">Overview</span>
+                            <a href="/examples/index.php#gettingStarted">
+                                <span class="menu-text">Getting started</span>
                             </a>
                         </li>
                     </ul>
@@ -26,7 +26,7 @@
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/layout.php">
-                    <i class="menu-icon fa fa-gear"></i>
+                    <i class="menu-icon fa fa-columns"></i>
                     <span class="menu-text">Layout</span>
                 </a>
                 <div class="menu-item-data">
@@ -36,11 +36,6 @@
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
                             <a href="/examples/layout.php">
-                                <span class="menu-text">Layout</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/layout.php#boilerplate">
                                 <span class="menu-text">Boilerplate</span>
                             </a>
                         </li>
@@ -69,7 +64,7 @@
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/branding.php">
-                    <i class="menu-icon fa fa-dashboard"></i>
+                    <i class="menu-icon fa fa-paint-brush"></i>
                     <span class="menu-text">Branding</span>
                 </a>
                 <div class="menu-item-data">
@@ -79,11 +74,6 @@
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
                             <a href="/examples/branding.php">
-                                <span class="menu-text">Branding</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/branding.php#colourScheme">
                                 <span class="menu-text">Color scheme</span>
                             </a>
                         </li>
@@ -95,11 +85,6 @@
                         <li class="menu-item">
                             <a href="/examples/branding.php#icons">
                                 <span class="menu-text">Icons</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/branding.php#usage">
-                                <span class="menu-text">Recommended usage</span>
                             </a>
                         </li>
                     </ul>
@@ -117,12 +102,7 @@
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
                             <a href="/examples/css_components.php">
-                                <span class="menu-text">CSS Components</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/css_components.php#typeStyles">
-                                <span class="menu-text">Type styles and print</span>
+                                <span class="menu-text">Typefaces variations</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -146,21 +126,6 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssPagination">
-                                <span class="menu-text">Pagination and pills</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/css_components.php#cssNavs">
-                                <span class="menu-text">Navs</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/css_components.php#cssBreadcrumbs">
-                                <span class="menu-text">Breadcrumbs</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/examples/css_components.php#cssTooltips">
                                 <span class="menu-text">CSS Tooltips</span>
                             </a>
@@ -176,18 +141,8 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssProgressBars">
-                                <span class="menu-text">Progress bars</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/examples/css_components.php#cssPanels">
                                 <span class="menu-text">Panels</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/examples/css_components.php#cssListGroups">
-                                <span class="menu-text">List groups</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -200,17 +155,12 @@
                                 <span class="menu-text">Embeds</span>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="/examples/css_components.php#cssUtilities">
-                                <span class="menu-text">Utilities</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
                 <a href="#" data-href="/examples/js_components.php">
-                    <i class="menu-icon fa fa-archive"></i>
+                    <i class="menu-icon fa fa-code"></i>
                     <span class="menu-text">JS Components</span>
                 </a>
                 <div class="menu-item-data">
@@ -220,12 +170,22 @@
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
                             <a href="/examples/js_components.php">
-                                <span class="menu-text">JS Components</span>
+                                <span class="menu-text">Modals</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/js_components.php#modals">
-                                <span class="menu-text">Modals</span>
+                            <a href="/examples/js_components.php#jsTooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/examples/js_components.php#jsPopovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/examples/js_components.php#jsUtilities">
+                                <span class="menu-text">Utilities</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -234,101 +194,8 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Dropdowns</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Tabs</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Widgets</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Tooltips and Popovers</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Collapsibles</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Scrollspy</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Notifications</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">nProgress loading bar</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Tether & Drop.js</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/examples/_plu_fancytree.php">
                                 <span class="menu-text">Fancytree</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Utilities</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#">
-                    <i class="menu-icon fa fa-plug"></i>
-                    <span class="menu-text">Plugins</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" class="menu-item-min-link">
-                        <span class="menu-text">Plugins</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Plugins</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Form enhancements</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Animate.css</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">BlockUI</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Shepherd</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Datatables</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -342,18 +209,13 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Dropzone.js</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/examples/_plu_datetime.php">
                                 <span class="menu-text">DateTime</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">jQuery UI</span>
+                            <a href="/examples/_plu_jqgrid.php">
+                                <span class="menu-text">JqGrid</span>
                             </a>
                         </li>
                     </ul>
@@ -370,13 +232,8 @@
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Useful Pages</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/examples/authentication.php">
-                                <span class="menu-text">Login /Register</span>
+                                <span class="menu-text">Log In & Sign Up</span>
                             </a>
                         </li>
                         <li class="menu-item menu-item-has-children">
@@ -401,23 +258,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="#">
-                                <span class="menu-text">Email templates</span>
-                            </a>
-                        </li>
                     </ul>
-                </div>
-            </li>
-            <li class="menu-item">
-                <a href="/examples/css_components_dark.php">
-                    <i class="menu-icon fa fa-moon-o"></i>
-                    <span class="menu-text">Go Dark</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="/examples/css_components_dark.php" class="menu-item-min-link">
-                        <span class="menu-text">Go Dark</span>
-                    </a>
                 </div>
             </li>
         </ul>

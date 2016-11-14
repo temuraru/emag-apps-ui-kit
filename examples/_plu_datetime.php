@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Plugins | Photon - The Superfast, Supersimple UI Kit</title>
-    <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="eMAG CORE UI Team">
-
-    <!-- The favicon -->
-    <?php include_once "modules/_mod_favicon.php"?>
-
-    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
-    <!-- PLUGIN: DateRangePicker -->
-    <link rel="stylesheet" href="../dist/plugins/daterangepicker/daterangepicker.min.css">
-
-    <!-- PHOTON main styles -->
-    <link rel="stylesheet" href="../dist/css/main_style.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-    <![endif]-->
+        <title>Plugins - eMAG Apps UI KIT</title>
+        <?php include_once "modules/_mod_meta.php"?>
+        
+        <!-- PLUGIN: DateRangePicker -->
+        <link rel="stylesheet" href="../dist/plugins/daterangepicker/daterangepicker.min.css">
+        
+        <?php include_once "modules/_mod_top_include.php"?>
 </head>
 <body>
-<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-<!-- HEADER:Start -->
+
+<?php include_once "modules/_mod_browser_upgrade.php"?>
+
 <?php include_once "modules/_mod_header.php"?>
 <!-- HEADER:End -->
 <!-- PAGE:Start -->
@@ -40,17 +24,17 @@
         <!-- CONTENT:Start -->
         <div class="main-content">
             <div class="page-content">
-                <div class="jumbotron">
+                <div class="jumbotron content-header">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid pad-sep-60">
-                                <h1>PHOTON - DateTime</h1>
-                                <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>DateTime</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <section id="summernoteStandard" class="pad-top-20">
+                <section id="summernoteStandard" class="pad-top-40">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel">
@@ -76,10 +60,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -97,10 +80,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -118,10 +100,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -139,10 +120,9 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="show-panel">
                                 <div class="show-panel-example">
                                     <div class="show-panel-body">
                                         <form>
@@ -160,9 +140,6 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="show-panel-footer">
-                                        <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -176,69 +153,63 @@
         <!-- FOOTER:End -->
     </div>
 </div>
-<!-- PAGE:End -->
-<!-- POPUPS:Start -->
 
-<!-- POPUPS:End -->
-<!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: moment.js -->
+        <script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
+        <!-- PLUGIN: DateRangePicker -->
+        <script src="../dist/plugins/daterangepicker/daterangepicker.min.js"></script>
+        
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
 
-<!-- PLUGIN: This script file helps display demo code. Don't add it everywhere -->
-<script src="../dist/js/demo_helpers.js"></script>
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
 
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
+                demoHelpers();  // Require demo_helpers.js
 
-<!-- PLUGIN: moment.js -->
-<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
+                $('#daterangepicker_standard').daterangepicker({
+                    isCustomDate: function() {
+                        return 'custom-range';
+                    }});
+                $('#daterangepicker_standard_with_value').daterangepicker();
+                $('#daterangepicker_standard_with_format').daterangepicker({
+                    timePicker: true,
+                    timePicker24Hour: true,
+                    locale: {
+                        format: "YYYY-MM-DD HH:mm"
+                    }
+                });
+                $('#daterangepicker_standard_with_predefined_intervals').daterangepicker({
+                    alwaysShowCalendars: true,
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                    },
+                    locale: {
+                        format: 'YYYY-MM-DD'
+                    }
+                });$('#daterangepicker_standard_with_predefined_intervals_no_calendar').daterangepicker({
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                    },
+                    locale: {
+                        format: 'YYYY-MM-DD'
+                    }
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
-<!-- PLUGIN: DateRangePicker -->
-<script src="../dist/plugins/daterangepicker/daterangepicker.min.js"></script>
 
-<!--MAIN SCRIPT-->
-<script src="../dist/js/main_script.min.js"></script>
-<!-- SCRIPTS:End -->
-<!-- DOCUMENT-READY:Start -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        console.log('Ready, Captain!');
-
-        demoHelpers();  //Requires demo_helpers.js
-
-        showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
-
-        $('#daterangepicker_standard').daterangepicker();
-        $('#daterangepicker_standard_with_value').daterangepicker();
-        $('#daterangepicker_standard_with_format').daterangepicker({
-            timePicker: true,
-            timePicker24Hour: true,
-            locale: {
-                format: "YYYY-MM-DD HH:mm"
-            }
-        });
-        $('#daterangepicker_standard_with_predefined_intervals').daterangepicker({
-            alwaysShowCalendars: true,
-            ranges: {
-                'Today': [moment(), moment()],
-                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                'Last 7 Days': [moment().subtract(6, 'days'), moment()]
-            },
-            locale: {
-                format: 'YYYY-MM-DD'
-            }
-        });$('#daterangepicker_standard_with_predefined_intervals_no_calendar').daterangepicker({
-            ranges: {
-                'Today': [moment(), moment()],
-                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                'Last 7 Days': [moment().subtract(6, 'days'), moment()]
-            },
-            locale: {
-                format: 'YYYY-MM-DD'
-            }
-        });
-    });
-</script>
-<!-- DOCUMENT-READY:End -->
 </body>
 </html>

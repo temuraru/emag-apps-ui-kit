@@ -300,6 +300,23 @@ input[type="radio"] {
     }
 }
 
+.input-group {
+  &.input-group-no-separation {
+    .form-control {
+      box-shadow: none;
+      border-right: none;
+    }
+    .form-control:focus {
+      border-color: @gray-80;
+    }
+    .input-group-addon {
+      border-left: none;
+      background: none;
+      cursor: default;
+    }
+  }
+}
+
 .input-group-addon {
     > .form-radio-control, > .form-checkbox-control {
         margin-top: 2px!important;
@@ -307,8 +324,17 @@ input[type="radio"] {
 }
 
 select.form-control {
-  padding-left: 5px;
+  padding-left: @padding-base-horizontal-select;
 
+  &[data-photon-type="entity_ajax_widget"],
+  &[data-photon-type="choice_widget"] {
+    display: block !important;
+    height: @input-height-base;
+    margin-left: @form-group-margin-bottom;
+    position: absolute;
+    opacity: 0;
+    width: 0;
+  }
   option {
     color: @input-color;
     background-color: @input-bg;
