@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <title>404 - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>

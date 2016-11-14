@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+
+    <title>Start - eMAG Apps UI KIT</title>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="eMAG HX Team">
+
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../../favicon.png">    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+
+<!-- PHOTON main styles -->
+<link rel="stylesheet" href="../dist/css/main_style.min.css">
+
+<!--[if lt IE 9]>
+    <script src="../dist/js/lib/html5shiv.min.js"></script>
+    <script src="../dist/js/lib/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
+<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+<!-- HEADER:Start -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <div class="nav-controls visible-xs-inline-block pull-left">
+                <button id="toggle-sidebar-btn" type="button" class="btn btn-default navbar-btn" aria-expanded="false">
+                    <span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">
+                <img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">
+            </a>
+            <div class="nav-controls visible-xs-inline-block pull-right">
+                <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+        </div><!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav">
+            <h4 class="navbar-text">Demo</h4>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="visible-xs-inline">Language</span>
+                        <span><i class="flag-icon flag-icon-gb"></i>GB</span><i class="fa fa-angle-down hidden-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dm-language">
+                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                        <span class="visible-xs-inline">Notifications</span>
+                        <span class="jewel">3</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dm-header hidden-xs"><span>Notifications</span></li>
+                        <li><a href="#"><span>You have an invalidated offer</span></a></li>
+                        <li><a href="#"><span>Your account is not up to date</span></a></li>
+                        <li><a href="#"><span>You have a new order</span></a></li>
+                        <li><a href="javascript:void(0)"><span>View all</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="profile-thumb hidden-xs">
+                            <img class="nav-user-photo" src="img/profile_image.png" alt="">
+                        </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span>Account settings</span></a></li>
+                        <li><a href="#"><span>Logout</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav><!-- HEADER:End -->
+
+<!-- PAGE:Start -->
+<div class="main-container" id="main-container">
+    <div class="main-container-inner">
+        <!-- SIDEBAR:Start -->
+        <div id="sidebar" class="sidebar sidebar-fixed">
+    <div class="sidebar-outer">
+        <ul class="sidebar-inner">
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/index.html">
+                    <i class="menu-icon fa fa-flag-checkered"></i>
+                    <span class="menu-text">Start</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="/emag-apps-ui-kit/demo/index.html" class="menu-item-min-link">
+                        <span class="menu-text">Start</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/index.html#overview">
+                                <span class="menu-text">Overview</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/index.html#gettingStarted">
+                                <span class="menu-text">Getting started</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html">
+                    <i class="menu-icon fa fa-columns"></i>
+                    <span class="menu-text">Layout</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html" class="menu-item-min-link">
+                        <span class="menu-text">Layout</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html">
+                                <span class="menu-text">Boilerplate</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#topNavigation">
+                                <span class="menu-text">Top Navigation</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#mainSidebar">
+                                <span class="menu-text">Sidebar</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#mainFooter">
+                                <span class="menu-text">Footer</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#gridLayout">
+                                <span class="menu-text">Grid Layout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html">
+                    <i class="menu-icon fa fa-paint-brush"></i>
+                    <span class="menu-text">Branding</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html" class="menu-item-min-link">
+                        <span class="menu-text">Branding</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html">
+                                <span class="menu-text">Color scheme</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html#typography">
+                                <span class="menu-text">Typography</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html#icons">
+                                <span class="menu-text">Icons</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html">
+                    <i class="menu-icon fa fa-archive"></i>
+                    <span class="menu-text">CSS Components</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html" class="menu-item-min-link">
+                        <span class="menu-text">CSS Components</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html">
+                                <span class="menu-text">Typefaces variations</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssTables">
+                                <span class="menu-text">Tables</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#basicForms">
+                                <span class="menu-text">Forms</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#buttons">
+                                <span class="menu-text">Buttons</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssFlipswitch">
+                                <span class="menu-text">CSS Flipswitch</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssTooltips">
+                                <span class="menu-text">CSS Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssLabelsandBadges">
+                                <span class="menu-text">Labels and badges</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssAlertsandNotifications">
+                                <span class="menu-text">Alerts and notifications</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssPanels">
+                                <span class="menu-text">Panels</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssJumbotron">
+                                <span class="menu-text">Page headers and jumbotrons</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssEmbeds">
+                                <span class="menu-text">Embeds</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html">
+                    <i class="menu-icon fa fa-code"></i>
+                    <span class="menu-text">JS Components</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html" class="menu-item-min-link">
+                        <span class="menu-text">JS Components</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html">
+                                <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsTooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsPopovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsUtilities">
+                                <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_ajax_modals.html">
+                                <span class="menu-text">AJAX Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_fancytree.html">
+                                <span class="menu-text">Fancytree</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_wysiwyg.html">
+                                <span class="menu-text">Wysiwyg editor</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_gallery.html">
+                                <span class="menu-text">Picture gallery & image slider</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_datetime.html">
+                                <span class="menu-text">DateTime</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_jqgrid.html">
+                                <span class="menu-text">jQGrid</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">
+                    <i class="menu-icon fa fa-star"></i>
+                    <span class="menu-text">Useful Pages</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" class="menu-item-min-link">
+                        <span class="menu-text">Useful Pages</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/authentication.html">
+                                <span class="menu-text">Log In & Sign Up</span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">
+                                <span class="menu-text">Error pages</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/_err_404.html">
+                                        <span class="menu-text">404</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/_err_503.html">
+                                        <span class="menu-text">503</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/_err_logged_out.html">
+                                        <span class="menu-text">Logged out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-control">
+        <div class="sidebar-toggle">
+            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-default btn-sm">
+                <i class="menu-icon fa fa-arrow-left"></i>
+            </button>
+        </div>
+    </div>
+</div>        <!-- SIDEBAR:End -->
+        <!-- CONTENT:Start -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="jumbotron content-header">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>Start</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="overview" class="pad-top-40">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h2><strong>Overview</strong></h2>
+                                    <p><strong>A short description about what's it like to work with eMAG Apps UI KIT:</strong></p>
+                                    <div class="pad-sep-20">
+                                        <ol>
+                                            <li>
+                                                <h4 class="text-primary">Based on Bootstrap 3.3.5.</h4>
+                                                <p>
+                                                    Our open source UI KIT is based on the Bootstrap architecture. If you're
+                                                    not familiarized with it, check-out their stuff from getbootstrap.com Aside
+                                                    from the elements provided by Bootstrap, it comes with its own set of
+                                                    unique components, styling and useful plugins that you can use in your
+                                                    project.
+                                                </p>
+                                                <br>
+                                                <p><strong>Features:</strong></p>
+                                                <ol>
+                                                    <li>
+                                                        <p>Keeping it light with an average page weight of 500Kb.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>W3C Compliant</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WCAG 2.0 Compliant</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Average page-load time of 1s</p>
+                                                    </li>
+                                                </ol>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-primary">Working with Grunt.js</h4>
+                                                <p><strong>Installing Grunt:</strong></p>
+                                                <p>To install Grunt, you must first download and install <a href="https://nodejs.org/en/" target="_blank"><u>node.js</u></a> (which includes npm). Believe it or not, npm stands for <b>node packaged modules</b> and is a way to manage development dependencies through node.js.</p>
+                                                <p>Once you've installed node.js, open up the command line in the root directory.</p>
+                                                <p>Install grunt-cli globally by running <code>npm install -g grunt-cli</code>.</p>
+                                                <p>Afterwards run <code>npm install</code> for npm to look  at the <b>package.json</b> file and automatically install the necessary local dependencies listed there.</p>
+                                                <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
+                                                <br>
+                                                <p><strong>Available Grunt commands:</strong></p>
+<pre>
+<code class="language-bash" data-lang="bash">
+    grunt styles            - CSS distribution task
+    grunt scripts           - JS distribution task
+    grunt plugin_styles     - Generate plugin styles
+    grunt plugin_scripts    - Generate plugin scripts
+    grunt default           - Generate main styles and scripts
+</code>
+</pre>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-primary">Working with eMAG Apps UI KIT's folder structure:</h4>
+                                                <br>
+                                                <p>Once downloaded, unzip the compressed folder to find the three main folders:</p>
+<pre>
+<code class="language-bash" data-lang="bash">
+    eMAG Apps UI KIT/
+    |
+    ├── data/
+    │   ├── scripts/
+    |   |   ├── base/
+    |   |   |   └── custom/
+    |   |   └── lib/
+    │   ├── styles/
+    |   |   ├── base/
+    |   |   |   └── custom/
+    |   |   └── lib/
+    |   └── plugins/
+    |
+    ├── dist/
+    │   ├── css/
+    |   |   ├── flags/
+    |   |   ├── fonts/
+    |   |   ├── icons/
+    |   |   ├── img/
+    |   |   └── lib/
+    │   ├── js/
+    |   |   └── lib/
+    |   └── plugins/
+    |
+    └── examples/
+    └── modules/
+</code>
+</pre>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-primary">Precompiled files (dist)</h4>
+                                                <br>
+                                                <ul>
+                                                    <li>css - Main style CSS files.
+                                                        <ul>
+                                                            <li>flags - Countries flags as SVG file on 1:1 and 4:3 ratio.</li>
+                                                            <li>fonts - Fonts files used in eMAG Apps UI KIT.</li>
+                                                            <li>icons - Icons used in eMAG Apps UI KIT (created by eMag and from other libraries).</li>
+                                                            <li>img - Images used in demo pages.</li>
+                                                            <li>lib - Styles required by libraries used in eMAG Apps UI KIT.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>js - Main JS script files.
+                                                        <ul>
+                                                            <li>lib - Libraries' JS files.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>plugins - Plugins used in eMAG Apps UI KIT (CSS and JS files).</li>
+                                                </ul>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-primary">eMAG Apps UI KIT source code (data)</h4>
+                                                <br>
+                                                <ul>
+                                                    <li>scripts - JS files.
+                                                        <ul>
+                                                            <li>base - Main JS files.
+                                                                <ul>
+                                                                    <li>custom - Custom wrappers over certain plugins.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>lib - Libraries' JS files.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>styles - LESS files.
+                                                        <ul>
+                                                            <li>base - Main style LESS files
+                                                                <ul>
+                                                                    <li>custom - Custom wrappers' LESS files.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>lib - Libraries' LESS files.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>plugins - Plugins used in eMAG Apps UI KIT (LESS and JS files).</li>
+                                                </ul>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-primary">License</h4>
+                                                <br>
+                                                <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
+
+                                                <p><b>You can</b></p>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa fa-money" aria-hidden="true"></i> Comercial Use
+                                                        <ul>
+                                                            <li>
+                                                                You may use the work commercially.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-pencil" aria-hidden="true"></i> Modify
+                                                        <ul>
+                                                            <li>
+                                                                You may make changes to the work.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-share-alt" aria-hidden="true"></i> Distribute
+                                                        <ul>
+                                                            <li>
+                                                                You may distribute the compiled code and/or source.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Sublicense
+                                                        <ul>
+                                                            <li>
+                                                                You may incorporate the work into something that has a more restrictive license.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-lock" aria-hidden="true"></i> Private Use
+                                                        <ul>
+                                                            <li>
+                                                                You may use the work for private use.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <p><b>You cannot</b></p>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hold Liable
+                                                        <ul>
+                                                            <li>
+                                                                The work is provided "as is". You may not hold the author liable.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <p><b>You must</b></p>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa fa-copyright" aria-hidden="true"></i> Include Copyright
+                                                        <ul>
+                                                            <li>
+                                                                You must include the copyright notice in all copies or substantial uses of the work.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Include License
+                                                        <ul>
+                                                            <li>
+                                                                You must include the license notice in all copies or substantial uses of the work.<br><br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+
+                                                <p>The full eMAG Apps UI KIT license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="gettingStarted" class="pad-top-40">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h2><strong>Getting started</strong></h2>
+                                    <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
+                                    <div class="pad-sep-20">
+                                        <ol>
+                                            <li>
+                                                <p>The easiest way to install is to add the following css line in the head of your webpage:</p>
+                                                <pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</pre>
+                                                <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
+                                                        <pre>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
+&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</pre>
+                                                <div class="alert alert-info" role="alert">
+                                                    <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
+                                                </div>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>You can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
+                                                <pre>[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</pre>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="alert alert-info" role="alert">
+                                        <i class="fa fa-info-circle"></i> Be W3C compliant and everything will be alright!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- CONTENT:End -->
+        <!-- FOOTER:Start -->
+        <div id="main_footer" class="footer">
+    <div class="footer-inner text-center">
+        <div class="footer-content">
+            <span>Copyright &copy; 2011 - 2016 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
+        </div>
+    </div>
+</div>        <!-- FOOTER:End -->
+    </div>
+</div>
+<!-- PAGE:End -->
+
+<!-- SCRIPTS:Start -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="../dist/js/main_script.min.js"></script>
+<script src="../dist/js/demo_helpers.js"></script>
+<!-- SCRIPTS:End -->
+
+<!-- DOCUMENT-READY:Start -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log('Ready, Captain!');
+
+        demoHelpers();  // Require demo_helpers.js
+    });
+</script>
+<!-- DOCUMENT-READY:End -->
+
+</body>
+</html>

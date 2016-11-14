@@ -1,49 +1,381 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
+        <title>CSS Components - eMAG Apps UI KIT</title>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Components | Photon - The Superfast, Supersimple UI Kit</title>
-        <meta name="description" content="Photon - The superfast, supersimple UI Kit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="eMAG CORE UI Team">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="eMAG HX Team">
 
-        <!-- The favicon -->
-        <?php include_once "modules/_mod_favicon.php"?>
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../../favicon.png">        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
-        <!-- PHOTON main styles -->
-        <link rel="stylesheet" href="../dist/css/main_style_dark.min.css">
+<!-- PHOTON main styles -->
+<link rel="stylesheet" href="../dist/css/main_style.min.css">
 
-        <!--[if lt IE 9]>
-            <script src="../dist/js/lib/html5shiv.min.js"></script>
-            <script src="../dist/js/lib/respond.min.js"></script>
-        <![endif]-->
-    </head>
+<!--[if lt IE 9]>
+    <script src="../dist/js/lib/html5shiv.min.js"></script>
+    <script src="../dist/js/lib/respond.min.js"></script>
+<![endif]-->    </head>
     <body>
         <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-        <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
         <!-- HEADER:Start -->
-        <?php include_once "modules/_mod_header.php"?>
-        <!-- HEADER:End -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <div class="nav-controls visible-xs-inline-block pull-left">
+                <button id="toggle-sidebar-btn" type="button" class="btn btn-default navbar-btn" aria-expanded="false">
+                    <span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">
+                <img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">
+            </a>
+            <div class="nav-controls visible-xs-inline-block pull-right">
+                <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+        </div><!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav">
+            <h4 class="navbar-text">Demo</h4>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="visible-xs-inline">Language</span>
+                        <span><i class="flag-icon flag-icon-gb"></i>GB</span><i class="fa fa-angle-down hidden-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dm-language">
+                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                        <span class="visible-xs-inline">Notifications</span>
+                        <span class="jewel">3</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dm-header hidden-xs"><span>Notifications</span></li>
+                        <li><a href="#"><span>You have an invalidated offer</span></a></li>
+                        <li><a href="#"><span>Your account is not up to date</span></a></li>
+                        <li><a href="#"><span>You have a new order</span></a></li>
+                        <li><a href="javascript:void(0)"><span>View all</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="profile-thumb hidden-xs">
+                            <img class="nav-user-photo" src="img/profile_image.png" alt="">
+                        </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span>Account settings</span></a></li>
+                        <li><a href="#"><span>Logout</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>        <!-- HEADER:End -->
+        
         <!-- PAGE:Start -->
         <div class="main-container" id="main-container">
             <div class="main-container-inner">
                 <!-- SIDEBAR:Start -->
-                <?php include_once "modules/_mod_sidebar.php"?>
-                <!-- SIDEBAR:End -->
+                <div id="sidebar" class="sidebar sidebar-fixed">
+    <div class="sidebar-outer">
+        <ul class="sidebar-inner">
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/index.html">
+                    <i class="menu-icon fa fa-flag-checkered"></i>
+                    <span class="menu-text">Start</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="/emag-apps-ui-kit/demo/index.html" class="menu-item-min-link">
+                        <span class="menu-text">Start</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/index.html#overview">
+                                <span class="menu-text">Overview</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/index.html#gettingStarted">
+                                <span class="menu-text">Getting started</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html">
+                    <i class="menu-icon fa fa-columns"></i>
+                    <span class="menu-text">Layout</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html" class="menu-item-min-link">
+                        <span class="menu-text">Layout</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html">
+                                <span class="menu-text">Boilerplate</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#topNavigation">
+                                <span class="menu-text">Top Navigation</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#mainSidebar">
+                                <span class="menu-text">Sidebar</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#mainFooter">
+                                <span class="menu-text">Footer</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#gridLayout">
+                                <span class="menu-text">Grid Layout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html">
+                    <i class="menu-icon fa fa-paint-brush"></i>
+                    <span class="menu-text">Branding</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html" class="menu-item-min-link">
+                        <span class="menu-text">Branding</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html">
+                                <span class="menu-text">Color scheme</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html#typography">
+                                <span class="menu-text">Typography</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html#icons">
+                                <span class="menu-text">Icons</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html">
+                    <i class="menu-icon fa fa-archive"></i>
+                    <span class="menu-text">CSS Components</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html" class="menu-item-min-link">
+                        <span class="menu-text">CSS Components</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html">
+                                <span class="menu-text">Typefaces variations</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssTables">
+                                <span class="menu-text">Tables</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#basicForms">
+                                <span class="menu-text">Forms</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#buttons">
+                                <span class="menu-text">Buttons</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssFlipswitch">
+                                <span class="menu-text">CSS Flipswitch</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssTooltips">
+                                <span class="menu-text">CSS Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssLabelsandBadges">
+                                <span class="menu-text">Labels and badges</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssAlertsandNotifications">
+                                <span class="menu-text">Alerts and notifications</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssPanels">
+                                <span class="menu-text">Panels</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssJumbotron">
+                                <span class="menu-text">Page headers and jumbotrons</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssEmbeds">
+                                <span class="menu-text">Embeds</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html">
+                    <i class="menu-icon fa fa-code"></i>
+                    <span class="menu-text">JS Components</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html" class="menu-item-min-link">
+                        <span class="menu-text">JS Components</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html">
+                                <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsTooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsPopovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsUtilities">
+                                <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_ajax_modals.html">
+                                <span class="menu-text">AJAX Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_fancytree.html">
+                                <span class="menu-text">Fancytree</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_wysiwyg.html">
+                                <span class="menu-text">Wysiwyg editor</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_gallery.html">
+                                <span class="menu-text">Picture gallery & image slider</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_datetime.html">
+                                <span class="menu-text">DateTime</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/_plu_jqgrid.html">
+                                <span class="menu-text">jQGrid</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">
+                    <i class="menu-icon fa fa-star"></i>
+                    <span class="menu-text">Useful Pages</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" class="menu-item-min-link">
+                        <span class="menu-text">Useful Pages</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/authentication.html">
+                                <span class="menu-text">Log In & Sign Up</span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">
+                                <span class="menu-text">Error pages</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/_err_404.html">
+                                        <span class="menu-text">404</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/_err_503.html">
+                                        <span class="menu-text">503</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/_err_logged_out.html">
+                                        <span class="menu-text">Logged out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-control">
+        <div class="sidebar-toggle">
+            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-default btn-sm">
+                <i class="menu-icon fa fa-arrow-left"></i>
+            </button>
+        </div>
+    </div>
+</div>                <!-- SIDEBAR:End -->
                 <!-- CONTENT:Start -->
                 <div class="main-content">
                     <div class="page-content">
-                        <div class="jumbotron">
+                        <div class="jumbotron content-header">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
-                                    <div class="container-fluid pad-sep-60">
-                                        <h1>PHOTON - Components</h1>
-                                        <p>The lightning-fast, modular, mobile-friendly admin template.</p>
+                                    <div class="container-fluid">
+                                        <p>eMAG Apps UI KIT</p>
+                                        <p><b>CSS Components</b></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div id="examples"></div>
                         <section id="htmlcode" class="pad-top-40">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
@@ -61,7 +393,7 @@
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Type variations and print</strong></h4>
+                                            <h4 class="text-primary"><strong>Typefaces variations</strong></h4>
                                             <p><strong>Headings and Paragraphs:</strong></p>
                                             <div class="pad-sep-20">
                                                 <div class="row">
@@ -781,11 +1113,19 @@
                                                                 <div class="form-group has-error">
                                                                     <label class="control-label" for="exampleInputEmail1">Email address</label>
                                                                     <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
-                                                                    <div class="help-block"><i class="fa fa-info-circle fonts-up-120"></i> This is an example error message.</div>
+                                                                    <div class="help-block">This is an example error message.</div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="control-label" for="exampleInputPassword1">Password</label>
                                                                     <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="exampleSelect1">Select</label>
+                                                                    <select class="form-control">
+                                                                        <option value="">Select option</option>
+                                                                        <option value="1">First option</option>
+                                                                        <option value="2">Second option</option>
+                                                                    </select>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <div class="checkbox">
@@ -1045,6 +1385,13 @@
                                                             <div class="form-group has-error">
                                                                 <label class="control-label" for="inputError1">Input with error</label>
                                                                 <input type="text" class="form-control" id="inputError1">
+                                                                <div class="help-block">This is an example error message.</div>
+                                                            </div>
+                                                            <div class="form-group has-error">
+                                                                <label class="control-label" for="inputError2">Input with error</label>
+                                                                <div class="info-tooltip tt-block tt-danger" data-content="This is an example error message.">
+                                                                    <input type="text" class="form-control" id="inputError2">
+                                                                </div>
                                                             </div>
                                                             <div class="form-group has-error">
                                                                 <div class="checkbox">
@@ -1162,6 +1509,59 @@
                                     </div>
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
+                                            <p><strong>Custom checkboxes and radio buttons:</strong></p>
+                                            <div class="pad-sep-20">
+                                                <div class="row">
+                                                    <div class="col-lg-8 col-lg-offset-2">
+                                                        <p>Standard checkbox:</p>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="form-checkbox-control" value="" checked>
+                                                            This is option one.
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="form-checkbox-control" value="">
+                                                            This is option two.
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox disabled">
+                                                            <label>
+                                                                <input type="checkbox" class="form-checkbox-control" value="" disabled checked>
+                                                            Option three is disabled
+                                                            </label>
+                                                        </div>
+                                                        <br>
+                                                        <p>Standard radio button:</p>
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="optionsRadios" id="optionsRadios11" class="form-radio-control" value="option11" checked>
+                                                                This is option one.
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="optionsRadios" id="optionsRadios21" class="form-radio-control" value="option21">
+                                                                Option two can be something else and selecting it will deselect option one.
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio disabled">
+                                                            <label>
+                                                                <input type="radio" name="optionsRadios" id="optionsRadios31" class="form-radio-control" value="option31" disabled checked>
+                                                                Option three is disabled
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                            <div class="alert alert-warning">
+                                                <p><i class="fa fa-warning fonts-up-140"></i> The custom checkboxes and radio buttons don't work on firefox. They just fallback to their standard styling. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-panel show-panel-example">
+                                        <div class="show-panel-body">
                                             <p><strong>Range input types:</strong></p>
                                             <div class="pad-sep-20">
                                                 <div class="row">
@@ -1170,16 +1570,11 @@
                                                         <div class="form-group">
                                                             <input type="range" name="points" min="0" max="100" step="5" value="5">
                                                         </div>
-                                                        <p>Range inputs with validation:</p>
-                                                        <div class="form-group has-success">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
+                                                        <p>Disabled range input:</p>
+                                                        <div class="form-group">
+                                                            <input type="range" name="points" min="0" max="100" step="5" value="5" disabled>
                                                         </div>
-                                                        <div class="form-group has-warning">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
-                                                        </div>
-                                                        <div class="form-group has-error">
-                                                            <input type="range" name="points" min="0" max="100" step="5" value="5">
-                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1196,7 +1591,7 @@
                                                 <p><i class="fa fa-warning fonts-up-140"></i> Do not mix form groups or grid column classes directly with input groups. Instead, nest the input group inside of the form group or grid-related element.</p>
                                             </div>
                                             <div class="alert alert-danger">
-                                                <p><i class="fa fa-remove fonts-up-140"></i> PHOTON does not support multiple add-ons (<mark>.input-group-addon</mark> or <mark>.input-group-btn</mark>) on a single side. It also does not support multiple form-controls in a single input group.</p>
+                                                <p><i class="fa fa-remove fonts-up-140"></i> eMAG Apps UI KIT does not support multiple add-ons (<mark>.input-group-addon</mark> or <mark>.input-group-btn</mark>) on a single side. It also does not support multiple form-controls in a single input group.</p>
                                             </div>
                                             <div class="pad-sep-20">
                                                 <div class="row">
@@ -1236,106 +1631,35 @@
                                                     <div class="col-lg-8 col-lg-offset-2">
                                                         <div class="row">
                                                             <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">
-                                                                        <input type="checkbox" aria-label="...">
-                                                                    </span>
-                                                                    <input type="text" class="form-control" aria-label="...">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                            <input type="checkbox" aria-label="...">
+                                                                        </span>
+                                                                        <input type="text" class="form-control" aria-label="...">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">
-                                                                        <input type="radio" aria-label="...">
-                                                                    </span>
-                                                                    <input type="text" class="form-control" aria-label="...">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                            <input type="radio" aria-label="...">
+                                                                        </span>
+                                                                        <input type="text" class="form-control" aria-label="...">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Input groups with buttons:</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="row">
-                                                            <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-default" type="button">Go!</button>
-                                                                    </span>
-                                                                    <input type="text" class="form-control" placeholder="Search for...">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                            <input type="checkbox" class="form-checkbox-control" aria-label="...">
+                                                                        </span>
+                                                                        <input type="text" class="form-control" aria-label="...">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" placeholder="Search for...">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-default" type="button">Go!</button>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Input groups with dropdowns:</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="input-group">
-                                                            <div class="input-group-btn">
-                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a href="#">Action</a></li>
-                                                                    <li><a href="#">Another action</a></li>
-                                                                    <li><a href="#">Something else here</a></li>
-                                                                    <li role="separator" class="divider"></li>
-                                                                    <li><a href="#">Separated link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <input type="text" class="form-control" aria-label="...">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Input groups with multiple buttons:</strong></p>
-                                            <div class="pad-sep-20">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-md-offset-2">
-                                                        <div class="input-group">
-                                                            <div class="input-group-btn">
-                                                                <button type="button" class="btn btn-default" aria-label="Bold">
-                                                                    <span class="fa fa-bold"></span>
-                                                                </button>
-                                                                <button type="button" class="btn btn-default" aria-label="Italic">
-                                                                    <span class="fa fa-italic"></span>
-                                                                </button>
-                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                    <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span>
-                                                                </button>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a href="#">Action</a></li>
-                                                                    <li><a href="#">Another action</a></li>
-                                                                    <li><a href="#">Something else here</a></li>
-                                                                    <li role="separator" class="divider"></li>
-                                                                    <li><a href="#">Separated link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <input type="text" class="form-control" aria-label="Text input with multiple buttons">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1388,11 +1712,9 @@
                                             <p><strong>Button sizing:</strong></p>
                                             <div class="pad-sep-20 pad-top-40 text-center">
                                                 <p>
-                                                    <button type="button" class="btn btn-primary btn-lg fonts-up-200"><i class="fa fa-cog"></i><span>Enhanced</span></button>
                                                     <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-cog"></i><span>Large button</span></button>
                                                     <button type="button" class="btn btn-primary"><i class="fa fa-cog"></i><span>Default button</span></button>
                                                     <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-cog"></i><span>Small button</span></button>
-                                                    <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-cog"></i><span>Extra small button</span></button>
                                                 </p>
                                             </div>
                                         </div>
@@ -1517,34 +1839,6 @@
                                                             <button type="button" class="btn btn-default">SM</button>
                                                             <button type="button" class="btn btn-default">SM</button>
                                                         </div>
-                                                        <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                                                            <button type="button" class="btn btn-default">XS</button>
-                                                            <button type="button" class="btn btn-default">XS</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Vertical button groups:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2">
-                                                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                            <div class="btn-group" role="group">
-                                                                <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown <span class="caret"></span></button>
-                                                                <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                                                                    <li><a href="#">Dropdown link</a></li>
-                                                                    <li><a href="#">Dropdown link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                            <button type="button" class="btn btn-primary">Button</button>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1588,7 +1882,6 @@
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
                                             <h4 class="text-primary"><strong>CSS Flipswitch</strong></h4>
-                                            <p>You can change the contextual styling of the flipswitch by using any of the available <mark>switch-*</mark> classes.</p>
                                             <div class="alert alert-info" role="alert"><p><i class="fa fa-info-circle fonts-up-140"></i>
                                                 The flip-switch items are based on a checkbox form-element. In order to display the flip-switch in the "on" or "off" state, make sure to add or remove the "checked" attribute from the "checkbox" input type.
                                                 </p></div>
@@ -1596,250 +1889,19 @@
                                                 <div class="row">
                                                     <div class="col-lg-8 col-lg-offset-2 text-center">
                                                         <p>
-                                                            <label class="switch switch-primary">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
+                                                            <label class="switch">
+                                                                <input type="checkbox" class="switch-input" name="card_status_0" >
                                                                 <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
-                                                            <label class="switch switch-info">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label"></span>
-                                                                <span class="switch-handle"></span>
-                                                            </label>
-                                                            <label class="switch switch-success">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label"></span>
-                                                                <span class="switch-handle"></span>
-                                                            </label>
-                                                            <label class="switch switch-warning">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
-                                                                <span class="switch-label"></span>
-                                                                <span class="switch-handle"></span>
-                                                            </label>
-                                                            <label class="switch switch-danger">
-                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked="">
+                                                            <label class="switch">
+                                                                <input type="checkbox" class="switch-input" name="card_status_0" checked>
                                                                 <span class="switch-label"></span>
                                                                 <span class="switch-handle"></span>
                                                             </label>
                                                         </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssPagination" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Pagination</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pagination">
-                                                                <li>
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#">4</a></li>
-                                                                <li><a href="#">5</a></li>
-                                                                <li>
-                                                                    <a href="#" aria-label="Next">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Disabled and active states:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pagination">
-                                                                <li class="disabled">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#">4</a></li>
-                                                                <li><a href="#">5</a></li>
-                                                                <li>
-                                                                    <a href="#" aria-label="Next">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Pagination sizing:</strong></p>
-                                            <p>So hey, listen! You can add <mark>.pagination-lg</mark> or <mark>.pagination-sm</mark> for additional sizes.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pagination pagination-lg">
-                                                                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-arrow-left"></i></span></a></li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-arrow-right"></i></span></a></li>
-                                                            </ul>
-                                                        </nav>
-                                                        <nav>
-                                                            <ul class="pagination">
-                                                                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-arrow-left"></i></span></a></li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-arrow-right"></i></span></a></li>
-                                                            </ul>
-                                                        </nav>
-                                                        <nav>
-                                                            <ul class="pagination pagination-sm">
-                                                                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-arrow-left"></i></span></a></li>
-                                                                <li><a href="#">1</a></li>
-                                                                <li><a href="#">2</a></li>
-                                                                <li><a href="#">3</a></li>
-                                                                <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-arrow-right"></i></span></a></li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Default pager:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pager">
-                                                                <li><a href="#">Previous</a></li>
-                                                                <li><a href="#">Next</a></li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Aligned pager:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pager">
-                                                                <li class="previous">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i> Older</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="next">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true">Newer <i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Optional pager states:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                                <div class="row">
-                                                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                                                        <nav>
-                                                            <ul class="pager">
-                                                                <li class="previous disabled">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true"><i class="fa fa-arrow-left"></i> Older</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="next">
-                                                                    <a href="#" aria-label="Previous">
-                                                                        <span aria-hidden="true">Newer <i class="fa fa-arrow-right"></i></span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssNavs" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Navs</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssNavs" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Pills</strong><small> (Yeah, not that kind of pills)</small></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="cssBreadcrumbs" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Breadcrumbs</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <div class="pad-sep-20 text-center">
                                             </div>
                                         </div>
                                     </div>
@@ -2034,21 +2096,6 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssProgressBars" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Progress bars</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                         <section id="cssPanels" class="pad-top-20">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
@@ -2073,50 +2120,9 @@
                                     </div>
                                     <div class="show-panel show-panel-example">
                                         <div class="show-panel-body">
-                                            <p><strong>Panel with heading:</strong></p>
-                                            <div class="pad-sep-20 ">
-                                                <div class="row">
-                                                    <div class="col-lg-10 col-lg-offset-1">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <p><strong>Panel with footer:</strong></p>
-                                            <div class="pad-sep-20 ">
-                                                <div class="row">
-                                                    <div class="col-lg-10 col-lg-offset-1">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
                                             <p><strong>Contextual alternatives:</strong></p>
                                             <div class="alert alert-info" role="alert">
-                                                <i class="fa fa-info-circle"></i> You can basically change the appearance of the panel by replacing the <code>panel-default</code> class from the example below, with the standard contextual alternatives: <code>panel-primary</code>, <code>panel-info</code>, <code>panel-success</code>, <code>panel-warning</code>, <code>panel-danger</code>
+                                                <i class="fa fa-info-circle"></i> You can basically change the appearance of the panel ussing one of the following classes: <code>panel-primary</code>, <code>panel-info</code>
                                             </div>
                                             <div class="pad-sep-20 ">
                                                 <div class="row">
@@ -2139,37 +2145,6 @@
                                                                 Panel content
                                                             </div>
                                                             <div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel panel-success">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel panel-warning">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div><div class="panel-footer">
-                                                                Panel footer
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel panel-danger">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">Panel title</h4>
-                                                            </div>
-                                                            <div class="panel-body">
-                                                                Panel content
-                                                            </div><div class="panel-footer">
                                                                 Panel footer
                                                             </div>
                                                         </div>
@@ -2279,21 +2254,6 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssListGroups" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>List groups</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                         <section id="cssJumbotron" class="pad-top-20">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
@@ -2362,64 +2322,51 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssUtilities" class="pad-top-20">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel show-panel-example">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>Utilities</strong></h4>
-                                            <p><strong>Default styling:</strong></p>
-                                            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                                            <div class="pad-sep-20 pad-top-40">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                     </div>
                 </div>
                 <!-- CONTENT:End -->
                 <!-- FOOTER:Start -->
-                <?php include_once "modules/_mod_footer.php"?>
-                <!-- FOOTER:End -->
+                <div id="main_footer" class="footer">
+    <div class="footer-inner text-center">
+        <div class="footer-content">
+            <span>Copyright &copy; 2011 - 2016 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
+        </div>
+    </div>
+</div>                <!-- FOOTER:End -->
             </div>
         </div>
         <!-- PAGE:End -->
-        <!-- POPUPS:Start -->
-        <!-- POPUPS:End -->
+
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
+
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">
-            $(document).ready(function() {
+        <script type="text/javascript">               
+            $(document).ready(function () {
                 console.log('Ready, Captain!');
 
-                demoHelpers();  //Requires demo_helpers.js
+                demoHelpers();  // Require demo_helpers.js
 
-                // This script is just for demo purposes //
-                ///////////////////////////////////////////
                 var i = 1;
                 function blowWorld(selector, no) {
                     var thing = document.getElementById(selector);
                     thing.getElementsByClassName("badge")[0].innerHTML = no;
                 };
-                $('#blow_my_world').on('click',function(){
-                var no = i++;
-                    if(no >= 100){
+                $('#blow_my_world').on('click', function () {
+                    var no = i++;
+                    if (no >= 100) {
                         alert("Yeah, alright, we get it buddy... It's cool, chill!");
                     } else {
                         blowWorld(this.id, no);
                     }
                 });
-                ///////////////////////////////////////////
-                // That script was just for demo purposes //
             });
         </script>
-        <!-- DOCUMENT-READY:End -->
+        <!-- DOCUMENT-READY:End --> 
+        
     </body>
 </html>

@@ -2,22 +2,22 @@
     <div class="sidebar-outer">
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/index.php">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/index.php">
                     <i class="menu-icon fa fa-flag-checkered"></i>
                     <span class="menu-text">Start</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="/examples/index.php" class="menu-item-min-link">
+                    <a href="/emag-apps-ui-kit/demo/index.php" class="menu-item-min-link">
                         <span class="menu-text">Start</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/index.php#overview">
+                            <a href="/emag-apps-ui-kit/demo/index.php#overview">
                                 <span class="menu-text">Overview</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/index.php#gettingStarted">
+                            <a href="/emag-apps-ui-kit/demo/index.php#gettingStarted">
                                 <span class="menu-text">Getting started</span>
                             </a>
                         </li>
@@ -25,37 +25,37 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/layout.php">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/layout.php">
                     <i class="menu-icon fa fa-columns"></i>
                     <span class="menu-text">Layout</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/examples/layout.php" class="menu-item-min-link">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/layout.php" class="menu-item-min-link">
                         <span class="menu-text">Layout</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/layout.php">
+                            <a href="/emag-apps-ui-kit/demo/layout.php">
                                 <span class="menu-text">Boilerplate</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/layout.php#topNavigation">
+                            <a href="/emag-apps-ui-kit/demo/layout.php#topNavigation">
                                 <span class="menu-text">Top Navigation</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/layout.php#mainSidebar">
+                            <a href="/emag-apps-ui-kit/demo/layout.php#mainSidebar">
                                 <span class="menu-text">Sidebar</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/layout.php#mainFooter">
+                            <a href="/emag-apps-ui-kit/demo/layout.php#mainFooter">
                                 <span class="menu-text">Footer</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/layout.php#gridLayout">
+                            <a href="/emag-apps-ui-kit/demo/layout.php#gridLayout">
                                 <span class="menu-text">Grid Layout</span>
                             </a>
                         </li>
@@ -63,27 +63,27 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/branding.php">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/branding.php">
                     <i class="menu-icon fa fa-paint-brush"></i>
                     <span class="menu-text">Branding</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/examples/branding.php" class="menu-item-min-link">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/branding.php" class="menu-item-min-link">
                         <span class="menu-text">Branding</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/branding.php">
+                            <a href="/emag-apps-ui-kit/demo/branding.php">
                                 <span class="menu-text">Color scheme</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/branding.php#typography">
+                            <a href="/emag-apps-ui-kit/demo/branding.php#typography">
                                 <span class="menu-text">Typography</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/branding.php#icons">
+                            <a href="/emag-apps-ui-kit/demo/branding.php#icons">
                                 <span class="menu-text">Icons</span>
                             </a>
                         </li>
@@ -91,67 +91,67 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/css_components.php">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.php">
                     <i class="menu-icon fa fa-archive"></i>
                     <span class="menu-text">CSS Components</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/examples/css_components.php" class="menu-item-min-link">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.php" class="menu-item-min-link">
                         <span class="menu-text">CSS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/css_components.php">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php">
                                 <span class="menu-text">Typefaces variations</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssTables">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssTables">
                                 <span class="menu-text">Tables</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#basicForms">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#basicForms">
                                 <span class="menu-text">Forms</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#buttons">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#buttons">
                                 <span class="menu-text">Buttons</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssFlipswitch">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssFlipswitch">
                                 <span class="menu-text">CSS Flipswitch</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssTooltips">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssTooltips">
                                 <span class="menu-text">CSS Tooltips</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssLabelsandBadges">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssLabelsandBadges">
                                 <span class="menu-text">Labels and badges</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssAlertsandNotifications">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssAlertsandNotifications">
                                 <span class="menu-text">Alerts and notifications</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssPanels">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssPanels">
                                 <span class="menu-text">Panels</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssJumbotron">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssJumbotron">
                                 <span class="menu-text">Page headers and jumbotrons</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/css_components.php#cssEmbeds">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssEmbeds">
                                 <span class="menu-text">Embeds</span>
                             </a>
                         </li>
@@ -159,62 +159,62 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/examples/js_components.php">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.php">
                     <i class="menu-icon fa fa-code"></i>
                     <span class="menu-text">JS Components</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/examples/js_components.php" class="menu-item-min-link">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.php" class="menu-item-min-link">
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/js_components.php">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php">
                                 <span class="menu-text">Modals</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/js_components.php#jsTooltips">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsTooltips">
                                 <span class="menu-text">Tooltips</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/js_components.php#jsPopovers">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsPopovers">
                                 <span class="menu-text">Popovers</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/js_components.php#jsUtilities">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsUtilities">
                                 <span class="menu-text">Utilities</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/_plu_ajax_modals.php">
+                            <a href="/emag-apps-ui-kit/demo/_plu_ajax_modals.php">
                                 <span class="menu-text">AJAX Modals</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/_plu_fancytree.php">
+                            <a href="/emag-apps-ui-kit/demo/_plu_fancytree.php">
                                 <span class="menu-text">Fancytree</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/_plu_wysiwyg.php">
+                            <a href="/emag-apps-ui-kit/demo/_plu_wysiwyg.php">
                                 <span class="menu-text">Wysiwyg editor</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/_plu_gallery.php">
+                            <a href="/emag-apps-ui-kit/demo/_plu_gallery.php">
                                 <span class="menu-text">Picture gallery & image slider</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/_plu_datetime.php">
+                            <a href="/emag-apps-ui-kit/demo/_plu_datetime.php">
                                 <span class="menu-text">DateTime</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/examples/_plu_jqgrid.php">
+                            <a href="/emag-apps-ui-kit/demo/_plu_jqgrid.php">
                                 <span class="menu-text">jQGrid</span>
                             </a>
                         </li>
@@ -232,7 +232,7 @@
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/examples/authentication.php">
+                            <a href="/emag-apps-ui-kit/demo/authentication.php">
                                 <span class="menu-text">Log In & Sign Up</span>
                             </a>
                         </li>
@@ -242,17 +242,17 @@
                             </a>
                             <ul class="sidebar-submenu">
                                 <li class="menu-item">
-                                    <a href="/examples/_err_404.php">
+                                    <a href="/emag-apps-ui-kit/demo/_err_404.php">
                                         <span class="menu-text">404</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/examples/_err_503.php">
+                                    <a href="/emag-apps-ui-kit/demo/_err_503.php">
                                         <span class="menu-text">503</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/examples/_err_logged_out.php">
+                                    <a href="/emag-apps-ui-kit/demo/_err_logged_out.php">
                                         <span class="menu-text">Logged out</span>
                                     </a>
                                 </li>

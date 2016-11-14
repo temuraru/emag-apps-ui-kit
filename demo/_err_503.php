@@ -1,7 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
-        <title>Logout - eMAG Apps UI KIT</title>
+        <title>503 - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         <?php include_once "modules/_mod_top_include.php"?>
     </head>
@@ -24,13 +24,28 @@
                 <div class="main-content">
                     <div class="page-content">
                         <div class="jumbotron">
-                            <h1>Logged out.</h1>
-                            <p>You have been automatically logged out of your account. Your station was inactive for more than <strong>15 minutes</strong> and we care deeply about your privacy.</p>
-                            <div class="pad-sep-20">
-                                <a href="authentication.php" type="button" class="btn btn-default">Log back in</a>
-                                <a href="index.php" class="btn btn-default"><span>Go to homepage</span></a>
+                            <h1>503 / Down for maintenance</h1>
+                            <p>The site is down for maintenance. Please try again in a few minutes.</p>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="pad-btm-20">
+                                    <p><strong>Try one of the following:</strong></p>
+                                    <ul>
+                                        <li>Wait 5 minutes and then refresh the page. Something went wrong somewhere.</li>
+                                        <li><a href="#">Read the frequently asked questions.</a></li>
+                                        <li><a href="#">Inform us about the problem</a></li>                                        
+                                        <li>Give it a minute or two. We might be working on it!</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-controls">
+                                    <a href="#" class="btn btn-primary" onclick="location.reload();">
+                                        <i class="fa fa-refresh"></i>
+                                        <span>Retry</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>                                 
+                        </div>                
                     </div>
                 </div>
                 <!-- CONTENT:End -->
