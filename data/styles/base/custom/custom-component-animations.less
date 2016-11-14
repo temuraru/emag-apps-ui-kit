@@ -1,0 +1,6 @@
+// bugfix - UI-4843 - Panel widget with jqGrid is blank after interacting with the sidebar panel
+// We replace display none with height 0, display block and overflow hidden. In this way the jqGrid will read height and it will be displayed correctly
+.collapse[aria-expanded="false"] {
+  display: block;
+  overflow: hidden;
+}
