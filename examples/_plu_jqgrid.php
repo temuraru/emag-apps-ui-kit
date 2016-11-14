@@ -2,7 +2,7 @@
 <html lang="en" class="js">
 <head>
 
-        <title>JqGrid - eMAG Apps UI KIT</title>
+        <title>jQGrid - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
@@ -32,7 +32,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="container-fluid">
                                 <p>eMAG Apps UI KIT</p>
-                                <p><b>JqGrid</b></p>
+                                <p><b>jQGrid</b></p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="show-panel show-panel-example">
                                 <div class="show-panel-body">
-                                    <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQgrid Documentation</a></p>
+                                    <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQGrid Documentation</a></p>
 
                                     <table id="grid_table" class="table table-bordered"></table>
                                     <div id="grid_pager"></div>
