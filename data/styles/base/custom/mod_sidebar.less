@@ -143,10 +143,10 @@
 
            .sidebar-submenu {
              padding-left: 0;
-           }
 
-            > .menu-item {
+             > .menu-item {
                border-color: darken(@sidebar-second-level-bg, 5%);
+
                > a {
                  background-color:@sidebar-second-level-bg;
                  padding-left: @sidebar-min-width;
@@ -156,14 +156,14 @@
                  font-weight: @sidebar-fontweight-second-level;
                }
                &:last-child {
-                   border-bottom: none;
+                 border-bottom: none;
                }
                &:not(.active){
-                    > a {
-                        &:hover, &:active, &:focus {
-                          background-color: @sidebar-menu-hover-cell-bg;
-                        }
-                    }
+                 > a {
+                   &:hover, &:active, &:focus {
+                     background-color: @sidebar-menu-hover-cell-bg;
+                   }
+                 }
                }
                &.active {
                  &:not(.menu-item-has-children) > a,
@@ -172,23 +172,28 @@
                  }
                }
                .sidebar-submenu {
-                 display: none;
-
-                  .menu-item {
-                     border-color: darken(@sidebar-third-level-bg, 5%);
+                 .menu-item {
+                   border-color: darken(@sidebar-third-level-bg, 5%);
+                   > a {
+                     font-family: @sidebar-fontfamily;
+                     font-weight: @sidebar-fontweight-third-level;
+                     background-color:@sidebar-third-level-bg;
+                   }
+                   &:not(.active){
                      > a {
-                        font-family: @sidebar-fontfamily;
-                        font-weight: @sidebar-fontweight-third-level;
-                        background-color:@sidebar-third-level-bg;
+                       &:hover, &:active, &:focus {
+                         background-color: @sidebar-menu-hover-cell-bg;
+                       }
                      }
-                     &:not(.active){
-                        > a {
-                            &:hover, &:active, &:focus {
-                              background-color: @sidebar-menu-hover-cell-bg;
-                            }
-                        }
-                     }
-                  }
+                   }
+                 }
+               }
+             }
+           }
+
+            > .menu-item {
+               .sidebar-submenu {
+                 display: none;
                }
             }
          }

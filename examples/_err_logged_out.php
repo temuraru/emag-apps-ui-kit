@@ -27,8 +27,8 @@
                             <h1>Logged out.</h1>
                             <p>You have been automatically logged out of your account. Your station was inactive for more than <strong>15 minutes</strong> and we care deeply about your privacy.</p>
                             <div class="pad-sep-20">
-                                <a href="authentication.php" type="button" class="btn btn-primary">Log back in</a>
-                                <a href="overview.php" class="btn btn-default"><span>Go to homepage</span></a>
+                                <a href="authentication.php" type="button" class="btn btn-default">Log back in</a>
+                                <a href="index.php" class="btn btn-default"><span>Go to homepage</span></a>
                             </div>
                         </div>                                 
                     </div>
