@@ -18,7 +18,6 @@ module.exports = function (grunt) {
             ' * Copyright 2001-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
             ' */\n',
-
         // Task configuration:
         // Compiles the .less files into a readable .css file.
         less: {
@@ -209,7 +208,29 @@ module.exports = function (grunt) {
                 dest: '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js'
             }
         },
-
+        php2html: {
+           default: {
+             options: {
+               htmlhint: {
+                 'doctype-first': false
+               },
+               processLinks: true,
+               process: function(response,callback) {
+                    var content = response.replace(new RegExp('.php', 'g'), '.html');
+                    callback (content);
+              }
+             },
+             files: [
+                {
+                  expand: true,
+                  cwd: 'demo/',
+                  src: ['*.php'],
+                  dest: 'demo/',
+                  ext: '.html'
+                }
+              ]
+           }
+        },
         // Minifies JS files
         uglify: {
             options: {
@@ -291,8 +312,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-php2html');
 
-    // Custom task(s).
+    // Custom tasks.
+
     // CSS distribution task.
     grunt.registerTask('styles', [
         'less:frontend',
@@ -303,6 +326,7 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'cssmin:frontend_dark'
     ]);
+    
     // JS distribution task.
     grunt.registerTask('scripts', [
         'concat:frontend',
@@ -331,6 +355,11 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'concat:frontend',
         'uglify:frontend'
+    ]);
+
+    //Convert php to html and use pretify for it
+    grunt.registerTask('convert_demo', [
+        'php2html'
     ]);
 
     grunt.registerTask('watch_styles', [

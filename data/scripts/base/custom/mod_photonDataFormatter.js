@@ -14,7 +14,7 @@
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
-                return '<span class="formatter-notavailable badge">N/A</span>';
+                return '<span class="formatter-notavailable label label-default">N/A</span>';
             }
 
             return item;
