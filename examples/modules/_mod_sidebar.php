@@ -215,7 +215,7 @@
                         </li>
                         <li class="menu-item">
                             <a href="/examples/_plu_jqgrid.php">
-                                <span class="menu-text">JqGrid</span>
+                                <span class="menu-text">jQGrid</span>
                             </a>
                         </li>
                     </ul>
