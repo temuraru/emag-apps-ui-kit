@@ -7,8 +7,6 @@
         
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
         <?php include_once "modules/_mod_top_include.php"?>
 
@@ -82,9 +80,6 @@
 <!-- SCRIPTS:Start -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-
-<!-- PLUGIN: This script file helps display demo code. Don't add it everywhere -->
-<script src="../dist/js/demo_helpers.js"></script>
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>

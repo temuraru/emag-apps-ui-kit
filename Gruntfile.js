@@ -214,12 +214,16 @@ module.exports = function (grunt) {
                htmlhint: {
                  'doctype-first': false
                },
-               processLinks: true
+               processLinks: true,
+               process: function(response,callback) {
+                    var content = response.replace(new RegExp('.php', 'g'), '.html');
+                    callback (content);
+              }
              },
              files: [
                 {
                   expand: true,
-                  cwd: 'demo/php/',
+                  cwd: 'demo/',
                   src: ['*.php'],
                   dest: 'demo/',
                   ext: '.html'

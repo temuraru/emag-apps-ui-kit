@@ -51,8 +51,8 @@
                         </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/app_dev.php/ro_RO/profile"><span>Account settings</span></a></li>
-                        <li><a href="/app_dev.php/logout"><span>Logout</span></a></li>
+                        <li><a href="#"><span>Account settings</span></a></li>
+                        <li><a href="#"><span>Logout</span></a></li>
                     </ul>
                 </li>
             </ul>
