@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
-<head>
-
-        <title>jQGrid - eMAG Apps UI KIT</title>
+    <head>
+        <title>JS Components - eMAG Apps UI KIT</title>
         <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -10,11 +9,7 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">        
-        <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
-        <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
-
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -23,11 +18,12 @@
 <!--[if lt IE 9]>
     <script src="../dist/js/lib/html5shiv.min.js"></script>
     <script src="../dist/js/lib/respond.min.js"></script>
-<![endif]-->
-</head>
-
-<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><nav class="navbar navbar-default navbar-fixed-top">
+<![endif]-->    </head>
+    <body>
+        
+        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
+<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <div class="nav-controls visible-xs-inline-block pull-left">
@@ -87,13 +83,12 @@
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-</nav>
-<!-- HEADER:End -->
-<!-- PAGE:Start -->
-<div class="main-container" id="main-container">
-    <div class="main-container-inner">
-        <!-- SIDEBAR:Start -->
-        <div id="sidebar" class="sidebar sidebar-fixed">
+</nav>        <!-- HEADER:End -->
+        <!-- PAGE:Start -->
+            <div class="main-container" id="main-container">
+                <div class="main-container-inner">
+                <!-- SIDEBAR:Start -->
+                <div id="sidebar" class="sidebar sidebar-fixed">
     <div class="sidebar-outer">
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
@@ -284,32 +279,32 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_ajax_modals.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.html">
                                 <span class="menu-text">AJAX Modals</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_fancytree.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.html">
                                 <span class="menu-text">Fancytree</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_wysiwyg.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.html">
                                 <span class="menu-text">Wysiwyg editor</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_gallery.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.html">
                                 <span class="menu-text">Picture gallery & image slider</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_datetime.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_datetime.html">
                                 <span class="menu-text">DateTime</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_jqgrid.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
                                 <span class="menu-text">jQGrid</span>
                             </a>
                         </li>
@@ -337,17 +332,17 @@
                             </a>
                             <ul class="sidebar-submenu">
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_404.html">
+                                    <a href="/emag-apps-ui-kit/demo/err_404.html">
                                         <span class="menu-text">404</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_503.html">
+                                    <a href="/emag-apps-ui-kit/demo/err_503.html">
                                         <span class="menu-text">503</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_logged_out.html">
+                                    <a href="/emag-apps-ui-kit/demo/err_logged_out.html">
                                         <span class="menu-text">Logged out</span>
                                     </a>
                                 </li>
@@ -365,359 +360,131 @@
             </button>
         </div>
     </div>
-</div>        <!-- SIDEBAR:End -->
-        <!-- CONTENT:Start -->
-        <div class="main-content">
-            <div class="page-content">
-                <div class="jumbotron content-header">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid">
-                                <p>eMAG Apps UI KIT</p>
-                                <p><b>jQGrid</b></p>
+</div>                <!-- SIDEBAR:End -->
+                <!-- CONTENT:Start -->
+                <div class="main-content">
+                    <div class="page-content">
+                        <div class="jumbotron content-header">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="container-fluid">
+                                        <p>eMAG Apps UI KIT</p>
+                                        <p><b>AJAX Modals</b></p>
+                                    </div>
+                                 </div>
                             </div>
                         </div>
+                        <section id="summernoteStandard" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
+                                            <p><strong>Works great with the standard Bootstrap version</strong></p>
+                                            <div class="pad-sep-20">
+                                                <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
+                                            </div>
+                                        </div>
+                                        <div class="show-panel-example">                                       
+                                            <div class="show-panel-footer">
+                                                <pre class="language-javascript">
+                                                    <code class="language-javascript">
+var modalTest = new PhotonModal({
+    id: 'testModal',
+    title: 'This is an AJAX modal',
+    content: modalContent,
+    size: 'default',
+    type: 'preview',
+    buttons: {
+        save: {
+            label: 'Save',
+            class: 'btn-success'
+        },
+        cancel: {
+            label: 'Cancel',
+            class: 'btn-default',
+            closeModal: true
+        }
+    }
+}); 
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>                                        
                     </div>
                 </div>
-                <section id="jqgridStandard" class="pad-top-40">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
-                                <div class="show-panel-body">
-                                    <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQGrid Documentation</a></p>
-
-                                    <table id="grid_table" class="table table-bordered"></table>
-                                    <div id="grid_pager"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> <!-- #jqgridStandard -->
-
-                <section id="jqgridWithFormmaters" class="pad-top-20">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
-                                <div class="show-panel-body">
-                                    <table id="grid_with_formatter_table" class="table table-bordered"></table>
-                                    <div id="grid_with_formatter_pager"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> <!-- #jqgridWithFormmaters -->
-            </div>
-        </div>
-        <!-- CONTENT:End -->
-        <!-- FOOTER:Start -->
-        <div id="main_footer" class="footer">
+                <!-- CONTENT:End -->
+                <!-- FOOTER:Start -->
+                <div id="main_footer" class="footer">
     <div class="footer-inner text-center">
         <div class="footer-content">
             <span>Copyright &copy; 2011 - 2016 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
         </div>
     </div>
-</div>        <!-- FOOTER:End -->
-    </div>
-</div>
+</div>                <!-- FOOTER:End -->
+                </div>
+            </div>
+        <!-- PAGE:End -->
 
-<!-- PAGE:End -->
+        <!-- POPUPS:Start -->
+        <div id="popSpace"></div>
+        <!-- POPUPS:End -->
+        
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
 
-<!-- POPUPS:Start -->
-<div id="popSpace"></div>
-<!-- POPUPS:End -->
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">
 
-<!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
-
-<script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
-<script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
-<script src="../dist/plugins/tether/tether.min.js"></script>
-<script src="../dist/plugins/drop/drop.min.js"></script>
-
-<script src="../dist/js/main_script.min.js"></script>
-
-<script src="../dist/js/demo_helpers.js"></script>
-<!-- SCRIPTS:End -->
-
-<!-- DOCUMENT-READY:Start -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        console.log('Ready, Captain!');
-
-        demoHelpers();  // Require demo_helpers.js
-
-        showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
-
-        function getListingDummyData() {
-
-            var status1 = '{"label": "Live", "labelClass": "label-success", "tooltip": "Default tooltip"}';
-            var status2 = '{"label": "Deleted", "labelClass": "label-danger", "tooltip": "Danger tooltip", "tooltipType": "danger"}';
-            var status3 = '{"label": "Warning", "labelClass": "label-warning", "tooltip": "Warning tooltip", "tooltipType": "warning"}';
-            var status4 = 'Inactive';
-
-            var actions1 = [
-                {
-                    icon: 'fa-pencil',
-                    attr: {
-                        title: 'Edit'
+            var modalContent =      
+                '<div class="pad-btm-20 text-center">' +
+                    'This modal can contain any kind of info.<br>' +
+                    'Check out the code documentation on the main page.' +
+                '</div>' + 
+                '<div class="embed-responsive embed-responsive-16by9">' + 
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/9cNpKRXwaj4" allowfullscreen="">' +
+                    '</iframe>' + 
+                '</div>';
+            
+            var modalTest = new PhotonModal({
+                id: 'testModal',
+                title: 'This is an AJAX modal',
+                content: modalContent,
+                size: 'default',
+                type: 'preview',
+                buttons: {
+                    save: {
+                        label: 'Save',
+                        class: 'btn-success',
+                        closeModal: true
                     },
-                    group: 0
-                },
-                {
-                    icon: 'fa-trash',
-                    attr: {
-                        title: 'Delete'
-                    },
-                    group: 0
-                },
-                {
-                    icon: 'fa-ellipsis-h',
-                    attr: {
-                        title: 'More actions'
-                    },
-                    group: 0,
-                    dropdown: [
-                        {
-                            icon: 'fa-square',
-                            label: 'Action 1',
-                            attr: {
-                                title: 'Action 1'
-                            }
-                        },
-                        {
-                            icon: 'fa-square',
-                            label: 'Action 2',
-                            attr: {
-                                title: 'Action 2'
-                            }
-                        },
-                        {
-                            icon: 'fa-square',
-                            label: 'Action 3',
-                            attr: {
-                                title: 'Action 3'
-                            }
-                        },
-                        {
-                            icon: 'fa-square',
-                            label: 'Action 4',
-                            attr: {
-                                title: 'Action 4'
-                            }
-                        },
-                        {
-                            icon: 'fa-square',
-                            label: 'Action 5',
-                            attr: {
-                                title: 'Action 5'
-                            }
-                        }
-                    ]
-                },
-            ];
-            var actions2 = [
-                {
-                    icon: 'fa-pencil',
-                    attr: {
-                        title: 'Edit'
-                    },
-                    group: 0
-                },
-                {
-                    icon: 'fa-trash',
-                    attr: {
-                        title: 'Delete'
-                    },
-                    group: 0
-                },
-                {
-                    label: 'Special action',
-                    attr: {
-                        title: 'Special action'
+                    cancel: {
+                        label: 'Cancel',
+                        class: 'btn-default',
+                        closeModal: true
                     }
                 }
-            ];
-            var actions3 = [
-                {
-                    icon: 'fa-pencil',
-                    attr: {
-                        title: 'Edit'
-                    },
-                    group: 0
-                },
-                {
-                    icon: 'fa-trash',
-                    attr: {
-                        title: 'Delete'
-                    },
-                    group: 1
-                },
-                {
-                    label: 'Action',
-                    attr: {
-                        title: 'Action'
-                    },
-                    group: 1
-                }
-            ];
-            var actions4 = '[' +
-                '{' +
-                    '"icon": "fa-pencil",' +
-                    '"attr": {' +
-                        '"title": "Edit"' +
-                    '}' +
-                '},' +
-                '{' +
-                    '"icon": "fa-trash",' +
-                    '"attr": {' +
-                        '"title": "Delete"' +
-                    '}' +
-                '}' +
-            ']';
+            });
 
-            var data = {
-                'page': '1',
-                'records': '6',
-                'rows': [
-                    { 'name': 'Lorem ipsum dolor sit amet', 'status': status1, 'platform': 'google.ro', 'products': '0', 'actions': actions1 },
-                    { 'name': 'Name', 'status': status1, 'platform': 'google.ro', 'products': '23.232', 'actions': actions1 },
-                    { 'name': 'Name', 'status': status2, 'platform': 'google.ro', 'products': '560.032', 'actions': actions2 },
-                    { 'name': 'Name', 'status': status3, 'platform': 'google.hu', 'products': '88.932', 'actions': actions2 },
-                    { 'name': 'Name', 'status': status4, 'platform': 'google.bg', 'products': '76.999', 'actions': actions3 },
-                    { 'name': 'Name', 'status': status4, 'platform': 'google.bg', 'products': '76.999', 'actions': actions4 }
-                ]
-            };
-            return data;
-        }
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
 
-        var listingParameters = {
-            table: '#grid_table',
-            pager: '#grid_pager',
-            datatype: 'jsonstring',
-            caption: 'Listing caption',
-            datastr: getListingDummyData(),
-            colNames: [
-                'Name',
-                'Status',
-                'Platform',
-                'Available products',
-                'Actions'
-            ],
-            colModel: [
-                {name: 'name', index: 'name', width: 2, sortable: false},
-                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.badgeAndTooltip },
-                {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
-                {name: 'products', index: 'products', width: 2, sorttype: "text"},
-                {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
-            ],
-            gridComplete: function() {
-                addMoreActions('#grid_table');
-                $('#grid_table .label-with-tooltip').tooltip();
-            },
-        };
+                demoHelpers();  // Require demo_helpers.js
 
-        new PhotonJqGrid(listingParameters).init();
+                $('#ajax_modal_start').on('click', function(){
+                    modalTest.show();
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
 
-        function getListingWithFormatterDummyData() {
-            var data = {
-                'page': '1',
-                'records': '6',
-                'rows': [
-                    {
-                        'id': '0',
-                        'notAvailable': 'String value',
-                        'dateTime': '2016-07-29 11:53:59',
-                        'date': '2016-07-29',
-                        'time': '11:53:59',
-                        'userEmail': 'john.doe@emag.ro',
-                        'country': 'RO',
-                        'countryCode': 'ro'
-                    },
-                    {
-                        'id': 1,
-                        'notAvailable': '',
-                        'dateTime': ['2016-07-29', '11:53:59'],
-                        'date': ['2016-07-29'],
-                        'time': ['11:53:59'],
-                        'userEmail': '{"email": "john.doe@emag.ro"}',
-                        'country': '{"country": "RO", "countryCode": "ro"}'
-                    },
-                    {
-                        'id': null,
-                        'notAvailable': null,
-                        'dateTime': '{"date": "2016-07-29", "time": "11:53:59"}',
-                        'date': '{"date": "2016-07-29"}',
-                        'time': '{"time": "11:53:59"}',
-                        'userEmail': '{"user": "John Doe","email": "john.doe@emag.ro"}',
-                        'country': '{"country": "GB", "countryCode": "gb"}'
-                    },
-                    {
-                        /** 'id': 3, */
-                        /** 'notAvailable': 'String value', */
-                        /** 'dateTime': '2016-07-29 11:53:59', */
-                        /** 'date': '2016-07-29', */
-                        /** 'time': '11:53:59', */
-                        /** 'userEmail': 'john.doe@emag.ro', */
-                        /** 'country': 'RO' */
-                    },
-                    {
-                        'id': 4,
-                        'notAvailable': ['array val 1', 'array val 2'],
-                        'dateTime': {date: '2016-07-29', time: '11:53:59'},
-                        'date': {date: '2016-07-29'},
-                        'time': {time: '11:53:59'},
-                        'userEmail': {displayname: 'John Doe', email: 'john.doe@emag.ro'},
-                        'country': {country: 'RO', countryCode: 'ro'}
-                    },
-                    {
-                        'id': 5,
-                        'notAvailable': 1024,
-                        'dateTime': 1024,
-                        'date': 1024,
-                        'time': 1024,
-                        'userEmail': 1024,
-                        'country': 1024
-                    }
-                ]
-            };
-
-            return data;
-        }
-
-        var listingWithFormatterParameters = {
-            table: '#grid_with_formatter_table',
-            pager: '#grid_with_formatter_pager',
-            datatype: 'jsonstring',
-            caption: 'jqGrid with data formatters',
-            datastr: getListingWithFormatterDummyData(),
-            colNames: [
-                'id',
-                'notAvailable',
-                'dateTime',
-                'date',
-                'time',
-                'userEmail',
-                'country'
-            ],
-            colModel: [
-                {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
-                {name: 'notAvailable', index: 'notAvailable', sortable: false, width: 3, formatter: PhotonDataFormatter.notAvailable },
-                {name: 'dateTime', index: 'dateTime', sortable: false, width: 3, formatter: PhotonDataFormatter.dateTime },
-                {name: 'date', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.date },
-                {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
-                {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
-                {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
-            ]
-        };
-
-        new PhotonJqGrid(listingWithFormatterParameters).init();
-
-    });
-</script>
-<!-- DOCUMENT-READY:End -->
-</body>
+    </body>
 </html>
