@@ -11873,6 +11873,9 @@ select.form-control option:hover {
   display: block;
   overflow: hidden;
 }
+.collapse[aria-expanded="false"] .stick {
+  display: none !important;
+}
 select.form-control,
 .form-control:focus {
   box-shadow: none;
