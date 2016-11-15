@@ -48,13 +48,18 @@
 var modalTest = new PhotonModal({
     id: 'testModal',
     title: 'This is an AJAX modal',
-    content: modalContent,
+    useAjax: true,
+    ajaxModalParams: {
+        method: 'POST',
+        url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
+    },
     size: 'default',
     type: 'preview',
     buttons: {
         save: {
             label: 'Save',
-            class: 'btn-success'
+            class: 'btn-success',
+            closeModal: true
         },
         cancel: {
             label: 'Cancel',
@@ -94,21 +99,14 @@ var modalTest = new PhotonModal({
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
-
-            var modalContent =      
-                '<div class="pad-btm-20 text-center">' +
-                    'This modal can contain any kind of info.<br>' +
-                    'Check out the code documentation on the main page.' +
-                '</div>' + 
-                '<div class="embed-responsive embed-responsive-16by9">' + 
-                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/9cNpKRXwaj4" allowfullscreen="">' +
-                    '</iframe>' + 
-                '</div>';
-            
             var modalTest = new PhotonModal({
                 id: 'testModal',
                 title: 'This is an AJAX modal',
-                content: modalContent,
+                useAjax: true,
+                ajaxModalParams: {
+                    method: 'POST',
+                    url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
+                },
                 size: 'default',
                 type: 'preview',
                 buttons: {
