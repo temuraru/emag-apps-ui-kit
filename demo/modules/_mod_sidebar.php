@@ -258,6 +258,11 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/blank_page.php">
+                                <span class="menu-text">Blank page</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
