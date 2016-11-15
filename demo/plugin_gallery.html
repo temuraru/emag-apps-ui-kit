@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <title>JS Components - eMAG Apps UI KIT</title>
+        <title>Plugins - eMAG Apps UI KIT</title>
         <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -9,7 +9,8 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">        <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css">
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -20,9 +21,9 @@
     <script src="../dist/js/lib/respond.min.js"></script>
 <![endif]-->    </head>
     <body>
-        
         <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
 <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <!-- HEADER:Start -->
         <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -279,32 +280,32 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_ajax_modals.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.html">
                                 <span class="menu-text">AJAX Modals</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_fancytree.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.html">
                                 <span class="menu-text">Fancytree</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_wysiwyg.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.html">
                                 <span class="menu-text">Wysiwyg editor</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_gallery.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.html">
                                 <span class="menu-text">Picture gallery & image slider</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_datetime.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_datetime.html">
                                 <span class="menu-text">DateTime</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_jqgrid.html">
+                            <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
                                 <span class="menu-text">jQGrid</span>
                             </a>
                         </li>
@@ -332,17 +333,17 @@
                             </a>
                             <ul class="sidebar-submenu">
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_404.html">
+                                    <a href="/emag-apps-ui-kit/demo/err_404.html">
                                         <span class="menu-text">404</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_503.html">
+                                    <a href="/emag-apps-ui-kit/demo/err_503.html">
                                         <span class="menu-text">503</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_logged_out.html">
+                                    <a href="/emag-apps-ui-kit/demo/err_logged_out.html">
                                         <span class="menu-text">Logged out</span>
                                     </a>
                                 </li>
@@ -369,7 +370,7 @@
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="container-fluid">
                                         <p>eMAG Apps UI KIT</p>
-                                        <p><b>AJAX Modals</b></p>
+                                        <p><b>Image gallery</b></p>
                                     </div>
                                  </div>
                             </div>
@@ -379,36 +380,68 @@
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="show-panel">
                                         <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
-                                            <p><strong>Works great with the standard Bootstrap version</strong></p>
-                                            <div class="pad-sep-20">
-                                                <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
+                                            <h4 class="text-primary"><strong>Magnific.js</strong></h4>
+                                            <p><strong>Standard install</strong></p>
+                                            <p>You can familiarize yourself with more options and settings by checking out <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">http://dimsemenov.com/plugins/magnific-popup/</a></p>
+                                        </div>
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body">
+                                                <div class="pad-top-40">
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-lg-offset-1" data-showcase="example">
+                                                            <div id="default_magnific" class="zoom-gallery zg-grid">
+                                                                <a href="img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
+                                                                    <img src="img/photo-1.jpg" alt="gallery-image">
+                                                                </a>
+                                                                <a href="img/photo-4.jpg" data-source="https://unsplash.com/photos/BeIvjuz6k2k" title="by Adrian Pelletier">
+                                                                    <img src="img/photo-4.jpg" alt="gallery-image">
+                                                                </a>
+                                                                <a href="img/photo-5.jpg" data-source="https://unsplash.com/photos/DjlKxYFJlTc" title="by Elliott Engelmann">
+                                                                    <img src="img/photo-5.jpg" alt="gallery-image">
+                                                                </a>
+                                                                <a href="img/photo-6.jpg" data-source="http://www.gettyimages.com/license/484398332" title="by Carl Court">
+                                                                    <img src="img/photo-6.jpg" alt="gallery-image">
+                                                                </a>
+                                                                <a href="img/photo-7.jpg" data-source="http://www.volvooceanrace.com/en/home.html" title="Volvo Ocean Race/Team Vestas Wind/2015">
+                                                                    <img src="img/photo-7.jpg" alt="gallery-image">
+                                                                </a>
+                                                                <a href="img/photo-8.gif" data-source="https://www.youtube.com/watch?v=o0u4M6vppCI" title="'Shia LaBeouf' Live - Rob Cantor">
+                                                                    <img src="img/photo-8.gif" alt="gallery-image">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="show-panel-example">                                       
-                                            <div class="show-panel-footer">
-                                                <pre class="language-javascript">
-                                                    <code class="language-javascript">
-var modalTest = new PhotonModal({
-    id: 'testModal',
-    title: 'This is an AJAX modal',
-    content: modalContent,
-    size: 'default',
-    type: 'preview',
-    buttons: {
-        save: {
-            label: 'Save',
-            class: 'btn-success'
-        },
-        cancel: {
-            label: 'Cancel',
-            class: 'btn-default',
-            closeModal: true
-        }
-    }
-}); 
-                                                    </code>
-                                                </pre>
+                                    </div>
+                                    <div class="show-panel">
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body">
+                                                <p><strong>All AJAX</strong></p>
+                                                <p>Sometimes, you may want to surprise your audience.</p>
+                                                <div class="pad-sep-40">
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                                                            <a href="img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-panel">
+                                        <div class="show-panel-example">
+                                            <div class="show-panel-body">
+                                                <p><strong>Youtube/Vimeo/etc. embeds</strong></p>
+                                                <p>Sometimes, you may want to surprise your audience.</p>
+                                                <div class="pad-sep-40">
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                                                            <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM" id="youtube_magnific" class="btn btn-primary">Open YouTube video</a><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -429,62 +462,68 @@ var modalTest = new PhotonModal({
                 </div>
             </div>
         <!-- PAGE:End -->
-
-        <!-- POPUPS:Start -->
-        <div id="popSpace"></div>
-        <!-- POPUPS:End -->
         
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: Magnific popup -->
+        <script src="../dist/plugins/magnific/magnific.min.js"></script>
+        
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">
-
-            var modalContent =      
-                '<div class="pad-btm-20 text-center">' +
-                    'This modal can contain any kind of info.<br>' +
-                    'Check out the code documentation on the main page.' +
-                '</div>' + 
-                '<div class="embed-responsive embed-responsive-16by9">' + 
-                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/9cNpKRXwaj4" allowfullscreen="">' +
-                    '</iframe>' + 
-                '</div>';
-            
-            var modalTest = new PhotonModal({
-                id: 'testModal',
-                title: 'This is an AJAX modal',
-                content: modalContent,
-                size: 'default',
-                type: 'preview',
-                buttons: {
-                    save: {
-                        label: 'Save',
-                        class: 'btn-success',
-                        closeModal: true
-                    },
-                    cancel: {
-                        label: 'Cancel',
-                        class: 'btn-default',
-                        closeModal: true
-                    }
-                }
-            });
-
+        <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
                 demoHelpers();  // Require demo_helpers.js
 
-                $('#ajax_modal_start').on('click', function(){
-                    modalTest.show();
+                $('#default_magnific').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                        verticalFit: true,
+                        titleSrc: function (item) {
+                            return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+                        }
+                    },
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't foget to change the duration also in CSS
+                        opener: function (element) {
+                            return element.find('img');
+                        }
+                    }
+                });
+
+                $('#btnajax_magnific').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    image: {
+                        verticalFit: true
+                    }
+
+                });
+                $('#youtube_magnific').magnificPopup({
+                    //disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+                    fixedContentPos: false
                 });
             });
         </script>
         <!-- DOCUMENT-READY:End -->
-
+        
     </body>
 </html>
