@@ -57,6 +57,19 @@ i {
   .page-content > & {
       margin: 0 0 30px;
   }
+  &.content-header {
+    box-shadow: none;
+    margin: -20px;
+    padding-top: (@jumbotron-padding / 2);
+    padding-bottom: (@jumbotron-padding / 2);
+
+    p {
+      margin-bottom: 0;
+    }
+    b, strong {
+      font-weight: 600;
+    }
+  }
 }
 
 .progress {
@@ -70,7 +83,7 @@ i {
   padding-right:50px;
   position:relative;
   .close {
-    margin: @modal-title-padding;
+    margin: @modal-title-top-bottom-padding @modal-title-left-right-padding;
     padding: 2px;
     position: absolute;
     top:0;
@@ -82,7 +95,7 @@ i {
 }
 .modal-footer {
   padding: @modal-footer-padding;
-  background-color: @modal-footer-bg;
+  //background-color: @modal-footer-bg;
   text-align: normal;
 }
 

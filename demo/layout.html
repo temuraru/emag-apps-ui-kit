@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+    <head>
+
+        <title>Layout - eMAG Apps UI KIT</title>
+        <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="eMAG HX Team">
+
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon.png">        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+
+<!-- PHOTON main styles -->
+<link rel="stylesheet" href="../dist/css/main_style.min.css">
+
+<!--[if lt IE 9]>
+    <script src="../dist/js/lib/html5shiv.min.js"></script>
+    <script src="../dist/js/lib/respond.min.js"></script>
+<![endif]-->
+    </head>
+    <body>
+        
+        <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
+<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <!-- HEADER:Start -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <div class="nav-controls visible-xs-inline-block pull-left">
+                <button id="toggle-sidebar-btn" type="button" class="btn btn-default navbar-btn" aria-expanded="false">
+                    <span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">
+                <img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">
+            </a>
+            <div class="nav-controls visible-xs-inline-block pull-right">
+                <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+        </div><!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav">
+            <h4 class="navbar-text">Demo</h4>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="visible-xs-inline">Language</span>
+                        <span><i class="flag-icon flag-icon-gb"></i>GB</span><i class="fa fa-angle-down hidden-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dm-language">
+                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
+                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                        <span class="visible-xs-inline">Notifications</span>
+                        <span class="jewel">3</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dm-header hidden-xs"><span>Notifications</span></li>
+                        <li><a href="#"><span>You have an invalidated offer</span></a></li>
+                        <li><a href="#"><span>Your account is not up to date</span></a></li>
+                        <li><a href="#"><span>You have a new order</span></a></li>
+                        <li><a href="javascript:void(0)"><span>View all</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="profile-thumb hidden-xs">
+                            <img class="nav-user-photo" src="img/profile_image.png" alt="">
+                        </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span>Account settings</span></a></li>
+                        <li><a href="#"><span>Logout</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>        <!-- HEADER:End -->
+        
+        <!-- PAGE:Start -->
+            <div class="main-container" id="main-container">
+                <div class="main-container-inner">
+                <!-- SIDEBAR:Start -->
+                <div id="sidebar" class="sidebar sidebar-fixed">
+    <div class="sidebar-outer">
+        <ul class="sidebar-inner">
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/index.html">
+                    <i class="menu-icon fa fa-flag-checkered"></i>
+                    <span class="menu-text">Start</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="/emag-apps-ui-kit/demo/index.html" class="menu-item-min-link">
+                        <span class="menu-text">Start</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/index.html#overview">
+                                <span class="menu-text">Overview</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/index.html#gettingStarted">
+                                <span class="menu-text">Getting started</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html">
+                    <i class="menu-icon fa fa-columns"></i>
+                    <span class="menu-text">Layout</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html" class="menu-item-min-link">
+                        <span class="menu-text">Layout</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html">
+                                <span class="menu-text">Boilerplate</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#topNavigation">
+                                <span class="menu-text">Top Navigation</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#mainSidebar">
+                                <span class="menu-text">Sidebar</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#mainFooter">
+                                <span class="menu-text">Footer</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/layout.html#gridLayout">
+                                <span class="menu-text">Grid Layout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html">
+                    <i class="menu-icon fa fa-paint-brush"></i>
+                    <span class="menu-text">Branding</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html" class="menu-item-min-link">
+                        <span class="menu-text">Branding</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html">
+                                <span class="menu-text">Color scheme</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html#typography">
+                                <span class="menu-text">Typography</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.html#icons">
+                                <span class="menu-text">Icons</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html">
+                    <i class="menu-icon fa fa-archive"></i>
+                    <span class="menu-text">CSS Components</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html" class="menu-item-min-link">
+                        <span class="menu-text">CSS Components</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html">
+                                <span class="menu-text">Typefaces variations</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssTables">
+                                <span class="menu-text">Tables</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#basicForms">
+                                <span class="menu-text">Forms</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#buttons">
+                                <span class="menu-text">Buttons</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssFlipswitch">
+                                <span class="menu-text">CSS Flipswitch</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssTooltips">
+                                <span class="menu-text">CSS Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssLabelsandBadges">
+                                <span class="menu-text">Labels and badges</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssAlertsandNotifications">
+                                <span class="menu-text">Alerts and notifications</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssPanels">
+                                <span class="menu-text">Panels</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssJumbotron">
+                                <span class="menu-text">Page headers and jumbotrons</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssEmbeds">
+                                <span class="menu-text">Embeds</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html">
+                    <i class="menu-icon fa fa-code"></i>
+                    <span class="menu-text">JS Components</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html" class="menu-item-min-link">
+                        <span class="menu-text">JS Components</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html">
+                                <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsTooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsPopovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsUtilities">
+                                <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.html">
+                                <span class="menu-text">AJAX Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.html">
+                                <span class="menu-text">Fancytree</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.html">
+                                <span class="menu-text">Wysiwyg editor</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.html">
+                                <span class="menu-text">Picture gallery & image slider</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_datetime.html">
+                                <span class="menu-text">DateTime</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
+                                <span class="menu-text">jQGrid</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">
+                    <i class="menu-icon fa fa-star"></i>
+                    <span class="menu-text">Useful Pages</span>
+                </a>
+                <div class="menu-item-data">
+                    <a href="#" class="menu-item-min-link">
+                        <span class="menu-text">Useful Pages</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/authentication.html">
+                                <span class="menu-text">Log In & Sign Up</span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">
+                                <span class="menu-text">Error pages</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/err_404.html">
+                                        <span class="menu-text">404</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/err_503.html">
+                                        <span class="menu-text">503</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/err_logged_out.html">
+                                        <span class="menu-text">Logged out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/blank_page.html">
+                                <span class="menu-text">Blank page</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-control">
+        <div class="sidebar-toggle">
+            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-default btn-sm">
+                <i class="menu-icon fa fa-arrow-left"></i>
+            </button>
+        </div>
+    </div>
+</div>                <!-- SIDEBAR:End -->
+                <!-- CONTENT:Start -->
+                <div class="main-content">
+                    <div class="page-content">
+                        <div class="jumbotron content-header">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="container-fluid">
+                                        <p>eMAG Apps UI KIT</p>
+                                        <p><b>Layout</b></p>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <section id="boilerplate" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h2><strong>Boilerplate</strong></h2>
+                                            <p><strong>This is the main HTML template. It is based on the <a href="https://html5boilerplate.com/" target="_blank"><u>The HTML5 Boilerplate project</u></a>.</strong></p>
+                                        </div>
+                                        <div class="show-panel-footer">
+                                            <pre>&lt;!doctype html&gt;
+&lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;YOUR DESCRIPTION&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;YOUR APPLICATION AUTHOR&quot;&gt;
+
+        &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;apple-touch-icon.png&quot;&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;favicon.ico&quot;&gt;
+
+        <span class="text-success">&lt;!-- The main stylesheet contains all the essential Bootstrap & eMAG Apps UI KIT styling --&gt;</span>
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/main_style.min.css&quot;&gt;
+        <span class="text-success">
+        &lt;!--[if lt IE 9]&gt;
+            &lt;script src=&quot;../dist/js/lib/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;../dist/js/lib/respond.min.js&quot;&gt;&lt;/script&gt;
+        &lt;![endif]--&gt;
+        </span>
+    &lt;/head&gt;
+    &lt;body&gt;<span class="text-success">
+        &lt;!--[if lt IE 9]&gt;&lt;body class=&quot;lt-ie9&quot;&gt; &lt;![endif]--&gt;
+        &lt;!--[if lt IE 9]&gt;
+            &lt;p class=&quot;browserupgrade&quot;&gt;
+                You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. 
+                Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.
+            &lt;/p&gt;
+        &lt;![endif]--&gt;
+        &lt;!-- HEADER:Start --&gt;
+        &lt;!-- HEADER:End --&gt;
+
+        &lt;!-- PAGE:Start --&gt;
+        </span>
+            &lt;div class=&quot;main-container&quot; id=&quot;main-container&quot;&gt;
+                &lt;div class=&quot;main-container-inner&quot;&gt;
+                <span class="text-success">
+                &lt;!-- SIDEBAR:Start --&gt;
+                &lt;!-- SIDEBAR:End --&gt;
+
+                &lt;!-- CONTENT:Start --&gt;</span>
+                &lt;div class=&quot;main-content&quot;&gt;
+                    &lt;div class=&quot;page-content&quot;&gt;
+                        Here is the content                                      
+                    &lt;/div&gt;
+                &lt;/div&gt;<span class="text-success">
+                &lt;!-- CONTENT:End --&gt;
+
+                &lt;!-- FOOTER:Start --&gt;
+                &lt;!-- FOOTER:End --&gt;
+                 </span>
+                &lt;/div&gt;
+            &lt;/div&gt;
+        <span class="text-success">
+        &lt;!-- PAGE:End --&gt;
+
+        &lt;!-- POPUPS:Start --&gt;</span>
+        &lt;div id=&quot;popSpace&quot;&gt;&lt;/div&gt;
+        <span class="text-success">&lt;!-- POPUPS:End --&gt;
+
+        &lt;!-- SCRIPTS:Start --&gt;</span>
+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
+        
+        <span class="text-success">&lt;!-- The main script file contains all the essential Bootstrap & eMAG Apps UI KIT utilities --&gt;</span>
+        &lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;
+        <span class="text-success">&lt;!-- SCRIPTS:End --&gt;
+
+        &lt;!-- DOCUMENT-READY:Start --&gt;</span>
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            $(document).ready(function() {
+                console.log('Ready, Captain!');
+            });
+        &lt;/script&gt;
+        <span class="text-success">&lt;!-- DOCUMENT-READY:End --&gt;</span>
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="topNavigation" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h2><strong>Top Navigation</strong></h2>
+                                            <p><strong>The header navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
+                                            <div>
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse navbar-collapse" id="test2_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                            <div class="pad-top-20">
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse navbar-collapse" id="test2_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                <li class="dropdown">
+                                                                    <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                        <div class="profile-thumb hidden-xs">
+                                                                            <img class="nav-user-photo" src="img/profile_image.png" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
+                                                                        </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href="#"><span>Account settings</span></a></li>
+                                                                        <li><a href="#"><span>Support</span></a></li>
+                                                                        <li><a href="#"><span>Logout</span></a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                            <div class="pad-top-20">
+                                                    <nav class="navbar navbar-default">
+                                                        <div class="container-fluid">
+                                                            <div class="navbar-header">
+                                                                <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                    <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                                </div>
+                                                                <a class="navbar-brand" href="javascript:void(0)">
+                                                                    <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                                </a>
+                                                                <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                    <button class="btn btn-default navbar-btn" data-target="#test3_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                        <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="collapse navbar-collapse" id="test3_navbar">
+                                                                <h4 class="navbar-text">Title</h4>
+                                                                <ul class="nav navbar-nav navbar-right">
+                                                                    <li class="dropdown">
+                                                                        <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                            <span class="visible-xs-inline">Language</span>
+                                                                            <span><i class="flag-icon flag-icon-ro"></i>RO</span><i class="fa fa-angle-down hidden-xs"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu dm-language">
+                                                                            <li><a href="#"><i class="flag-icon flag-icon-gb"></i><span>EN</span></a></li>
+                                                                            <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
+                                                                            <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
+                                                                            <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="dropdown">
+                                                                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                            <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                                                                            <span class="visible-xs-inline">Notifications</span>
+                                                                            <span class="jewel">3</span>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="dm-header hidden-xs">
+                                                                                <span>Notifications</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><span>You have an invalidated offer</span></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><span>Your account is not up to date</span></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><span>You have a new order</span></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:void(0)"><span>View all</span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </nav>
+                                            </div>
+                                            <div class="pad-top-20">
+                                                <nav class="navbar navbar-default">
+                                                    <div class="container-fluid">
+                                                        <div class="navbar-header">
+                                                            <div class="nav-controls visible-xs-inline-block pull-left">
+                                                                <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                            </div>
+                                                            <a class="navbar-brand" href="javascript:void(0)">
+                                                                <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                            </a>
+                                                            <div class="nav-controls visible-xs-inline-block pull-right">
+                                                                <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                    <span class="sr-only">Toggle navigation</span>
+                                                                    <i class="fa fa-angle-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse navbar-collapse" id="test4_navbar">
+                                                            <h4 class="navbar-text">Title</h4>
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                <li class="nav-input-group nav-search">
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" name="example1" id="example1" placeholder="Search">
+                                                                        <div class="input-group-btn">
+                                                                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="dropdown">
+                                                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                                                                        <span class="visible-xs-inline">Notificare</span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li class="dm-header hidden-xs">
+                                                                            <span>Notifications</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>You have an invalidated offer</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>Your account is not up to date</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"><span>You have a new order</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)"><span>View all</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="mainSidebar" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h2><strong>Sidebar</strong></h2>
+                                            <p><strong>eMAG Apps UI KIT's unique sidebar menu.</strong></p>
+                                            <p>You can check the different sidebar states below.</p>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p><strong>Fixed state</strong></p>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_fixed_status" class="form-radio-control" value="fixed" checked="checked">
+                                                            Fixed
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_fixed_status" class="form-radio-control" value="unfixed">
+                                                            UN-Fixed
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><strong>Expanded state</strong></p>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_expanded_status" class="form-radio-control" value="expanded" checked="checked">
+                                                            Expanded
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="sidebar_expanded_status" class="form-radio-control" value="collapsed">
+                                                            Collapsed
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="show-panel-footer">
+<pre>&lt;div id=&quot;sidebar&quot; class=&quot;<mark id="sidebar_classes" class="text-danger">sidebar sidebar-fixed</mark>&quot;&gt;
+    &lt;div class=&quot;sidebar-outer&quot;&gt;
+        &lt;ul class=&quot;sidebar-inner&quot;&gt;
+            &lt;li class=&quot;menu-item&quot;&gt;
+                &lt;a href=&quot;/your/path&quot;&gt;
+                    &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>First level</strong></span>&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;i class=&quot;menu-icon fa fa-bolt&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>First level with children</strong></span>&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;ul class=&quot;sidebar-submenu&quot;&gt;
+                    &lt;li class=&quot;menu-item&quot;&gt;
+                        &lt;a href=&quot;/your/path/1&quot;&gt;
+                            &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                            &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Second level</strong></span>&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
+                        &lt;a href=&quot;/your/path/2&quot;&gt;
+                            &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                            &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Second level with children</strong></span>&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;sidebar-submenu&quot;&gt;
+                            &lt;li class=&quot;menu-item&quot;&gt;
+                                &lt;a href=&quot;/your/path/2/2&quot;&gt;
+                                    &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Third level</strong></span>&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;menu-item&quot;&gt;
+                                &lt;a href=&quot;/your/path/2/3&quot;&gt;
+                                    &lt;i class=&quot;menu-icon fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                    &lt;span class=&quot;menu-text&quot;&gt;<span class="text-danger"><strong>Third level</strong></span>&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sidebar-control&quot;&gt;
+        &#x3C;div class=&#x22;sidebar-toggle&#x22;&#x3E;
+            &#x3C;button type=&#x22;button&#x22; id=&#x22;toggle-sidebar-size-btn&#x22; class=&#x22;btn btn-default btn-sm&#x22;&#x3E;
+                &#x3C;i class=&#x22;<mark id="sidebar_control_button_icon_classes" class="text-danger">menu-icon fa fa-arrow-left</mark>&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="mainFooter" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h2><strong>Footer</strong></h2>
+                                            <p><strong>eMAG Apps UI KIT's unique CSS footer</strong></p>
+                                            <p>You can check the different footer states below.</p>
+                                            <p><strong>Fixed state</strong></p>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="footer_fixed_status" class="form-radio-control" value="unfixed" checked="checked">
+                                                    UN-Fixed
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="footer_fixed_status" class="form-radio-control" value="fixed">
+                                                    Fixed
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="show-panel-footer">
+<pre><span id="footer_fixed_code" class="hide">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer footer-fixed&#x22;&#x3E;
+    &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
+        &#x3C;div class=&#x22;footer-content&#x22;&#x3E;
+            &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+                &#x3C;div class=&#x22;pull-left hidden-xs&#x22;&#x3E;
+                    &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;panel-controls pull-right&#x22;&#x3E;
+                    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; id=&#x22;save-action-ft&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fa fa-check&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span&#x3E;Save&#x3C;/span&#x3E;
+                    &#x3C;/button&#x3E;
+                    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; id=&#x22;cancel-action-ft&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fa fa-close&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span&#x3E;Cancel&#x3C;/span&#x3E;
+                    &#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;clearfix text-center pad-top-20 visible-xs-block&#x22;&#x3E;
+                &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</span><span id="footer_unfixed_code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
+    &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
+        &#x3C;div class=&#x22;footer-content text-center&#x22;&#x3E;
+            &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</span></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="gridLayout" class="pad-top-40">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="show-panel">
+                                        <div class="show-panel-body">
+                                            <h2><strong>Grid Layout</strong></h2>
+                                            <p><strong>See how you can customize the main content width below.</strong></p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="pad-top-40">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="pad-sep-60">
+                                            <strong>Full-width container</strong>
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-12&quot;&gt; One panel here &lt;/div&gt;
+    ...
+&lt;/div&gt;
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pad-top-20">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <div class="pad-sep-60">
+                                                    <p><strong>Half-width containers</strong></p>
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-6&quot;&gt; One panel here &lt;/div&gt;
+    ...
+&lt;/div&gt;
+</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <div class="pad-sep-60">
+                                                    <p></p><strong>Half-width containers</strong>
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-6&quot;&gt; The other one here &lt;/div&gt;
+    ...
+&lt;/div&gt;
+</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pad-top-20">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="panel">
+                                            <div class="panel-body ">
+                                                <div class="pad-sep-60">
+                                                    <p><strong>Centered container</strong></p>
+<pre>
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-8 col-lg-offset-2&quot;&gt;
+    Your panel here 
+&lt;/div&gt;&lt;/div&gt;
+</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pad-sep-40 text-center">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <p class="text-primary"><strong>HINT:</strong> Whatever you opt for, try to place elements inside a nice panel or widget container. Don't be like the guy who wrote this text directly on the gray body background.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>                        
+                    </div>
+                </div>
+                <!-- CONTENT:End -->
+                <!-- FOOTER:Start -->
+                <div id="main_footer" class="footer">
+    <div class="footer-inner text-center">
+        <div class="footer-content">
+            <span>Copyright &copy; 2011 - 2016 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
+        </div>
+    </div>
+</div>                <!-- FOOTER:End -->
+                </div>
+            </div>
+        <!-- PAGE:End -->
+
+        <!-- SCRIPTS:Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
+
+        <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript">               
+            $(document).ready(function () {
+                console.log('Ready, Captain!');
+
+                demoHelpers();  // Require demo_helpers.js
+
+                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
+                    updateSideBarCode();
+                });
+                $('input[name="footer_fixed_status"]').on('change', function() {
+                    updateFooterBarCode();
+                });
+            });
+        </script>
+        <!-- DOCUMENT-READY:End -->
+
+    </body>
+</html>

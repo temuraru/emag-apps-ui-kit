@@ -1,6 +1,5 @@
 /*!
- * Photon Gruntfile
- * http://photon.emag.ro
+ * eMAG Apps UI KIT Gruntfile
  * Copyright 2011-2016 eMAG.
  * Licensed under MIT License
  */
@@ -15,11 +14,10 @@ module.exports = function (grunt) {
         // Metadata.
         pkg: grunt.file.readJSON('package.json'),
         banner: '/*!\n' +
-            ' * Photon UI Bundle v<%= pkg.version %>' +
+            ' * eMAG Apps UI KIT v<%= pkg.version %>' +
             ' * Copyright 2001-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
             ' */\n',
-
         // Task configuration:
         // Compiles the .less files into a readable .css file.
         less: {
@@ -181,6 +179,8 @@ module.exports = function (grunt) {
                     '<%= pkg.data_plugins%>/blockui/js/jQuery.blockui.2.70.0.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonModal.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_customInput.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_tooltip.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_popover.js',
                     '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/custom-setup.js'
                 ],
@@ -214,28 +214,22 @@ module.exports = function (grunt) {
                htmlhint: {
                  'doctype-first': false
                },
-               processLinks: true
+               processLinks: true,
+               process: function(response,callback) {
+                    var content = response.replace(new RegExp('.php', 'g'), '.html');
+                    callback (content);
+              }
              },
              files: [
                 {
                   expand: true,
-                  cwd: 'examples/',
-                  src: ['overview.php'],
+                  cwd: 'demo/',
+                  src: ['*.php'],
                   dest: 'demo/',
                   ext: '.html'
                 }
               ]
            }
-        },
-        'html-prettyprinter': {
-          custom: {
-              src: 'demo/overview.html',
-              dest: 'demo/overview.html',
-              options: {
-                indent_size: 2,
-                indent_char: '\t'
-              }
-            }
         },
         // Minifies JS files
         uglify: {
@@ -277,20 +271,51 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js'
                 }
             }
+        },
+        watch: {
+            styles: {
+                files: ['<%= pkg.data_styles %>/**/*.less'],
+                tasks: ['styles'],
+                options: {
+                    nospawn: true
+                }
+            },
+            plugin_styles: {
+                files: ['<%= pkg.data_plugins %>/**/*.less'],
+                tasks: ['plugin_styles'],
+                options: {
+                    nospawn: true
+                }
+            },
+            scripts: {
+              files: ['<%= pkg.data_scripts%>/**/*.js'],
+              tasks: ['scripts'],
+              options: {
+                  nospawn: true
+              }
+            },
+            plugin_scripts: {
+              files: ['<%= pkg.data_plugins %>/**/*.js'],
+              tasks: ['plugin_scripts'],
+              options: {
+                  nospawn: true
+              }
+            }
         }
     });
 
     // Load the grunt plugin(s)
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-php2html');
-    grunt.loadNpmTasks('grunt-html-prettyprinter');
 
-    // Custom task(s).
+    // Custom tasks.
+
     // CSS distribution task.
     grunt.registerTask('styles', [
         'less:frontend',
@@ -301,6 +326,7 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'cssmin:frontend_dark'
     ]);
+    
     // JS distribution task.
     grunt.registerTask('scripts', [
         'concat:frontend',
@@ -332,8 +358,23 @@ module.exports = function (grunt) {
     ]);
 
     //Convert php to html and use pretify for it
-    grunt.registerTask('convert_php', [
-        'php2html',
-        'html-prettyprinter'
+    grunt.registerTask('convert_demo', [
+        'php2html'
+    ]);
+
+    grunt.registerTask('watch_styles', [
+        'watch:styles'
+    ]);
+
+    grunt.registerTask('watch_plugin_styles', [
+        'watch:plugin_styles'
+    ]);
+
+    grunt.registerTask('watch_plugin_scripts', [
+        'watch:plugin_scripts'
+    ]);
+
+    grunt.registerTask('watch_scripts', [
+        'watch:scripts'
     ]);
 };
