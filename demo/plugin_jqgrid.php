@@ -38,7 +38,7 @@
                 <section id="jqgridStandard" class="pad-top-40">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQGrid Documentation</a></p>
 
@@ -53,7 +53,7 @@
                 <section id="jqgridWithFormmaters" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <table id="grid_with_formatter_table" class="table table-bordered"></table>
                                     <div id="grid_with_formatter_pager"></div>

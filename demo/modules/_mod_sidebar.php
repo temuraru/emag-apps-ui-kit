@@ -189,32 +189,32 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_ajax_modals.php">
+                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.php">
                                 <span class="menu-text">AJAX Modals</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_fancytree.php">
+                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.php">
                                 <span class="menu-text">Fancytree</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_wysiwyg.php">
+                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.php">
                                 <span class="menu-text">Wysiwyg editor</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_gallery.php">
+                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.php">
                                 <span class="menu-text">Picture gallery & image slider</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_datetime.php">
+                            <a href="/emag-apps-ui-kit/demo/plugin_datetime.php">
                                 <span class="menu-text">DateTime</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/_plu_jqgrid.php">
+                            <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php">
                                 <span class="menu-text">jQGrid</span>
                             </a>
                         </li>
@@ -242,17 +242,17 @@
                             </a>
                             <ul class="sidebar-submenu">
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_404.php">
+                                    <a href="/emag-apps-ui-kit/demo/err_404.php">
                                         <span class="menu-text">404</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_503.php">
+                                    <a href="/emag-apps-ui-kit/demo/err_503.php">
                                         <span class="menu-text">503</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/_err_logged_out.php">
+                                    <a href="/emag-apps-ui-kit/demo/err_logged_out.php">
                                         <span class="menu-text">Logged out</span>
                                     </a>
                                 </li>

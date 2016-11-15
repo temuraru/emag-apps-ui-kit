@@ -1,6 +1,7 @@
+[![uikit banner](http://emagtechlabs.github.io/emag-apps-ui-kit/presentation/css/images/eMAG_Apps_UI_KIT_facebook.png)](http://emagtechlabs.github.io/emag-apps-ui-kit/)
 # eMAG Apps UI KIT
 
-We've launched eMAG Apps UI Kit, a collection of visual elements and guidelines for admin applications.  
+We've launched eMAG Apps UI KIT, a collection of visual elements and guidelines for admin applications.  
 The purpose of this collection is to help you build amazing software easier and faster.  
 
 ## Summary

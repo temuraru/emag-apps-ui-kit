@@ -48,7 +48,7 @@
                 <section class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Modals</strong></h4>
                                     <p><strong>Default styling:</strong></p>
@@ -117,7 +117,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <p><strong>Demo modals with different sizing:</strong></p>
                                     <div class="pad-sep-20">
@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <p><strong>Informational modals:</strong></p>
                                     <div class="pad-sep-20">
@@ -179,7 +179,7 @@
                 <section id="jsTooltips" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Tooltips</strong></h4>
                                     <div class="pad-sep-40" data-showcase="example">
@@ -207,7 +207,7 @@
                 <section id="jsPopovers" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Popovers</strong></h4>
                                     <div class="pad-sep-40" data-showcase="example">
@@ -224,7 +224,7 @@
                 <section id="jsUtilities" class="pad-top-20">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Utilities:</strong></h4>
                                     <p>A couple of HTML snippets with javascript enhancements:</p>
@@ -254,7 +254,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <p><strong>Checkboxes disguised as buttons:</strong></p>
                                     <p>Add
@@ -284,7 +284,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel show-panel-example">
+                            <div class="show-panel ">
                                 <div class="show-panel-body">
                                     <p><strong>Radio buttons disguised as regular buttons:</strong></p>
                                     <div class="pad-sep-20">
