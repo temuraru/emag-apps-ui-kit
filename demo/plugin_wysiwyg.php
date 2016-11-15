@@ -40,7 +40,7 @@
                             <section id="summernoteStandard" class="pad-top-40">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2">
-                                        <div class="show-panel show-panel-example">
+                                        <div class="show-panel ">
                                             <div class="show-panel-body">
                                                 <h4 class="text-primary"><strong>Summernote.js</strong></h4>
                                                 <p><strong>Standard install</strong></p>
@@ -54,7 +54,7 @@
                                                 </div>
                                             </div>                                        
                                         </div>
-                                        <div class="show-panel show-panel-example">
+                                        <div class="show-panel ">
                                             <div class="show-panel-body">
                                                 <p><strong>Air mode</strong></p>
                                                 <p>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" target="_blank">summernote.org</a></p>
