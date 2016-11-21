@@ -318,14 +318,20 @@
     }
 
     //---- Events ----
+    var $window = $(window);
     //Resize grid
-    $(window).on('resize', function () {
+    $window.on('resize', function () {
         photonResizeGrid();
+    });
+
+    //Resize after show collapse panel
+    $window.on("show.bs.collapse", function(){
+        $window.trigger('resize');
     });
 
     //Resize after closing or opening menu
     $('#toggle-sidebar-size-btn').on('click', function () {
-        $(window).trigger('resize');
+        $window.trigger('resize');
     });
 
     //----  Public access to functions ----
