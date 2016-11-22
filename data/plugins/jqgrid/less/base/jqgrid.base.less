@@ -2,6 +2,7 @@
 @jqgrid-border-radius: 0;
 @jqgrid-th-bg-color: #eee;
 @jqgrid-selected-rows-color: #f2f9ff;
+@jqgrid-border: 1px;
 
 @jqgrid-caption-padding-vertical: 10px;
 @jqgrid-caption-padding-horizontal: 15px;
@@ -413,18 +414,18 @@ div.tablediv > .table-bordered {
   }
 }
 
-.jqGrid-top-buttons {
+.stick-top-panel {
   background: #fff;
-  padding: 15px 0 18px 0;
-  margin-top: -15px;
+  padding: @panel-body-padding 0 (@panel-body-padding + 3) 0;
+  margin-top: -@panel-body-padding;
 }
 
-.jqGrid-top-buttons.is_stuck {
-  box-shadow: 0 0 0 1px @white;
-  padding-bottom: 16px;
+.stick-top-panel.is_stuck {
+  box-shadow: 0 0 0 @jqgrid-border @white;
+  padding-bottom: @panel-body-padding + @jqgrid-border;
 }
 
 .ui-jqgrid-hdiv.is_stuck {
-  border-top: 1px solid @jqgrid-border-color;
-  margin-top: -1px
+  border-top: @jqgrid-border solid @jqgrid-border-color;
+  margin-top: -@jqgrid-border
 }
