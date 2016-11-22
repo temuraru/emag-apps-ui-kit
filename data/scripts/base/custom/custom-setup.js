@@ -6,7 +6,7 @@ function initScrollbarForSidebar() {
     $("#sidebar .sidebar-outer").customScrollbar({
         skin: "default-skin",
         hScroll: false,
-        updateOnWindowResize: false
+        updateOnWindowResize: true
     });
 }
 
@@ -21,10 +21,21 @@ function newScrollbarHeight($sidebarInner, $menuItem) {
     );
 }
 
-function updateSidebarHeight($menuItem) {
+function updateSidebarHeight() {
     var $sidebarInner = $('#sidebar .sidebar-inner');
 
-    if ($menuItem.parent().is($sidebarInner)) {
+    $sidebarInner.css('height', '');
+    var $sidebarInner = $('#sidebar .sidebar-inner');
+    var $firstActiveMenuItem = $('#sidebar .menu-item.active').eq(0);
+    var newHeight = newScrollbarHeight($sidebarInner, $firstActiveMenuItem);
+
+    $sidebarInner.height(newHeight);
+}
+
+function updateSidebarHeightByMenuItem($menuItem) {
+    var $sidebarInner = $('#sidebar .sidebar-inner');
+
+    if ($menuItem.parent().hasClass('sidebar-inner')) {
         $sidebarInner.css('height', '');
 
         if ($menuItem.hasClass('active')) {
@@ -51,10 +62,10 @@ function updateSidebarHeight($menuItem) {
 
     initScrollbarForSidebar();
 
-    $(document).on('click', '.menu-item > a', function (e) {
+    $(document).on('click', '.menu-item > a, .menu-item > .menu-item-data > a', function (e) {
         if ($('#sidebar').hasClass('sidebar-min')) {
-            var $menuItem = $(this).parent();
-            updateSidebarHeight($menuItem);
+            var $menuItem = $(this).parents('.menu-item').eq(0);
+            updateSidebarHeightByMenuItem($menuItem);
         }
 
         updateScrollbar();
