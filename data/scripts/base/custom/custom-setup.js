@@ -6,7 +6,7 @@ function initScrollbarForSidebar() {
     $("#sidebar .sidebar-outer").customScrollbar({
         skin: "default-skin",
         hScroll: false,
-        updateOnWindowResize: true
+        updateOnWindowResize: false
     });
 }
 

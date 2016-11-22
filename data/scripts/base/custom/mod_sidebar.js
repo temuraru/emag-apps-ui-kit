@@ -55,6 +55,7 @@
             $(window).trigger('minimize.photon.sidebar');
             setCookie('sidebarStatus', 'close');
         }
+        updateScrollbar();
     });
     /**
      * Open/Close sidebar by using the "#toggle-sidebar-btn" button from the main navigation (Only on mobile)
