@@ -416,16 +416,18 @@ div.tablediv > .table-bordered {
 
 .stick-top-panel {
   background: #fff;
-  padding: @panel-body-padding 0 (@panel-body-padding + 3) 0;
+  padding: @panel-body-padding 0 @panel-body-padding 0;
   margin-top: -@panel-body-padding;
+  position: relative;
+  margin-bottom: @jqgrid-border;
 }
 
 .stick-top-panel.is_stuck {
   box-shadow: 0 0 0 @jqgrid-border @white;
-  padding-bottom: @panel-body-padding + @jqgrid-border;
+  padding-bottom: @panel-body-padding - @jqgrid-border;
 }
 
 .ui-jqgrid-hdiv.is_stuck {
   border-top: @jqgrid-border solid @jqgrid-border-color;
-  margin-top: -@jqgrid-border
+  margin-top: 0;
 }
