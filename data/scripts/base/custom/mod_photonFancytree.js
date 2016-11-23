@@ -83,6 +83,15 @@
             var unmatched = $this.options.searchUnmatched ? 'checked="checked"' : '';
             var selectHierarchyChecked = $this.options.selectHierarchyChecked ? 'checked="checked"' : '';
 
+            var noItemMatched =
+                '<div class="row no-item-matched hidden">' +
+                    '<div class="col-lg-12">' +
+                        '<div class="alert alert-info text-center no-margin-top-bottom">' +
+                            $this.options.noResults +
+                        '</div>' +
+                    '</div>' +
+                '</div>';
+
             var modalContent =
                 '<div class="row">' +
                     '<div class="col-lg-12">' +
@@ -120,7 +129,7 @@
                     '<div class="col-lg-12">' +
                         '<div id="' + $this.options.treeId + '"></div>' +
                     '</div>' +
-                '</div>';
+                '</div>' + noItemMatched;
 
             $this.modal = new PhotonModal({
                 id: $this.options.modalId,
@@ -235,6 +244,9 @@
                     checkbox: true,
                     icon: false,
                     toggleEffect: false,
+                    filter: {
+                        nodata: true
+                    },
                     activeVisible: true,
                     debugLevel: 0,
                     selectMode: $this.options.selectMode,
@@ -512,8 +524,7 @@
 
             /** Regex for finding the pattern in node title */
             //var rex = new RegExp(searchString, 'i');
-
-            this.$tree.filterNodes(function (node) {
+            var matchesNo = this.$tree.filterNodes(function (node) {
                 $this._addCollapseIcon(node);
 
                 var nodeHasSearchString = node.title.toLowerCase().indexOf(searchString) == -1 ? false : true;
@@ -547,7 +558,19 @@
                 }
                 return nodeHasSearchString;
             });
+            var $categoryTreeModal = $('#' + $this.options.modalId);
+            var $categoryTreeContainer = $('#' + $this.options.treeId);
+            var $categoryTreeOkButton = $('.' + $this.options.modalOkBtnClass);
 
+            if (matchesNo === 0) {
+                $categoryTreeModal.find('.no-item-matched').removeClass('hidden');
+                $categoryTreeContainer.addClass('hidden');
+                $categoryTreeOkButton.attr('disabled', true);
+            } else {
+                $categoryTreeModal.find('.no-item-matched').addClass('hidden');
+                $categoryTreeContainer.removeClass('hidden');
+                $categoryTreeOkButton.attr('disabled', false);
+            }
             if ( searchString.length == 0 ) {
                 $this.tree.removeClass('fancytree-ext-filter fancytree-ext-filter-dimm fancytree-ext-filter-hide');
                 $this.tree.find('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
@@ -559,6 +582,7 @@
     $.widget( 'ui.TreeType', {
         options: {
             modalTitle: 'Selectează',
+            noResults: 'Nici un resultat gasit',
             modalResetLabel: 'Resetează',
             modalCancelLabel: 'Anulează',
             modalOkLabel: 'Selectează',
