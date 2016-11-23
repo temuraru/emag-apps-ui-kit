@@ -365,8 +365,7 @@
                     "<div id='modalTree'></div>" +
                 "</div>" +
             "</div>";
-
-
+        
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
