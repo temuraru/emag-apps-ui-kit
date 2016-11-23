@@ -89,7 +89,7 @@
 
 
                 var $jqgridContainer = $('#' + $(_this).attr('aria-labelledby'));
-                var records = jQuery(_this).jqGrid('getGridParam', 'reccount');
+                var records = jQuery(_this).jqGrid('getGridParam', 'records');
 
 
                 if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
