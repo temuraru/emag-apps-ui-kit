@@ -49,16 +49,6 @@
 
             mergeLoadComplete: true,
             loadComplete: function () {
-                var _this = this;
-                var $jqgridContainer = $('#' + $(_this).attr('aria-labelledby'));
-                var records = jQuery(_this).jqGrid('getGridParam', 'reccount');
-
-
-                if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
-                    _createContainerForPgSelbox($jqgridContainer,records);
-                    _movePgSelbox($jqgridContainer);
-                }
-
                 var table = gridOpts.table;
                 var jqGridOverlay = _getJqGridOverlay();
 
@@ -85,6 +75,7 @@
             },
             mergeGridComplete: true,
             gridComplete: function() {
+                var _this = this;
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
@@ -94,6 +85,16 @@
                     gridOpts.stickyButtonsInitialized = true;
                 } else if (gridOpts.stickyButtons) {
                     $(document.body).trigger("sticky_kit:recalc");
+                }
+
+
+                var $jqgridContainer = $('#' + $(_this).attr('aria-labelledby'));
+                var records = jQuery(_this).jqGrid('getGridParam', 'reccount');
+
+
+                if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
+                    _createContainerForPgSelbox($jqgridContainer,records);
+                    _movePgSelbox($jqgridContainer);
                 }
             },
             caption: null,
