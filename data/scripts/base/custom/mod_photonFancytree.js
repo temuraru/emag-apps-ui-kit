@@ -576,7 +576,6 @@
                 $this.tree.find('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
             }
         }
-
     }
 
     $.widget( 'ui.TreeType', {
