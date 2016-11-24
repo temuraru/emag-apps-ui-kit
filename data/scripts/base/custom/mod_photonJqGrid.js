@@ -132,7 +132,7 @@
         }
 
         for(var mergeCallbackOption in customCallbacks) {
-            if(customCallbacks.hasOwnProperty(mergeCallbackOption) && _hasCustomCallback(mergeCallbackOption, customCallbacks[mergeCallbackOption])) {
+            if(gridOpts[mergeCallbackOption] && customCallbacks.hasOwnProperty(mergeCallbackOption) && _hasCustomCallback(mergeCallbackOption, customCallbacks[mergeCallbackOption])) {
                 _mergeCustomCallback(customCallbacks[mergeCallbackOption]);
             }
         }
