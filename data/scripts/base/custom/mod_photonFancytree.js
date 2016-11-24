@@ -83,7 +83,7 @@
             var unmatched = $this.options.searchUnmatched ? 'checked="checked"' : '';
             var selectHierarchyChecked = $this.options.selectHierarchyChecked ? 'checked="checked"' : '';
 
-            var noItemMatched =
+            var noItemMatchedContent =
                 '<div class="row no-item-matched hidden">' +
                     '<div class="col-lg-12">' +
                         '<div class="alert alert-info text-center no-margin-top-bottom">' +
@@ -129,7 +129,7 @@
                     '<div class="col-lg-12">' +
                         '<div id="' + $this.options.treeId + '"></div>' +
                     '</div>' +
-                '</div>' + noItemMatched;
+                '</div>' + noItemMatchedContent;
 
             $this.modal = new PhotonModal({
                 id: $this.options.modalId,
@@ -244,9 +244,6 @@
                     checkbox: true,
                     icon: false,
                     toggleEffect: false,
-                    filter: {
-                        nodata: true
-                    },
                     activeVisible: true,
                     debugLevel: 0,
                     selectMode: $this.options.selectMode,
