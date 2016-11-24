@@ -138,7 +138,7 @@
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        
+
         <script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
         <script src="../dist/plugins/fancytree/fancytree.min.js"></script>
 
@@ -366,10 +366,8 @@
                 "</div>" +
             "</div>";
 
-
             $(document).ready(function () {
                 console.log('Ready, Captain!');
-
                 demoHelpers();  // Require demo_helpers.js
 
                 //Fancytree inits
@@ -388,6 +386,7 @@
                     modalOkLabel: 'Select',
                     textUnmatched: 'Hide unmatched',
                     textSelectHierarchy: 'Hierarchical multi-selection',
+                    noResults: 'No results found',
                     textSelected: 'selected',
                     searchPlaceholder: 'Search'
                 });

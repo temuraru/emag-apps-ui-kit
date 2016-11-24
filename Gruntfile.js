@@ -1,5 +1,5 @@
 /*!
- * eMAG Apps UI KIT Gruntfile
+ * eMAG Apps UI KIT
  * Copyright 2011-2016 eMAG.
  * Licensed under MIT License
  */
@@ -288,14 +288,14 @@ module.exports = function (grunt) {
                 }
             },
             scripts: {
-              files: ['<%= pkg.data_scripts%>/**/*.js'],
+              files: ['<%= pkg.data_scripts %>/**/*.js'],
               tasks: ['scripts'],
               options: {
                   nospawn: true
               }
             },
             plugin_scripts: {
-              files: ['<%= pkg.data_plugins %>/**/*.js'],
+              files: ['<%= pkg.data_plugins %>/**/*.js', '<%= pkg.data_scripts %>/**/*.js'],
               tasks: ['plugin_scripts'],
               options: {
                   nospawn: true
