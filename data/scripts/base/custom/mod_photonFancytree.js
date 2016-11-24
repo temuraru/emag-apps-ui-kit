@@ -581,7 +581,7 @@
     $.widget( 'ui.TreeType', {
         options: {
             modalTitle: 'Selectează',
-            noResults: 'Nici un resultat gasit',
+            noResults: 'Nici un resultat găsit',
             modalResetLabel: 'Resetează',
             modalCancelLabel: 'Anulează',
             modalOkLabel: 'Selectează',
