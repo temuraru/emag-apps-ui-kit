@@ -1,5 +1,5 @@
 /*!
- * eMAG Apps UI KIT Gruntfile
+ * eMAG Apps UI KIT
  * Copyright 2011-2016 eMAG.
  * Licensed under MIT License
  */
