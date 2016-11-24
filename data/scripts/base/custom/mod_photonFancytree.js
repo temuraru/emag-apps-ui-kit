@@ -144,7 +144,7 @@
                     },
                     'ok': {
                         label:  $this.options.modalOkLabel,
-                        class: 'btn-success ' + $this.options.modalOkBtnClass,
+                        class: 'btn-primary ' + $this.options.modalOkBtnClass,
                         closeModal: true
                     },
                     'cancel': {
