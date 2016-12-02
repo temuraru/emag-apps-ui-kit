@@ -7,18 +7,18 @@ var photonTranslations = [];
 var photonTranslations = {
     "listing": {
         "en": {
-            noResults: 'No records to display in this listing.',
+            noResults: 'No records to display.',
             view: 'View',
             of: 'of',
             items: 'items',
             item: 'item'
         },
         "ro": {
-            noResults: 'No records to display in this listing.',
-            view: 'View',
-            of: 'of',
-            items: 'items',
-            item: 'item'
+            noResults: 'Nu există înregistrări.',
+            view: 'Vezi',
+            of: 'din',
+            items: 'rânduri',
+            item: 'rând'
         },
         "bg": {
             noResults: 'No records to display in this listing.',
