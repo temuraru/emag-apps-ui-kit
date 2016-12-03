@@ -4,6 +4,7 @@
  * Licensed under MIT License
  */
 var browserSync = require('browser-sync');
+var uiKitName = require('./package.json').name;
 
 module.exports = function (grunt) {
 
@@ -347,7 +348,7 @@ module.exports = function (grunt) {
         'less:jquery',
         'cssmin:jquery'
     ]);
-    
+
     // Generate plugin scripts
     grunt.registerTask('plugin_scripts', [
         'concat:jq_grid',
@@ -385,6 +386,12 @@ module.exports = function (grunt) {
             server: {
                 baseDir: ['./', './demo', './dist'],
                 index: 'index.html'
+            },
+            middleware: function(req, res, next) {
+                if(req.url.indexOf('emag-apps-ui-kit')) {
+                    req.url = req.url.replace('/' + uiKitName, '');
+                }
+                return next();
             }
         }, function (err, bs) {
             done();
