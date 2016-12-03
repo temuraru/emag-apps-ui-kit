@@ -82,7 +82,9 @@ module.exports = function (grunt) {
                 dest: '<%= pkg.dist_styles %>/lib/jquery-ui-custom.1.11.4.min.css'
             }
         },
-
+        lesslint: {
+            src: [ '<%= watchChangedFile %>' ]
+        },
         // Post CSS Autoprefixer - adds browser-specific prefixes to standard CSS properties.
         autoprefixer: {
             options: {
@@ -272,31 +274,42 @@ module.exports = function (grunt) {
                 }
             }
         },
+        jscs: {
+            options: {
+                preset: 'google',
+                requireCurlyBraces: [
+                    'if',
+                    'else',
+                    'for'
+                ]
+            },
+            src: '<%= watchChangedFile %>'
+        },
         watch: {
             styles: {
                 files: ['<%= pkg.data_styles %>/**/*.less'],
-                tasks: ['styles'],
+                tasks: ['lesslint', 'styles'],
                 options: {
                     nospawn: true
                 }
             },
             plugin_styles: {
                 files: ['<%= pkg.data_plugins %>/**/*.less'],
-                tasks: ['plugin_styles'],
+                tasks: ['lesslint', 'plugin_styles'],
                 options: {
                     nospawn: true
                 }
             },
             scripts: {
               files: ['<%= pkg.data_scripts %>/**/*.js'],
-              tasks: ['scripts'],
+              tasks: ['jscs', 'scripts'],
               options: {
                   nospawn: true
               }
             },
             plugin_scripts: {
               files: ['<%= pkg.data_plugins %>/**/*.js', '<%= pkg.data_scripts %>/**/*.js'],
-              tasks: ['plugin_scripts'],
+              tasks: ['jscs', 'plugin_scripts'],
               options: {
                   nospawn: true
               }
@@ -313,7 +326,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-php2html');
-
+    grunt.loadNpmTasks('grunt-jscs');
+    grunt.loadNpmTasks('grunt-lesslint');
     // Custom tasks.
 
     // CSS distribution task.
@@ -357,7 +371,9 @@ module.exports = function (grunt) {
         'uglify:frontend'
     ]);
 
-    //Convert php to html and use pretify for it
+    /**
+     * Task register
+     */
     grunt.registerTask('convert_demo', [
         'php2html'
     ]);
@@ -377,4 +393,11 @@ module.exports = function (grunt) {
     grunt.registerTask('watch_scripts', [
         'watch:scripts'
     ]);
+
+    /**
+     * Events
+     */
+    grunt.event.on('watch', function(action, filepath) {
+        grunt.config('watchChangedFile', filepath);
+    })
 };
