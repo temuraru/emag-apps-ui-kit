@@ -3,6 +3,7 @@
  * Copyright 2011-2016 eMAG.
  * Licensed under MIT License
  */
+var browserSync = require('browser-sync');
 
 module.exports = function (grunt) {
 
@@ -83,7 +84,7 @@ module.exports = function (grunt) {
             }
         },
         lesslint: {
-            src: [ '<%= watchChangedFile %>' ]
+            src: [ '<%= changedFile %>' ]
         },
         // Post CSS Autoprefixer - adds browser-specific prefixes to standard CSS properties.
         autoprefixer: {
@@ -274,16 +275,8 @@ module.exports = function (grunt) {
                 }
             }
         },
-        jscs: {
-            options: {
-                preset: 'google',
-                requireCurlyBraces: [
-                    'if',
-                    'else',
-                    'for'
-                ]
-            },
-            src: '<%= watchChangedFile %>'
+        eslint: {
+            src: ['<%= changedFile %>']
         },
         watch: {
             styles: {
@@ -302,14 +295,14 @@ module.exports = function (grunt) {
             },
             scripts: {
               files: ['<%= pkg.data_scripts %>/**/*.js'],
-              tasks: ['jscs', 'scripts'],
+              tasks: ['eslint', 'scripts'],
               options: {
                   nospawn: true
               }
             },
             plugin_scripts: {
               files: ['<%= pkg.data_plugins %>/**/*.js', '<%= pkg.data_scripts %>/**/*.js'],
-              tasks: ['jscs', 'plugin_scripts'],
+              tasks: ['eslint', 'plugin_scripts'],
               options: {
                   nospawn: true
               }
@@ -326,9 +319,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-php2html');
-    grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-lesslint');
-    // Custom tasks.
+    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('gruntify-eslint');
 
     // CSS distribution task.
     grunt.registerTask('styles', [
@@ -354,6 +347,7 @@ module.exports = function (grunt) {
         'less:jquery',
         'cssmin:jquery'
     ]);
+    
     // Generate plugin scripts
     grunt.registerTask('plugin_scripts', [
         'concat:jq_grid',
@@ -371,33 +365,44 @@ module.exports = function (grunt) {
         'uglify:frontend'
     ]);
 
-    /**
-     * Task register
-     */
+    //Create demo
     grunt.registerTask('convert_demo', [
         'php2html'
     ]);
 
-    grunt.registerTask('watch_styles', [
-        'watch:styles'
+    //BrowserSync task and watch
+    grunt.registerTask('build', [
+        'bs-init',
+        'watch'
     ]);
 
-    grunt.registerTask('watch_plugin_styles', [
-        'watch:plugin_styles'
-    ]);
+    grunt.registerTask('bs-init', function () {
+        var done = this.async();
+        browserSync({
+            notify: true,
+            watchTask: true,
+            injectChanges: true,
+            server: {
+                baseDir: ['./', './demo', './dist'],
+                index: 'index.html'
+            }
+        }, function (err, bs) {
+            done();
+        });
+    });
 
-    grunt.registerTask('watch_plugin_scripts', [
-        'watch:plugin_scripts'
-    ]);
-
-    grunt.registerTask('watch_scripts', [
-        'watch:scripts'
-    ]);
+    grunt.registerTask('bs-reload', function () {
+        browserSync.reload( [
+            'dist/css/**/*.css',
+            'dist/js/**/*.js',
+            'demo/*.html'
+        ]);
+    });
 
     /**
      * Events
      */
     grunt.event.on('watch', function(action, filepath) {
-        grunt.config('watchChangedFile', filepath);
-    })
+        grunt.config('changedFile', filepath);
+    });
 };
