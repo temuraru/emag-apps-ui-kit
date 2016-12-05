@@ -366,7 +366,7 @@ module.exports = function (grunt) {
         'uglify:frontend'
     ]);
 
-    //Create demo
+    //Convert php to html and use pretify for it
     grunt.registerTask('convert_demo', [
         'php2html'
     ]);
