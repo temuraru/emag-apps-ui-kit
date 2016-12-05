@@ -10,36 +10,31 @@ var photonTranslations = {
             noResults: 'No records to display.',
             view: 'View',
             of: 'of',
-            items: 'items',
-            item: 'item'
+            items: 'rows'
         },
         "ro": {
             noResults: 'Nu există înregistrări.',
             view: 'Vezi',
             of: 'din',
-            items: 'rânduri',
-            item: 'rând'
+            items: 'rânduri'
         },
         "bg": {
-            noResults: 'No records to display in this listing.',
-            view: 'View',
-            of: 'of',
-            items: 'items',
-            item: 'item'
+            noResults: 'Няма записи за показване.',
+            view: 'Вижте',
+            of: 'на',
+            items: 'реда'
         },
         "hu": {
-            noResults: 'No records to display in this listing.',
-            view: 'View',
+            noResults: 'Nincs bejegyzés megjelenítéséhez.',
+            view: 'Megtekint',
             of: 'of',
-            items: 'items',
-            item: 'item'
+            items: 'sorok'
         },
         "pl": {
-            noResults: 'No records to display in this listing.',
-            view: 'View',
-            of: 'of',
-            items: 'items',
-            item: 'item'
+            noResults: 'Brak nagrań do odtworzenia.',
+            view: 'Zobacz',
+            of: 'z',
+            items: 'rzędami'
         }
     }
 };
