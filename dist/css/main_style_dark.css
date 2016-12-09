@@ -10240,6 +10240,9 @@ body {
   border-style: solid;
   border-width: 1px 0 0;
 }
+.sidebar .sidebar-inner .menu-item:last-of-type {
+  border-bottom-width: 1px;
+}
 .sidebar .sidebar-inner .menu-item a {
   position: relative;
   display: block;
@@ -10247,7 +10250,7 @@ body {
   padding: 16.5px 40px;
   padding-left: 54px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   color: #000;
@@ -10257,10 +10260,10 @@ body {
 .sidebar .sidebar-inner .menu-item a .menu-icon {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 10px;
   display: inline-block;
-  width: 23px;
-  font-size: 18px;
+  width: 20px;
+  font-size: 17px;
   font-weight: 400;
   line-height: inherit;
   text-align: center;
@@ -10296,6 +10299,7 @@ body {
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item > a {
   padding-left: 53px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
   font-weight: 400;
   color: #000;
   background-color: #22313f;
@@ -10320,6 +10324,7 @@ body {
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item > a {
   padding-left: 63px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
   font-weight: 400;
   background-color: #10171e;
 }
@@ -10338,7 +10343,7 @@ body {
   right: 15px;
   display: inline-block;
   font-family: FontAwesome;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: inherit;
   text-align: center;
@@ -10353,7 +10358,7 @@ body {
   right: 15px;
   display: inline-block;
   font-family: FontAwesome;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: inherit;
   text-align: center;
@@ -10404,9 +10409,9 @@ body {
   position: relative;
   display: block;
   height: 53px;
-  padding: 11px 15px;
+  padding: 5px 10px;
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
   color: #000;
   text-align: center;
@@ -10417,6 +10422,12 @@ body {
 .sidebar .sidebar-control .sidebar-toggle .menu-text {
   display: inline-block;
   margin: 0 10px;
+}
+.sidebar .sidebar-control .sidebar-toggle .btn-link {
+  color: #000;
+}
+.sidebar .sidebar-control .sidebar-toggle .btn-link:hover {
+  color: #005eb7;
 }
 .sidebar.sidebar-fixed .sidebar-outer {
   position: fixed;
@@ -10471,7 +10482,7 @@ body {
     overflow: hidden;
   }
   .sidebar.sidebar-min .sidebar-inner > .menu-item:hover {
-    width: 214px;
+    width: 201px;
     overflow: inherit;
   }
   .sidebar.sidebar-min .sidebar-inner > .menu-item:hover.active > .menu-item-data {
@@ -10494,7 +10505,7 @@ body {
     width: 53px;
   }
   .sidebar.sidebar-min .sidebar-control .sidebar-toggle {
-    padding: 11px 10px;
+    padding: 5px;
   }
   .sidebar.sidebar-min .sidebar-control .sidebar-toggle .menu-text {
     display: none;
