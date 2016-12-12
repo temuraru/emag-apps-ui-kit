@@ -10259,7 +10259,7 @@ body {
 .sidebar .sidebar-inner .menu-item a .menu-icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 9.5px;
   display: inline-block;
   width: 20px;
   font-size: 17px;
@@ -10504,7 +10504,7 @@ body {
     width: 40px;
   }
   .sidebar.sidebar-min .sidebar-control .sidebar-toggle {
-    padding: 5px;
+    padding: 4.5px;
   }
   .sidebar.sidebar-min .sidebar-control .sidebar-toggle .menu-text {
     display: none;
