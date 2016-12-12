@@ -270,7 +270,7 @@
     </div>
     <div class="sidebar-control">
         <div class="sidebar-toggle">
-            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-default btn-sm">
+            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-link btn-sm">
                 <i class="menu-icon fa fa-arrow-left"></i>
             </button>
         </div>
