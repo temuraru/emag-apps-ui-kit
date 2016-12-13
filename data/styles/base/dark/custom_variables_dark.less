@@ -23,10 +23,12 @@
 @sidebar-fontweight-second-level:       400;
 @sidebar-fontweight-third-level:        400;
 
-@sidebar-fontsize:          (@font-size-base - 1);
+@sidebar-fontsize-first-level:          @font-size-base;
+@sidebar-fontsize-second-level:         (@font-size-base - 2);
+@sidebar-fontsize-third-level:          (@font-size-base - 2);
 
 @sidebar-lineheight:                    @line-height-computed;
-@sidebar-iconsize:                      18px;
+@sidebar-iconsize:                      17px;
 
 @sidebar-cell-font-color:               @black;
 @sidebar-cell-font-color-hover:         @brand-primary;
@@ -35,12 +37,16 @@
 @sidebar-second-level-bg:               #22313F;
 @sidebar-third-level-bg:                darken(@sidebar-second-level-bg,10%);
 
-@sidebar-menu-active-cell-bg:           #dedede;
+@sidebar-menu-active-cell-bg:           @brand-primary;
+@sidebar-menu-active-cell-text:         @white;
 @sidebar-menu-hover-cell-bg:            @gray-lighter;
+@sidebar-menu-hover-cell-text:          @brand-primary;
 
 @sidebar-submenu-mark-color:            @brand-primary;
 @sidebar-submenu-active-cell-bg:        @brand-primary;
+@sidebar-submenu-active-cell-text:      @white;
 @sidebar-submenu-hover-cell-bg:         @gray-lighter;
+@sidebar-submenu-hover-cell-text:       @brand-primary;
 
 @sidebar-tooltip-preview-bg:            #333;
 @sidebar-tooltip-preview-text-color:    @white;
