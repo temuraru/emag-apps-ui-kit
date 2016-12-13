@@ -26,39 +26,27 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="jumbotron content-header">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid">
-                                <p>eMAG Apps UI KIT</p>
-                                <p><b>jQGrid</b></p>
-                            </div>
-                        </div>
+                    <div class="container-fluid">
+                        <p>eMAG Apps UI KIT</p>
+                        <p><b>jQGrid</b></p>
                     </div>
                 </div>
                 <section id="jqgridStandard" class="pad-top-40">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQGrid Documentation</a></p>
+                    <div class="show-panel">
+                        <div class="show-panel-body">
+                            <p><strong>Based on: </strong><a href="http://www.trirand.com/blog/" target="_blank" class="link">jQGrid Documentation</a></p>
 
-                                    <table id="grid_table" class="table table-bordered"></table>
-                                    <div id="grid_pager"></div>
-                                </div>
-                            </div>
+                            <table id="grid_table" class="table table-bordered"></table>
+                            <div id="grid_pager"></div>
                         </div>
                     </div>
                 </section> <!-- #jqgridStandard -->
 
                 <section id="jqgridWithFormmaters" class="pad-top-20">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <table id="grid_with_formatter_table" class="table table-bordered"></table>
-                                    <div id="grid_with_formatter_pager"></div>
-                                </div>
-                            </div>
+                    <div class="show-panel">
+                        <div class="show-panel-body">
+                            <table id="grid_with_formatter_table" class="table table-bordered"></table>
+                            <div id="grid_with_formatter_pager"></div>
                         </div>
                     </div>
                 </section> <!-- #jqgridWithFormmaters -->

@@ -25,98 +25,90 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="jumbotron content-header">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid">
-                                <p>eMAG Apps UI KIT</p>
-                                <p><b>DateTime</b></p>
-                            </div>
-                        </div>
+                    <div class="container-fluid">
+                        <p>eMAG Apps UI KIT</p>
+                        <p><b>DateTime</b></p>
                     </div>
                 </div>
                 <section id="summernoteStandard" class="pad-top-40">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>DateRangePicker.js</strong></h4>
-                                    <p><strong>Standard install</strong></p>
-                                    <p>You can familiarize yourself with more options and settings by checking out <a href="http://www.daterangepicker.com/" target="_blank">http://www.daterangepicker.com/</a></p>
-                                </div>
-                                <div class="">
-                                    <div class="show-panel-body">
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">DateRangePicker example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard" class="control-label">Standard</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                    <div class="show-panel">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>DateRangePicker.js</strong></h4>
+                            <p><strong>Standard install</strong></p>
+                            <p>You can familiarize yourself with more options and settings by checking out <a href="http://www.daterangepicker.com/" target="_blank">http://www.daterangepicker.com/</a></p>
+                        </div>
+                        <div class="">
+                            <div class="show-panel-body">
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">DateRangePicker example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard" class="control-label">Standard</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_value" class="control-label">Standard with value</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="10/10/2016 - 10/30/2016" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_value" class="control-label">Standard with value</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="10/10/2016 - 10/30/2016" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_format" class="control-label">Standard with format</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_format" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_format" class="control-label">Standard with format</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_format" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_predefined_intervals" class="control-label">Standard with predefined intervals</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_predefined_intervals" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_predefined_intervals" class="control-label">Standard with predefined intervals</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_predefined_intervals" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_predefined_intervals_no_calendar" class="control-label">Standard with predefined intervals whitout calendars</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_predefined_intervals_no_calendar" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_predefined_intervals_no_calendar" class="control-label">Standard with predefined intervals whitout calendars</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_predefined_intervals_no_calendar" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                    </div>
-                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>

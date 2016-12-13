@@ -23,151 +23,139 @@
         <div class="main-content">
             <section class="page-content">
                 <div class="jumbotron content-header">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid">
-                                <p>eMAG Apps UI KIT</p>
-                                <p><b>JS Components</b></p>
-                            </div>
-                        </div>
+                    <div class="container-fluid">
+                        <p>eMAG Apps UI KIT</p>
+                        <p><b>JS Components</b></p>
                     </div>
                 </div>
                 <section id="javascriptEnhancements" class="pad-top-40">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <h2><strong>Javascript Components</strong></h2>
-                                    <p><strong>These elements need both the main stylesheet and the main javascript file
-                                            in order to be displayed and function properly.</strong></p>
-                                </div>
-                            </div>
+                    <div class="show-panel">
+                        <div class="show-panel-body">
+                            <h2><strong>Javascript Components</strong></h2>
+                            <p><strong>These elements need both the main stylesheet and the main javascript file
+                                    in order to be displayed and function properly.</strong></p>
                         </div>
                     </div>
                 </section>
                 <section class="pad-top-20">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>Modals</strong></h4>
-                                    <p><strong>Default styling:</strong></p>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Modals</strong></h4>
+                            <p><strong>Default styling:</strong></p>
 
-                                    <div class="show-example-modal" data-example-id="static-modal">
-                                        <div class="modal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close"><i class="fa fa-close"
-                                                                                      aria-hidden="true"></i>
-                                                        </button>
-                                                        <h4 class="modal-title">Modal title</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Modal with form</p>
-                                                        <form id="exampleForm1" action="" method="post">
-                                                            <fieldset>
-                                                                <legend class="sr-only">Simple form</legend>
-                                                                <div class="form-group has-error">
-                                                                    <label class="control-label required" for="exampleInputEmail1">Email address</label>
-                                                                    <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
-                                                                    <div class="help-block">Please complete this field.</div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="control-label required" for="exampleInputPassword1">Password</label>
-                                                                    <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
-                                                                </div>
-                                                            </fieldset>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <div class="pull-left">
-                                                            <div class="form-sep">
-                                                                    <span
-                                                                        class="required">Some fields may be required.</span>
-                                                            </div>
+                            <div class="show-example-modal" data-example-id="static-modal">
+                                <div class="modal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><i class="fa fa-close"
+                                                                              aria-hidden="true"></i>
+                                                </button>
+                                                <h4 class="modal-title">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Modal with form</p>
+                                                <form id="exampleForm1" action="" method="post">
+                                                    <fieldset>
+                                                        <legend class="sr-only">Simple form</legend>
+                                                        <div class="form-group has-error">
+                                                            <label class="control-label required" for="exampleInputEmail1">Email address</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
+                                                            <div class="help-block">Please complete this field.</div>
                                                         </div>
-                                                        <div class="pull-right panel-controls">
-                                                            <button type="button" id="special_submit"
-                                                                    class="btn btn-success"><span>Save</span>
-                                                            </button>
-                                                            <button type="reset" id="special_reset"
-                                                                    class="btn btn-default" data-dismiss="modal">
-                                                                <span>Cancel</span></button>
+                                                        <div class="form-group">
+                                                            <label class="control-label required" for="exampleInputPassword1">Password</label>
+                                                            <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
                                                         </div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="pull-left">
+                                                    <div class="form-sep">
+                                                            <span
+                                                                class="required">Some fields may be required.</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
-                                        functionality and smart defaults.</p>
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
-                                            supported</strong> Be sure not to open a modal while another is still
-                                        visible. Showing more than one modal at a time requires custom code.
-                                    </div>
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
-                                            placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
-                                            id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
-                                        components affecting the modal's appearance and/or functionality.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <p><strong>Demo modals with different sizing:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group btn-group-justified" role="group"
-                                                     aria-label="...">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" id="mySmallDemoModal"
-                                                                class="btn btn-default" data-toggle="modal"
-                                                                data-target="#myDemoModal">Small
-                                                        </button>
-                                                    </div>
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default"
-                                                                data-toggle="modal" data-target="#myDemoModal">Normal
-                                                        </button>
-                                                    </div>
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" id="myLargeDemoModal"
-                                                                class="btn btn-default" data-toggle="modal"
-                                                                data-target="#myDemoModal">Large
-                                                        </button>
-                                                    </div>
+                                                <div class="pull-right panel-controls">
+                                                    <button type="button" id="special_submit"
+                                                            class="btn btn-success"><span>Save</span>
+                                                    </button>
+                                                    <button type="reset" id="special_reset"
+                                                            class="btn btn-default" data-dismiss="modal">
+                                                        <span>Cancel</span></button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <p><strong>Informational modals:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default info-modal-button">Info modal</button>
-                                                    </div>
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
-                                                    </div>
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default error-modal-button">Error modal</button>
-                                                    </div>
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-default success-modal-button">Success modal</button>
-                                                    </div>
-                                                </div>
+
+                            <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
+                                functionality and smart defaults.</p>
+                            <div class="alert alert-info">
+                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
+                                    supported</strong> Be sure not to open a modal while another is still
+                                visible. Showing more than one modal at a time requires custom code.
+                            </div>
+                            <div class="alert alert-info">
+                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
+                                    placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
+                                    id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
+                                components affecting the modal's appearance and/or functionality.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <p><strong>Demo modals with different sizing:</strong></p>
+                            <div class="pad-sep-20">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="btn-group btn-group-justified" role="group"
+                                             aria-label="...">
+                                            <div class="btn-group" role="group">
+                                                <button type="button" id="mySmallDemoModal"
+                                                        class="btn btn-default" data-toggle="modal"
+                                                        data-target="#myDemoModal">Small
+                                                </button>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default"
+                                                        data-toggle="modal" data-target="#myDemoModal">Normal
+                                                </button>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" id="myLargeDemoModal"
+                                                        class="btn btn-default" data-toggle="modal"
+                                                        data-target="#myDemoModal">Large
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <p><strong>Informational modals:</strong></p>
+                            <div class="pad-sep-20">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default info-modal-button">Info modal</button>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default error-modal-button">Error modal</button>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default success-modal-button">Success modal</button>
                                             </div>
                                         </div>
                                     </div>
@@ -177,134 +165,122 @@
                     </div>
                 </section>
                 <section id="jsTooltips" class="pad-top-20">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>Tooltips</strong></h4>
-                                    <div class="pad-sep-40" data-showcase="example">
-                                        <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                                data-placement="left" title="Tooltip type danger" data-type="danger">
-                                            Tooltip type danger
-                                        </button>
-                                        <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                                data-placement="bottom" title="Tooltip type warning"
-                                                data-type="warning">Tooltip type warning
-                                        </button>
-                                        <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                                data-placement="right" title="Tooltip type default" data-type="default">
-                                            Tooltip type default
-                                        </button>
-                                        <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                                data-placement="top" title="Tooltip without type">Tooltip without type
-                                        </button>
-                                    </div>
-                                </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Tooltips</strong></h4>
+                            <div class="pad-sep-40" data-showcase="example">
+                                <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                        data-placement="left" title="Tooltip type danger" data-type="danger">
+                                    Tooltip type danger
+                                </button>
+                                <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                        data-placement="bottom" title="Tooltip type warning"
+                                        data-type="warning">Tooltip type warning
+                                </button>
+                                <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                        data-placement="right" title="Tooltip type default" data-type="default">
+                                    Tooltip type default
+                                </button>
+                                <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                        data-placement="top" title="Tooltip without type">Tooltip without type
+                                </button>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section id="jsPopovers" class="pad-top-20">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>Popovers</strong></h4>
-                                    <div class="pad-sep-40" data-showcase="example">
-                                        <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
-                                        <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
-                                        <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
-                                        <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
-                                    </div>
-                                </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Popovers</strong></h4>
+                            <div class="pad-sep-40" data-showcase="example">
+                                <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
+                                <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
+                                <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
+                                <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section id="jsUtilities" class="pad-top-20">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>Utilities:</strong></h4>
-                                    <p>A couple of HTML snippets with javascript enhancements:</p>
-                                    <p><strong>Upload file input type:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" aria-label="..."
-                                                               placeholder="Tell me your fathers name">
-                                                        <div class="input-group-btn">
-                                                            <label for="testfile3" class="btn btn-primary">
-                                                                <i class="fa fa-upload"></i>
-                                                                <span>Upload his picture</span>
-                                                                <input type="file" name="testfile3" id="testfile3"
-                                                                       class="form-input-control"
-                                                                       data-multiple-caption="{count} files selected"
-                                                                       multiple="">
-                                                            </label>
-                                                            <button class="btn btn-success" type="button">Go!</button>
-                                                        </div>
-                                                    </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Utilities:</strong></h4>
+                            <p>A couple of HTML snippets with javascript enhancements:</p>
+                            <p><strong>Upload file input type:</strong></p>
+                            <div class="pad-sep-20">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="..."
+                                                       placeholder="Tell me your fathers name">
+                                                <div class="input-group-btn">
+                                                    <label for="testfile3" class="btn btn-primary">
+                                                        <i class="fa fa-upload"></i>
+                                                        <span>Upload his picture</span>
+                                                        <input type="file" name="testfile3" id="testfile3"
+                                                               class="form-input-control"
+                                                               data-multiple-caption="{count} files selected"
+                                                               multiple="">
+                                                    </label>
+                                                    <button class="btn btn-success" type="button">Go!</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <p><strong>Checkboxes disguised as buttons:</strong></p>
-                                    <p>Add
-                                        <mark>data-toggle="buttons"</mark>
-                                        to a
-                                        <mark>.btn-group</mark>
-                                        containing checkbox or radio inputs to enable toggling in their respective
-                                        styles.
-                                    </p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group" data-toggle="buttons">
-                                                    <label class="btn btn-primary active">
-                                                        <input type="checkbox" autocomplete="off" checked> Checkbox 1
-                                                        (pre-checked)
-                                                    </label>
-                                                    <label class="btn btn-primary">
-                                                        <input type="checkbox" autocomplete="off"> Checkbox 2
-                                                    </label>
-                                                    <label class="btn btn-primary">
-                                                        <input type="checkbox" autocomplete="off"> Checkbox 3
-                                                    </label>
-                                                </div>
-                                            </div>
+                        </div>
+                    </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <p><strong>Checkboxes disguised as buttons:</strong></p>
+                            <p>Add
+                                <mark>data-toggle="buttons"</mark>
+                                to a
+                                <mark>.btn-group</mark>
+                                containing checkbox or radio inputs to enable toggling in their respective
+                                styles.
+                            </p>
+                            <div class="pad-sep-20">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-primary active">
+                                                <input type="checkbox" autocomplete="off" checked> Checkbox 1
+                                                (pre-checked)
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="checkbox" autocomplete="off"> Checkbox 2
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="checkbox" autocomplete="off"> Checkbox 3
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel ">
-                                <div class="show-panel-body">
-                                    <p><strong>Radio buttons disguised as regular buttons:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="btn-group" data-toggle="buttons">
-                                                    <label class="btn btn-primary active">
-                                                        <input type="radio" name="options" id="option1"
-                                                               autocomplete="off" checked> Radio 1 (preselected)
-                                                    </label>
-                                                    <label class="btn btn-primary">
-                                                        <input type="radio" name="options" id="option2"
-                                                               autocomplete="off"> Radio 2
-                                                    </label>
-                                                    <label class="btn btn-primary">
-                                                        <input type="radio" name="options" id="option3"
-                                                               autocomplete="off"> Radio 3
-                                                    </label>
-                                                </div>
-                                            </div>
+                        </div>
+                    </div>
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <p><strong>Radio buttons disguised as regular buttons:</strong></p>
+                            <div class="pad-sep-20">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-primary active">
+                                                <input type="radio" name="options" id="option1"
+                                                       autocomplete="off" checked> Radio 1 (preselected)
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="radio" name="options" id="option2"
+                                                       autocomplete="off"> Radio 2
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="radio" name="options" id="option3"
+                                                       autocomplete="off"> Radio 3
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
