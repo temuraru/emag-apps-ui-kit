@@ -10327,6 +10327,10 @@ body {
   font-weight: 400;
   background-color: #fff;
 }
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
+  color: #fff;
+  background-color: #005eb7;
+}
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:hover,
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:active,
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:focus {

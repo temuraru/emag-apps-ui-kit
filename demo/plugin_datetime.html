@@ -235,6 +235,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#cssProgressBars">
+                                <span class="menu-text">Progress Bars</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.html#cssPanels">
                                 <span class="menu-text">Panels</span>
                             </a>
@@ -262,9 +267,66 @@
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html">
+                                <span class="menu-text">Complex form elements</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html">
+                                        <span class="menu-text">Masked inputs</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsTextareaWithInputLimiter">
+                                        <span class="menu-text">Textarea with input limiter</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsDatePicker">
+                                        <span class="menu-text">Date picker</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsFileUpload">
+                                        <span class="menu-text">File upload</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsSelectizeTagInput">
+                                        <span class="menu-text">Selectize tag input</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryAutocomplete">
+                                        <span class="menu-text">jQuery autocomplete</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUISliders">
+                                        <span class="menu-text">jQuery UI Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryNumericInput">
+                                        <span class="menu-text">jQuery numeric input</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsChosenJsAutocomplete">
+                                        <span class="menu-text">Chosen.js autocomplete</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.html">
                                 <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsCustomErrorMessages">
+                                <span class="menu-text">Custom error messages</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -280,6 +342,11 @@
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.html#jsUtilities">
                                 <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#jsBlockUI">
+                                <span class="menu-text">Block UI</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -364,7 +431,7 @@
     </div>
     <div class="sidebar-control">
         <div class="sidebar-toggle">
-            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-default btn-sm">
+            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-link btn-sm">
                 <i class="menu-icon fa fa-arrow-left"></i>
             </button>
         </div>
@@ -374,98 +441,90 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="jumbotron content-header">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="container-fluid">
-                                <p>eMAG Apps UI KIT</p>
-                                <p><b>DateTime</b></p>
-                            </div>
-                        </div>
+                    <div class="container-fluid">
+                        <p>eMAG Apps UI KIT</p>
+                        <p><b>DateTime</b></p>
                     </div>
                 </div>
                 <section id="summernoteStandard" class="pad-top-40">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>DateRangePicker.js</strong></h4>
-                                    <p><strong>Standard install</strong></p>
-                                    <p>You can familiarize yourself with more options and settings by checking out <a href="http://www.daterangepicker.com/" target="_blank">http://www.daterangepicker.com/</a></p>
-                                </div>
-                                <div class="">
-                                    <div class="show-panel-body">
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">DateRangePicker example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard" class="control-label">Standard</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                    <div class="show-panel">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>DateRangePicker.js</strong></h4>
+                            <p><strong>Standard install</strong></p>
+                            <p>You can familiarize yourself with more options and settings by checking out <a href="http://www.daterangepicker.com/" target="_blank">http://www.daterangepicker.com/</a></p>
+                        </div>
+                        <div class="">
+                            <div class="show-panel-body">
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">DateRangePicker example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard" class="control-label">Standard</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_value" class="control-label">Standard with value</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="10/10/2016 - 10/30/2016" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_value" class="control-label">Standard with value</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="10/10/2016 - 10/30/2016" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_format" class="control-label">Standard with format</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_format" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_format" class="control-label">Standard with format</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_format" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_predefined_intervals" class="control-label">Standard with predefined intervals</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_predefined_intervals" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_predefined_intervals" class="control-label">Standard with predefined intervals</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_predefined_intervals" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                        <form>
-                                            <fieldset>
-                                                <legend class="sr-only">example form</legend>
-                                                <div data-showcase="example">
-                                                    <div class="form-group">
-                                                        <label for="daterangepicker_standard_with_predefined_intervals_no_calendar" class="control-label">Standard with predefined intervals whitout calendars</label>
-                                                        <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_predefined_intervals_no_calendar" class="form-control" value="" />
-                                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">example form</legend>
+                                        <div data-showcase="example">
+                                            <div class="form-group">
+                                                <label for="daterangepicker_standard_with_predefined_intervals_no_calendar" class="control-label">Standard with predefined intervals whitout calendars</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="daterangepicker_standard_with_predefined_intervals_no_calendar" class="form-control" value="" />
+                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                                 </div>
-                                            </fieldset>
-                                        </form>
-                                    </div>
-                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -141,6 +141,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#cssProgressBars">
+                                <span class="menu-text">Progress Bars</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.php#cssPanels">
                                 <span class="menu-text">Panels</span>
                             </a>
@@ -168,9 +173,66 @@
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php">
+                                <span class="menu-text">Complex form elements</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php">
+                                        <span class="menu-text">Masked inputs</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsTextareaWithInputLimiter">
+                                        <span class="menu-text">Textarea with input limiter</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsDatePicker">
+                                        <span class="menu-text">Date picker</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsFileUpload">
+                                        <span class="menu-text">File upload</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsSelectizeTagInput">
+                                        <span class="menu-text">Selectize tag input</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryAutocomplete">
+                                        <span class="menu-text">jQuery autocomplete</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUISliders">
+                                        <span class="menu-text">jQuery UI Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryNumericInput">
+                                        <span class="menu-text">jQuery numeric input</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsChosenJsAutocomplete">
+                                        <span class="menu-text">Chosen.js autocomplete</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.php">
                                 <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsCustomErrorMessages">
+                                <span class="menu-text">Custom error messages</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -186,6 +248,11 @@
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.php#jsUtilities">
                                 <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsBlockUI">
+                                <span class="menu-text">Block UI</span>
                             </a>
                         </li>
                         <li class="menu-item">

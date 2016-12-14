@@ -199,6 +199,10 @@
                      font-size: @sidebar-fontsize-third-level;
                      background-color:@sidebar-third-level-bg;
                    }
+                   &.active > a {
+                     background-color: @sidebar-submenu-active-cell-bg;
+                     color: @sidebar-submenu-active-cell-text;
+                   }
                    &:not(.active){
                      > a {
                        &:hover, &:active, &:focus {
