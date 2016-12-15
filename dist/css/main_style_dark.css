@@ -10043,6 +10043,8 @@ body {
   margin: 0;
 }
 .main-container .main-container-inner .main-content {
+  position: relative;
+  z-index: 1;
   padding: 0;
 }
 .main-container .main-container-inner .main-content .page-content {
