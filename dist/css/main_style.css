@@ -10246,7 +10246,7 @@ body {
   position: relative;
   display: block;
   min-height: 40px;
-  padding: 10px 40px;
+  padding: 10px 35px;
   padding-left: 41px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -10272,7 +10272,6 @@ body {
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
-  width: 106px;
 }
 .sidebar .sidebar-inner .menu-item a:hover,
 .sidebar .sidebar-inner .menu-item a:active,
