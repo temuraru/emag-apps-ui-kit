@@ -145,30 +145,62 @@
                 columnChooser: function() {
 
                     var defaultOptions = {
-                        title: 'Choose columns',
-                        saveBtnLabel: 'Save',
-                        cancelBtnLabel: 'Cancel'
+                        saveBtnLabel: 'Done',
+                        cancelBtnLabel: 'Cancel',
+                        actionButton: ''
                     };
                     var opts = $.extend(defaultOptions, gridOpts.columnChooserOptions);
                     var self = this;
 
-                    var modalId = self[0].id + '_modal';
-                    var selectContainer = '<div class="form-group" id="colchooser_' + self[0].p.id + '">' +
-                        '<select multiple="multiple" class="form-control" id="select_' + self[0].p.id + '">' +
-                        '</select>' +
-                        '</div>';
+                    var dropId = self[0].id + '_drop_jsc';
+
                     var $body = $('body');
-                    var $modal = _getColumnChooserModal();
+                    var $button = $(opts.actionButton);
+
+                    _initDrop($button);
+
                     _initColumnChooserEvents();
 
                     function _initColumnChooserEvents() {
-                        $body.off('click', '.col-ch-save-btn');
-                        $body.on('click','.col-ch-save-btn', function() {
-                            var colModel = self.jqGrid('getGridParam', 'colModel');
-                            var select = $('#select_' + self[0].p.id);
+                        $body.on('input', '#' + dropId + ' .jsc-search', function() {
+                            var searchString = $(this).val().toLowerCase();
 
-                            select.find('option').each(function(i) {
-                                if (this.selected) {
+                            $('#' + dropId + ' .dd-jsc-checkbox-all-columns .checkbox .jsc-col-name').each(function (i) {
+                                var $this = $(this);
+                                var colName = $this.html();
+
+                                if (colName.toLowerCase().indexOf(searchString) === -1) {
+                                    $this.parents('.checkbox').parent().addClass('hide');
+                                } else {
+                                    $this.parents('.checkbox').parent().removeClass('hide');
+                                }
+                            });
+                        });
+
+                        $body.on('click', '#' + dropId + ' .jsc-checkbox-all', function() {
+                            if (this.checked) {
+                                $('#' + dropId + ' .jsc-search').val('');
+                                $('#' + dropId + ' .dd-jsc-checkbox-all-columns li').removeClass('hide');
+                                $('#' + dropId + ' .jsc-checkbox').prop('checked', true);
+                            } else {
+                                $('#' + dropId + ' .jsc-checkbox').prop('checked', false);
+                            }
+                        });
+
+                        $body.on('click', '#' + dropId + ' .jsc-checkbox', function() {
+                            if (!this.checked) {
+                                $('#' + dropId + ' .jsc-checkbox-all').prop('checked', false);
+                            }
+                        });
+
+                        $body.off('click', '#' + dropId + ' .btn-jsc-save-btn');
+                        $body.off('click', '#' + dropId + ' .btn-jsc-cancel-btn');
+
+                        $body.on('click', '#' + dropId + ' .btn-jsc-save-btn', function() {
+                            var colModel = self.jqGrid('getGridParam', 'colModel');
+
+                            $('#' + dropId + ' .dd-jsc-checkbox-all-columns .jsc-checkbox').each(function (i) {
+                                if (this.checked) {
                                     self.jqGrid('showCol', colModel[this.value].name);
                                 } else {
                                     self.jqGrid('hideCol', colModel[this.value].name);
@@ -176,58 +208,60 @@
                             });
                             photonResizeGrid();
                         });
-                        $(window).on(self[0].id + '.column.chooser.show', function() {
-                            $modal.show();
-                            hideBodyOverlayer();
-                            activateDraggableForModal($('#' + modalId));
-                            _insertOptionValuesToModal();
-                        });
-                        $(window).on(self[0].id + '.column.chooser.hide', function() {
-                            $modal.hide();
+
+                        $body.on('click', '#' + dropId + ' .btn-jsc-cancel-btn', function() {
+                            var colModel = self.jqGrid('getGridParam', 'colModel');
+                            $.each(colModel, function (i) {
+                                $('#' + dropId + ' .jsc-checkbox[value="' + i + '"]').prop('checked', !this.hidden);
+                            });
                         });
                     }
 
-                    function _getColumnChooserModal() {
-
-                        return new PhotonModal({
-                            id: modalId,
-                            title: opts.title,
-                            content: selectContainer,
-                            size: 'small',
-                            type: 'preview',
-                            recreateOnShow: false,
-                            buttons: {
-                                save: {
-                                    label: opts.saveBtnLabel,
-                                    class: 'btn-success col-ch-save-btn',
-                                    icon: 'fa fa-check',
-                                    closeModal: true
-                                },
-                                cancel: {
-                                    label: opts.cancelBtnLabel,
-                                    class: 'col-ch-cancel-btn',
-                                    icon: 'fa fa-times',
-                                    closeModal: true
-                                }
-                            }});
+                    function _initDrop($button) {
+                        var drop = new Drop({
+                            target: $button[0],
+                            classes: 'drop-actions',
+                            content: '<div id="' + dropId + '">' +
+                                    '<ul class="dropdown-menu dropdown-default dd-jqgrid-select-columns dd-jsc-one-item">' +
+                                        '<li>' +
+                                            '<input type="text" class="form-control jsc-search" placeholder="Search">' +
+                                        '</li>' +
+                                    '</ul>' +
+                                    '<ul class="dropdown-menu dropdown-default dd-jqgrid-select-columns dd-jsc-checkbox dd-jsc-one-item">' +
+                                        '<li>' +
+                                            '<div class="checkbox"><label><input type="checkbox" class="form-checkbox-control jsc-checkbox-all" value="" checked=""> Select all</label></div>' +
+                                        '</li>' +
+                                    '</ul>' +
+                                    '<ul class="dropdown-menu dropdown-default dd-jqgrid-select-columns dd-jsc-checkbox dd-jsc-checkbox-all-columns">' +
+                                        _getColumnsCheckboxes() +
+                                    '</ul>' +
+                                    '<ul class="dropdown-menu dropdown-default dd-jqgrid-select-columns dd-jsc-buttons">' +
+                                        '<li>' +
+                                            '<button type="button" class="btn btn-default btn-jsc-cancel-btn">' + opts.cancelBtnLabel + '</button> ' +
+                                            '<button type="button" class="btn btn-primary btn-jsc-save-btn pull-right">' + opts.saveBtnLabel + '</button>' +
+                                        '</li>' +
+                                    '</ul>' +
+                                '</div>',
+                            position: 'bottom right',
+                            openOn: 'click',
+                            constrainToWindow: true,
+                            constrainToScrollParent: false,
+                            tetherOptions: {
+                                offset: '-5px 0'
+                            }
+                        });
                     }
 
-                    function _insertOptionValuesToModal() {
-                        var select = $('#select_' + self[0].p.id);
+                    function _getColumnsCheckboxes() {
+                        var columnsCheckboxes = '';
                         var colModel = self.jqGrid('getGridParam', 'colModel');
                         var colNames = self.jqGrid('getGridParam', 'colNames');
-                        var colMap = {}, fixedCols = [];
-                        select.empty();
+
                         $.each(colModel, function(i) {
-                            colMap[this.name] = i;
-                            if (this.hidedlg) {
-                                if (!this.hidden) {
-                                    fixedCols.push(i);
-                                }
-                                return;
-                            }
-                            select.append("<option value='" + i + "' " + (this.hidden? "" : "selected='selected'") + ">" + colNames[i] + "</option>");
+                            columnsCheckboxes += '<li><div class="checkbox"><label><input type="checkbox" class="form-checkbox-control jsc-checkbox" value="' + i + '"' + (this.hidden? '' : 'checked="checked"') + '> <span class="jsc-col-name">' + colNames[i] + '</span></label></div></li>';
                         });
+
+                        return columnsCheckboxes;
                     }
                 }
             });

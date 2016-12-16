@@ -46,6 +46,7 @@
                             <ul>
                                 <li><a href="#jqGrid-basic">jqGrid basic</a></li>
                                 <li><a href="#jqGrid-with-sticky-panels">jqGrid with sticky panels</a></li>
+                                <li><a href="#jqGrid-with-column-chooser">jqGrid with column chooser</a></li>
                                 <li><a href="#jqGrid-with-selectable-rows">jqGrid with selectable rows</a></li>
                                 <li><a href="#jqGrid-ierarchical-elements-tree">jqGrid with ierarchical elements (Tree)</a></li>
                                 <li><a href="#jqGrid-with-subgrid">jqGrid with subgrid</a></li>
@@ -62,10 +63,10 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid basic</strong></h4>
 
-                            <br>
-
-                            <table id="grid_table" class="table table-bordered"></table>
-                            <div id="grid_pager"></div>
+                            <div class="pad-top-20">
+                                <table id="grid_table" class="table table-bordered"></table>
+                                <div id="grid_pager"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -75,10 +76,27 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid with sticky panels</strong></h4>
 
-                            <br>
+                            <div class="pad-top-20">
+                                <table id="grid_table_sticky" class="table table-bordered"></table>
+                                <div id="grid_pager_sticky"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                            <table id="grid_table_sticky" class="table table-bordered"></table>
-                            <div id="grid_pager_sticky"></div>
+                <section id="jqGrid-with-column-chooser" class="pad-top-40">
+                    <div class="show-panel">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>jqGrid with column chooser</strong></h4>
+
+                            <div class="pad-top-20 pad-btm-20 clearfix">
+                                <button type="button" id="grid_table_column_chooser_button" class="btn btn-primary pull-right">
+                                    Select columns <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                            <table id="grid_table_column_chooser" class="table table-bordered"></table>
+                            <div id="grid_pager_column_chooser"></div>
                         </div>
                     </div>
                 </section>
@@ -88,9 +106,7 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jgGrid with selectable rows</strong></h4>
 
-                            <br>
-
-                            <div class="pad-btm-20">
+                            <div class="pad-top-20 pad-btm-20">
                                 <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
                             </div>
 
@@ -109,9 +125,9 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
 
-                            <br>
-
-                            <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
+                            <div class="pad-top-20">
+                                <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -121,9 +137,9 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid with subgrid</strong></h4>
 
-                            <br>
-
-                            <table id="grid_table_with_subgrid" class="table table-bordered"></table>
+                            <div class="pad-top-20">
+                                <table id="grid_table_with_subgrid" class="table table-bordered"></table>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -133,10 +149,10 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid with inline editing</strong></h4>
 
-                            <br>
-
-                            <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
-                            <div id="grid_pager_with_inline_edit"></div>
+                            <div class="pad-top-20">
+                                <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
+                                <div id="grid_pager_with_inline_edit"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -146,10 +162,10 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid with actions</strong></h4>
 
-                            <br>
-
-                            <table id="grid_table_with_actions" class="table table-bordered"></table>
-                            <div id="grid_pager_with_actions"></div>
+                            <div class="pad-top-20">
+                                <table id="grid_table_with_actions" class="table table-bordered"></table>
+                                <div id="grid_pager_with_actions"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -159,10 +175,10 @@
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>jqGrid with data formatters</strong></h4>
 
-                            <br>
-
-                            <table id="grid_with_formatter_table" class="table table-bordered"></table>
-                            <div id="grid_with_formatter_pager"></div>
+                            <div class="pad-top-20">
+                                <table id="grid_with_formatter_table" class="table table-bordered"></table>
+                                <div id="grid_with_formatter_pager"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -187,6 +203,8 @@
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
+
+<script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
 
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
@@ -227,7 +245,7 @@
 
         new PhotonJqGrid(listingParameters).init();
 
-        var listingParameters = {
+        var listingParametersSticky = {
             table: '#grid_table_sticky',
             pager: '#grid_pager_sticky',
             datatype: 'jsonstring',
@@ -245,9 +263,36 @@
             ]
         };
 
-        new PhotonJqGrid(listingParameters).init();
+        new PhotonJqGrid(listingParametersSticky).init();
 
         initPhotonStick();
+
+        var listingParametersWithColumnChooser = {
+            table: '#grid_table_column_chooser',
+            pager: '#grid_pager_column_chooser',
+            datatype: 'jsonstring',
+            caption: 'Listing caption',
+            datastr: getListingDummyData(),
+            styleUI : 'fontAwesome',
+            useCustomColumnChooser: true,
+            columnChooserOptions: {
+                saveBtnLabel: 'Done',
+                cancelBtnLabel: 'Cancel',
+                actionButton: '#grid_table_column_chooser_button'
+            },
+            colModel: [
+                { label: 'First Name', name: 'firstname', key: true, width: "100" },
+                { label: 'Last Name', name: 'lastname' },
+                { label: 'Username', name: 'username' },
+                { label: 'Hobby', name: 'jobtype' },
+                { label: 'Nickname', name: 'codename' },
+                { label: 'Spiritual Animal', name: 'spirit_animal' }
+            ]
+        };
+
+        var photonGrid = new PhotonJqGrid(listingParametersWithColumnChooser);
+        photonGrid.init();
+        $(photonGrid.grid).jqGrid('columnChooser');
 
         var listingParametersWithSelectableRows = {
             table: '#grid_table_with_selectable_rows',
