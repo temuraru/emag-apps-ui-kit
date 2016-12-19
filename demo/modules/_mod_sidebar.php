@@ -173,6 +173,16 @@
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.php">
+                                <span class="menu-text">AJAX Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsBlockUI">
+                                <span class="menu-text">Block UI</span>
+                            </a>
+                        </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php">
                                 <span class="menu-text">Complex form elements</span>
@@ -226,53 +236,8 @@
                             </ul>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.php">
-                                <span class="menu-text">Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.php#jsCustomErrorMessages">
                                 <span class="menu-text">Custom error messages</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsTooltips">
-                                <span class="menu-text">Tooltips</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsPopovers">
-                                <span class="menu-text">Popovers</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsUtilities">
-                                <span class="menu-text">Utilities</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsBlockUI">
-                                <span class="menu-text">Block UI</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.php">
-                                <span class="menu-text">AJAX Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.php">
-                                <span class="menu-text">Fancytree</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.php">
-                                <span class="menu-text">Wysiwyg editor</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.php">
-                                <span class="menu-text">Picture gallery & image slider</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -281,8 +246,48 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.php">
+                                <span class="menu-text">Fancytree</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_introjs.php">
+                                <span class="menu-text">IntroJS</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php">
                                 <span class="menu-text">jQGrid</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php">
+                                <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.php">
+                                <span class="menu-text">Picture gallery & image slider</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsPopovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsTooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#jsUtilities">
+                                <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.php">
+                                <span class="menu-text">Wysiwyg editor</span>
                             </a>
                         </li>
                     </ul>
