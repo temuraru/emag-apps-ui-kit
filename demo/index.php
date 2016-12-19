@@ -256,7 +256,7 @@ eMAG Apps UI KIT/
                         </div>
                     </div>
                 </section>
-                <section id="gettingStarted" class="pad-top-40">
+                <section id="getting-started" class="pad-top-40">
                     <div class="show-panel">
                         <div class="show-panel-body">
                             <h2><strong>Getting started</strong></h2>

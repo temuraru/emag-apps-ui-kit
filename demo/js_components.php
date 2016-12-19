@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsCustomErrorMessages" class="pad-top-20">
+                <section id="js-custom-error-messages" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Custom error messages</strong></h4>
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsTooltips" class="pad-top-20">
+                <section id="js-tooltips" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Tooltips</strong></h4>
@@ -217,7 +217,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsPopovers" class="pad-top-20">
+                <section id="js-popovers" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Popovers</strong></h4>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsUtilities" class="pad-top-20">
+                <section id="js-utilities" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Utilities:</strong></h4>
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsBlockUI" class="pad-top-20">
+                <section id="js-block-ui" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Block UI</strong></h4>
