@@ -142,14 +142,14 @@
                         label: $this.options.modalResetLabel,
                         class: 'btn-default pull-left ' + $this.options.modalResetBtnClass
                     },
-                    'ok': {
-                        label:  $this.options.modalOkLabel,
-                        class: 'btn-primary ' + $this.options.modalOkBtnClass,
-                        closeModal: true
-                    },
                     'cancel': {
                         label: $this.options.modalCancelLabel,
-                        class: 'btn-default ' + $this.options.modalCancelBtnClass,
+                        class: 'btn-default pull-right ' + $this.options.modalCancelBtnClass,
+                        closeModal: true
+                    },
+                    'ok': {
+                        label:  $this.options.modalOkLabel,
+                        class: 'btn-primary pull-right ' + $this.options.modalOkBtnClass,
                         closeModal: true
                     }
                 },
