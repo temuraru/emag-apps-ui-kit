@@ -27,20 +27,20 @@
                         <p><b>IntroJS</b></p>
                     </div>
                 </div>
-                <section id="summernoteStandard" class="pad-top-40">
+                <section class="pad-top-40">
                     <div class="show-panel">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>IntroJS</strong></h4>
 
                             <h2>Choose the tour type</h2>
 
-                            <button id="introJsDefault" type="button" class="btn btn-primary">Default</button>&nbsp;
-                            <button id="introJsWithoutBullets" type="button" class="btn btn-primary">Without bullets</button>&nbsp;
-                            <button id="introJsWithoutButtons" type="button" class="btn btn-primary">Without buttons</button>&nbsp;
-                            <button id="introJsWithProgressBar" type="button" class="btn btn-primary">With progress bar</button>&nbsp;
-                            <button id="introJsWithAutoPositioning" type="button" class="btn btn-primary">Auto Positioning</button>&nbsp;
-                            <button id="introJsHtmlInTooltip" type="button" class="btn btn-primary">HTML in tooltip</button>&nbsp;
-                            <button id="introJsHints" type="button" class="btn btn-primary">Hints</button>&nbsp;
+                            <button id="intro_js_default" type="button" class="btn btn-primary">Default</button>&nbsp;
+                            <button id="intro_js_without_bullets" type="button" class="btn btn-primary">Without bullets</button>&nbsp;
+                            <button id="intro_js_without_buttons" type="button" class="btn btn-primary">Without buttons</button>&nbsp;
+                            <button id="intro_js_with_progressbar" type="button" class="btn btn-primary">With progress bar</button>&nbsp;
+                            <button id="intro_js_with_auto_positioning" type="button" class="btn btn-primary">Auto Positioning</button>&nbsp;
+                            <button id="intro_js_html_in_tooltip" type="button" class="btn btn-primary">HTML in tooltip</button>&nbsp;
+                            <button id="intro_js_hints" type="button" class="btn btn-primary">Hints</button>&nbsp;
 
                             <hr>
 
@@ -247,41 +247,41 @@
 
             initStepData();
 
-            $body.on('click', '#introJsDefault', function () {
+            $body.on('click', '#intro_js_default', function () {
                 startIntroJs({
                     steps: window.defaultsIntroSteps
                 });
             });
 
-            $body.on('click', '#introJsWithoutBullets', function () {
+            $body.on('click', '#intro_js_without_bullets', function () {
                 startIntroJs({
                     showBullets: false,
                     steps: window.defaultsIntroSteps
                 });
             });
 
-            $body.on('click', '#introJsWithoutButtons', function () {
+            $body.on('click', '#intro_js_without_buttons', function () {
                 startIntroJs({
                     showButtons: false,
                     steps: window.defaultsIntroSteps
                 });
             });
 
-            $body.on('click', '#introJsWithProgressBar', function () {
+            $body.on('click', '#intro_js_with_progressbar', function () {
                 startIntroJs({
                     showProgress: true,
                     steps: window.defaultsIntroSteps
                 });
             });
 
-            $body.on('click', '#introJsWithAutoPositioning', function () {
+            $body.on('click', '#intro_js_with_auto_positioning', function () {
                 startIntroJs({
                     tooltipPosition: 'auto',
                     steps: window.autoPositioningIntroSteps
                 });
             });
 
-            $body.on('click', '#introJsHtmlInTooltip', function () {
+            $body.on('click', '#intro_js_html_in_tooltip', function () {
                 startIntroJs({
                     steps: window.introStepsWithHtml
                 })

@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="typeStyles" class="pad-top-40">
+                        <section id="type-styles" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Typefaces variations</strong></h4>
@@ -415,7 +415,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssTables" class="pad-top-20">
+                        <section id="css-tables" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Tables</strong></h4>
@@ -736,7 +736,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="basicForms" class="pad-top-20">
+                        <section id="basic-forms" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Forms</strong></h4>
@@ -1508,7 +1508,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssFlipswitch" class="pad-top-20">
+                        <section id="css-flipswitch" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>CSS Flipswitch</strong></h4>
@@ -1536,7 +1536,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssTooltips" class="pad-top-20">
+                        <section id="css-tooltips" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>CSS Tooltips</strong></h4>
@@ -1583,7 +1583,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssLabelsandBadges" class="pad-top-20">
+                        <section id="css-labels-and-badges" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Labels and badges</strong></h4>
@@ -1637,7 +1637,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssAlertsandNotifications" class="pad-top-20">
+                        <section id="css-alerts-and-notifications" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Alerts and notifications</strong></h4>
@@ -1712,7 +1712,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssProgressBars" class="pad-top-20">
+                        <section id="css-progressbars" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Progress Bars</strong></h4>
@@ -1765,7 +1765,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssPanels" class="pad-top-20">
+                        <section id="css-panels" class="pad-top-20">
 
                                     <div class="show-panel">
                                         <div class="show-panel-body">
@@ -1920,7 +1920,7 @@
                                         </div>
                                     </div>
                         </section>
-                        <section id="cssJumbotron" class="pad-top-20">
+                        <section id="css-jumbotron" class="pad-top-20">
                             <div class="show-panel-body">
                                 <h4 class="text-primary"><strong>Jumbotron</strong></h4>
                                 <p><strong>Default styling:</strong></p>
@@ -1934,7 +1934,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssJumbotron" class="pad-top-20">
+                        <section id="css-page-header" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Page header</strong></h4>
@@ -1948,7 +1948,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssEmbeds" class="pad-top-20">
+                        <section id="css-embeds" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Responsive embeds</strong></h4>
