@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="typeStyles" class="pad-top-40">
+                        <section id="type-styles" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Typefaces variations</strong></h4>
@@ -415,7 +415,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssTables" class="pad-top-20">
+                        <section id="css-tables" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Tables</strong></h4>
@@ -736,7 +736,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="basicForms" class="pad-top-20">
+                        <section id="basic-forms" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Forms</strong></h4>
@@ -1508,7 +1508,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssFlipswitch" class="pad-top-20">
+                        <section id="css-flipswitch" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>CSS Flipswitch</strong></h4>
@@ -1536,7 +1536,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssTooltips" class="pad-top-20">
+                        <section id="css-tooltips" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>CSS Tooltips</strong></h4>
@@ -1583,7 +1583,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssLabelsandBadges" class="pad-top-20">
+                        <section id="css-labels-and-badges" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Labels and badges</strong></h4>
@@ -1637,7 +1637,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssAlertsandNotifications" class="pad-top-20">
+                        <section id="css-alerts-and-notifications" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Alerts and notifications</strong></h4>
@@ -1712,7 +1712,60 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssPanels" class="pad-top-20">
+                        <section id="css-progressbars" class="pad-top-20">
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h4 class="text-primary"><strong>Progress Bars</strong></h4>
+                                    <p><strong>Basic progress bar:</strong></p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <p><strong>Basic progress bar with label:</strong></p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            60%
+                                        </div>
+                                    </div>
+                                    <p><strong>Contextual alternatives:</strong></p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                    <p><strong>Striped progress bars:</strong></p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                            <span class="sr-only">45% Complete</span>
+                                        </div>
+                                    </div>
+                                    <p><strong>Stacked progress bars:</strong></p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" style="width: 35%">
+                                            <span class="sr-only">35% Complete (success)</span>
+                                        </div>
+                                        <div class="progress-bar progress-bar-warning" style="width: 20%">
+                                            <span class="sr-only">20% Complete (warning)</span>
+                                        </div>
+                                        <div class="progress-bar progress-bar-danger" style="width: 10%">
+                                            <span class="sr-only">10% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="css-panels" class="pad-top-20">
 
                                     <div class="show-panel">
                                         <div class="show-panel-body">
@@ -1867,7 +1920,7 @@
                                         </div>
                                     </div>
                         </section>
-                        <section id="cssJumbotron" class="pad-top-20">
+                        <section id="css-jumbotron" class="pad-top-20">
                             <div class="show-panel-body">
                                 <h4 class="text-primary"><strong>Jumbotron</strong></h4>
                                 <p><strong>Default styling:</strong></p>
@@ -1881,7 +1934,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssJumbotron" class="pad-top-20">
+                        <section id="css-page-header" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Page header</strong></h4>
@@ -1895,7 +1948,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="cssEmbeds" class="pad-top-20">
+                        <section id="css-embeds" class="pad-top-20">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h4 class="text-primary"><strong>Responsive embeds</strong></h4>

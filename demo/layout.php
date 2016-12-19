@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="topNavigation" class="pad-top-40">
+                        <section id="top-navigation" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Top Navigation</strong></h2>
@@ -300,7 +300,7 @@
                             </div>
                         </section>
 
-                        <section id="mainSidebar" class="pad-top-40">
+                        <section id="main-sidebar" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Sidebar</strong></h2>
@@ -397,7 +397,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="mainFooter" class="pad-top-40">
+                        <section id="main-footer" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Footer</strong></h2>
@@ -452,7 +452,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="gridLayout" class="pad-top-40">
+                        <section id="grid-layout" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Grid Layout</strong></h2>

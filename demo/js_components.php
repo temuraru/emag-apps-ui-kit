@@ -2,6 +2,9 @@
 <html lang="en" class="js">
 <head>
     <title>JS Components - eMAG Apps UI KIT</title>
+
+    <link rel="stylesheet" href="../dist/plugins/css3spinners/css3-spinners.1.2.2.min.css">
+
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
 </head>
@@ -164,7 +167,33 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsTooltips" class="pad-top-20">
+                <section id="js-custom-error-messages" class="pad-top-20">
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Custom error messages</strong></h4>
+
+                            <div class="alert alert-info" role="alert">
+                                <p>
+                                    <i class="fa fa-info-circle"></i>
+                                    Based on the bootstrap-notify plugin with documentation on <a href="http://bootstrap-notify.remabledesigns.com/" class="alert-link">http://bootstrap-notify.remabledesigns.com/</a>
+                                </p>
+                            </div>
+
+                            <button type="button" id="show_info" class="btn btn-primary btn-sm">
+                                Show info message
+                            </button>
+                            <hr>
+                            <button type="button" id="show_warning" class="btn btn-default btn-sm">
+                                Show warning message
+                            </button>
+                            <hr>
+                            <button type="button" id="show_error" class="btn btn-danger btn-sm">
+                                Show error message
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section id="js-tooltips" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Tooltips</strong></h4>
@@ -188,7 +217,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsPopovers" class="pad-top-20">
+                <section id="js-popovers" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Popovers</strong></h4>
@@ -201,7 +230,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="jsUtilities" class="pad-top-20">
+                <section id="js-utilities" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <h4 class="text-primary"><strong>Utilities:</strong></h4>
@@ -285,6 +314,23 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="js-block-ui" class="pad-top-20">
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Block UI</strong></h4>
+
+                            <div class="alert alert-info" role="alert">
+                                <p>
+                                    <i class="fa fa-info-circle"></i>
+                                    Based on the Block UI plugin documented on: <a href="http://malsup.com/jquery/block/" class="alert-link">jQuery BlockUI Plugin</a>
+                                </p>
+                            </div>
+
+                            <button type="button" id="block_page" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block page</span></button>
+                            <button type="button" id="block_section" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block this section</span></button>
                         </div>
                     </div>
                 </section>
@@ -447,6 +493,30 @@
                     successModal.show();
                 });
 
+                $('#show_info').on('click',function(){
+                    addNotification("<span>Prepare yourself! This is an informational message: Information</span>","info");
+                });
+                $('#show_warning').on('click',function(){
+                    addNotification("<span>Are you prepared? This is a warning message: Warning</span>","warning");
+                });
+                $('#show_error').on('click',function(){
+                    addNotification("<span>Oh SNAP! This is an error message: Run!</span>","danger");
+                });
+
+                $('#block_page').on('click', function() {
+                    $('body').blockControl({
+                        loadingIconType: "cubeGrid",
+                        iconColorClass: "light",
+                        overlayColor : "#000"
+                    });
+                    setTimeout(function(){$('body').unblockControl()}, 3000);
+                });
+
+                $('#block_section').on('click', function() {
+                    var section = $(this).parents('.show-panel');
+                    section.blockControl();
+                    setTimeout(function(){section.unblockControl()}, 3000);
+                });
             });
         </script>
         <!-- DOCUMENT-READY:End -->
