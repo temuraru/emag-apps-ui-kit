@@ -287,7 +287,7 @@
                 })
             });
 
-            $body.on('click', '#introJsHints', function () {
+            $body.on('click', '#intro_js_hints', function () {
                 addHintsForIntroJs({
                     hints: window.introHints
                 });
