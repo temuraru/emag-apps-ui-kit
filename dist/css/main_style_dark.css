@@ -10043,6 +10043,8 @@ body {
   margin: 0;
 }
 .main-container .main-container-inner .main-content {
+  position: relative;
+  z-index: 1;
   padding: 0;
 }
 .main-container .main-container-inner .main-content .page-content {
@@ -10247,7 +10249,7 @@ body {
   position: relative;
   display: block;
   min-height: 53px;
-  padding: 16.5px 40px;
+  padding: 16.5px 35px;
   padding-left: 54px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -10273,7 +10275,6 @@ body {
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
-  width: 106px;
 }
 .sidebar .sidebar-inner .menu-item a:hover,
 .sidebar .sidebar-inner .menu-item a:active,
@@ -10327,6 +10328,10 @@ body {
   font-size: 12px;
   font-weight: 400;
   background-color: #10171e;
+}
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
+  color: #fff;
+  background-color: #005eb7;
 }
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:hover,
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item:not(.active) > a:active,

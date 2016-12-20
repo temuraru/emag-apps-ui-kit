@@ -21,30 +21,25 @@
                 <div class="main-content">
                     <div class="page-content">
                         <div class="jumbotron content-header">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="container-fluid">
-                                        <p>eMAG Apps UI KIT</p>
-                                        <p><b>AJAX Modals</b></p>
-                                    </div>
-                                 </div>
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>AJAX Modals</b></p>
                             </div>
                         </div>
                         <section id="summernoteStandard" class="pad-top-40">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="show-panel">
-                                        <div class="show-panel-body">
-                                            <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
-                                            <p><strong>Works great with the standard Bootstrap version</strong></p>
-                                            <div class="pad-sep-20">
-                                                <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
-                                            </div>
-                                        </div>
-                                        <div class="show-panel-example">                                       
-                                            <div class="show-panel-footer">
-                                                <pre class="language-javascript">
-                                                    <code class="language-javascript">
+
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
+                                    <p><strong>Works great with the standard Bootstrap version</strong></p>
+                                    <div class="pad-sep-20">
+                                        <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
+                                    </div>
+                                </div>
+                                <div class="show-panel-example">
+                                    <div class="show-panel-footer">
+                                        <pre class="language-javascript">
+                                            <code class="language-javascript">
 var modalTest = new PhotonModal({
     id: 'testModal',
     title: 'This is an AJAX modal',
@@ -68,10 +63,8 @@ var modalTest = new PhotonModal({
         }
     }
 }); 
-                                                    </code>
-                                                </pre>
-                                            </div>
-                                        </div>
+                                            </code>
+                                        </pre>
                                     </div>
                                 </div>
                             </div>
