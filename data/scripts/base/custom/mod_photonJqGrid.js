@@ -50,8 +50,8 @@
             mergeLoadComplete: true,
             loadComplete: function () {
                 var jqGridOverlay = _getJqGridOverlay();
-                var _this = gridOpts.table;
-                var records = jQuery(_this).jqGrid('getGridParam', 'records');
+                var tableId = gridOpts.table;
+                var records = jQuery(tableId).jqGrid('getGridParam', 'records');
                 var tableId = gridOpts.table.slice(1);
 
                 //Display no records message.
@@ -77,7 +77,7 @@
             },
             mergeGridComplete: true,
             gridComplete: function() {
-                var _this = gridOpts.table;
+                var tableId = gridOpts.table;
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
@@ -90,8 +90,8 @@
                 }
 
 
-                var $jqgridContainer = $('#' + $(_this).attr('aria-labelledby'));
-                var records = jQuery(_this).jqGrid('getGridParam', 'records');
+                var $jqgridContainer = $('#' + $(tableId).attr('aria-labelledby'));
+                var records = jQuery(tableId).jqGrid('getGridParam', 'records');
 
 
                 if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
