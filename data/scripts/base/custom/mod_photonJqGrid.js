@@ -50,7 +50,7 @@
             mergeLoadComplete: true,
             loadComplete: function () {
                 var jqGridOverlay = _getJqGridOverlay();
-                var _this = this;
+                var _this = gridOpts.table;
                 var records = jQuery(_this).jqGrid('getGridParam', 'records');
                 var tableId = gridOpts.table.slice(1);
 
@@ -77,7 +77,7 @@
             },
             mergeGridComplete: true,
             gridComplete: function() {
-                var _this = this;
+                var _this = gridOpts.table;
                 var jqGridOverlay = _getJqGridOverlay();
                 //Make overlay background active
                 jqGridOverlay.addClass('custom-overlay');
