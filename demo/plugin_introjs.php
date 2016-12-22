@@ -235,6 +235,9 @@
         }
 
         function startIntroJs(options) {
+            options.nextLabel = '<i class="fa fa-angle-right" aria-hidden="true"></i>';
+            options.prevLabel = '<i class="fa fa-angle-left" aria-hidden="true"></i>';
+
             setIntroJsOptions(options).start();
         }
 
