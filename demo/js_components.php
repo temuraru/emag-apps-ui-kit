@@ -4,7 +4,10 @@
     <title>JS Components - eMAG Apps UI KIT</title>
 
     <link rel="stylesheet" href="../dist/plugins/css3spinners/css3-spinners.1.2.2.min.css">
+
+    <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
     <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
 </head>
@@ -217,6 +220,34 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="js-tabs" class="pad-top-20">
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Tabs</strong></h4>
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-flex" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-flex">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <table id="grid_table" class="table table-bordered"></table>
+                                        <div id="grid_pager"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
+                                        <div id="grid_pager_with_inline_edit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="js-popovers" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
@@ -335,47 +366,7 @@
                     </div>
                 </section>
 
-                <section id="tabs" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Tabs</strong></h4>
 
-                            <div>
-
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs nav-tabs-flex" role="tablist">
-                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
-                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
-                                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages lorem ipsum dolor simet</a></li>
-                                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-                                    <li role="presentation"><a href="#settings" aria-controls="settings1" role="tab" data-toggle="tab">Lorem ipsum 1</a></li>
-                                    <li role="presentation"><a href="#settings" aria-controls="settings2" role="tab" data-toggle="tab">Lorem ipsum dol 2 lorem</a></li>
-                                    <li role="presentation"><a href="#settings" aria-controls="settings3" role="tab" data-toggle="tab">Lorem ipsum 3 dodo</a></li>
-                                </ul>
-
-                                <!-- Tab panes -->
-                                <div class="tab-content tab-content-flex">
-                                    <div role="tabpanel" class="tab-pane active" id="home">
-                                        <table id="grid_table" class="table table-bordered"></table>
-                                        <div id="grid_pager"></div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane" id="profile">
-                                        <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
-                                        <div id="grid_pager_with_inline_edit"></div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane" id="messages">......<br>...<br></div>
-                                    <div role="tabpanel" class="tab-pane" id="settings">......<br>...<br></div>
-                                    <div role="tabpanel" class="tab-pane" id="settings1">......<br>...<br></div>
-                                    <div role="tabpanel" class="tab-pane" id="settings2">......<br>...<br></div>
-                                    <div role="tabpanel" class="tab-pane" id="settings3">......<br>...<br></div>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
 
             </section>
         </div>
@@ -417,53 +408,6 @@
         </div>
     </div>
 </div>
-<style>
-    .nav-tabs.nav-tabs-flex {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        padding-bottom: 1px;
-        padding-left: 1px;
-    }
-
-    .nav-tabs.nav-tabs-flex li {
-        max-width: 150px;
-        background: white;
-        margin-left: -1px
-    }
-
-    .nav-tabs.nav-tabs-flex li a {
-        height: 100%;
-        margin: 0;
-    }
-
-    .nav-tabs.nav-tabs-flex > li.active > a {
-        padding: 7px 10px 8px 10px;
-        background: #005eb7;
-        color: white;
-        box-shadow: none;
-    }
-
-    .nav-tabs.nav-tabs-flex > li > a {
-        margin-top: 0;
-        border-radius: 0;
-        border-color: #005eb7
-    }
-
-    .nav-tabs.nav-tabs-flex > li.active > a:focus, .nav-tabs.nav-tabs-flex > li.active > a:hover {
-        background: #005eb7;
-        color: white
-    }
-
-    .tab-content.tab-content-flex {
-        border: 1px solid #005eb7;
-        border-top: 0;
-        padding: 10px
-    }
-</style>
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
@@ -476,6 +420,7 @@
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
 
+        <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
         <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
         <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
 
@@ -488,6 +433,9 @@
 
                 demoHelpers();  // Require demo_helpers.js
 
+
+
+                <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
                 function getListingDummyData() {
                     var actions = '<div class="btn-group">' +
                         '<button type="button" class="btn btn-sm btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">' +
@@ -730,7 +678,8 @@
 
                 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                     $(window).resize();
-                })
+                });
+
 
 
 
