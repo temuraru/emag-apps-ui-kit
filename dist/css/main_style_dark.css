@@ -10181,6 +10181,7 @@ body {
 }
 .tab-content {
   padding: 10px;
+  background: #fff;
   border: 1px solid #005eb7;
   border-top: 0;
 }

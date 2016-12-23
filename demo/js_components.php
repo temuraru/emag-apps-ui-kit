@@ -227,13 +227,13 @@
                             <h4 class="text-primary"><strong>Tabs</strong></h4>
                             <div>
                                 <!-- Nav tabs -->
-                                <ul class="nav nav-tabs nav-tabs-flex" role="tablist">
+                                <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
                                     <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
                                 </ul>
 
                                 <!-- Tab panes -->
-                                <div class="tab-content tab-content-flex">
+                                <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane active" id="home">
                                         <table id="grid_table" class="table table-bordered"></table>
                                         <div id="grid_pager"></div>
