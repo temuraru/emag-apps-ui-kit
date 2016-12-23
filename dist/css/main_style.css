@@ -9763,6 +9763,85 @@ button.close {
   padding-top: 0;
   padding-bottom: 0;
 }
+.error-containers-properties {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-page {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-page body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-page body #main-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-page body #main-container .main-container-inner {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-page body #main-container .main-container-inner .main-content {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-page body #main-container .main-container-inner .main-content .page-content {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+.error-number {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding-top: 50px;
+  margin-right: 25px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  vertical-align: super;
+  background: #f4b350;
+  border-radius: 75px;
+}
+.error-content {
+  display: inline-block;
+  vertical-align: sub;
+}
+.error-content a {
+  color: #2790f3;
+}
+.error-content a:hover {
+  color: #2790f3;
+  text-decoration: none;
+}
+.error-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #000;
+}
+.error-message {
+  font-size: 25px;
+  font-weight: 400;
+  color: #777;
+}
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
