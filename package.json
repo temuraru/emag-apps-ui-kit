@@ -12,10 +12,8 @@
   },
   "devDependencies": {
     "eslint": "^3.11.1",
-    "eslint-config-google": "^0.7.1",
-    "eslint-config-jquery": "^1.0.0",
-    "eslint-config-standard": "^6.2.1",
     "grunt": "^0.4.5",
+    "eslint-config-es5": "^0.5.0",
     "grunt-autoprefixer": "^3.0.3",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
