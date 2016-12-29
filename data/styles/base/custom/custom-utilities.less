@@ -14,7 +14,42 @@
     padding-top: (@i * 20px);
     padding-bottom: (@i * 20px);
   }
+  .pad-left-right-@{x} {
+    padding-left: (@i * 20px);
+    padding-right: (@i * 20px);
+  }
+  @y : (@x - 5);
+  .pad-@{y} {
+    padding: (@y * 1px);
+  }
+  .pad-left-right-@{y} {
+    padding-left: (@y * 1px);
+    padding-right: (@y * 1px);
+  }
   .generate-paddings(@n, (@i + 1));
+}
+///* END */
+
+///* Positioning margins: */
+///* START */
+.generate-margins(5);
+.generate-margins(@n, @i: 1) when (@i =< @n) {
+  @x : (@i*20);
+  .mg-top-@{x} {
+    margin-top: (@i * 20px);
+  }
+  .mg-btm-@{x} {
+    margin-bottom: (@i * 20px);
+  }
+  .mg-sep-@{x} {
+    margin-top: (@i * 20px);
+    margin-bottom: (@i * 20px);
+  }
+  @y : (@x - 5);
+  .mg-@{y} {
+    margin: (@y * 1px);
+  }
+  .generate-margins(@n, (@i + 1));
 }
 ///* END */
 
@@ -574,6 +609,22 @@
 .no-padding-top-bottom {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-border-top{
+  border-top: 0;
+}
+
+.no-border-bottom{
+  border-bottom: 0;
 }
 
 .error-containers-properties {
