@@ -433,7 +433,6 @@
         console.log('Ready, Captain!');
 
         demoHelpers();  // Require demo_helpers.js
-        showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
 
         initMaskedInputs();
         initInputLimiter();
