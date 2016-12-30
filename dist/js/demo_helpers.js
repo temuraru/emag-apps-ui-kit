@@ -73,26 +73,6 @@ function updateFooterBarCode() {
     }
 }
 
-// This function is just for demo purposes. It controls the way the expanding sidebar menu is displayed.
-function staticNavigation() {
-    var path = window.location.pathname + window.location.hash;
-
-    $("#sidebar .menu-item").removeClass('active');
-
-    $("#sidebar .menu-item > a").each(function () {
-        var href = $(this).attr('href');
-        if (href == '#') {
-            href = $(this).attr('data-href');
-        }
-        if (path == href) {
-            $(this).parents('.menu-item-has-children').addClass('active');
-            $(this).closest('.menu-item').addClass('active');
-        }
-    });
-
-    $(window).resize();
-}
-
 function demoHelpers() {
     staticNavigation();
     $(window).on('hashchange', function() {
