@@ -200,6 +200,7 @@ module.exports = function (grunt) {
                     '<%= pkg.data_scripts %>/base/scrollspy.js',
                     '<%= pkg.data_scripts %>/base/tab.js',
                     '<%= pkg.data_scripts %>/base/affix.js',
+                    '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_sidebar.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonDataFormatter.js',
                     '<%= pkg.data_plugins%>/notify/js/bootstrap-notify.js',
@@ -208,7 +209,6 @@ module.exports = function (grunt) {
                     '<%= pkg.data_scripts %>/base/custom/mod_customInput.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_tooltip.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_popover.js',
-                    '<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.data_scripts %>/base/custom/custom-setup.js'
                 ],
                 dest: '<%= pkg.dist_scripts %>/main_script.js'
