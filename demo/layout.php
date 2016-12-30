@@ -24,7 +24,7 @@
                 <?php include_once "modules/_mod_sidebar.php"?>
                 <!-- SIDEBAR:End -->
                 <!-- CONTENT:Start -->
-                <div class="main-content">
+                <div id="cucu" class="main-content">
                     <div class="page-content">
                         <div class="jumbotron content-header">
                             <div class="container-fluid">
@@ -39,7 +39,7 @@
                                     <p><strong>This is the main HTML template. It is based on the <a href="https://html5boilerplate.com/" target="_blank"><u>The HTML5 Boilerplate project</u></a>.</strong></p>
                                 </div>
                                 <div class="show-panel-footer">
-                                    <pre class="language-markup"><code class="language-markup" data-showcase="code">&lt;!doctype html&gt;
+                                    <pre class="language-html"><code class="language-html" data-showcase="code">&lt;!doctype html&gt;
 &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -146,13 +146,13 @@
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
                                                 <div role="tabpanel" class="tab-pane html-source active" id="navbar-example-html-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane js-source" id="navbar-example-js-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane css-source" id="navbar-example-css-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -202,13 +202,13 @@
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
                                                 <div role="tabpanel" class="tab-pane html-source active" id="navbar-with-login-html-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane js-source" id="navbar-with-login-js-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane css-source" id="navbar-with-login-css-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,13 +272,13 @@
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
                                                 <div role="tabpanel" class="tab-pane html-source active" id="navbar-with-search-and-notification-html-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane js-source" id="navbar-with-search-and-notification-js-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane css-source" id="navbar-with-search-and-notification-css-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -363,13 +363,13 @@
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
                                                 <div role="tabpanel" class="tab-pane html-source active" id="navbar-with-localization-and-notifications-html-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane js-source" id="navbar-with-localization-and-notifications-js-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane css-source" id="navbar-with-localization-and-notifications-css-source">
-                                                    <pre class="language-markup"><code class="language-markup" data-showcase="code"></code></pre>
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -480,7 +480,7 @@
                                     </div>
                                 </div>
                                 <div class="show-panel-footer">
-<pre class="language-markup" id="sidebar_code"><code class="language-markup" data-showcase="code">&lt;div id=&quot;sidebar&quot; class=&quot;<mark id="sidebar_classes" class="text-danger">sidebar sidebar-fixed</mark>&quot;&gt;
+<pre class="language-html" id="sidebar_code"><code class="language-html" data-showcase="code">&lt;div id=&quot;sidebar&quot; class=&quot;<mark id="sidebar_classes" class="text-danger">sidebar sidebar-fixed</mark>&quot;&gt;
     &lt;div class=&quot;sidebar-outer&quot;&gt;
         &lt;ul class=&quot;sidebar-inner&quot;&gt;
             &lt;li class=&quot;menu-item&quot;&gt;
@@ -558,7 +558,7 @@
                                     </div>
                                 </div>
                                 <div class="show-panel-footer">
-<pre class="language-markup hide" id="footer_fixed_code"><code class="language-markup" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer footer-fixed&#x22;&#x3E;
+<pre class="language-html hide" id="footer_fixed_code"><code class="language-html" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer footer-fixed&#x22;&#x3E;
     &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
         &#x3C;div class=&#x22;footer-content&#x22;&#x3E;
             &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
@@ -582,7 +582,7 @@
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</code></pre>
-                                    <pre class="language-markup" id="footer_unfixed_code"><code class="language-markup" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
+                                    <pre class="language-html" id="footer_unfixed_code"><code class="language-html" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
     &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
         &#x3C;div class=&#x22;footer-content text-center&#x22;&#x3E;
             &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
@@ -604,7 +604,7 @@
                                     <div class="panel-body">
                                         <div class="pad-sep-60">
                                             <strong>Full-width container</strong>
-<pre class="language-markup"><code class="language-markup" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-lg-12&quot;&gt; One panel here &lt;/div&gt;
     ...
 &lt;/div&gt;
@@ -620,7 +620,7 @@
                                             <div class="show-panel-body">
                                                 <div class="pad-sep-60">
                                                     <p><strong>Half-width containers</strong></p>
-<pre class="language-markup"><code class="language-markup" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt; One panel here &lt;/div&gt;
     ...
 &lt;/div&gt;
@@ -634,11 +634,11 @@
                                             <div class="show-panel-body">
                                                 <div class="pad-sep-60">
                                                     <p><strong>Half-width containers</strong></p>
-<pre class="language-markup"><code class="language-markup" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt; The other one here &lt;/div&gt;
     ...
 &lt;/div&gt;
-</code></code></pre>
+</code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -652,9 +652,11 @@
                                             <div class="show-panel-body">
                                                 <div class="pad-sep-60">
                                                     <p><strong>Centered container</strong></p>
-<pre class="language-markup"><code class="language-markup" data-showcase="code">&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-8 col-lg-offset-2&quot;&gt;
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-8 col-lg-offset-2&quot;&gt;
     Your panel here
-&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
                                                 </div>
                                             </div>
@@ -708,5 +710,6 @@
             });
         </script>
         <!-- DOCUMENT-READY:End -->
+
     </body>
 </html>

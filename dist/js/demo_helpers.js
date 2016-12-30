@@ -32,13 +32,13 @@ function typeOfTag($obj) {
 }
 
 function getFormattedCode(htmlContent) {
-    var offset = escapeHtml(htmlContent).match(/^\s+/)[0].length;
+
     var codeLines = escapeHtml(htmlContent).split('\n');
 
     if (codeLines[0].slice(offset - 1) == '') {
         codeLines.shift();
     }
-
+    var offset = escapeHtml(htmlContent).match(/^\s+/)[0].length;
     return code = codeLines.map(function (line) {
         return line.slice(offset - 1);
     }).join('\n');
@@ -63,16 +63,16 @@ function generateDependencyCode($module,$dependency){
         case 'script-same-page':
             var codeJs = $dependency.html();
             var formattedJs = getFormattedCode(codeJs);
-            formattedJs = "&lt;script&gt;" + formattedJs + "&lt;/script&gt;\n";
+            formattedJs = "&lt;script&gt;\n" + formattedJs + "&lt;/script&gt;\n";
             $moduleParrent.find('.js-source code').append(formattedJs);
             break;
         case 'style-external':
-            $moduleParrent.find('.css-source code').append('&lt;link rel="stylesheet" href="' + $dependency.attr('href') + '"&gt;\n');
+            $moduleParrent.find('.css-source code').append('\n&lt;link rel="stylesheet" href="' + $dependency.attr('href') + '"&gt;\n');
             break;
         case 'style-same-page':
             var codeStyle = $dependency.html();
             var formattedStyle = getFormattedCode(codeStyle);
-            formattedStyle = "&lt;style&gt;" + formattedStyle + "&lt;/style&gt;\n";
+            formattedStyle = "\n&lt;style&gt;\n" + formattedStyle + "&lt;/style&gt;\n";
             $moduleParrent.find('.css-source code').append(formattedStyle);
             break;
     }
