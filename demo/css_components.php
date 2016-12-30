@@ -4,6 +4,8 @@
         <title>CSS Components - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         <?php include_once "modules/_mod_top_include.php"?>
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
     </head>
     <body>
         <?php include_once "modules/_mod_browser_upgrade.php"?>
@@ -232,11 +234,11 @@
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <p><strong>Preformatted block:</strong></p>
-                                    <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+                                    <p>Use <code>&lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-md-8 col-md-offset-2">
-                                                <p><pre>&lt;p&gt;This is a sample text...&lt;/p&gt;</pre></p>
+                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;p&gt;This is a sample text...&lt;/p&gt;</code></pre>
                                             </div>
                                         </div>
                                     </div>
@@ -1989,6 +1991,10 @@
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->

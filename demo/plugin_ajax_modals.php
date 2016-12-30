@@ -4,6 +4,8 @@
         <title>JS Components - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         <?php include_once "modules/_mod_top_include.php"?>
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
     </head>
     <body>
         
@@ -36,10 +38,8 @@
                                         <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
                                     </div>
                                 </div>
-                                <div class="show-panel-example">
-                                    <div class="show-panel-footer">
-                                        <pre class="language-javascript">
-                                            <code class="language-javascript">
+                                <div class="show-panel-footer">
+                                    <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script type=&quot;text/javascript&quot;&gt;
 var modalTest = new PhotonModal({
     id: 'testModal',
     title: 'This is an AJAX modal',
@@ -62,10 +62,8 @@ var modalTest = new PhotonModal({
             closeModal: true
         }
     }
-}); 
-                                            </code>
-                                        </pre>
-                                    </div>
+});
+&lt;/script&gt;</code></pre>
                                 </div>
                             </div>
                         </section>                                        
@@ -82,12 +80,15 @@ var modalTest = new PhotonModal({
         <!-- POPUPS:Start -->
         <div id="popSpace"></div>
         <!-- POPUPS:End -->
-        
+
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
@@ -124,6 +125,8 @@ var modalTest = new PhotonModal({
                 $('#ajax_modal_start').on('click', function(){
                     modalTest.show();
                 });
+
+
             });
         </script>
         <!-- DOCUMENT-READY:End -->

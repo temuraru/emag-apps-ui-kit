@@ -16,7 +16,9 @@
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
-<link rel="stylesheet" href="../dist/css/main_style.min.css">
+<link rel="stylesheet" href="../dist/css/main_style.min.css" data-dependency-name="main_style">
+
+<link rel="stylesheet" href="../dist/css/custom-presentation.min.css">
 
 <!--[if lt IE 9]>
     <script src="../dist/js/lib/html5shiv.min.js"></script>
@@ -839,7 +841,7 @@
                     });
                 }
 
-                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
+                
                 modalSizing();
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';

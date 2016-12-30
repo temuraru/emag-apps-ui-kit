@@ -38,6 +38,19 @@ module.exports = function (grunt) {
                 dest: '<%= pkg.dist_styles %>/main_style.css'
             },
 
+            presentation_site: {
+                options: {
+                    strictMath: true,
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapURL: 'custom-presentation.css.map',
+                    sourceMapFilename: '<%= pkg.dist_styles %>/custom-presentation.css.map',
+                    banner: '<%= banner %>'
+                },
+                src: '<%= pkg.data_styles %>/base/custom/custom-presentation.less',
+                dest: '<%= pkg.dist_styles %>/custom-presentation.css'
+            },
+
             // The dark theme stylesheet (main_style_dark.css)
             frontend_dark: {
                 options: {
@@ -98,6 +111,10 @@ module.exports = function (grunt) {
                 src: '<%= pkg.dist_styles %>/main_style.css',
                 dest: '<%= pkg.dist_styles %>/main_style.css'
             },
+            presentation_site: {
+                src: '<%= pkg.dist_styles %>/custom-presentation.css',
+                dest: '<%= pkg.dist_styles %>/custom-presentation.css'
+            },
             frontend_dark: {
                 src: '<%= pkg.dist_styles %>/main_style_dark.css',
                 dest: '<%= pkg.dist_styles %>/main_style_dark.css'
@@ -128,6 +145,10 @@ module.exports = function (grunt) {
             frontend: {
                 src:  '<%= pkg.dist_styles %>/main_style.css',
                 dest: '<%= pkg.dist_styles %>/main_style.min.css'
+            },
+            presentation_site: {
+                src:  '<%= pkg.dist_styles %>/custom-presentation.css',
+                dest: '<%= pkg.dist_styles %>/custom-presentation.min.css'
             },
             frontend_dark: {
                 src:  '<%= pkg.dist_styles %>/main_style_dark.css',
@@ -337,7 +358,13 @@ module.exports = function (grunt) {
         'cssmin:frontend',
         'cssmin:frontend_dark'
     ]);
-    
+
+    grunt.registerTask('presentation_site', [
+        'less:presentation_site',
+        'autoprefixer:presentation_site',
+        'cssmin:presentation_site'
+    ]);
+
     // JS distribution task.
     grunt.registerTask('scripts', [
         'concat:frontend',

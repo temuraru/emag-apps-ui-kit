@@ -14,12 +14,16 @@
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
-<link rel="stylesheet" href="../dist/css/main_style.min.css">
+<link rel="stylesheet" href="../dist/css/main_style.min.css" data-dependency-name="main_style">
+
+<link rel="stylesheet" href="../dist/css/custom-presentation.min.css">
 
 <!--[if lt IE 9]>
     <script src="../dist/js/lib/html5shiv.min.js"></script>
     <script src="../dist/js/lib/respond.min.js"></script>
-<![endif]-->
+<![endif]-->    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+
 </head>
 <body>
 <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
@@ -686,11 +690,11 @@ eMAG Apps UI KIT/
                                 <ol>
                                     <li>
                                         <p>The easiest way to install is to add the following css line in the head of your webpage:</p>
-                                        <pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</pre>
+                                        <pre class="language-html"><code class="language-html" data-showcase="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</code></pre>
                                         <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
-                                                <pre>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
-&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</pre>
+&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</code></pre>
                                         <div class="alert alert-info" role="alert">
                                             <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
                                         </div>
@@ -702,7 +706,8 @@ eMAG Apps UI KIT/
                                     </li>
                                     <li>
                                         <p>You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
-                                        <pre>[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</pre>
+                                        <pre>
+<code class="language-bash" data-lang="bash">[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</code></pre>
                                     </li>
                                 </ol>
                             </div>
@@ -732,6 +737,9 @@ eMAG Apps UI KIT/
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 <script src="../dist/js/main_script.min.js"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+
+<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<script src="../dist/plugins/prism/prism.min.js"></script>
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
