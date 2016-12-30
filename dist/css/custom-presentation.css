@@ -14,19 +14,19 @@
   border: 0;
 }
 .code-container {
-  margin-right: -15px;
   margin-left: -15px;
+  margin-right: -15px;
 }
 .show-panel-body.code-example .code-header {
-  margin: 20px 0 0 0;
   border-bottom: 1px solid #ccc;
+  margin: 20px 0 0 0;
 }
 .show-panel-body.code-example .code-header .btn-source {
-  height: 45px;
-  padding: 0 15px;
-  margin-right: -15px;
-  color: #005eb7;
   border: 0;
+  color: #005eb7;
+  height: 45px;
+  margin-right: -15px;
+  padding: 0 15px;
 }
 .show-panel-body.code-example .code-header .btn-source i + i {
   margin-left: 5px;
@@ -35,30 +35,30 @@
   margin: 0;
 }
 .show-panel-body.code-example .code-header .module-description h4 {
-  margin: 8px 0 0 0;
+  color: #999999;
   font-size: 15px;
   line-height: 28px;
-  color: #999;
+  margin: 8px 0 0 0;
 }
 /*Tabs style just for code-example */
 .nav-tabs.code-example {
+  border-bottom: 1px solid #112236;
   padding-bottom: 1px;
   padding-left: 1px;
-  border-bottom: 1px solid #112236;
 }
 .nav-tabs.code-example > li {
-  margin-left: -1px;
   background: white;
+  margin-left: -1px;
 }
 .nav-tabs.code-example > li > a {
-  padding-right: 15px;
-  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
   margin: 0;
   color: #005eb7;
-  border: 1px solid #ccc;
-  border-top-color: transparent;
-  border-bottom: 0;
   border-radius: 0;
+  border-top-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .nav-tabs.code-example > li > a:hover {
   background: #f6f6f6;
@@ -66,35 +66,35 @@
   border-top-color: transparent;
 }
 .nav-tabs.code-example > li.active > a {
-  padding: 8px 15px 7px 15px;
-  margin-top: 0;
-  color: white;
   background-color: #112236;
   border-color: #ccc;
-  border-top-color: transparent;
   border-bottom: 1px solid #112236;
+  border-top-color: transparent;
   box-shadow: none;
+  color: white;
+  margin-top: 0;
+  padding: 8px 15px 7px 15px;
 }
 .nav-tabs.code-example > li.active > a:focus {
-  color: white;
   background-color: #112236;
   border-color: #ccc;
-  border-top-color: transparent;
   border-bottom-color: transparent;
+  border-top-color: transparent;
+  color: white;
 }
 .nav-tabs.code-example > li.active > a:hover {
-  color: white;
   background-color: #112236;
   border-color: #ccc;
-  border-top-color: transparent;
   border-bottom-color: transparent;
+  border-top-color: transparent;
+  color: white;
 }
 .tab-content.code-example {
-  padding: 10px;
-  color: #fff;
-  background: #112236;
   border: 0;
   border-top: 0;
+  padding: 10px;
+  background: #112236;
+  color: #fff;
 }
 .nav-tabs.code-example > li a,
 .nav-tabs.code-example > li a:hover,

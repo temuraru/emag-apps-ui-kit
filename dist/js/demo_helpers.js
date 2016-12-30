@@ -15,19 +15,21 @@ function escapeHtml(unsafe) {
             .replace(/'/g, "&#039;");
 };
 
-function typeOfTag($obj) {
-    if ($obj.is('script')) {
-        if ($obj.attr('src')) {
-            return 'script-external';
-        } else if ($obj.attr('src') == undefined) {
-            return 'script-same-page';
-        }
-    }
-    if ($obj.is('style')) {
-        return 'style-same-page';
-    }
-    if ($obj.is('link')) {
-        return 'style-external';
+function getTypeOfCode($obj) {
+    switch($obj.prop("tagName").toLowerCase()){
+        case 'script':
+            if ($obj.attr('src')) {
+                return 'script-external';
+            } else {
+                return 'script-same-page';
+            }
+            break;
+        case 'style':
+            return 'style-same-page';
+            break;
+        case 'link':
+            return 'style-external';
+            break;
     }
 }
 
@@ -35,7 +37,7 @@ function getFormattedCode(htmlContent) {
 
     var codeLines = escapeHtml(htmlContent).split('\n');
 
-    if (codeLines[0].slice(offset - 1) == '') {
+    if (codeLines[0].slice(offset - 1) === '') {
         codeLines.shift();
     }
     var offset = escapeHtml(htmlContent).match(/^\s+/)[0].length;
@@ -45,7 +47,7 @@ function getFormattedCode(htmlContent) {
 }
 
 function getFormattedDependencies(dependencies) {
-    var dependenciesArr = dependencies.split(",");
+    var dependenciesArr = dependencies.split(',');
     var createStringOfDependencies = '';
     for (var i = 0; i < dependenciesArr.length; i++) {
         createStringOfDependencies += '[data-dependency-name="' + dependenciesArr[i] + '"],'
@@ -56,7 +58,7 @@ function getFormattedDependencies(dependencies) {
 
 function generateDependencyCode($module,$dependency){
     var $moduleParrent = $module.parent();
-    switch (typeOfTag($dependency)) {
+    switch (getTypeOfCode($dependency)) {
         case 'script-external':
             $moduleParrent.find('.js-source code').append('&lt;script src="' + $dependency.attr('src') + '"&gt;&lt;\/script&gt;\n');
             break;
@@ -82,18 +84,17 @@ function showPageCode() {
 
     $('[data-showcase="example"]').each(function () {
 
-        var $this = $(this);
-        var example = $this.html();
+        var $exampleEl = $(this);
+        var example = $exampleEl.html();
 
         if (example) {
             var formattedHtml = getFormattedCode(example);
-            $this.parent().find('.html-source code').append(formattedHtml);
+            $exampleEl.parent().find('.html-source code').append(formattedHtml);
 
-            var dependencies = $this.attr('data-dependencies');
+            var dependencies = $exampleEl.attr('data-dependencies');
             if (dependencies) {
                 $(getFormattedDependencies(dependencies)).each(function () {
-                    var $dependency = $(this);
-                    generateDependencyCode($this,$dependency);
+                    generateDependencyCode($exampleEl,$(this));
                 });
             }
         }

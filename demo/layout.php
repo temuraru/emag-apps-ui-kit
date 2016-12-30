@@ -24,7 +24,7 @@
                 <?php include_once "modules/_mod_sidebar.php"?>
                 <!-- SIDEBAR:End -->
                 <!-- CONTENT:Start -->
-                <div id="cucu" class="main-content">
+                <div class="main-content">
                     <div class="page-content">
                         <div class="jumbotron content-header">
                             <div class="container-fluid">
