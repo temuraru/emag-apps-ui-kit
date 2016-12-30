@@ -3991,20 +3991,21 @@ var Popover = (function ($) {
  * ======================================================================== */
 
 function initScrollbarForSidebar() {
-    $("#sidebar .sidebar-outer").customScrollbar({
-        skin: "default-skin",
+    $('#sidebar .sidebar-outer').customScrollbar({
+        skin: 'default-skin',
         hScroll: false,
         updateOnWindowResize: true
     });
 }
 
 function updateScrollbar() {
-    $("#sidebar .sidebar-outer").customScrollbar("resize", true);
+    $('#sidebar .sidebar-outer').customScrollbar('resize', true);
 }
 
 function newScrollbarHeight($sidebarInner, $menuItem) {
+    var rowHeight = $('.sidebar-inner > .menu-item:first-of-type').outerHeight();
     return Math.max(
-        ((54 * ($sidebarInner.find(' > .menu-item').index($menuItem) + 1)) + $menuItem.find('.sidebar-submenu').outerHeight()),
+        ((rowHeight * ($sidebarInner.find(' > .menu-item').index($menuItem) + 1)) + $menuItem.find('.sidebar-submenu').outerHeight()),
         $sidebarInner.height()
     );
 }
@@ -4028,7 +4029,6 @@ function updateSidebarHeightByMenuItem($menuItem) {
 
         if ($menuItem.hasClass('active')) {
             var newHeight = newScrollbarHeight($sidebarInner, $menuItem);
-
             $sidebarInner.height(newHeight);
         }
     } else {
@@ -4043,14 +4043,14 @@ function updateSidebarHeightByMenuItem($menuItem) {
 function staticNavigation(path) {
     path = (typeof path === 'undefined') ? window.location.pathname + window.location.hash : path;
 
-    $("#sidebar .menu-item").removeClass('active');
+    $('#sidebar .menu-item').removeClass('active');
 
-    $("#sidebar .menu-item > a").each(function () {
+    $('#sidebar .menu-item > a').each(function () {
         var href = $(this).attr('href');
         if (href == '#') {
             href = $(this).attr('data-href');
         }
-        if (path == href) {
+        if (path === href) {
             $(this).parents('.menu-item-has-children').addClass('active');
             $(this).closest('.menu-item').addClass('active');
         }
