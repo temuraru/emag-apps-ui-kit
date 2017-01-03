@@ -56,11 +56,13 @@
 .nav-tabs.code-example>li {
   background: white;
   margin-left: -1px;
+  border:0;
+  border-right:1px solid @gray-80;
 }
 
 .nav-tabs.code-example > li > a {
-  border: 1px solid @gray-80;
-  border-bottom: 0;
+  border: 0;
+  border-top:1px solid transparent;
   margin: 0;
   color: @brand-primary;
   border-radius: 0;
@@ -92,13 +94,21 @@
   }
   &:hover {
     background-color: @selected-tab-color;
-
     border-color: @gray-80;
     border-bottom-color: transparent;
     border-top-color: transparent;
     color: white;
   }
 }
+
+.nav-tabs.code-example>li.active{
+  border-right: 1px solid transparent;
+  &:hover {
+    border:0;
+    border-right: 1px solid transparent;
+  }
+}
+
 .tab-content.code-example {
   border: 0;
   border-top: 0;

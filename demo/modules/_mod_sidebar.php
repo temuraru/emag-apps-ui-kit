@@ -281,6 +281,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#js-tabs">
+                                <span class="menu-text">Tabs</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.php#js-utilities">
                                 <span class="menu-text">Utilities</span>
                             </a>
