@@ -230,6 +230,7 @@
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
                                     <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile1" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
                                 </ul>
 
                                 <!-- Tab panes -->
@@ -241,6 +242,9 @@
                                     <div role="tabpanel" class="tab-pane" id="profile">
                                         <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
                                         <div id="grid_pager_with_inline_edit"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile1">
+                                        test
                                     </div>
                                 </div>
                             </div>
@@ -701,7 +705,7 @@
                     });
                 }
 
-                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
+                
                 modalSizing();
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';

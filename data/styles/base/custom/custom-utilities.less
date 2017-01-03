@@ -1,9 +1,8 @@
-
 ///* Positioning paddings: */
 ///* START */
 .generate-paddings(5);
 .generate-paddings(@n, @i: 1) when (@i =< @n) {
-  @x : (@i*20);
+  @x: (@i*20);
   .pad-top-@{x} {
     padding-top: (@i * 20px);
   }
@@ -14,41 +13,80 @@
     padding-top: (@i * 20px);
     padding-bottom: (@i * 20px);
   }
+  .pad-left-right-@{x} {
+    padding-left: (@i * 20px);
+    padding-right: (@i * 20px);
+  }
+  @y: (@x - 5);
+  .pad-@{y} {
+    padding: (@y * 1px);
+  }
+  .pad-left-right-@{y} {
+    padding-left: (@y * 1px);
+    padding-right: (@y * 1px);
+  }
   .generate-paddings(@n, (@i + 1));
 }
+
+///* END */
+
+///* Positioning margins: */
+///* START */
+.generate-margins(5);
+.generate-margins(@n, @i: 1) when (@i =< @n) {
+  @x: (@i*20);
+  .mg-top-@{x} {
+    margin-top: (@i * 20px);
+  }
+  .mg-btm-@{x} {
+    margin-bottom: (@i * 20px);
+  }
+  .mg-sep-@{x} {
+    margin-top: (@i * 20px);
+    margin-bottom: (@i * 20px);
+  }
+  @y: (@x - 5);
+  .mg-@{y} {
+    margin: (@y * 1px);
+  }
+  .generate-margins(@n, (@i + 1));
+}
+
 ///* END */
 
 ///* Custom widths: */
 ///* START */
 .generate-widths(10);
 .generate-widths(@n, @i: 1) when (@i =< @n) {
-  @x : (@i*10);
+  @x: (@i*10);
   .width-@{x} {
     width: (@i * 10%);
   }
   .generate-widths(@n, (@i + 1));
 }
+
 ///* END */
 
 ///* Font sizing: */
 ///* START */
 .generate-font-sizing(10);
 .generate-font-sizing(@n, @i: 1) when (@i =< @n) {
-  @x : (@i*20);
+  @x: (@i*20);
   .font-size-@{x} {
     font-size: (@i * 20%);
     vertical-align: middle;
   }
   .generate-font-sizing(@n, (@i + 1));
 }
+
 ///* END */
 
 ///* FAUX ELEMENTS TO HELP MAINTAIN PROPORTIONS */
 ///* START */
 .faux-elem {
-  position:relative;
-  display:block;
-  padding-bottom:100%;
+  position: relative;
+  display: block;
+  padding-bottom: 100%;
   &.ratio4-3 {
     padding-bottom: 75%;
   }
@@ -56,21 +94,23 @@
     padding-bottom: 56.25%;
   }
 }
+
 ///* END */
 
 ///* Centrate any element in the middle */
 ///* START */
 .lock-center {
-  position:absolute;
-  margin:0 !important;
-  z-index:3;
+  position: absolute;
+  margin: 0 !important;
+  z-index: 3;
   top: 50%;
   left: 50%;
-  .translate(-50%,-50%);
+  .translate(-50%, -50%);
   &.fixed {
     position: fixed;
   }
 }
+
 ///* START */
 
 ///* Font family formatting: */
@@ -78,37 +118,39 @@
 .formatted-sans-serif {
   font-family: @font-family-sans-serif;
 }
+
 .formatted-monospace {
   font-family: @font-family-monospace;
 }
+
 ///* END */
 
 ///* Just for demo elements: */
 ///* START */
-.wba-showcasing(true){
+.wba-showcasing(true) {
   .show-panel {
     background-color: @panel-bg;
     border: 1px solid transparent;
     border-radius: @panel-border-radius;
-    .box-shadow(0 0 30px -5px rgba(0,0,0,.1));
+    .box-shadow(0 0 30px -5px rgba(0, 0, 0, .1));
     margin-bottom: @line-height-computed;
     &:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
     .show-panel-body {
       padding: @panel-body-padding;
       &:extend(.clearfix all);
     }
-    .show-panel-footer{
+    .show-panel-footer {
       padding: @panel-footer-padding;
       background-color: @panel-footer-bg;
       border-top: 1px solid @panel-inner-border;
       .border-bottom-radius((@panel-border-radius - 1));
     }
-    & .show-panel-example,&.show-panel-example {
-      .show-panel-body,.show-panel-footer {
-        padding:50px 15px 15px;
-        position:relative;
+    & .show-panel-example, &.show-panel-example {
+      .show-panel-body, .show-panel-footer {
+        padding: 50px 15px 15px;
+        position: relative;
         &:extend(.clearfix all);
         &:after {
           position: absolute;
@@ -121,12 +163,12 @@
           letter-spacing: 1px;
         }
       }
-      .show-panel-body{
+      .show-panel-body {
         &:after {
           content: "Example:";
         }
       }
-      .show-panel-footer{
+      .show-panel-footer {
         pre {
           padding: 0;
           margin-top: 0;
@@ -148,20 +190,20 @@
       }
     }
     .show-example-modal {
-        .modal {
-            position: relative;
-            top: auto;
-            right: auto;
-            bottom: auto;
-            left: auto;
-            z-index: 1;
-            display: block;
-            .modal-dialog {
-                left: auto;
-                margin-right: auto;
-                margin-left: auto;
-            }
+      .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        display: block;
+        .modal-dialog {
+          left: auto;
+          margin-right: auto;
+          margin-left: auto;
         }
+      }
     }
   }
 
@@ -171,7 +213,7 @@
     .example-icons-list {
       margin: 0 -10px 20px;
       overflow: hidden;
-      padding:0;
+      padding: 0;
       li {
         float: left;
         width: 25%;
@@ -195,7 +237,7 @@
         word-wrap: break-word;
       }
       @media (min-width: @screen-md) {
-        margin-right:0;
+        margin-right: 0;
         margin-left: 0;
         li {
           width: 12.5%;
@@ -207,148 +249,148 @@
 
   .color-swatches {
     .swatch {
-      position:relative;
+      position: relative;
       &:before {
-        position:absolute;
-        top:50%;
-        left:50%;
-        .translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .translate(-50%, -50%);
       }
     }
     .swatch-primary {
-      background-color:@brand-primary;
+      background-color: @brand-primary;
       &:before {
         content: '@{brand-primary}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-success {
-      background-color:@brand-success;
+      background-color: @brand-success;
       &:before {
         content: '@{brand-success}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-info {
-      background-color:@brand-info;
+      background-color: @brand-info;
       &:before {
         content: '@{brand-info}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-warning {
-      background-color:@brand-warning;
+      background-color: @brand-warning;
       &:before {
         content: '@{brand-warning}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-danger {
-      background-color:@brand-danger;
+      background-color: @brand-danger;
       &:before {
         content: '@{brand-danger}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-gray-darker {
-      background-color:@gray-darker;
+      background-color: @gray-darker;
       &:before {
         content: '@{gray-darker}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-gray-dark {
-      background-color:@gray-dark;
+      background-color: @gray-dark;
       &:before {
         content: '@{gray-dark}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-gray {
-      background-color:@gray;
+      background-color: @gray;
       &:before {
         content: '@{gray}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-gray-light {
-      background-color:@gray-light;
+      background-color: @gray-light;
       &:before {
         content: '@{gray-light}';
-        color:@gray-lighter;
+        color: @gray-lighter;
       }
     }
     .swatch-gray-lighter {
-      background-color:@gray-lighter;
+      background-color: @gray-lighter;
       &:before {
         content: '@{gray-lighter}';
-        color:@gray-dark;
+        color: @gray-dark;
       }
     }
     .swatch-black {
-      background-color:@black;
+      background-color: @black;
       &:before {
         content: '@{black}';
-        color:@white;
+        color: @white;
       }
     }
     .swatch-gray-76 {
-      background-color:@gray-76;
+      background-color: @gray-76;
       &:before {
         content: '@{gray-76}';
-        color:@black;
+        color: @black;
       }
     }
     .swatch-gray-80 {
-      background-color:@gray-80;
+      background-color: @gray-80;
       &:before {
         content: '@{gray-80}';
-        color:@black;
+        color: @black;
       }
     }
     .swatch-gray-87 {
-      background-color:@gray-87;
+      background-color: @gray-87;
       &:before {
         content: '@{gray-87}';
-        color:@black;
+        color: @black;
       }
     }
     .swatch-gray-93 {
-      background-color:@gray-93;
+      background-color: @gray-93;
       &:before {
         content: '@{gray-93}';
-        color:@black;
+        color: @black;
       }
     }
     .swatch-gray-96 {
-      background-color:@gray-96;
+      background-color: @gray-96;
       &:before {
         content: '@{gray-96}';
-        color:@black;
+        color: @black;
       }
     }
     .swatch-gray-98 {
-      background-color:@gray-98;
+      background-color: @gray-98;
       &:before {
         content: '@{gray-98}';
-        color:@black;
+        color: @black;
       }
     }
     .swatch-white {
-      background-color:@white;
+      background-color: @white;
       &:before {
         content: '@{white}';
-        color:@black;
+        color: @black;
       }
     }
   }
 
-  .wba-font-primary,.wba-font-monospace {
-    position:relative;
+  .wba-font-primary, .wba-font-monospace {
+    position: relative;
     display: inline-block;
     line-height: inherit;
     &:before {
-      position:relative;
+      position: relative;
     }
   }
   .wba-font-primary:before {
@@ -358,23 +400,25 @@
     content: '@{font-family-monospace}';
   }
 }
-.wba-showcasing(false){
+
+.wba-showcasing(false) {
   .bs-glyphicons {
-    display:none;
+    display: none;
   }
   .color-swatches {
-    display:none;
+    display: none;
   }
 }
+
 .wba-showcasing (@wba-showcasing);
 ///* END */
 
 .jewel {
   position: relative;
   display: inline-block;
-  background-color: darken(@brand-danger,5%);
-  background-image: -webkit-gradient(linear, center top, center bottom, from(@brand-danger), to(darken(@brand-danger,5%)));
-  background-image: -webkit-linear-gradient(@brand-danger, darken(@brand-danger,5%));
+  background-color: darken(@brand-danger, 5%);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(@brand-danger), to(darken(@brand-danger, 5%)));
+  background-image: -webkit-linear-gradient(@brand-danger, darken(@brand-danger, 5%));
   color: #fff;
   margin: 0 10px;
   vertical-align: middle;
@@ -395,24 +439,24 @@
 
 .profile-thumb {
   display: inline-block;
-  position:relative;
-  line-height:inherit;
-  vertical-align:middle;
+  position: relative;
+  line-height: inherit;
+  vertical-align: middle;
   padding: 0;
   margin: 0 10px 0 0;
   border-radius: 100%;
   width: 41px;
   height: 41px;
   overflow: hidden;
-  box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,.2);
-  background-color:#ccc;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, .2);
+  background-color: #ccc;
   > img {
-    position:absolute;
-    height:100%;
-    width:auto;
+    position: absolute;
+    height: 100%;
+    width: auto;
     top: 50%;
     left: 50%;
-    .translate(-50%;-50%);
+    .translate(-50%; -50%);
   }
 }
 
@@ -453,6 +497,7 @@
     color: @dropdown-link-color;
   }
 }
+
 ///* END */
 
 ///* ORANGE STAR FOR REQUIRED FIELDS */
@@ -473,6 +518,7 @@
     font-weight: 700;
   }
 }
+
 ///* END */
 
 ///* IMAGE GALLERY */
@@ -481,20 +527,20 @@
   .clearfix();
   a {
     height: 100px;
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
     margin: 0 5px 5px 0;
-    overflow:hidden;
+    overflow: hidden;
     img {
       height: auto;
-      width:100%;
-      display:block;
+      width: 100%;
+      display: block;
     }
   }
   @media (min-width: @screen-md-min) {
     &.zg-grid {
       a {
-        float:left;
+        float: left;
         height: 150px;
         display: inline-block;
         width: auto;
@@ -506,6 +552,7 @@
     }
   }
 }
+
 ///* END */
 
 ///* CUSTOM SCROLLBARS FOR WEBKIT BROWSERS */
@@ -543,9 +590,10 @@
   display: block;
   position: relative;
   width: 100%;
-  height: 100vh!important;
+  height: 100vh !important;
   min-height: 700px;
 }
+
 ///* END */
 
 ///* FORCE BACKGROUND IMAGE */
@@ -556,6 +604,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 ///* END */
 
 .display-widget {
@@ -574,4 +623,99 @@
 .no-padding-top-bottom {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-border-top {
+  border-top: 0;
+}
+
+.no-border-bottom {
+  border-bottom: 0;
+}
+
+.error-containers-properties {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.error-page {
+  .error-containers-properties;
+
+  body {
+    .error-containers-properties;
+
+    #main-container {
+      .error-containers-properties;
+
+      .main-container-inner {
+        .error-containers-properties;
+
+        .main-content {
+          .error-containers-properties;
+
+          .page-content {
+            .error-containers-properties;
+          }
+        }
+      }
+    }
+  }
+}
+
+.error-container {
+  display: inline-block;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.error-number {
+  background: @error-number-bgcolor;
+  border-radius: (@error-number-size / 2);
+  color: @error-number-color;
+  display: inline-block;
+  font-size: @error-number-font-size;
+  font-weight: @error-number-font-weight;
+  height: @error-number-size;
+  line-height: @error-number-font-size;
+  margin-right: @error-number-distance;
+  padding-top: ((@error-number-size - @error-number-font-size) / 2);
+  text-align: center;
+  vertical-align: super;
+  width: @error-number-size;
+}
+
+.error-content {
+  display: inline-block;
+  vertical-align: sub;
+
+  a {
+    color: @error-message-link-color;
+  }
+  a:hover {
+    color: @error-message-link-color;
+    text-decoration: none;
+  }
+}
+
+.error-title {
+  color: @error-title-color;
+  font-size: @error-title-font-size;
+  font-weight: @error-title-font-weight;
+}
+
+.error-message {
+  color: @error-message-color;
+  font-size: @error-message-font-size;
+  font-weight: @error-message-font-weight;
 }

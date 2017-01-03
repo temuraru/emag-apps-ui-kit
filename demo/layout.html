@@ -14,15 +14,19 @@
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
-<link rel="stylesheet" href="../dist/css/main_style.min.css">
+<link rel="stylesheet" href="../dist/css/main_style.min.css" data-dependency-name="main_style">
+
+<link rel="stylesheet" href="../dist/css/custom-presentation.min.css">
 
 <!--[if lt IE 9]>
     <script src="../dist/js/lib/html5shiv.min.js"></script>
     <script src="../dist/js/lib/respond.min.js"></script>
-<![endif]-->
+<![endif]-->        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+
     </head>
     <body>
-        
+
         <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
 <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
         <!-- HEADER:Start -->
@@ -87,7 +91,7 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>        <!-- HEADER:End -->
-        
+
         <!-- PAGE:Start -->
             <div class="main-container" id="main-container">
                 <div class="main-container-inner">
@@ -278,7 +282,7 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html">
+                            <a href="#">
                                 <span class="menu-text">Complex form elements</span>
                             </a>
                             <ul class="sidebar-submenu">
@@ -458,7 +462,7 @@
                                     <p><strong>This is the main HTML template. It is based on the <a href="https://html5boilerplate.com/" target="_blank"><u>The HTML5 Boilerplate project</u></a>.</strong></p>
                                 </div>
                                 <div class="show-panel-footer">
-                                    <pre>&lt;!doctype html&gt;
+                                    <pre class="language-html"><code class="language-html" data-showcase="code">&lt;!doctype html&gt;
 &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -484,7 +488,7 @@
         &lt;!--[if lt IE 9]&gt;&lt;body class=&quot;lt-ie9&quot;&gt; &lt;![endif]--&gt;
         &lt;!--[if lt IE 9]&gt;
             &lt;p class=&quot;browserupgrade&quot;&gt;
-                You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. 
+                You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser.
                 Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.
             &lt;/p&gt;
         &lt;![endif]--&gt;
@@ -502,7 +506,7 @@
                 &lt;!-- CONTENT:Start --&gt;</span>
                 &lt;div class=&quot;main-content&quot;&gt;
                     &lt;div class=&quot;page-content&quot;&gt;
-                        Here is the content                                      
+                        Here is the content
                     &lt;/div&gt;
                 &lt;/div&gt;<span class="text-success">
                 &lt;!-- CONTENT:End --&gt;
@@ -522,7 +526,7 @@
         &lt;!-- SCRIPTS:Start --&gt;</span>
         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
         &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
-        
+
         <span class="text-success">&lt;!-- The main script file contains all the essential Bootstrap & eMAG Apps UI KIT utilities --&gt;</span>
         &lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;
         <span class="text-success">&lt;!-- SCRIPTS:End --&gt;
@@ -536,72 +540,265 @@
         <span class="text-success">&lt;!-- DOCUMENT-READY:End --&gt;</span>
     &lt;/body&gt;
 &lt;/html&gt;
-</pre>
+</code></pre>
                                 </div>
                             </div>
                         </section>
                         <section id="top-navigation" class="pad-top-40">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
+                            <div class="show-panel code-example">
+                                <div class="show-panel-body code-example">
                                     <h2><strong>Top Navigation</strong></h2>
                                     <p><strong>The header navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
-                                    <div>
-                                        <nav class="navbar navbar-default">
-                                            <div class="container-fluid">
-                                                <div class="navbar-header">
-                                                    <div class="nav-controls visible-xs-inline-block pull-left">
-                                                        <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
-                                                    </div>
-                                                    <a class="navbar-brand" href="javascript:void(0)">
-                                                        <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
-                                                    </a>
-                                                    <div class="nav-controls visible-xs-inline-block pull-right">
-                                                        <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                            <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
-                                                        </button>
-                                                    </div>
+                                    <div class="code-container">
+                                        <div class="row code-header no-border-top">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><b>Header</b></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-example" aria-expanded="false" aria-controls="navbar-example"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="navbar-example">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#navbar-example-html-source" aria-controls="default-header-navigation-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#navbar-example-js-source" aria-controls="default-header-navigation-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#navbar-example-css-source" aria-controls="default-header-navigation-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="navbar-example-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div class="collapse navbar-collapse" id="test2_navbar">
-                                                    <h4 class="navbar-text">Title</h4>
+                                                <div role="tabpanel" class="tab-pane js-source" id="navbar-example-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="navbar-example-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
-                                        </nav>
-                                    </div>
-                                    <div class="pad-top-20">
-                                        <nav class="navbar navbar-default">
-                                            <div class="container-fluid">
-                                                <div class="navbar-header">
-                                                    <div class="nav-controls visible-xs-inline-block pull-left">
-                                                        <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <nav class="navbar navbar-default">
+                                                <div class="container-fluid">
+                                                    <div class="navbar-header">
+                                                        <div class="nav-controls visible-xs-inline-block pull-left">
+                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                        </div>
+                                                        <a class="navbar-brand" href="javascript:void(0)">
+                                                            <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                        </a>
+                                                        <div class="nav-controls visible-xs-inline-block pull-right">
+                                                            <button class="btn btn-default navbar-btn" data-target="#test1_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <a class="navbar-brand" href="javascript:void(0)">
-                                                        <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
-                                                    </a>
-                                                    <div class="nav-controls visible-xs-inline-block pull-right">
-                                                        <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i></button>
+                                                    <div class="collapse navbar-collapse" id="test2_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
                                                     </div>
                                                 </div>
-                                                <div class="collapse navbar-collapse" id="test2_navbar">
-                                                    <h4 class="navbar-text">Title</h4>
-                                                    <ul class="nav navbar-nav navbar-right">
-                                                        <li class="dropdown">
-                                                            <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                <div class="profile-thumb hidden-xs">
-                                                                    <img class="nav-user-photo" src="img/profile_image.png" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
-                                                                </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="#"><span>Account settings</span></a></li>
-                                                                <li><a href="#"><span>Support</span></a></li>
-                                                                <li><a href="#"><span>Logout</span></a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><b>Header with login</b></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-with-login" aria-expanded="false" aria-controls="navbar-with-login"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="navbar-with-login">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#navbar-with-login-html-source" aria-controls="navbar-with-login-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#navbar-with-login-js-source" aria-controls="navbar-with-login-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#navbar-with-login-css-source" aria-controls="navbar-with-login-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="navbar-with-login-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="navbar-with-login-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="navbar-with-login-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
-                                        </nav>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <nav class="navbar navbar-default ">
+                                                <div class="container-fluid">
+                                                    <div class="navbar-header">
+                                                        <div class="nav-controls visible-xs-inline-block pull-left">
+                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                        </div>
+                                                        <a class="navbar-brand" href="javascript:void(0)">
+                                                            <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                        </a>
+                                                        <div class="nav-controls visible-xs-inline-block pull-right">
+                                                            <button class="btn btn-default navbar-btn" data-target="#test2_navbar" data-toggle="collapse" id="main-min-nav" type="button"><span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse navbar-collapse" id="test2_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
+                                                        <ul class="nav navbar-nav navbar-right">
+                                                            <li class="dropdown">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                    <div class="profile-thumb hidden-xs">
+                                                                        <img class="nav-user-photo" src="img/profile_image.png" onerror="this.src='../dist/css/icons/default_user.png'" alt="" height="36">
+                                                                    </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#"><span>Account settings</span></a></li>
+                                                                    <li><a href="#"><span>Support</span></a></li>
+                                                                    <li><a href="#"><span>Logout</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
                                     </div>
-                                    <div class="pad-top-20">
+
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><b>Header with search and notifications</b></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-with-search-and-notification" aria-expanded="false" aria-controls="navbar-with-search-and-notification"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="navbar-with-search-and-notification">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#navbar-with-search-and-notification-html-source" aria-controls="navbar-with-search-and-notification-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#navbar-with-search-and-notification-js-source" aria-controls="navbar-with-search-and-notification-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#navbar-with-search-and-notification-css-source" aria-controls="navbar-with-search-and-notification-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="navbar-with-search-and-notification-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="navbar-with-search-and-notification-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="navbar-with-search-and-notification-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <nav class="navbar navbar-default">
+                                                <div class="container-fluid">
+                                                    <div class="navbar-header">
+                                                        <div class="nav-controls visible-xs-inline-block pull-left">
+                                                            <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
+                                                        </div>
+                                                        <a class="navbar-brand" href="javascript:void(0)">
+                                                            <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
+                                                        </a>
+                                                        <div class="nav-controls visible-xs-inline-block pull-right">
+                                                            <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
+                                                                <span class="sr-only">Toggle navigation</span>
+                                                                <i class="fa fa-angle-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse navbar-collapse" id="test4_navbar">
+                                                        <h4 class="navbar-text">Title</h4>
+                                                        <ul class="nav navbar-nav navbar-right">
+                                                            <li class="nav-input-group nav-search">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" name="example1" id="example1" placeholder="Search">
+                                                                    <div class="input-group-btn">
+                                                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown">
+                                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                                    <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
+                                                                    <span class="visible-xs-inline">Notificare</span>
+                                                                </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="dm-header hidden-xs">
+                                                                        <span>Notifications</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><span>You have an invalidated offer</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><span>Your account is not up to date</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><span>You have a new order</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)"><span>View all</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><b>Header with localization and notifications</b></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-with-localization-and-notifications" aria-expanded="false" aria-controls=navbar-with-localization-and-notifications"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="navbar-with-localization-and-notifications">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#navbar-with-localization-and-notifications-html-source" aria-controls="navbar-with-localization-and-notifications-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#navbar-with-localization-and-notifications-js-source" aria-controls="navbar-with-localization-and-notifications-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#navbar-with-localization-and-notifications-css-source" aria-controls="navbar-with-localization-and-notifications-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="navbar-with-localization-and-notifications-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="navbar-with-localization-and-notifications-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="navbar-with-localization-and-notifications-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
                                             <nav class="navbar navbar-default">
                                                 <div class="container-fluid">
                                                     <div class="navbar-header">
@@ -660,62 +857,7 @@
                                                     </div>
                                                 </div>
                                             </nav>
-                                    </div>
-                                    <div class="pad-top-20">
-                                        <nav class="navbar navbar-default">
-                                            <div class="container-fluid">
-                                                <div class="navbar-header">
-                                                    <div class="nav-controls visible-xs-inline-block pull-left">
-                                                        <button class="btn btn-default navbar-btn" id="toggle-sidebar-btn" type="button"><span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i></button>
-                                                    </div>
-                                                    <a class="navbar-brand" href="javascript:void(0)">
-                                                        <img alt="eMAG Apps UI KIT" src="img/logo-eMAG-apps-ui-kit.png">
-                                                    </a>
-                                                    <div class="nav-controls visible-xs-inline-block pull-right">
-                                                        <button class="btn btn-default navbar-btn" data-target="#test4_navbar" data-toggle="collapse" id="main-min-nav" type="button">
-                                                            <span class="sr-only">Toggle navigation</span>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse navbar-collapse" id="test4_navbar">
-                                                    <h4 class="navbar-text">Title</h4>
-                                                    <ul class="nav navbar-nav navbar-right">
-                                                        <li class="nav-input-group nav-search">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" name="example1" id="example1" placeholder="Search">
-                                                                <div class="input-group-btn">
-                                                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="dropdown">
-                                                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                                                                <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
-                                                                <span class="visible-xs-inline">Notificare</span>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="dm-header hidden-xs">
-                                                                    <span>Notifications</span>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#"><span>You have an invalidated offer</span></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#"><span>Your account is not up to date</span></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#"><span>You have a new order</span></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="javascript:void(0)"><span>View all</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </nav>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -761,7 +903,7 @@
                                     </div>
                                 </div>
                                 <div class="show-panel-footer">
-<pre>&lt;div id=&quot;sidebar&quot; class=&quot;<mark id="sidebar_classes" class="text-danger">sidebar sidebar-fixed</mark>&quot;&gt;
+<pre class="language-html" id="sidebar_code"><code class="language-html" data-showcase="code">&lt;div id=&quot;sidebar&quot; class=&quot;<mark id="sidebar_classes" class="text-danger">sidebar sidebar-fixed</mark>&quot;&gt;
     &lt;div class=&quot;sidebar-outer&quot;&gt;
         &lt;ul class=&quot;sidebar-inner&quot;&gt;
             &lt;li class=&quot;menu-item&quot;&gt;
@@ -813,7 +955,7 @@
             &#x3C;/button&#x3E;
         &#x3C;/div&#x3E;
     &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code>
 </pre>
                                 </div>
                             </div>
@@ -839,7 +981,7 @@
                                     </div>
                                 </div>
                                 <div class="show-panel-footer">
-<pre><span id="footer_fixed_code" class="hide">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer footer-fixed&#x22;&#x3E;
+<pre class="language-html hide" id="footer_fixed_code"><code class="language-html" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer footer-fixed&#x22;&#x3E;
     &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
         &#x3C;div class=&#x22;footer-content&#x22;&#x3E;
             &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
@@ -862,14 +1004,14 @@
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</span><span id="footer_unfixed_code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                    <pre class="language-html" id="footer_unfixed_code"><code class="language-html" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
     &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
         &#x3C;div class=&#x22;footer-content text-center&#x22;&#x3E;
             &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</span></pre>
+&#x3C;/div&#x3E;</code></pre>
                                 </div>
                             </div>
                         </section>
@@ -881,16 +1023,15 @@
                                 </div>
                             </div>
                             <div class="pad-top-40">
-                                <div class="panel">
+                                <div class="show-panel">
                                     <div class="panel-body">
                                         <div class="pad-sep-60">
                                             <strong>Full-width container</strong>
-<pre>
-&lt;div class=&quot;row&quot;&gt;
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-lg-12&quot;&gt; One panel here &lt;/div&gt;
     ...
 &lt;/div&gt;
-</pre>
+</code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -898,31 +1039,29 @@
                             <div class="pad-top-20">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="panel">
-                                            <div class="panel-body">
+                                        <div class="show-panel">
+                                            <div class="show-panel-body">
                                                 <div class="pad-sep-60">
                                                     <p><strong>Half-width containers</strong></p>
-<pre>
-&lt;div class=&quot;row&quot;&gt;
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt; One panel here &lt;/div&gt;
     ...
 &lt;/div&gt;
-</pre>
+</code></pre>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="panel">
-                                            <div class="panel-body">
+                                        <div class="show-panel">
+                                            <div class="show-panel-body">
                                                 <div class="pad-sep-60">
-                                                    <p></p><strong>Half-width containers</strong>
-<pre>
-&lt;div class=&quot;row&quot;&gt;
+                                                    <p><strong>Half-width containers</strong></p>
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt; The other one here &lt;/div&gt;
     ...
 &lt;/div&gt;
-</pre>
+</code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -932,15 +1071,16 @@
                             <div class="pad-top-20">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2">
-                                        <div class="panel">
-                                            <div class="panel-body ">
+                                        <div class="show-panel">
+                                            <div class="show-panel-body">
                                                 <div class="pad-sep-60">
                                                     <p><strong>Centered container</strong></p>
-<pre>
-&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-8 col-lg-offset-2&quot;&gt;
-    Your panel here 
-&lt;/div&gt;&lt;/div&gt;
-</pre>
+<pre class="language-html"><code class="language-html" data-showcase="code">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-8 col-lg-offset-2&quot;&gt;
+    Your panel here
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
                                                 </div>
                                             </div>
                                         </div>
@@ -954,7 +1094,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>                        
+                        </section>
                     </div>
                 </div>
                 <!-- CONTENT:End -->
@@ -971,25 +1111,30 @@
         <!-- PAGE:End -->
 
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">               
+        <script type="text/javascript">
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
                 demoHelpers();  // Require demo_helpers.js
 
-                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function() {
-                    updateSideBarCode();
+                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function(event) {
+                    updateSideBarCode(event);
                 });
                 $('input[name="footer_fixed_status"]').on('change', function() {
                     updateFooterBarCode();
                 });
+
+                showPageCode();
             });
         </script>
         <!-- DOCUMENT-READY:End -->

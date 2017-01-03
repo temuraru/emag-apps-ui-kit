@@ -1,39 +1,61 @@
 
 .nav-tabs {
   border-bottom: 1px solid @brand-primary;
-  padding-bottom: 1px;
-  padding-left: 1px;
   > li {
-    background: white;
-    margin-left: -1px;
+    background: @white;
+    margin-right:1px;
+    border-top: 1px solid @gray-93;
+    border-right: 1px solid @gray-93;
+    border-left: 1px solid @gray-93;
+    font-weight: 600;
     > a {
-      border: 1px solid @nav-tabs-border-color;
-      border-bottom: none;
+      margin-bottom: -1px;
+      border-bottom: 1px solid @brand-primary;
+      border-left:0;
+      border-right: 0;
+      background: @gray-93;
       margin: 0;
-      color: @black;
+      color: @brand-primary;
       border-radius: 0;
+
       &:hover {
-        background: @gray-93;
-        border-color: @brand-primary;
+        background: @gray-96;
+        border-left:0;
+        border-right: 0;
       }
     }
     &.active {
+      border: 1px solid @brand-primary;
       > a {
-        background-color: @brand-primary;
-        border-color: @brand-primary;
-        border-bottom-color: transparent;
-        padding: 8px 10px 7px 10px;
+        background-color: @white;
+        border-left:0;
+        border-right: 0;
+        border-top-color:@white;
         margin-top: 0;
         box-shadow: none;
-        color: @white;
+        color: @black;
         &:focus, &:hover {
-          background-color: @brand-primary;
-          border-color: @brand-primary;
-          border-bottom-color: transparent;
-          color: @white;
+          background-color: @white;
+          border-top-color:@white;
+          border-left:0;
+          border-right: 0;
+          color: @black;
         }
       }
+      &.active:hover {
+        border-top: 1px solid  @brand-primary;
+        border-right: 1px solid  @brand-primary;
+        border-left: 1px solid  @brand-primary;
+      }
     }
+  }
+  > li:hover{
+    border-top: 1px solid  @gray-96;
+    border-right: 1px solid  @gray-96;
+    border-left: 1px solid  @gray-96;
+  }
+  > li:hover a:hover{
+    border-top: 1px solid  @gray-96;
   }
 }
 
