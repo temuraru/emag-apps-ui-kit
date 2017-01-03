@@ -230,7 +230,6 @@
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
                                     <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
-                                    <li role="presentation"><a href="#profile" aria-controls="profile1" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
                                 </ul>
 
                                 <!-- Tab panes -->
@@ -242,9 +241,6 @@
                                     <div role="tabpanel" class="tab-pane" id="profile">
                                         <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
                                         <div id="grid_pager_with_inline_edit"></div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane" id="profile1">
-                                        test
                                     </div>
                                 </div>
                             </div>
