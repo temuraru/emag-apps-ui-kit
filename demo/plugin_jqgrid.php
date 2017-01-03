@@ -856,7 +856,7 @@
                     {
                         'id': '0',
                         'notAvailable': 'String value',
-                        'dateTime': '2016-07-29 11:53:59',
+                        'dateTime': '2016-07-29 11:53:59.000000',
                         'date': '2016-07-29',
                         'time': '11:53:59',
                         'userEmail': 'john.doe@emag.ro',
