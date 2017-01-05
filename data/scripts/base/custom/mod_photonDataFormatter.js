@@ -301,17 +301,27 @@
             var result = '<span class="formatter-' + type + '">';
 
             if (dateTime.date != '' && dateTime.date != null && typeof(dateTime.date) == 'string') {
-                result += '<i class="fa fa-calendar"></i>' + ' ' + dateTime.date + ' ';
+                result += '<span class="text-nowrap"><i class="fa fa-calendar"></i>' + ' ' + dateTime.date + '</span> ';
             }
 
             if (dateTime.time != '' && dateTime.time != null && typeof(dateTime.time) == 'string') {
-                result += '<i class="fa fa-clock-o"></i>' + ' ' + dateTime.time + ' ';
+                dateTime.time = timeRemoveMicroseconds(dateTime.time);
+                result += '<span class="text-nowrap"><i class="fa fa-clock-o"></i>' + ' ' + dateTime.time + '</span> ';
             }
 
             result += '</span>';
 
             return result;
         };
+
+        /**
+         * Remove microseconds from time format
+         * @param time
+         * @return {string}
+         */
+        function timeRemoveMicroseconds (time) {
+            return (time.indexOf('.') == -1) ? time : time.substr(0, time.indexOf('.'));
+        }
 
         /**
          * Generate UserEmail formatter's string
