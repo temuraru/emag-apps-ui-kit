@@ -121,8 +121,4 @@
 .nav-tabs.code-example > li + li.active a:focus {
   border-left-color: #ccc;
 }
-/*Titles */
-h2 {
-  margin-top: 5px;
-}
 /*# sourceMappingURL=custom-presentation.css.map */
