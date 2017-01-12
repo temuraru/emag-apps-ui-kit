@@ -234,7 +234,7 @@
             });
         },
 
-        _constructTree: function(){
+        _constructTree: function() {
             var $this = this;
 
             if (!$this.options.useAjax) {
@@ -247,7 +247,9 @@
                     activeVisible: true,
                     debugLevel: 0,
                     selectMode: $this.options.selectMode,
-                    select: $this._checkPartialSelection
+                    select: function(event, data) {
+                        $this._nodeSelection(event, data);
+                    }
                 });
             } else {
                 $this.tree = $('#' + $this.options.treeId).fancytree({
@@ -259,7 +261,9 @@
                     activeVisible: true,
                     debugLevel: 0,
                     selectMode: $this.options.selectMode,
-                    select: $this._checkPartialSelection,
+                    select: function(event, data) {
+                        $this._nodeSelection(event, data);
+                    },
                     lazyLoad: function(event, data) {
                         var node = data.node;
                         /** Issue an ajax request to load child nodes */
@@ -287,7 +291,7 @@
             $this._syncSelectToTree();
         },
 
-        _constructSearch: function(){
+        _constructSearch: function() {
             var $this = this;
 
             $this.$tree.options.filter.mode = $this.options.searchUnmatched ? 'hide' : 'dimm';
@@ -299,6 +303,12 @@
             $('#' + $this.options.treeSelectHierarchyId).on('change', function () {
                 if ($(this).is(':checked')) {
                     $this.tree.fancytree('option', 'selectMode', 3);
+                    $this.$tree.visit(function(node) {
+                        if (node.selected == true) {
+                            node.setSelected(false);
+                            node.setSelected(true);
+                        }
+                    });
                 } else {
                     $this.tree.fancytree('option', 'selectMode', 2);
                 }
@@ -309,7 +319,7 @@
             });
         },
 
-        _syncSelectToTree: function(){
+        _syncSelectToTree: function() {
             var $this = this;
 
             /** Reset search */
@@ -389,6 +399,11 @@
             }
         },
 
+        _nodeSelection: function(event, data) {
+            this._checkPartialSelection(event, data);
+            this._uncheckUncheckebleNodes();
+        },
+
         _checkPartialSelection: function(event, data) {
             if (data.node.selected == false) {
                 /** Set partial selection false for node */
@@ -417,6 +432,16 @@
                     }
                 });
             }
+        },
+
+        _uncheckUncheckebleNodes: function() {
+            this.$tree.visit(function (node) {
+                if (node.unselectable === true && node.selected === true) {
+                    node.selected = false;
+                    node.partsel = false;
+                    node.renderStatus();
+                }
+            });
         },
 
         _unmatchedHandler: function(){
