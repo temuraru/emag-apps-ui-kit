@@ -9440,8 +9440,8 @@ button.close {
   padding: 15px;
 }
 .show-panel .show-panel-footer {
-  padding: 10px 15px;
-  background-color: #13151a;
+  padding: 15px;
+  background-color: #fff;
   border-top: 1px solid #0d0e11;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
@@ -9490,7 +9490,7 @@ button.close {
 }
 .show-panel .show-panel-example > .alert,
 .show-panel.show-panel-example > .alert {
-  margin: 15px;
+  margin: 15px 0;
 }
 .show-panel .show-example-modal .modal {
   position: relative;
@@ -10910,7 +10910,8 @@ body {
   box-shadow: 0 0 30px -5px rgba(0, 0, 0, .1);
 }
 .panel-body {
-  padding: 15px;
+  padding: 15px 0;
+  margin: 0 15px;
 }
 .panel-body:before,
 .panel-body:after {
@@ -11106,8 +11107,9 @@ body {
   color: inherit;
 }
 .panel-footer {
-  padding: 10px 15px;
-  background-color: #13151a;
+  padding: 10px 0;
+  margin: 0 15px;
+  background-color: #fff;
   border-top: 1px solid #0d0e11;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
@@ -11199,8 +11201,8 @@ body {
 .panel .table caption,
 .panel .table-responsive > .table caption,
 .panel > .panel-collapse > .table caption {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 15px 0;
+  padding-left: 15px 0;
 }
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
