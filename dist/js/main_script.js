@@ -5700,6 +5700,24 @@ function initSidebarEvents() {
      */
     var _cancelLabel = (typeof Translator != "undefined" ? Translator.trans('label.cancel') : "Cancel");
     /**
+     * OK label text
+     * @private
+     * @type {String}
+     */
+    var _okLabel = (typeof Translator != "undefined" ? Translator.trans('label.ok') : "OK");
+    /**
+     * Allow label text
+     * @private
+     * @type {String}
+     */
+    var _allowLabel = (typeof Translator != "undefined" ? Translator.trans('label.allow') : "Allow");
+    /**
+     * Deny label text
+     * @private
+     * @type {String}
+     */
+    var _denyLabel = (typeof Translator != "undefined" ? Translator.trans('label.deny') : "Deny");
+    /**
      * Show modal loader variable
      * @private
      * @type {Boolean}
@@ -5930,6 +5948,86 @@ function initSidebarEvents() {
                 $('#' + _containerId).append(_template);
             }
         }
+        $("#" + this.defaults.id).trigger('showModalAfterDomRenderedEvent');
+    }
+    /**
+     * Create html for alert modal
+     */
+    function buildAlertModal() {
+        /**
+         * Display background overlay
+         * @type {string}
+         */
+        var backdrop = (this.defaults.showBackgroundOverlay) ? 'static' : 'false';
+
+        /**
+         * Title
+         * @type {string}
+         */
+        var titleClass = ' ' + this.getFormStylingJson().titleClass || '';
+
+        /**
+         * Title html variable
+         * @type {string}
+         */
+        var titleHtml = '';
+        if (this.defaults.title != '') {
+            titleHtml = '<h4 class="modal-title alert-modal-title' + titleClass + '" id="' + this.defaults.id + 'Label' + '">' + this.defaults.title + '</h4>';
+        }
+
+        /**
+         * Buttons in modal. Override them if user sent them in constructor
+         */
+        var buttons = this.defaults.buttons || this.getFormStylingJson().buttons;
+
+        /**
+         * Buttons html variable
+         * @type {string}
+         */
+        var buttonsHtml = '';
+        for (var button in buttons) {
+            buttonsHtml +=
+                '<button class="btn ' + buttons[button].class + '" data-dismiss="modal">' +
+                '<span>' + (buttons[button].icon != undefined ? '<i class="' + buttons[button].icon + '"></i> ' : '') + buttons[button].label + '</span></button>';
+        }
+
+        /**
+         * Footer text
+         * @type {string}
+         */
+        var footerHtml = '';
+        if (buttonsHtml != '') {
+            footerHtml = '<div class="clearfix">' +
+                '<div class="pull-right panel-controls">' +
+                buttonsHtml +
+                '</div>' +
+                '</div>';
+        }
+
+        /**
+         * Create the html for the page and append it into container that has a containerId
+         */
+        _template =
+            '<div class="modal modal-alert fade" id="' + this.defaults.id + '" tabindex="-1" role="dialog" aria-labelledby="' +  this.defaults.id + 'Label' + '" data-backdrop="' + backdrop + '" data-keyboard="false">' +
+            '<div class="modal-dialog ' + this.getSizeCssClass() + '" role="document">' +
+            '<div class="modal-content">' +
+            '<div class="modal-body">' +
+            titleHtml +
+            '<div class="alert-modal-content">' +
+            this.defaults.content +
+            '</div>' +
+            footerHtml +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>';
+
+        if ($('#' + this.defaults.id).length) {
+            $('#' + this.defaults.id).replaceWith(_template);
+        } else {
+            $('#' + _containerId).append(_template);
+        }
+
         $("#" + this.defaults.id).trigger('showModalAfterDomRenderedEvent');
     }
 
@@ -6251,7 +6349,239 @@ function initSidebarEvents() {
         }
     };
 
+    /**
+     * @param options {Object} Json with options for modal
+     * @constructor
+     */
+    var AlertModal = function (options) {
+        /**
+         * Options used on class instantiation that will override default ones
+         */
+        /**
+         * Default class options
+         * @type {Object}
+         */
+        this.defaults = {
+            /**
+             * How the modal will be rendered. It accepts the following parameters: small, large, default size
+             * @public
+             * @type {String}
+             */
+            size: 'default',
+            /**
+             * Id of modal
+             * @public
+             * @type {String}
+             */
+            id: '',
+            /**
+             *  Buttons for modal
+             *  @public
+             *  @type {Object}
+             */
+            buttons: '',
+            /**
+             * The content of the modal
+             * @public
+             * @type {String}
+             */
+            content: '',
+            /**
+             * Title of modal
+             * @public
+             * @type {String}
+             */
+            title: '',
+            /**
+             * Type of modal
+             * @private
+             * @type {String}
+             */
+            type: 'confirmation',
+            /**
+             * Show background overlay
+             * @public
+             * @type {boolean}
+             */
+            showBackgroundOverlay: true,
+            /**
+             * Modal hide callback
+             * @param data
+             * @function
+             */
+            hideCallback: function (data) {},
+            /**
+             * Modal show callback
+             * @param data
+             * @function
+             */
+            showCallback: function (data) {}
+        };
+
+        /**
+         * Test to see if modal is visible
+         * @private
+         * @type {Boolean}
+         */
+        this._isVisible = false;
+
+        /**
+         * Extend default options of class with the ones received from class instantiation
+         */
+        this.options = options;
+        for(var option in options) {
+            this.defaults[option] = options[option];
+        }
+        /**
+         * Set modal callbacks for both hide and show events
+         */
+        buildModalEventsCallbacks.call(this);
+        /**
+         * Create custom events for modal
+         */
+        createCustomEvents.call(this);
+    };
+
+    AlertModal.prototype = {
+
+        //------------------------------------ Getters ------------------------------------
+        /**
+         * Get message of modal
+         * @returns {*}
+         */
+        getContent: function () {
+            return this.defaults.content;
+        },
+        /**
+         * Get css class for modal based on the size passed as parameter by user
+         * @returns {*}
+         */
+        getSizeCssClass: function () {
+            switch (this.defaults.size) {
+                case 'small':
+                    return 'modal-sm';
+                case 'large':
+                    return 'modal-lg';
+                default:
+                    return '';
+            }
+        },
+        /**
+         * Get css class for modal based on the type passed as parameter by user
+         */
+        getFormStylingJson: function () {
+            switch (this.defaults.type) {
+                case 'error':
+                    return {
+                        titleClass: 'text-danger',
+                        buttons: {
+                            ok: {
+                                label: _okLabel,
+                                class: 'btn-default'
+                            }
+                        }
+                    };
+                case 'confirmation':
+                    return {
+                        titleClass: '',
+                        buttons: {
+                            allow: {
+                                label: _allowLabel,
+                                class: 'btn-success'
+                            },
+                            deny: {
+                                label: _denyLabel,
+                                class: 'btn-default'
+                            }
+                        }
+                    };
+                default:
+                    return {
+                        type: 'default',
+                        class: ''
+                    };
+            }
+        },
+        //------------------------------------ End of getters ------------------------------------
+
+        //------------------------------------ Setters -------------------------------------------
+        /**
+         * Set modal loader variable
+         * @param modalLoader
+         */
+        setModalLoader: function (modalLoader) {
+            _loaderIsVisible = modalLoader;
+        },
+        /**
+         * Change modal content dynamically
+         * @param content
+         */
+        setModalContent: function (content) {
+            this.defaults.content = content;
+            $("#" + this.defaults.id).find('.modal-body').html(content);
+        },
+
+        //------------------------------------ End of Setters -------------------------------------------
+        /**
+         * Use init function from layout.html.twig for plugins instantiation
+         */
+        initPlugins: function () {
+            window.initPlugins($("#" + this.defaults.id).find('.modal-body'));
+        },
+        /**
+         * Show modal
+         */
+        show: function () {
+            if (!this._isVisible) {
+                this._isVisible = true;
+                /**
+                 * Build alert modal through ajax or with static content
+                 */
+                buildAlertModal.call(this);
+            }
+        },
+        hide: function () {
+            this._isVisible = false;
+            /**
+             * Hide modal
+             */
+            $("#" + this.defaults.id).modal('hide');
+        }
+    };
+
     window.PhotonModal = PhotonModal;
+    window.AlertModal = AlertModal;
+    window.errorAlertModal = function (content, title, showBackgroundOverlay, size) {
+        var alertTitle = title || '';
+        var alertContent = content || '';
+        var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
+        var alertSize = size || 'default';
+
+        var alertModal = new AlertModal({
+            id: 'error_alert_modal',
+            content: alertContent,
+            title: alertTitle,
+            type: 'error',
+            showBackgroundOverlay: alertShowBackgroundOverlay,
+            size: alertSize
+        });
+        alertModal.show();
+    };
+    window.confirmationAlertModal = function (content, title, showBackgroundOverlay, size) {
+        var alertTitle = title || '';
+        var alertContent = content || '';
+        var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
+        var alertSize = size || 'default';
+
+        var alertModal = new AlertModal({
+            id: 'confirmation_alert_modal',
+            content: alertContent,
+            title: alertTitle,
+            showBackgroundOverlay: alertShowBackgroundOverlay,
+            size: alertSize
+        });
+        alertModal.show();
+    };
 
 }(window, jQuery));
 /*
