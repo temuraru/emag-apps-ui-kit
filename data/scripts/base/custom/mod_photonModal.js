@@ -815,7 +815,7 @@
                         buttons: {
                             ok: {
                                 label: _okLabel,
-                                class: 'btn-default'
+                                class: 'btn-default error-alert-modal-ok'
                             }
                         }
                     };
@@ -825,11 +825,11 @@
                         buttons: {
                             allow: {
                                 label: _allowLabel,
-                                class: 'btn-success'
+                                class: 'btn-success confirmation-alert-modal-allow'
                             },
                             deny: {
                                 label: _denyLabel,
-                                class: 'btn-default'
+                                class: 'btn-default confirmation-alert-modal-deny'
                             }
                         }
                     };
