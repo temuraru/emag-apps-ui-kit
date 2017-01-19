@@ -394,12 +394,12 @@
                     datastr: getListingDummyData(),
                     colModel: [
                         { name: 'id',           index: 'id', hidden: true, width: "20" },
-                        { name: 'firstname',    index: 'firstname', key: true, width: "100" },
-                        { name: 'lastname',     index: 'lastname' },
-                        { name: 'username',     index: 'username' },
-                        { name: 'jobtype',      index: 'jobtype' },
-                        { name: 'codename',     index: 'codename' },
-                        { name: 'spirit_animal',index: 'spirit_animal' }
+                        { label: 'First Name', name: 'firstname',    index: 'firstname', key: true, width: "100" },
+                        { label: 'Last Name', name: 'lastname',     index: 'lastname' },
+                        { label: 'Username', name: 'username',     index: 'username' },
+                        { label: 'Hobby', name: 'jobtype',      index: 'jobtype' },
+                        { label: 'Nickname', name: 'codename',     index: 'codename' },
+                        { label: 'Spiritual Animal', name: 'spirit_animal',index: 'spirit_animal' }
                     ],
                     height: '100%',
                     rowNum:5,
@@ -417,24 +417,25 @@
             datastr: getListingDummyData(),
             styleUI : 'fontAwesome',
             colModel: [
+                { name: 'id',           index: 'id', key: true, hidden: true, width: "20" },
+                { label: 'First Name', name: 'firstname',    index: 'firstname', width: "100", editable: true },
+                { label: 'Last Name', name: 'lastname',     index: 'lastname', editable: true },
+                { label: 'Username', name: 'username',     index: 'username', editable: true },
+                { label: 'Hobby', name: 'jobtype',      index: 'jobtype', editable: true },
+                { label: 'Nickname', name: 'codename',     index: 'codename', editable: true },
+                { label: 'Spiritual Animal', name: 'spirit_animal',index: 'spirit_animal', editable: true },
                 {
-                    name: "actions",
+                    label: 'Actions',
+                    name: 'actions',
                     width: 60,
-                    formatter: "actions",
+                    formatter: 'actions',
                     formatoptions: {
                         keys: true,
                         editOptions: {},
                         addOptions: {},
                         delOptions: {}
                     }
-                },
-                { name: 'id',           index: 'id', key: true, hidden: true, width: "20" },
-                { name: 'firstname',    index: 'firstname', width: "100", editable: true },
-                { name: 'lastname',     index: 'lastname', editable: true },
-                { name: 'username',     index: 'username', editable: true },
-                { name: 'jobtype',      index: 'jobtype', editable: true },
-                { name: 'codename',     index: 'codename', editable: true },
-                { name: 'spirit_animal',index: 'spirit_animal', editable: true }
+                }
             ]
         };
 
