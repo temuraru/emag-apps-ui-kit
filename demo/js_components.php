@@ -5,6 +5,9 @@
 
     <link rel="stylesheet" href="../dist/plugins/css3spinners/css3-spinners.1.2.2.min.css">
 
+    <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
+    <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
 </head>
@@ -217,6 +220,34 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="js-tabs" class="pad-top-20">
+                    <div class="show-panel ">
+                        <div class="show-panel-body">
+                            <h4 class="text-primary"><strong>Tabs</strong></h4>
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <table id="grid_table" class="table table-bordered"></table>
+                                        <div id="grid_pager"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
+                                        <div id="grid_pager_with_inline_edit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="js-popovers" class="pad-top-20">
                     <div class="show-panel ">
                         <div class="show-panel-body">
@@ -334,6 +365,9 @@
                         </div>
                     </div>
                 </section>
+
+
+
             </section>
         </div>
     </div>
@@ -374,7 +408,6 @@
         </div>
     </div>
 </div>
-
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
@@ -386,6 +419,11 @@
 
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+        <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
+        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
+        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
@@ -394,6 +432,256 @@
                 console.log('Ready, Captain!');
 
                 demoHelpers();  // Require demo_helpers.js
+
+
+
+                <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
+                function getListingDummyData() {
+                    var actions = '<div class="btn-group">' +
+                        '<button type="button" class="btn btn-sm btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">' +
+                        '<i class="fa fa-pencil"></i> ' +
+                        '<span class="sr-only">Edit</span>' +
+                        '</button> ' +
+                        '<button type="button" class="btn btn-sm btn-default" data-toggle="tooltip" title="View history">' +
+                        '<i class="fa fa-history"></i> ' +
+                        '<span class="sr-only">View history</span>' +
+                        '</button>' +
+                        '</div>' +
+                        '<div class="btn-group">' +
+                        '<button type="button" class="btn btn-sm btn-default more-actions" title="More actions" data-content="'+
+                        '<ul class=\'dropdown-menu dropdown-default\'>' +
+                        '<li><a href=\'#\'><i class=\'ace-icon fa fa-plus bigger-130 green\'></i> <span>Add product</span></a></li>' +
+                        '<li><a href=\'#\'><i class=\'ace-icon  fa fa-pencil bigger-130 blue\'></i> Edit product lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>' +
+                        '<li><a href=\'#\'><i class=\'ace-icon  fa fa-eye bigger-130 blue\'></i> Preview product</a></li>' +
+                        '<li><a href=\'#\'><i class=\'ace-icon  fa fa-trash bigger-130 red\'></i> Delete product</a></li>' +
+                        '<li><a href=\'#\'>Button with no icon</a></li>' +
+                        '<li class=\'divider\'></li>' +
+                        '<li class=\'disabled\'>' +
+                        '<a href=\'#\' class=\'disabled\' data-rel=\'tooltip\' title=\'Edit product\'>' +
+                        '<i class=\'ace-icon fa fa-download disabled\'></i> Actionaaa name + entity name' +
+                        '</a>' +
+                        '</li>' +
+                        '<li>' +
+                        '<a href=\'#\'><i class=\'ace-icon fa fa-download\'></i> Action name + entity name</a>' +
+                        '</li>' +
+                        '</ul>' +
+                        '"><i class="fa fa-ellipsis-h"></i> ' +
+                        '<span class="sr-only">More actions</span> ' +
+                        '</button>' +
+                        '</div>';
+
+                    var dataSet = [
+                        {
+                            "id": "1",
+                            "firstname": "Tony",
+                            "lastname": "Stark",
+                            "username": "ironman",
+                            "jobtype": "Philantropist",
+                            "codename": "Iron Man",
+                            "spirit_animal": "Tiger",
+                            level:"0",
+                            parent: null,
+                            isLeaf: false,
+                            expanded:true,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "2",
+                            "firstname": "Bruce",
+                            "lastname": "Banner",
+                            "username": "hulk_smash",
+                            "jobtype": "Doctor",
+                            "codename": "The Hulk",
+                            "spirit_animal": "Gorilla",
+                            level: "1",
+                            parent: "1",
+                            isLeaf: true,
+                            expanded: false,
+                            loaded: true,
+                            actions:actions
+                        },
+                        {
+                            "id": "3",
+                            "firstname": "Thor",
+                            "lastname": "Odinson",
+                            "username": "thehammer",
+                            "jobtype": "God",
+                            "codename": "Thor",
+                            "spirit_animal": "Lion",
+                            level:"1",
+                            parent: "1",
+                            isLeaf: true,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "4",
+                            "firstname": "Clinton",
+                            "lastname": "Barton",
+                            "username": "hawkyey",
+                            "jobtype": "Archer",
+                            "codename": "Hawkeye",
+                            "spirit_animal": "Hawk",
+                            level:"0",
+                            parent: null,
+                            isLeaf: false,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "5",
+                            "firstname": "Steven",
+                            "lastname": "Rogers",
+                            "username": "rogerthat",
+                            "jobtype": "Captain",
+                            "codename": "Captain America",
+                            "spirit_animal": "Eagle",
+                            level:"1",
+                            parent: "4",
+                            isLeaf: true,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "6",
+                            "firstname": "Natalia",
+                            "lastname": "Romanova",
+                            "username": "notawidow",
+                            "jobtype": "Event planner",
+                            "codename": "Black Widow",
+                            "spirit_animal": "Spider",
+                            level:"1",
+                            parent: "4",
+                            isLeaf: true,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "7",
+                            "firstname": "Henry",
+                            "lastname": "Pym",
+                            "username": "goliath",
+                            "jobtype": "Unemployed",
+                            "codename": "Ant-Man",
+                            "spirit_animal": "Dog",
+                            level:"0",
+                            parent: null,
+                            isLeaf: false,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "8",
+                            "firstname": "Luke",
+                            "lastname": "Charles",
+                            "username": "tchiao",
+                            "jobtype": "Self-employed",
+                            "codename": "Black Panther",
+                            "spirit_animal": "Jaguar",
+                            level:"1",
+                            parent: "7",
+                            isLeaf: false,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "9",
+                            "firstname": "Victor",
+                            "lastname": "Shade",
+                            "username": "imallseeing",
+                            "jobtype": "Self-employed",
+                            "codename": "The Vision",
+                            "spirit_animal": "Dolphin",
+                            level:"2",
+                            parent: "8",
+                            isLeaf: true,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        },
+                        {
+                            "id": "10",
+                            "firstname": "Monica",
+                            "lastname": "Rambeau",
+                            "username": "photon",
+                            "jobtype": "Self-employed",
+                            "codename": "Captain Marvel",
+                            "spirit_animal": "Mustang",
+                            level:"2",
+                            parent: "8",
+                            isLeaf: true,
+                            expanded:false,
+                            loaded:true,
+                            actions:actions
+                        }
+                    ];
+
+                    return dataSet;
+                }
+
+                var listingParameters = {
+                    table: '#grid_table',
+                    pager: '#grid_pager',
+                    datatype: 'jsonstring',
+                    caption: 'Listing caption',
+                    datastr: getListingDummyData(),
+                    styleUI : 'fontAwesome',
+                    colModel: [
+                        { label: 'First Name', name: 'firstname', key: true, width: "100" },
+                        { label: 'Last Name', name: 'lastname' },
+                        { label: 'Username', name: 'username' },
+                        { label: 'Hobby', name: 'jobtype' },
+                        { label: 'Nickname', name: 'codename' },
+                        { label: 'Spiritual Animal', name: 'spirit_animal' }
+                    ]
+                };
+
+                new PhotonJqGrid(listingParameters).init();
+
+                var listingParameters = {
+                    table: '#grid_table_with_inline_edit',
+                    pager: '#grid_pager_with_inline_edit',
+                    datatype: 'jsonstring',
+                    caption: 'Listing caption',
+                    datastr: getListingDummyData(),
+                    styleUI : 'fontAwesome',
+                    colModel: [
+                        {
+                            name: "actions",
+                            width: 60,
+                            formatter: "actions",
+                            formatoptions: {
+                                keys: true,
+                                editOptions: {},
+                                addOptions: {},
+                                delOptions: {}
+                            }
+                        },
+                        { name: 'id',           index: 'id', key: true, hidden: true, width: "20" },
+                        { name: 'firstname',    index: 'firstname', width: "100", editable: true },
+                        { name: 'lastname',     index: 'lastname', editable: true },
+                        { name: 'username',     index: 'username', editable: true },
+                        { name: 'jobtype',      index: 'jobtype', editable: true },
+                        { name: 'codename',     index: 'codename', editable: true },
+                        { name: 'spirit_animal',index: 'spirit_animal', editable: true }
+                    ]
+                };
+
+                new PhotonJqGrid(listingParameters).init();
+
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    $(window).resize();
+                });
+
+
+
 
                 //This function is just fo sho. You don't really have to include it in your app, man.
                 function modalSizing() {
@@ -413,7 +701,7 @@
                     });
                 }
 
-                showcasing();   //Requires demo_helpers.js, prism.min.js and prism.min.css
+                
                 modalSizing();
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';

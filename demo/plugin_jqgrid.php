@@ -224,8 +224,6 @@
 
         demoHelpers();  // Require demo_helpers.js
 
-        showcasing(); //Requires demo_helpers.js, prism.min.js and prism.min.css
-
         var listingParameters = {
             table: '#grid_table',
             pager: '#grid_pager',
@@ -858,7 +856,7 @@
                     {
                         'id': '0',
                         'notAvailable': 'String value',
-                        'dateTime': '2016-07-29 11:53:59',
+                        'dateTime': '2016-07-29 11:53:59.000000',
                         'date': '2016-07-29',
                         'time': '11:53:59',
                         'userEmail': 'john.doe@emag.ro',
