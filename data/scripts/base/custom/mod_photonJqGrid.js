@@ -50,9 +50,12 @@
             mergeLoadComplete: true,
             loadComplete: function () {
                 var jqGridOverlay = _getJqGridOverlay();
-                var tableId = gridOpts.table;
-                var records = jQuery(tableId).jqGrid('getGridParam', 'records');
-                var tableId = gridOpts.table.slice(1);
+                var tableIdSelector = gridOpts.table;
+                var tableId = tableIdSelector.slice(1);
+                var records = $(tableIdSelector).jqGrid('getGridParam', 'records');
+
+                var $jqgridContainer = $('#' + $(tableIdSelector).attr('aria-labelledby'));
+                _updateRecords($jqgridContainer, records);
 
                 //Display no records message.
                 var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
@@ -89,10 +92,8 @@
                     $(document.body).trigger("sticky_kit:recalc");
                 }
 
-
                 var $jqgridContainer = $('#' + $(tableId).attr('aria-labelledby'));
                 var records = jQuery(tableId).jqGrid('getGridParam', 'records');
-
 
                 if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
                     _createContainerForPgSelbox($jqgridContainer,records);
@@ -283,6 +284,10 @@
                 photonTranslations.listing[photonPageLang].items +
                 '</div>'
             );
+        }
+
+        function _updateRecords($jqgridContainer, records){
+            $jqgridContainer.find('.ui-pager-control .no-items').html(records);
         }
 
         this.init = function () {
