@@ -56,7 +56,7 @@
                             <div class="form-group">
                                 <label for="category_treeDefault">Category tree</label>
                                 <div class="hide-with-opacity">
-                                    <select id="category_tree_default" multiple="multiple">
+                                    <select id="category_tree_default" multiple="multiple" readonly>
                                         <option value=""></option>
                                         <option value="31">Software</option>
                                         <option value="175">Antivirus</option>
@@ -380,7 +380,8 @@
                     textSelectHierarchy: 'Hierarchical multi-selection',
                     noResults: 'No results found',
                     textSelected: 'selected',
-                    searchPlaceholder: 'Search'
+                    searchPlaceholder: 'Search',
+                    selectHierarchyChecked: true
                 });
             });
         </script>

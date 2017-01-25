@@ -33,6 +33,7 @@
             $this.element = $widget.element;
 
             $this.modalContentInitialized = false;
+            $this.programmaticallyNodeSelection = false;
 
             $this.options.modalTitle = this.options.modalTitle || null;
             $this.options.typeId = this.element.attr('id');
@@ -45,6 +46,11 @@
             $this.options.modalOkBtnClass = this.options.typeId + '_category-modal-ok-btn';
             $this.options.modalResetBtnClass = this.options.typeId + '_category-modal-reset-btn';
             $this.options.modalCancelBtnClass = this.options.typeId + '_category-modal-cancel-btn';
+            $this.options.selectMode = ($this.options.selectHierarchyChecked == true) ? 3 : $this.options.selectMode;
+
+            if ($('#' + $this.options.selectId).is(':disabled') || $('#' + $this.options.selectId).attr('readonly') == 'readonly') {
+                $this.options.selectOnlyLeaves = true;
+            }
 
             /**
              * Construct modal
@@ -247,6 +253,9 @@
                     activeVisible: true,
                     debugLevel: 0,
                     selectMode: $this.options.selectMode,
+                    beforeSelect: function(event, data) {
+                        return $this._beforeNodeSelection();
+                    },
                     select: function(event, data) {
                         $this._nodeSelection(event, data);
                     }
@@ -261,6 +270,9 @@
                     activeVisible: true,
                     debugLevel: 0,
                     selectMode: $this.options.selectMode,
+                    beforeSelect: function(event, data) {
+                        return $this._beforeNodeSelection();
+                    },
                     select: function(event, data) {
                         $this._nodeSelection(event, data);
                     },
@@ -305,12 +317,22 @@
                     $this.tree.fancytree('option', 'selectMode', 3);
                     $this.$tree.visit(function(node) {
                         if (node.selected == true) {
+                            $this.programmaticallyNodeSelection = true;
+
                             node.setSelected(false);
                             node.setSelected(true);
+
+                            $this.programmaticallyNodeSelection = false;
                         }
                     });
                 } else {
                     $this.tree.fancytree('option', 'selectMode', 2);
+                    $this.$tree.visit(function(node) {
+                        if (node.partsel) {
+                            node.partsel = false;
+                            node.render(true);
+                        }
+                    });
                 }
             });
 
@@ -327,8 +349,12 @@
 
             /** Uncheck all tree items */
             $this.$tree.visit(function(node){
+                $this.programmaticallyNodeSelection = true;
+
                 node.setExpanded(false);
                 node.setSelected(false);
+
+                $this.programmaticallyNodeSelection = false;
             });
 
             /** Check tree items and expand from hidden select tag */
@@ -338,6 +364,8 @@
                 var node = $this.$tree.getNodeByKey(optionValue);
 
                 if (node) {
+                    $this.programmaticallyNodeSelection = true;
+
                     node.setSelected(true);
 
                     node.makeVisible({
@@ -345,6 +373,8 @@
                         noEvents: false,
                         scrollIntoView: false
                     });
+
+                    $this.programmaticallyNodeSelection = false;
                 }
             });
         },
@@ -396,6 +426,14 @@
                     node.extraClasses = extraClass;
                     node.render(true);
                 }
+            }
+        },
+
+        _beforeNodeSelection: function() {
+            var $this = this;
+
+            if (!$this.programmaticallyNodeSelection && ($('#' + $this.options.selectId).is(':disabled') || $('#' + $this.options.selectId).attr('readonly') == 'readonly')) {
+                return false;
             }
         },
 
