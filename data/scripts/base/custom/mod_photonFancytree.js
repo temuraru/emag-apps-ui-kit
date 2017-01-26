@@ -52,6 +52,11 @@
                 $this.options.selectOnlyLeaves = true;
             }
 
+            if ($('#' + $this.options.selectId).is(':disabled')) {
+                $this.element.attr('disabled','disabled');
+                $this.element.next().attr('disabled','disabled');
+            }
+
             /**
              * Construct modal
              */
@@ -88,6 +93,7 @@
 
             var unmatched = $this.options.searchUnmatched ? 'checked="checked"' : '';
             var selectHierarchyChecked = $this.options.selectHierarchyChecked ? 'checked="checked"' : '';
+            var fancytreeDisabledClass = '';
 
             var noItemMatchedContent =
                 '<div class="row no-item-matched hidden">' +
@@ -129,11 +135,14 @@
                     '</div>';
             }
 
+            if ($('#' + $this.options.selectId).is(':disabled')) {
+                fancytreeDisabledClass = ' class="fancytree-disabled"'
+            }
             modalContent +=
                 '</div>' +
                 '<div class="row">' +
                     '<div class="col-lg-12">' +
-                        '<div id="' + $this.options.treeId + '"></div>' +
+                        '<div id="' + $this.options.treeId + '"' + fancytreeDisabledClass + '></div>' +
                     '</div>' +
                 '</div>' + noItemMatchedContent;
 

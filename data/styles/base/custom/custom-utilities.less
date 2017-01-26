@@ -719,3 +719,16 @@
   font-size: @error-message-font-size;
   font-weight: @error-message-font-weight;
 }
+
+.fancytree-disabled {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  .fancytree-plain.fancytree-container {
+    span.fancytree-title {
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+}
