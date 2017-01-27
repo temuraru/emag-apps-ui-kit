@@ -671,36 +671,44 @@
                 }
 
                 function initDateRangePickers() {
-                    $('#daterangepicker_standard').daterangepicker();
-                    $('#daterangepicker_standard_with_value').daterangepicker();
-                    $('#daterangepicker_standard_with_format').daterangepicker({
-                        timePicker: true,
-                        timePicker24Hour: true,
-                        locale: {
-                            format: "YYYY-MM-DD HH:mm"
-                        }
-                    });
-                    $('#daterangepicker_standard_with_predefined_intervals').daterangepicker({
-                        alwaysShowCalendars: true,
-                        ranges: {
-                            'Today': [moment(), moment()],
-                            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                            'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                    var dateRangePickerConfig = {
+                        '#daterangepicker_standard' : {},
+                        '#daterangepicker_standard_with_value' : {},
+                        '#daterangepicker_standard_with_format' : {
+                            timePicker: true,
+                            timePicker24Hour: true,
+                            locale: {
+                                format: "YYYY-MM-DD HH:mm"
+                            }
                         },
-                        locale: {
-                            format: 'YYYY-MM-DD'
-                        }
-                    });
-                    $('#daterangepicker_standard_with_predefined_intervals_no_calendar').daterangepicker({
-                        ranges: {
-                            'Today': [moment(), moment()],
-                            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                            'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                        '#daterangepicker_standard_with_predefined_intervals' : {
+                            alwaysShowCalendars: true,
+                            ranges: {
+                                'Today': [moment(), moment()],
+                                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                                'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                            },
+                            locale: {
+                                format: 'YYYY-MM-DD'
+                            }
                         },
-                        locale: {
-                            format: 'YYYY-MM-DD'
+                        '#daterangepicker_standard_with_predefined_intervals_no_calendar' : {
+                            ranges: {
+                                'Today': [moment(), moment()],
+                                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                                'Last 7 Days': [moment().subtract(6, 'days'), moment()]
+                            },
+                            locale: {
+                                format: 'YYYY-MM-DD'
+                            }
                         }
-                    });
+                    }
+                    for (var selector in dateRangePickerConfig) {
+                        $(selector).daterangepicker(dateRangePickerConfig[selector])
+                            .next().on('click', function() {
+                                $(this).prev().focus();
+                            });
+                    }
                 }
             });
         </script>
