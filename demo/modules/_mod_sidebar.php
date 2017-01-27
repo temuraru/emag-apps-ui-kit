@@ -199,11 +199,6 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsDatePicker">
-                                        <span class="menu-text">Date picker</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsFileUpload">
                                         <span class="menu-text">File upload</span>
                                     </a>
