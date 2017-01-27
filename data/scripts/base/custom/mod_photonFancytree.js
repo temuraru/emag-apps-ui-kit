@@ -206,6 +206,7 @@
 
                 $this._resetSearch();
                 $this.$tree.reload();
+                $this._syncSelectToTree();
             });
 
             /**
@@ -630,8 +631,9 @@
             var $categoryTreeModal = $('#' + $this.options.modalId);
             var $categoryTreeContainer = $('#' + $this.options.treeId);
             var $categoryTreeOkButton = $('.' + $this.options.modalOkBtnClass);
+            var hideUnmatched = $('#' + $this.options.treeUnmatchedId).is( ':checked' );
 
-            if (matchesNo === 0) {
+            if (matchesNo === 0 && hideUnmatched) {
                 $categoryTreeModal.find('.no-item-matched').removeClass('hidden');
                 $categoryTreeContainer.addClass('hidden');
                 $categoryTreeOkButton.attr('disabled', true);
