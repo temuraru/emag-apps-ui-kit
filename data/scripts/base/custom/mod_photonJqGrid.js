@@ -269,7 +269,10 @@
         }
 
         function _movePgSelbox($jqgridContainer){
-            $jqgridContainer.find('.ui-pg-selbox').appendTo($jqgridContainer.find('.ui-pg-selbox-container span').eq(0));
+            $.each( $jqgridContainer.find('.ui-pg-selbox'), function() {
+                var $selbox = $(this);
+                $selbox.appendTo($selbox.closest('.ui-pager-control').find('.ui-pg-selbox-container span').eq(0))
+            });
         }
 
         function _createContainerForPgSelbox($jqgridContainer, records) {
