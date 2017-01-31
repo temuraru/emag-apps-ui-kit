@@ -313,14 +313,19 @@ input[type="radio"] {
       border-left: none;
       background: none;
       cursor: default;
+
+      > .form-radio-control, > .form-checkbox-control {
+        margin-top: 2px!important;
+      }
+
+      &[disabled] {
+        color: #ccc;
+        cursor: not-allowed;
+        background-color: #f6f6f6;
+        opacity: 1;
+      }
     }
   }
-}
-
-.input-group-addon {
-    > .form-radio-control, > .form-checkbox-control {
-        margin-top: 2px!important;
-    }
 }
 
 select.form-control {
