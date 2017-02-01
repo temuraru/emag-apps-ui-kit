@@ -36,66 +36,66 @@
                                     <p><strong>You can always change these colors by updating their corresponding LESS variable in the <code>variables.less</code> file</strong></p>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="col-lg-7">
                                                 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
                                                     The branding colours can be used in LESS by calling their corresponding variable. Ex: <code>@branding-primary</code>
                                                 </div>
                                                 <div class="row color-swatches">
-                                                    <div class="col-xs-6 col-sm-2 text-center">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-primary"></div>
-                                                        <div class="pad-top-20"><small>@brand-primary</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-primary"><span>#005eb7</span></div>
+                                                        <div class="pad-10"><small>@brand-primary</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2 text-center">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-info"></div>
-                                                        <div class="pad-top-20"><small>@brand-info</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-info"><span>#2790f3</span></div>
+                                                        <div class="pad-10"><small>@brand-info</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2 text-center">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-success"></div>
-                                                        <div class="pad-top-20"><small>@brand-success</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-success"><span>#38833a</span></div>
+                                                        <div class="pad-10"><small>@brand-success</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2 text-center">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-warning"></div>
-                                                        <div class="pad-top-20"><small>@brand-warning</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-warning"><span>#f4b350</span></div>
+                                                        <div class="pad-10"><small>@brand-warning</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2 text-center">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-danger"></div>
-                                                        <div class="pad-top-20"><small>@brand-danger</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-danger"><span>#e1302b</span></div>
+                                                        <div class="pad-10"><small>@brand-danger</small></div>
                                                     </div>
                                                 </div>
                                                 <div class="pad-top-40"></div>
                                                 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> The shades of gray can be used in LESS by calling their corresponding variable. Ex: <code>@gray-darker</code></div>
                                                 <div class="row color-swatches">
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-black"></div>
-                                                        <div class="pad-top-20"><small>@black</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-black"><span>#000</span></div>
+                                                        <div class="pad-10"><small>@black</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-76"></div>
-                                                        <div class="pad-top-20"><small>@gray-76</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-76"><span>#c3c3c3</span></div>
+                                                        <div class="pad-10"><small>@gray-76</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-80"></div>
-                                                        <div class="pad-top-20"><small>@gray-80</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-80"><span>#ccc</span></div>
+                                                        <div class="pad-10"><small>@gray-80</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-87"></div>
-                                                        <div class="pad-top-20"><small>@gray-87</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-87"><span>#dedede</span></div>
+                                                        <div class="pad-10"><small>@gray-87</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-93"></div>
-                                                        <div class="pad-top-20"><small>@gray-93</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-93"><span>#eee</span></div>
+                                                        <div class="pad-10"><small>@gray-93</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-96"></div>
-                                                        <div class="pad-top-20"><small>@gray-96</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-96"><span>#f6f6f6</span></div>
+                                                        <div class="pad-10"><small>@gray-96</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-98"></div>
-                                                        <div class="pad-top-20"><small>@gray-98</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center mg-btm-20">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-gray-98"><span>#fafafa</span></div>
+                                                        <div class="pad-10"><small>@gray-98</small></div>
                                                     </div>
-                                                    <div class="col-xs-6 col-sm-2">
-                                                        <div class="faux-elem ratio1-1 swatch swatch-white"></div>
-                                                        <div class="pad-top-20"><small>@white</small></div>
+                                                    <div class="col-xs-6 col-sm-2 text-center">
+                                                        <div class="faux-elem ratio1-1 swatch swatch-white"><span>#fff</span></div>
+                                                        <div class="pad-10"><small>@white</small></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -104,14 +104,14 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="typography" class="pad-top-40">
+                        <section id="typography" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Typography</strong></h2>
                                     <p><strong>See the font families you can use, below.</strong></p>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="col-lg-7">
                                                 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
                                                     The current primary font-family is <code><span class="wba-font-primary"></span></code>.This font-family is inherited by all the elements from the start, however, to use it on a specific element, use the <mark>.formatted-sans-serif</mark> class on the element or its parent or, in Less, use the <mark>@font-family-sans-serif</mark> You can view the font glyphs in the example below.
                                                 </div>
@@ -130,7 +130,7 @@
                                 </div>
                             </div>
                         </section>                        
-                        <section id="icons" class="pad-top-40">
+                        <section id="icons" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Icons and Flags</strong></h2>
@@ -138,7 +138,7 @@
 
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="col-lg-7">
                                                 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
                                                     You can <strong>view the whole icon-pack</strong> by accessing the <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank" class="alert-link"><u>official documentation website</u></a>.
                                                 </div>
@@ -231,6 +231,19 @@
                 <?php include_once "modules/_mod_footer.php"?>
                 <!-- FOOTER:End -->
                 </div>
+
+                <style>
+                    small{ position: relative}
+                    .copied {
+
+                        background: red;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        opacity:0;
+                    }
+                </style>
             </div>
         <!-- PAGE:End -->
                

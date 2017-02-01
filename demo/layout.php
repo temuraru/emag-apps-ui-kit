@@ -121,18 +121,18 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="top-navigation" class="pad-top-40">
+                        <section id="top-navigation" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Top Navigation</strong></h2>
-                                    <p><strong>The header navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
+                                    <p><strong>The top navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
                                     <div class="code-container">
                                         <div class="row code-header no-border-top">
                                             <div class="col-sm-8 module-description">
-                                                <h4><b>Header</b></h4>
+                                                <h4><b>Basic top navigation</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-example" aria-expanded="false" aria-controls="navbar-example"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-example" aria-expanded="false" aria-controls="navbar-example"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-example">
@@ -185,10 +185,10 @@
                                     <div class="code-container">
                                         <div class="row code-header">
                                             <div class="col-sm-8 module-description">
-                                                <h4><b>Header with login</b></h4>
+                                                <h4><b>Top navigation with profile options</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-with-login" aria-expanded="false" aria-controls="navbar-with-login"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-login" aria-expanded="false" aria-controls="navbar-with-login"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-with-login">
@@ -255,10 +255,10 @@
                                     <div class="code-container">
                                         <div class="row code-header">
                                             <div class="col-sm-8 module-description">
-                                                <h4><b>Header with search and notifications</b></h4>
+                                                <h4><b>Top navigation with search bar and notifications</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-with-search-and-notification" aria-expanded="false" aria-controls="navbar-with-search-and-notification"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-search-and-notification" aria-expanded="false" aria-controls="navbar-with-search-and-notification"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-with-search-and-notification">
@@ -346,10 +346,10 @@
                                     <div class="code-container">
                                         <div class="row code-header">
                                             <div class="col-sm-8 module-description">
-                                                <h4><b>Header with localization and notifications</b></h4>
+                                                <h4><b>Top navigation with language selector and notifications</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source"  data-toggle="collapse" href="#navbar-with-localization-and-notifications" aria-expanded="false" aria-controls=navbar-with-localization-and-notifications"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-localization-and-notifications" aria-expanded="false" aria-controls=navbar-with-localization-and-notifications"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-with-localization-and-notifications">
@@ -440,7 +440,7 @@
                             </div>
                         </section>
 
-                        <section id="main-sidebar" class="pad-top-40">
+                        <section id="main-sidebar" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Sidebar</strong></h2>
@@ -537,7 +537,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="main-footer" class="pad-top-40">
+                        <section id="main-footer" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Footer</strong></h2>
@@ -592,14 +592,14 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="grid-layout" class="pad-top-40">
+                        <section id="grid-layout" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Grid Layout</strong></h2>
                                     <p><strong>See how you can customize the main content width below.</strong></p>
                                 </div>
                             </div>
-                            <div class="pad-top-40">
+                            <div class="pad-top-10">
                                 <div class="show-panel">
                                     <div class="panel-body">
                                         <div class="pad-sep-60">
@@ -613,7 +613,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pad-top-20">
+                            <div class="pad-top-30">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="show-panel">
@@ -645,7 +645,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pad-top-20">
+                            <div class="pad-top-30">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="show-panel">
@@ -664,13 +664,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pad-sep-40 text-center">
-                                <div class="row">
-                                    <div class="col-md-6 col-md-offset-3">
-                                        <p class="text-primary"><strong>HINT:</strong> Whatever you opt for, try to place elements inside a nice panel or widget container. Don't be like the guy who wrote this text directly on the gray body background.</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </section>
                     </div>
                 </div>
@@ -707,6 +701,8 @@
                 });
 
                 showPageCode();
+
+               
             });
         </script>
         <!-- DOCUMENT-READY:End -->
