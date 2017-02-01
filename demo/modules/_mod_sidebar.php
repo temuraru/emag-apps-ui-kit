@@ -84,7 +84,7 @@
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/branding.php#icons">
-                                <span class="menu-text">Icons</span>
+                                <span class="menu-text">Icons & flags</span>
                             </a>
                         </li>
                     </ul>

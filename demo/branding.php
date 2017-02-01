@@ -133,7 +133,7 @@
                         <section id="icons" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <h2><strong>Icons and Flags</strong></h2>
+                                    <h2><strong>Icons & flags</strong></h2>
                                     <p><strong>You are iconic!</strong></p>
 
                                     <div class="pad-sep-20">

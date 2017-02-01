@@ -38,6 +38,9 @@
 .show-panel-body.code-example .code-header .btn-source.collapsed {
   background: #fff;
 }
+.show-panel-body.code-example .code-header .btn-source.collapsed:hover {
+  background: #f6f6f6;
+}
 .show-panel-body.code-example .code-header h4 {
   margin: 0;
 }
@@ -45,7 +48,7 @@
   margin: 8px 0 0 0;
   font-size: 15px;
   line-height: 28px;
-  color: #999;
+  color: #000;
 }
 /*Tabs style just for code-example */
 .nav-tabs.code-example {
