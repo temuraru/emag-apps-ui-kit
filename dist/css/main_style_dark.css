@@ -12325,4 +12325,8 @@ i {
 .well:last-child {
   margin-bottom: 0;
 }
+.badge {
+  position: relative;
+  top: -1px;
+}
 /*# sourceMappingURL=main_style_dark.css.map */
