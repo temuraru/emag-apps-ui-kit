@@ -231,19 +231,6 @@
                 <?php include_once "modules/_mod_footer.php"?>
                 <!-- FOOTER:End -->
                 </div>
-
-                <style>
-                    small{ position: relative}
-                    .copied {
-
-                        background: red;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        opacity:0;
-                    }
-                </style>
             </div>
         <!-- PAGE:End -->
                
