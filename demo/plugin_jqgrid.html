@@ -941,7 +941,6 @@
             caption: 'jqGrid with data formatters',
             datastr: getListingWithFormatter2DummyData(),
             colNames: [
-                'id',
                 'product',
                 'badge',
                 'price',
@@ -949,12 +948,11 @@
                 'status'
             ],
             colModel: [
-                {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
-                {name: 'product', index: 'product', sortable: false, width: 1, formatter: PhotonDataFormatter.notAvailable },
+                {name: 'product', index: 'product', sortable: false, width: 2, formatter: PhotonDataFormatter.product },
                 {name: 'badge', index: 'badge', sortable: false, width: 1, formatter: PhotonDataFormatter.badge },
-                {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.notAvailable },
+                {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.price },
                 {name: 'dateTime', index: 'dateTime', sortable: false, width: 1, formatter: PhotonDataFormatter.dateTime },
-                {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.notAvailable }
+                {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.labelAndTooltip }
             ]
         };
 
@@ -1391,49 +1389,49 @@
                 'rows': [
                     {
                         'id': '0',
-                        'product': '',
+                        'product': 'iPhone 5S',
                         'badge': 123,
-                        'price': '',
+                        'price': 1234.56,
                         'dateTime': '2016-07-29 11:53:59.000000',
                         'status': status1
                     },
                     {
                         'id': 1,
-                        'product': '',
+                        'product': '{"name":"iPhone SE", "link":""}',
                         'badge': '123',
-                        'price': '',
+                        'price': '1234.56',
                         'dateTime': ['2016-07-29', '11:53:59'],
                         'status': status2
                     },
                     {
                         'id': null,
-                        'product': '',
+                        'product': '{"name":"iPhone 6S", "link":"#"}',
                         'badge': '{"text":"RO", "number":"123"}',
-                        'price': '',
+                        'price': '{"value":"1234567.89","currency":"RON"}',
                         'dateTime': '{"date": "2016-07-29", "time": "11:53:59"}',
                         'status': status3
                     },
                     {
                         /** 'id': 3, */
-                        /** 'product': '', */
+                        /** 'product': 'iPhone 6 Plus', */
                         /** 'badge': 123, */
-                        /** 'price': '', */
+                        /** 'price': 123.45, */
                         /** 'dateTime': '2016-07-29 11:53:59', */
                         /** 'status': status4 */
                     },
                     {
                         'id': 4,
-                        'product': '',
+                        'product': {name: 'Samsung S8', link: '#'},
                         'badge': {text: 'RO', number: '123'},
-                        'price': '',
+                        'price': {value: 123.45, currency: 'RON'},
                         'dateTime': {date: '2016-07-29', time: '11:53:59'},
                         'status': status4
                     },
                     {
                         'id': 5,
-                        'product': '',
+                        'product': {name: 'Samsung S8'},
                         'badge': {number: '123'},
-                        'price': '',
+                        'price': {value: 12345.67},
                         'dateTime': 1024,
                         'status': status5
                     }
