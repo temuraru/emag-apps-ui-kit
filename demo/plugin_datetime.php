@@ -49,14 +49,14 @@
                                     <label for="bootstrap_date">Simple Date Picker</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="bootstrap_date" id="bootstrap_date" placeholder="Enter a date" aria-describedby="basic-addon1">
-                                        <div class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar-o"></i></div>
+                                        <div class="input-group-addon cursor-pointer" id="basic-addon1"><i class="fa fa-calendar-o"></i></div>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6">
                                     <label for="bootstrap_multiple_date">Date/Time Picker</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="bootstrap_time_date"  id="bootstrap_time_date" placeholder="Enter date and time" aria-describedby="basic-addon2">
-                                        <div class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar"></i></div>
+                                        <div class="input-group-addon cursor-pointer" id="basic-addon2"><i class="fa fa-calendar"></i></div>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6">
@@ -79,7 +79,7 @@
                                     <label for="bootstrap_time">Time Picker</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="bootstrap_time" id="bootstrap_time" placeholder="Enter the hour or resurrection" aria-describedby="basic-addon3">
-                                        <div class="input-group-addon" id="basic-addon3"><i class="fa fa-clock-o"></i></div>
+                                        <div class="input-group-addon cursor-pointer" id="basic-addon3"><i class="fa fa-clock-o"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                                 <label for="daterangepicker_standard" class="control-label">Standard</label>
                                                 <div class="input-group">
                                                     <input type="text" id="daterangepicker_standard" class="form-control" value="" />
-                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                    <div class="input-group-addon cursor-pointer"><i class="fa fa-calendar"></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@
                                                 <label for="daterangepicker_standard_with_value" class="control-label">Standard with value</label>
                                                 <div class="input-group">
                                                     <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="10/10/2016 - 10/30/2016" />
-                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                    <div class="input-group-addon cursor-pointer"><i class="fa fa-calendar"></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -131,7 +131,7 @@
                                                 <label for="daterangepicker_standard_with_format" class="control-label">Standard with format</label>
                                                 <div class="input-group">
                                                     <input type="text" id="daterangepicker_standard_with_format" class="form-control" value="" />
-                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                    <div class="input-group-addon cursor-pointer"><i class="fa fa-calendar"></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@
                                                 <label for="daterangepicker_standard_with_predefined_intervals" class="control-label">Standard with predefined intervals</label>
                                                 <div class="input-group">
                                                     <input type="text" id="daterangepicker_standard_with_predefined_intervals" class="form-control" value="" />
-                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                    <div class="input-group-addon cursor-pointer"><i class="fa fa-calendar"></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -159,7 +159,7 @@
                                                 <label for="daterangepicker_standard_with_predefined_intervals_no_calendar" class="control-label">Standard with predefined intervals whitout calendars</label>
                                                 <div class="input-group">
                                                     <input type="text" id="daterangepicker_standard_with_predefined_intervals_no_calendar" class="form-control" value="" />
-                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                    <div class="input-group-addon cursor-pointer"><i class="fa fa-calendar"></i></div>
                                                 </div>
                                             </div>
                                         </div>
