@@ -12,6 +12,8 @@
 @width-buttons: 34px;
 @height-buttons: 34px;
 
+@stick-padding: 15px;
+
 /*Grid*/
 .ui-jqgrid {
   position: relative;
@@ -416,15 +418,15 @@ div.tablediv > .table-bordered {
 
 .stick-top-panel {
   background: #fff;
-  padding: @panel-body-padding 0 @panel-body-padding 0;
-  margin-top: -@panel-body-padding;
+  padding: @stick-padding 0 @stick-padding 0;
+  margin-top: -@stick-padding;
   position: relative;
   margin-bottom: @jqgrid-border;
 }
 
 .stick-top-panel.is_stuck {
   box-shadow: 0 0 0 @jqgrid-border @white;
-  padding-bottom: @panel-body-padding - @jqgrid-border;
+  padding-bottom: @stick-padding - @jqgrid-border;
 }
 
 .ui-jqgrid-hdiv.is_stuck {

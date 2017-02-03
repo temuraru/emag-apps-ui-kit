@@ -1,29 +1,24 @@
 ///* Positioning paddings: */
 ///* START */
 .generate-paddings(5);
-.generate-paddings(@n, @i: 1) when (@i =< @n) {
-  @x: (@i*20);
+.generate-paddings(@n, @i: 1) when (@i =< 20) {
+  @x: (@i*5);
   .pad-top-@{x} {
-    padding-top: (@i * 20px);
+    padding-top: (@i * 5px) !important;
   }
   .pad-btm-@{x} {
-    padding-bottom: (@i * 20px);
+    padding-bottom: (@i * 5px) !important;
   }
   .pad-sep-@{x} {
-    padding-top: (@i * 20px);
-    padding-bottom: (@i * 20px);
+    padding-top: (@i * 5px) !important;
+    padding-bottom: (@i * 5px) !important;
   }
   .pad-left-right-@{x} {
-    padding-left: (@i * 20px);
-    padding-right: (@i * 20px);
+    padding-left: (@i * 5px) !important;
+    padding-right: (@i * 5px) !important;
   }
-  @y: (@x - 5);
-  .pad-@{y} {
-    padding: (@y * 1px);
-  }
-  .pad-left-right-@{y} {
-    padding-left: (@y * 1px);
-    padding-right: (@y * 1px);
+  .pad-@{x} {
+    padding: (@x * 1px) !important;
   }
   .generate-paddings(@n, (@i + 1));
 }
@@ -33,21 +28,20 @@
 ///* Positioning margins: */
 ///* START */
 .generate-margins(5);
-.generate-margins(@n, @i: 1) when (@i =< @n) {
-  @x: (@i*20);
+.generate-margins(@n, @i: 1) when (@i =< 20) {
+  @x: (@i*5);
   .mg-top-@{x} {
-    margin-top: (@i * 20px);
+    margin-top: (@i * 5px) !important;
   }
   .mg-btm-@{x} {
-    margin-bottom: (@i * 20px);
+    margin-bottom: (@i * 5px) !important;
   }
   .mg-sep-@{x} {
-    margin-top: (@i * 20px);
-    margin-bottom: (@i * 20px);
+    margin-top: (@i * 5px) !important;
+    margin-bottom: (@i * 5px) !important;
   }
-  @y: (@x - 5);
-  .mg-@{y} {
-    margin: (@y * 1px);
+  .mg-@{x} {
+    margin: (@x * 1px) !important;
   }
   .generate-margins(@n, (@i + 1));
 }
@@ -60,7 +54,7 @@
 .generate-widths(@n, @i: 1) when (@i =< @n) {
   @x: (@i*10);
   .width-@{x} {
-    width: (@i * 10%);
+    width: (@i * 10%) !important;
   }
   .generate-widths(@n, (@i + 1));
 }
@@ -250,6 +244,13 @@
   .color-swatches {
     .swatch {
       position: relative;
+      border: 1px solid @white;
+      > * {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+      }
       &:before {
         position: absolute;
         top: 50%;
@@ -259,129 +260,77 @@
     }
     .swatch-primary {
       background-color: @brand-primary;
-      &:before {
-        content: '@{brand-primary}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-success {
       background-color: @brand-success;
-      &:before {
-        content: '@{brand-success}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-info {
       background-color: @brand-info;
-      &:before {
-        content: '@{brand-info}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-warning {
       background-color: @brand-warning;
-      &:before {
-        content: '@{brand-warning}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-danger {
       background-color: @brand-danger;
-      &:before {
-        content: '@{brand-danger}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-gray-darker {
       background-color: @gray-darker;
-      &:before {
-        content: '@{gray-darker}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-gray-dark {
       background-color: @gray-dark;
-      &:before {
-        content: '@{gray-dark}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-gray {
       background-color: @gray;
-      &:before {
-        content: '@{gray}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-gray-light {
       background-color: @gray-light;
-      &:before {
-        content: '@{gray-light}';
-        color: @gray-lighter;
-      }
+      color: @gray-lighter;
     }
     .swatch-gray-lighter {
       background-color: @gray-lighter;
-      &:before {
-        content: '@{gray-lighter}';
-        color: @gray-dark;
-      }
+      color: @gray-dark;
     }
     .swatch-black {
       background-color: @black;
-      &:before {
-        content: '@{black}';
-        color: @white;
-      }
+      color: @white;
     }
     .swatch-gray-76 {
       background-color: @gray-76;
-      &:before {
-        content: '@{gray-76}';
-        color: @black;
-      }
+      color: @black;
     }
     .swatch-gray-80 {
       background-color: @gray-80;
-      &:before {
-        content: '@{gray-80}';
-        color: @black;
-      }
+      color: @black;
     }
     .swatch-gray-87 {
       background-color: @gray-87;
-      &:before {
-        content: '@{gray-87}';
-        color: @black;
-      }
+      color: @black;
     }
     .swatch-gray-93 {
       background-color: @gray-93;
-      &:before {
-        content: '@{gray-93}';
-        color: @black;
-      }
+      color: @black;
     }
     .swatch-gray-96 {
       background-color: @gray-96;
-      &:before {
-        content: '@{gray-96}';
-        color: @black;
-      }
+      color: @black;
     }
     .swatch-gray-98 {
       background-color: @gray-98;
-      &:before {
-        content: '@{gray-98}';
-        color: @black;
-      }
+      color: @black;
+      border-color: @black;
     }
     .swatch-white {
       background-color: @white;
-      &:before {
-        content: '@{white}';
-        color: @black;
-      }
+      color: @black;
+      border-color: @black;
     }
   }
 
@@ -622,29 +571,55 @@
 }
 
 .no-margin-top-bottom {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-left-right {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .no-padding-top-bottom {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.no-padding-left-right {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .no-padding {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .no-margin {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .no-border-top {
-  border-top: 0;
+  border-top: 0 !important;
 }
 
 .no-border-bottom {
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 
 .error-containers-properties {
