@@ -212,7 +212,7 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -1991,7 +1991,7 @@ th {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+      transform: translate(0, 0);
 
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2071,27 +2071,27 @@ th {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      transform: rotate(90deg);
 }
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+      transform: rotate(180deg);
 }
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+      transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+      transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
+      transform: scale(1, -1);
 }
 :root .fa-rotate-90,
 :root .fa-rotate-180,
@@ -5275,7 +5275,7 @@ fieldset[disabled] .form-control {
   opacity: 1;
 
   -moz-columns: #c3c3c3;
-  columns: #c3c3c3;
+       columns: #c3c3c3;
 }
 .form-control[disabled],
 fieldset[disabled] .form-control {
@@ -5693,12 +5693,12 @@ select[multiple].input-lg {
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-  touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -7625,7 +7625,7 @@ a.thumbnail.active {
   color: inherit;
 }
 .alert-success {
-  color: #38833a;
+  color: #000;
   background-color: #eafceb;
   border-color: #38833a;
 }
@@ -7633,10 +7633,21 @@ a.thumbnail.active {
   border-top-color: #307132;
 }
 .alert-success .alert-link {
-  color: #295f2a;
+  color: #000;
+}
+.alert-success-full-color {
+  color: #fff;
+  background-color: #38833a;
+  border-color: #38833a;
+}
+.alert-success-full-color hr {
+  border-top-color: #307132;
+}
+.alert-success-full-color .alert-link {
+  color: #e6e6e6;
 }
 .alert-info {
-  color: #005eb7;
+  color: #000;
   background-color: #f2f9ff;
   border-color: #005eb7;
 }
@@ -7644,10 +7655,10 @@ a.thumbnail.active {
   border-top-color: #00519e;
 }
 .alert-info .alert-link {
-  color: #004484;
+  color: #000;
 }
 .alert-warning {
-  color: #f4b350;
+  color: #000;
   background-color: #fdf2e0;
   border-color: #f4b350;
 }
@@ -7655,10 +7666,10 @@ a.thumbnail.active {
   border-top-color: #f2a938;
 }
 .alert-warning .alert-link {
-  color: #f19e20;
+  color: #000;
 }
 .alert-danger {
-  color: #e1302b;
+  color: #000;
   background-color: #fff0ef;
   border-color: #e1302b;
 }
@@ -7666,7 +7677,18 @@ a.thumbnail.active {
   border-top-color: #d4231e;
 }
 .alert-danger .alert-link {
-  color: #be1f1b;
+  color: #000;
+}
+.alert-black {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+.alert-black hr {
+  border-top-color: #262626;
+}
+.alert-black .alert-link {
+  color: #e6e6e6;
 }
 @keyframes progress-bar-stripes {
   from {
@@ -8098,13 +8120,13 @@ button.close {
 }
 .not-selectable {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 
-  -khtml-user-select: none;
+   -khtml-user-select: none;
   -webkit-touch-callout: none;
 }
 .scrollable.default-skin {
@@ -8119,10 +8141,10 @@ button.close {
 }
 .scrollable.default-skin .scroll-bar .thumb {
   background-color: black;
-  border-radius: 3px;
+          border-radius: 3px;
   opacity: .4;
 
-  -moz-border-radius: 4px;
+     -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
 .scrollable.default-skin .scroll-bar:hover .thumb {
@@ -8146,11 +8168,11 @@ button.close {
 .modal.fade .modal-dialog {
   transition: transform .3s ease-out;
   -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
+      transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+      transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -9413,7 +9435,7 @@ button.close {
   z-index: 3;
   margin: 0 !important;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .lock-center.fixed {
   position: fixed;
@@ -9553,7 +9575,7 @@ button.close {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .color-swatches .swatch-primary {
   background-color: #005eb7;
@@ -9739,7 +9761,7 @@ button.close {
   width: auto;
   height: 100%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .dropdown-menu {
   min-width: 50px;
@@ -9935,7 +9957,7 @@ button.close {
   left: 50%;
   display: inline-block;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .error-number {
   display: inline-block;
@@ -9979,6 +10001,46 @@ button.close {
 .fancytree-disabled .fancytree-plain.fancytree-container span.fancytree-title:hover {
   background: transparent;
 }
+.alert .fa {
+  margin-right: 10px;
+  font-size: 140%;
+  vertical-align: middle;
+}
+.alert button.close .fa {
+  margin-right: 0;
+  font-size: 100%;
+  vertical-align: inherit;
+}
+.alert.alert-success .fa {
+  color: #38833a;
+}
+.alert.alert-success button.close .fa {
+  color: #000;
+}
+.alert.alert-success-full-color button.close .fa {
+  color: #000;
+}
+.alert.alert-info .fa {
+  color: #005eb7;
+}
+.alert.alert-info button.close .fa {
+  color: #000;
+}
+.alert.alert-warning .fa {
+  color: #f4b350;
+}
+.alert.alert-warning button.close .fa {
+  color: #000;
+}
+.alert.alert-danger .fa {
+  color: #e1302b;
+}
+.alert.alert-danger button.close .fa {
+  color: #000;
+}
+.alert.alert-black button.close .fa {
+  color: #c3c3c3;
+}
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
@@ -10002,7 +10064,7 @@ button.close {
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1.0;
   -ms-transform: rotate(3deg) translate(0px, -4px);
-  transform: rotate(3deg) translate(0px, -4px);
+      transform: rotate(3deg) translate(0px, -4px);
 }
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
@@ -10528,7 +10590,7 @@ body {
   text-align: center;
   vertical-align: middle;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item a .menu-text {
   display: block;
@@ -10612,7 +10674,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.menu-item-has-children .menu-item-data > .menu-item-min-link:after {
   position: absolute;
@@ -10627,7 +10689,7 @@ body {
   vertical-align: middle;
   content: '\f107';
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .sidebar .sidebar-inner .menu-item.menu-item-has-children .sidebar-submenu {
   display: none;
@@ -11767,9 +11829,9 @@ input[type="checkbox"].form-checkbox-control {
   border-radius: 2px;
   outline: none;
 
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
 }
 input[type="checkbox"].form-checkbox-control:hover {
   background-color: #20232b;
@@ -11802,9 +11864,9 @@ input[type="radio"].form-radio-control {
   border-radius: 100%;
   outline: none;
 
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
 }
 input[type="radio"].form-radio-control:hover {
   background-color: #20232b;
@@ -11903,7 +11965,7 @@ select.form-control option:hover {
   background-color: #000;
   border-radius: 2px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip:after {
   position: absolute;
@@ -11920,7 +11982,7 @@ select.form-control option:hover {
   border-style: solid;
   border-width: 15px 12px 0 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-right:before {
   top: 50%;
@@ -11928,7 +11990,7 @@ select.form-control option:hover {
   bottom: auto;
   left: 105%;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-right:after {
   top: 50%;
@@ -11938,7 +12000,7 @@ select.form-control option:hover {
   border-color: transparent #000 transparent transparent;
   border-width: 10px 12px 10px 0;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-bottom:before {
   top: 115%;
@@ -11946,7 +12008,7 @@ select.form-control option:hover {
   bottom: auto;
   left: 50%;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-bottom:after {
   top: auto;
@@ -11956,7 +12018,7 @@ select.form-control option:hover {
   border-color: transparent transparent #000 transparent;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .info-tooltip.tt-left:before {
   top: 50%;
@@ -11964,7 +12026,7 @@ select.form-control option:hover {
   bottom: auto;
   left: auto;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-left:after {
   top: 50%;
@@ -11974,7 +12036,7 @@ select.form-control option:hover {
   border-color: transparent transparent transparent #000;
   border-width: 10px 0 10px 12px;
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      transform: translate(0, -50%);
 }
 .info-tooltip.tt-block {
   display: block;
@@ -12115,7 +12177,7 @@ select.form-control option:hover {
   border-style: solid;
   border-width: 0 12px 15px 12px;
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
 }
 .auth-box {
   width: 100%;

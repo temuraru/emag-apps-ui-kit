@@ -635,16 +635,23 @@
                                 </p>
                             </div>
 
-                            <button type="button" id="show_info" class="btn btn-primary btn-sm">
+                            <button type="button" id="show_info" class="btn btn-default">
                                 Show info message
                             </button>
-                            <hr>
-                            <button type="button" id="show_warning" class="btn btn-default btn-sm">
+                            <button type="button" id="show_success" class="btn btn-default">
+                                Show success message
+                            </button>
+                            <button type="button" id="show_success_full_color" class="btn btn-default">
+                                Show success (full color) message
+                            </button>
+                            <button type="button" id="show_warning" class="btn btn-default">
                                 Show warning message
                             </button>
-                            <hr>
-                            <button type="button" id="show_error" class="btn btn-danger btn-sm">
+                            <button type="button" id="show_error" class="btn btn-default">
                                 Show error message
+                            </button>
+                            <button type="button" id="show_black" class="btn btn-default">
+                                Show black message
                             </button>
                         </div>
                     </div>
@@ -1240,13 +1247,22 @@
                 });
 
                 $('#show_info').on('click',function(){
-                    addNotification("<span>Prepare yourself! This is an informational message: Information</span>","info");
+                    addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
+                });
+                $('#show_success').on('click',function(){
+                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success');
+                });
+                $('#show_success_full_color').on('click',function(){
+                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success-full-color');
                 });
                 $('#show_warning').on('click',function(){
-                    addNotification("<span>Are you prepared? This is a warning message: Warning</span>","warning");
+                    addNotification('<i class="fa fa-warning"></i><span>Are you prepared? This is a warning message: Warning</span>', 'warning');
                 });
                 $('#show_error').on('click',function(){
-                    addNotification("<span>Oh SNAP! This is an error message: Run!</span>","danger");
+                    addNotification('<i class="fa fa-minus-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
+                });
+                $('#show_black').on('click',function(){
+                    addNotification('<span>This is a black alert</span>', 'black');
                 });
 
                 $('#confirmation_alert').on('click', function () {
