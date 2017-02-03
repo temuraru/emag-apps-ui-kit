@@ -10259,6 +10259,9 @@ button.close {
   background-position: center;
   background-size: cover;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .display-widget {
   border: 0;
 }
