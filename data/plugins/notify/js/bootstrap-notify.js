@@ -212,9 +212,6 @@
 		},
 		styleDismiss: function () {
 			this.$ele.find('[data-notify="dismiss"]').css({
-				position: 'absolute',
-				right: '10px',
-				top: '5px',
 				zIndex: this.settings.z_index + 2
 			});
 		},
