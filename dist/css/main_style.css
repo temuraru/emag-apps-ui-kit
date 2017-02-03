@@ -7426,7 +7426,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 1em;
+  border-radius: .5em;
 }
 a.label:hover,
 a.label:focus {
@@ -7442,11 +7442,11 @@ a.label:focus {
   top: -1px;
 }
 .label-default {
-  background-color: #777;
+  background-color: #c3c3c3;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #5e5e5e;
+  background-color: #aaa;
 }
 .label-primary {
   background-color: #005eb7;
@@ -7487,7 +7487,7 @@ a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 75%;
   font-weight: bold;
   line-height: 1;
   color: #fff;
@@ -10258,6 +10258,9 @@ button.close {
   background-position: center;
   background-size: cover;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .display-widget {
   border: 0;
 }
@@ -12744,5 +12747,9 @@ i {
 }
 .well:last-child {
   margin-bottom: 0;
+}
+.badge {
+  position: relative;
+  top: -1px;
 }
 /*# sourceMappingURL=main_style.css.map */

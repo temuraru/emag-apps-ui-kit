@@ -4,7 +4,6 @@
     <title>Complex form elements - eMAG Apps UI KIT</title>
 
     <link rel="stylesheet" href="../dist/css/lib/jquery-ui-custom.1.11.4.min.css">
-    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css">
     <link rel="stylesheet" href="../dist/plugins/selectize/selectize-0.12.0.min.css">
     <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.css">
 
@@ -92,60 +91,6 @@
                                 <div class="form-group form-limited-input col-sm-6 col-md-4 col-lg-4">
                                     <label for="input_limiter">Message</label>
                                     <textarea id="input_limiter" name="input_limiter" class="form-control fixed-width-textarea" rows="4"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="jsDatePicker" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Date picker</strong></h4>
-
-                            <div class="alert alert-info" role="alert">
-                                <p>
-                                    <i class="fa fa-info-circle"></i>
-                                    Based on the bootstrap datepicker plugin with documentation on <a href="http://eonasdan.github.io/bootstrap-datetimepicker/" class="alert-link">http://eonasdan.github.io/bootstrap-datetimepicker/</a>
-                                </p>
-                            </div>
-
-                            <div class="row">
-                                <div class="form-group col-md-6 col-lg-6">
-                                    <label for="bootstrap_date">Simple Date Picker</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="bootstrap_date" id="bootstrap_date" placeholder="Enter a date" aria-describedby="basic-addon1">
-                                        <div class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar-o"></i></div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6 col-lg-6">
-                                    <label for="bootstrap_multiple_date">Date/Time Picker</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="bootstrap_time_date"  id="bootstrap_time_date" placeholder="Enter date and time" aria-describedby="basic-addon2">
-                                        <div class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar"></i></div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6 col-lg-6">
-                                    <label for="range_bootstrap_date">Date Range Picker</label>
-                                    <div class="input-daterange input-group">
-                                        <input type="text" class="form-control" id="datepicker_start" placeholder="Enter the start date">
-                                        <span class="input-group-addon">to</span>
-                                        <input type="text" class="form-control" id="datepicker_end" placeholder="Enter the end date">
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6 col-lg-6">
-                                    <label for="range_bootstrap_date">Date/Time Range Picker</label>
-                                    <div class="input-daterange input-group">
-                                        <input type="text" class="form-control" id="datetimepicker_start" placeholder="Enter the start date and time">
-                                        <span class="input-group-addon">to</span>
-                                        <input type="text" class="form-control" id="datetimepicker_end" placeholder="Enter the end date and time">
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6 col-lg-6">
-                                    <label for="bootstrap_time">Time Picker</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="bootstrap_time" id="bootstrap_time" placeholder="Enter the hour or resurrection" aria-describedby="basic-addon3">
-                                        <div class="input-group-addon" id="basic-addon3"><i class="fa fa-clock-o"></i></div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -417,9 +362,6 @@
 <script src="../dist/plugins/maskedinput/jQuery.maskedInput-1.4.1.min.js"></script>
 <script src="../dist/plugins/numberformatter/jQuery.numberFormatter-1.0.0.js"></script>
 <script src="../dist/plugins/inputlimiter/jQuery.inputlimiter.1.3.1.min.js"></script>
-<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
-<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.37.min.js"></script>
-<script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
 <script src="../dist/plugins/selectize/selectize-0.12.0.min.js"></script>
 <script src="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.js"></script>
 
@@ -436,7 +378,6 @@
 
         initMaskedInputs();
         initInputLimiter();
-        initDatePickers();
         initSelectize();
         initAutocomplete();
         initSliders();
@@ -458,35 +399,6 @@
             $('#input_limiter').inputlimiter({
                 remText: '%n character%s remaining...',
                 limitText: 'max allowed : %n.'
-            });
-        }
-
-        function initDatePickers() {
-            var datepickerConfig = {
-                '#bootstrap_date'  : {format : 'DD/MM/YYYY' },
-                '#bootstrap_time_date'  : {},
-                '#datepicker_start'  : {format : 'DD/MM/YYYY' },
-                '#datepicker_end'  : {format : 'DD/MM/YYYY',useCurrent: false},
-                '#datetimepicker_start'  : {format : 'DD/MM/YYYY HH:mm'},
-                '#datetimepicker_end'  : {format : 'DD/MM/YYYY HH:mm', useCurrent: false},
-                '#bootstrap_time'  : {format : 'HH:mm'}
-            }
-            for (var selector in datepickerConfig) {
-                $(selector).datetimepicker(datepickerConfig[selector]);
-            }
-
-            $("#datepicker_start").on("dp.change", function (e) {
-                $('#datepicker_end').data("DateTimePicker").minDate(e.date);
-            });
-            $("#datepicker_end").on("dp.change", function (e) {
-                $('#datepicker_start').data("DateTimePicker").maxDate(e.date);
-            });
-
-            $("#datetimepicker_start").on("dp.change", function (e) {
-                $('#datetimepicker_end').data("DateTimePicker").minDate(e.date);
-            });
-            $("#datetimepicker_end").on("dp.change", function (e) {
-                $('#datetimepicker_start').data("DateTimePicker").maxDate(e.date);
             });
         }
 
