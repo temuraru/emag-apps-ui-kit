@@ -10429,7 +10429,7 @@ button.close {
   color: #000;
 }
 .alert.alert-success-full-color button.close .fa {
-  color: #000;
+  color: #fff;
 }
 .alert.alert-info .fa {
   color: #005eb7;
