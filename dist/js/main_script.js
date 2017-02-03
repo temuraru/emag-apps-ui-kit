@@ -4385,13 +4385,13 @@ function initSidebarEvents() {
         }
 
         /**
-         * Badge and info Formatter
+         * Label and info Formatter
          * @param item
          * @param options
          * @param rowObject
          * @return {string}
          */
-        this.badgeAndTooltip = function (item, options, rowObject) {
+        this.labelAndTooltip = function (item, options, rowObject) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4424,6 +4424,113 @@ function initSidebarEvents() {
         }
 
         /**
+         * Badge Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
+        this.badge = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (i.hasNoValue) {
+                return self.notAvailable();
+            }
+
+            if ((i.isString && !i.isJson) || i.isNumber) {
+                return '<span class="badge">' + item + '</span>';
+            }
+
+            if (i.isJson || i.isObject) {
+                if (i.isJson) {
+                    item = JSON.parse(item);
+                }
+
+                var badgeHtml = '';
+                if (item.text) {
+                    badgeHtml += item.text + ' ';
+                }
+                badgeHtml += '<span class="badge">' + item.number + '</span>';
+
+                return badgeHtml;
+            } else {
+                return self.notAvailable();
+            }
+        }
+
+        /**
+         * Price Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
+        this.price = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (i.hasNoValue) {
+                return self.notAvailable();
+            }
+
+            Number.prototype.formatMoney = function(c, d, t) {
+                var n = this;
+                var c = isNaN(c = Math.abs(c)) ? 2 : c;
+                var d = d || ",";
+                var t = t || ".";
+                var s = n < 0 ? "-" : "";
+                var i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c)));
+                var j = (j = i.length) > 3 ? j % 3 : 0;
+                return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+            };
+
+            if (i.isJson || i.isObject) {
+                if (i.isJson) {
+                    item = JSON.parse(item);
+                }
+
+                var currency = item.currency || 'RON';
+                var value = Number(item.value);
+
+                return '<div class="text-right">' + value.formatMoney() + ' ' + currency + '</div>';
+            }
+
+            if (i.isNumber || i.isString) {
+                return '<div class="text-right">' + Number(item).formatMoney() + ' RON</div>';
+            }
+        }
+
+        /**
+         * Product Formatter
+         * @param item
+         * @param options
+         * @param rowObject
+         * @return {string}
+         */
+        this.product = function (item, options, rowObject) {
+            var i = getItemStatus(item);
+
+            if (i.hasNoValue) {
+                return self.notAvailable();
+            }
+
+            if (i.isJson || i.isObject) {
+                if (i.isJson) {
+                    item = JSON.parse(item);
+                }
+
+                var link = item.link || '';
+                var name = item.name;
+
+                if (link) {
+                    return '<a href="' + link + '" title="' + name + '">' + name + '</a>';
+                }
+                return name;
+            }
+
+            return item;
+        }
+
+        /**
          * Check item properties
          * @param item
          * @return {object}
@@ -4448,6 +4555,9 @@ function initSidebarEvents() {
         function isJson (str) {
             try {
                 JSON.parse(str);
+                if (str.indexOf('{') === -1) {
+                    return false;
+                }
             } catch (e) {
                 return false;
             }

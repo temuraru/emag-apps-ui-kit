@@ -84,7 +84,7 @@
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/branding.php#icons">
-                                <span class="menu-text">Icons</span>
+                                <span class="menu-text">Icons & flags</span>
                             </a>
                         </li>
                     </ul>
@@ -196,11 +196,6 @@
                                 <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsTextareaWithInputLimiter">
                                         <span class="menu-text">Textarea with input limiter</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsDatePicker">
-                                        <span class="menu-text">Date picker</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
