@@ -5,14 +5,14 @@
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  font-size: @label-font-size;
   font-weight: bold;
   line-height: 1;
   color: @label-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 1em;
+  border-radius: @label-border-radius;
 
   // Add hover effects, but only for links
   a& {

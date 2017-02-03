@@ -607,6 +607,10 @@
                                 <table id="grid_with_formatter_table" class="table table-bordered"></table>
                                 <div id="grid_with_formatter_pager"></div>
                             </div>
+                            <div class="pad-top-20">
+                                <table id="grid_with_formatter_2_table" class="table table-bordered"></table>
+                                <div id="grid_with_formatter_2_pager"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -889,7 +893,7 @@
             ],
             colModel: [
                 {name: 'name', index: 'name', width: 2, sortable: false},
-                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.badgeAndTooltip },
+                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.labelAndTooltip },
                 {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
@@ -929,6 +933,30 @@
         };
 
         new PhotonJqGrid(listingWithFormatterParameters).init();
+
+        var listingWithFormatter2Parameters = {
+            table: '#grid_with_formatter_2_table',
+            pager: '#grid_with_formatter_2_pager',
+            datatype: 'jsonstring',
+            caption: 'jqGrid with data formatters',
+            datastr: getListingWithFormatter2DummyData(),
+            colNames: [
+                'product',
+                'badge',
+                'price',
+                'dateTime',
+                'status'
+            ],
+            colModel: [
+                {name: 'product', index: 'product', sortable: false, width: 2, formatter: PhotonDataFormatter.product },
+                {name: 'badge', index: 'badge', sortable: false, width: 1, formatter: PhotonDataFormatter.badge },
+                {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.price },
+                {name: 'dateTime', index: 'dateTime', sortable: false, width: 1, formatter: PhotonDataFormatter.dateTime },
+                {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.labelAndTooltip }
+            ]
+        };
+
+        new PhotonJqGrid(listingWithFormatter2Parameters).init();
 
         function getSelectedRows() {
             var grid = $("#grid_table_with_selectable_rows");
@@ -1341,6 +1369,71 @@
                         'time': 1024,
                         'userEmail': 1024,
                         'country': 1024
+                    }
+                ]
+            };
+
+            return data;
+        }
+
+        function getListingWithFormatter2DummyData() {
+            var status1 = '{"label": "Live", "labelClass": "label-success"}';
+            var status2 = '{"label": "Deleted", "labelClass": "label-danger"}';
+            var status3 = '{"label": "Warning", "labelClass": "label-warning"}';
+            var status4 = 'Inactive';
+            var status5 = '{"label": "Active", "labelClass": "label-primary"}';
+
+            var data = {
+                'page': '1',
+                'records': '6',
+                'rows': [
+                    {
+                        'id': '0',
+                        'product': 'iPhone 5S',
+                        'badge': 123,
+                        'price': 1234.56,
+                        'dateTime': '2016-07-29 11:53:59.000000',
+                        'status': status1
+                    },
+                    {
+                        'id': 1,
+                        'product': '{"name":"iPhone SE", "link":""}',
+                        'badge': '123',
+                        'price': '1234.56',
+                        'dateTime': ['2016-07-29', '11:53:59'],
+                        'status': status2
+                    },
+                    {
+                        'id': null,
+                        'product': '{"name":"iPhone 6S", "link":"#"}',
+                        'badge': '{"text":"RO", "number":"123"}',
+                        'price': '{"value":"1234567.89","currency":"RON"}',
+                        'dateTime': '{"date": "2016-07-29", "time": "11:53:59"}',
+                        'status': status3
+                    },
+                    {
+                        /** 'id': 3, */
+                        /** 'product': 'iPhone 6 Plus', */
+                        /** 'badge': 123, */
+                        /** 'price': 123.45, */
+                        /** 'dateTime': '2016-07-29 11:53:59', */
+                        /** 'status': status4 */
+                    },
+                    {
+                        'id': 4,
+                        'product': {name: 'Samsung S8', link: '#'},
+                        'badge': {text: 'RO', number: '123'},
+                        'price': {value: 123.45, currency: 'RON'},
+                        'dateTime': {date: '2016-07-29', time: '11:53:59'},
+                        'status': status4
+                    },
+                    {
+                        'id': 5,
+                        'product': {name: 'Samsung S8'},
+                        'badge': {number: '123'},
+                        'price': {value: 12345.67},
+                        'dateTime': 1024,
+                        'status': status5
                     }
                 ]
             };
