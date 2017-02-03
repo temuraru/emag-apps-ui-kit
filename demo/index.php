@@ -37,9 +37,8 @@
                             <h2><strong>Overview</strong></h2>
                             <p><strong>A short description about what's it like to work with eMAG Apps UI KIT:</strong></p>
                             <div class="pad-sep-20">
-                                <ol>
-                                    <li>
-                                        <h4 class="text-primary">Based on Bootstrap 3.3.5.</h4>
+
+                                        <h4><strong>1. Based on Bootstrap 3.3.5.</strong></h4>
                                         <p>
                                             Our open source UI KIT is based on the Bootstrap architecture. If you're
                                             not familiarized with it, check-out their stuff from getbootstrap.com Aside
@@ -49,7 +48,7 @@
                                         </p>
                                         <br>
                                         <p><strong>Features:</strong></p>
-                                        <ol>
+                                        <ol class="pad-15 no-padding-top-bottom">
                                             <li>
                                                 <p>Keeping it light with an average page weight of 500Kb.</p>
                                             </li>
@@ -64,9 +63,8 @@
                                             </li>
                                         </ol>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <h4 class="text-primary">Working with Grunt.js</h4>
+
+                                        <h4><strong>2. Working with Grunt.js</strong></h4>
                                         <p><strong>Installing Grunt:</strong></p>
                                         <p>To install Grunt, you must first download and install <a href="https://nodejs.org/en/" target="_blank"><u>node.js</u></a> (which includes npm). Believe it or not, npm stands for <b>node packaged modules</b> and is a way to manage development dependencies through node.js.</p>
                                         <p>Once you've installed node.js, open up the command line in the root directory.</p>
@@ -85,9 +83,8 @@ grunt default           - Generate main styles and scripts
 </code>
 </pre>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <h4 class="text-primary">Working with eMAG Apps UI KIT's folder structure:</h4>
+
+                                        <h4><strong>3. Working with eMAG Apps UI KIT's folder structure:</strong></h4>
                                         <br>
                                         <p>Once downloaded, unzip the compressed folder to find the three main folders:</p>
 <pre>
@@ -121,13 +118,11 @@ eMAG Apps UI KIT/
 </code>
 </pre>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <h4 class="text-primary">Precompiled files (dist)</h4>
+                                        <h4><strong>4. Precompiled files (dist)</strong></h4>
                                         <br>
-                                        <ul>
+                                        <ul class="pad-20 no-padding-top-bottom">
                                             <li>css - Main style CSS files.
-                                                <ul>
+                                                <ul class="pad-20">
                                                     <li>flags - Countries flags as SVG file on 1:1 and 4:3 ratio.</li>
                                                     <li>fonts - Fonts files used in eMAG Apps UI KIT.</li>
                                                     <li>icons - Icons used in eMAG Apps UI KIT (created by eMag and from other libraries).</li>
@@ -136,22 +131,21 @@ eMAG Apps UI KIT/
                                                 </ul>
                                             </li>
                                             <li>js - Main JS script files.
-                                                <ul>
+                                                <ul class="pad-20">
                                                     <li>lib - Libraries' JS files.</li>
                                                 </ul>
                                             </li>
                                             <li>plugins - Plugins used in eMAG Apps UI KIT (CSS and JS files).</li>
                                         </ul>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <h4 class="text-primary">eMAG Apps UI KIT source code (data)</h4>
+
+                                        <h4><strong>5. eMAG Apps UI KIT source code (data)</strong></h4>
                                         <br>
-                                        <ul>
+                                        <ul class="pad-20 no-padding-top-bottom">
                                             <li>scripts - JS files.
-                                                <ul>
+                                                <ul class="pad-20">
                                                     <li>base - Main JS files.
-                                                        <ul>
+                                                        <ul class="pad-20 no-padding-top-bottom">
                                                             <li>custom - Custom wrappers over certain plugins.</li>
                                                         </ul>
                                                     </li>
@@ -159,9 +153,9 @@ eMAG Apps UI KIT/
                                                 </ul>
                                             </li>
                                             <li>styles - LESS files.
-                                                <ul>
+                                                <ul class="pad-20">
                                                     <li>base - Main style LESS files
-                                                        <ul>
+                                                        <ul class="pad-20 no-padding-top-bottom">
                                                             <li>custom - Custom wrappers' LESS files.</li>
                                                         </ul>
                                                     </li>
@@ -171,9 +165,8 @@ eMAG Apps UI KIT/
                                             <li>plugins - Plugins used in eMAG Apps UI KIT (LESS and JS files).</li>
                                         </ul>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <h4 class="text-primary">License</h4>
+
+                                        <h4><strong>6. License</strong></h4>
                                         <br>
                                         <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
 
@@ -258,15 +251,14 @@ eMAG Apps UI KIT/
                         </div>
                     </div>
                 </section>
-                <section id="getting-started" class="pad-top-40">
+                <section id="getting-started" class="pad-top-30">
                     <div class="show-panel">
                         <div class="show-panel-body">
                             <h2><strong>Getting started</strong></h2>
                             <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
                             <div class="pad-sep-20">
-                                <ol>
-                                    <li>
-                                        <p>The easiest way to install is to add the following css line in the head of your webpage:</p>
+
+                                        <p>1. The easiest way to install is to add the following css line in the head of your webpage:</p>
                                         <pre class="language-html"><code class="language-html" data-showcase="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</code></pre>
                                         <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
                                                 <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
@@ -276,17 +268,14 @@ eMAG Apps UI KIT/
                                             <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
                                         </div>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <p>You can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
+
+                                        <p>2. You can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
                                         <br>
-                                    </li>
-                                    <li>
-                                        <p>You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
+
+                                        <p>3. You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
                                         <pre>
 <code class="language-bash" data-lang="bash">[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</code></pre>
-                                    </li>
-                                </ol>
+
                             </div>
                             <div class="alert alert-info" role="alert">
                                 <i class="fa fa-info-circle"></i> Be W3C compliant and everything will be alright!
