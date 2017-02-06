@@ -14,7 +14,12 @@
 function addNotification(message, type, position){
     const SCREEN_XS_MAX = 767;
     const DEFAULT_OFFSET = 100;
-    const BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
+
+    try {
+        const BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
+    } catch(err) {
+        const BOTTOM_LEFT_OFFSET = 20;
+    }
 
     var position = position || 'default';
     var notificationClass = 'notification-default';
@@ -38,7 +43,7 @@ function addNotification(message, type, position){
         }
     };
 
-    if (position == 'bottom-left') {
+    if (position === 'bottom-left') {
         defaultOptions.placement = {
             from: 'bottom',
             align: 'left'
@@ -57,7 +62,12 @@ function addNotification(message, type, position){
 }
 function realignNotifications() {
     const SCREEN_XS_MAX = 767;
-    const BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
+
+    try {
+        const BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
+    } catch(err) {
+        const BOTTOM_LEFT_OFFSET = 20;
+    }
 
     if (window.innerWidth > SCREEN_XS_MAX) {
         $('.notification-bottom-left').css({

@@ -116,7 +116,7 @@ function initSidebarEvents() {
      * Collapse sidebar using the dedicated button from the bottom (Only on desktop/tablet)
      * @event click
      */
-    $sidebar.on('click', '#toggle-sidebar-size-btn', function (e) {console.log('sidebar');
+    $sidebar.on('click', '#toggle-sidebar-size-btn', function (e) {
         e.preventDefault();
         var $sidebarInner = $('#sidebar .sidebar-inner');
 
