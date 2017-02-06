@@ -6772,7 +6772,7 @@ function initSidebarEvents() {
         }
     });
 });
-function addNotification(message, type, position){
+function addNotification(message, type){
     const SCREEN_XS_MAX = 767;
     const DEFAULT_OFFSET = 100;
     var BOTTOM_LEFT_OFFSET = 20;
@@ -6780,9 +6780,8 @@ function addNotification(message, type, position){
         BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
     } catch(err) {}
 
-    var position = position || 'default';
     var notificationClass = 'notification-default';
-    if (position == 'bottom-left') {
+    if (type === 'black') {
         notificationClass = 'notification-bottom-left';
     }
 
@@ -6802,7 +6801,7 @@ function addNotification(message, type, position){
         }
     };
 
-    if (position === 'bottom-left') {
+    if (type === 'black') {
         defaultOptions.placement = {
             from: 'bottom',
             align: 'left'

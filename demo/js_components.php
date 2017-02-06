@@ -829,7 +829,7 @@
                     addNotification('<i class="fa fa-minus-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
                 });
                 $('#show_black').on('click',function(){
-                    addNotification('<span>This is a black alert</span>', 'black', 'bottom-left');
+                    addNotification('<span>This is a black alert</span>', 'black');
                 });
 
                 $('#confirmation_alert').on('click', function () {
