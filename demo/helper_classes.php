@@ -36,7 +36,7 @@
                             <div class="panel">
                                 <div class="panel-body">
 
-                                    <h2><strong>Helper classes</strong></h2>
+                                    <h2><strong>Custom helper classes</strong></h2>
                                     <div class="row">
                                         <div class="col-sm-6 col-md-4">
                                             <p><strong>Margin</strong></p>
@@ -124,19 +124,6 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 console.log('Ready, Captain!');
-
-                demoHelpers();  // Require demo_helpers.js
-
-                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function(event) {
-                    updateSideBarCode(event);
-                });
-                $('input[name="footer_fixed_status"]').on('change', function() {
-                    updateFooterBarCode();
-                });
-
-                showPageCode();
-
-               
             });
         </script>
         <!-- DOCUMENT-READY:End -->

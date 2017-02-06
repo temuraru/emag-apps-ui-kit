@@ -162,7 +162,7 @@
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/helper_classes.php">
-                                <span class="menu-text">Helper classes</span>
+                                <span class="menu-text">Custom helper classes</span>
                             </a>
                         </li>
                     </ul>
