@@ -136,6 +136,7 @@ function initSidebarEvents() {
         }
         updateScrollbar();
         $(window).resize();
+        realignNotifications();
     });
     /**
      * Open/Close sidebar by using the "#toggle-sidebar-btn" button from the main navigation (Only on mobile)
