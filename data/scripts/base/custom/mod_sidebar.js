@@ -116,7 +116,7 @@ function initSidebarEvents() {
      * Collapse sidebar using the dedicated button from the bottom (Only on desktop/tablet)
      * @event click
      */
-    $sidebar.on('click', '#toggle-sidebar-size-btn', function (e) {
+    $sidebar.on('click', '#toggle-sidebar-size-btn', function (e) {console.log('sidebar');
         e.preventDefault();
         var $sidebarInner = $('#sidebar .sidebar-inner');
 
@@ -136,6 +136,7 @@ function initSidebarEvents() {
         }
         updateScrollbar();
         $(window).resize();
+        realignNotifications();
     });
     /**
      * Open/Close sidebar by using the "#toggle-sidebar-btn" button from the main navigation (Only on mobile)

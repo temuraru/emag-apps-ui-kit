@@ -11,22 +11,63 @@
         }
     });
 });
-function addNotification(message,type){
-    var notify = $.notify(message, {
+function addNotification(message, type, position){
+    const SCREEN_XS_MAX = 767;
+    const DEFAULT_OFFSET = 100;
+    const BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
+
+    var position = position || 'default';
+    var notificationClass = 'notification-default';
+    if (position == 'bottom-left') {
+        notificationClass = 'notification-bottom-left';
+    }
+
+    var defaultOptions = {
         type: type,
-        template: '<div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0}" role="alert"><button type="button" aria-hidden="true" class="close" data-notify="dismiss"><i class="fa fa-remove"></i></button><span data-notify="icon"></span> <span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>',
+        template: '<div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0} ' + notificationClass + '" role="alert"><button type="button" aria-hidden="true" class="close" data-notify="dismiss"><i class="fa fa-remove"></i></button><span data-notify="icon"></span> <span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>',
         placement: {
             from: "top",
             align: "center"
         },
         offset: {
-            y: 100
+            y: DEFAULT_OFFSET
         },
         animate: {
             enter: 'animations scaleIn',
             exit: 'animations scaleOut'
         }
-    });
+    };
+
+    if (position == 'bottom-left') {
+        defaultOptions.placement = {
+            from: 'bottom',
+            align: 'left'
+        };
+
+        defaultOptions.offset.y = ($('.footer-content').eq(0).outerHeight() + BOTTOM_LEFT_OFFSET);
+
+        if (window.innerWidth > SCREEN_XS_MAX) {
+            defaultOptions.offset.x = $('#sidebar').outerWidth() + BOTTOM_LEFT_OFFSET;
+        } else {
+            defaultOptions.offset.x = BOTTOM_LEFT_OFFSET;
+        }
+    }
+
+    var notify = $.notify(message, defaultOptions);
+}
+function realignNotifications() {
+    const SCREEN_XS_MAX = 767;
+    const BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
+
+    if (window.innerWidth > SCREEN_XS_MAX) {
+        $('.notification-bottom-left').css({
+            'left': ($('#sidebar').outerWidth() + BOTTOM_LEFT_OFFSET)
+        });
+    } else {
+        $('.notification-bottom-left').css({
+            'left': BOTTOM_LEFT_OFFSET
+        });
+    }
 }
 
 function hideBodyOverlayer() {
