@@ -87,13 +87,13 @@
                                         <div class="col-sm-6 col-md-4">
                                             <p><strong>Width</strong></p>
                                             <ul>
-                                                <li>width-[10 ... 100]<br><small>(from 10 to 10, is percentage)</small></li>
+                                                <li>width-[10 ... 100]<br><small>(from 10 to 10, as percentage)</small></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <p><strong>Font</strong></p>
                                             <ul>
-                                                <li>font-size-[20 ... 200]<br><small>(from 20 to 20, is percentage)</small></li>
+                                                <li>font-size-[20 ... 200]<br><small>(from 20 to 20, as percentage)</small></li>
                                             </ul>
                                         </div>
                                     </div>
