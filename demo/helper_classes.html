@@ -2,7 +2,7 @@
 <html lang="en" class="js">
     <head>
 
-        <title>Plugins - eMAG Apps UI KIT</title>
+        <title>Layout - eMAG Apps UI KIT</title>
         <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -10,11 +10,7 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">        
-        <!-- PLUGIN: Summernote -->
-        <link rel="stylesheet" href="../dist/plugins/summernote/summernote.min.css">
-        
-        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -25,11 +21,15 @@
 <!--[if lt IE 9]>
     <script src="../dist/js/lib/html5shiv.min.js"></script>
     <script src="../dist/js/lib/respond.min.js"></script>
-<![endif]-->
+<![endif]-->        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+
     </head>
     <body>
+
         <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
 <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <!-- HEADER:Start -->
         <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -95,8 +95,8 @@
         <!-- PAGE:Start -->
             <div class="main-container" id="main-container">
                 <div class="main-container-inner">
-                    <!-- SIDEBAR:Start -->
-                    <div id="sidebar" class="sidebar sidebar-fixed">
+                <!-- SIDEBAR:Start -->
+                <div id="sidebar" class="sidebar sidebar-fixed">
     <div class="sidebar-outer">
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
@@ -450,91 +450,126 @@
             </button>
         </div>
     </div>
-</div>                    <!-- SIDEBAR:End -->
-                    
-                    <!-- CONTENT:Start -->
-                    <div class="main-content">
-                        <div class="page-content">
-                            <div class="jumbotron content-header">
-                                <div class="container-fluid">
-                                    <p>eMAG Apps UI KIT</p>
-                                    <p><b>Wysiwyg editor</b></p>
+</div>                <!-- SIDEBAR:End -->
+                <!-- CONTENT:Start -->
+                <div class="main-content">
+                    <div class="page-content">
+                        <div class="jumbotron content-header">
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>Layout</b></p>
+                            </div>
+                        </div>
+                        <section id="boilerplate" class="pad-top-40">
+                            <div class="panel">
+                                <div class="panel-body">
+
+                                    <h2><strong>Helper classes</strong></h2>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4">
+                                            <p><strong>Margin</strong></p>
+                                            <ul>
+                                                <li>no-margin</li>
+                                                <li>no-margin-top</li>
+                                                <li>no-margin-bottom</li>
+                                                <li>no-margin-top-bottom</li>
+                                                <li>no-margin-left-right</li>
+                                                <li class=" mg-top-10"><strong>From 5 to 5</strong>
+                                                    <ul class="no-padding-top pad-15">
+                                                        <li>mg-top-[5 ... 50]</li>
+                                                        <li>mg-btm-[5 ... 50]</li>
+                                                        <li>mg-left-right-[5 ... 50]</li>
+                                                        <li>mg-sep-[5 ... 50]</li>
+                                                        <li>mg-[5 ... 50]</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <p><strong>Padding</strong></p>
+                                            <ul>
+                                                <li>no-padding</li>
+                                                <li>no-padding-top</li>
+                                                <li>no-padding-bottom</li>
+                                                <li>no-padding-top-bottom</li>
+                                                <li>no-padding-left-right</li>
+                                                <li class=" mg-top-10"><strong>From 5 to 5</strong>
+                                                    <ul class="no-padding-top pad-15">
+                                                        <li>pad-top-[5 ... 50]</li>
+                                                        <li>pad-btm-[5 ... 50]</li>
+                                                        <li>pad-left-right-[5 ... 50]</li>
+                                                        <li>pad-sep-[5 ... 50]</li>
+                                                        <li>pad-[5 ... 50]</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <p><strong>Border</strong></p>
+                                            <ul>
+                                                <li>no-border</li>
+                                                <li>no-border-top</li>
+                                                <li>no-border-bottom</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <p><strong>Width</strong></p>
+                                            <ul>
+                                                <li>width-[10 ... 100]<br><small>(from 10 to 10, is procent)</small></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <p><strong>Font</strong></p>
+                                            <ul>
+                                                <li>font-size-[20 ... 200]<br><small>(from 20 to 20, is procent)</small></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <section id="summernoteStandard" class="pad-top-40">
-                                <div class="show-panel ">
-                                    <div class="show-panel-body">
-                                        <h4 class="text-primary"><strong>Summernote.js</strong></h4>
-                                        <p><strong>Standard install</strong></p>
-                                        <p>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" target="_blank">summernote.org</a></p>
-                                        <div class="pad-top-40">
-                                            <div class="row">
-                                                <div class="col-lg-10 col-lg-offset-1">
-                                                    <div id="summernote1">This is the infamous summernote. Check it out!</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="show-panel ">
-                                    <div class="show-panel-body">
-                                        <p><strong>Air mode</strong></p>
-                                        <p>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" target="_blank">summernote.org</a></p>
-                                        <div class="pad-sep-40">
-                                            <div class="row">
-                                                <div class="col-lg-10 col-lg-offset-1">
-                                                    <div id="summernote2">
-                                                        <p>Bacon ipsum dolor amet laborum ullamco reprehenderit qui ut voluptate officia turducken corned beef andouille sint. Non consequat chicken shank ball tip, incididunt esse nostrud. Nostrud dolore ut veniam andouille pork belly. Turkey shankle magna pig aliquip. Fugiat bresaola tempor pork alcatra t-bone exercitation aliqua esse. Nisi flank pork chop t-bone aute non corned beef dolor doner quis sint. Fatback ut tongue leberkas eu pancetta nisi.</p>
-                                                        <p>Ex bresaola landjaeger biltong labore. In pariatur consectetur, dolore pork rump ribeye. Beef adipisicing occaecat, excepteur brisket officia fatback porchetta id alcatra elit pastrami reprehenderit labore. Excepteur rump shank enim cupidatat biltong t-bone hamburger eu. Fatback meatloaf flank ut eu, officia meatball.</p>
-                                                        <p>Irure ground round tempor, sed flank meatball incididunt cillum pork loin landjaeger picanha beef ribs. Tri-tip commodo beef ribs ea irure quis nostrud andouille beef biltong picanha shoulder sunt pork loin. Pork belly ribeye labore, corned beef tri-tip nulla id sausage pork loin biltong consequat. Pariatur dolore deserunt eiusmod pig velit rump. Rump flank beef ribs, consectetur sirloin salami pariatur sausage ground round dolor sunt. Aute jerky ribeye lorem, in pig reprehenderit aliquip pork sunt picanha ut doner.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>                                        
-                        </div>
+                        </section>
                     </div>
-                    <!-- CONTENT:End -->
-                    <!-- FOOTER:Start -->
-                    <div id="main_footer" class="footer">
+                </div>
+                <!-- CONTENT:End -->
+                <!-- FOOTER:Start -->
+                <div id="main_footer" class="footer">
     <div class="footer-inner text-center">
         <div class="footer-content">
             <span>Copyright &copy; 2011 - 2017 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
         </div>
     </div>
-</div>                    <!-- FOOTER:End -->
+</div>                <!-- FOOTER:End -->
                 </div>
             </div>
         <!-- PAGE:End -->
-        
+
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-
-        <script src="../dist/plugins/tether/tether.min.js"></script>
-
-        <script src="../dist/plugins/summernote/summernote.min.js"></script>
-        
-        <script src="../dist/js/main_script.min.js"></script>
+        <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+        <script src="../dist/plugins/prism/prism.min.js"></script>
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">               
+        <script type="text/javascript">
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
                 demoHelpers();  // Require demo_helpers.js
 
-                $('#summernote1').summernote({
-                    minHeight: 300,
-                    maxHeight: 600
+                $('input[name="sidebar_fixed_status"], input[name="sidebar_expanded_status"]').on('change', function(event) {
+                    updateSideBarCode(event);
                 });
-                $('#summernote2').summernote({
-                    airMode: true
+                $('input[name="footer_fixed_status"]').on('change', function() {
+                    updateFooterBarCode();
                 });
+
+                showPageCode();
+
+               
             });
         </script>
         <!-- DOCUMENT-READY:End -->
