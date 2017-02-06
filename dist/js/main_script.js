@@ -7005,3 +7005,7 @@ function addMoreActions(context) {
         });
     });
 }
+
+$(window).on('resize', function () {
+    realignNotifications();
+})
