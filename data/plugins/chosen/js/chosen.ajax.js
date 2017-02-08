@@ -154,6 +154,7 @@
                                     select.data().chosen.results_showing = true;
                                     select.data().chosen.no_results_clear();
                                     select.data().chosen.no_results(fieldVal);
+                                    field.css('width','auto');
                                 } else {
                                     select.data().chosen.no_results(field.val());
                                 }
