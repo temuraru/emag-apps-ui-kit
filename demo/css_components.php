@@ -41,58 +41,208 @@
                         <section id="type-styles" class="pad-top-40">
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>Typefaces variations</strong></h4>
+                                    <h4><strong>Typefaces variations</strong></h4>
                                     <p><strong>Headings and Paragraphs:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <h1>h1,.h1 - Heading 1</h1>
-                                                <p class="lead">This is a sample of lead paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin neque odio, quis fringilla tortor eleifend in. Proin suscipit nunc quam, sed consequat est pulvinar eget. Donec vel hendrerit tortor, et rhoncus lectus. Donec non tellus vel diam aliquam egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                <h2>h2,.h2 - Heading 2</h2>
-                                                <p>This is a sample of paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin neque odio, quis fringilla tortor eleifend in. Proin suscipit nunc quam, sed consequat est pulvinar eget. Donec vel hendrerit tortor, et rhoncus lectus. Donec non tellus vel diam aliquam egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                <h3>h3,.h3 - Heading 3</h3>
-                                                <h4>h4,.h4 - Heading 4</h4>
-                                                <h5>h5,.h5 - Heading 5</h5>
-                                                <h6>h6,.h6 - Heading 6</h6>
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h1>h1,.h1 - Heading 1</h1>
+                                            <p class="lead">This is a sample of lead paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin neque odio, quis fringilla tortor eleifend in. Proin suscipit nunc quam, sed consequat est pulvinar eget. Donec vel hendrerit tortor, et rhoncus lectus. Donec non tellus vel diam aliquam egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                            <h2>h2,.h2 - Heading 2</h2>
+                                            <p>This is a sample of paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin neque odio, quis fringilla tortor eleifend in. Proin suscipit nunc quam, sed consequat est pulvinar eget. Donec vel hendrerit tortor, et rhoncus lectus. Donec non tellus vel diam aliquam egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                            <h3>h3,.h3 - Heading 3</h3>
+                                            <h4>h4,.h4 - Heading 4</h4>
+                                            <h5>h5,.h5 - Heading 5</h5>
+                                            <h6>h6,.h6 - Heading 6</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Utilities:</strong></p>
-                                    <div class="pad-sep-20">
+                                    <h4><strong>Utilities</strong></h4>
+                                    <div class="mg-sep-30">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p><mark>Highlighted text</mark></p>
-                                                <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                                                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                                                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                                                <p><u>This line of text will render as underlined</u></p>
-                                                <p><small>This line of text is meant to be treated as fine print.</small></p>
-                                                <p><strong>This line of text is rendered as bold text</strong></p>
-                                                <p><em>This line of text is rendered as italicized text</em></p>
-                                                <p>An abreviation of the word "attribute" is <abbr title="attribute">attr</abbr></p>
+                                            <div class="col-sm-12 col-md-6">
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <mark>Highlighted text</mark>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <del>This line of text is meant to be treated as deleted text.</del>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <s>This line of text is meant to be treated as no longer accurate.</s>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <ins>This line of text is meant to be treated as an addition to the document.</ins>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <u>This line of text will render as underlined</u>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <small>This line of text is meant to be treated as fine print.</small>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <strong>This line of text is rendered as bold text</strong>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        <em>This line of text is rendered as italicized text</em>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <p data-showcase="example">
+                                                        An abreviation of the word "attribute" is <abbr title="attribute">attr</abbr>
+                                                    </p>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
-                                        <div class="pad-top-40"></div>
+                                    </div>
+                                    <div class="mg-sep-30">
                                         <div class="alert alert-info" role="alert"><p><i class="fa fa-info-circle"></i> For showing and hiding content you can use either <code>.show</code> or <code>.hide</code> classes. The <code>.invisible</code> class can be used to toggle only the visibility of an element, meaning its display is not modified and the element can still affect the content of the document. You can hide an element to <b>all devices except screen readers</b> by using the <code>.sr-only</code> class. To show the element when it's focused upon (via keyboard "tab") you can combine <code>.sr-only</code> with <code>.sr-only-focusable</code>.</p></div>
                                         <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> You can <strong>enlarge the font-sizing</strong> of any element by adding one of the classes from the following range:<code>.fonts-up-120</code> to <code>.fonts-up-200</code>. Please take into consideration that these classes have a step of <code><strong>20</strong></code>.</div>
                                     </div>
+                                   </div>
+                            </div>
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h4><strong>Alignment</strong></h4>
+                                    <div class="pad-sep-20">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-left">This text is aligned to the left.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-center">This text is centered.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-right">This text is aligned to the right.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-justify">This text is supposed to be justified. Check it out on a smaller resolution.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-nowrap">No wrap text. This means that it won't break on another row when the text exceeds the container.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Alignment:</strong></p>
+                                    <h4><strong>Address</strong></h4>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p class="text-left">This text is aligned to the left.</p>
-                                                <p class="text-center">This text is centered.</p>
-                                                <p class="text-right">This text is aligned to the right.</p>
-                                                <p class="text-justify">This text is supposed to be justified. Check it out on a smaller resolution.</p>
-                                                <p class="text-nowrap">No wrap text. This means that it won't break on another row when the text exceeds the container.</p>
+                                            <div class="col-sm-12 col-md-6">
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <address>
+                                                            <strong>Dante International S.A.</strong><br>
+                                                            Swan Office Park, Windsor Building <br>
+                                                            Sos. Bucureşti Nord nr. 15-23, Voluntari, Ilfov<br>
+                                                            <abbr title="Phone">P:</abbr> +40 21 200 52 00/25
+                                                        </address>
+                                                        <address>
+                                                            <strong>Eric Norton</strong><br>
+                                                            <a href="mailto:#">eric.norton@emag.ro</a>
+                                                        </address>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -100,20 +250,55 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Address:</strong></p>
+                                    <h4><strong>Contextual classes</strong></h4>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <address>
-                                                    <strong>Dante International S.A.</strong><br>
-                                                    Swan Office Park, Windsor Building <br>
-                                                    Sos. Bucureşti Nord nr. 15-23, Voluntari, Ilfov<br>
-                                                    <abbr title="Phone">P:</abbr> +40 21 200 52 00/25
-                                                </address>
-                                                <address>
-                                                    <strong>Eric Norton</strong><br>
-                                                    <a href="mailto:#">eric.norton@emag.ro</a>
-                                                </address>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="bg-primary">This text has the brand-primary contextual background-color</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="bg-success">This text has the brand-success contextual background-color</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="bg-info">This text has the brand-info contextual background-color</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="bg-warning">This text has the brand-warning contextual background-color</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="bg-danger">This text has the brand-danger contextual background-color</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -121,16 +306,37 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Contextual classes:</strong></p>
+                                    <h4><strong>Text case and capitalization</strong></h4>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p><strong></strong></p>
-                                                <p class="bg-primary">This text has the brand-primary contextual background-color</p>
-                                                <p class="bg-success">This text has the brand-success contextual background-color</p>
-                                                <p class="bg-info">This text has the brand-info contextual background-color</p>
-                                                <p class="bg-warning">This text has the brand-warning contextual background-color</p>
-                                                <p class="bg-danger">This text has the brand-danger contextual background-color</p>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-lowercase">Lowercased text.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-uppercase">Uppercased text.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre><br>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p class="text-capitalize">Capitalized text.</p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -138,29 +344,36 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Text case and capitalization:</strong></p>
+                                    <h4><strong>Block quotes</strong></h4>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p class="text-lowercase">Lowercased text.</p>
-                                                <p class="text-uppercase">Uppercased text.</p>
-                                                <p class="text-capitalize">Capitalized text.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Block quotes:</strong></p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
+                                            <div class="col-sm-12 col-md-6">
                                                 <p><strong>Blockquote with subtext:</strong></p>
-                                                <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer></blockquote>
-                                                <br>
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <blockquote>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                        </blockquote>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
                                                 <p><strong>Alternate alignment blockquote:</strong></p>
-                                                <blockquote class="blockquote-reverse"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer></blockquote>
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <blockquote>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                        </blockquote>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -168,10 +381,10 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Print</strong></p>
-                                    <div class="pad-sep-20">
+                                    <h4><strong>Print</strong></h4>
+                                    <div class="mg-top-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
+                                            <div class="col-md-6">
                                                 <div class="table-responsive">
                                                     <table class="table">
                                                         <thead>
@@ -204,14 +417,71 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Code:</strong></p>
-                                    <p>You can wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+                                    <h4><strong>Simple preformatted block</strong></h4>
+                                    <div class="pad-sep-20">
+                                        <p>Use <code>&lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <pre><code>&lt;p&gt;This is a sample text...&lt;/p&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
+                                                    You may add the <mark>.pre-scrollable</mark> class, which will set a max-height of 350px and provide a y-axis scrollbar.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h4><strong>Variables</strong></h4>
+                                    <div class="pad-sep-20">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
+                                                    For indicating variables use the <code>&lt;var&gt;</code> tag.
+                                                </div>
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h4><strong>Sample output</strong></h4>
+                                    <div class="pad-sep-20">
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
+                                                    For indicating blocks sample output from a program use the  <code>&lt;samp&gt;</code> tag.
+                                                </div>
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -219,13 +489,31 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>User input:</strong></p>
-                                    <p>You can use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
+                                    <h4><strong>Descriptions</strong></h4>
+
                                     <div class="pad-sep-20">
+
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.</p>
-                                                <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
+                                                    You can display a list of terms with their associated descriptions.
+                                                </div>
+                                                <div>
+                                                    <div data-showcase="example">
+                                                        <dl>
+                                                            <dt>Description lists</dt>
+                                                            <dd>A description list is perfect for defining terms.</dd>
+                                                            <dt>Euismod</dt>
+                                                            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                                            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                                            <dt>Malesuada porta</dt>
+                                                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="html-source">
+                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -233,41 +521,30 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Preformatted block:</strong></p>
-                                    <p>Use <code>&lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+                                    <h4><strong>Horizontal descriptions</strong></h4>
                                     <div class="pad-sep-20">
+
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;p&gt;This is a sample text...&lt;/p&gt;</code></pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
-                                         You may optionally add the <mark>.pre-scrollable</mark> class, which will set a max-height of 350px and provide a y-axis scrollbar.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Variables:</strong></p>
-                                    <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Sample output:</strong></p>
-                                    <p>For indicating blocks sample output from a program use the  <code>&lt;samp&gt;</code> tag.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fonts-up-140"></i>
+                                                    Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.
+                                                </div>
+                                                <div data-showcase="example">
+                                                    <dl class="dl-horizontal">
+                                                        <dt>Description lists</dt>
+                                                        <dd>A description list is perfect for defining terms.</dd>
+                                                        <dt>Euismod</dt>
+                                                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                                        <dt>Malesuada porta</dt>
+                                                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                                        <dt>Felis euismod semper eget lacinia</dt>
+                                                        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -275,135 +552,52 @@
                             </div>
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <p><strong>Descriptions:</strong></p>
-                                    <p>You can display a list of terms with their associated descriptions.</p>
+                                    <h4><strong>Unordered list</strong></h4>
+
                                     <div class="pad-sep-20">
                                         <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <dl>
-                                                    <dt>Description lists</dt>
-                                                    <dd>A description list is perfect for defining terms.</dd>
-                                                    <dt>Euismod</dt>
-                                                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                                                    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                                                    <dt>Malesuada porta</dt>
-                                                    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Horizontal descriptions:</strong></p>
-                                    <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <dl class="dl-horizontal">
-                                                    <dt>Description lists</dt>
-                                                    <dd>A description list is perfect for defining terms.</dd>
-                                                    <dt>Euismod</dt>
-                                                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                                                    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                                                    <dt>Malesuada porta</dt>
-                                                    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                                                    <dt>Felis euismod semper eget lacinia</dt>
-                                                    <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Unordered list:</strong></p>
-                                    <p>A list of items in which the order does <strong>not</strong> explicitly matter.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
+                                            <div class="col-sm-12 col-md-4">
+                                                <p><strong>Unordered list</strong></p>
                                                 <ul>
                                                     <li>Lorem ipsum dolor sit amet</li>
-                                                    <li>Consectetur adipiscing elit</li>
-                                                    <li>Integer molestie lorem at massa</li>
-                                                    <li>Facilisis in pretium nisl aliquet</li>
                                                     <li>Nulla volutpat aliquam velit
                                                         <ul>
                                                             <li>Phasellus iaculis neque</li>
                                                             <li>Purus sodales ultricies</li>
-                                                            <li>Vestibulum laoreet porttitor sem</li>
-                                                            <li>Ac tristique libero volutpat at</li>
                                                         </ul>
                                                     </li>
-                                                    <li>Faucibus porta lacus fringilla vel</li>
-                                                    <li>Aenean sit amet erat nunc</li>
                                                     <li>Eget porttitor lorem</li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Ordered list:</strong></p>
-                                    <p>A list of items in which the order <strong>does</strong> explicitly matter.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
+
+                                            <div class="col-sm-12 col-md-4">
+                                                <p><strong>Ordered list</strong></p>
                                                 <ol>
                                                     <li>Lorem ipsum dolor sit amet</li>
                                                     <li>Consectetur adipiscing elit</li>
                                                     <li>Integer molestie lorem at massa</li>
                                                     <li>Facilisis in pretium nisl aliquet</li>
                                                     <li>Nulla volutpat aliquam velit</li>
-                                                    <li>Faucibus porta lacus fringilla vel</li>
-                                                    <li>Aenean sit amet erat nunc</li>
-                                                    <li>Eget porttitor lorem</li>
                                                 </ol>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Unstyled list:</strong></p>
-                                    <p>You can remove the default list-style and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
+
+
+                                            <div class="col-sm-12 col-md-4">
+                                                <p><strong>Unstyled list</strong></p>
                                                 <ul class="list-unstyled">
                                                     <li>Lorem ipsum dolor sit amet</li>
-                                                    <li>Consectetur adipiscing elit</li>
-                                                    <li>Integer molestie lorem at massa</li>
-                                                    <li>Facilisis in pretium nisl aliquet</li>
                                                     <li>Nulla volutpat aliquam velit
                                                         <ul>
                                                             <li>Phasellus iaculis neque</li>
                                                             <li>Purus sodales ultricies</li>
-                                                            <li>Vestibulum laoreet porttitor sem</li>
-                                                            <li>Ac tristique libero volutpat at</li>
                                                         </ul>
                                                     </li>
                                                     <li>Faucibus porta lacus fringilla vel</li>
-                                                    <li>Aenean sit amet erat nunc</li>
-                                                    <li>Eget porttitor lorem</li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Inline list:</strong></p>
-                                    <p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
+
+                                            <div class="col-sm-12"><br><br>
+                                                <p><strong>Inline list</strong></p>
                                                 <ul class="list-inline">
                                                     <li>First element</li>
                                                     <li>Second element</li>
@@ -412,234 +606,451 @@
                                                     <li>Fifth element</li>
                                                 </ul>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
                         </section>
                         <section id="css-tables" class="pad-top-20">
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>Tables</strong></h4>
-                                    <p><strong>Basic example:</strong></p>
-                                    <p>You can find out more about Bootstrap Tables by checking out <a href="http://getbootstrap.com/css/#tables" target="_blank"><u>getbootstrap.com/css/#tables</u></a>.</p>
-                                    <p>For basic styling—light padding and only horizontal dividers—add the base class <mark>.table</mark> to any <code>&lt;table&gt;</code>.</p>
-                                    <div class="pad-sep-20">
-                                        <table class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Brand</th>
-                                                <th>Product</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Mark</td>
-                                                <td>Jacobs</td>
-                                                <td>Mark Jacobs</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Tom</td>
-                                                <td>Ford</td>
-                                                <td>Tom Ford</td>
-                                                <td>Clothing, Suits</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Jimmy</td>
-                                                <td>Choo</td>
-                                                <td>Jimmy Choo</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Striped rows</strong></p>
-                                    <p>Use <mark>.table-striped</mark> to add zebra-striping to any table row within the  <code>&lt;table&gt;</code>.</p>
-                                    <div class="pad-sep-20">
-                                        <table class="table table-striped">
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Brand</th>
-                                                <th>Product</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Mark</td>
-                                                <td>Jacobs</td>
-                                                <td>Mark Jacobs</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Tom</td>
-                                                <td>Ford</td>
-                                                <td>Tom Ford</td>
-                                                <td>Clothing, Suits</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Jimmy</td>
-                                                <td>Choo</td>
-                                                <td>Jimmy Choo</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Bordered table</strong></p>
-                                    <p>Add <mark>.table-bordered</mark> for borders on all sides of the table and cells.</p>
-                                    <div class="pad-sep-20">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Brand</th>
-                                                <th>Product</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Mark</td>
-                                                <td>Jacobs</td>
-                                                <td>Mark Jacobs</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Tom</td>
-                                                <td>Ford</td>
-                                                <td>Tom Ford</td>
-                                                <td>Clothing, Suits</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Jimmy</td>
-                                                <td>Choo</td>
-                                                <td>Jimmy Choo</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Hover rows</strong></p>
-                                    <p>Add <mark>.table-hover</mark> to enable a hover state on table rows within a <code>&lt;table&gt;</code>.</p>
-                                    <div class="pad-sep-20">
-                                        <table class="table table-hover">
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Brand</th>
-                                                <th>Product</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Mark</td>
-                                                <td>Jacobs</td>
-                                                <td>Mark Jacobs</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Tom</td>
-                                                <td>Ford</td>
-                                                <td>Tom Ford</td>
-                                                <td>Clothing, Suits</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Jimmy</td>
-                                                <td>Choo</td>
-                                                <td>Jimmy Choo</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Condensed table</strong></p>
-                                    <p>Add <mark>.table-hover</mark> to make tables more compact by cutting cell padding in half.</p>
-                                    <div class="pad-sep-20">
-                                        <table class="table table-condensed">
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Brand</th>
-                                                <th>Product</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Mark</td>
-                                                <td>Jacobs</td>
-                                                <td>Mark Jacobs</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Tom</td>
-                                                <td>Ford</td>
-                                                <td>Tom Ford</td>
-                                                <td>Clothing, Suits</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>Jimmy</td>
-                                                <td>Choo</td>
-                                                <td>Jimmy Choo</td>
-                                                <td>Shoes</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Resposive table </strong></p>
-                                    <p>Create responsive tables by wrapping any <mark>.table</mark> in <mark>.table-responsive</mark> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
-                                    <div class="pad-sep-20">
-                                        <div class="table-responsive">
+                            <div class="show-panel code-example">
+                                <div class="show-panel-body code-example">
+                                    <h4><strong>Tables</strong></h4>
+
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Basic example</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic-table" aria-expanded="false" aria-controls="basic-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="basic-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#basic-table-html-source" aria-controls="basic-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="basic-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
                                             <table class="table">
                                                 <thead>
                                                 <tr>
                                                     <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Brand</th>
+                                                    <th>Product</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Jacobs</td>
+                                                    <td>Mark Jacobs</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Tom</td>
+                                                    <td>Ford</td>
+                                                    <td>Tom Ford</td>
+                                                    <td>Clothing, Suits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Jimmy</td>
+                                                    <td>Choo</td>
+                                                    <td>Jimmy Choo</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Striped rows</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#striped-table" aria-expanded="false" aria-controls="striped-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="striped-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#striped-table-html-source" aria-controls="striped-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="striped-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Brand</th>
+                                                    <th>Product</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Jacobs</td>
+                                                    <td>Mark Jacobs</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Tom</td>
+                                                    <td>Ford</td>
+                                                    <td>Tom Ford</td>
+                                                    <td>Clothing, Suits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Jimmy</td>
+                                                    <td>Choo</td>
+                                                    <td>Jimmy Choo</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Bordered table</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#bordered-table" aria-expanded="false" aria-controls="bordered-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="bordered-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#bordered-table-html-source" aria-controls="bordered-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="bordered-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Brand</th>
+                                                    <th>Product</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Jacobs</td>
+                                                    <td>Mark Jacobs</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Tom</td>
+                                                    <td>Ford</td>
+                                                    <td>Tom Ford</td>
+                                                    <td>Clothing, Suits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Jimmy</td>
+                                                    <td>Choo</td>
+                                                    <td>Jimmy Choo</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Hover rows</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#hover-rows-table" aria-expanded="false" aria-controls="hover-rows-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="hover-rows-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#hover-rows-table-html-source" aria-controls="hover-rows-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="hover-rows-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Brand</th>
+                                                    <th>Product</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Jacobs</td>
+                                                    <td>Mark Jacobs</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Tom</td>
+                                                    <td>Ford</td>
+                                                    <td>Tom Ford</td>
+                                                    <td>Clothing, Suits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Jimmy</td>
+                                                    <td>Choo</td>
+                                                    <td>Jimmy Choo</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Condensed table</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#condensed-table" aria-expanded="false" aria-controls="condensed-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="condensed-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#condensed-table-html-source" aria-controls="condensed-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="condensed-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                            <table class="table table-condensed">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Brand</th>
+                                                    <th>Product</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Jacobs</td>
+                                                    <td>Mark Jacobs</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Tom</td>
+                                                    <td>Ford</td>
+                                                    <td>Tom Ford</td>
+                                                    <td>Clothing, Suits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Jimmy</td>
+                                                    <td>Choo</td>
+                                                    <td>Jimmy Choo</td>
+                                                    <td>Shoes</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Resposive table</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#resposive-table" aria-expanded="false" aria-controls="resposive-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="resposive-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#resposive-table-html-source" aria-controls="resposive-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="resposive-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                    <tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-sm-8 module-description">
+                                                <h4><strong>Contextual classes</strong></h4>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#contextual-classes-table" aria-expanded="false" aria-controls="contextual-classes-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="contextual-classes-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#contextual-classes-table-html-source" aria-controls="contextual-classes-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="contextual-classes-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
                                                     <th>Table heading</th>
                                                     <th>Table heading</th>
                                                     <th>Table heading</th>
@@ -649,8 +1060,23 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
+                                                <tr class="active">
+                                                    <td>Active row</td>
+                                                    <td>Active row</td>
+                                                    <td>Active row</td>
+                                                    <td>Active row</td>
+                                                    <td>Active row</td>
+                                                    <td>Active row</td>
+                                                </tr>
                                                 <tr>
-                                                    <th scope="row">1</th>
+                                                    <td class="active">Active cell</td>
+                                                    <td class="success">Success cell</td>
+                                                    <td class="warning">Warning cell</td>
+                                                    <td class="danger">Danger cell</td>
+                                                    <td class="info">Info cell</td>
+                                                    <td class="info">Info cell</td>
+                                                </tr>
+                                                <tr>
                                                     <td>Table cell</td>
                                                     <td>Table cell</td>
                                                     <td>Table cell</td>
@@ -658,85 +1084,15 @@
                                                     <td>Table cell</td>
                                                     <td>Table cell</td>
                                                 </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                    <td>Table cell</td>
-                                                </tr>
-                                                <tbody>
+                                                </tbody>
                                             </table>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <p><strong>Contextual classes</strong></p>
-                                    <p>You can use contextual classes to color table rows or individual cells.</p>
-                                    <div class="pad-sep-20">
-                                        <table class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>Table heading</th>
-                                                <th>Table heading</th>
-                                                <th>Table heading</th>
-                                                <th>Table heading</th>
-                                                <th>Table heading</th>
-                                                <th>Table heading</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr class="active">
-                                                <td>Active row</td>
-                                                <td>Active row</td>
-                                                <td>Active row</td>
-                                                <td>Active row</td>
-                                                <td>Active row</td>
-                                                <td>Active row</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="active">Active cell</td>
-                                                <td class="success">Success cell</td>
-                                                <td class="warning">Warning cell</td>
-                                                <td class="danger">Danger cell</td>
-                                                <td class="info">Info cell</td>
-                                                <td class="info">Info cell</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Table cell</td>
-                                                <td>Table cell</td>
-                                                <td>Table cell</td>
-                                                <td>Table cell</td>
-                                                <td>Table cell</td>
-                                                <td>Table cell</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+
                         </section>
                         <section id="basic-forms" class="pad-top-20">
                             <div class="show-panel">
@@ -2018,6 +2374,8 @@
                         blowWorld(this.id, no);
                     }
                 });
+
+                showPageCode();
             });
         </script>
         <!-- DOCUMENT-READY:End --> 
