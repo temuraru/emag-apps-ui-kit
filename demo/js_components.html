@@ -574,31 +574,6 @@
                     </div>
                     <div class="show-panel ">
                         <div class="show-panel-body">
-                            <p><strong>Informational modals:</strong></p>
-                            <div class="pad-sep-20">
-                                <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default info-modal-button">Info modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default error-modal-button">Error modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default success-modal-button">Success modal</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
                             <p><strong>Alerts modals:</strong></p>
                             <div class="pad-sep-20">
                                 <div class="row">
@@ -1170,81 +1145,6 @@
                 modalSizing();
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
-
-                var infoModal = new PhotonModal({
-                    id: 'info_modal',
-                    title: 'Info modal',
-                    content: dummyModalContent,
-                    buttons: {},
-                    size: 'medium',
-                    type: 'info',
-                    closeOnClickOutside: false,
-                    showCloseButton: true
-                });
-
-                var warningModal = new PhotonModal({
-                    id: 'warning_modal',
-                    title: 'Warning modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'warning',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                var errorModal = new PhotonModal({
-                    id: 'danger_modal',
-                    title: 'Error modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'error',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                var successModal = new PhotonModal({
-                    id: 'success_modal',
-                    title: 'Success modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'success',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                $(document.body).on('click', '.info-modal-button', function () {
-                    infoModal.show();
-                });
-
-                $(document.body).on('click', '.warning-modal-button', function () {
-                    warningModal.show();
-                });
-
-                $(document.body).on('click', '.error-modal-button', function () {
-                    errorModal.show();
-                });
-
-                $(document.body).on('click', '.success-modal-button', function () {
-                    successModal.show();
-                });
 
                 $('#show_info').on('click',function(){
                     addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');

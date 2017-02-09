@@ -6331,48 +6331,6 @@ function initSidebarEvents() {
          */
         geFormStylingJson: function () {
             switch (this.defaults.type) {
-                case 'info':
-                    return {
-                        type: 'info',
-                        class: 'has-info',
-                        buttons: {
-                            cancel: {
-                                label: _cancelLabel,
-                                class: 'btn-default',
-                                icon: 'fa fa-times'
-                            }
-                        }
-                    };
-                case 'warning':
-                    return {
-                        type: 'warning',
-                        class: 'has-warning',
-                        buttons: {
-                            cancel: {
-                                label: _cancelLabel,
-                                class: 'btn-default',
-                                icon: 'fa fa-times'
-                            }
-                        }
-                    };
-                case 'error':
-                    return {
-                        type: 'error',
-                        class: 'has-error',
-                        buttons: {
-                            cancel: {
-                                label: _cancelLabel,
-                                class: 'btn-default',
-                                icon: 'fa fa-times'
-                            }
-                        }
-                    };
-                case 'success':
-                    return {
-                        type: 'success',
-                        class: 'has-success',
-                        buttons: {}
-                    };
                 case 'form':
                     return {
                         type: 'form',
