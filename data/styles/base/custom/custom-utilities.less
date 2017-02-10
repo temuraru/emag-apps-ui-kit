@@ -1,7 +1,7 @@
 ///* Positioning paddings: */
 ///* START */
 .generate-paddings(5);
-.generate-paddings(@n, @i: 1) when (@i =< 20) {
+.generate-paddings(@n, @i: 1) when (@i =< 10) {
   @x: (@i*5);
   .pad-top-@{x} {
     padding-top: (@i * 5px) !important;
@@ -28,7 +28,7 @@
 ///* Positioning margins: */
 ///* START */
 .generate-margins(5);
-.generate-margins(@n, @i: 1) when (@i =< 20) {
+.generate-margins(@n, @i: 1) when (@i =< 10) {
   @x: (@i*5);
   .mg-top-@{x} {
     margin-top: (@i * 5px) !important;
@@ -39,6 +39,10 @@
   .mg-sep-@{x} {
     margin-top: (@i * 5px) !important;
     margin-bottom: (@i * 5px) !important;
+  }
+  .mg-left-right-@{x} {
+    margin-left: (@i * 5px) !important;
+    margin-right: (@i * 5px) !important;
   }
   .mg-@{x} {
     margin: (@x * 1px) !important;
@@ -614,6 +618,10 @@
   margin: 0 !important;
 }
 
+.no-border {
+  border: 0 !important;
+}
+
 .no-border-top {
   border-top: 0 !important;
 }
@@ -709,6 +717,87 @@
     span.fancytree-title {
       &:hover {
         background: transparent;
+      }
+    }
+  }
+}
+
+.alert {
+
+  .fa {
+    font-size: 140%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  button.close {
+    .fa {
+      font-size: 100%;
+      margin-right: 0;
+      vertical-align: inherit;
+    }
+  }
+
+  &.alert-success {
+    .fa {
+      color: @state-success-text;
+    }
+
+    button.close {
+      .fa {
+        color: @black;
+      }
+    }
+  }
+
+  &.alert-success-full-color {
+    button.close {
+      .fa {
+        color: @white;
+      }
+    }
+  }
+
+  &.alert-info {
+    .fa {
+      color: @state-info-text;
+    }
+
+    button.close {
+      .fa {
+        color: @black;
+      }
+    }
+  }
+
+  &.alert-warning {
+    .fa {
+      color: @state-warning-text;
+    }
+
+    button.close {
+      .fa {
+        color: @black;
+      }
+    }
+  }
+
+  &.alert-danger {
+    .fa {
+      color: @state-danger-text;
+    }
+
+    button.close {
+      .fa {
+        color: @black;
+      }
+    }
+  }
+
+  &.alert-black {
+    button.close {
+      .fa {
+        color: @gray-76;
       }
     }
   }

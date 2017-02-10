@@ -260,6 +260,11 @@
                                 <span class="menu-text">Embeds</span>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/helper_classes.html">
+                                <span class="menu-text">Custom helper classes</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -569,31 +574,6 @@
                     </div>
                     <div class="show-panel ">
                         <div class="show-panel-body">
-                            <p><strong>Informational modals:</strong></p>
-                            <div class="pad-sep-20">
-                                <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default info-modal-button">Info modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default error-modal-button">Error modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default success-modal-button">Success modal</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
                             <p><strong>Alerts modals:</strong></p>
                             <div class="pad-sep-20">
                                 <div class="row">
@@ -630,16 +610,23 @@
                                 </p>
                             </div>
 
-                            <button type="button" id="show_info" class="btn btn-primary btn-sm">
+                            <button type="button" id="show_info" class="btn btn-default">
                                 Show info message
                             </button>
-                            <hr>
-                            <button type="button" id="show_warning" class="btn btn-default btn-sm">
+                            <button type="button" id="show_success" class="btn btn-default">
+                                Show success message
+                            </button>
+                            <button type="button" id="show_success_full_color" class="btn btn-default">
+                                Show success (full color) message
+                            </button>
+                            <button type="button" id="show_warning" class="btn btn-default">
                                 Show warning message
                             </button>
-                            <hr>
-                            <button type="button" id="show_error" class="btn btn-danger btn-sm">
+                            <button type="button" id="show_error" class="btn btn-default">
                                 Show error message
+                            </button>
+                            <button type="button" id="show_black" class="btn btn-default">
+                                Show black message
                             </button>
                         </div>
                     </div>
@@ -1159,89 +1146,23 @@
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
 
-                var infoModal = new PhotonModal({
-                    id: 'info_modal',
-                    title: 'Info modal',
-                    content: dummyModalContent,
-                    buttons: {},
-                    size: 'medium',
-                    type: 'info',
-                    closeOnClickOutside: false,
-                    showCloseButton: true
-                });
-
-                var warningModal = new PhotonModal({
-                    id: 'warning_modal',
-                    title: 'Warning modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'warning',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                var errorModal = new PhotonModal({
-                    id: 'danger_modal',
-                    title: 'Error modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'error',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                var successModal = new PhotonModal({
-                    id: 'success_modal',
-                    title: 'Success modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'success',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                $(document.body).on('click', '.info-modal-button', function () {
-                    infoModal.show();
-                });
-
-                $(document.body).on('click', '.warning-modal-button', function () {
-                    warningModal.show();
-                });
-
-                $(document.body).on('click', '.error-modal-button', function () {
-                    errorModal.show();
-                });
-
-                $(document.body).on('click', '.success-modal-button', function () {
-                    successModal.show();
-                });
-
                 $('#show_info').on('click',function(){
-                    addNotification("<span>Prepare yourself! This is an informational message: Information</span>","info");
+                    addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
+                });
+                $('#show_success').on('click',function(){
+                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success');
+                });
+                $('#show_success_full_color').on('click',function(){
+                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success-full-color');
                 });
                 $('#show_warning').on('click',function(){
-                    addNotification("<span>Are you prepared? This is a warning message: Warning</span>","warning");
+                    addNotification('<i class="fa fa-warning"></i><span>Are you prepared? This is a warning message: Warning</span>', 'warning');
                 });
                 $('#show_error').on('click',function(){
-                    addNotification("<span>Oh SNAP! This is an error message: Run!</span>","danger");
+                    addNotification('<i class="fa fa-minus-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
+                });
+                $('#show_black').on('click',function(){
+                    addNotification('<span>This is a black alert</span>', 'black');
                 });
 
                 $('#confirmation_alert').on('click', function () {
