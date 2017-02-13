@@ -87,10 +87,16 @@ function showPageCode() {
         var $exampleEl = $(this);
         var example = $exampleEl.html();
 
+
         if (example) {
             var formattedHtml = getFormattedCode(example);
-            $exampleEl.parent().find('.html-source code').append(formattedHtml);
 
+            if ($exampleEl.closest('.code-container')[0]) {
+                $exampleEl.closest('.code-container').find('.html-source code').append(formattedHtml);
+            } else {
+                $exampleEl.parent().find('.html-source code').append(formattedHtml);
+            }
+            
             var dependencies = $exampleEl.attr('data-dependencies');
             if (dependencies) {
                 $(getFormattedDependencies(dependencies)).each(function () {

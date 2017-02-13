@@ -126,11 +126,6 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.php#css-tooltips">
-                                <span class="menu-text">CSS Tooltips</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.php#css-labels-and-badges">
                                 <span class="menu-text">Labels and badges</span>
                             </a>
@@ -151,18 +146,13 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.php#css-jumbotron">
-                                <span class="menu-text">Page headers and jumbotrons</span>
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#css-page-header">
+                                <span class="menu-text">Page header</span>
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.php#css-embeds">
                                 <span class="menu-text">Embeds</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/helper_classes.php">
-                                <span class="menu-text">Custom helper classes</span>
                             </a>
                         </li>
                     </ul>
