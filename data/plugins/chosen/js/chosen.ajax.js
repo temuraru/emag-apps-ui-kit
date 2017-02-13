@@ -32,6 +32,34 @@
             }
         }
 
+        function calculateFieldWidth(field, chosenSearchContainer) {
+            var div, f_width, style, style_block, styles, w, _i, _len, fieldVal;
+            fieldVal = field.val();
+            style_block = "position:absolute; left: -1000px; top: -1000px; display:none;";
+
+            styles = ['font-size', 'font-style', 'font-weight', 'font-family', 'line-height', 'text-transform', 'letter-spacing'];
+            for (_i = 0, _len = styles.length; _i < _len; _i++) {
+                style = styles[_i];
+                style_block += style + ":" + field.css(style) + ";";
+            }
+
+            div = $('<div />', {
+                'style': style_block
+            });
+            div.text(fieldVal);
+            $('body').append(div);
+            w = div.width() + 25;
+            div.remove();
+
+            f_width = $(chosenSearchContainer).width();
+
+            if (w > f_width - 10) {
+                w = f_width - 10;
+            }
+
+            return w;
+        }
+
         select = this;
         chosenXhr = null;
         options = $.extend({}, defaultOptions, $(select).data(), settings);
@@ -154,7 +182,7 @@
                                     select.data().chosen.results_showing = true;
                                     select.data().chosen.no_results_clear();
                                     select.data().chosen.no_results(fieldVal);
-                                    field.css('width','auto');
+                                    field.width(calculateFieldWidth(field, chosenSearchContainer));
                                 } else {
                                     select.data().chosen.no_results(field.val());
                                 }
