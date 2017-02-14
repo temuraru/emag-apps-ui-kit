@@ -238,6 +238,59 @@
                                 </div>
                             </div>
 
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-sm-8 module-description">
+                                        <h4><b>Alerts modals</b></h4>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts-modals" aria-expanded="false" aria-controls="alerts-modals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="alerts-modals">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#alerts-modals-html-source" aria-controls="alerts-modals-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#alerts-modals-js-source" aria-controls="alerts-modals-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#alerts-modals-css-source" aria-controls="alerts-modals-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="alerts-modals-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="alerts-modals-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="alerts-modals-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" id="confirmation_alert_no_overlay" class="btn btn-default">Confirmation - No overlay</button>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" id="error_alert" class="btn btn-default">Error</button>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" id="error_alert_no_overlay" class="btn btn-default">Error - No overlay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -249,49 +302,11 @@
 
                     <div class="show-panel ">
                         <div class="show-panel-body">
-                            <p><strong>Informational modals:</strong></p>
-                            <div class="pad-sep-20">
-                                <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default info-modal-button">Info modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default warning-modal-button">Warning modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default error-modal-button">Error modal</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default success-modal-button">Success modal</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
                             <p><strong>Alerts modals:</strong></p>
                             <div class="pad-sep-20">
                                 <div class="row">
                                     <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                            <div class="btn-group" role="group">
-                                                <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" id="confirmation_alert_no_overlay" class="btn btn-default">Confirmation - No overlay</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" id="error_alert" class="btn btn-default">Error</button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" id="error_alert_no_overlay" class="btn btn-default">Error - No overlay</button>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -620,7 +635,20 @@
 
             modalSizing();
         </script>
-
+        <script type="text/javascript" data-dependency-name="modals_different_size">
+            $('#confirmation_alert').on('click', function () {
+                confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal');
+            });
+            $('#confirmation_alert_no_overlay').on('click', function () {
+                confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal', false);
+            });
+            $('#error_alert').on('click', function () {
+                errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal');
+            });
+            $('#error_alert_no_overlay').on('click', function () {
+                errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal', false);
+            });
+        </script>
 
         <script type="text/javascript">               
             $(document).ready(function () {
@@ -882,81 +910,6 @@
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
 
-                var infoModal = new PhotonModal({
-                    id: 'info_modal',
-                    title: 'Info modal',
-                    content: dummyModalContent,
-                    buttons: {},
-                    size: 'medium',
-                    type: 'info',
-                    closeOnClickOutside: false,
-                    showCloseButton: true
-                });
-
-                var warningModal = new PhotonModal({
-                    id: 'warning_modal',
-                    title: 'Warning modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'warning',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                var errorModal = new PhotonModal({
-                    id: 'danger_modal',
-                    title: 'Error modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'error',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                var successModal = new PhotonModal({
-                    id: 'success_modal',
-                    title: 'Success modal',
-                    content: dummyModalContent,
-                    buttons: {
-                        cancel: {
-                            label: 'OK',
-                            class: 'btn btn-default'
-                        }
-                    },
-                    size: 'medium',
-                    type: 'success',
-                    closeOnClickOutside: false,
-                    showCloseButton: false
-                });
-
-                $(document.body).on('click', '.info-modal-button', function () {
-                    infoModal.show();
-                });
-
-                $(document.body).on('click', '.warning-modal-button', function () {
-                    warningModal.show();
-                });
-
-                $(document.body).on('click', '.error-modal-button', function () {
-                    errorModal.show();
-                });
-
-                $(document.body).on('click', '.success-modal-button', function () {
-                    successModal.show();
-                });
-
                 $('#show_info').on('click',function(){
                     addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
                 });
@@ -976,18 +929,7 @@
                     addNotification('<span>This is a black alert</span>', 'black');
                 });
 
-                $('#confirmation_alert').on('click', function () {
-                    confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal');
-                });
-                $('#confirmation_alert_no_overlay').on('click', function () {
-                    confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal', false);
-                });
-                $('#error_alert').on('click', function () {
-                    errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal');
-                });
-                $('#error_alert_no_overlay').on('click', function () {
-                    errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal', false);
-                });
+
 
                 $('#block_page').on('click', function() {
                     $('body').blockControl({
