@@ -30,6 +30,9 @@ function getTypeOfCode($obj) {
         case 'link':
             return 'style-external';
             break;
+        case 'div':
+            return 'html-same-page';
+            break;
     }
 }
 
@@ -57,7 +60,7 @@ function getFormattedDependencies(dependencies) {
 }
 
 function generateDependencyCode($module,$dependency){
-    var $moduleParrent = $module.parent();
+    var $moduleParrent = ($module.closest('.code-container')[0] ? $module.closest('.code-container') : $module.parent()) ;
     switch (getTypeOfCode($dependency)) {
         case 'script-external':
             $moduleParrent.find('.js-source code').append('&lt;script src="' + $dependency.attr('src') + '"&gt;&lt;\/script&gt;\n');
@@ -77,6 +80,12 @@ function generateDependencyCode($module,$dependency){
             formattedStyle = "\n&lt;style&gt;\n" + formattedStyle + "&lt;/style&gt;\n";
             $moduleParrent.find('.css-source code').append(formattedStyle);
             break;
+        case 'html-same-page':
+            var codeStyle = $dependency.html();
+            var formattedStyle = getFormattedCode(codeStyle);
+            formattedStyle = "\n" + formattedStyle + "\n";
+            $moduleParrent.find('.html-source code').append(formattedStyle);
+            break;
     }
 }
 
@@ -91,11 +100,8 @@ function showPageCode() {
         if (example) {
             var formattedHtml = getFormattedCode(example);
 
-            if ($exampleEl.closest('.code-container')[0]) {
-                $exampleEl.closest('.code-container').find('.html-source code').append(formattedHtml);
-            } else {
-                $exampleEl.parent().find('.html-source code').append(formattedHtml);
-            }
+            var $moduleParrent = ($exampleEl.closest('.code-container')[0] ? $exampleEl.closest('.code-container') : $exampleEl.parent()) ;
+            $moduleParrent.find('.html-source code').append(formattedHtml);
             
             var dependencies = $exampleEl.attr('data-dependencies');
             if (dependencies) {

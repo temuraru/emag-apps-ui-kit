@@ -28,45 +28,13 @@
                                 <p><b>AJAX Modals</b></p>
                             </div>
                         </div>
-                        <section id="summernoteStandard" class="pad-top-40">
 
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
-                                    <p><strong>Works great with the standard Bootstrap version</strong></p>
-                                    <div class="pad-sep-20">
-                                        <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
-                                    </div>
-                                </div>
-                                <div class="show-panel-footer">
-                                    <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script type=&quot;text/javascript&quot;&gt;
-var modalTest = new PhotonModal({
-    id: 'testModal',
-    title: 'This is an AJAX modal',
-    useAjax: true,
-    ajaxModalParams: {
-        method: 'POST',
-        url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
-    },
-    size: 'default',
-    type: 'preview',
-    buttons: {
-        save: {
-            label: 'Save',
-            class: 'btn-success',
-            closeModal: true
-        },
-        cancel: {
-            label: 'Cancel',
-            class: 'btn-default',
-            closeModal: true
-        }
-    }
-});
-&lt;/script&gt;</code></pre>
-                                </div>
-                            </div>
-                        </section>                                        
+
+
+
+
+
+
                     </div>
                 </div>
                 <!-- CONTENT:End -->
@@ -92,41 +60,44 @@ var modalTest = new PhotonModal({
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">
-            var modalTest = new PhotonModal({
-                id: 'testModal',
-                title: 'This is an AJAX modal',
-                useAjax: true,
-                ajaxModalParams: {
-                    method: 'POST',
-                    url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
-                },
-                size: 'default',
-                type: 'preview',
-                buttons: {
-                    save: {
-                        label: 'Save',
-                        class: 'btn-success',
-                        closeModal: true
+        <script type="text/javascript" data-dependency-name="ajax_modal">
+                var modalTest = new PhotonModal({
+                    id: 'testModal',
+                    title: 'This is an AJAX modal',
+                    useAjax: true,
+                    ajaxModalParams: {
+                        method: 'POST',
+                        url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
                     },
-                    cancel: {
-                        label: 'Cancel',
-                        class: 'btn-default',
-                        closeModal: true
+                    size: 'default',
+                    type: 'preview',
+                    buttons: {
+                        save: {
+                            label: 'Save',
+                            class: 'btn-success',
+                            closeModal: true
+                        },
+                        cancel: {
+                            label: 'Cancel',
+                            class: 'btn-default',
+                            closeModal: true
+                        }
                     }
-                }
-            });
+                });
 
+                $('#ajax_modal_start').on('click', function(){
+                    modalTest.show();
+                });
+        </script>
+        <script type="text/javascript">
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
                 demoHelpers();  // Require demo_helpers.js
 
-                $('#ajax_modal_start').on('click', function(){
-                    modalTest.show();
-                });
 
 
+                showPageCode();
             });
         </script>
         <!-- DOCUMENT-READY:End -->

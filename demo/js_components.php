@@ -43,54 +43,108 @@
                         </div>
                     </div>
                 </section>
-                <section class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Modals</strong></h4>
-                            <p><strong>Default styling:</strong></p>
 
-                            <div class="show-example-modal" data-example-id="static-modal">
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><i class="fa fa-close"
-                                                                              aria-hidden="true"></i>
-                                                </button>
-                                                <h4 class="modal-title">Modal title</h4>
+
+
+                <section id="modals" class="pad-top-30">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h4><strong>Modals</strong></h4>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Default styling</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed hide" data-toggle="collapse" href="#default-modal-style" aria-expanded="false" aria-controls="default-modal-style"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="default-modal-style">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#default-modal-style-html-source" aria-controls="default-modal-style-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#default-modal-style-js-source" aria-controls="default-modal-style-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#default-modal-style-css-source" aria-controls="default-modal-style-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="default-modal-style-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="default-modal-style-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="default-modal-style-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15 no-padding-bottom">
+                                            <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
+                                                functionality and smart defaults.</p>
+                                            <div class="alert alert-info">
+                                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
+                                                    supported</strong> Be sure not to open a modal while another is still
+                                                visible. Showing more than one modal at a time requires custom code.
                                             </div>
-                                            <div class="modal-body">
-                                                <p>Modal with form</p>
-                                                <form id="exampleForm1" action="" method="post">
-                                                    <fieldset>
-                                                        <legend class="sr-only">Simple form</legend>
-                                                        <div class="form-group has-error">
-                                                            <label class="control-label required" for="exampleInputEmail1">Email address</label>
-                                                            <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
-                                                            <div class="help-block">Please complete this field.</div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label required" for="exampleInputPassword1">Password</label>
-                                                            <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
-                                                        </div>
-                                                    </fieldset>
-                                                </form>
+                                            <div class="alert alert-info no-margin-bottom">
+                                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
+                                                    placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
+                                                    id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
+                                                components affecting the modal's appearance and/or functionality.
                                             </div>
-                                            <div class="modal-footer">
-                                                <div class="pull-left">
-                                                    <div class="form-sep">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="pad-15" data-showcase="example">
+                                    <div class="show-example-modal" data-example-id="static-modal">
+                                        <div class="modal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog pull-left">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                                                        <h4 class="modal-title">Modal title</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Modal with form</p>
+                                                        <form id="exampleForm1" action="" method="post">
+                                                            <fieldset>
+                                                                <legend class="sr-only">Simple form</legend>
+                                                                <div class="form-group has-error">
+                                                                    <label class="control-label required" for="exampleInputEmail1">Email address</label>
+                                                                    <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="example@example.com" required>
+                                                                    <div class="help-block">Please complete this field.</div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label required" for="exampleInputPassword1">Password</label>
+                                                                    <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="password" required>
+                                                                </div>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div class="pull-left">
+                                                            <div class="form-sep">
                                                             <span
                                                                 class="required">Some fields may be required.</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right panel-controls">
+                                                            <button type="button" id="special_submit"
+                                                                    class="btn btn-success"><span>Save</span>
+                                                            </button>
+                                                            <button type="reset" id="special_reset"
+                                                                    class="btn btn-default" data-dismiss="modal">
+                                                                <span>Cancel</span></button>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="pull-right panel-controls">
-                                                    <button type="button" id="special_submit"
-                                                            class="btn btn-success"><span>Save</span>
-                                                    </button>
-                                                    <button type="reset" id="special_reset"
-                                                            class="btn btn-default" data-dismiss="modal">
-                                                        <span>Cancel</span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,52 +152,101 @@
                                 </div>
                             </div>
 
-                            <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
-                                functionality and smart defaults.</p>
-                            <div class="alert alert-info">
-                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
-                                    supported</strong> Be sure not to open a modal while another is still
-                                visible. Showing more than one modal at a time requires custom code.
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-sm-8 module-description">
+                                        <h4><b>Ajax modal</b></h4>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#ajax-modal" aria-expanded="false" aria-controls="ajax-modal"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="ajax-modal">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#ajax-modal-html-source" aria-controls="ajax-modal-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#ajax-modal-js-source" aria-controls="ajax-modal-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#ajax-modal-css-source" aria-controls="ajax-modal-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="ajax-modal-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="ajax-modal-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="ajax-modal-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,ajax_modal,jquery">
+                                    <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
+                                </div>
                             </div>
-                            <div class="alert alert-info">
-                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
-                                    placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
-                                    id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
-                                components affecting the modal's appearance and/or functionality.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <p><strong>Demo modals with different sizing:</strong></p>
-                            <div class="pad-sep-20">
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-sm-8 module-description">
+                                        <h4><b>Modals with different sizing</b></h4>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#modals-different-size" aria-expanded="false" aria-controls="modals-different-size"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="modals-different-size">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#modals-different-size-html-source" aria-controls="modals-different-size-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#modals-different-size-js-source" aria-controls="modals-different-size-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#modals-different-size-css-source" aria-controls="modals-different-size-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="modals-different-size-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="modals-different-size-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="modals-different-size-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group btn-group-justified" role="group"
-                                             aria-label="...">
-                                            <div class="btn-group" role="group">
-                                                <button type="button" id="mySmallDemoModal"
-                                                        class="btn btn-default" data-toggle="modal"
-                                                        data-target="#myDemoModal">Small
-                                                </button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default"
-                                                        data-toggle="modal" data-target="#myDemoModal">Normal
-                                                </button>
-                                            </div>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" id="myLargeDemoModal"
-                                                        class="btn btn-default" data-toggle="modal"
-                                                        data-target="#myDemoModal">Large
-                                                </button>
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,modals_different_size,modal_in_page">
+                                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" id="mySmallDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Small</button>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Normal</button>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" id="myLargeDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Large</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+                </section>
+
+
+
+                <section class="pad-top-20">
+
+
                     <div class="show-panel ">
                         <div class="show-panel-body">
                             <p><strong>Informational modals:</strong></p>
@@ -411,46 +514,53 @@
 </div>
 <!-- PAGE:End -->
 
-<!-- POPUPS:Start -->
-<div id="popSpace">
-    <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fa fa-remove"></i></span></button>
-                    <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
-                </div>
-                <div class="modal-body">
-                    <h2>Suspendisse rutrum</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="pad-sep-20">
-                        <span class="caption">Nam scelerisque nunc</span>
-                    </div>
-                    <p>
-                        Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Mauris tristique pellentesque ante ullamcorper aliquam. Maecenas dignissim porta turpis, interdum tempus velit aliquam ac. Morbi a risus a purus porttitor efficitur. Donec laoreet condimentum nisi nec bibendum. Sed non neque mollis, rutrum tellus ac, porttitor elit. Pellentesque sed magna nisi. Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc. Quisque vel quam quis sapien ornare porta nec a purus. Nullam finibus convallis mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <div class="pull-right panel-controls">
-                        <button class="btn btn-success" data-dismiss="modal"><span>Yeah, got it</span></button>
+        <!-- POPUPS:Start -->
+        <div id="popSpace" data-dependency-name="modal_in_page">
+            <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+                            <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h2>Suspendisse rutrum</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="pad-sep-20">
+                                <span class="caption">Nam scelerisque nunc</span>
+                            </div>
+                            <p>
+                                Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Pellentesque sed magna nisi.<br>
+                                Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="pull-right panel-controls">
+                                <button class="btn btn-success" data-dismiss="modal"><span>Yeah, got it</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+
+        <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether"></script>
+
+        <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
+        <script src="../dist/js/demo_helpers.js"></script>
+
+
         
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
 
-        <script src="../dist/plugins/tether/tether.min.js"></script>
 
-        <script src="../dist/js/main_script.min.js"></script>
-        <script src="../dist/js/demo_helpers.js"></script>
 
         <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
         <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
@@ -459,6 +569,59 @@
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
+        <script type="text/javascript" data-dependency-name="ajax_modal">
+            var modalTest = new PhotonModal({
+                id: 'testModal',
+                title: 'This is an AJAX modal',
+                useAjax: true,
+                ajaxModalParams: {
+                    method: 'POST',
+                    url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
+                },
+                size: 'default',
+                type: 'preview',
+                buttons: {
+                    save: {
+                        label: 'Save',
+                        class: 'btn-success',
+                        closeModal: true
+                    },
+                    cancel: {
+                        label: 'Cancel',
+                        class: 'btn-default',
+                        closeModal: true
+                    }
+                }
+            });
+
+            $('#ajax_modal_start').on('click', function(){
+                modalTest.show();
+            });
+        </script>
+        <script type="text/javascript" data-dependency-name="modals_different_size">
+            function modalSizing() {
+                $('#mySmallDemoModal').on('click', function () {
+                    var mode = $(this).data('target');
+                    $(mode).find('.modal-dialog').addClass('modal-sm');
+                    $('#myModalLabel').html('Standard modal - Small');
+                });
+
+                $('#myLargeDemoModal').on('click', function () {
+                    var mode = $(this).data('target');
+                    $(mode).find('.modal-dialog').addClass('modal-lg');
+                    $('#myModalLabel').html('Standard modal - Large');
+                });
+
+                $('#myDemoModal').on('hidden.bs.modal', function (e) {
+                    $(this).find('.modal-dialog').attr('class', 'modal-dialog');
+                    $('#myModalLabel').html('Standard modal');
+                });
+            }
+
+            modalSizing();
+        </script>
+
+
         <script type="text/javascript">               
             $(document).ready(function () {
                 console.log('Ready, Captain!');
@@ -715,26 +878,7 @@
 
 
 
-                //This function is just fo sho. You don't really have to include it in your app, man.
-                function modalSizing() {
-                    $('#mySmallDemoModal').on('click', function () {
-                        var mode = $(this).data('target');
-                        $(mode).find('.modal-dialog').addClass('modal-sm');
-                        $('#myModalLabel').html('Standard modal - Small');
-                    });
-                    $('#myLargeDemoModal').on('click', function () {
-                        var mode = $(this).data('target');
-                        $(mode).find('.modal-dialog').addClass('modal-lg');
-                        $('#myModalLabel').html('Standard modal - Large');
-                    });
-                    $('#myDemoModal').on('hidden.bs.modal', function (e) {
-                        $(this).find('.modal-dialog').attr('class', 'modal-dialog');
-                        $('#myModalLabel').html('Standard modal');
-                    });
-                }
 
-                
-                modalSizing();
 
                 var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
 
@@ -859,6 +1003,8 @@
                     section.blockControl();
                     setTimeout(function(){section.unblockControl()}, 3000);
                 });
+
+                showPageCode();
             });
         </script>
         <!-- DOCUMENT-READY:End -->
