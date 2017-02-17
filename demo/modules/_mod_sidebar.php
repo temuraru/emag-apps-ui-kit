@@ -169,11 +169,6 @@
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.php">
-                                <span class="menu-text">AJAX Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.php#js-block-ui">
                                 <span class="menu-text">Block UI</span>
                             </a>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../dist/plugins/css3spinners/css3-spinners.1.2.2.min.css">
 
     <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
-    <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
 
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
@@ -44,13 +44,28 @@
                     </div>
                 </section>
 
-
-
                 <section id="modals" class="pad-top-30">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h4><strong>Modals</strong></h4>
+                            <h2><strong>Modals</strong></h2>
+                            <div class="row">
+                                <div class="col-sm-12 mg-top-20">
+                                    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
+                                        functionality and smart defaults.</p>
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-info-circle"></i><strong> Multiple open modals not
+                                            supported</strong> Be sure not to open a modal while another is still
+                                        visible. Showing more than one modal at a time requires custom code.
+                                    </div>
+                                    <div class="alert alert-info no-margin-bottom">
+                                        <i class="fa fa-info-circle"></i><strong> Modal markup
+                                            placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
+                                            id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
+                                        components affecting the modal's appearance and/or functionality.
+                                    </div>
+                                </div>
 
+                            </div>
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
                                     <div class="col-xs-8 module-description">
@@ -82,26 +97,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="pad-15 no-padding-bottom">
-                                            <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
-                                                functionality and smart defaults.</p>
-                                            <div class="alert alert-info">
-                                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Multiple open modals not
-                                                    supported</strong> Be sure not to open a modal while another is still
-                                                visible. Showing more than one modal at a time requires custom code.
-                                            </div>
-                                            <div class="alert alert-info no-margin-bottom">
-                                                <i class="fa fa-warning fonts-up-140"></i>&nbsp;<strong>Modal markup
-                                                    placement</strong> Try to place a modal's HTML code inside the <code>&lt;div
-                                                    id="popSpace"&gt;&lt;div&gt;</code> in your document to avoid other
-                                                components affecting the modal's appearance and/or functionality.
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                </div>
 
                                 <div class="pad-15" data-showcase="example">
                                     <div class="show-example-modal" data-example-id="static-modal">
@@ -137,12 +133,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="pull-right panel-controls">
-                                                            <button type="button" id="special_submit"
-                                                                    class="btn btn-success"><span>Save</span>
-                                                            </button>
-                                                            <button type="reset" id="special_reset"
-                                                                    class="btn btn-default" data-dismiss="modal">
-                                                                <span>Cancel</span></button>
+                                                            <button type="button" id="special_submit" class="btn btn-success"><span>Save</span></button>
+                                                            <button type="reset" id="special_reset" class="btn btn-default" data-dismiss="modal"><span>Cancel</span></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -154,10 +146,10 @@
 
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
-                                    <div class="col-sm-8 module-description">
+                                    <div class="col-xs-8 module-description">
                                         <h4><b>Ajax modal</b></h4>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-xs-4">
                                         <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#ajax-modal" aria-expanded="false" aria-controls="ajax-modal"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
@@ -190,10 +182,10 @@
 
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
-                                    <div class="col-sm-8 module-description">
+                                    <div class="col-xs-8 module-description">
                                         <h4><b>Modals with different sizing</b></h4>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-xs-4">
                                         <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#modals-different-size" aria-expanded="false" aria-controls="modals-different-size"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
@@ -240,10 +232,10 @@
 
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
-                                    <div class="col-sm-8 module-description">
+                                    <div class="col-xs-8 module-description">
                                         <h4><b>Alerts modals</b></h4>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-xs-4">
                                         <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts-modals" aria-expanded="false" aria-controls="alerts-modals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
@@ -271,7 +263,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals">
                                             <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                 <div class="btn-group" role="group">
                                                     <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
@@ -295,223 +287,475 @@
                     </div>
                 </section>
 
-
-
-                <section class="pad-top-20">
-
-
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <p><strong>Alerts modals:</strong></p>
-                            <div class="pad-sep-20">
-                                <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-
+                <section id="js-custom-error-messages" class="pad-top-30">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>Custom messages</strong></h2>
+                            <div class="row">
+                                <div class="col-sm-12 mg-top-20">
+                                    <div class="alert alert-info no-margin-bottom" role="alert">
+                                        <p><i class="fa fa-info-circle"></i>Based on the bootstrap-notify plugin with documentation on <a href="http://bootstrap-notify.remabledesigns.com/" class="alert-link">http://bootstrap-notify.remabledesigns.com/</a></p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="js-custom-error-messages" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Custom error messages</strong></h4>
-
-                            <div class="alert alert-info" role="alert">
-                                <p>
-                                    <i class="fa fa-info-circle"></i>
-                                    Based on the bootstrap-notify plugin with documentation on <a href="http://bootstrap-notify.remabledesigns.com/" class="alert-link">http://bootstrap-notify.remabledesigns.com/</a>
-                                </p>
-                            </div>
-
-                            <button type="button" id="show_info" class="btn btn-default">
-                                Show info message
-                            </button>
-                            <button type="button" id="show_success" class="btn btn-default">
-                                Show success message
-                            </button>
-                            <button type="button" id="show_success_full_color" class="btn btn-default">
-                                Show success (full color) message
-                            </button>
-                            <button type="button" id="show_warning" class="btn btn-default">
-                                Show warning message
-                            </button>
-                            <button type="button" id="show_error" class="btn btn-default">
-                                Show error message
-                            </button>
-                            <button type="button" id="show_black" class="btn btn-default">
-                                Show black message
-                            </button>
-                        </div>
-                    </div>
-                </section>
-                <section id="js-tooltips" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Tooltips</strong></h4>
-                            <div class="pad-sep-40" data-showcase="example">
-                                <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                        data-placement="left" title="Tooltip type danger" data-type="danger">
-                                    Tooltip type danger
-                                </button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                        data-placement="bottom" title="Tooltip type warning"
-                                        data-type="warning">Tooltip type warning
-                                </button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                        data-placement="right" title="Tooltip type default" data-type="default">
-                                    Tooltip type default
-                                </button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip"
-                                        data-placement="top" title="Tooltip without type">Tooltip without type
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="js-tabs" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Tabs</strong></h4>
-                            <div>
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
-                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
-                                </ul>
-
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="home">
-                                        <table id="grid_table" class="table table-bordered"></table>
-                                        <div id="grid_pager"></div>
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Messages types</b></h4>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="profile">
-                                        <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
-                                        <div id="grid_pager_with_inline_edit"></div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#messages-types" aria-expanded="false" aria-controls="messages-types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="messages-types">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#messages-types-html-source" aria-controls="messages-types-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#messages-types-js-source" aria-controls="messages-types-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#messages-types-css-source" aria-controls="messages-types-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="messages-types-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="messages-types-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="messages-types-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,messages_types">
+                                            <button type="button" id="show_info" class="btn btn-default">
+                                                Show info message
+                                            </button>
+                                            <button type="button" id="show_success" class="btn btn-default">
+                                                Show success message
+                                            </button>
+                                            <button type="button" id="show_success_full_color" class="btn btn-default">
+                                                Show success (full color) message
+                                            </button>
+                                            <button type="button" id="show_warning" class="btn btn-default">
+                                                Show warning message
+                                            </button>
+                                            <button type="button" id="show_error" class="btn btn-default">
+                                                Show error message
+                                            </button>
+                                            <button type="button" id="show_black" class="btn btn-default">
+                                                Show black message
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
 
-                <section id="js-popovers" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Popovers</strong></h4>
-                            <div class="pad-sep-40" data-showcase="example">
-                                <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
-                                <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
-                                <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
-                                <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
+                <section id="js-tooltips" class="pad-top-30">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>Tooltips</strong></h2>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Types of tooltips</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#tooltips" aria-expanded="false" aria-controls="tooltips"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="tooltips">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tooltips-html-source" aria-controls="tooltips-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#tooltips-js-source" aria-controls="tooltips-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#tooltips-css-source" aria-controls="tooltips-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="tooltips-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="tooltips-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="tooltips-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip type danger" data-type="danger">Tooltip type danger</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip type warning" data-type="warning">Tooltip type warning</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip type default" data-type="default">Tooltip type default</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip without type">Tooltip without type</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
-                <section id="js-utilities" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Utilities:</strong></h4>
-                            <p>A couple of HTML snippets with javascript enhancements:</p>
-                            <p><strong>Upload file input type:</strong></p>
-                            <div class="pad-sep-20">
+
+                <section id="js-popovers" class="pad-top-30">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>Popovers</strong></h2>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Types of popovers</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#popovers" aria-expanded="false" aria-controls="popovers"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="popovers">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#popovers-html-source" aria-controls="popovers-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#popovers-js-source" aria-controls="popovers-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#popovers-css-source" aria-controls="popovers-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="popovers-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="popovers-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="popovers-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" aria-label="..."
-                                                       placeholder="Tell me your fathers name">
-                                                <div class="input-group-btn">
-                                                    <label for="testfile3" class="btn btn-primary">
-                                                        <i class="fa fa-upload"></i>
-                                                        <span>Upload his picture</span>
-                                                        <input type="file" name="testfile3" id="testfile3"
-                                                               class="form-input-control"
-                                                               data-multiple-caption="{count} files selected"
-                                                               multiple="">
-                                                    </label>
-                                                    <button class="btn btn-success" type="button">Go!</button>
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
+                                            <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
+                                            <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
+                                            <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="js-tabs" class="pad-top-30">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>Tabs</strong></h2>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Basic example</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#tabs" aria-expanded="false" aria-controls="tabs"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="tabs">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tabs-html-source" aria-controls="tabs-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#tabs-js-source" aria-controls="tabs-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#tabs-css-source" aria-controls="tabs-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="tabs-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="tabs-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="tabs-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tabs,grid_locale,jqGrid,jqgrid_css">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
+                                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">jqGrid with inline editing</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane active" id="home">
+                                                    <table id="grid_table" class="table table-bordered"></table>
+                                                    <div id="grid_pager"></div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="profile">
+                                                    <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
+                                                    <div id="grid_pager_with_inline_edit"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <p><strong>Checkboxes disguised as buttons:</strong></p>
-                            <p>Add
-                                <mark>data-toggle="buttons"</mark>
-                                to a
-                                <mark>.btn-group</mark>
-                                containing checkbox or radio inputs to enable toggling in their respective
-                                styles.
-                            </p>
-                            <div class="pad-sep-20">
-                                <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn btn-primary active">
-                                                <input type="checkbox" autocomplete="off" checked> Checkbox 1
-                                                (pre-checked)
-                                            </label>
-                                            <label class="btn btn-primary">
-                                                <input type="checkbox" autocomplete="off"> Checkbox 2
-                                            </label>
-                                            <label class="btn btn-primary">
-                                                <input type="checkbox" autocomplete="off"> Checkbox 3
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <p><strong>Radio buttons disguised as regular buttons:</strong></p>
-                            <div class="pad-sep-20">
-                                <div class="row">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn btn-primary active">
-                                                <input type="radio" name="options" id="option1"
-                                                       autocomplete="off" checked> Radio 1 (preselected)
-                                            </label>
-                                            <label class="btn btn-primary">
-                                                <input type="radio" name="options" id="option2"
-                                                       autocomplete="off"> Radio 2
-                                            </label>
-                                            <label class="btn btn-primary">
-                                                <input type="radio" name="options" id="option3"
-                                                       autocomplete="off"> Radio 3
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
+
+                            <div>
+
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="js-block-ui" class="pad-top-20">
-                    <div class="show-panel ">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>Block UI</strong></h4>
 
-                            <div class="alert alert-info" role="alert">
-                                <p>
-                                    <i class="fa fa-info-circle"></i>
-                                    Based on the Block UI plugin documented on: <a href="http://malsup.com/jquery/block/" class="alert-link">jQuery BlockUI Plugin</a>
-                                </p>
+                <section id="js-utilities" class="pad-top-30">
+                    <div class="show-panel code-example"">
+                        <div class="show-panel-body code-example"">
+                            <h2><strong>Utilities</strong></h2>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Upload file input type</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#upload-file" aria-expanded="false" aria-controls="upload-file"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="upload-file">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#upload-file-html-source" aria-controls="upload-file-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#upload-file-js-source" aria-controls="upload-file-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#upload-file-css-source" aria-controls="upload-file-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="upload-file-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="upload-file-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="upload-file-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" aria-label="..." placeholder="Tell me your fathers name">
+                                                    <div class="input-group-btn">
+                                                        <label for="testfile3" class="btn btn-primary">
+                                                            <i class="fa fa-upload"></i>
+                                                            <span>Upload his picture</span>
+                                                            <input type="file" name="testfile3" id="testfile3" class="form-input-control" data-multiple-caption="{count} files selected" multiple="">
+                                                        </label>
+                                                        <button class="btn btn-success" type="button">Go!</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <button type="button" id="block_page" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block page</span></button>
-                            <button type="button" id="block_section" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block this section</span></button>
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>Checkboxes disguised as buttons</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#checkboxes-as-buttons" aria-expanded="false" aria-controls="checkboxes-as-buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="checkboxes-as-buttons">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#checkboxes-as-buttons-html-source" aria-controls="checkboxes-as-buttons-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#checkboxes-as-buttons-js-source" aria-controls="checkboxes-as-buttons-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#checkboxes-as-buttons-css-source" aria-controls="checkboxes-as-buttons-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="checkboxes-as-buttons-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="checkboxes-as-buttons-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="checkboxes-as-buttons-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15">
+                                            <p>Add <mark>data-toggle="buttons"</mark> to a  <mark>.btn-group</mark> containing checkbox or radio inputs to enable toggling in their respective styles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="checkbox" autocomplete="off"> Checkbox 2
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="checkbox" autocomplete="off"> Checkbox 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>Radio buttons disguised as regular buttons</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#radio-as-regular-buttons" aria-expanded="false" aria-controls="radio-as-regular-buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="radio-as-regular-buttons">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#radio-as-regular-buttons-html-source" aria-controls="radio-as-regular-buttons-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#radio-as-regular-buttons-js-source" aria-controls="radio-as-regular-buttons-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#radio-as-regular-buttons-css-source" aria-controls="radio-as-regular-buttons-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="radio-as-regular-buttons-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="radio-as-regular-buttons-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="radio-as-regular-buttons-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section id="js-block-ui" class="pad-top-30">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>Block UI</strong></h2>
+
+                            <div class="row">
+                                <div class="col-sm-12 mg-top-20">
+                                    <div class="alert alert-info no-margin-bottom" role="alert">
+                                        <p><i class="fa fa-info-circle"></i>Based on the Block UI plugin documented on: <a href="http://malsup.com/jquery/block/" class="alert-link">jQuery BlockUI Plugin</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Demo</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#block-ui" aria-expanded="false" aria-controls="block-ui"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="block-ui">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#block-ui-html-source" aria-controls="block-ui-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#block-ui-js-source" aria-controls="block-ui-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#block-ui-css-source" aria-controls="block-ui-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="block-ui-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="block-ui-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="block-ui-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,block_ui">
+                                            <button type="button" id="block_page" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block page</span></button>
+                                            <button type="button" id="block_section" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block this section</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -569,96 +813,144 @@
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
-
+        <!-- SCRIPTS:End -->
 
         
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
 
 
-
         <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
-        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
-        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="grid_locale"></script>
+        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqGrid"></script>
 
-        <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript" data-dependency-name="ajax_modal">
-            var modalTest = new PhotonModal({
-                id: 'testModal',
-                title: 'This is an AJAX modal',
-                useAjax: true,
-                ajaxModalParams: {
-                    method: 'POST',
-                    url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
-                },
-                size: 'default',
-                type: 'preview',
-                buttons: {
-                    save: {
-                        label: 'Save',
-                        class: 'btn-success',
-                        closeModal: true
-                    },
-                    cancel: {
-                        label: 'Cancel',
-                        class: 'btn-default',
-                        closeModal: true
-                    }
-                }
-            });
-
-            $('#ajax_modal_start').on('click', function(){
-                modalTest.show();
-            });
-        </script>
-        <script type="text/javascript" data-dependency-name="modals_different_size">
-            function modalSizing() {
-                $('#mySmallDemoModal').on('click', function () {
-                    var mode = $(this).data('target');
-                    $(mode).find('.modal-dialog').addClass('modal-sm');
-                    $('#myModalLabel').html('Standard modal - Small');
-                });
-
-                $('#myLargeDemoModal').on('click', function () {
-                    var mode = $(this).data('target');
-                    $(mode).find('.modal-dialog').addClass('modal-lg');
-                    $('#myModalLabel').html('Standard modal - Large');
-                });
-
-                $('#myDemoModal').on('hidden.bs.modal', function (e) {
-                    $(this).find('.modal-dialog').attr('class', 'modal-dialog');
-                    $('#myModalLabel').html('Standard modal');
-                });
-            }
-
-            modalSizing();
-        </script>
-        <script type="text/javascript" data-dependency-name="modals_different_size">
-            $('#confirmation_alert').on('click', function () {
-                confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal');
-            });
-            $('#confirmation_alert_no_overlay').on('click', function () {
-                confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal', false);
-            });
-            $('#error_alert').on('click', function () {
-                errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal');
-            });
-            $('#error_alert_no_overlay').on('click', function () {
-                errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal', false);
-            });
-        </script>
-
-        <script type="text/javascript">               
             $(document).ready(function () {
-                console.log('Ready, Captain!');
+                var modalTest = new PhotonModal({
+                    id: 'testModal',
+                    title: 'This is an AJAX modal',
+                    useAjax: true,
+                    ajaxModalParams: {
+                        method: 'POST',
+                        url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
+                    },
+                    size: 'default',
+                    type: 'preview',
+                    buttons: {
+                        save: {
+                            label: 'Save',
+                            class: 'btn-success',
+                            closeModal: true
+                        },
+                        cancel: {
+                            label: 'Cancel',
+                            class: 'btn-default',
+                            closeModal: true
+                        }
+                    }
+                });
 
+                $('#ajax_modal_start').on('click', function(){
+                    modalTest.show();
+                });
+            })
+        </script>
+        <script type="text/javascript" data-dependency-name="modals_different_size">
+            $(document).ready(function () {
+                function modalSizing() {
+                    $('#mySmallDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-sm');
+                        $('#myModalLabel').html('Standard modal - Small');
+                    });
+
+                    $('#myLargeDemoModal').on('click', function () {
+                        var mode = $(this).data('target');
+                        $(mode).find('.modal-dialog').addClass('modal-lg');
+                        $('#myModalLabel').html('Standard modal - Large');
+                    });
+
+                    $('#myDemoModal').on('hidden.bs.modal', function (e) {
+                        $(this).find('.modal-dialog').attr('class', 'modal-dialog');
+                        $('#myModalLabel').html('Standard modal');
+                    });
+                }
+
+                modalSizing();
+            })
+        </script>
+        <script type="text/javascript" data-dependency-name="alerts_modals">
+            $(document).ready(function () {
+                $('#confirmation_alert').on('click', function () {
+                    confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal');
+                });
+
+                $('#confirmation_alert_no_overlay').on('click', function () {
+                    confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal', false);
+                });
+
+                $('#error_alert').on('click', function () {
+                    errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal');
+                });
+
+                $('#error_alert_no_overlay').on('click', function () {
+                    errorAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Error alert modal', false);
+                });
+            })
+        </script>
+        <script type="text/javascript" data-dependency-name="messages_types">
+            $(document).ready(function () {
+                $('#show_info').on('click',function(){
+                    addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
+                });
+                $('#show_success').on('click',function(){
+                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success');
+                });
+                $('#show_success_full_color').on('click',function(){
+                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success-full-color');
+                });
+                $('#show_warning').on('click',function(){
+                    addNotification('<i class="fa fa-warning"></i><span>Are you prepared? This is a warning message: Warning</span>', 'warning');
+                });
+                $('#show_error').on('click',function(){
+                    addNotification('<i class="fa fa-minus-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
+                });
+                $('#show_black').on('click',function(){
+                    addNotification('<span>This is a black alert</span>', 'black');
+                });
+            })
+        </script>
+        <script type="text/javascript" data-dependency-name="block_ui">
+            $(document).ready(function () {
+                $('#block_page').on('click', function() {
+                    $('body').blockControl({
+                        loadingIconType: "cubeGrid",
+                        iconColorClass: "light",
+                        overlayColor : "#000"
+                    });
+                    setTimeout(function(){$('body').unblockControl()}, 3000);
+                });
+
+                $('#block_section').on('click', function() {
+                    var section = $(this).parents('.show-panel');
+                    section.blockControl();
+                    setTimeout(function(){section.unblockControl()}, 3000);
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
                 demoHelpers();  // Require demo_helpers.js
 
+                showPageCode();
+            });
+        </script>
 
-
-                <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
+        <script type="text/javascript" data-dependency-name="tabs">
+            $(document).ready(function () {
                 function getListingDummyData() {
                     var actions = '<div class="btn-group">' +
                         '<button type="button" class="btn btn-sm btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">' +
@@ -902,52 +1194,8 @@
                 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                     $(window).resize();
                 });
+            })
 
-
-
-
-
-
-                var dummyModalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, tortor sit amet vulputate rhoncus, elit justo feugiat nulla, mollis aliquet lacus sapien sed justo. Etiam neque libero, mattis et aliquet sit amet, volutpat id urna. Duis vel ipsum non velit aliquam aliquet a nec odio. Cras eget aliquet ipsum.';
-
-                $('#show_info').on('click',function(){
-                    addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
-                });
-                $('#show_success').on('click',function(){
-                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success');
-                });
-                $('#show_success_full_color').on('click',function(){
-                    addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success-full-color');
-                });
-                $('#show_warning').on('click',function(){
-                    addNotification('<i class="fa fa-warning"></i><span>Are you prepared? This is a warning message: Warning</span>', 'warning');
-                });
-                $('#show_error').on('click',function(){
-                    addNotification('<i class="fa fa-minus-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
-                });
-                $('#show_black').on('click',function(){
-                    addNotification('<span>This is a black alert</span>', 'black');
-                });
-
-
-
-                $('#block_page').on('click', function() {
-                    $('body').blockControl({
-                        loadingIconType: "cubeGrid",
-                        iconColorClass: "light",
-                        overlayColor : "#000"
-                    });
-                    setTimeout(function(){$('body').unblockControl()}, 3000);
-                });
-
-                $('#block_section').on('click', function() {
-                    var section = $(this).parents('.show-panel');
-                    section.blockControl();
-                    setTimeout(function(){section.unblockControl()}, 3000);
-                });
-
-                showPageCode();
-            });
         </script>
         <!-- DOCUMENT-READY:End -->
         

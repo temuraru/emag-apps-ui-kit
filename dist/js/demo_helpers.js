@@ -72,7 +72,7 @@ function generateDependencyCode($module,$dependency){
             $moduleParrent.find('.js-source code').append(formattedJs);
             break;
         case 'style-external':
-            $moduleParrent.find('.css-source code').append('\n&lt;link rel="stylesheet" href="' + $dependency.attr('href') + '"&gt;\n');
+            $moduleParrent.find('.css-source code').append('\n&lt;link rel="stylesheet" href="' + $dependency.attr('href') + '"&gt;');
             break;
         case 'style-same-page':
             var codeStyle = $dependency.html();

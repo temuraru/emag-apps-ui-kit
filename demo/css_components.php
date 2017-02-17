@@ -38,10 +38,10 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="type-styles" class="pad-top-40">
+                        <section id="type-styles" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <h4><strong>Typefaces variations</strong></h4>
+                                    <h2><strong>Typefaces variations</strong></h2>
                                     <p><strong>Headings and Paragraphs:</strong></p>
                                     <div class="row">
                                         <div class="col-md-8">
@@ -57,9 +57,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Utilities</strong></h4>
+                                    <h2><strong>Utilities</strong></h2>
                                     <div class="mg-sep-30">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -155,9 +155,9 @@
                                     </div>
                                    </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Alignment</strong></h4>
+                                    <h2><strong>Alignment</strong></h2>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -217,9 +217,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Address</strong></h4>
+                                    <h2><strong>Address</strong></h2>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -248,9 +248,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Contextual classes</strong></h4>
+                                    <h2><strong>Contextual classes</strong></h2>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -304,9 +304,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Text case and capitalization</strong></h4>
+                                    <h2><strong>Text case and capitalization</strong></h2>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -342,9 +342,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Block quotes</strong></h4>
+                                    <h2><strong>Block quotes</strong></h2>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -379,9 +379,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Print</strong></h4>
+                                    <h2><strong>Print</strong></h2>
                                     <div class="mg-top-20">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -417,10 +417,9 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Simple preformatted block</strong></h4>
+                                    <h2><strong>Simple preformatted block</strong></h2>
                                     <div class="pad-sep-20">
                                         <p>Use <code>&lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
                                         <div class="row">
@@ -440,10 +439,9 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Variables</strong></h4>
+                                    <h2><strong>Variables</strong></h2>
                                     <div class="pad-sep-20">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -464,9 +462,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Sample output</strong></h4>
+                                    <h2><strong>Sample output</strong></h2>
                                     <div class="pad-sep-20">
 
                                         <div class="row">
@@ -487,9 +485,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Descriptions</strong></h4>
+                                    <h2><strong>Descriptions</strong></h2>
 
                                     <div class="pad-sep-20">
 
@@ -519,9 +517,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Horizontal descriptions</strong></h4>
+                                    <h2><strong>Horizontal descriptions</strong></h2>
                                     <div class="pad-sep-20">
 
                                         <div class="row">
@@ -550,9 +548,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel">
+                            <div class="show-panel mg-top-30">
                                 <div class="show-panel-body">
-                                    <h4><strong>Unordered list</strong></h4>
+                                    <h2><strong>Unordered list</strong></h2>
 
                                     <div class="pad-sep-20">
                                         <div class="row">
@@ -611,17 +609,11 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </section>
-                        <section id="css-tables" class="pad-top-20">
+                        <section id="css-tables" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Tables</strong></h4>
-
-
-
+                                    <h2><strong>Tables</strong></h2>
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -1094,10 +1086,10 @@
                             </div>
 
                         </section>
-                        <section id="basic-forms" class="pad-top-20">
+                        <section id="basic-forms" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Forms</strong></h4>
+                                    <h2><strong>Forms</strong></h2>
 
 
 
@@ -1377,9 +1369,9 @@
                                 </div>
                             </div>
 
-                            <div class="show-panel code-example">
+                            <div class="show-panel code-example mg-top-30">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Input types sizing</strong></h4>
+                                    <h2><strong>Input types sizing</strong></h2>
 
 
 
@@ -1489,9 +1481,9 @@
                                 </div>
                             </div>
 
-                            <div class="show-panel code-example">
+                            <div class="show-panel code-example mg-top-30">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Input</strong></h4>
+                                    <h2><strong>Input</strong></h2>
                                     <div class="code-container">
                                         <div class="row code-header">
                                             <div class="col-xs-8 module-description">
@@ -1694,9 +1686,9 @@
                                 </div>
                             </div>
 
-                            <div class="show-panel code-example">
+                            <div class="show-panel code-example mg-top-30">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Checkboxes and radio buttons</strong></h4>
+                                    <h2><strong>Checkboxes and radio buttons</strong></h2>
 
 
                                     <div class="code-container">
@@ -1882,9 +1874,9 @@
                                 </div>
                             </div>
 
-                            <div class="show-panel code-example">
+                            <div class="show-panel code-example mg-top-30">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Range input types</strong></h4>
+                                    <h2><strong>Range input types</strong></h2>
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -1965,9 +1957,9 @@
                                 </div>
                             </div>
 
-                            <div class="show-panel code-example">
+                            <div class="show-panel code-example mg-top-30">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Input groups</strong></h4>
+                                    <h2><strong>Input groups</strong></h2>
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -2116,10 +2108,10 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="buttons" class="pad-top-20">
+                        <section id="buttons" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Buttons</strong></h4>
+                                    <h2><strong>Buttons</strong></h2>
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -2534,13 +2526,11 @@
 
                                 </div>
                             </div>
-
-
                         </section>
-                        <section id="css-flipswitch" class="pad-top-20">
+                        <section id="css-flipswitch" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>CSS Flipswitch</strong></h4>
+                                    <h2><strong>CSS Flipswitch</strong></h2>
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -2600,12 +2590,10 @@
                                 </div>
                             </div>
                         </section>
-
-
-                        <section id="css-labels-and-badges" class="pad-top-20">
+                        <section id="css-labels-and-badges" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Labels and badges</strong></h4>
+                                    <h2><strong>Labels and badges</strong></h2>
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -2726,15 +2714,11 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </section>
-                        <section id="css-alerts-and-notifications" class="pad-top-20">
+                        <section id="css-alerts-and-notifications" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Alerts and notifications</strong></h4>
-
-
+                                    <h2><strong>Alerts and notifications</strong></h2>
                                     <div class="code-container">
                                         <div class="row code-header">
                                             <div class="col-xs-8 module-description">
@@ -2902,17 +2886,11 @@
 
                                 </div>
                             </div>
-
-
-
                         </section>
-                        <section id="css-progressbars" class="pad-top-20">
+                        <section id="css-progressbars" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Progress Bars</strong></h4>
-
-
-
+                                    <h2><strong>Progress Bars</strong></h2>
                                     <div class="code-container">
                                         <div class="row code-header">
                                             <div class="col-xs-8 module-description">
@@ -3136,302 +3114,299 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="css-panels" class="pad-top-20">
+                        <section id="css-panels" class="pad-top-30">
+                            <div class="show-panel code-example">
+                                <div class="show-panel-body code-example">
+                                    <h2><strong>Panels</strong></h2>
 
-                                    <div class="show-panel code-example">
-                                        <div class="show-panel-body code-example">
-                                            <h4><strong>Panels</strong></h4>
+                                    <div class="row">
+                                        <div class="col-sm-12">
 
-                                            <div class="row">
-                                                <div class="col-sm-12">
-
-                                                        <p class="mg-top-15">Easily add a heading container to your panel with <mark>.panel-heading</mark>. You may also include any <code>&lt;h1&gt; - &lt;h6&gt;</code> with a <mark>.panel-title</mark> class to add a pre-styled heading. However, the font sizes of <code>&lt;h1&gt; - &lt;h6&gt;</code> are overridden by <mark>.panel-heading</mark>.For proper link coloring, be sure to place links in headings within <mark>.panel-title</mark>.</p>
-
-
-                                                </div>
-                                            </div>
-
-
-                                            <div class="code-container">
-                                                <div class="row code-header">
-                                                    <div class="col-xs-8 module-description">
-                                                        <h4><strong>Basic panel</strong></h4>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic-panel" aria-expanded="false" aria-controls="basic-panel"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse code-example"  id="basic-panel">
-                                                    <!-- Nav tabs -->
-                                                    <ul class="nav nav-tabs code-example" role="tablist">
-                                                        <li role="presentation" class="active"><a href="#basic-panel-html-source" aria-controls="basic-panel-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                    </ul>
-
-                                                    <!-- Tab panes -->
-                                                    <div class="tab-content code-example">
-                                                        <div role="tabpanel" class="tab-pane html-source active" id="basic-panel-html-source">
-                                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-body">
-                                                                    Basic panel-body example
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
-                                            <div class="code-container">
-                                                <div class="row code-header">
-                                                    <div class="col-xs-8 module-description">
-                                                        <h4><strong>Contextual alternatives</strong></h4>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic-panel-contextual-alternatives" aria-expanded="false" aria-controls="basic-panel-contextual-alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse code-example"  id="basic-panel-contextual-alternatives">
-                                                    <!-- Nav tabs -->
-                                                    <ul class="nav nav-tabs code-example" role="tablist">
-                                                        <li role="presentation" class="active"><a href="#basic-panel-contextual-alternatives-html-source" aria-controls="basic-panel-contextual-alternatives-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                    </ul>
-
-                                                    <!-- Tab panes -->
-                                                    <div class="tab-content code-example">
-                                                        <div role="tabpanel" class="tab-pane html-source active" id="basic-panel-contextual-alternatives-html-source">
-                                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15">
-                                                            <div class="alert alert-info" role="alert">
-                                                                <i class="fa fa-info-circle"></i> You can basically change the appearance of the panel ussing one of the following classes: <code>panel-primary</code>, <code>panel-info</code>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
-                                                            <div class="panel panel-primary">
-                                                                <div class="panel-heading">
-                                                                    <h4 class="panel-title">Panel title</h4>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    Panel content
-                                                                </div><div class="panel-footer">
-                                                                    Panel footer
-                                                                </div>
-                                                            </div>
-                                                            <div class="panel panel-info">
-                                                                <div class="panel-heading">
-                                                                    <h4 class="panel-title">Panel title</h4>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    Panel content
-                                                                </div>
-                                                                <div class="panel-footer">
-                                                                    Panel footer
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
-
-                                            <div class="code-container">
-                                                <div class="row code-header">
-                                                    <div class="col-xs-8 module-description">
-                                                        <h4><strong>Panel with table</strong></h4>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel-with-table" aria-expanded="false" aria-controls="panel-with-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse code-example"  id="panel-with-table">
-                                                    <!-- Nav tabs -->
-                                                    <ul class="nav nav-tabs code-example" role="tablist">
-                                                        <li role="presentation" class="active"><a href="#panel-with-table-html-source" aria-controls="panel-with-table-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                    </ul>
-
-                                                    <!-- Tab panes -->
-                                                    <div class="tab-content code-example">
-                                                        <div role="tabpanel" class="tab-pane html-source active" id="panel-with-table-html-source">
-                                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15">
-                                                            <div class="alert alert-info" role="alert">
-                                                                <i class="fa fa-info-circle"></i> You can also use the standard bootstrap alternatives for styling a table: <a href="http://getbootstrap.com/css/#tables">Show me how Bootstrap does table stuff.</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
-                                                            <div class="panel panel-primary">
-                                                                <div class="panel-heading">
-                                                                    <h4 class="panel-title">Panel with table example</h4>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <p>Some text or a couple of buttons can be placed here</p>
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-bordered">
-                                                                            <thead>
-                                                                            <tr>
-                                                                                <th>#</th>
-                                                                                <th>First Name</th>
-                                                                                <th>Last Name</th>
-                                                                                <th>Username</th>
-                                                                                <th>Hobby</th>
-                                                                            </tr></thead>
-                                                                            <tbody>
-                                                                            <tr>
-                                                                                <th scope="row">1</th>
-                                                                                <td>Mark</td>
-                                                                                <td>Otto</td>
-                                                                                <td>@mdo</td>
-                                                                                <td>Fishing</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row">2</th>
-                                                                                <td>Jacob</td>
-                                                                                <td>Thornton</td>
-                                                                                <td>@fat</td>
-                                                                                <td>Racing</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row">3</th>
-                                                                                <td>Larry</td>
-                                                                                <td>the Bird</td>
-                                                                                <td>@twitter</td>
-                                                                                <td>eMAG</td>
-                                                                            </tr></tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="panel-body">
-                                                                    <span>More text or a couple of buttons can be placed here</span>
-                                                                </div>
-                                                                <div class="panel-footer">
-                                                                    <span>Footer controls or text can be placed here</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
-
-                                            <div class="code-container">
-                                                <div class="row code-header">
-                                                    <div class="col-xs-8 module-description">
-                                                        <h4><strong>Panel with standard list group</strong></h4>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel-with-list" aria-expanded="false" aria-controls="panel-with-list"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse code-example"  id="panel-with-list">
-                                                    <!-- Nav tabs -->
-                                                    <ul class="nav nav-tabs code-example" role="tablist">
-                                                        <li role="presentation" class="active"><a href="#panel-with-list-html-source" aria-controls="panel-with-list-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                    </ul>
-
-                                                    <!-- Tab panes -->
-                                                    <div class="tab-content code-example">
-                                                        <div role="tabpanel" class="tab-pane html-source active" id="panel-with-list-html-source">
-                                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15">
-                                                            <div class="alert alert-info" role="alert">
-                                                                <i class="fa fa-info-circle"></i> You can also use the standard bootstrap alternatives for styling a list group: <a href="http://getbootstrap.com/components/#list-group">Show me how Bootstrap does list group stuff.</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style">
-                                                            <div class="panel panel-primary">
-                                                                <div class="panel-heading">
-                                                                    <h4 class="panel-title">Panel with list group example</h4>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <span>Some text or a couple of buttons can be placed here</span>
-                                                                </div>
-                                                                <div class="list-group">
-                                                                    <a href="#" class="list-group-item">
-                                                                        <h4 class="list-group-item-heading">List group item heading</h4>
-                                                                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                                                    </a>
-                                                                    <a href="#" class="list-group-item">
-                                                                        <h4 class="list-group-item-heading">List group item heading</h4>
-                                                                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                                                    </a>
-                                                                    <a href="#" class="list-group-item">
-                                                                        <h4 class="list-group-item-heading">List group item heading</h4>
-                                                                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
+                                                <p class="mg-top-15">Easily add a heading container to your panel with <mark>.panel-heading</mark>. You may also include any <code>&lt;h1&gt; - &lt;h6&gt;</code> with a <mark>.panel-title</mark> class to add a pre-styled heading. However, the font sizes of <code>&lt;h1&gt; - &lt;h6&gt;</code> are overridden by <mark>.panel-heading</mark>.For proper link coloring, be sure to place links in headings within <mark>.panel-title</mark>.</p>
 
 
                                         </div>
                                     </div>
 
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><strong>Basic panel</strong></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic-panel" aria-expanded="false" aria-controls="basic-panel"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="basic-panel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#basic-panel-html-source" aria-controls="basic-panel-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="basic-panel-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            Basic panel-body example
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><strong>Contextual alternatives</strong></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic-panel-contextual-alternatives" aria-expanded="false" aria-controls="basic-panel-contextual-alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="basic-panel-contextual-alternatives">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#basic-panel-contextual-alternatives-html-source" aria-controls="basic-panel-contextual-alternatives-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="basic-panel-contextual-alternatives-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15">
+                                                    <div class="alert alert-info" role="alert">
+                                                        <i class="fa fa-info-circle"></i> You can basically change the appearance of the panel ussing one of the following classes: <code>panel-primary</code>, <code>panel-info</code>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                                    <div class="panel panel-primary">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">Panel title</h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            Panel content
+                                                        </div><div class="panel-footer">
+                                                            Panel footer
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">Panel title</h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            Panel content
+                                                        </div>
+                                                        <div class="panel-footer">
+                                                            Panel footer
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><strong>Panel with table</strong></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel-with-table" aria-expanded="false" aria-controls="panel-with-table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="panel-with-table">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#panel-with-table-html-source" aria-controls="panel-with-table-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="panel-with-table-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15">
+                                                    <div class="alert alert-info" role="alert">
+                                                        <i class="fa fa-info-circle"></i> You can also use the standard bootstrap alternatives for styling a table: <a href="http://getbootstrap.com/css/#tables">Show me how Bootstrap does table stuff.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                                    <div class="panel panel-primary">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">Panel with table example</h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>Some text or a couple of buttons can be placed here</p>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                        <th>Hobby</th>
+                                                                    </tr></thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                        <td>Fishing</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                        <td>Racing</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                        <td>eMAG</td>
+                                                                    </tr></tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel-body">
+                                                            <span>More text or a couple of buttons can be placed here</span>
+                                                        </div>
+                                                        <div class="panel-footer">
+                                                            <span>Footer controls or text can be placed here</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><strong>Panel with standard list group</strong></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel-with-list" aria-expanded="false" aria-controls="panel-with-list"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="panel-with-list">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#panel-with-list-html-source" aria-controls="panel-with-list-html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="panel-with-list-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15">
+                                                    <div class="alert alert-info" role="alert">
+                                                        <i class="fa fa-info-circle"></i> You can also use the standard bootstrap alternatives for styling a list group: <a href="http://getbootstrap.com/components/#list-group">Show me how Bootstrap does list group stuff.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                                    <div class="panel panel-primary">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">Panel with list group example</h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <span>Some text or a couple of buttons can be placed here</span>
+                                                        </div>
+                                                        <div class="list-group">
+                                                            <a href="#" class="list-group-item">
+                                                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                                            </a>
+                                                            <a href="#" class="list-group-item">
+                                                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                                            </a>
+                                                            <a href="#" class="list-group-item">
+                                                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
                         </section>
-                        
-                        <section id="css-page-header" class="pad-top-20">
+                        <section id="css-page-header" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Page header</strong></h4>
+                                    <h2><strong>Page header</strong></h2>
 
 
                                     <div class="code-container">
@@ -3485,13 +3460,10 @@
                                 </div>
                             </div>
                         </section>
-
-
-
-                        <section id="css-embeds" class="pad-top-20">
+                        <section id="css-embeds" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Responsive embeds</strong></h4>
+                                    <h2><strong>Responsive embeds</strong></h2>
 
 
                                     <div class="code-container">
