@@ -612,10 +612,8 @@
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
             $(document).ready(function () {
-
                 demoHelpers();  // Require demo_helpers.js
                 showPageCode();
-
             });
         </script>
 

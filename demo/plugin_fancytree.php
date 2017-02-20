@@ -122,7 +122,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,category_tree_default,fancytree-content">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,category_tree_default,fancytree-content,pop_space">
                                             <div class="form-group">
                                                 <label for="category_treeDefault"></label>
                                                 <div class="hide-with-opacity">
@@ -220,7 +220,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,category_tree_disabled,fancytree-content">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,category_tree_disabled,fancytree-content,pop_space">
                                             <div class="form-group">
                                                 <label for="category_treeDefault"></label>
                                                 <div class="hide-with-opacity">
@@ -273,9 +273,9 @@
                                                 </div>
                                                 <div class="input-group input-group-no-separation">
                                                     <div class="form-control" id="id_category_tree_disabled"></div>
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-sitemap"></i>
-                                    </span>
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-sitemap"></i>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -296,7 +296,9 @@
         <!-- FOOTER:End -->
 
         <!-- POPUPS:Start -->
-        <div id="popSpace"></div>
+        <div data-dependency-name="pop_space">
+            <div id="popSpace"></div>
+        </div>
         <!-- POPUPS:End -->
 
     </div>

@@ -3463,7 +3463,7 @@
                         <section id="css-embeds" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h2><strong>Responsive embeds</strong></h2>
+                                    <h2><strong>Embeds</strong></h2>
 
 
                                     <div class="code-container">

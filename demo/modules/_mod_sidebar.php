@@ -251,8 +251,8 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.php">
-                                <span class="menu-text">Picture gallery & image slider</span>
+                            <a href="/emag-apps-ui-kit/demo/image_gallery.php">
+                                <span class="menu-text">Image gallery</span>
                             </a>
                         </li>
                         <li class="menu-item">
