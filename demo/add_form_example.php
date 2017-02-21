@@ -51,7 +51,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6">
                                             <div class="form-group">
                                                 <label class="control-label required" for="product_example_productDescription">Product description</label>
-                                                <textarea id="product_example_productDescription" name="product_example[productDescription]" required1="required" class="form-control" rows="5" placeholder="Add product description"></textarea>
+                                                <textarea id="product_example_productDescription" name="product_example[productDescription]" required1="required" class="form-control fixed-width-textarea" rows="5" placeholder="Add product description"></textarea>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
