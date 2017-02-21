@@ -5,8 +5,8 @@
         <title>jQGrid - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php"?>
         
-        <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css">
-        <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css">
+        <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
+        <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
 
         <?php include_once "modules/_mod_top_include.php"?>
 
@@ -31,161 +31,440 @@
                         <p><b>jQGrid</b></p>
                     </div>
                 </div>
-                <section class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <div class="alert alert-info" role="alert">
-                                <p>
-                                    <i class="fa fa-info-circle"></i>
-                                    Based on: <a href="http://www.trirand.com/blog/" target="_blank" class="link">jQGrid Documentation</a></p>
-                                </p>
+
+                <section  class="pad-top-40">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>jqGrid</strong></h2>
+
+                            <div class="row">
+                                <div class="col-sm-12 mg-top-20">
+                                    <div class="alert alert-info no-margin-bottom" role="alert">
+                                        <p><i class="fa fa-info-circle"></i>Based on: <a href="http://www.trirand.com/blog/" target="_blank" class="alert-link">jQGrid Documentation</a></p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <h3>Table of contents</h3>
-                            <hr>
-                            <ul>
-                                <li><a href="#jqGrid-basic">jqGrid basic</a></li>
-                                <li><a href="#jqGrid-with-sticky-panels">jqGrid with sticky panels</a></li>
-                                <li><a href="#jqGrid-with-column-chooser">jqGrid with column chooser</a></li>
-                                <li><a href="#jqGrid-with-selectable-rows">jqGrid with selectable rows</a></li>
-                                <li><a href="#jqGrid-ierarchical-elements-tree">jqGrid with ierarchical elements (Tree)</a></li>
-                                <li><a href="#jqGrid-with-subgrid">jqGrid with subgrid</a></li>
-                                <li><a href="#jqGrid-with-inline-editing">jqGrid with inline editing</a></li>
-                                <li><a href="#jqGrid-with-actions">jqGrid with actions</a></li>
-                                <li><a href="#jqGrid-with-data-formatters">jqGrid with data formatters</a></li>
-                            </ul>
+                            <a href="#" name="jqGrid-basic" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid basic</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jqgrid-basic" aria-expanded="false" aria-controls="jqgrid-basic"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jqgrid-basic">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jqgrid-basic-html-source" aria-controls="jqgrid-basic-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jqgrid-basic-js-source" aria-controls="jqgrid-basic-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jqgrid-basic-css-source" aria-controls="jqgrid-basic-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jqgrid-basic-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jqgrid-basic-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jqgrid-basic-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init">
+                                            <table id="grid_table" class="table table-bordered"></table>
+                                            <div id="grid_pager"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-sticky-panels" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with sticky panels</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-basic" aria-expanded="false" aria-controls="jq-basic"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-basic">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-basic-html-source" aria-controls="jq-basic-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-basic-js-source" aria-controls="jq-basic-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-basic-css-source" aria-controls="jq-basic-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-basic-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-basic-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-basic-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_sticky_init">
+                                            <table id="grid_table_sticky" class="table table-bordered"></table>
+                                            <div id="grid_pager_sticky"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-column-chooser" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with column chooser</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-column-chooser" aria-expanded="false" aria-controls="jq-with-column-chooser"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-column-chooser">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-column-chooser-html-source" aria-controls="jq-with-column-chooser-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-column-chooser-js-source" aria-controls="jq-with-column-chooser-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-column-chooser-css-source" aria-controls="jq-with-column-chooser-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-column-chooser-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-column-chooser-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-column-chooser-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_column_chooser">
+                                            <div class="pad-top-20 pad-btm-20 clearfix">
+                                                <button type="button" id="grid_table_column_chooser_button" class="btn btn-primary pull-right">
+                                                    Select columns <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+
+                                            <table id="grid_table_column_chooser" class="table table-bordered"></table>
+                                            <div id="grid_pager_column_chooser"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-selectable-rows" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jgGrid with selectable rows</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-selectable-rows" aria-expanded="false" aria-controls="jq-with-selectable-rows"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-selectable-rows">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-selectable-rows-html-source" aria-controls="jq-with-selectable-rows-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-selectable-rows-js-source" aria-controls="jq-with-selectable-rows-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-selectable-rows-css-source" aria-controls="jq-with-selectable-rows-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-selectable-rows-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-selectable-rows-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-selectable-rows-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_selectable_rows">
+                                            <div class="pad-top-20 pad-btm-20">
+                                                <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
+                                            </div>
+
+                                            <table id="grid_table_with_selectable_rows" class="table table-bordered"></table>
+                                            <div id="grid_pager_with_selectable_rows"></div>
+
+                                            <div class="pad-top-20">
+                                                <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-ierarchical-elements-tree" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-ierarchical-elements" aria-expanded="false" aria-controls="jq-with-ierarchical-elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-ierarchical-elements">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-ierarchical-elements-html-source" aria-controls="jq-with-ierarchical-elements-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-ierarchical-elements-js-source" aria-controls="jq-with-ierarchical-elements-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-ierarchical-elements-css-source" aria-controls="jq-with-ierarchical-elements-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-ierarchical-elements-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-ierarchical-elements-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-ierarchical-elements-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements">
+                                            <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-subgrid" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with subgrid</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-subgrid" aria-expanded="false" aria-controls="jq-with-subgrid"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-subgrid">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-subgrid-html-source" aria-controls="jq-with-subgrid-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-subgrid-js-source" aria-controls="jq-with-subgrid-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-subgrid-css-source" aria-controls="jq-with-subgrid-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-subgrid-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-subgrid-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-subgrid-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid">
+                                            <table id="grid_table_with_subgrid" class="table table-bordered"></table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-inline-editing" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with inline editing</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-inline-editing" aria-expanded="false" aria-controls="jq-with-inline-editing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-inline-editing">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-inline-editing-html-source" aria-controls="jq-with-inline-editing-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-inline-editing-js-source" aria-controls="jq-with-inline-editing-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-inline-editing-css-source" aria-controls="jq-with-inline-editing-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-inline-editing-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-inline-editing-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-inline-editing-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_inline_editing">
+                                            <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
+                                            <div id="grid_pager_with_inline_edit"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-actions" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with actions</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-actions" aria-expanded="false" aria-controls="jq-with-actions"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-actions">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-actions-html-source" aria-controls="jq-with-actions-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-actions-js-source" aria-controls="jq-with-actions-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-actions-css-source" aria-controls="jq-with-actions-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-actions-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-actions-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-actions-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_actions">
+                                            <table id="grid_table_with_actions" class="table table-bordered"></table>
+                                            <div id="grid_pager_with_actions"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-data-formatters" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with data formatters</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq-with-data-formatters" aria-expanded="false" aria-controls="jq-with-data-formatters"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq-with-data-formatters">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq-with-data-formatters-html-source" aria-controls="jq-with-data-formatters-html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq-with-data-formatters-js-source" aria-controls="jq-with-data-formatters-js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq-with-data-formatters-css-source" aria-controls="jq-with-data-formatters-css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq-with-data-formatters-html-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq-with-data-formatters-js-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq-with-data-formatters-css-source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_data_formatters">
+                                            <div class="pad-top-20">
+                                                <table id="grid_with_formatter_table" class="table table-bordered"></table>
+                                                <div id="grid_with_formatter_pager"></div>
+                                            </div>
+                                            <div class="pad-top-20">
+                                                <table id="grid_with_formatter_2_table" class="table table-bordered"></table>
+                                                <div id="grid_with_formatter_2_pager"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </section>
 
-                <section id="jqGrid-basic" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid basic</strong></h4>
 
-                            <div class="pad-top-20">
-                                <table id="grid_table" class="table table-bordered"></table>
-                                <div id="grid_pager"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section id="jqGrid-with-sticky-panels" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with sticky panels</strong></h4>
 
-                            <div class="pad-top-20">
-                                <table id="grid_table_sticky" class="table table-bordered"></table>
-                                <div id="grid_pager_sticky"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section id="jqGrid-with-column-chooser" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with column chooser</strong></h4>
-
-                            <div class="pad-top-20 pad-btm-20 clearfix">
-                                <button type="button" id="grid_table_column_chooser_button" class="btn btn-primary pull-right">
-                                    Select columns <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                </button>
-                            </div>
-
-                            <table id="grid_table_column_chooser" class="table table-bordered"></table>
-                            <div id="grid_pager_column_chooser"></div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="jqGrid-with-selectable-rows" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jgGrid with selectable rows</strong></h4>
-
-                            <div class="pad-top-20 pad-btm-20">
-                                <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
-                            </div>
-
-                            <table id="grid_table_with_selectable_rows" class="table table-bordered"></table>
-                            <div id="grid_pager_with_selectable_rows"></div>
-
-                            <div class="pad-top-20">
-                                <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="jqGrid-ierarchical-elements-tree" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
-
-                            <div class="pad-top-20">
-                                <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="jqGrid-with-subgrid" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with subgrid</strong></h4>
-
-                            <div class="pad-top-20">
-                                <table id="grid_table_with_subgrid" class="table table-bordered"></table>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="jqGrid-with-inline-editing" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with inline editing</strong></h4>
-
-                            <div class="pad-top-20">
-                                <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
-                                <div id="grid_pager_with_inline_edit"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="jqGrid-with-actions" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with actions</strong></h4>
-
-                            <div class="pad-top-20">
-                                <table id="grid_table_with_actions" class="table table-bordered"></table>
-                                <div id="grid_pager_with_actions"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="jqGrid-with-data-formatters" class="pad-top-20">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h4 class="text-primary"><strong>jqGrid with data formatters</strong></h4>
-
-                            <div class="pad-top-20">
-                                <table id="grid_with_formatter_table" class="table table-bordered"></table>
-                                <div id="grid_with_formatter_pager"></div>
-                            </div>
-                            <div class="pad-top-20">
-                                <table id="grid_with_formatter_2_table" class="table table-bordered"></table>
-                                <div id="grid_with_formatter_2_pager"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
         <!-- CONTENT:End -->
@@ -198,36 +477,144 @@
 <!-- PAGE:End -->
 
 <!-- POPUPS:Start -->
-<div id="popSpace"></div>
+<div data-dependency-name="pop_space">
+    <div id="popSpace"></div>
+</div>
 <!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
 
-<script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
+<script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
 
-<script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
-<script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
-<script src="../dist/plugins/stickyKit/stickyKit.min.js"></script>
-<script src="../dist/plugins/tether/tether.min.js"></script>
-<script src="../dist/plugins/drop/drop.min.js"></script>
+<script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
+<script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
 
-<script src="../dist/js/main_script.min.js"></script>
+<script src="../dist/plugins/stickyKit/stickyKit.min.js" data-dependency-name="stickykit_source"></script>
 
+<script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
+
+<script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
+
+<script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
 <script type="text/javascript">
-    $(document).ready(function() {
-        console.log('Ready, Captain!');
-
+    $(document).ready(function () {
         demoHelpers();  // Require demo_helpers.js
+        showPageCode();
+    });
+</script>
 
+<script type="text/javascript" data-dependency-name="listing_dummy_data">
+        function getListingDummyData() {
+
+            var dataSet = [
+                {
+                    "id": "1",
+                    "firstname": "Tony",
+                    "lastname": "Stark",
+                    "username": "ironman",
+                    "jobtype": "Philantropist",
+                    "codename": "Iron Man",
+                    "spirit_animal": "Tiger"
+                },
+                {
+                    "id": "2",
+                    "firstname": "Bruce",
+                    "lastname": "Banner",
+                    "username": "hulk_smash",
+                    "jobtype": "Doctor",
+                    "codename": "The Hulk",
+                    "spirit_animal": "Gorilla"
+                },
+                {
+                    "id": "3",
+                    "firstname": "Thor",
+                    "lastname": "Odinson",
+                    "username": "thehammer",
+                    "jobtype": "God",
+                    "codename": "Thor",
+                    "spirit_animal": "Lion"
+                },
+                {
+                    "id": "4",
+                    "firstname": "Clinton",
+                    "lastname": "Barton",
+                    "username": "hawkyey",
+                    "jobtype": "Archer",
+                    "codename": "Hawkeye",
+                    "spirit_animal": "Hawk"
+                },
+                {
+                    "id": "5",
+                    "firstname": "Steven",
+                    "lastname": "Rogers",
+                    "username": "rogerthat",
+                    "jobtype": "Captain",
+                    "codename": "Captain America",
+                    "spirit_animal": "Eagle"
+                },
+                {
+                    "id": "6",
+                    "firstname": "Natalia",
+                    "lastname": "Romanova",
+                    "username": "notawidow",
+                    "jobtype": "Event planner",
+                    "codename": "Black Widow",
+                    "spirit_animal": "Spider"
+                },
+                {
+                    "id": "7",
+                    "firstname": "Henry",
+                    "lastname": "Pym",
+                    "username": "goliath",
+                    "jobtype": "Unemployed",
+                    "codename": "Ant-Man",
+                    "spirit_animal": "Dog"
+                },
+                {
+                    "id": "8",
+                    "firstname": "Luke",
+                    "lastname": "Charles",
+                    "username": "tchiao",
+                    "jobtype": "Self-employed",
+                    "codename": "Black Panther",
+                    "spirit_animal": "Jaguar"
+                },
+                {
+                    "id": "9",
+                    "firstname": "Victor",
+                    "lastname": "Shade",
+                    "username": "imallseeing",
+                    "jobtype": "Self-employed",
+                    "codename": "The Vision",
+                    "spirit_animal": "Dolphin"
+                },
+                {
+                    "id": "10",
+                    "firstname": "Monica",
+                    "lastname": "Rambeau",
+                    "username": "photon",
+                    "jobtype": "Self-employed",
+                    "codename": "Captain Marvel",
+                    "spirit_animal": "Mustang"
+
+                }
+            ];
+
+            return dataSet;
+        }
+</script>
+
+<script type="text/javascript" data-dependency-name="jqgrid_basic_init">
+    $(document).ready(function () {
         var listingParameters = {
             table: '#grid_table',
             pager: '#grid_pager',
@@ -246,7 +633,11 @@
         };
 
         new PhotonJqGrid(listingParameters).init();
+    });
+</script>
 
+<script type="text/javascript" data-dependency-name="jqgrid_with_sticky_init">
+    $(document).ready(function () {
         var listingParametersSticky = {
             table: '#grid_table_sticky',
             pager: '#grid_pager_sticky',
@@ -268,7 +659,11 @@
         new PhotonJqGrid(listingParametersSticky).init();
 
         initPhotonStick();
+    });
+</script>
 
+<script type="text/javascript" data-dependency-name="jqgrid_with_column_chooser">
+    $(document).ready(function () {
         var listingParametersWithColumnChooser = {
             table: '#grid_table_column_chooser',
             pager: '#grid_pager_column_chooser',
@@ -295,7 +690,11 @@
         var photonGrid = new PhotonJqGrid(listingParametersWithColumnChooser);
         photonGrid.init();
         $(photonGrid.grid).jqGrid('columnChooser');
+    });
+</script>
 
+<script type="text/javascript" data-dependency-name="jqGrid_with_selectable_rows">
+    $(document).ready(function () {
         var listingParametersWithSelectableRows = {
             table: '#grid_table_with_selectable_rows',
             pager: '#grid_pager_with_selectable_rows',
@@ -316,9 +715,180 @@
 
         new PhotonJqGrid(listingParametersWithSelectableRows).init();
 
+        function getSelectedRows() {
+            var grid = $("#grid_table_with_selectable_rows");
+            var rowKey = grid.getGridParam("selrow");
+
+            if (!rowKey)
+                alert("No rows are selected");
+            else {
+                var selectedIDs = grid.getGridParam("selarrrow");
+                var result = "";
+                for (var i = 0; i < selectedIDs.length; i++) {
+                    result += selectedIDs[i] + ",";
+                }
+                alert(result);
+            }
+        }
+
+        $('button.check_rows').on('click', function(){
+            getSelectedRows();
+        });
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqGrid_with_ierarchical_elements">
+    function getListingDummyDataForIerarchicalElements() {
+
+        var dataSet = [
+            {
+                "id": "1",
+                "firstname": "Tony",
+                "lastname": "Stark",
+                "username": "ironman",
+                "jobtype": "Philantropist",
+                "codename": "Iron Man",
+                "spirit_animal": "Tiger",
+                level:"0",
+                parent: null,
+                isLeaf: false,
+                expanded:true,
+                loaded:true
+            },
+            {
+                "id": "2",
+                "firstname": "Bruce",
+                "lastname": "Banner",
+                "username": "hulk_smash",
+                "jobtype": "Doctor",
+                "codename": "The Hulk",
+                "spirit_animal": "Gorilla",
+                level: "1",
+                parent: "1",
+                isLeaf: true,
+                expanded: false,
+                loaded: true
+            },
+            {
+                "id": "3",
+                "firstname": "Thor",
+                "lastname": "Odinson",
+                "username": "thehammer",
+                "jobtype": "God",
+                "codename": "Thor",
+                "spirit_animal": "Lion",
+                level:"1",
+                parent: "1",
+                isLeaf: true,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "4",
+                "firstname": "Clinton",
+                "lastname": "Barton",
+                "username": "hawkyey",
+                "jobtype": "Archer",
+                "codename": "Hawkeye",
+                "spirit_animal": "Hawk",
+                level:"0",
+                parent: null,
+                isLeaf: false,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "5",
+                "firstname": "Steven",
+                "lastname": "Rogers",
+                "username": "rogerthat",
+                "jobtype": "Captain",
+                "codename": "Captain America",
+                "spirit_animal": "Eagle",
+                level:"1",
+                parent: "4",
+                isLeaf: true,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "6",
+                "firstname": "Natalia",
+                "lastname": "Romanova",
+                "username": "notawidow",
+                "jobtype": "Event planner",
+                "codename": "Black Widow",
+                "spirit_animal": "Spider",
+                level:"1",
+                parent: "4",
+                isLeaf: true,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "7",
+                "firstname": "Henry",
+                "lastname": "Pym",
+                "username": "goliath",
+                "jobtype": "Unemployed",
+                "codename": "Ant-Man",
+                "spirit_animal": "Dog",
+                level:"0",
+                parent: null,
+                isLeaf: false,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "8",
+                "firstname": "Luke",
+                "lastname": "Charles",
+                "username": "tchiao",
+                "jobtype": "Self-employed",
+                "codename": "Black Panther",
+                "spirit_animal": "Jaguar",
+                level:"1",
+                parent: "7",
+                isLeaf: false,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "9",
+                "firstname": "Victor",
+                "lastname": "Shade",
+                "username": "imallseeing",
+                "jobtype": "Self-employed",
+                "codename": "The Vision",
+                "spirit_animal": "Dolphin",
+                level:"2",
+                parent: "8",
+                isLeaf: true,
+                expanded:false,
+                loaded:true
+            },
+            {
+                "id": "10",
+                "firstname": "Monica",
+                "lastname": "Rambeau",
+                "username": "photon",
+                "jobtype": "Self-employed",
+                "codename": "Captain Marvel",
+                "spirit_animal": "Mustang",
+                level:"2",
+                parent: "8",
+                isLeaf: true,
+                expanded:false,
+                loaded:true
+            }
+        ];
+
+        return dataSet;
+    }
+    $(document).ready(function () {
         $("#grid_table_with_hierarchy").jqGrid({
             autoResizing: { compact: true },
-            data: getListingDummyData(),
+            data: getListingDummyDataForIerarchicalElements(),
             datatype: "local",
             styleUI : 'fontAwesome',
             sortable: true,
@@ -357,7 +927,11 @@
             ExpandColumn: 'firstname',
             ExpandColClick : true
         });
+    });
+</script>
 
+<script type="text/javascript" data-dependency-name="jqGrid_with_subgrid">
+    $(document).ready(function () {
         $("#grid_table_with_subgrid").jqGrid({
             iconSet: "fontAwesome",
             autoResizing: { compact: true },
@@ -412,7 +986,11 @@
                 });
             }
         });
+    });
+</script>
 
+<script type="text/javascript" data-dependency-name="jqGrid_with_inline_editing">
+    $(document).ready(function () {
         var listingParameters = {
             table: '#grid_table_with_inline_edit',
             pager: '#grid_pager_with_inline_edit',
@@ -444,296 +1022,11 @@
         };
 
         new PhotonJqGrid(listingParameters).init();
+    });
+</script>
 
-        var listingWithActionsParameters = {
-            table: '#grid_table_with_actions',
-            pager: '#grid_pager_with_actions',
-            datatype: 'jsonstring',
-            caption: 'Listing caption',
-            datastr: getListingWithActionsDummyData(),
-            colNames: [
-                'Name',
-                'Status',
-                'Platform',
-                'Available products',
-                'Actions'
-            ],
-            colModel: [
-                {name: 'name', index: 'name', width: 2, sortable: false},
-                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.labelAndTooltip },
-                {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
-                {name: 'products', index: 'products', width: 2, sorttype: "text"},
-                {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
-            ],
-            gridComplete: function() {
-                addMoreActions('#grid_table_with_actions');
-                $('#grid_table_with_actions .label-with-tooltip').tooltip();
-            }
-        };
-
-        new PhotonJqGrid(listingWithActionsParameters).init();
-
-        var listingWithFormatterParameters = {
-            table: '#grid_with_formatter_table',
-            pager: '#grid_with_formatter_pager',
-            datatype: 'jsonstring',
-            caption: 'jqGrid with data formatters',
-            datastr: getListingWithFormatterDummyData(),
-            colNames: [
-                'id',
-                'notAvailable',
-                'dateTime',
-                'date',
-                'time',
-                'userEmail',
-                'country'
-            ],
-            colModel: [
-                {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
-                {name: 'notAvailable', index: 'notAvailable', sortable: false, width: 3, formatter: PhotonDataFormatter.notAvailable },
-                {name: 'dateTime', index: 'dateTime', sortable: false, width: 3, formatter: PhotonDataFormatter.dateTime },
-                {name: 'date', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.date },
-                {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
-                {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
-                {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
-            ]
-        };
-
-        new PhotonJqGrid(listingWithFormatterParameters).init();
-
-        var listingWithFormatter2Parameters = {
-            table: '#grid_with_formatter_2_table',
-            pager: '#grid_with_formatter_2_pager',
-            datatype: 'jsonstring',
-            caption: 'jqGrid with data formatters',
-            datastr: getListingWithFormatter2DummyData(),
-            colNames: [
-                'product',
-                'badge',
-                'price',
-                'dateTime',
-                'status'
-            ],
-            colModel: [
-                {name: 'product', index: 'product', sortable: false, width: 2, formatter: PhotonDataFormatter.product },
-                {name: 'badge', index: 'badge', sortable: false, width: 1, formatter: PhotonDataFormatter.badge },
-                {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.price },
-                {name: 'dateTime', index: 'dateTime', sortable: false, width: 1, formatter: PhotonDataFormatter.dateTime },
-                {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.labelAndTooltip }
-            ]
-        };
-
-        new PhotonJqGrid(listingWithFormatter2Parameters).init();
-
-        function getSelectedRows() {
-            var grid = $("#grid_table_with_selectable_rows");
-            var rowKey = grid.getGridParam("selrow");
-
-            if (!rowKey)
-                alert("No rows are selected");
-            else {
-                var selectedIDs = grid.getGridParam("selarrrow");
-                var result = "";
-                for (var i = 0; i < selectedIDs.length; i++) {
-                    result += selectedIDs[i] + ",";
-                }
-                alert(result);
-            }
-        }
-
-        $('button.check_rows').on('click', function(){
-            getSelectedRows();
-        });
-
-        function getListingDummyData() {
-            var actions = '<div class="btn-group">' +
-                '<button type="button" class="btn btn-sm btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">' +
-                '<i class="fa fa-pencil"></i> ' +
-                '<span class="sr-only">Edit</span>' +
-                '</button> ' +
-                '<button type="button" class="btn btn-sm btn-default" data-toggle="tooltip" title="View history">' +
-                '<i class="fa fa-history"></i> ' +
-                '<span class="sr-only">View history</span>' +
-                '</button>' +
-                '</div>' +
-                '<div class="btn-group">' +
-                '<button type="button" class="btn btn-sm btn-default more-actions" title="More actions" data-content="'+
-                '<ul class=\'dropdown-menu dropdown-default\'>' +
-                '<li><a href=\'#\'><i class=\'ace-icon fa fa-plus bigger-130 green\'></i> <span>Add product</span></a></li>' +
-                '<li><a href=\'#\'><i class=\'ace-icon  fa fa-pencil bigger-130 blue\'></i> Edit product lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>' +
-                '<li><a href=\'#\'><i class=\'ace-icon  fa fa-eye bigger-130 blue\'></i> Preview product</a></li>' +
-                '<li><a href=\'#\'><i class=\'ace-icon  fa fa-trash bigger-130 red\'></i> Delete product</a></li>' +
-                '<li><a href=\'#\'>Button with no icon</a></li>' +
-                '<li class=\'divider\'></li>' +
-                '<li class=\'disabled\'>' +
-                '<a href=\'#\' class=\'disabled\' data-rel=\'tooltip\' title=\'Edit product\'>' +
-                '<i class=\'ace-icon fa fa-download disabled\'></i> Actionaaa name + entity name' +
-                '</a>' +
-                '</li>' +
-                '<li>' +
-                '<a href=\'#\'><i class=\'ace-icon fa fa-download\'></i> Action name + entity name</a>' +
-                '</li>' +
-                '</ul>' +
-                '"><i class="fa fa-ellipsis-h"></i> ' +
-                '<span class="sr-only">More actions</span> ' +
-                '</button>' +
-                '</div>';
-
-            var dataSet = [
-                {
-                    "id": "1",
-                    "firstname": "Tony",
-                    "lastname": "Stark",
-                    "username": "ironman",
-                    "jobtype": "Philantropist",
-                    "codename": "Iron Man",
-                    "spirit_animal": "Tiger",
-                    level:"0",
-                    parent: null,
-                    isLeaf: false,
-                    expanded:true,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "2",
-                    "firstname": "Bruce",
-                    "lastname": "Banner",
-                    "username": "hulk_smash",
-                    "jobtype": "Doctor",
-                    "codename": "The Hulk",
-                    "spirit_animal": "Gorilla",
-                    level: "1",
-                    parent: "1",
-                    isLeaf: true,
-                    expanded: false,
-                    loaded: true,
-                    actions:actions
-                },
-                {
-                    "id": "3",
-                    "firstname": "Thor",
-                    "lastname": "Odinson",
-                    "username": "thehammer",
-                    "jobtype": "God",
-                    "codename": "Thor",
-                    "spirit_animal": "Lion",
-                    level:"1",
-                    parent: "1",
-                    isLeaf: true,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "4",
-                    "firstname": "Clinton",
-                    "lastname": "Barton",
-                    "username": "hawkyey",
-                    "jobtype": "Archer",
-                    "codename": "Hawkeye",
-                    "spirit_animal": "Hawk",
-                    level:"0",
-                    parent: null,
-                    isLeaf: false,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "5",
-                    "firstname": "Steven",
-                    "lastname": "Rogers",
-                    "username": "rogerthat",
-                    "jobtype": "Captain",
-                    "codename": "Captain America",
-                    "spirit_animal": "Eagle",
-                    level:"1",
-                    parent: "4",
-                    isLeaf: true,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "6",
-                    "firstname": "Natalia",
-                    "lastname": "Romanova",
-                    "username": "notawidow",
-                    "jobtype": "Event planner",
-                    "codename": "Black Widow",
-                    "spirit_animal": "Spider",
-                    level:"1",
-                    parent: "4",
-                    isLeaf: true,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "7",
-                    "firstname": "Henry",
-                    "lastname": "Pym",
-                    "username": "goliath",
-                    "jobtype": "Unemployed",
-                    "codename": "Ant-Man",
-                    "spirit_animal": "Dog",
-                    level:"0",
-                    parent: null,
-                    isLeaf: false,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "8",
-                    "firstname": "Luke",
-                    "lastname": "Charles",
-                    "username": "tchiao",
-                    "jobtype": "Self-employed",
-                    "codename": "Black Panther",
-                    "spirit_animal": "Jaguar",
-                    level:"1",
-                    parent: "7",
-                    isLeaf: false,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "9",
-                    "firstname": "Victor",
-                    "lastname": "Shade",
-                    "username": "imallseeing",
-                    "jobtype": "Self-employed",
-                    "codename": "The Vision",
-                    "spirit_animal": "Dolphin",
-                    level:"2",
-                    parent: "8",
-                    isLeaf: true,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                },
-                {
-                    "id": "10",
-                    "firstname": "Monica",
-                    "lastname": "Rambeau",
-                    "username": "photon",
-                    "jobtype": "Self-employed",
-                    "codename": "Captain Marvel",
-                    "spirit_animal": "Mustang",
-                    level:"2",
-                    parent: "8",
-                    isLeaf: true,
-                    expanded:false,
-                    loaded:true,
-                    actions:actions
-                }
-            ];
-
-            return dataSet;
-        }
+<script type="text/javascript" data-dependency-name="jqGrid_with_actions">
+    $(document).ready(function () {
 
         function getListingWithActionsDummyData() {
 
@@ -877,6 +1170,67 @@
             return data;
         }
 
+
+        var listingWithActionsParameters = {
+            table: '#grid_table_with_actions',
+            pager: '#grid_pager_with_actions',
+            datatype: 'jsonstring',
+            caption: 'Listing caption',
+            datastr: getListingWithActionsDummyData(),
+            colNames: [
+                'Name',
+                'Status',
+                'Platform',
+                'Available products',
+                'Actions'
+            ],
+            colModel: [
+                {name: 'name', index: 'name', width: 2, sortable: false},
+                {name: 'status', index: 'status', width: 1, sorttype: "text", formatter: PhotonDataFormatter.labelAndTooltip },
+                {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
+                {name: 'products', index: 'products', width: 2, sorttype: "text"},
+                {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
+            ],
+            gridComplete: function() {
+                addMoreActions('#grid_table_with_actions');
+                $('#grid_table_with_actions .label-with-tooltip').tooltip();
+            }
+        };
+
+        new PhotonJqGrid(listingWithActionsParameters).init();
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqGrid_with_data_formatters">
+    $(document).ready(function () {
+
+        //grid_with_formatter_table
+        var listingWithFormatterParameters = {
+            table: '#grid_with_formatter_table',
+            pager: '#grid_with_formatter_pager',
+            datatype: 'jsonstring',
+            caption: 'jqGrid with data formatters',
+            datastr: getListingWithFormatterDummyData(),
+            colNames: [
+                'id',
+                'notAvailable',
+                'dateTime',
+                'date',
+                'time',
+                'userEmail',
+                'country'
+            ],
+            colModel: [
+                {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
+                {name: 'notAvailable', index: 'notAvailable', sortable: false, width: 3, formatter: PhotonDataFormatter.notAvailable },
+                {name: 'dateTime', index: 'dateTime', sortable: false, width: 3, formatter: PhotonDataFormatter.dateTime },
+                {name: 'date', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.date },
+                {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
+                {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
+                {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
+            ]
+        };
+
         function getListingWithFormatterDummyData() {
             var data = {
                 'page': '1',
@@ -943,6 +1297,32 @@
             return data;
         }
 
+        new PhotonJqGrid(listingWithFormatterParameters).init();
+
+
+        //grid_with_formatter_2_table
+        var listingWithFormatter2Parameters = {
+            table: '#grid_with_formatter_2_table',
+            pager: '#grid_with_formatter_2_pager',
+            datatype: 'jsonstring',
+            caption: 'jqGrid with data formatters',
+            datastr: getListingWithFormatter2DummyData(),
+            colNames: [
+                'product',
+                'badge',
+                'price',
+                'dateTime',
+                'status'
+            ],
+            colModel: [
+                {name: 'product', index: 'product', sortable: false, width: 2, formatter: PhotonDataFormatter.product },
+                {name: 'badge', index: 'badge', sortable: false, width: 1, formatter: PhotonDataFormatter.badge },
+                {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.price },
+                {name: 'dateTime', index: 'dateTime', sortable: false, width: 1, formatter: PhotonDataFormatter.dateTime },
+                {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.labelAndTooltip }
+            ]
+        };
+
         function getListingWithFormatter2DummyData() {
             var status1 = '{"label": "Live", "labelClass": "label-success"}';
             var status2 = '{"label": "Deleted", "labelClass": "label-danger"}';
@@ -1007,6 +1387,42 @@
 
             return data;
         }
+
+        new PhotonJqGrid(listingWithFormatter2Parameters).init();
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
 </script>
 <!-- DOCUMENT-READY:End -->

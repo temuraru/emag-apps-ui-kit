@@ -290,7 +290,7 @@
                 <section id="js-custom-error-messages" class="pad-top-30">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h2><strong>Custom messages</strong></h2>
+                            <h2><strong>Custom error messages</strong></h2>
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
                                     <div class="alert alert-info no-margin-bottom" role="alert">
@@ -537,58 +537,6 @@
                     <div class="show-panel code-example"">
                         <div class="show-panel-body code-example"">
                             <h2><strong>Utilities</strong></h2>
-
-                            <div class="code-container">
-                                <div class="row code-header no-border-top">
-                                    <div class="col-xs-8 module-description">
-                                        <h4><b>Upload file input type</b></h4>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#upload-file" aria-expanded="false" aria-controls="upload-file"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
-                                    </div>
-                                </div>
-                                <div class="collapse code-example"  id="upload-file">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#upload-file-html-source" aria-controls="upload-file-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#upload-file-js-source" aria-controls="upload-file-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#upload-file-css-source" aria-controls="upload-file-css" role="tab" data-toggle="tab">CSS</a></li>
-                                    </ul>
-
-                                    <!-- Tab panes -->
-                                    <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="upload-file-html-source">
-                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="upload-file-js-source">
-                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="upload-file-css-source">
-                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" aria-label="..." placeholder="Tell me your fathers name">
-                                                    <div class="input-group-btn">
-                                                        <label for="testfile3" class="btn btn-primary">
-                                                            <i class="fa fa-upload"></i>
-                                                            <span>Upload his picture</span>
-                                                            <input type="file" name="testfile3" id="testfile3" class="form-input-control" data-multiple-caption="{count} files selected" multiple="">
-                                                        </label>
-                                                        <button class="btn btn-success" type="button">Go!</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
