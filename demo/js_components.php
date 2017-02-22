@@ -175,7 +175,7 @@
                                     </div>
                                 </div>
 
-                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,ajax_modal,jquery">
+                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,ajax_modal_init,jquery">
                                     <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
                                 </div>
                             </div>
@@ -213,7 +213,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,modals_different_size,modal_in_page">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,modals_different_size_init,modal_in_page">
                                             <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                 <div class="btn-group" role="group">
                                                     <button type="button" id="mySmallDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Small</button>
@@ -263,7 +263,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals_init">
                                             <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                 <div class="btn-group" role="group">
                                                     <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
@@ -332,7 +332,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,messages_types">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,messages_types_init">
                                             <button type="button" id="show_info" class="btn btn-default">
                                                 Show info message
                                             </button>
@@ -398,7 +398,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source">
                                             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip type danger" data-type="danger">Tooltip type danger</button>
                                             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip type warning" data-type="warning">Tooltip type warning</button>
                                             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip type default" data-type="default">Tooltip type default</button>
@@ -450,7 +450,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source">
                                             <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
                                             <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
                                             <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
@@ -502,7 +502,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tabs,grid_locale,jqGrid,jqgrid_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tabs_init,grid_locale_en_source,jqgrid_source,jqgrid_css">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs" role="tablist">
                                                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jqGrid basic</a></li>
@@ -696,7 +696,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,block_ui">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,block_ui_init">
                                             <button type="button" id="block_page" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block page</span></button>
                                             <button type="button" id="block_section" class="btn btn-primary"><i class="fa fa-remove"></i><span>Block this section</span></button>
                                         </div>
@@ -757,7 +757,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
-        <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether"></script>
+        <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
@@ -769,12 +769,12 @@
 
 
         <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
-        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="grid_locale"></script>
-        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqGrid"></script>
+        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="grid_locale_en_source"></script>
+        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
 
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript" data-dependency-name="ajax_modal">
+        <script type="text/javascript" data-dependency-name="ajax_modal_init">
             $(document).ready(function () {
                 var modalTest = new PhotonModal({
                     id: 'testModal',
@@ -805,7 +805,7 @@
                 });
             })
         </script>
-        <script type="text/javascript" data-dependency-name="modals_different_size">
+        <script type="text/javascript" data-dependency-name="modals_different_size_init">
             $(document).ready(function () {
                 function modalSizing() {
                     $('#mySmallDemoModal').on('click', function () {
@@ -829,7 +829,7 @@
                 modalSizing();
             })
         </script>
-        <script type="text/javascript" data-dependency-name="alerts_modals">
+        <script type="text/javascript" data-dependency-name="alerts_modals_init">
             $(document).ready(function () {
                 $('#confirmation_alert').on('click', function () {
                     confirmationAlertModal('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque arcu, tempor vitae laoreet nec, hendrerit ut augue.', 'Confirmation alert modal');
@@ -848,7 +848,7 @@
                 });
             })
         </script>
-        <script type="text/javascript" data-dependency-name="messages_types">
+        <script type="text/javascript" data-dependency-name="messages_types_init">
             $(document).ready(function () {
                 $('#show_info').on('click',function(){
                     addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
@@ -870,7 +870,7 @@
                 });
             })
         </script>
-        <script type="text/javascript" data-dependency-name="block_ui">
+        <script type="text/javascript" data-dependency-name="block_ui_init">
             $(document).ready(function () {
                 $('#block_page').on('click', function() {
                     $('body').blockControl({
@@ -892,12 +892,11 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 demoHelpers();  // Require demo_helpers.js
-
                 showPageCode();
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="tabs">
+        <script type="text/javascript" data-dependency-name="tabs_init">
             $(document).ready(function () {
                 function getListingDummyData() {
                     var actions = '<div class="btn-group">' +
@@ -1143,7 +1142,6 @@
                     $(window).resize();
                 });
             })
-
         </script>
         <!-- DOCUMENT-READY:End -->
         

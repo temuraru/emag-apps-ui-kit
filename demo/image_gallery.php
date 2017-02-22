@@ -30,7 +30,7 @@
                         <section id="summernoteStandard" class="pad-top-40">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
-                                    <h4><strong>Magnific.js</strong></h4>
+                                    <h2><strong>Magnific.js</strong></h2>
                                     <div class="row">
                                         <div class="col-sm-12 mg-top-20">
                                             <div class="alert alert-info no-margin-bottom" role="alert">
@@ -75,7 +75,7 @@
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific,magnific_standard,magnific_css">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific_source,magnific_standard_init,magnific_css">
                                                     <div id="default_magnific" class="zoom-gallery zg-grid">
                                                         <a href="img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
                                                             <img src="img/photo-1.jpg" alt="gallery-image">
@@ -135,7 +135,7 @@
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific,magnific_ajax,magnific_css">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific_source,magnific_ajax_init,magnific_css">
                                                     <a href="img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a>
                                                 </div>
                                             </div>
@@ -176,7 +176,7 @@
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific,magnific_embeds,magnific_css">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific_source,magnific_embeds_init,magnific_css">
                                                     <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM" id="youtube_magnific" class="btn btn-primary">Open YouTube video</a>
                                                 </div>
                                             </div>
@@ -201,7 +201,7 @@
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
         
         <!-- PLUGIN: Magnific popup -->
-        <script src="../dist/plugins/magnific/magnific.min.js" data-dependency-name="magnific"></script>
+        <script src="../dist/plugins/magnific/magnific.min.js" data-dependency-name="magnific_source"></script>
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
@@ -218,7 +218,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="magnific_standard">
+        <script type="text/javascript" data-dependency-name="magnific_standard_init">
             $(document).ready(function () {
                 $('#default_magnific').magnificPopup({
                     delegate: 'a',
@@ -246,7 +246,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="magnific_ajax">
+        <script type="text/javascript" data-dependency-name="magnific_ajax_init">
             $(document).ready(function () {
                 $('#btnajax_magnific').magnificPopup({
                     type: 'image',
@@ -259,7 +259,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="magnific_embeds">
+        <script type="text/javascript" data-dependency-name="magnific_embeds_init">
             $(document).ready(function () {
                 $('#youtube_magnific').magnificPopup({
                     //disableOn: 700,

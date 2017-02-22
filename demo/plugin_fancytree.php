@@ -34,14 +34,12 @@
                 <section id="fancytreeStandardId" class="pad-top-40">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h4><strong>Fancytree.js</strong></h4>
+                            <h2><strong>Fancytree.js</strong></h2>
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
-
                                     <div class="alert alert-info no-margin-bottom" role="alert">
                                         <p><i class="fa fa-info-circle"></i>Used for displaying categories, subcategories and products. You can familiarize yourself with more options and settings by checking out <a href="https://github.com/mar10/fancytree" class="alert-link" target="_blank">https://github.com/mar10/fancytree</a></p>
                                     </div>
-
                                 </div>
                             </div>
 
@@ -76,11 +74,9 @@
                                     </div>
                                 </div>
 
-
-
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,fancytree_in_page,fancytree-content">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,fancytree_source,fancytree_css,fancytree_in_page_init,fancytree-content">
                                             <div id="tree"></div>
                                         </div>
                                     </div>
@@ -118,11 +114,9 @@
                                     </div>
                                 </div>
 
-
-
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,category_tree_default,fancytree-content,pop_space">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,fancytree_source,fancytree_css,category_tree_default_init,fancytree-content,pop_space">
                                             <div class="form-group">
                                                 <label for="category_treeDefault"></label>
                                                 <div class="hide-with-opacity">
@@ -216,11 +210,9 @@
                                     </div>
                                 </div>
 
-
-
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui,fancytree,fancytree_css,category_tree_disabled,fancytree-content,pop_space">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,fancytree_source,fancytree_css,category_tree_disabled_init,fancytree-content,pop_space">
                                             <div class="form-group">
                                                 <label for="category_treeDefault"></label>
                                                 <div class="hide-with-opacity">
@@ -308,8 +300,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
-<script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui"></script>
-<script src="../dist/plugins/fancytree/fancytree.min.js" data-dependency-name="fancytree"></script>
+<script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
+<script src="../dist/plugins/fancytree/fancytree.min.js" data-dependency-name="fancytree_source"></script>
 
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
@@ -322,10 +314,8 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-
         demoHelpers();  // Require demo_helpers.js
         showPageCode();
-
     });
 </script>
 
@@ -422,9 +412,8 @@
     }, {"key": 1534, "title": "Other Products", "children": [], "folder": true}];
 </script>
 
-<script type="text/javascript" data-dependency-name="fancytree_in_page">
+<script type="text/javascript" data-dependency-name="fancytree_in_page_init">
     $(document).ready(function () {
-        //Fancytree inits
         $("#tree").fancytree({
             icon: false,
             checkbox: true,
@@ -433,7 +422,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="category_tree_default">
+<script type="text/javascript" data-dependency-name="category_tree_default_init">
     $(document).ready(function () {
         TreeTypeObject = $("#id_category_tree_default").TreeType({
             treeData: fancytreeContent,
@@ -451,7 +440,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="category_tree_disabled">
+<script type="text/javascript" data-dependency-name="category_tree_disabled_init">
     $(document).ready(function () {
         TreeTypeObject = $("#id_category_tree_disabled").TreeType({
             treeData: fancytreeContent,

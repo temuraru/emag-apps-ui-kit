@@ -30,7 +30,7 @@
                 <section class="pad-top-40">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h4><strong>IntroJS</strong></h4>
+                            <h2><strong>IntroJS</strong></h2>
 
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
@@ -66,7 +66,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,introjs,introjs_script,intro_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,introjs_source,introjs_init,intro_css">
                                             <button id="intro_js_default" type="button" class="btn btn-primary">Default</button>
                                             <button id="intro_js_without_bullets" type="button" class="btn btn-primary">Without bullets</button>
                                             <button id="intro_js_without_buttons" type="button" class="btn btn-primary">Without buttons</button>
@@ -140,7 +140,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
-<script src="../dist/plugins/intro/intro.min.js" data-dependency-name="introjs"></script>
+<script src="../dist/plugins/intro/intro.min.js" data-dependency-name="introjs_source"></script>
 
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
@@ -152,14 +152,12 @@
 <!-- DOCUMENT-READY:Start -->
 <script type="text/javascript">
     $(document).ready(function () {
-
         demoHelpers();  // Require demo_helpers.js
         showPageCode();
-
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="introjs_script">
+<script type="text/javascript" data-dependency-name="introjs_init">
     $(document).ready(function () {
 
         var $body = $('body');

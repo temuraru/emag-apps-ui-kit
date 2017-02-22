@@ -35,7 +35,7 @@
                 <section id="datePicker" class="pad-top-40">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h4><strong>Date picker</strong></h4>
+                            <h2><strong>Date picker</strong></h2>
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
 
@@ -82,7 +82,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,datetimepicker,datetimepicker_en,bootstrap_date,datetimepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,datetimepicker_source,datetimepicker_en_source,bootstrap_date_init,datetimepicker_css">
                                             <div class="form-group">
                                                 <label for="bootstrap_date"></label>
                                                 <div class="input-group">
@@ -129,7 +129,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,datetimepicker,datetimepicker_en,bootstrap_time,datetimepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,datetimepicker_source,datetimepicker_en_source,bootstrap_time_init,datetimepicker_css">
                                             <div class="form-group">
                                                 <label for="bootstrap_time"></label>
                                                 <div class="input-group">
@@ -176,7 +176,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,datetimepicker,datetimepicker_en,bootstrap_date_time,datetimepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,datetimepicker_source,datetimepicker_en_source,bootstrap_date_time_init,datetimepicker_css">
                                             <div class="form-group">
                                                 <label for="bootstrap_multiple_date"></label>
                                                 <div class="input-group">
@@ -223,7 +223,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,datetimepicker,datetimepicker_en,boostrap_date_range,datetimepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,datetimepicker_source,datetimepicker_en_source,boostrap_date_range_init,datetimepicker_css">
                                             <div class="form-group">
                                                 <label for="range_bootstrap_date"></label>
                                                 <div class="input-daterange input-group">
@@ -271,7 +271,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,datetimepicker,datetimepicker_en,boostrap_date_time_range,datetimepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,datetimepicker_source,datetimepicker_en_source,boostrap_date_time_range_init,datetimepicker_css">
                                             <div class="form-group">
                                                 <label for="range_bootstrap_date"></label>
                                                 <div class="input-daterange input-group">
@@ -291,7 +291,7 @@
                 <section id="dateRangePicker" class="pad-top-30">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h4><strong>DateRangePicker.js</strong></h4>
+                            <h2><strong>DateRangePicker.js</strong></h2>
 
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
@@ -338,7 +338,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,daterangepicker,date_range_picker,daterangepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,daterangepicker_source,drp_init,daterangepicker_css">
                                             <form>
                                                 <fieldset>
                                                     <legend class="sr-only">DateRangePicker example form</legend>
@@ -392,7 +392,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,daterangepicker,daterangepicker_standard_with_value,daterangepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,daterangepicker_source,drp_standard_with_value_init,daterangepicker_css">
                                             <form>
                                                 <fieldset>
                                                     <legend class="sr-only">Example form</legend>
@@ -446,7 +446,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,daterangepicker,daterangepicker_standard_with_format,daterangepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,daterangepicker_source,drp_standard_with_format_init,daterangepicker_css">
                                             <form>
                                                 <fieldset>
                                                     <legend class="sr-only">Example form</legend>
@@ -501,7 +501,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,daterangepicker,daterangepicker_standard_with_predefined_intervals,daterangepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,daterangepicker_source,drp_standard_with_predefined_intervals_init,daterangepicker_css">
                                             <form>
                                                 <fieldset>
                                                     <legend class="sr-only">Example form</legend>
@@ -558,7 +558,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment,daterangepicker,drp_standard_with_predefined_intervals_no_calendar,daterangepicker_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,moment_source,daterangepicker_source,drp_standard_with_predefined_intervals_no_calendar_init,daterangepicker_css">
                                             <form>
                                                 <fieldset>
                                                     <legend class="sr-only">Example form</legend>
@@ -595,12 +595,12 @@
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
         <!-- PLUGIN: moment.js -->
-        <script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js" data-dependency-name="moment"></script>
+        <script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js" data-dependency-name="moment_source"></script>
         <!-- PLUGIN: DateTimePicker -->
-        <script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.37.min.js" data-dependency-name="datetimepicker"></script>
-        <script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js" data-dependency-name="datetimepicker_en"></script>
+        <script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.37.min.js" data-dependency-name="datetimepicker_source"></script>
+        <script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js" data-dependency-name="datetimepicker_en_source"></script>
         <!-- PLUGIN: DateRangePicker -->
-        <script src="../dist/plugins/daterangepicker/daterangepicker.min.js" data-dependency-name="daterangepicker"></script>
+        <script src="../dist/plugins/daterangepicker/daterangepicker.min.js" data-dependency-name="daterangepicker_source"></script>
 
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
@@ -617,7 +617,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="bootstrap_date">
+        <script type="text/javascript" data-dependency-name="bootstrap_date_init">
             $(document).ready(function () {
                 $('#bootstrap_date').datetimepicker({format : 'DD/MM/YYYY' })
                 .next().on('click', function() {
@@ -626,7 +626,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="bootstrap_date_time">
+        <script type="text/javascript" data-dependency-name="bootstrap_date_time_init">
             $(document).ready(function () {
                 $('#bootstrap_time_date').datetimepicker({})
                 .next().on('click', function() {
@@ -635,7 +635,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="bootstrap_time">
+        <script type="text/javascript" data-dependency-name="bootstrap_time_init">
             $(document).ready(function () {
                 $('#bootstrap_time').datetimepicker({format : 'HH:mm'})
                 .next().on('click', function() {
@@ -644,7 +644,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="boostrap_date_range">
+        <script type="text/javascript" data-dependency-name="boostrap_date_range_init">
             $(document).ready(function () {
                 var datepickerRangeConfig = {
                     '#datepicker_start'  : {format : 'DD/MM/YYYY' },
@@ -665,7 +665,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="boostrap_date_time_range">
+        <script type="text/javascript" data-dependency-name="boostrap_date_time_range_init">
             $(document).ready(function () {
                 var datepickerRangeConfig = {
                     '#datetimepicker_start'  : {format : 'DD/MM/YYYY HH:mm'},
@@ -685,7 +685,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="date_range_picker">
+        <script type="text/javascript" data-dependency-name="drp_init">
             $(document).ready(function () {
                 $('#daterangepicker_standard').daterangepicker({})
                 .next().on('click', function() {
@@ -694,7 +694,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="daterangepicker_standard_with_value">
+        <script type="text/javascript" data-dependency-name="drp_standard_with_value_init">
             $(document).ready(function () {
                 $('#daterangepicker_standard_with_value').daterangepicker({})
                 .next().on('click', function() {
@@ -703,7 +703,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="daterangepicker_standard_with_format">
+        <script type="text/javascript" data-dependency-name="drp_standard_with_format_init">
             $(document).ready(function () {
                 $('#daterangepicker_standard_with_format').daterangepicker({
                     timePicker: true,
@@ -718,7 +718,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="daterangepicker_standard_with_predefined_intervals">
+        <script type="text/javascript" data-dependency-name="drp_standard_with_predefined_intervals_init">
             $(document).ready(function () {
                 $('#daterangepicker_standard_with_predefined_intervals').daterangepicker({
                     alwaysShowCalendars: true,
@@ -737,7 +737,7 @@
             });
         </script>
 
-        <script type="text/javascript" data-dependency-name="drp_standard_with_predefined_intervals_no_calendar">
+        <script type="text/javascript" data-dependency-name="drp_standard_with_predefined_intervals_no_calendar_init">
             $(document).ready(function () {
                 $('#daterangepicker_standard_with_predefined_intervals_no_calendar').daterangepicker({
                     ranges: {
@@ -755,31 +755,6 @@
             });
         </script>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-
-
-                initDateRangePickers();
-
-                function initDateRangePickers() {
-                    var dateRangePickerConfig = {
-
-
-
-
-                        '#daterangepicker_standard_with_predefined_intervals_no_calendar' :
-                    }
-                    for (var selector in dateRangePickerConfig) {
-                        $(selector).daterangepicker(dateRangePickerConfig[selector])
-                            .next().on('click', function() {
-                                $(this).prev().focus();
-                            });
-                    }
-                }
-            });
-        </script>
         <!-- DOCUMENT-READY:End -->
-
-
 </body>
 </html>

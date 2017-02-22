@@ -80,7 +80,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <table id="grid_table" class="table table-bordered"></table>
                                             <div id="grid_pager"></div>
                                         </div>
@@ -123,7 +123,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_sticky_init">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_sticky_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <table id="grid_table_sticky" class="table table-bordered"></table>
                                             <div id="grid_pager_sticky"></div>
                                         </div>
@@ -166,7 +166,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_column_chooser">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_column_chooser_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <div class="pad-top-20 pad-btm-20 clearfix">
                                                 <button type="button" id="grid_table_column_chooser_button" class="btn btn-primary pull-right">
                                                     Select columns <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -215,7 +215,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_selectable_rows">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_selectable_rows_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <div class="pad-top-20 pad-btm-20">
                                                 <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
                                             </div>
@@ -267,7 +267,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
 
                                         </div>
@@ -310,7 +310,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <table id="grid_table_with_subgrid" class="table table-bordered"></table>
 
                                         </div>
@@ -353,7 +353,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_inline_editing">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_inline_editing_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
                                             <div id="grid_pager_with_inline_edit"></div>
 
@@ -397,7 +397,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_actions">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_actions_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <table id="grid_table_with_actions" class="table table-bordered"></table>
                                             <div id="grid_pager_with_actions"></div>
 
@@ -441,7 +441,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_data_formatters">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_data_formatters_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
                                             <div class="pad-top-20">
                                                 <table id="grid_with_formatter_table" class="table table-bordered"></table>
                                                 <div id="grid_with_formatter_pager"></div>
@@ -490,16 +490,11 @@
 <script src="../dist/plugins/prism/prism.min.js"></script>
 
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
-
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
-
 <script src="../dist/plugins/stickyKit/stickyKit.min.js" data-dependency-name="stickykit_source"></script>
-
 <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
-
 <script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
-
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 <!-- SCRIPTS:End -->
@@ -662,7 +657,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqgrid_with_column_chooser">
+<script type="text/javascript" data-dependency-name="jqgrid_with_column_chooser_init">
     $(document).ready(function () {
         var listingParametersWithColumnChooser = {
             table: '#grid_table_column_chooser',
@@ -693,7 +688,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_selectable_rows">
+<script type="text/javascript" data-dependency-name="jqGrid_with_selectable_rows_init">
     $(document).ready(function () {
         var listingParametersWithSelectableRows = {
             table: '#grid_table_with_selectable_rows',
@@ -737,7 +732,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_ierarchical_elements">
+<script type="text/javascript" data-dependency-name="jqGrid_with_ierarchical_elements_init">
     function getListingDummyDataForIerarchicalElements() {
 
         var dataSet = [
@@ -930,7 +925,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_subgrid">
+<script type="text/javascript" data-dependency-name="jqGrid_with_subgrid_init">
     $(document).ready(function () {
         $("#grid_table_with_subgrid").jqGrid({
             iconSet: "fontAwesome",
@@ -989,7 +984,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_inline_editing">
+<script type="text/javascript" data-dependency-name="jqGrid_with_inline_editing_init">
     $(document).ready(function () {
         var listingParameters = {
             table: '#grid_table_with_inline_edit',
@@ -1025,7 +1020,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_actions">
+<script type="text/javascript" data-dependency-name="jqGrid_with_actions_init">
     $(document).ready(function () {
 
         function getListingWithActionsDummyData() {
@@ -1201,7 +1196,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_data_formatters">
+<script type="text/javascript" data-dependency-name="jqGrid_with_data_formatters_init">
     $(document).ready(function () {
 
         //grid_with_formatter_table
@@ -1389,40 +1384,6 @@
         }
 
         new PhotonJqGrid(listingWithFormatter2Parameters).init();
-    });
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     });
 </script>
 <!-- DOCUMENT-READY:End -->

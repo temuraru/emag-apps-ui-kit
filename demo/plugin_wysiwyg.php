@@ -36,12 +36,11 @@
                             <section id="summernoteStandard" class="pad-top-40">
                                 <div class="show-panel code-example">
                                     <div class="show-panel-body code-example">
-                                        <h4><strong>Summernote.js</strong></h4>
+                                        <h2><strong>Summernote.js</strong></h2>
 
                                         <div class="row">
                                             <div class="col-sm-12 mg-top-20">
                                                 <div class="alert alert-info no-margin-bottom" role="alert">
-
                                                     <p><i class="fa fa-info-circle"></i>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" class="alert-link" target="_blank">summernote.org</a></p>
                                                 </div>
                                             </div>
@@ -82,7 +81,7 @@
 
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,summernote,summernote_standard,summernote_css">
+                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,summernote_source,summernote_standard_init,summernote_css">
                                                         <div id="summernote1">This is the infamous summernote. Check it out!</div>
                                                     </div>
                                                 </div>
@@ -123,7 +122,7 @@
 
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,summernote,summernote_air,summernote_css">
+                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,summernote_source,summernote_air_init,summernote_css">
                                                         <div id="summernote2">
                                                             <p>Bacon ipsum dolor amet laborum ullamco reprehenderit qui ut voluptate officia turducken corned beef andouille sint. Non consequat chicken shank ball tip, incididunt esse nostrud. Nostrud dolore ut veniam andouille pork belly. Turkey shankle magna pig aliquip. Fugiat bresaola tempor pork alcatra t-bone exercitation aliqua esse. Nisi flank pork chop t-bone aute non corned beef dolor doner quis sint. Fatback ut tongue leberkas eu pancetta nisi.</p>
                                                             <p>Ex bresaola landjaeger biltong labore. In pariatur consectetur, dolore pork rump ribeye. Beef adipisicing occaecat, excepteur brisket officia fatback porchetta id alcatra elit pastrami reprehenderit labore. Excepteur rump shank enim cupidatat biltong t-bone hamburger eu. Fatback meatloaf flank ut eu, officia meatball.</p>
@@ -151,12 +150,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
-        <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether"></script>
-
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
 
-        <script src="../dist/plugins/summernote/summernote.min.js" data-dependency-name="summernote"></script>
+        <script src="../dist/plugins/summernote/summernote.min.js" data-dependency-name="summernote_source"></script>
 
 
         <!-- SCRIPTS:End -->
@@ -167,13 +164,12 @@
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">               
             $(document).ready(function () {
-
-                demoHelpers();  // Require demo_helpers.js
-
+                demoHelpers();
                 showPageCode();
             });
         </script>
-        <script type="text/javascript" data-dependency-name="summernote_standard">
+
+        <script type="text/javascript" data-dependency-name="summernote_standard_init">
             $(document).ready(function () {
                 $('#summernote1').summernote({
                     minHeight: 300,
@@ -181,7 +177,8 @@
                 });
             });
         </script>
-        <script type="text/javascript" data-dependency-name="summernote_air">
+
+        <script type="text/javascript" data-dependency-name="summernote_air_init">
             $(document).ready(function () {
                 $('#summernote2').summernote({
                     airMode: true

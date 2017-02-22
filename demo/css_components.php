@@ -3454,9 +3454,6 @@
                                         </div>
                                     </div>
 
-
-
-
                                 </div>
                             </div>
                         </section>
@@ -3464,7 +3461,6 @@
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Embeds</strong></h2>
-
 
                                     <div class="code-container">
                                         <div class="row code-header">
@@ -3540,9 +3536,7 @@
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">               
             $(document).ready(function () {
-                console.log('Ready, Captain!');
-
-                demoHelpers();  // Require demo_helpers.js
+                demoHelpers();
 
                 var i = 1;
                 function blowWorld(selector, no) {
