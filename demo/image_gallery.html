@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-        <title>JS Components - eMAG Apps UI KIT</title>
+        <title>Plugins - eMAG Apps UI KIT</title>
         <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -9,7 +9,8 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">        <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css" data-dependency-name="magnific_css">
+        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -20,13 +21,11 @@
 <!--[if lt IE 9]>
     <script src="../dist/js/lib/html5shiv.min.js"></script>
     <script src="../dist/js/lib/respond.min.js"></script>
-<![endif]-->        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-        <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-    </head>
+<![endif]-->    </head>
     <body>
-        
         <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
 <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <!-- HEADER:Start -->
         <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -220,11 +219,6 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-tooltips">
-                                <span class="menu-text">CSS Tooltips</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.html#css-labels-and-badges">
                                 <span class="menu-text">Labels and badges</span>
                             </a>
@@ -245,18 +239,13 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-jumbotron">
-                                <span class="menu-text">Page headers and jumbotrons</span>
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-page-header">
+                                <span class="menu-text">Page header</span>
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.html#css-embeds">
                                 <span class="menu-text">Embeds</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/helper_classes.html">
-                                <span class="menu-text">Custom helper classes</span>
                             </a>
                         </li>
                     </ul>
@@ -272,16 +261,6 @@
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.html">
-                                <span class="menu-text">AJAX Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-block-ui">
-                                <span class="menu-text">Block UI</span>
-                            </a>
-                        </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">
                                 <span class="menu-text">Complex form elements</span>
@@ -329,11 +308,102 @@
                                 </li>
                             </ul>
                         </li>
+
+
+
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">
+                                <span class="menu-text">jQGrid</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
+                                        <span class="menu-text">Basic</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-sticky-panels">
+                                        <span class="menu-text">With sticky panels</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser">
+                                        <span class="menu-text">With column chooser</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows">
+                                        <span class="menu-text">With selectable rows</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-ierarchical-elements-tree">
+                                        <span class="menu-text">With ierarchical elements (Tree)</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid">
+                                        <span class="menu-text">With subgrid</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-inline-editing">
+                                        <span class="menu-text">With inline editing</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-actions">
+                                        <span class="menu-text">With actions</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-data-formatters">
+                                        <span class="menu-text">With data formatters</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html">
+                                <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/js_components.html#js-custom-error-messages">
                                 <span class="menu-text">Custom error messages</span>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-popovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tabs">
+                                <span class="menu-text">Tabs</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-utilities">
+                                <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-block-ui">
+                                <span class="menu-text">Block UI</span>
+                            </a>
+                        </li>
+
+
+
+
+
+
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_datetime.html">
                                 <span class="menu-text">DateTime</span>
@@ -350,40 +420,14 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
-                                <span class="menu-text">jQGrid</span>
+                            <a href="/emag-apps-ui-kit/demo/image_gallery.html">
+                                <span class="menu-text">Image gallery</span>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html">
-                                <span class="menu-text">Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.html">
-                                <span class="menu-text">Picture gallery & image slider</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-popovers">
-                                <span class="menu-text">Popovers</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tooltips">
-                                <span class="menu-text">Tooltips</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tabs">
-                                <span class="menu-text">Tabs</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-utilities">
-                                <span class="menu-text">Utilities</span>
-                            </a>
-                        </li>
+
+
+
+
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.html">
                                 <span class="menu-text">Wysiwyg editor</span>
@@ -453,46 +497,166 @@
                         <div class="jumbotron content-header">
                             <div class="container-fluid">
                                 <p>eMAG Apps UI KIT</p>
-                                <p><b>AJAX Modals</b></p>
+                                <p><b>Image gallery</b></p>
                             </div>
                         </div>
                         <section id="summernoteStandard" class="pad-top-40">
+                            <div class="show-panel code-example">
+                                <div class="show-panel-body code-example">
+                                    <h2><strong>Magnific.js</strong></h2>
+                                    <div class="row">
+                                        <div class="col-sm-12 mg-top-20">
+                                            <div class="alert alert-info no-margin-bottom" role="alert">
+                                                <p><i class="fa fa-info-circle"></i>You can familiarize yourself with more options and settings by checking out <a href="http://dimsemenov.com/plugins/magnific-popup/"  class="alert-link" target="_blank">http://dimsemenov.com/plugins/magnific-popup/</a></p>
 
-                            <div class="show-panel">
-                                <div class="show-panel-body">
-                                    <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
-                                    <p><strong>Works great with the standard Bootstrap version</strong></p>
-                                    <div class="pad-sep-20">
-                                        <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="code-container">
+                                        <div class="row code-header no-border-top">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><b>Standard install</b></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#summernote" aria-expanded="false" aria-controls="summernote"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="summernote">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#summernote-html-source" aria-controls="summernote-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#summernote-js-source" aria-controls="summernote-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#summernote-css-source" aria-controls="summernote-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="summernote-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="summernote-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="summernote-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific_source,magnific_standard_init,magnific_css">
+                                                    <div id="default_magnific" class="zoom-gallery zg-grid">
+                                                        <a href="img/photo-1.jpg" data-source="https://unsplash.com/photos/4jcFu1byopQ" title="by Davide Ragusa">
+                                                            <img src="img/photo-1.jpg" alt="gallery-image">
+                                                        </a>
+                                                        <a href="img/photo-4.jpg" data-source="https://unsplash.com/photos/BeIvjuz6k2k" title="by Adrian Pelletier">
+                                                            <img src="img/photo-4.jpg" alt="gallery-image">
+                                                        </a>
+                                                        <a href="img/photo-5.jpg" data-source="https://unsplash.com/photos/DjlKxYFJlTc" title="by Elliott Engelmann">
+                                                            <img src="img/photo-5.jpg" alt="gallery-image">
+                                                        </a>
+                                                        <a href="img/photo-6.jpg" data-source="http://www.gettyimages.com/license/484398332" title="by Carl Court">
+                                                            <img src="img/photo-6.jpg" alt="gallery-image">
+                                                        </a>
+                                                        <a href="img/photo-7.jpg" data-source="http://www.volvooceanrace.com/en/home.html" title="Volvo Ocean Race/Team Vestas Wind/2015">
+                                                            <img src="img/photo-7.jpg" alt="gallery-image">
+                                                        </a>
+                                                        <a href="img/photo-8.gif" data-source="https://www.youtube.com/watch?v=o0u4M6vppCI" title="'Shia LaBeouf' Live - Rob Cantor">
+                                                            <img src="img/photo-8.gif" alt="gallery-image">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="code-container">
+                                        <div class="row code-header no-border-top">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><b>All AJAX</b></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#magnific_ajax" aria-expanded="false" aria-controls="magnific_ajax"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="magnific_ajax">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#magnific_ajax-html-source" aria-controls="magnific_ajax-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#magnific_ajax-js-source" aria-controls="magnific_ajax-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#magnific_ajax-css-source" aria-controls="magnific_ajax-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="magnific_ajax-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="magnific_ajax-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="magnific_ajax-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific_source,magnific_ajax_init,magnific_css">
+                                                    <a href="img/photo-2.jpg" id="btnajax_magnific" class="btn btn-primary">Show me an image of a house.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="code-container">
+                                        <div class="row code-header no-border-top">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><b>Youtube/Vimeo/etc. embeds</b></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#magnific_embeds" aria-expanded="false" aria-controls="magnific_embeds"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="magnific_embeds">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#magnific_ajax-html-source" aria-controls="magnific_embeds-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#magnific_embeds-js-source" aria-controls="magnific_embeds-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#magnific_embeds-css-source" aria-controls="magnific_embeds-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="magnific_embeds-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="magnific_embeds-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="magnific_embeds-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,magnific_source,magnific_embeds_init,magnific_css">
+                                                    <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM" id="youtube_magnific" class="btn btn-primary">Open YouTube video</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="show-panel-footer">
-                                    <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script type=&quot;text/javascript&quot;&gt;
-var modalTest = new PhotonModal({
-    id: 'testModal',
-    title: 'This is an AJAX modal',
-    useAjax: true,
-    ajaxModalParams: {
-        method: 'POST',
-        url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
-    },
-    size: 'default',
-    type: 'preview',
-    buttons: {
-        save: {
-            label: 'Save',
-            class: 'btn-success',
-            closeModal: true
-        },
-        cancel: {
-            label: 'Cancel',
-            class: 'btn-default',
-            closeModal: true
-        }
-    }
-});
-&lt;/script&gt;</code></pre>
-                                </div>
+
                             </div>
                         </section>                                        
                     </div>
@@ -509,60 +673,83 @@ var modalTest = new PhotonModal({
                 </div>
             </div>
         <!-- PAGE:End -->
-
-        <!-- POPUPS:Start -->
-        <div id="popSpace"></div>
-        <!-- POPUPS:End -->
-
+        
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        
+        <!-- PLUGIN: Magnific popup -->
+        <script src="../dist/plugins/magnific/magnific.min.js" data-dependency-name="magnific_source"></script>
+
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+        <!-- SCRIPTS:End -->
 
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
-        <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
-            var modalTest = new PhotonModal({
-                id: 'testModal',
-                title: 'This is an AJAX modal',
-                useAjax: true,
-                ajaxModalParams: {
-                    method: 'POST',
-                    url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
-                },
-                size: 'default',
-                type: 'preview',
-                buttons: {
-                    save: {
-                        label: 'Save',
-                        class: 'btn-success',
-                        closeModal: true
-                    },
-                    cancel: {
-                        label: 'Cancel',
-                        class: 'btn-default',
-                        closeModal: true
-                    }
-                }
-            });
-
             $(document).ready(function () {
-                console.log('Ready, Captain!');
-
                 demoHelpers();  // Require demo_helpers.js
+                showPageCode();
+            });
+        </script>
 
-                $('#ajax_modal_start').on('click', function(){
-                    modalTest.show();
+        <script type="text/javascript" data-dependency-name="magnific_standard_init">
+            $(document).ready(function () {
+                $('#default_magnific').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                        verticalFit: true,
+                        titleSrc: function (item) {
+                            return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+                        }
+                    },
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't foget to change the duration also in CSS
+                        opener: function (element) {
+                            return element.find('img');
+                        }
+                    }
                 });
+            });
+        </script>
 
+        <script type="text/javascript" data-dependency-name="magnific_ajax_init">
+            $(document).ready(function () {
+                $('#btnajax_magnific').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    image: {
+                        verticalFit: true
+                    }
 
+                });
+            });
+        </script>
+
+        <script type="text/javascript" data-dependency-name="magnific_embeds_init">
+            $(document).ready(function () {
+                $('#youtube_magnific').magnificPopup({
+                    //disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+                    fixedContentPos: false
+                });
             });
         </script>
         <!-- DOCUMENT-READY:End -->
-
+        
     </body>
 </html>
