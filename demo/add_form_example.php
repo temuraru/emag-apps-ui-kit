@@ -43,7 +43,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6">
                                             <div class="form-group">
                                                 <label class="control-label required" for="product_example_productName">Product name</label>
-                                                <input type="text" id="product_example_productName" name="product_example[productName]" required1="required" class="form-control" placeholder="Add product name">
+                                                <input type="text" id="product_example_productName" name="product_example[productName]" required="required" class="form-control" placeholder="Add product name">
                                             </div>
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6">
                                             <div class="form-group">
                                                 <label class="control-label required" for="product_example_productDescription">Product description</label>
-                                                <textarea id="product_example_productDescription" name="product_example[productDescription]" required1="required" class="form-control fixed-width-textarea" rows="5" placeholder="Add product description"></textarea>
+                                                <textarea id="product_example_productDescription" name="product_example[productDescription]" required="required" class="form-control fixed-width-textarea" rows="5" placeholder="Add product description"></textarea>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
@@ -59,7 +59,7 @@
                                                         <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                                             <label class="control-label required" for="category_treeDefault">Category tree</label>
                                                             <div class="hide-with-opacity">
-                                                                <select id="product_example_productCategory" name="product_example[productCategory]" required1="required" multiple="multiple">
+                                                                <select id="product_example_productCategory" name="product_example[productCategory]" required="required" multiple="multiple">
                                                                     <option value=""></option>
                                                                     <option value="31">Software</option>
                                                                     <option value="175">Antivirus</option>
@@ -115,7 +115,7 @@
                                                         </div>
                                                         <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                                             <label class="control-label required" for="product_example_productCountry">Country</label>
-                                                            <select id="product_example_productCountry" name="product_example[productCountry]" class="form-control chosen-select" required1="required" data-placeholder="Select country" multiple="multiple">
+                                                            <select id="product_example_productCountry" name="product_example[productCountry]" class="form-control chosen-select" required="required" data-placeholder="Select country" multiple="multiple">
                                                                 <option value="" ></option>
                                                                 <option value="RO" >Romania</option>
                                                                 <option value="HU" >Hungary</option>
@@ -155,7 +155,7 @@
                                                     <div class="row">
                                                         <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                                             <label class="control-label required" for="formatted_example">Price (EUR)</label>
-                                                            <input type="text" class="form-control text-right" name="product_example[productPrice]" id="product_example_productPrice" required1="required" placeholder="Add price">
+                                                            <input type="text" class="form-control text-right" name="product_example[productPrice]" id="product_example_productPrice" required="required" placeholder="Add price">
                                                         </div>
                                                         <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                                             <label class="control-label" for="formatted_example">Promotion price (EUR)</label>
@@ -372,7 +372,7 @@
             var $this = $(this);
             var noErrors = true;
 
-            $this.find('input[required1="required"], select[required1="required"], textarea[required1="required"]').each(function (index, element) {
+            $this.find('input[required="required"], select[required="required"], textarea[required="required"]').each(function (index, element) {
                 var $field = $(element);
                 var $formGroup = $field.parents('.form-group');
                 var fieldId = $field.attr('id');
