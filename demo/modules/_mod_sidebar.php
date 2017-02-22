@@ -336,6 +336,11 @@
                             </ul>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/add_form_example.php">
+                                <span class="menu-text">Add form example</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/blank_page.php">
                                 <span class="menu-text">Blank page</span>
                             </a>
