@@ -278,6 +278,7 @@
             styleUI : 'fontAwesome',
             useCustomColumnChooser: true,
             columnChooserOptions: {
+                selectAllCheckboxLabel: 'Select all',
                 saveBtnLabel: 'Done',
                 cancelBtnLabel: 'Cancel',
                 actionButton: '#grid_table_column_chooser_button'
