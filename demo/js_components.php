@@ -128,7 +128,7 @@
                                                     <div class="modal-footer">
                                                         <div class="pull-left">
                                                             <div class="form-sep">
-                                                                <span class="required">Required field.</span>
+                                                                <span class="required">Required field</span>
                                                             </div>
                                                         </div>
                                                         <div class="pull-right panel-controls">
@@ -175,7 +175,7 @@
                                 </div>
 
                                 <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,ajax_modal_init,jquery">
-                                    <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
+                                    <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal</button>
                                 </div>
                             </div>
 
