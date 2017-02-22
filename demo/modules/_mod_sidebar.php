@@ -194,18 +194,18 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryAutocomplete">
-                                        <span class="menu-text">jQuery autocomplete</span>
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUIAutocomplete">
+                                        <span class="menu-text">jQuery UI autocomplete</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUISliders">
-                                        <span class="menu-text">jQuery UI Sliders</span>
+                                        <span class="menu-text">jQuery UI sliders</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryNumericInput">
-                                        <span class="menu-text">jQuery numeric input</span>
+                                        <span class="menu-text">jQuery UI numeric input (Spinner)</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
@@ -276,8 +276,8 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.php#js-custom-error-messages">
-                                <span class="menu-text">Custom error messages</span>
+                            <a href="/emag-apps-ui-kit/demo/js_components.php#js-custom-notifications">
+                                <span class="menu-text">Custom notifications (Growl)</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -305,15 +305,9 @@
                                 <span class="menu-text">Block UI</span>
                             </a>
                         </li>
-
-
-
-
-
-
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_datetime.php">
-                                <span class="menu-text">DateTime</span>
+                                <span class="menu-text">Date & Time</span>
                             </a>
                         </li>
                         <li class="menu-item">

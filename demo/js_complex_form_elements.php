@@ -307,7 +307,7 @@
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
                                     <div class="col-xs-8 module-description">
-                                        <h4><b>Style 1</b></h4>
+                                        <h4><strong>Style 1</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
                                         <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file-upload-demo-1" aria-expanded="false" aria-controls="file-upload-demo-1"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
@@ -341,7 +341,7 @@
                                             <div class="form-group">
                                                 <label for="testfile" class="btn btn-primary">
                                                     <i class="fa fa-upload"></i>
-                                                    <span>Choose a file</span>
+                                                    <span>Choose a file to upload</span>
                                                     <input type="file" name="testfile" id="testfile" class="form-input-control" data-multiple-caption="{count} files selected" multiple/>
                                                 </label>
                                             </div>
@@ -386,8 +386,7 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
                                             <div class="form-group">
                                                 <label for="testfile2" class="btn btn-link">
-                                                    <i class="fa fa-upload"></i>
-                                                    <span>Another one</span>
+                                                    <i class="fa fa-upload"></i><span>Choose a file to upload</span>
                                                     <input type="file" name="testfile2" id="testfile2" class="form-input-control" data-multiple-caption="{count} files selected" multiple/>
                                                 </label>
                                             </div>
@@ -432,14 +431,14 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" aria-label="..." placeholder="Tell me your fathers name">
+                                                    <input type="text" class="form-control" aria-label="..." placeholder="Add the product name">
                                                     <div class="input-group-btn">
                                                         <label for="testfile3" class="btn btn-default">
                                                             <i class="fa fa-upload"></i>
-                                                            <span>Upload his picture</span>
+                                                            <span>Choose a file</span>
                                                             <input type="file" name="testfile3" id="testfile3" class="form-input-control" data-multiple-caption="{count} files selected" multiple/>
                                                         </label>
-                                                        <button class="btn btn-default" type="button">Go!</button>
+                                                        <button class="btn btn-default" type="button">Upload</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -514,10 +513,10 @@
                     </div>
                 </section>
 
-                <section id="jsJQueryAutocomplete" class="pad-top-30">
+                <section id="jsJQueryUIAutocomplete" class="pad-top-30">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h2><strong>jQuery autocomplete</strong></h2>
+                            <h2><strong>jQuery UI autocomplete</strong></h2>
 
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
@@ -578,7 +577,7 @@
                 <section id="jsJQueryUISliders" class="pad-top-30">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h2><strong>jQuery UI Sliders</strong></h2>
+                            <h2><strong>jQuery UI sliders</strong></h2>
 
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">

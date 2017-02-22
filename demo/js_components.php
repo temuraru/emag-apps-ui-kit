@@ -128,8 +128,7 @@
                                                     <div class="modal-footer">
                                                         <div class="pull-left">
                                                             <div class="form-sep">
-                                                            <span
-                                                                class="required">Some fields may be required.</span>
+                                                                <span class="required">Required field.</span>
                                                             </div>
                                                         </div>
                                                         <div class="pull-right panel-controls">
@@ -214,17 +213,9 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,modals_different_size_init,modal_in_page">
-                                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" id="mySmallDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Small</button>
-                                                </div>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Normal</button>
-                                                </div>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" id="myLargeDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Large</button>
-                                                </div>
-                                            </div>
+                                            <button type="button" id="mySmallDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Small</button>
+                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Normal</button>
+                                            <button type="button" id="myLargeDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Large</button>
                                         </div>
                                     </div>
                                 </div>
@@ -233,7 +224,7 @@
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
                                     <div class="col-xs-8 module-description">
-                                        <h4><b>Alerts modals</b></h4>
+                                        <h4><b>Alert modals</b></h4>
                                     </div>
                                     <div class="col-xs-4">
                                         <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts-modals" aria-expanded="false" aria-controls="alerts-modals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
@@ -264,20 +255,10 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals_init">
-                                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
-                                                </div>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" id="confirmation_alert_no_overlay" class="btn btn-default">Confirmation - No overlay</button>
-                                                </div>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" id="error_alert" class="btn btn-default">Error</button>
-                                                </div>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" id="error_alert_no_overlay" class="btn btn-default">Error - No overlay</button>
-                                                </div>
-                                            </div>
+                                            <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
+                                            <button type="button" id="confirmation_alert_no_overlay" class="btn btn-default">Confirmation - No overlay</button>
+                                            <button type="button" id="error_alert" class="btn btn-default">Error</button>
+                                            <button type="button" id="error_alert_no_overlay" class="btn btn-default">Error - No overlay</button>
                                         </div>
                                     </div>
                                 </div>
@@ -287,10 +268,10 @@
                     </div>
                 </section>
 
-                <section id="js-custom-error-messages" class="pad-top-30">
+                <section id="js-custom-notifications" class="pad-top-30">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
-                            <h2><strong>Custom error messages</strong></h2>
+                            <h2><strong>Custom notifications (Growl)</strong></h2>
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
                                     <div class="alert alert-info no-margin-bottom" role="alert">
@@ -301,7 +282,7 @@
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
                                     <div class="col-xs-8 module-description">
-                                        <h4><b>Messages types</b></h4>
+                                        <h4><b>Notification types</b></h4>
                                     </div>
                                     <div class="col-xs-4">
                                         <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#messages-types" aria-expanded="false" aria-controls="messages-types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>

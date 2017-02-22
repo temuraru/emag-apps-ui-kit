@@ -29,7 +29,7 @@
                 <div class="jumbotron content-header">
                     <div class="container-fluid">
                         <p>eMAG Apps UI KIT</p>
-                        <p><b>DateTime</b></p>
+                        <p><b>Date & Time</b></p>
                     </div>
                 </div>
                 <section id="datePicker" class="pad-top-40">
