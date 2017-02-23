@@ -467,7 +467,7 @@
                     </h1>
                 </div>
                 <div class="panel panel-default">
-                    <form data-track-changes="false" id="product_example" name="product_example" method="post" action="" class="" autocomplete="off">
+                    <form data-track-changes="false" id="product_example" name="product_example" method="post" action="" class="" autocomplete="off" novalidate>
                         <fieldset>
                             <legend class="sr-only">product_example</legend>
                             <div id="product_example">
@@ -833,6 +833,8 @@
                 $this[0].reset();
                 $('#product_example_productCountry').trigger('chosen:updated.chosen');
                 addNotification('1 product has been added.', 'black');
+            } else {
+                errorAlertModal('Please check the fields with errors.', 'Add product errors');
             }
 
             return false;
