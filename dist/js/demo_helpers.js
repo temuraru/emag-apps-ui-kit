@@ -83,7 +83,7 @@ function generateDependencyCode($module,$dependency){
         case 'html-same-page':
             var codeStyle = $dependency.html();
             var formattedStyle = getFormattedCode(codeStyle);
-            formattedStyle = "\n" + formattedStyle + "\n";
+            formattedStyle = '\n' + formattedStyle + '\n';
             $moduleParrent.find('.html-source code').append(formattedStyle);
             break;
     }
@@ -96,11 +96,11 @@ function showPageCode() {
         var $exampleEl = $(this);
         var example = $exampleEl.html();
 
-
         if (example) {
             var formattedHtml = getFormattedCode(example);
 
-            var $moduleParrent = ($exampleEl.closest('.code-container')[0] ? $exampleEl.closest('.code-container') : $exampleEl.parent()) ;
+            //if exist a .code-container class use this class to find children, else use first parent div(this is used when you don't have html,js,css tabs for showing code and you want the code to )
+            var $moduleParrent = getModuleParrent($exampleEl);
             $moduleParrent.find('.html-source code').append(formattedHtml);
             
             var dependencies = $exampleEl.attr('data-dependencies');
@@ -113,6 +113,9 @@ function showPageCode() {
     });
 }
 
+function getModuleParrent($htmlExampleEl) {
+    return ($htmlExampleEl.closest('.code-container')[0] ? $htmlExampleEl.closest('.code-container') : $htmlExampleEl.parent());
+}
 
 function updateSideBarCode(event) {
     var fixedStatus = $('input[name="sidebar_fixed_status"]:checked').val();
