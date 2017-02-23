@@ -32,6 +32,11 @@
         <!-- FOOTER:Start -->
         <?php include_once "modules/_mod_footer.php"?>
         <!-- FOOTER:End -->
+
+        <!-- POPUPS:Start -->
+        <div id="popSpace"></div>
+        <!-- POPUPS:End -->
+
     </div>
 </div>
 <!-- PAGE:End -->
