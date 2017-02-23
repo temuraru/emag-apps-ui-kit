@@ -99,7 +99,6 @@ function showPageCode() {
         if (example) {
             var formattedHtml = getFormattedCode(example);
 
-            //if exist a .code-container class use this class to find children, else use first parent div(this is used when you don't have html,js,css tabs for showing code and you want the code to )
             var $moduleParrent = getModuleParrent($exampleEl);
             $moduleParrent.find('.html-source code').append(formattedHtml);
             
