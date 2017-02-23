@@ -55,20 +55,20 @@
                                 <div class="collapse code-example"  id="fancytree">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#fancytree-html-source" aria-controls="fancytree-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#fancytree-js-source" aria-controls="fancytree-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#fancytree-css-source" aria-controls="fancytree-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#fancytree_html_source" aria-controls="fancytree_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#fancytree_js_source" aria-controls="fancytree_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#fancytree_css_source" aria-controls="fancytree_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="fancytree-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="fancytree_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="fancytree-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="fancytree_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="fancytree-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="fancytree_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -89,26 +89,26 @@
                                         <h4><b>Category tree</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category-tree" aria-expanded="false" aria-controls="category-tree"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree" aria-expanded="false" aria-controls="category_tree"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="category-tree">
+                                <div class="collapse code-example"  id="category_tree">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#category-tree-html-source" aria-controls="category-tree-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#category-tree-js-source" aria-controls="category-tree-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#category-tree-css-source" aria-controls="category-tree-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#category_tree_html_source" aria-controls="category_tree_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#category_tree_js_source" aria-controls="category_tree_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#category_tree_css_source" aria-controls="category_tree_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="category-tree-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="category_tree_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="category-tree-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="category_tree_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="category-tree-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="category_tree_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -185,26 +185,26 @@
                                         <h4><b>Category tree disabled</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category-tree-disabled" aria-expanded="false" aria-controls="category-tree-disabled"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree_disabled" aria-expanded="false" aria-controls="category_tree_disabled"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="category-tree-disabled">
+                                <div class="collapse code-example"  id="category_tree_disabled">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#category-tree-disabled-html-source" aria-controls="category-tree-disabled-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#category-tree-disabled-js-source" aria-controls="category-tree-disabled-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#category-tree-disabled-css-source" aria-controls="category-tree-disabled-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#category_tree_disabled_html_source" aria-controls="category_tree_disabled_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#category_tree_disabled_js_source" aria-controls="category_tree_disabled_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#category_tree_disabled_css_source" aria-controls="category_tree_disabled_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="category-tree-disabled-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="category_tree_disabled_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="category-tree-disabled-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="category_tree_disabled_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="category-tree-disabled-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="category_tree_disabled_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>

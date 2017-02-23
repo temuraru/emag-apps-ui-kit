@@ -53,20 +53,20 @@
                                         <div class="collapse code-example"  id="summernote">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs code-example" role="tablist">
-                                                <li role="presentation" class="active"><a href="#summernote-html-source" aria-controls="summernote-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                <li role="presentation"><a href="#summernote-js-source" aria-controls="summernote-js" role="tab" data-toggle="tab">JS</a></li>
-                                                <li role="presentation"><a href="#summernote-css-source" aria-controls="summernote-css" role="tab" data-toggle="tab">CSS</a></li>
+                                                <li role="presentation" class="active"><a href="#summernote_html_source" aria-controls="summernote_html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#summernote_js_source" aria-controls="summernote_js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#summernote_css_source" aria-controls="summernote_css" role="tab" data-toggle="tab">CSS</a></li>
                                             </ul>
 
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
-                                                <div role="tabpanel" class="tab-pane html-source active" id="summernote-html-source">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="summernote_html_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane js-source" id="summernote-js-source">
+                                                <div role="tabpanel" class="tab-pane js-source" id="summernote_js_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane css-source" id="summernote-css-source">
+                                                <div role="tabpanel" class="tab-pane css-source" id="summernote_css_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
@@ -113,20 +113,20 @@
                                         <div class="collapse code-example"  id="magnific_ajax">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs code-example" role="tablist">
-                                                <li role="presentation" class="active"><a href="#magnific_ajax-html-source" aria-controls="magnific_ajax-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                <li role="presentation"><a href="#magnific_ajax-js-source" aria-controls="magnific_ajax-js" role="tab" data-toggle="tab">JS</a></li>
-                                                <li role="presentation"><a href="#magnific_ajax-css-source" aria-controls="magnific_ajax-css" role="tab" data-toggle="tab">CSS</a></li>
+                                                <li role="presentation" class="active"><a href="#magnific_ajax_html_source" aria-controls="magnific_ajax_html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#magnific_ajax_js_source" aria-controls="magnific_ajax_js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#magnific_ajax_css_source" aria-controls="magnific_ajax_css" role="tab" data-toggle="tab">CSS</a></li>
                                             </ul>
 
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
-                                                <div role="tabpanel" class="tab-pane html-source active" id="magnific_ajax-html-source">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="magnific_ajax_html_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane js-source" id="magnific_ajax-js-source">
+                                                <div role="tabpanel" class="tab-pane js-source" id="magnific_ajax_js_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane css-source" id="magnific_ajax-css-source">
+                                                <div role="tabpanel" class="tab-pane css-source" id="magnific_ajax_css_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
@@ -154,20 +154,20 @@
                                         <div class="collapse code-example"  id="magnific_embeds">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs code-example" role="tablist">
-                                                <li role="presentation" class="active"><a href="#magnific_ajax-html-source" aria-controls="magnific_embeds-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                <li role="presentation"><a href="#magnific_embeds-js-source" aria-controls="magnific_embeds-js" role="tab" data-toggle="tab">JS</a></li>
-                                                <li role="presentation"><a href="#magnific_embeds-css-source" aria-controls="magnific_embeds-css" role="tab" data-toggle="tab">CSS</a></li>
+                                                <li role="presentation" class="active"><a href="#magnific_ajax_html_source" aria-controls="magnific_embeds_html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#magnific_embeds_js_source" aria-controls="magnific_embeds_js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#magnific_embeds_css_source" aria-controls="magnific_embeds_css" role="tab" data-toggle="tab">CSS</a></li>
                                             </ul>
 
                                             <!-- Tab panes -->
                                             <div class="tab-content code-example">
-                                                <div role="tabpanel" class="tab-pane html-source active" id="magnific_embeds-html-source">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="magnific_embeds_html_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane js-source" id="magnific_embeds-js-source">
+                                                <div role="tabpanel" class="tab-pane js-source" id="magnific_embeds_js_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane css-source" id="magnific_embeds-css-source">
+                                                <div role="tabpanel" class="tab-pane css-source" id="magnific_embeds_css_source">
                                                     <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>

@@ -72,26 +72,26 @@
                                         <h4><b>Default styling</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed hide" data-toggle="collapse" href="#default-modal-style" aria-expanded="false" aria-controls="default-modal-style"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed hide" data-toggle="collapse" href="#default_modal_style" aria-expanded="false" aria-controls="default_modal_style"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="default-modal-style">
+                                <div class="collapse code-example"  id="default_modal_style">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#default-modal-style-html-source" aria-controls="default-modal-style-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#default-modal-style-js-source" aria-controls="default-modal-style-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#default-modal-style-css-source" aria-controls="default-modal-style-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#default_modal_style_html_source" aria-controls="default_modal_style_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#default_modal_style_js_source" aria-controls="default_modal_style_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#default_modal_style_css_source" aria-controls="default_modal_style_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="default-modal-style-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="default_modal_style_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="default-modal-style-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="default_modal_style_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="default-modal-style-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="default_modal_style_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -149,26 +149,26 @@
                                         <h4><b>Ajax modal</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#ajax-modal" aria-expanded="false" aria-controls="ajax-modal"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#ajax_modal" aria-expanded="false" aria-controls="ajax_modal"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="ajax-modal">
+                                <div class="collapse code-example"  id="ajax_modal">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#ajax-modal-html-source" aria-controls="ajax-modal-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#ajax-modal-js-source" aria-controls="ajax-modal-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#ajax-modal-css-source" aria-controls="ajax-modal-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#ajax_modal_html_source" aria-controls="ajax_modal_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#ajax_modal_js_source" aria-controls="ajax_modal_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#ajax_modal_css_source" aria-controls="ajax_modal_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="ajax-modal-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="ajax_modal_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="ajax-modal-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="ajax_modal_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="ajax-modal-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="ajax_modal_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -185,26 +185,26 @@
                                         <h4><b>Modals with different sizing</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#modals-different-size" aria-expanded="false" aria-controls="modals-different-size"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#modals_different_size" aria-expanded="false" aria-controls="modals_different_size"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="modals-different-size">
+                                <div class="collapse code-example"  id="modals_different_size">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#modals-different-size-html-source" aria-controls="modals-different-size-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#modals-different-size-js-source" aria-controls="modals-different-size-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#modals-different-size-css-source" aria-controls="modals-different-size-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#modals_different_size_html_source" aria-controls="modals_different_size_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#modals_different_size_js_source" aria-controls="modals_different_size_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#modals_different_size_css_source" aria-controls="modals_different_size_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="modals-different-size-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="modals_different_size_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="modals-different-size-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="modals_different_size_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="modals-different-size-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="modals_different_size_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -227,26 +227,26 @@
                                         <h4><b>Alert modals</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts-modals" aria-expanded="false" aria-controls="alerts-modals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts_modals" aria-expanded="false" aria-controls="alerts_modals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="alerts-modals">
+                                <div class="collapse code-example"  id="alerts_modals">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#alerts-modals-html-source" aria-controls="alerts-modals-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#alerts-modals-js-source" aria-controls="alerts-modals-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#alerts-modals-css-source" aria-controls="alerts-modals-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#alerts_modals_html_source" aria-controls="alerts_modals_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#alerts_modals_js_source" aria-controls="alerts_modals_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#alerts_modals_css_source" aria-controls="alerts_modals_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="alerts-modals-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="alerts_modals_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="alerts-modals-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="alerts_modals_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="alerts-modals-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="alerts_modals_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -285,26 +285,26 @@
                                         <h4><b>Notification types</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#messages-types" aria-expanded="false" aria-controls="messages-types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#messages_types" aria-expanded="false" aria-controls="messages_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="messages-types">
+                                <div class="collapse code-example"  id="messages_types">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#messages-types-html-source" aria-controls="messages-types-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#messages-types-js-source" aria-controls="messages-types-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#messages-types-css-source" aria-controls="messages-types-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#messages_types_html_source" aria-controls="messages_types_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#messages_types_js_source" aria-controls="messages_types_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#messages_types_css_source" aria-controls="messages_types_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="messages-types-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="messages_types_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="messages-types-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="messages_types_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="messages-types-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="messages_types_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -358,20 +358,20 @@
                                 <div class="collapse code-example"  id="tooltips">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#tooltips-html-source" aria-controls="tooltips-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#tooltips-js-source" aria-controls="tooltips-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#tooltips-css-source" aria-controls="tooltips-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#tooltips_html_source" aria-controls="tooltips_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#tooltips_js_source" aria-controls="tooltips_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#tooltips_css_source" aria-controls="tooltips_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="tooltips-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="tooltips_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="tooltips-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="tooltips_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="tooltips-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="tooltips_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -410,20 +410,20 @@
                                 <div class="collapse code-example"  id="popovers">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#popovers-html-source" aria-controls="popovers-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#popovers-js-source" aria-controls="popovers-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#popovers-css-source" aria-controls="popovers-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#popovers_html_source" aria-controls="popovers_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#popovers_js_source" aria-controls="popovers_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#popovers_css_source" aria-controls="popovers_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="popovers-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="popovers_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="popovers-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="popovers_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="popovers-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="popovers_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -462,20 +462,20 @@
                                 <div class="collapse code-example"  id="tabs">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#tabs-html-source" aria-controls="tabs-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#tabs-js-source" aria-controls="tabs-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#tabs-css-source" aria-controls="tabs-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#tabs_html_source" aria-controls="tabs_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#tabs_js_source" aria-controls="tabs_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#tabs_css_source" aria-controls="tabs_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="tabs-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="tabs_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="tabs-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="tabs_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="tabs-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="tabs_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -525,26 +525,26 @@
                                         <h4><strong>Checkboxes disguised as buttons</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#checkboxes-as-buttons" aria-expanded="false" aria-controls="checkboxes-as-buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#checkboxes_as_buttons" aria-expanded="false" aria-controls="checkboxes_as_buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="checkboxes-as-buttons">
+                                <div class="collapse code-example"  id="checkboxes_as_buttons">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#checkboxes-as-buttons-html-source" aria-controls="checkboxes-as-buttons-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#checkboxes-as-buttons-js-source" aria-controls="checkboxes-as-buttons-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#checkboxes-as-buttons-css-source" aria-controls="checkboxes-as-buttons-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#checkboxes_as_buttons_html_source" aria-controls="checkboxes_as_buttons_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#checkboxes_as_buttons_js_source" aria-controls="checkboxes_as_buttons_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#checkboxes_as_buttons_css_source" aria-controls="checkboxes_as_buttons_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="checkboxes-as-buttons-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="checkboxes_as_buttons_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="checkboxes-as-buttons-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="checkboxes_as_buttons_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="checkboxes-as-buttons-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="checkboxes_as_buttons_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -581,26 +581,26 @@
                                         <h4><strong>Radio buttons disguised as regular buttons</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#radio-as-regular-buttons" aria-expanded="false" aria-controls="radio-as-regular-buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#radio_as_regular_buttons" aria-expanded="false" aria-controls="radio_as_regular_buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="radio-as-regular-buttons">
+                                <div class="collapse code-example"  id="radio_as_regular_buttons">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#radio-as-regular-buttons-html-source" aria-controls="radio-as-regular-buttons-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#radio-as-regular-buttons-js-source" aria-controls="radio-as-regular-buttons-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#radio-as-regular-buttons-css-source" aria-controls="radio-as-regular-buttons-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#radio_as_regular_buttons_html_source" aria-controls="radio_as_regular_buttons_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#radio_as_regular_buttons_js_source" aria-controls="radio_as_regular_buttons_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#radio_as_regular_buttons_css_source" aria-controls="radio_as_regular_buttons_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="radio-as-regular-buttons-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="radio_as_regular_buttons_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="radio-as-regular-buttons-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="radio_as_regular_buttons_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="radio-as-regular-buttons-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="radio_as_regular_buttons_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -649,26 +649,26 @@
                                         <h4><b>Demo</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#block-ui" aria-expanded="false" aria-controls="block-ui"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#block_ui" aria-expanded="false" aria-controls="block_ui"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="block-ui">
+                                <div class="collapse code-example"  id="block_ui">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#block-ui-html-source" aria-controls="block-ui-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#block-ui-js-source" aria-controls="block-ui-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#block-ui-css-source" aria-controls="block-ui-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#block_ui_html_source" aria-controls="block_ui_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#block_ui_js_source" aria-controls="block_ui_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#block_ui_css_source" aria-controls="block_ui_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="block-ui-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="block_ui_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="block-ui-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="block_ui_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="block-ui-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="block_ui_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>

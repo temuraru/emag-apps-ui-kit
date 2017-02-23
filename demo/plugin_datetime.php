@@ -58,20 +58,20 @@
                                 <div class="collapse code-example"  id="simple_date_picker">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#simple_date_picker-html-source" aria-controls="simple_date_picker-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#simple_date_picker-js-source" aria-controls="simple_date_picker-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#simple_date_picker-css-source" aria-controls="simple_date_picker-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#simple_date_picker_html_source" aria-controls="simple_date_picker_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#simple_date_picker_js_source" aria-controls="simple_date_picker_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#simple_date_picker_css_source" aria-controls="simple_date_picker_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="simple_date_picker-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="simple_date_picker_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="simple_date_picker-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="simple_date_picker_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="simple_date_picker-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="simple_date_picker_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -101,26 +101,26 @@
                                         <h4><b>Time Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#time-picker" aria-expanded="false" aria-controls="time-picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#time_picker" aria-expanded="false" aria-controls="time_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="time-picker">
+                                <div class="collapse code-example"  id="time_picker">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#time-picker-html-source" aria-controls="time-picker-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#time-picker-js-source" aria-controls="time-picker-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#time-picker-css-source" aria-controls="time-picker-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#time_picker_html_source" aria-controls="time_picker_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#time_picker_js_source" aria-controls="time_picker_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#time_picker_css_source" aria-controls="time_picker_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="time-picker-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="time_picker_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="time-picker-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="time_picker_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="time-picker-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="time_picker_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -148,26 +148,26 @@
                                         <h4><b>Date/Time Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date-time-picker" aria-expanded="false" aria-controls="date-time-picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_time_picker" aria-expanded="false" aria-controls="date_time_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="date-time-picker">
+                                <div class="collapse code-example"  id="date_time_picker">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#date-time-picker-html-source" aria-controls="date-time-picker-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#date-time-picker-js-source" aria-controls="date-time-picker-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#date-time-picker-css-source" aria-controls="date-time-picker-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#date_time_picker_html_source" aria-controls="date_time_picker_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#date_time_picker_js_source" aria-controls="date_time_picker_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#date_time_picker_css_source" aria-controls="date_time_picker_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="date-time-picker-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="date_time_picker_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="date-time-picker-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="date_time_picker_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="date-time-picker-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="date_time_picker_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -195,26 +195,26 @@
                                         <h4><b>Date Range Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap-date-range" aria-expanded="false" aria-controls="boostrap-date-range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap_date_range" aria-expanded="false" aria-controls="boostrap_date_range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="boostrap-date-range">
+                                <div class="collapse code-example"  id="boostrap_date_range">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#boostrap-date-range-html-source" aria-controls="boostrap-date-range-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#boostrap-date-range-js-source" aria-controls="boostrap-date-range-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#boostrap-date-range-css-source" aria-controls="boostrap-date-range-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#boostrap_date_range_html_source" aria-controls="boostrap_date_range_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#boostrap_date_range_js_source" aria-controls="boostrap_date_range_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#boostrap_date_range_css_source" aria-controls="boostrap_date_range_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="boostrap-date-range-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="boostrap_date_range_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="boostrap-date-range-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="boostrap_date_range_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="boostrap-date-range-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="boostrap_date_range_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -243,26 +243,26 @@
                                         <h4><b>Date/Time Range Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap-date-time-range" aria-expanded="false" aria-controls="boostrap-date-time-range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap_date_time_range" aria-expanded="false" aria-controls="boostrap_date_time_range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="boostrap-date-time-range">
+                                <div class="collapse code-example"  id="boostrap_date_time_range">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#boostrap-date-time-range-html-source" aria-controls="boostrap-date-time-range-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#boostrap-date-time-range-js-source" aria-controls="boostrap-date-time-range-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#boostrap-date-time-range-css-source" aria-controls="boostrap-date-time-range-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#boostrap_date_time_range_html_source" aria-controls="boostrap_date_time_range_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#boostrap_date_time_range_js_source" aria-controls="boostrap_date_time_range_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#boostrap_date_time_range_css_source" aria-controls="boostrap_date_time_range_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="boostrap-date-time-range-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="boostrap_date_time_range_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="boostrap-date-time-range-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="boostrap_date_time_range_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="boostrap-date-time-range-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="boostrap_date_time_range_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -308,26 +308,26 @@
                                         <h4><strong>Standard</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date-range-picker" aria-expanded="false" aria-controls="date-range-picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker" aria-expanded="false" aria-controls="date_range_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="date-range-picker">
+                                <div class="collapse code-example"  id="date_range_picker">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#date-range-picker-html-source" aria-controls="date-range-picker-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-js-source" aria-controls="date-range-picker-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-css-source" aria-controls="date-range-picker-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#date_range_picker_html_source" aria-controls="date_range_picker_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_js_source" aria-controls="date_range_picker_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_css_source" aria-controls="date_range_picker_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="date-range-picker-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="date_range_picker_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="date-range-picker-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="date_range_picker_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="date-range-picker-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="date_range_picker_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -362,26 +362,26 @@
                                         <h4><strong>Standard with value</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date-range-picker-with-value" aria-expanded="false" aria-controls="date-range-picker-with-value"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_with_value" aria-expanded="false" aria-controls="date_range_picker_with_value"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="date-range-picker-with-value">
+                                <div class="collapse code-example"  id="date_range_picker_with_value">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#date-range-picker-with-value-html-source" aria-controls="date-range-picker-with-value-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-with-value-js-source" aria-controls="date-range-picker-with-value-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-with-value-css-source" aria-controls="date-range-picker-with-value-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#date_range_picker_with_value_html_source" aria-controls="date_range_picker_with_value_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_with_value_js_source" aria-controls="date_range_picker_with_value_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_with_value_css_source" aria-controls="date_range_picker_with_value_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="date-range-picker-with-value-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="date_range_picker_with_value_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="date-range-picker-with-value-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="date_range_picker_with_value_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="date-range-picker-with-value-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="date_range_picker_with_value_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -416,26 +416,26 @@
                                         <h4><strong>Standard with format</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date-range-picker-with-format" aria-expanded="false" aria-controls="date-range-picker-with-format"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_with_format" aria-expanded="false" aria-controls="date_range_picker_with_format"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="date-range-picker-with-format">
+                                <div class="collapse code-example"  id="date_range_picker_with_format">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#date-range-picker-with-format-html-source" aria-controls="date-range-picker-with-format-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-with-format-js-source" aria-controls="date-range-picker-with-format-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-with-format-css-source" aria-controls="date-range-picker-with-format-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#date_range_picker_with_format_html_source" aria-controls="date_range_picker_with_format_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_with_format_js_source" aria-controls="date_range_picker_with_format_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_with_format_css_source" aria-controls="date_range_picker_with_format_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="date-range-picker-with-format-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="date_range_picker_with_format_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="date-range-picker-with-format-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="date_range_picker_with_format_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="date-range-picker-with-format-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="date_range_picker_with_format_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -471,26 +471,26 @@
                                         <h4><strong>Standard with predefined intervals</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date-range-picker-predefined-intervals" aria-expanded="false" aria-controls="date-range-picker-predefined-intervals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_predefined_intervals" aria-expanded="false" aria-controls="date_range_picker_predefined_intervals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="date-range-picker-predefined-intervals">
+                                <div class="collapse code-example"  id="date_range_picker_predefined_intervals">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#date-range-picker-predefined-intervals-html-source" aria-controls="date-range-picker-predefined-intervals-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-predefined-intervals-js-source" aria-controls="date-range-picker-predefined-intervals-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#date-range-picker-predefined-intervals-css-source" aria-controls="date-range-picker-predefined-intervals-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#date_range_picker_predefined_intervals_html_source" aria-controls="date_range_picker_predefined_intervals_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_predefined_intervals_js_source" aria-controls="date_range_picker_predefined_intervals_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#date_range_picker_predefined_intervals_css_source" aria-controls="date_range_picker_predefined_intervals_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="date-range-picker-predefined-intervals-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="date_range_picker_predefined_intervals_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="date-range-picker-predefined-intervals-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="date_range_picker_predefined_intervals_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="date-range-picker-predefined-intervals-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="date_range_picker_predefined_intervals_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -528,26 +528,26 @@
                                         <h4><strong>Standard with predefined intervals whitout calendars</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#drp-predefined-intervals-whitout-calendars" aria-expanded="false" aria-controls="drp-predefined-intervals-whitout-calendars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#drp_predefined_intervals_whitout_calendars" aria-expanded="false" aria-controls="drp_predefined_intervals_whitout_calendars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="drp-predefined-intervals-whitout-calendars">
+                                <div class="collapse code-example"  id="drp_predefined_intervals_whitout_calendars">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#drp-predefined-intervals-whitout-calendars-html-source" aria-controls="drp-predefined-intervals-whitout-calendars-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#drp-predefined-intervals-whitout-calendars-js-source" aria-controls="drp-predefined-intervals-whitout-calendars-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#drp-predefined-intervals-whitout-calendars-css-source" aria-controls="drp-predefined-intervals-whitout-calendars-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#drp_predefined_intervals_whitout_calendars_html_source" aria-controls="drp_predefined_intervals_whitout_calendars_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#drp_predefined_intervals_whitout_calendars_js_source" aria-controls="drp_predefined_intervals_whitout_calendars_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#drp_predefined_intervals_whitout_calendars_css_source" aria-controls="drp_predefined_intervals_whitout_calendars_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="drp-predefined-intervals-whitout-calendars-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="drp_predefined_intervals_whitout_calendars_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="drp-predefined-intervals-whitout-calendars-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="drp_predefined_intervals_whitout_calendars_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="drp-predefined-intervals-whitout-calendars-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="drp_predefined_intervals_whitout_calendars_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>

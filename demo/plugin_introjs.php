@@ -44,20 +44,20 @@
                                 <div class="collapse code-example"  id="introjs">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#introjs-html-source" aria-controls="introjs-html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#introjs-js-source" aria-controls="introjs-js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#introjs-css-source" aria-controls="introjs-css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#introjs_html_source" aria-controls="introjs_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#introjs_js_source" aria-controls="introjs_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#introjs_css_source" aria-controls="introjs_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="introjs-html-source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="introjs_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="introjs-js-source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="introjs_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="introjs-css-source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="introjs_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
