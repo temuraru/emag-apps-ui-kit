@@ -12515,4 +12515,11 @@ i {
   pointer-events: none;
   opacity: 0;
 }
+.chosen-select {
+  position: absolute;
+  display: block!important;
+  width: 0;
+  height: 34px !important;
+  opacity: 0;
+}
 /*# sourceMappingURL=main_style.css.map */

@@ -146,6 +146,7 @@
                 columnChooser: function() {
 
                     var defaultOptions = {
+                        selectAllCheckboxLabel: 'Select all',
                         saveBtnLabel: 'Done',
                         cancelBtnLabel: 'Cancel',
                         actionButton: ''
@@ -230,7 +231,7 @@
                                     '</ul>' +
                                     '<ul class="dropdown-menu dropdown-default dd-jqgrid-select-columns dd-jsc-checkbox dd-jsc-one-item">' +
                                         '<li>' +
-                                            '<div class="checkbox"><label><input type="checkbox" class="form-checkbox-control jsc-checkbox-all" value="" checked=""> Select all</label></div>' +
+                                            '<div class="checkbox"><label><input type="checkbox" class="form-checkbox-control jsc-checkbox-all" value="" checked=""> (' + opts.selectAllCheckboxLabel +')</label></div>' +
                                         '</li>' +
                                     '</ul>' +
                                     '<ul class="dropdown-menu dropdown-default dd-jqgrid-select-columns dd-jsc-checkbox dd-jsc-checkbox-all-columns">' +
