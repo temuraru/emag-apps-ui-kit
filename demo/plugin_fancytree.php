@@ -440,7 +440,7 @@
                     searchPlaceholder: 'Search'
                 });
 
-                TreeTypeObject = $("#id_category_tree_disabled").TreeType({
+                TreeTypeObjectDisabled = $("#id_category_tree_disabled").TreeType({
                     treeData: fancytreeContent,
                     selectId: "category_tree_disabled",
                     modalTitle: 'Select',

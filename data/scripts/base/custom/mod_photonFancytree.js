@@ -646,8 +646,16 @@
                 $this.tree.removeClass('fancytree-ext-filter fancytree-ext-filter-dimm fancytree-ext-filter-hide');
                 $this.tree.find('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
             }
+        },
+
+        destroy: function() {
+            var $this = this;
+
+            $('#' + $this.options.modalId).remove();
+            $($this.element).off('click');
+            $($this.element).html('');
         }
-    }
+    };
 
     $.widget( 'ui.TreeType', {
         options: {
@@ -675,6 +683,11 @@
         },
         _create: function() {
             this.TreeType = new TreeType(this);
+        },
+        _destroy: function() {
+            if (this.TreeType) {
+                this.TreeType.destroy();
+            }
         }
     });
 
