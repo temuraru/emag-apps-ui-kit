@@ -651,10 +651,10 @@
         destroy: function() {
             var $this = this;
 
+            $this.tree.fancytree("destroy");
             $('#' + $this.options.modalId).remove();
             $($this.element).off('click');
             $($this.element).html('');
-            $this.tree.fancytree("destroy");
         }
     };
 
