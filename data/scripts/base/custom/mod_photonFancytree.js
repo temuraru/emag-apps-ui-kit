@@ -700,8 +700,8 @@
             if (this.TreeType.tree) {
                 this.TreeType.tree.fancytree('destroy');
                 this.TreeType._constructTree();
-                $('#' + this.TreeType.options.selectId).trigger('change');
             }
+            $('#' + this.TreeType.options.selectId).trigger('change');
         }
     });
 
