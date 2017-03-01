@@ -701,7 +701,6 @@
                 this.TreeType.tree.fancytree('destroy');
                 this.TreeType._constructTree();
             }
-            this.TreeType._updateInfo();
         }
     });
 
