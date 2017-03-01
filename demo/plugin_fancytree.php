@@ -176,13 +176,12 @@
         <!-- FOOTER:Start -->
         <?php include_once "modules/_mod_footer.php"?>
         <!-- FOOTER:End -->
-
-        <!-- POPUPS:Start -->
-        <div id="popSpace"></div>
-        <!-- POPUPS:End -->
-
     </div>
 </div>
+
+<!-- POPUPS:Start -->
+<div id="popSpace"></div>
+<!-- POPUPS:End -->
     
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -440,7 +439,7 @@
                     searchPlaceholder: 'Search'
                 });
 
-                TreeTypeObject = $("#id_category_tree_disabled").TreeType({
+                TreeTypeObjectDisabled = $("#id_category_tree_disabled").TreeType({
                     treeData: fancytreeContent,
                     selectId: "category_tree_disabled",
                     modalTitle: 'Select',
