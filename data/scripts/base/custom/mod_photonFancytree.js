@@ -701,9 +701,7 @@
                 this.TreeType.tree.fancytree('destroy');
                 this.TreeType._constructTree();
             }
-            console.log($('#' + this.TreeType.options.selectId));
-            console.log('#' + this.TreeType.options.selectId);
-            $('#' + this.TreeType.options.selectId).trigger('change');
+            this.TreeType._updateInfo();
         }
     });
 
