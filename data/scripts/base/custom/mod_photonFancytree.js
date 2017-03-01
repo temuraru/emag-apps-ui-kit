@@ -76,6 +76,13 @@
             });
 
             /**
+             * Select update
+             */
+            $('#' + $this.options.selectId).on('change', function() {
+                $this._updateInfo();
+            });
+
+            /**
              * Parent form reset action
              */
             $('#' + $this.options.typeId).parents('form').on('reset', function() {
@@ -389,16 +396,10 @@
             });
         },
 
-        _updateInfo:function(){
+        _updateInfo: function(){
             var $this = this;
 
-            var selected = [];
-
-            if ($this.$tree != undefined) {
-                selected = $this.$tree.getSelectedNodes();
-            } else {
-                selected = $('#' + $this.options.selectId + ' option[value!=""]:selected');
-            }
+            var selected = $('#' + $this.options.selectId + ' option[value!=""]:selected');
 
             var treeTypeInfo = selected.length + ' ' + $this.options.textSelected;
 
@@ -407,8 +408,6 @@
 
         _updateElement: function() {
             var $this = this;
-
-            $this._updateInfo();
 
             var selected = $this.$tree.getSelectedNodes();
 
@@ -425,7 +424,7 @@
                 $('#' + $this.options.selectId + ' option[value="' + this.key + '"]').prop('selected', true);
             });
 
-            $('#' + $this.options.selectId).change();
+            $('#' + $this.options.selectId).trigger('change');
         },
 
         _addCollapseIcon: function(node) {
