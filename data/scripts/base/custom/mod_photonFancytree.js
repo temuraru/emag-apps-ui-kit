@@ -652,7 +652,7 @@
             var $this = this;
 
             if ($this.tree) {
-                $this.tree.fancytree("destroy");
+                $this.tree.fancytree('destroy');
             }
             $('#' + $this.options.modalId).remove();
             $($this.element).off('click');
@@ -693,13 +693,13 @@
             }
         },
         treeData: function(value) {
-            if ( value === undefined ) {
+            if (value === undefined) {
                 return this.options.treeData;
             }
 
             this.TreeType.options.treeData = value;
             if (this.TreeType.tree) {
-                this.TreeType.tree.fancytree("destroy");
+                this.TreeType.tree.fancytree('destroy');
                 this.TreeType._constructTree();
             }
         }
