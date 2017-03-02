@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-    <title>Plugins - eMAG Apps UI KIT</title>
+    <title>JS Components - eMAG Apps UI KIT</title>
     <?php include_once "modules/_mod_meta.php"?>
     <link rel="stylesheet" href="../dist/plugins/intro/intro.min.css">
     <?php include_once "modules/_mod_top_include.php"?>

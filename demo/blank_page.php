@@ -32,14 +32,13 @@
         <!-- FOOTER:Start -->
         <?php include_once "modules/_mod_footer.php"?>
         <!-- FOOTER:End -->
-
-        <!-- POPUPS:Start -->
-        <div id="popSpace"></div>
-        <!-- POPUPS:End -->
-
     </div>
 </div>
 <!-- PAGE:End -->
+
+<!-- POPUPS:Start -->
+<div id="popSpace"></div>
+<!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
