@@ -93,7 +93,7 @@
                 ]
             },
             select: '#hierarchical_select',
-            ajaxRoute: 'http://iv1.photon-power.local/emag-apps-ui-kit/demo/hierarchicalselect_api.php'
+            ajaxRoute: '/emag-apps-ui-kit/demo/hierarchicalselect_api.php'
         });
     });
 </script>
