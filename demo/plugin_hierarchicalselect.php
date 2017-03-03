@@ -47,8 +47,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ante non felis accumsan egestas eu sed libero. Etiam finibus arcu id mollis tincidunt. Proin nec ultrices est. Donec porta luctus arcu, ac blandit augue ultricies ac. Maecenas quis dictum libero. Vivamus euismod non ligula sed euismod. Donec porta, ante in porta hendrerit, sapien ipsum tristique elit, sit amet condimentum nisl lectus in tortor. Fusce at mi a augue pellentesque posuere. Sed quis arcu mattis, efficitur libero imperdiet, gravida nibh. Aenean vitae condimentum nisl. Vestibulum elementum laoreet hendrerit. Etiam vehicula sodales quam, ac convallis ligula porttitor scelerisque. Pellentesque elit ex, eleifend quis tincidunt eget, vestibulum eu dui. Ut pulvinar iaculis porta. Quisque at auctor lectus.</p>
                         </div>
                     </div>
                 </section>
