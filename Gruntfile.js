@@ -85,6 +85,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.data_plugins %>/fancytree/less/ui.fancytree.less',
                     '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.data_plugins %>/prism/less/prism.less',
                     '<%= pkg.dist_plugins %>/intro/intro.min.css': ['<%= pkg.data_plugins %>/intro/less/introjs.less', '<%= pkg.data_plugins %>/intro/less/introjs.custom.less'],
+                    '<%= pkg.dist_plugins %>/hierarchicalselect/hierarchicalselect.min.css': ['<%= pkg.data_plugins %>/hierarchicalselect/less/hierarchicalselect.less'],
                     '<%= pkg.dist_plugins %>/bootstrap-multiselect/bootstrap-multiselect.min.css': ['<%= pkg.data_plugins %>/bootstrap-multiselect/less/bootstrap-multiselect.less'],
                     '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/less/jquery-custom-scrollbar-0.5.5.custom.less'
                 }
@@ -170,6 +171,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.dist_plugins %>/fancytree/fancytree.min.css',
                     '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.dist_plugins %>/prism/prism.min.css',
                     '<%= pkg.dist_plugins %>/intro/intro.min.css':'<%= pkg.dist_plugins %>/intro/intro.min.css',
+                    '<%= pkg.dist_plugins %>/hierarchicalselect/hierarchicalselect.min.css':'<%= pkg.dist_plugins %>/hierarchicalselect/hierarchicalselect.min.css',
                     '<%= pkg.dist_plugins %>/bootstrap-multiselect/bootstrap-multiselect.min.css':'<%= pkg.dist_plugins %>/bootstrap-multiselect/bootstrap-multiselect.min.css',
                     '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css':'<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery-custom-scrollbar-0.5.5.min.css'
                 }
@@ -287,6 +289,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : ['<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js', '<%= pkg.data_scripts%>/base/custom/mod_photonJqGrid.js'],
                     '<%= pkg.dist_plugins%>/stickyKit/stickyKit.min.js' : ['<%= pkg.data_plugins%>/stickyKit/js/stickyKit.js', '<%= pkg.data_plugins%>/stickyKit/js/stickyKitWrapper.js'],
                     '<%= pkg.dist_plugins%>/intro/intro.min.js' : ['<%= pkg.data_plugins%>/intro/js/intro.js'],
+                    '<%= pkg.dist_plugins%>/hierarchicalselect/hierarchicalselect.min.js' : ['<%= pkg.data_plugins%>/hierarchicalselect/js/hierarchicalselect.js'],
                     '<%= pkg.dist_plugins%>/bootstrap-multiselect/bootstrap-multiselect.min.js' : ['<%= pkg.data_plugins%>/bootstrap-multiselect/js/bootstrap-multiselect.js'],
                     '<%= pkg.dist_plugins%>/countdown/countdown.min.js' : ['<%= pkg.data_plugins%>/countdown/js/moment-timezone-with-data.js', '<%= pkg.data_plugins%>/countdown/js/jquery.countdown.js'],
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
