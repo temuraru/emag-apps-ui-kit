@@ -438,7 +438,6 @@
     });
 </script>
 
-<<<<<<< HEAD
 <script type="text/javascript" data-dependency-name="category_tree_disabled_init">
     $(document).ready(function () {
         TreeTypeObject = $("#id_category_tree_disabled").TreeType({
@@ -456,24 +455,6 @@
         });
     });
 </script>
-=======
-                TreeTypeObjectDisabled = $("#id_category_tree_disabled").TreeType({
-                    treeData: fancytreeContent,
-                    selectId: "category_tree_disabled",
-                    modalTitle: 'Select',
-                    modalResetLabel: 'Reset',
-                    modalCancelLabel: 'Cancel',
-                    modalOkLabel: 'Select',
-                    textUnmatched: 'Hide unmatched',
-                    textSelectHierarchy: 'Hierarchical multi-selection',
-                    noResults: 'No results found',
-                    textSelected: 'selected',
-                    searchPlaceholder: 'Search'
-                });
-            });
-        </script>
-        <!-- DOCUMENT-READY:End -->
->>>>>>> master
 
 </body>
 </html>
