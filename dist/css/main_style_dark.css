@@ -12523,4 +12523,18 @@ i {
   height: 34px !important;
   opacity: 0;
 }
+.hide-with-opacity {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  opacity: 0;
+}
+.hide-with-opacity select {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 34px !important;
+  opacity: 0;
+}
 /*# sourceMappingURL=main_style_dark.css.map */

@@ -316,6 +316,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_hierarchicalselect.php">
+                                <span class="menu-text">Hierarchical select</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_introjs.php">
                                 <span class="menu-text">IntroJS</span>
                             </a>
