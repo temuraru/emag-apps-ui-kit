@@ -26,7 +26,7 @@
                         <p><b>Email template</b></p>
                     </div>
                 </div>
-                <section id="summernoteStandard" class="pad-top-40">
+                <section id="backorder_email" class="pad-top-40">
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
                             <h2><strong>Backorder email</strong></h2>
@@ -36,18 +36,18 @@
                                         <h4><b>Demo</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#summernote" aria-expanded="false" aria-controls="summernote"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#backorder" aria-expanded="false" aria-controls="backorder"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="summernote">
+                                <div class="collapse code-example"  id="backorder">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#summernote_html_source" aria-controls="summernote_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation" class="active"><a href="#backorder_html_source" aria-controls="backorder_html" role="tab" data-toggle="tab">HTML</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="summernote_html_source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="backorder_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code">&#x3C;!DOCTYPE HTML PUBLIC &#x22;-//W3C//DTD HTML 4.01 Transitional//EN&#x22; &#x22;http://www.w3.org/TR/html4/loose.dtd&#x22;&#x3E;
 &#x3C;html&#x3E;
 &#x9;&#x3C;head&#x3E;
