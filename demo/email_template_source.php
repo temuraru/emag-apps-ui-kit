@@ -9,16 +9,13 @@
 		</style>
 	</head>	
 	<body bgcolor="#e4e6e9">
-		<div style="font-size:1px ; color: #efe1b0; display:none">
-			Text for preview title and description in mail. Must be long anough to fill all rows in email description.
-		</div>
 		<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e4e6e9">
 			<tr>
 				<td style="padding-top:40px">
 					<table class="container" width="640" align="center" border="0" cellpadding="0" cellspacing="0" >
 						<tr>
 							<td valign="top" class="logo" bgcolor="#ffffff" style="padding: 0px 20px 0px 20px;">
-								<h1 style="font-size:30px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Cancelled backorder products</h3>
+								<h1 style="font-size:30px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Cancelled backorder products</h1>
 							</td>
 						</tr>
 						<tr>
@@ -29,7 +26,7 @@
 						</tr>
 						<tr>
 							<td bgcolor="#ffffff"  valign="top" style="padding: 0px 20px 0px 20px; ">
-								<h1 style="font-size:20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Order #377403 sent to “Company Name 1”</h3>
+								<h1 style="font-size:20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Order #377403 sent to “Company Name 1”</h1>
 							</td>
 						</tr>
 						<tr>
@@ -178,7 +175,7 @@
 						</tr>
 						<tr>
 							<td bgcolor="#ffffff"  valign="top" style="padding: 0px 20px 0px 20px; ">
-								<h1 style="font-size:20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Order #377404 sent to “Company Name 2”</h3>
+								<h1 style="font-size:20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Order #377404 sent to “Company Name 2”</h1>
 							</td>
 						</tr>
 						<tr>

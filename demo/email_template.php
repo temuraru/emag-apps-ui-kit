@@ -59,16 +59,13 @@
 &#x9;&#x9;&#x3C;/style&#x3E;
 &#x9;&#x3C;/head&#x3E;&#x9;
 &#x9;&#x3C;body bgcolor=&#x22;#e4e6e9&#x22;&#x3E;
-&#x9;&#x9;&#x3C;div style=&#x22;font-size:1px ; color: #efe1b0; display:none&#x22;&#x3E;
-&#x9;&#x9;&#x9;Text for preview title and description in mail. Must be long anough to fill all rows in email description.
-&#x9;&#x9;&#x3C;/div&#x3E;
 &#x9;&#x9;&#x3C;table width=&#x22;100%&#x22; border=&#x22;0&#x22; cellpadding=&#x22;0&#x22; cellspacing=&#x22;0&#x22; bgcolor=&#x22;#e4e6e9&#x22;&#x3E;
 &#x9;&#x9;&#x9;&#x3C;tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding-top:40px&#x22;&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;table class=&#x22;container&#x22; width=&#x22;640&#x22; align=&#x22;center&#x22; border=&#x22;0&#x22; cellpadding=&#x22;0&#x22; cellspacing=&#x22;0&#x22; &#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td valign=&#x22;top&#x22; class=&#x22;logo&#x22; bgcolor=&#x22;#ffffff&#x22; style=&#x22;padding: 0px 20px 0px 20px;&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:30px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Cancelled backorder products&#x3C;/h3&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:30px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Cancelled backorder products&#x3C;/h1&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
@@ -79,7 +76,7 @@
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#ffffff&#x22;  valign=&#x22;top&#x22; style=&#x22;padding: 0px 20px 0px 20px; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Order #377403 sent to &#x201C;Company Name 1&#x201D;&#x3C;/h3&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Order #377403 sent to &#x201C;Company Name 1&#x201D;&#x3C;/h1&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
@@ -228,7 +225,7 @@
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#ffffff&#x22;  valign=&#x22;top&#x22; style=&#x22;padding: 0px 20px 0px 20px; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Order #377404 sent to &#x201C;Company Name 2&#x201D;&#x3C;/h3&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Order #377404 sent to &#x201C;Company Name 2&#x201D;&#x3C;/h1&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
 &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
@@ -388,8 +385,7 @@
 &#x9;&#x9;&#x3C;/table&#x3E;
 &#x9;&#x3C;/body&#x3E;&#x9;
 &#x3C;/html&#x3E;
-
-                                                </code></pre>
+</code></pre>
                                         </div>
 
                                     </div>
