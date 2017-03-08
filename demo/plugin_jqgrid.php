@@ -80,7 +80,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table" class="table table-bordered"></table>
                                             <div id="grid_pager"></div>
                                         </div>
@@ -123,7 +123,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_sticky_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_sticky_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_sticky" class="table table-bordered"></table>
                                             <div id="grid_pager_sticky"></div>
                                         </div>
@@ -166,7 +166,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_column_chooser_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_column_chooser_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20 pad-btm-20 clearfix">
                                                 <button type="button" id="grid_table_column_chooser_button" class="btn btn-primary pull-right">
                                                     Select columns <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -215,7 +215,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_selectable_rows_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_selectable_rows_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20 pad-btm-20">
                                                 <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
                                             </div>
@@ -267,7 +267,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
 
                                         </div>
@@ -310,7 +310,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_subgrid" class="table table-bordered"></table>
 
                                         </div>
@@ -353,7 +353,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_inline_editing_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_inline_editing_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
                                             <div id="grid_pager_with_inline_edit"></div>
 
@@ -397,7 +397,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_actions_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_actions_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_actions" class="table table-bordered"></table>
                                             <div id="grid_pager_with_actions"></div>
 
@@ -441,7 +441,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_data_formatters_init,jquery_ui_source,stickykit_source,tether_source,drop_source">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_data_formatters_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20">
                                                 <table id="grid_with_formatter_table" class="table table-bordered"></table>
                                                 <div id="grid_with_formatter_pager"></div>
