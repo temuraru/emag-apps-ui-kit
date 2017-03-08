@@ -104,8 +104,8 @@
                                     </select>
                                 </div>
                                 <div class="input-group input-group-no-separation">
-                                    <div class="form-control" id="id_category_tree_default"></div>
-                                    <span class="input-group-addon">
+                                    <div class="form-control cursor-pointer" id="id_category_tree_default"></div>
+                                    <span class="input-group-addon cursor-pointer">
                                         <i class="fa fa-sitemap"></i>
                                     </span>
                                 </div>
@@ -161,8 +161,8 @@
                                     </select>
                                 </div>
                                 <div class="input-group input-group-no-separation">
-                                    <div class="form-control" id="id_category_tree_disabled"></div>
-                                    <span class="input-group-addon">
+                                    <div class="form-control cursor-pointer" id="id_category_tree_disabled"></div>
+                                    <span class="input-group-addon cursor-pointer">
                                         <i class="fa fa-sitemap"></i>
                                     </span>
                                 </div>
