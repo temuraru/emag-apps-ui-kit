@@ -154,7 +154,7 @@
                                         <div class="collapse code-example"  id="magnific_embeds">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs code-example" role="tablist">
-                                                <li role="presentation" class="active"><a href="#magnific_ajax_html_source" aria-controls="magnific_embeds_html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation" class="active"><a href="#magnific_embeds_html_source" aria-controls="magnific_embeds_html" role="tab" data-toggle="tab">HTML</a></li>
                                                 <li role="presentation"><a href="#magnific_embeds_js_source" aria-controls="magnific_embeds_js" role="tab" data-toggle="tab">JS</a></li>
                                                 <li role="presentation"><a href="#magnific_embeds_css_source" aria-controls="magnific_embeds_css" role="tab" data-toggle="tab">CSS</a></li>
                                             </ul>
