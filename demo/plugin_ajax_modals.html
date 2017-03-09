@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
     <head>
-
-        <title>Layout - eMAG Apps UI KIT</title>
+        <title>JS Components - eMAG Apps UI KIT</title>
         <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -23,13 +22,11 @@
     <script src="../dist/js/lib/respond.min.js"></script>
 <![endif]-->        <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
     </head>
     <body>
-
+        
         <!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
 <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-        <!-- HEADER:Start -->
         <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -91,7 +88,6 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>        <!-- HEADER:End -->
-
         <!-- PAGE:Start -->
             <div class="main-container" id="main-container">
                 <div class="main-container-inner">
@@ -224,6 +220,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-tooltips">
+                                <span class="menu-text">CSS Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.html#css-labels-and-badges">
                                 <span class="menu-text">Labels and badges</span>
                             </a>
@@ -244,13 +245,18 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-page-header">
-                                <span class="menu-text">Page header</span>
+                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-jumbotron">
+                                <span class="menu-text">Page headers and jumbotrons</span>
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.html#css-embeds">
                                 <span class="menu-text">Embeds</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/helper_classes.html">
+                                <span class="menu-text">Custom helper classes</span>
                             </a>
                         </li>
                     </ul>
@@ -266,6 +272,16 @@
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_ajax_modals.html">
+                                <span class="menu-text">AJAX Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-block-ui">
+                                <span class="menu-text">Block UI</span>
+                            </a>
+                        </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">
                                 <span class="menu-text">Complex form elements</span>
@@ -292,18 +308,18 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUIAutocomplete">
-                                        <span class="menu-text">jQuery UI autocomplete</span>
+                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryAutocomplete">
+                                        <span class="menu-text">jQuery autocomplete</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUISliders">
-                                        <span class="menu-text">jQuery UI sliders</span>
+                                        <span class="menu-text">jQuery UI Sliders</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryNumericInput">
-                                        <span class="menu-text">jQuery UI numeric input (Spinner)</span>
+                                        <span class="menu-text">jQuery numeric input</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
@@ -313,99 +329,14 @@
                                 </li>
                             </ul>
                         </li>
-
-
-
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">
-                                <span class="menu-text">jQGrid</span>
-                            </a>
-                            <ul class="sidebar-submenu">
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
-                                        <span class="menu-text">Basic</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-sticky-panels">
-                                        <span class="menu-text">With sticky panels</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser">
-                                        <span class="menu-text">With column chooser</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows">
-                                        <span class="menu-text">With selectable rows</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-ierarchical-elements-tree">
-                                        <span class="menu-text">With ierarchical elements (Tree)</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid">
-                                        <span class="menu-text">With subgrid</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-inline-editing">
-                                        <span class="menu-text">With inline editing</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-actions">
-                                        <span class="menu-text">With actions</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-data-formatters">
-                                        <span class="menu-text">With data formatters</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html">
-                                <span class="menu-text">Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-custom-notifications">
-                                <span class="menu-text">Custom notifications (Growl)</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tooltips">
-                                <span class="menu-text">Tooltips</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-popovers">
-                                <span class="menu-text">Popovers</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tabs">
-                                <span class="menu-text">Tabs</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-utilities">
-                                <span class="menu-text">Utilities</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-block-ui">
-                                <span class="menu-text">Block UI</span>
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-custom-error-messages">
+                                <span class="menu-text">Custom error messages</span>
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_datetime.html">
-                                <span class="menu-text">Date & Time</span>
+                                <span class="menu-text">DateTime</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -424,14 +355,40 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/image_gallery.html">
-                                <span class="menu-text">Image gallery</span>
+                            <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
+                                <span class="menu-text">jQGrid</span>
                             </a>
                         </li>
-
-
-
-
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html">
+                                <span class="menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_gallery.html">
+                                <span class="menu-text">Picture gallery & image slider</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-popovers">
+                                <span class="menu-text">Popovers</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tooltips">
+                                <span class="menu-text">Tooltips</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tabs">
+                                <span class="menu-text">Tabs</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-utilities">
+                                <span class="menu-text">Utilities</span>
+                            </a>
+                        </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.html">
                                 <span class="menu-text">Wysiwyg editor</span>
@@ -511,77 +468,48 @@
                         <div class="jumbotron content-header">
                             <div class="container-fluid">
                                 <p>eMAG Apps UI KIT</p>
-                                <p><b>CSS Components</b></p>
+                                <p><b>AJAX Modals</b></p>
                             </div>
                         </div>
-                        <section id="boilerplate" class="pad-top-40">
-                            <div class="panel">
-                                <div class="panel-body">
+                        <section id="summernoteStandard" class="pad-top-40">
 
-                                    <h2><strong>Custom helper classes</strong></h2>
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-4">
-                                            <p><strong>Margin</strong></p>
-                                            <ul>
-                                                <li>no-margin</li>
-                                                <li>no-margin-top</li>
-                                                <li>no-margin-bottom</li>
-                                                <li>no-margin-top-bottom</li>
-                                                <li>no-margin-left-right</li>
-                                                <li class=" mg-top-10"><strong>From 5 to 5</strong>
-                                                    <ul class="no-padding-top pad-15">
-                                                        <li>mg-top-[5 ... 50]</li>
-                                                        <li>mg-btm-[5 ... 50]</li>
-                                                        <li>mg-left-right-[5 ... 50]</li>
-                                                        <li>mg-sep-[5 ... 50]</li>
-                                                        <li>mg-[5 ... 50]</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-md-4">
-                                            <p><strong>Padding</strong></p>
-                                            <ul>
-                                                <li>no-padding</li>
-                                                <li>no-padding-top</li>
-                                                <li>no-padding-bottom</li>
-                                                <li>no-padding-top-bottom</li>
-                                                <li>no-padding-left-right</li>
-                                                <li class=" mg-top-10"><strong>From 5 to 5</strong>
-                                                    <ul class="no-padding-top pad-15">
-                                                        <li>pad-top-[5 ... 50]</li>
-                                                        <li>pad-btm-[5 ... 50]</li>
-                                                        <li>pad-left-right-[5 ... 50]</li>
-                                                        <li>pad-sep-[5 ... 50]</li>
-                                                        <li>pad-[5 ... 50]</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-md-4">
-                                            <p><strong>Border</strong></p>
-                                            <ul>
-                                                <li>no-border</li>
-                                                <li>no-border-top</li>
-                                                <li>no-border-bottom</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-md-4">
-                                            <p><strong>Width</strong></p>
-                                            <ul>
-                                                <li>width-[10 ... 100]<br><small>(from 10 to 10, as percentage)</small></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-md-4">
-                                            <p><strong>Font</strong></p>
-                                            <ul>
-                                                <li>font-size-[20 ... 200]<br><small>(from 20 to 20, as percentage)</small></li>
-                                            </ul>
-                                        </div>
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h4 class="text-primary"><strong>eMAG Apps UI KIT - AJAX Modals</strong></h4>
+                                    <p><strong>Works great with the standard Bootstrap version</strong></p>
+                                    <div class="pad-sep-20">
+                                        <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal.</button>
                                     </div>
                                 </div>
+                                <div class="show-panel-footer">
+                                    <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script type=&quot;text/javascript&quot;&gt;
+var modalTest = new PhotonModal({
+    id: 'testModal',
+    title: 'This is an AJAX modal',
+    useAjax: true,
+    ajaxModalParams: {
+        method: 'POST',
+        url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
+    },
+    size: 'default',
+    type: 'preview',
+    buttons: {
+        save: {
+            label: 'Save',
+            class: 'btn-success',
+            closeModal: true
+        },
+        cancel: {
+            label: 'Cancel',
+            class: 'btn-default',
+            closeModal: true
+        }
+    }
+});
+&lt;/script&gt;</code></pre>
+                                </div>
                             </div>
-                        </section>
+                        </section>                                        
                     </div>
                 </div>
                 <!-- CONTENT:End -->
@@ -597,6 +525,10 @@
             </div>
         <!-- PAGE:End -->
 
+        <!-- POPUPS:Start -->
+        <div id="popSpace"></div>
+        <!-- POPUPS:End -->
+
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
@@ -609,10 +541,40 @@
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
+            var modalTest = new PhotonModal({
+                id: 'testModal',
+                title: 'This is an AJAX modal',
+                useAjax: true,
+                ajaxModalParams: {
+                    method: 'POST',
+                    url: '/emag-apps-ui-kit/demo/plugin_ajax_modals_modal_content.html'
+                },
+                size: 'default',
+                type: 'preview',
+                buttons: {
+                    save: {
+                        label: 'Save',
+                        class: 'btn-success',
+                        closeModal: true
+                    },
+                    cancel: {
+                        label: 'Cancel',
+                        class: 'btn-default',
+                        closeModal: true
+                    }
+                }
+            });
+
             $(document).ready(function () {
                 console.log('Ready, Captain!');
 
-                demoHelpers();
+                demoHelpers();  // Require demo_helpers.js
+
+                $('#ajax_modal_start').on('click', function(){
+                    modalTest.show();
+                });
+
+
             });
         </script>
         <!-- DOCUMENT-READY:End -->
