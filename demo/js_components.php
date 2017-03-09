@@ -174,7 +174,7 @@
                                     </div>
                                 </div>
 
-                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,ajax_modal_init,jquery">
+                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,ajax_modal_init,jquery,pop_space_empty">
                                     <button id="ajax_modal_start" type="button" class="btn btn-primary">Show me an ajax modal</button>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,modals_different_size_init,modal_in_page">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,modals_different_size_init,modal_in_page,pop_space">
                                             <button type="button" id="mySmallDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Small</button>
                                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Normal</button>
                                             <button type="button" id="myLargeDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Large</button>
@@ -254,7 +254,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals_init">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals_init,pop_space_empty">
                                             <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
                                             <button type="button" id="confirmation_alert_no_overlay" class="btn btn-default">Confirmation - No overlay</button>
                                             <button type="button" id="error_alert" class="btn btn-default">Error</button>
@@ -703,9 +703,14 @@
 </div>
 </div>
 <!-- PAGE:End -->
-
+<div data-dependency-name="pop_space_empty">
+    <!-- Div with id 'popSpace' must be inserted before the end of the body tag -->
+    <div id="popSpace"></div>
+</div>
         <!-- POPUPS:Start -->
-        <div id="popSpace" data-dependency-name="modal_in_page">
+<div data-dependency-name="pop_space">
+    <!-- Div with id 'popSpace' must be inserted before the end of the body tag -->
+        <div id="popSpace">
             <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -734,7 +739,7 @@
                 </div>
             </div>
         </div>
-
+</div>
         <!-- SCRIPTS:Start -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>

@@ -185,13 +185,13 @@
                                         <h4><b>Category tree disabled</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree_disabled" aria-expanded="false" aria-controls="category_tree_disabled"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree_disabled_container" aria-expanded="false" aria-controls="category_tree_disabled_container"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="category_tree_disabled">
+                                <div class="collapse code-example"  id="category_tree_disabled_container">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#category_tree_disabled_html_source" aria-controls="category_tree_disabled_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation" class="active"><a href="#category_tree_disabled_html_source" aria-controls="category_tree_disablede_html" role="tab" data-toggle="tab">HTML</a></li>
                                         <li role="presentation"><a href="#category_tree_disabled_js_source" aria-controls="category_tree_disabled_js" role="tab" data-toggle="tab">JS</a></li>
                                         <li role="presentation"><a href="#category_tree_disabled_css_source" aria-controls="category_tree_disabled_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
@@ -212,9 +212,9 @@
 
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,fancytree_source,fancytree_css,category_tree_disabled_init,fancytree-content,pop_space">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,fancytree_source,fancytree_css,category_tree_default_init,fancytree-content,pop_space">
                                             <div class="form-group">
-                                                <label for="category_treeDefault"></label>
+                                                <label for="category_tree_disabled"></label>
                                                 <div class="hide-with-opacity">
                                                     <select id="category_tree_disabled" multiple="multiple" disabled>
                                                         <option value=""></option>
@@ -290,6 +290,7 @@
 </div>
 <!-- POPUPS:Start -->
 <div data-dependency-name="pop_space">
+    <!-- Div with id 'popSpace' must be inserted before the end of the body tag -->
     <div id="popSpace"></div>
 </div>
 <!-- POPUPS:End -->
@@ -422,7 +423,7 @@
 
 <script type="text/javascript" data-dependency-name="category_tree_default_init">
     $(document).ready(function () {
-        TreeTypeObject = $("#id_category_tree_default").TreeType({
+        var TreeTypeObject = $("#id_category_tree_default").TreeType({
             treeData: fancytreeContent,
             selectId: "category_tree_default",
             modalTitle: 'Select',
@@ -440,7 +441,7 @@
 
 <script type="text/javascript" data-dependency-name="category_tree_disabled_init">
     $(document).ready(function () {
-        TreeTypeObject = $("#id_category_tree_disabled").TreeType({
+        var TreeTypeObjectDisabled = $("#id_category_tree_disabled").TreeType({
             treeData: fancytreeContent,
             selectId: "category_tree_disabled",
             modalTitle: 'Select',
