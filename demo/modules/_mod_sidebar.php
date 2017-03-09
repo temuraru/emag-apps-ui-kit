@@ -350,6 +350,11 @@
                                 <span class="menu-text">Blank page</span>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/email_template.php">
+                                <span class="menu-text">Email template</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
