@@ -1,924 +1,336 @@
-<!DOCTYPE html>
-<html lang="en" class="js">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-    <title>Plugins - eMAG Apps UI KIT</title>
-    <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="eMAG HX Team">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Email backorder</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+        body{ margin:0; padding:0}
+    </style>
+</head>
+<body bgcolor="#e4e6e9">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e4e6e9">
+    <tr>
+        <td style="padding-top:40px">
+            <table class="container" width="640" align="center" border="0" cellpadding="0" cellspacing="0" >
+                <tr>
+                    <td valign="top" class="logo" bgcolor="#ffffff" style="padding: 0px 20px 0px 20px;">
+                        <h1 style="font-size:30px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Email title</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="headline" bgcolor="#ffffff" style="padding: 0px 20px 0px 20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; ">
+                        A small description for items below.
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff"  valign="top" style="padding: 0px 20px 0px 20px; ">
+                        <h1 style="font-size:20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Subtitle for item below</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" bgcolor="#ffffff" style="padding: 0px 20px 20px 20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; ">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Product<br>Number
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Requested<br>quantity
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Request<br>date
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Confirmed<br>quantity
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    Confirmation<br>date
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Backorder<br>quantity
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-bottom:1px solid #c3c3c3">
+                                    Backorder<br>delivery date
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    CA017D9073HGJKHSW
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    85
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    20/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    80
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    20/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    70
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    23/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    ER017D9073HGJKHTY
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    75
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    11/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    70
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    11/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    60
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    12/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    OI017D9073HGJKHTR
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    65
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    09/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    60
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    09/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    50
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    11/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    YT017D9073HGJKHBV
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    55
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    08/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    50
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    08/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    40
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    10/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    AT018D9673HGJKHBA
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    45
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    03/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    40
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    03/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    30
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    04/02/2017
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff"  valign="top" style="padding: 0px 20px 0px 20px; ">
+                        <h1 style="font-size:20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-weight:normal">Subtitle for item below</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" bgcolor="#ffffff" style="padding: 0px 20px 20px 20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; ">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Product<br>Number
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Requested<br>quantity
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Request<br>date
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Confirmed<br>quantity
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    Confirmation<br>date
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    Backorder<br>quantity
+                                </td>
+                                <td bgcolor="#eeeeee" style="padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-bottom:1px solid #c3c3c3">
+                                    Backorder<br>delivery date
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    CA017D9073HGJKHSW
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    85
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    20/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    80
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    20/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    70
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    23/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    ER017D9073HGJKHTY
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    75
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    11/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    70
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    11/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    60
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    12/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    OI017D9073HGJKHTR
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    65
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    09/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    60
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    09/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    50
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    11/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    YT017D9073HGJKHBV
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    55
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    08/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    50
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    08/02/2017
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    40
+                                </td>
+                                <td bgcolor="#fafafa" style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    10/02/2017
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    AT018D9673HGJKHBA
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    45
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    03/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    40
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 ">
+                                    03/02/2017
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3">
+                                    30
+                                </td>
+                                <td style="padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3">
+                                    04/02/2017
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" bgcolor="#ffffff" style="padding: 0px 20px 20px 20px; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size:11px ">
+                        Copyright © 2011 - 2017 eMAG. All rights reserved.
+                    </td>
+                </tr>
 
-<link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
+            </table>
 
-<!-- PHOTON main styles -->
-<link rel="stylesheet" href="../dist/css/main_style.min.css" data-dependency-name="main_style">
-
-<link rel="stylesheet" href="../dist/css/custom-presentation.min.css">
-
-<!--[if lt IE 9]>
-    <script src="../dist/js/lib/html5shiv.min.js"></script>
-    <script src="../dist/js/lib/respond.min.js"></script>
-<![endif]--></head>
-<body>
-<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
-<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-<!-- HEADER:Start -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <div class="nav-controls visible-xs-inline-block pull-left">
-                <button id="toggle-sidebar-btn" type="button" class="btn btn-default navbar-btn" aria-expanded="false">
-                    <span class="sr-only">Toggle sidepanel</span><i class="fa fa-bars"></i>
-                </button>
-            </div>
-            <a class="navbar-brand" href="javascript:void(0)">
-                <img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">
-            </a>
-            <div class="nav-controls visible-xs-inline-block pull-right">
-                <button id="toggle-nav-btn" type="button" class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-angle-down"></i>
-                </button>
-            </div>
-        </div><!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="main-nav">
-            <h4 class="navbar-text">Demo</h4>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle dd-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="visible-xs-inline">Language</span>
-                        <span><i class="flag-icon flag-icon-gb"></i>GB</span><i class="fa fa-angle-down hidden-xs"></i>
-                    </a>
-                    <ul class="dropdown-menu dm-language">
-                        <li><a href="#"><i class="flag-icon flag-icon-ro"></i><span>RO</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-bg"></i><span>BG</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-hu"></i><span>HU</span></a></li>
-                        <li><a href="#"><i class="flag-icon flag-icon-pl"></i><span>PL</span></a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-bell nav-icon-lg hidden-xs"></i>
-                        <span class="visible-xs-inline">Notifications</span>
-                        <span class="jewel">3</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dm-header hidden-xs"><span>Notifications</span></li>
-                        <li><a href="#"><span>You have an invalidated offer</span></a></li>
-                        <li><a href="#"><span>Your account is not up to date</span></a></li>
-                        <li><a href="#"><span>You have a new order</span></a></li>
-                        <li><a href="javascript:void(0)"><span>View all</span></a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle dd-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <div class="profile-thumb hidden-xs">
-                            <img class="nav-user-photo" src="img/profile_image.png" alt="">
-                        </div><span>Jon Snow</span><i class="fa fa-angle-down hidden-xs"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span>Account settings</span></a></li>
-                        <li><a href="#"><span>Logout</span></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav><!-- HEADER:End -->
-<!-- PAGE:Start -->
-<div class="main-container" id="main-container">
-    <div class="main-container-inner">
-        <!-- SIDEBAR:Start -->
-        <div id="sidebar" class="sidebar sidebar-fixed">
-    <div class="sidebar-outer">
-        <ul class="sidebar-inner">
-            <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/index.html">
-                    <i class="menu-icon fa fa-flag-checkered"></i>
-                    <span class="menu-text">Start</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="/emag-apps-ui-kit/demo/index.html" class="menu-item-min-link">
-                        <span class="menu-text">Start</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/index.html#overview">
-                                <span class="menu-text">Overview</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/index.html#getting-started">
-                                <span class="menu-text">Getting started</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html">
-                    <i class="menu-icon fa fa-columns"></i>
-                    <span class="menu-text">Layout</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/layout.html" class="menu-item-min-link">
-                        <span class="menu-text">Layout</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/layout.html">
-                                <span class="menu-text">Boilerplate</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/layout.html#top-navigation">
-                                <span class="menu-text">Top Navigation</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/layout.html#main-sidebar">
-                                <span class="menu-text">Sidebar</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/layout.html#main-footer">
-                                <span class="menu-text">Footer</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/layout.html#grid-layout">
-                                <span class="menu-text">Grid Layout</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html">
-                    <i class="menu-icon fa fa-paint-brush"></i>
-                    <span class="menu-text">Branding</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/branding.html" class="menu-item-min-link">
-                        <span class="menu-text">Branding</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/branding.html">
-                                <span class="menu-text">Color scheme</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/branding.html#typography">
-                                <span class="menu-text">Typography</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/branding.html#icons">
-                                <span class="menu-text">Icons & flags</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html">
-                    <i class="menu-icon fa fa-archive"></i>
-                    <span class="menu-text">CSS Components</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.html" class="menu-item-min-link">
-                        <span class="menu-text">CSS Components</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html">
-                                <span class="menu-text">Typefaces variations</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-tables">
-                                <span class="menu-text">Tables</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#basic-forms">
-                                <span class="menu-text">Forms</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#buttons">
-                                <span class="menu-text">Buttons</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-flipswitch">
-                                <span class="menu-text">CSS Flipswitch</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-labels-and-badges">
-                                <span class="menu-text">Labels and badges</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-alerts-and-notifications">
-                                <span class="menu-text">Alerts and notifications</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-progressbars">
-                                <span class="menu-text">Progress Bars</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-panels">
-                                <span class="menu-text">Panels</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-page-header">
-                                <span class="menu-text">Page header</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.html#css-embeds">
-                                <span class="menu-text">Embeds</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html">
-                    <i class="menu-icon fa fa-code"></i>
-                    <span class="menu-text">JS Components</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.html" class="menu-item-min-link">
-                        <span class="menu-text">JS Components</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">
-                                <span class="menu-text">Complex form elements</span>
-                            </a>
-                            <ul class="sidebar-submenu">
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html">
-                                        <span class="menu-text">Masked inputs</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsTextareaWithInputLimiter">
-                                        <span class="menu-text">Textarea with input limiter</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsFileUpload">
-                                        <span class="menu-text">File upload</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsSelectizeTagInput">
-                                        <span class="menu-text">Selectize tag input</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUIAutocomplete">
-                                        <span class="menu-text">jQuery UI autocomplete</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUISliders">
-                                        <span class="menu-text">jQuery UI sliders</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryNumericInput">
-                                        <span class="menu-text">jQuery UI numeric input (Spinner)</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsChosenJsAutocomplete">
-                                        <span class="menu-text">Chosen.js autocomplete</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-
-
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">
-                                <span class="menu-text">jQGrid</span>
-                            </a>
-                            <ul class="sidebar-submenu">
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html">
-                                        <span class="menu-text">Basic</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-sticky-panels">
-                                        <span class="menu-text">With sticky panels</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser">
-                                        <span class="menu-text">With column chooser</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows">
-                                        <span class="menu-text">With selectable rows</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-ierarchical-elements-tree">
-                                        <span class="menu-text">With ierarchical elements (Tree)</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid">
-                                        <span class="menu-text">With subgrid</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-inline-editing">
-                                        <span class="menu-text">With inline editing</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-actions">
-                                        <span class="menu-text">With actions</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-data-formatters">
-                                        <span class="menu-text">With data formatters</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html">
-                                <span class="menu-text">Modals</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-custom-notifications">
-                                <span class="menu-text">Custom notifications (Growl)</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tooltips">
-                                <span class="menu-text">Tooltips</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-popovers">
-                                <span class="menu-text">Popovers</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-tabs">
-                                <span class="menu-text">Tabs</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-utilities">
-                                <span class="menu-text">Utilities</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/js_components.html#js-block-ui">
-                                <span class="menu-text">Block UI</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_datetime.html">
-                                <span class="menu-text">Date & Time</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_fancytree.html">
-                                <span class="menu-text">Fancytree</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_hierarchicalselect.html">
-                                <span class="menu-text">Hierarchical select</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_introjs.html">
-                                <span class="menu-text">IntroJS</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/image_gallery.html">
-                                <span class="menu-text">Image gallery</span>
-                            </a>
-                        </li>
-
-
-
-
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.html">
-                                <span class="menu-text">Wysiwyg editor</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu-item menu-item-has-children">
-                <a href="#">
-                    <i class="menu-icon fa fa-star"></i>
-                    <span class="menu-text">Useful Pages</span>
-                </a>
-                <div class="menu-item-data">
-                    <a href="#" class="menu-item-min-link">
-                        <span class="menu-text">Useful Pages</span>
-                    </a>
-                    <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/authentication.html">
-                                <span class="menu-text">Log In & Sign Up</span>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">
-                                <span class="menu-text">Error pages</span>
-                            </a>
-                            <ul class="sidebar-submenu">
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/err_404.html">
-                                        <span class="menu-text">404</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/err_503.html">
-                                        <span class="menu-text">503</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/err_logged_out.html">
-                                        <span class="menu-text">Logged out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/add_form_example.html">
-                                <span class="menu-text">Add form example</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/blank_page.html">
-                                <span class="menu-text">Blank page</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/email_template.html">
-                                <span class="menu-text">Email template</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="sidebar-control">
-        <div class="sidebar-toggle">
-            <button type="button" id="toggle-sidebar-size-btn" class="btn btn-link btn-sm">
-                <i class="menu-icon fa fa-arrow-left"></i>
-            </button>
-        </div>
-    </div>
-</div>        <!-- SIDEBAR:End -->
-        <!-- CONTENT:Start -->
-        <div class="main-content">
-            <div class="page-content">
-                <div class="jumbotron content-header">
-                    <div class="container-fluid">
-                        <p>eMAG Apps UI KIT</p>
-                        <p><b>Email template</b></p>
-                    </div>
-                </div>
-                <section id="backorder_email" class="pad-top-40">
-                    <div class="show-panel code-example">
-                        <div class="show-panel-body code-example">
-                            <h2><strong>Backorder email</strong></h2>
-                            <div class="code-container">
-                                <div class="row code-header no-border-top">
-                                    <div class="col-xs-8 module-description">
-                                        <h4><b>Demo</b></h4>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#backorder" aria-expanded="false" aria-controls="backorder"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
-                                    </div>
-                                </div>
-                                <div class="collapse code-example"  id="backorder">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#backorder_html_source" aria-controls="backorder_html" role="tab" data-toggle="tab">HTML</a></li>
-                                    </ul>
-
-                                    <!-- Tab panes -->
-                                    <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="backorder_html_source">
-                                            <pre class="language-html"><code class="language-html" data-showcase="code">&#x3C;!DOCTYPE HTML PUBLIC &#x22;-//W3C//DTD HTML 4.01 Transitional//EN&#x22; &#x22;http://www.w3.org/TR/html4/loose.dtd&#x22;&#x3E;
-&#x3C;html&#x3E;
-&#x9;&#x3C;head&#x3E;
-&#x9;&#x9;&#x3C;meta http-equiv=&#x22;Content-Type&#x22; content=&#x22;text/html; charset=utf-8&#x22;&#x3E;
-&#x9;&#x9;&#x3C;title&#x3E;Email backorder&#x3C;/title&#x3E;
-&#x9;&#x9;&#x3C;style type=&#x22;text/css&#x22;&#x3E;
-&#x9;&#x9;&#x9;@import url(&#x27;https://fonts.googleapis.com/css?family=Open+Sans:400,700&#x27;);
-&#x9;&#x9;&#x9;body{ margin:0; padding:0}
-&#x9;&#x9;&#x3C;/style&#x3E;
-&#x9;&#x3C;/head&#x3E;&#x9;
-&#x9;&#x3C;body bgcolor=&#x22;#e4e6e9&#x22;&#x3E;
-&#x9;&#x9;&#x3C;table width=&#x22;100%&#x22; border=&#x22;0&#x22; cellpadding=&#x22;0&#x22; cellspacing=&#x22;0&#x22; bgcolor=&#x22;#e4e6e9&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding-top:40px&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;table class=&#x22;container&#x22; width=&#x22;640&#x22; align=&#x22;center&#x22; border=&#x22;0&#x22; cellpadding=&#x22;0&#x22; cellspacing=&#x22;0&#x22; &#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td valign=&#x22;top&#x22; class=&#x22;logo&#x22; bgcolor=&#x22;#ffffff&#x22; style=&#x22;padding: 0px 20px 0px 20px;&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:30px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Cancelled backorder products&#x3C;/h1&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td valign=&#x22;top&#x22; class=&#x22;headline&#x22; bgcolor=&#x22;#ffffff&#x22; style=&#x22;padding: 0px 20px 0px 20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Hello John,&#x3C;br&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;The following products has been automatically cancelled:
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#ffffff&#x22;  valign=&#x22;top&#x22; style=&#x22;padding: 0px 20px 0px 20px; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Order #377403 sent to &#x201C;Company Name 1&#x201D;&#x3C;/h1&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td valign=&#x22;top&#x22; bgcolor=&#x22;#ffffff&#x22; style=&#x22;padding: 0px 20px 20px 20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;table width=&#x22;100%&#x22; cellpadding=&#x22;0&#x22; cellspacing=&#x22;0&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Product&#x3C;br&#x3E;Number
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Requested&#x3C;br&#x3E;quantity
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Request&#x3C;br&#x3E;date
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Confirmed&#x3C;br&#x3E;quantity
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Confirmation&#x3C;br&#x3E;date
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Backorder&#x3C;br&#x3E;quantity
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Backorder&#x3C;br&#x3E;delivery date
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;CA017D9073HGJKHSW
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;85
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;20/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;80
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;20/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;70
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;23/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;ER017D9073HGJKHTY
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;75
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;11/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;70
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;11/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;60
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;12/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;OI017D9073HGJKHTR
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;65
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;09/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;60
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;09/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;50
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;11/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;YT017D9073HGJKHBV
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;55
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;08/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;50
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;08/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;40
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;10/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AT018D9673HGJKHBA
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;45
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;03/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;40
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;03/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;30
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;04/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/table&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#ffffff&#x22;  valign=&#x22;top&#x22; style=&#x22;padding: 0px 20px 0px 20px; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;h1 style=&#x22;font-size:20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-weight:normal&#x22;&#x3E;Order #377404 sent to &#x201C;Company Name 2&#x201D;&#x3C;/h1&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td valign=&#x22;top&#x22; bgcolor=&#x22;#ffffff&#x22; style=&#x22;padding: 0px 20px 20px 20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;table width=&#x22;100%&#x22; cellpadding=&#x22;0&#x22; cellspacing=&#x22;0&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Product&#x3C;br&#x3E;Number
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Requested&#x3C;br&#x3E;quantity
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Request&#x3C;br&#x3E;date
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Confirmed&#x3C;br&#x3E;quantity
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Confirmation&#x3C;br&#x3E;date
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Backorder&#x3C;br&#x3E;quantity
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#eeeeee&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; font-weight:bold; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Backorder&#x3C;br&#x3E;delivery date
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;CA017D9073HGJKHSW
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;85
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;20/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;80
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;20/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;70
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;23/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;ER017D9073HGJKHTY
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;75
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;11/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;70
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;11/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;60
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;12/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;OI017D9073HGJKHTR
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;65
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;09/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;60
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;09/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;50
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;11/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;YT017D9073HGJKHBV
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;55
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;08/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;50
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;08/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;40
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td bgcolor=&#x22;#fafafa&#x22; style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;10/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AT018D9673HGJKHBA
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;45
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;03/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;40
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3 &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;03/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-right:1px solid #c3c3c3; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;30
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td style=&#x22;padding: 8px 8px 8px 8px;font-size:10px; border-bottom:1px solid #c3c3c3&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;04/02/2017
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/table&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;td valign=&#x22;top&#x22; align=&#x22;center&#x22; bgcolor=&#x22;#ffffff&#x22; style=&#x22;padding: 0px 20px 20px 20px; font-family:&#x27;Open Sans&#x27;, Arial, Helvetica, sans-serif; font-size:11px &#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Copyright &#xA9; 2011 - 2017 eMAG. All rights reserved.
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/table&#x3E;
-&#x9;&#x9;&#x9;&#x9;
-&#x9;&#x9;&#x9;&#x9;&#x3C;/td&#x3E;
-&#x9;&#x9;&#x9;&#x3C;/tr&#x3E;
-&#x9;&#x9;&#x3C;/table&#x3E;
-&#x9;&#x3C;/body&#x3E;&#x9;
-&#x3C;/html&#x3E;
-</code></pre>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" >
-                                            <a class="btn btn-default" target="_blank" href="email_template_source.html" role="button">Show email</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- CONTENT:End -->
-        <!-- FOOTER:Start -->
-        <div id="main_footer" class="footer">
-    <div class="footer-inner text-center">
-        <div class="footer-content">
-            <span>Copyright &copy; 2011 - 2017 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
-        </div>
-    </div>
-</div>        <!-- FOOTER:End -->
-    </div>
-</div>
-<!-- PAGE:End -->
-
-<!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-
-<script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
-<script src="../dist/js/demo_helpers.js"></script>
-<!-- SCRIPTS:End -->
-
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
-
-<!-- DOCUMENT-READY:Start -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        demoHelpers();  // Require demo_helpers.js
-        showPageCode();
-    });
-</script>
-<!-- DOCUMENT-READY:End -->
-
+        </td>
+    </tr>
+</table>
 </body>
 </html>
