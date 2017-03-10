@@ -12013,6 +12013,9 @@ input[type="radio"].form-radio-control:disabled {
   background: none;
   border-left: none;
 }
+.input-group.input-group-no-separation .input-group-addon.cursor-pointer {
+  cursor: pointer;
+}
 .input-group.input-group-no-separation .input-group-addon > .form-radio-control,
 .input-group.input-group-no-separation .input-group-addon > .form-checkbox-control {
   margin-top: 2px!important;

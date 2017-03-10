@@ -74,6 +74,9 @@
                 if(e.target != this) return;
                 $this.modal.show();
             });
+            $this.element.next().on('click', function(e){
+                $this.modal.show();
+            });
 
             /**
              * Select update
