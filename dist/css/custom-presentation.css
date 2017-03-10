@@ -18,13 +18,21 @@
   margin-left: -15px;
 }
 .show-panel-body.code-example .code-header {
+  display: -ms-flexbox;
+  display: flex;
   margin: 20px 0 0 0;
   border-bottom: 1px solid #ccc;
+
+  -webkit-flex-flow: row wrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .show-panel-body.code-example .code-header .btn-source {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   height: 45px;
   padding: 0 15px;
-  margin-right: -15px;
   color: #005eb7;
   background: #f6f6f6;
   border: 0;
@@ -45,7 +53,7 @@
   margin: 0;
 }
 .show-panel-body.code-example .code-header .module-description h4 {
-  margin: 8px 0 0 0;
+  margin: 8px 0 10px 0;
   font-size: 15px;
   line-height: 28px;
   color: #000;
