@@ -856,6 +856,8 @@
             return false;
         }
 
+        $('#error_alert_modal').remove();
+
         var alertTitle = title || '';
         var alertContent = content || '';
         var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
@@ -875,6 +877,8 @@
         if (window.alertModalDisplayed === true) {
             return false;
         }
+
+        $('#confirmation_alert_modal').remove();
 
         var alertTitle = title || '';
         var alertContent = content || '';
