@@ -5898,6 +5898,7 @@ function initSidebarEvents() {
         var $this = this;
         $(document).on("hidden.bs.modal", "#" + this.defaults.id, function (e) {
             $this._isVisible = false;
+            window.alertModalDisplayed = false;
             hiddenCallback(e);
         });
     }
@@ -6600,6 +6601,7 @@ function initSidebarEvents() {
         show: function () {
             if (!this._isVisible) {
                 this._isVisible = true;
+                window.alertModalDisplayed = true;
                 /**
                  * Build alert modal through ajax or with static content
                  */
@@ -6608,6 +6610,7 @@ function initSidebarEvents() {
         },
         hide: function () {
             this._isVisible = false;
+            window.alertModalDisplayed = false;
             /**
              * Hide modal
              */
@@ -6617,7 +6620,12 @@ function initSidebarEvents() {
 
     window.PhotonModal = PhotonModal;
     window.AlertModal = AlertModal;
+    window.alertModalDisplayed = false;
     window.errorAlertModal = function (content, title, showBackgroundOverlay, size) {
+        if (window.alertModalDisplayed === true) {
+            return false;
+        }
+
         var alertTitle = title || '';
         var alertContent = content || '';
         var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
@@ -6634,6 +6642,10 @@ function initSidebarEvents() {
         alertModal.show();
     };
     window.confirmationAlertModal = function (content, title, showBackgroundOverlay, size) {
+        if (window.alertModalDisplayed === true) {
+            return false;
+        }
+
         var alertTitle = title || '';
         var alertContent = content || '';
         var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
