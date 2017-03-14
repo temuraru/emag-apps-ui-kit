@@ -166,8 +166,8 @@
                                                     </select>
                                                 </div>
                                                 <div class="input-group input-group-no-separation">
-                                                    <div class="form-control" id="id_category_tree_default"></div>
-                                                    <span class="input-group-addon">
+                                                    <div class="form-control cursor-pointer" id="id_category_tree_default"></div>
+                                                    <span class="input-group-addon cursor-pointer">
                                                         <i class="fa fa-sitemap"></i>
                                                     </span>
                                                 </div>
@@ -207,7 +207,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-md-6 col-lg-4">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,fancytree_source,fancytree_css,category_tree_default_init,fancytree-content,pop_space">
@@ -262,8 +261,8 @@
                                                     </select>
                                                 </div>
                                                 <div class="input-group input-group-no-separation">
-                                                    <div class="form-control" id="id_category_tree_disabled"></div>
-                                                    <span class="input-group-addon">
+                                                    <div class="form-control cursor-pointer" id="id_category_tree_disabled"></div>
+                                                    <span class="input-group-addon cursor-pointer">
                                                         <i class="fa fa-sitemap"></i>
                                                     </span>
                                                 </div>

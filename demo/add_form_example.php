@@ -392,7 +392,7 @@
             if (noErrors) {
                 $this[0].reset();
                 $('#product_example_productCountry').trigger('chosen:updated.chosen');
-                addNotification('1 product has been added.', 'black');
+                addNotification('<i class="fa fa-check-circle"></i><span>1 product has been added.</span>', 'success-full-color');
             } else {
                 errorAlertModal('Please check the fields with errors.', 'Add product errors');
             }

@@ -810,6 +810,9 @@
                                             <button type="button" id="show_info" class="btn btn-default">
                                                 Show info message
                                             </button>
+                                            <button type="button" id="show_info_full_color" class="btn btn-default">
+                                                Show info (full color) message
+                                            </button>
                                             <button type="button" id="show_success" class="btn btn-default">
                                                 Show success message
                                             </button>
@@ -819,11 +822,14 @@
                                             <button type="button" id="show_warning" class="btn btn-default">
                                                 Show warning message
                                             </button>
+                                            <button type="button" id="show_warning_full_color" class="btn btn-default">
+                                                Show warning (full color) message
+                                            </button>
                                             <button type="button" id="show_error" class="btn btn-default">
                                                 Show error message
                                             </button>
-                                            <button type="button" id="show_black" class="btn btn-default">
-                                                Show black message
+                                            <button type="button" id="show_error_full_color" class="btn btn-default">
+                                                Show error (full color) message
                                             </button>
                                         </div>
                                     </div>
@@ -1339,6 +1345,9 @@
                 $('#show_info').on('click',function(){
                     addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info');
                 });
+                $('#show_info_full_color').on('click',function(){
+                    addNotification('<i class="fa fa-info-circle"></i><span>Prepare yourself! This is an informational message: Information</span>', 'info-full-color');
+                });
                 $('#show_success').on('click',function(){
                     addNotification('<i class="fa fa-check-circle"></i><span>This is a success message.</span>', 'success');
                 });
@@ -1348,11 +1357,14 @@
                 $('#show_warning').on('click',function(){
                     addNotification('<i class="fa fa-warning"></i><span>Are you prepared? This is a warning message: Warning</span>', 'warning');
                 });
-                $('#show_error').on('click',function(){
-                    addNotification('<i class="fa fa-minus-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
+                $('#show_warning_full_color').on('click',function(){
+                    addNotification('<i class="fa fa-warning"></i><span>Are you prepared? This is a warning message: Warning</span>', 'warning-full-color');
                 });
-                $('#show_black').on('click',function(){
-                    addNotification('<span>This is a black alert</span>', 'black');
+                $('#show_error').on('click',function(){
+                    addNotification('<i class="fa fa-exclamation-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger');
+                });
+                $('#show_error_full_color').on('click',function(){
+                    addNotification('<i class="fa fa-exclamation-circle"></i><span>Oh SNAP! This is an error message: Run!</span>', 'danger-full-color');
                 });
             })
         </script>

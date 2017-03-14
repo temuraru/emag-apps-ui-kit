@@ -7659,6 +7659,17 @@ a.thumbnail.active {
 .alert-info .alert-link {
   color: #000;
 }
+.alert-info-full-color {
+  color: #fff;
+  background-color: #005eb7;
+  border-color: #005eb7;
+}
+.alert-info-full-color hr {
+  border-top-color: #00519e;
+}
+.alert-info-full-color .alert-link {
+  color: #e6e6e6;
+}
 .alert-warning {
   color: #000;
   background-color: #fdf2e0;
@@ -7670,6 +7681,17 @@ a.thumbnail.active {
 .alert-warning .alert-link {
   color: #000;
 }
+.alert-warning-full-color {
+  color: #fff;
+  background-color: #f4b350;
+  border-color: #f4b350;
+}
+.alert-warning-full-color hr {
+  border-top-color: #f2a938;
+}
+.alert-warning-full-color .alert-link {
+  color: #e6e6e6;
+}
 .alert-danger {
   color: #000;
   background-color: #fff0ef;
@@ -7680,6 +7702,17 @@ a.thumbnail.active {
 }
 .alert-danger .alert-link {
   color: #000;
+}
+.alert-danger-full-color {
+  color: #fff;
+  background-color: #e1302b;
+  border-color: #e1302b;
+}
+.alert-danger-full-color hr {
+  border-top-color: #d4231e;
+}
+.alert-danger-full-color .alert-link {
+  color: #e6e6e6;
 }
 .alert-black {
   color: #fff;
@@ -10185,17 +10218,26 @@ button.close {
 .alert.alert-info button.close .fa {
   color: #000;
 }
+.alert.alert-info-full-color button.close .fa {
+  color: #fff;
+}
 .alert.alert-warning .fa {
   color: #f4b350;
 }
 .alert.alert-warning button.close .fa {
   color: #000;
 }
+.alert.alert-warning-full-color button.close .fa {
+  color: #fff;
+}
 .alert.alert-danger .fa {
   color: #e1302b;
 }
 .alert.alert-danger button.close .fa {
   color: #000;
+}
+.alert.alert-danger-full-color button.close .fa {
+  color: #fff;
 }
 .alert.alert-black button.close .fa {
   color: #c3c3c3;
@@ -12013,6 +12055,9 @@ input[type="radio"].form-radio-control:disabled {
   cursor: default;
   background: none;
   border-left: none;
+}
+.input-group.input-group-no-separation .input-group-addon.cursor-pointer {
+  cursor: pointer;
 }
 .input-group.input-group-no-separation .input-group-addon > .form-radio-control,
 .input-group.input-group-no-separation .input-group-addon > .form-checkbox-control {
