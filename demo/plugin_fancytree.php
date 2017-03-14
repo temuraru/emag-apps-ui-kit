@@ -9,8 +9,6 @@
     <?php include_once "modules/_mod_top_include.php"?>
 
 </head>
-<body>
-
 <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <!-- HEADER:Start -->
@@ -49,7 +47,7 @@
                                         <h4><b>In page</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#fancytree" aria-expanded="false" aria-controls="fancytree"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#fancytree" aria-expanded="false" aria-controls="fancytree"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="fancytree">
@@ -89,7 +87,7 @@
                                         <h4><b>Category tree</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree" aria-expanded="false" aria-controls="category_tree"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree" aria-expanded="false" aria-controls="category_tree"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="category_tree">
@@ -185,7 +183,7 @@
                                         <h4><b>Category tree disabled</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree_disabled_container" aria-expanded="false" aria-controls="category_tree_disabled_container"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#category_tree_disabled_container" aria-expanded="false" aria-controls="category_tree_disabled_container"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="category_tree_disabled_container">

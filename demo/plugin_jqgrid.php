@@ -11,7 +11,6 @@
         <?php include_once "modules/_mod_top_include.php"?>
 
 </head>
-
 <?php include_once "modules/_mod_browser_upgrade.php"?>
 <?php include_once "modules/_mod_header.php"?>
 
@@ -53,7 +52,7 @@
                                         <h4><strong>jqGrid basic</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jqgrid_basic" aria-expanded="false" aria-controls="jqgrid_basic"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jqgrid_basic" aria-expanded="false" aria-controls="jqgrid_basic"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jqgrid_basic">
@@ -96,7 +95,7 @@
                                         <h4><strong>jqGrid with sticky panels</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_sticky" aria-expanded="false" aria-controls="jq_with_sticky"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_sticky" aria-expanded="false" aria-controls="jq_with_sticky"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_sticky">
@@ -139,7 +138,7 @@
                                         <h4><strong>jqGrid with column chooser</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_column_chooser" aria-expanded="false" aria-controls="jq_with_column_chooser"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_column_chooser" aria-expanded="false" aria-controls="jq_with_column_chooser"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_column_chooser">
@@ -188,7 +187,7 @@
                                         <h4><strong>jgGrid with selectable rows</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_selectable_rows" aria-expanded="false" aria-controls="jq_with_selectable_rows"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_selectable_rows" aria-expanded="false" aria-controls="jq_with_selectable_rows"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_selectable_rows">
@@ -240,7 +239,7 @@
                                         <h4><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_ierarchical_elements" aria-expanded="false" aria-controls="jq_with_ierarchical_elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_ierarchical_elements" aria-expanded="false" aria-controls="jq_with_ierarchical_elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_ierarchical_elements">
@@ -283,7 +282,7 @@
                                         <h4><strong>jqGrid with subgrid</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_subgrid" aria-expanded="false" aria-controls="jq_with_subgrid"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_subgrid" aria-expanded="false" aria-controls="jq_with_subgrid"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_subgrid">
@@ -326,7 +325,7 @@
                                         <h4><strong>jqGrid with inline editing</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_inline_editing" aria-expanded="false" aria-controls="jq_with_inline_editing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_inline_editing" aria-expanded="false" aria-controls="jq_with_inline_editing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_inline_editing">
@@ -370,7 +369,7 @@
                                         <h4><strong>jqGrid with actions</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_actions" aria-expanded="false" aria-controls="jq_with_actions"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_actions" aria-expanded="false" aria-controls="jq_with_actions"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_actions">
@@ -414,7 +413,7 @@
                                         <h4><strong>jqGrid with data formatters</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_data_formatters" aria-expanded="false" aria-controls="jq_with_data_formatters"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_data_formatters" aria-expanded="false" aria-controls="jq_with_data_formatters"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jq_with_data_formatters">
