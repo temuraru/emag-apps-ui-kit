@@ -2,7 +2,7 @@
 <html lang="en" class="js">
 <head>
 
-    <title>Start - eMAG Apps UI KIT</title>
+    <title>JS Components - eMAG Apps UI KIT</title>
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -10,7 +10,9 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">    <link rel="stylesheet" href="../dist/plugins/css3spinners/css3-spinners.1.2.2.min.css">
+    <link rel="stylesheet" href="../dist/plugins/hierarchicalselect/hierarchicalselect.min.css">
+    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -29,9 +31,7 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KBSTRWM');</script>
-<!-- End Google Tag Manager -->    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
+<!-- End Google Tag Manager -->
 </head>
 <!--[if lt IE 9]>
 <body class="lt-ie9">
@@ -531,257 +531,24 @@
                 <div class="jumbotron content-header">
                     <div class="container-fluid">
                         <p>eMAG Apps UI KIT</p>
-                        <p><b>Start</b></p>
+                        <p><b>Hierarchical select</b></p>
                     </div>
                 </div>
-                <section id="overview" class="pad-top-40">
+                <section class="pad-top-40">
                     <div class="show-panel">
                         <div class="show-panel-body">
-                            <h2><strong>Overview</strong></h2>
-                            <p><strong>A short description about what's it like to work with eMAG Apps UI KIT:</strong></p>
-                            <div class="pad-sep-20">
+                            <h4 class="text-primary"><strong>Hierarchical select</strong></h4>
 
-                                        <h4><strong>1. Based on Bootstrap 3.3.5.</strong></h4>
-                                        <p>
-                                            Our open source UI KIT is based on the Bootstrap architecture. If you're
-                                            not familiarized with it, check-out their stuff from getbootstrap.com Aside
-                                            from the elements provided by Bootstrap, it comes with its own set of
-                                            unique components, styling and useful plugins that you can use in your
-                                            project.
-                                        </p>
-                                        <br>
-                                        <p><strong>Features:</strong></p>
-                                        <ol class="pad-15 no-padding-top-bottom">
-                                            <li>
-                                                <p>Keeping it light with an average page weight of 500Kb.</p>
-                                            </li>
-                                            <li>
-                                                <p>W3C Compliant</p>
-                                            </li>
-                                            <li>
-                                                <p>WCAG 2.0 Compliant</p>
-                                            </li>
-                                            <li>
-                                                <p>Average page-load time of 1s</p>
-                                            </li>
-                                        </ol>
-                                        <br>
-
-                                        <h4><strong>2. Working with Grunt.js</strong></h4>
-                                        <p><strong>Installing Grunt:</strong></p>
-                                        <p>To install Grunt, you must first download and install <a href="https://nodejs.org/en/" target="_blank"><u>node.js</u></a> (which includes npm). Believe it or not, npm stands for <b>node packaged modules</b> and is a way to manage development dependencies through node.js.</p>
-                                        <p>Once you've installed node.js, open up the command line in the root directory.</p>
-                                        <p>Install grunt-cli globally by running <code>npm install -g grunt-cli</code>.</p>
-                                        <p>Afterwards run <code>npm install</code> for npm to look  at the <b>package.json</b> file and automatically install the necessary local dependencies listed there.</p>
-                                        <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
-                                        <br>
-                                        <p><strong>Available Grunt commands:</strong></p>
-<pre>
-<code class="language-bash" data-lang="bash">
-grunt styles            - CSS distribution task
-grunt scripts           - JS distribution task
-grunt plugin_styles     - Generate plugin styles
-grunt plugin_scripts    - Generate plugin scripts
-grunt default           - Generate main styles and scripts
-</code>
-</pre>
-                                        <br>
-
-                                        <h4><strong>3. Working with eMAG Apps UI KIT's folder structure:</strong></h4>
-                                        <br>
-                                        <p>Once downloaded, unzip the compressed folder to find the three main folders:</p>
-<pre>
-<code class="language-bash" data-lang="bash">
-eMAG Apps UI KIT/
-|
-├── data/
-│   ├── scripts/
-|   |   ├── base/
-|   |   |   └── custom/
-|   |   └── lib/
-│   ├── styles/
-|   |   ├── base/
-|   |   |   └── custom/
-|   |   └── lib/
-|   └── plugins/
-|
-├── dist/
-│   ├── css/
-|   |   ├── flags/
-|   |   ├── fonts/
-|   |   ├── icons/
-|   |   ├── img/
-|   |   └── lib/
-│   ├── js/
-|   |   └── lib/
-|   └── plugins/
-|
-└── examples/
-└── modules/
-</code>
-</pre>
-                                        <br>
-                                        <h4><strong>4. Precompiled files (dist)</strong></h4>
-                                        <br>
-                                        <ul class="pad-20 no-padding-top-bottom">
-                                            <li>css - Main style CSS files.
-                                                <ul class="pad-20">
-                                                    <li>flags - Countries flags as SVG file on 1:1 and 4:3 ratio.</li>
-                                                    <li>fonts - Fonts files used in eMAG Apps UI KIT.</li>
-                                                    <li>icons - Icons used in eMAG Apps UI KIT (created by eMag and from other libraries).</li>
-                                                    <li>img - Images used in demo pages.</li>
-                                                    <li>lib - Styles required by libraries used in eMAG Apps UI KIT.</li>
-                                                </ul>
-                                            </li>
-                                            <li>js - Main JS script files.
-                                                <ul class="pad-20">
-                                                    <li>lib - Libraries' JS files.</li>
-                                                </ul>
-                                            </li>
-                                            <li>plugins - Plugins used in eMAG Apps UI KIT (CSS and JS files).</li>
-                                        </ul>
-                                        <br>
-
-                                        <h4><strong>5. eMAG Apps UI KIT source code (data)</strong></h4>
-                                        <br>
-                                        <ul class="pad-20 no-padding-top-bottom">
-                                            <li>scripts - JS files.
-                                                <ul class="pad-20">
-                                                    <li>base - Main JS files.
-                                                        <ul class="pad-20 no-padding-top-bottom">
-                                                            <li>custom - Custom wrappers over certain plugins.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>lib - Libraries' JS files.</li>
-                                                </ul>
-                                            </li>
-                                            <li>styles - LESS files.
-                                                <ul class="pad-20">
-                                                    <li>base - Main style LESS files
-                                                        <ul class="pad-20 no-padding-top-bottom">
-                                                            <li>custom - Custom wrappers' LESS files.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>lib - Libraries' LESS files.</li>
-                                                </ul>
-                                            </li>
-                                            <li>plugins - Plugins used in eMAG Apps UI KIT (LESS and JS files).</li>
-                                        </ul>
-                                        <br>
-
-                                        <h4><strong>6. License</strong></h4>
-                                        <br>
-                                        <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
-
-                                        <p><b>You can</b></p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <i class="fa fa-money" aria-hidden="true"></i> Comercial Use
-                                                <ul>
-                                                    <li>
-                                                        You may use the work commercially.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-pencil" aria-hidden="true"></i> Modify
-                                                <ul>
-                                                    <li>
-                                                        You may make changes to the work.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-share-alt" aria-hidden="true"></i> Distribute
-                                                <ul>
-                                                    <li>
-                                                        You may distribute the compiled code and/or source.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Sublicense
-                                                <ul>
-                                                    <li>
-                                                        You may incorporate the work into something that has a more restrictive license.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-lock" aria-hidden="true"></i> Private Use
-                                                <ul>
-                                                    <li>
-                                                        You may use the work for private use.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <p><b>You cannot</b></p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hold Liable
-                                                <ul>
-                                                    <li>
-                                                        The work is provided "as is". You may not hold the author liable.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <p><b>You must</b></p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <i class="fa fa-copyright" aria-hidden="true"></i> Include Copyright
-                                                <ul>
-                                                    <li>
-                                                        You must include the copyright notice in all copies or substantial uses of the work.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Include License
-                                                <ul>
-                                                    <li>
-                                                        You must include the license notice in all copies or substantial uses of the work.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
-                                        <p>The full eMAG Apps UI KIT license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="getting-started" class="pad-top-30">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h2><strong>Getting started</strong></h2>
-                            <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
-                            <div class="pad-sep-20">
-
-                                        <p>1. The easiest way to install is to add the following css line in the head of your webpage:</p>
-                                        <pre class="language-html"><code class="language-html" data-showcase="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</code></pre>
-                                        <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
-                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
-&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</code></pre>
-                                        <div class="alert alert-info" role="alert">
-                                            <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
-                                        </div>
-                                        <br>
-
-                                        <p>2. You can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
-                                        <br>
-
-                                        <p>3. You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
-                                        <pre>
-<code class="language-bash" data-lang="bash">[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</code></pre>
-
-                            </div>
-                            <div class="alert alert-info" role="alert">
-                                <i class="fa fa-info-circle"></i> Be W3C compliant and everything will be alright!
+                            <div class="form-group">
+                                <label for="hierarchical_select">Categories</label>
+                                <div class="hide-with-opacity">
+                                    <select id="hierarchical_select" name="hierarchical_select"></select>
+                                </div>
+                                <div class="row hierarchical-container">
+                                    <div class="col-sm-12">
+                                        <div id="id_hierarchical_select"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -801,14 +568,17 @@ eMAG Apps UI KIT/
 </div>
 <!-- PAGE:End -->
 
+<!-- POPUPS:Start -->
+<div id="popSpace"></div>
+<!-- POPUPS:End -->
+
 <!-- SCRIPTS:Start -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
 <script src="../dist/js/main_script.min.js"></script>
+<script src="../dist/plugins/hierarchicalselect/hierarchicalselect.min.js"></script>
 <script src="../dist/js/demo_helpers.js"></script>
-
-<!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-<script src="../dist/plugins/prism/prism.min.js"></script>
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
@@ -817,6 +587,49 @@ eMAG Apps UI KIT/
         console.log('Ready, Captain!');
 
         demoHelpers();  // Require demo_helpers.js
+
+        $('#id_hierarchical_select').HierarchicalSelect({
+            data: {
+                0: [
+                    {'key':1512,	'title':'AC',	                        'folder':true,	'selected':false},
+                    {'key':2097,	'title':'AC Others',	                'folder':true,	'selected':false},
+                    {'key':1453,	'title':'Auto Parts',	                'folder':true,	'selected':false},
+                    {'key':1517,	'title':'AV & HiFi',	                'folder':true,	'selected':false},
+                    {'key':357,	    'title':'Beauty',	                    'folder':true,	'selected':false}
+                ],
+                1512: [{"key":97,"title":"Air Conditioners","selected":false,"extraClasses":"","children":[]}],
+                2097: [{"key":531,"title":"Conditioning","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true}],
+                531: [{"key":559,"title":"Air filtering devices","selected":false,"extraClasses":"","children":[]},{"key":1165,"title":"Boilers","selected":false,"extraClasses":"","children":[]},{"key":108,"title":"Central Heating","selected":false,"extraClasses":"","children":[]},{"key":1147,"title":"Central Heating  \u0026 Boilers Accessories","selected":false,"extraClasses":"","children":[]},{"key":489,"title":"Fans","selected":false,"extraClasses":"","children":[]},{"key":387,"title":"Heating","selected":false,"extraClasses":"","children":[]}],
+                1453: [{"key":1443,"title":"Automobiles","selected":false,"extraClasses":"","children":[]},{"key":1457,"title":"Car Care \u0026 Cosmetics","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1466,"title":"Car Electric","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1470,"title":"Car Exterior Accessories","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1478,"title":"Car Interior Accessories","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1503,"title":"Car professional equipment","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1489,"title":"Car Repair \u0026 Troubleshooting","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1492,"title":"Car tuning","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":145,"title":"GPS Navigations \u0026 Auto-Moto Electronics","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":2527,"title":"Motorcycles","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1454,"title":"Tires \u0026 Rims","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true}],
+                1457: [{"key":1460,"title":"Antifreeze","selected":false,"extraClasses":"","children":[]},{"key":1459,"title":"Brake Fluid","selected":false,"extraClasses":"","children":[]},{"key":1463,"title":"Car Additives","selected":false,"extraClasses":"","children":[]},{"key":1465,"title":"Car Freshener","selected":false,"extraClasses":"","children":[]},{"key":1464,"title":"Car wipers","selected":false,"extraClasses":"","children":[]},{"key":1081,"title":"Cleaning , Maintenance \u0026 Accessories","selected":false,"extraClasses":"","children":[]},{"key":2536,"title":"Fuel","selected":false,"extraClasses":"","children":[]},{"key":1462,"title":"Gearbox Oil","selected":false,"extraClasses":"","children":[]},{"key":1798,"title":"Maintenance Packages","selected":false,"extraClasses":"","children":[]},{"key":1458,"title":"Motor Oil","selected":false,"extraClasses":"","children":[]},{"key":1461,"title":"Windshield Fluid","selected":false,"extraClasses":"","children":[]}],
+                1466: [{"key":1468,"title":"Car Bateries","selected":false,"extraClasses":"","children":[]},{"key":1467,"title":"Lightbulbs and car fuses","selected":false,"extraClasses":"","children":[]},{"key":1469,"title":"Projectors, Lamps \u0026 LED\u0027s","selected":false,"extraClasses":"","children":[]}],
+                1470: [{"key":1473,"title":"Car bike mount","selected":false,"extraClasses":"","children":[]},{"key":1471,"title":"Roof Rack","selected":false,"extraClasses":"","children":[]},{"key":1474,"title":"Ski mount","selected":false,"extraClasses":"","children":[]},{"key":1477,"title":"Snow Chains","selected":false,"extraClasses":"","children":[]},{"key":1475,"title":"Towing systems","selected":false,"extraClasses":"","children":[]},{"key":1472,"title":"Trunk Boxes","selected":false,"extraClasses":"","children":[]},{"key":1476,"title":"Wheel Covers","selected":false,"extraClasses":"","children":[]}],
+                1478: [{"key":1483,"title":"Anti-theft for steering wheel","selected":false,"extraClasses":"","children":[]},{"key":1481,"title":"Car arm rests","selected":false,"extraClasses":"","children":[]},{"key":1488,"title":"Car Chains","selected":false,"extraClasses":"","children":[]},{"key":1479,"title":"Car Mats","selected":false,"extraClasses":"","children":[]},{"key":1486,"title":"Car Mounts","selected":false,"extraClasses":"","children":[]},{"key":1487,"title":"Car Shades","selected":false,"extraClasses":"","children":[]},{"key":1482,"title":"Covers","selected":false,"extraClasses":"","children":[]},{"key":1485,"title":"Interior Car Mirrors","selected":false,"extraClasses":"","children":[]},{"key":1480,"title":"Trunk Protection","selected":false,"extraClasses":"","children":[]}],
+                1503: [{"key":2264,"title":"Car Testers and Self Diagnosis","selected":false,"extraClasses":"","children":[]},{"key":2262,"title":"Hoists and lifting equipment","selected":false,"extraClasses":"","children":[]},{"key":2266,"title":"Professional Tools for Car Repair","selected":false,"extraClasses":"","children":[]},{"key":2263,"title":"Wheel service equipment","selected":false,"extraClasses":"","children":[]},{"key":2265,"title":"Workshop Equipment","selected":false,"extraClasses":"","children":[]}],
+                1489: [{"key":1490,"title":"Car paint \u0026 Accessories","selected":false,"extraClasses":"","children":[]},{"key":1491,"title":"Car safety kits","selected":false,"extraClasses":"","children":[]},{"key":1170,"title":"Car Tools \u0026 Accessories","selected":false,"extraClasses":"","children":[]},{"key":1128,"title":"Compressors, Rectifiers \u0026 Testers","selected":false,"extraClasses":"","children":[]}],
+                1492: [{"key":1500,"title":"Ailerons","selected":false,"extraClasses":"","children":[]},{"key":1493,"title":"Car Mirrors","selected":false,"extraClasses":"","children":[]},{"key":1484,"title":"Car Ornaments","selected":false,"extraClasses":"","children":[]},{"key":1498,"title":"Car Pedal Coverings","selected":false,"extraClasses":"","children":[]},{"key":1496,"title":"Car Stickers","selected":false,"extraClasses":"","children":[]},{"key":1502,"title":"Car Tuning Accesssories","selected":false,"extraClasses":"","children":[]},{"key":1495,"title":"Decorative Car Antenna","selected":false,"extraClasses":"","children":[]},{"key":1494,"title":"Exhausts","selected":false,"extraClasses":"","children":[]},{"key":1497,"title":"Mud defenders","selected":false,"extraClasses":"","children":[]},{"key":1501,"title":"Spoiler","selected":false,"extraClasses":"","children":[]},{"key":1499,"title":"Sport Mats","selected":false,"extraClasses":"","children":[]}],
+                145: [{"key":1129,"title":"Auto Electronics \u0026 Accessories","selected":false,"extraClasses":"","children":[]},{"key":1346,"title":"Car Alarms \u0026 Parking Sensors","selected":false,"extraClasses":"","children":[]},{"key":1350,"title":"Car camera DVR","selected":false,"extraClasses":"","children":[]},{"key":276,"title":"Car CD Changer","selected":false,"extraClasses":"","children":[]},{"key":203,"title":"Car DVD Players","selected":false,"extraClasses":"","children":[]},{"key":147,"title":"Car Radio, CD \u0026 DVD players","selected":false,"extraClasses":"","children":[]},{"key":275,"title":"Car Speakers \u0026 Subwoofers","selected":false,"extraClasses":"","children":[]},{"key":320,"title":"GPS Navigations","selected":false,"extraClasses":"","children":[]},{"key":367,"title":"Radar Detectors","selected":false,"extraClasses":"","children":[]},{"key":525,"title":"Radio stations \u0026 Radar Detectors","selected":false,"extraClasses":"","children":[]},{"key":148,"title":"Car CD Storage","selected":false,"extraClasses":"tree-inactive-item","children":[]},{"key":150,"title":"Car Monitors","selected":false,"extraClasses":"tree-inactive-item","children":[]},{"key":146,"title":"Car radio cassette","selected":false,"extraClasses":"tree-inactive-item","children":[]},{"key":149,"title":"Car Speakers","selected":false,"extraClasses":"tree-inactive-item","children":[]},{"key":366,"title":"Car Subwoofers","selected":false,"extraClasses":"tree-inactive-item","children":[]}],
+                2527: [{"key":2529,"title":"ATV and UTV","selected":false,"extraClasses":"","children":[]},{"key":833,"title":"Electric vehicles","selected":false,"extraClasses":"","children":[]},{"key":2135,"title":"Moto Supplies","selected":false,"extraClasses":"","children":[]},{"key":2532,"title":"Motorcycle Accessories","selected":false,"extraClasses":"","children":[]},{"key":2531,"title":"Motorcycle Protection Gear","selected":false,"extraClasses":"","children":[]},{"key":2528,"title":"Motorcycles and Scooters","selected":false,"extraClasses":"","children":[]},{"key":2530,"title":"Snowmobile","selected":false,"extraClasses":"","children":[]}],
+                1454: [{"key":1456,"title":"Car Rims","selected":false,"extraClasses":"","children":[]},{"key":1455,"title":"Tires","selected":false,"extraClasses":"","children":[]}],
+                1517: [{"key":408,"title":"Audio HI-FI","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":117,"title":"DVD \u0026 Blu-Ray Players","selected":false,"extraClasses":"","children":[]},{"key":1133,"title":"Home Cinema \u0026 Audio","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":467,"title":"Mediaplayers","selected":false,"extraClasses":"","children":[]},{"key":2335,"title":"Projectors \u0026 Accessories","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":185,"title":"Videorecorders","selected":false,"extraClasses":"tree-inactive-item","children":[]}],
+                408: [{"key":539,"title":"Amplituners","selected":false,"extraClasses":"","children":[]},{"key":1150,"title":"Audio Hi-Fi Accessories","selected":false,"extraClasses":"","children":[]},{"key":2442,"title":"Audio Mixers","selected":false,"extraClasses":"","children":[]},{"key":2427,"title":"Audio Processors","selected":false,"extraClasses":"","children":[]},{"key":2329,"title":"Complete Systems","selected":false,"extraClasses":"","children":[]},{"key":420,"title":"Connectors","selected":false,"extraClasses":"","children":[]},{"key":2430,"title":"Controllers","selected":false,"extraClasses":"","children":[]},{"key":2431,"title":"DJ Equipments","selected":false,"extraClasses":"","children":[]},{"key":2428,"title":"Microphones","selected":false,"extraClasses":"","children":[]},{"key":1061,"title":"Pick-ups","selected":false,"extraClasses":"","children":[]},{"key":540,"title":"Players","selected":false,"extraClasses":"","children":[]},{"key":204,"title":"Players \u0026 Receivers","selected":false,"extraClasses":"","children":[]},{"key":2572,"title":"Professional Amplifiers","selected":false,"extraClasses":"","children":[]},{"key":2571,"title":"Professional Speakers","selected":false,"extraClasses":"","children":[]},{"key":542,"title":"Speakers","selected":false,"extraClasses":"","children":[]},{"key":2429,"title":"Stands","selected":false,"extraClasses":"","children":[]},{"key":635,"title":"Wireless Audio Systems","selected":false,"extraClasses":"","children":[]},{"key":536,"title":"Floor Speakers","selected":false,"extraClasses":"tree-inactive-item","children":[]},{"key":537,"title":"Subwoofers","selected":false,"extraClasses":"tree-inactive-item","children":[]}],
+                1133: [{"key":124,"title":"Audio Systems","selected":false,"extraClasses":"","children":[]},{"key":162,"title":"Cassette Player","selected":false,"extraClasses":"","children":[]},{"key":113,"title":"Home Cinema","selected":false,"extraClasses":"","children":[]},{"key":538,"title":"Soundbar","selected":false,"extraClasses":"","children":[]},{"key":1140,"title":"Docking","selected":false,"extraClasses":"tree-inactive-item","children":[]}],
+                2335: [{"key":80,"title":"Projectors","selected":false,"extraClasses":"","children":[]},{"key":249,"title":"Projectors Accessories","selected":false,"extraClasses":"","children":[]}],
+                357: [{"key":490,"title":"Body Care \u0026 Hygiene","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1320,"title":"Cosmetics","selected":false,"extraClasses":"","children":[]},{"key":1063,"title":"Dental Hygiene","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1361,"title":"Face \u0026 Skin Care","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":526,"title":"Hair Care \u0026 Hair Styling","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":300,"title":"Health and Care","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1064,"title":"Home Confort","selected":false,"extraClasses":"","children":[]},{"key":1354,"title":"Make-up \u0026 Nails","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":35,"title":"OTC Medicines","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":1353,"title":"Perfumery","selected":false,"extraClasses":"","children":[]},{"key":1334,"title":"Personal Hygiene","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":2549,"title":"Sight Correction","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true},{"key":2466,"title":"Vitamins and Supplements","selected":false,"extraClasses":"","children":[],"lazy":true,"folder":true}],
+                490: [{"key":2441,"title":"Body Care Accessories","selected":false,"extraClasses":"","children":[]},{"key":1372,"title":"Creams and Body Lotions","selected":false,"extraClasses":"","children":[]},{"key":1369,"title":"Deodorants and Antiperspirants","selected":false,"extraClasses":"","children":[]},{"key":1376,"title":"Depilation","selected":false,"extraClasses":"","children":[]},{"key":2443,"title":"Diapers for adults","selected":false,"extraClasses":"","children":[]},{"key":1377,"title":"Gift Sets","selected":false,"extraClasses":"","children":[]},{"key":1374,"title":"Intimate Hygiene","selected":false,"extraClasses":"","children":[]},{"key":1375,"title":"Pads and tampons","selected":false,"extraClasses":"","children":[]},{"key":1333,"title":"Razors and accessories","selected":false,"extraClasses":"","children":[]},{"key":2286,"title":"Sexual Hygiene","selected":false,"extraClasses":"","children":[]},{"key":1312,"title":"Shaving Systems","selected":false,"extraClasses":"","children":[]},{"key":1370,"title":"Soap \u0026 Shower Gel","selected":false,"extraClasses":"","children":[]},{"key":1371,"title":"Body Oil","selected":false,"extraClasses":"tree-inactive-item","children":[]},{"key":1373,"title":"Hand Cream","selected":false,"extraClasses":"tree-inactive-item","children":[]}],
+                1063: [{"key":2332,"title":"Classic Toothbrushes \u0026 Floss","selected":false,"extraClasses":"","children":[]},{"key":1383,"title":"Toothpaste \u0026 Mouthwash","selected":false,"extraClasses":"","children":[]}],
+                1361: [{"key":1365,"title":"After Shave","selected":false,"extraClasses":"","children":[]},{"key":1363,"title":"Anti-Wrinkle Solutions","selected":false,"extraClasses":"","children":[]},{"key":1362,"title":"Cleaning \u0026 Cleansing","selected":false,"extraClasses":"","children":[]},{"key":1367,"title":"Cream and Face Mask","selected":false,"extraClasses":"","children":[]},{"key":1366,"title":"Lip Care","selected":false,"extraClasses":"","children":[]},{"key":1364,"title":"Shaving Foam","selected":false,"extraClasses":"","children":[]},{"key":1368,"title":"Skin Care Sets","selected":false,"extraClasses":"","children":[]}],
+                526: [{"key":1378,"title":"Brushes and Hair Combs","selected":false,"extraClasses":"","children":[]},{"key":1433,"title":"Hair Care Sets","selected":false,"extraClasses":"","children":[]},{"key":1380,"title":"Hair Care Solutions","selected":false,"extraClasses":"","children":[]},{"key":1381,"title":"Hair Paint and Hair Painting Accessories","selected":false,"extraClasses":"","children":[]},{"key":1382,"title":"Hair Styling","selected":false,"extraClasses":"","children":[]},{"key":1379,"title":"Shampoo and Conditioner","selected":false,"extraClasses":"","children":[]}],
+                300: [{"key":608,"title":"External Anti-parasitic","selected":false,"extraClasses":"","children":[]},{"key":1116,"title":"First Aid","selected":false,"extraClasses":"","children":[]},{"key":2506,"title":"Insect Protection","selected":false,"extraClasses":"","children":[]},{"key":1518,"title":"Local disinfection","selected":false,"extraClasses":"","children":[]},{"key":119,"title":"Rapid tests","selected":false,"extraClasses":"","children":[]},{"key":2483,"title":"Sanitary supplies","selected":false,"extraClasses":"","children":[]}],
+                1354: [{"key":1355,"title":"Eyes","selected":false,"extraClasses":"","children":[]},{"key":1357,"title":"Face Skin","selected":false,"extraClasses":"","children":[]},{"key":1356,"title":"Lips","selected":false,"extraClasses":"","children":[]},{"key":1359,"title":"Make-up Accessories","selected":false,"extraClasses":"","children":[]},{"key":1358,"title":"Nails","selected":false,"extraClasses":"","children":[]},{"key":1360,"title":"Make-up Kits","selected":false,"extraClasses":"tree-inactive-item","children":[]}],
+                35: [{"key":129,"title":"Analgesics and Antipyretics","selected":false,"extraClasses":"","children":[]},{"key":2540,"title":"Anti-allergic","selected":false,"extraClasses":"","children":[]},{"key":2539,"title":"Anti-cold and flu","selected":false,"extraClasses":"","children":[]},{"key":2538,"title":"Anti-inflammatory","selected":false,"extraClasses":"","children":[]},{"key":2541,"title":"Antifungals","selected":false,"extraClasses":"","children":[]},{"key":2542,"title":"Antispasmodic","selected":false,"extraClasses":"","children":[]},{"key":2537,"title":"Treatment digestive disorders","selected":false,"extraClasses":"","children":[]}],
+                1334: [{"key":1337,"title":"Dental","selected":false,"extraClasses":"","children":[]},{"key":1335,"title":"For Men","selected":false,"extraClasses":"","children":[]},{"key":1336,"title":"For Women","selected":false,"extraClasses":"","children":[]}],
+                2549: [{"key":2554,"title":"Accessories for Eyeglasses and Lenses","selected":false,"extraClasses":"","children":[]},{"key":2553,"title":"Contact Lenses","selected":false,"extraClasses":"","children":[]},{"key":2555,"title":"Eye Care products","selected":false,"extraClasses":"","children":[]},{"key":2550,"title":"Eyeglasses","selected":false,"extraClasses":"","children":[]},{"key":2551,"title":"Eyeglasses Frames","selected":false,"extraClasses":"","children":[]},{"key":2552,"title":"Lenses for eyeglasses","selected":false,"extraClasses":"","children":[]}],
+                466: [{"key":1319,"title":"Anti-aging and beauty products","selected":false,"extraClasses":"","children":[]},{"key":2489,"title":"Antioxidants","selected":false,"extraClasses":"","children":[]},{"key":810,"title":"Children Dietary Supplements","selected":false,"extraClasses":"","children":[]},{"key":1526,"title":"Cough, respiratory system products","selected":false,"extraClasses":"","children":[]},{"key":218,"title":"Energizers and supplements for regeneration","selected":false,"extraClasses":"","children":[]},{"key":609,"title":"General and specific protection","selected":false,"extraClasses":"","children":[]},{"key":808,"title":"Products for Eyes","selected":false,"extraClasses":"","children":[]},{"key":60,"title":"Products for increased immunity","selected":false,"extraClasses":"","children":[]},{"key":321,"title":"Products for metabolism change","selected":false,"extraClasses":"","children":[]},{"key":223,"title":"Products for nervous system","selected":false,"extraClasses":"","children":[]},{"key":830,"title":"Products for renal system","selected":false,"extraClasses":"","children":[]},{"key":862,"title":"Products for the cardiovascular system","selected":false,"extraClasses":"","children":[]},{"key":2500,"title":"Supplements for bone and joint system","selected":false,"extraClasses":"","children":[]},{"key":311,"title":"Supplements for hormonal balance","selected":false,"extraClasses":"","children":[]},{"key":809,"title":"Supplements for the couple and sex","selected":false,"extraClasses":"","children":[]},{"key":2504,"title":"Supplements for the digestive system","selected":false,"extraClasses":"","children":[]},{"key":120,"title":"Synthetic for sweeteners and food","selected":false,"extraClasses":"","children":[]},{"key":1318,"title":"Vitamins and minerals","selected":false,"extraClasses":"","children":[]},{"key":128,"title":"Weight loss and diets","selected":false,"extraClasses":"","children":[]}],
+            },
+            select: '#hierarchical_select',
+            ajaxRoute: '#'
+        });
     });
 </script>
 <!-- DOCUMENT-READY:End -->

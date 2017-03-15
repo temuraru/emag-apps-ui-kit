@@ -74,6 +74,16 @@
                 if(e.target != this) return;
                 $this.modal.show();
             });
+            $this.element.next().on('click', function(e){
+                $this.modal.show();
+            });
+
+            /**
+             * Select update
+             */
+            $('#' + $this.options.selectId).on('change', function() {
+                $this._updateInfo();
+            });
 
             /**
              * Parent form reset action
@@ -389,16 +399,10 @@
             });
         },
 
-        _updateInfo:function(){
+        _updateInfo: function(){
             var $this = this;
 
-            var selected = [];
-
-            if ($this.$tree != undefined) {
-                selected = $this.$tree.getSelectedNodes();
-            } else {
-                selected = $('#' + $this.options.selectId + ' option[value!=""]:selected');
-            }
+            var selected = $('#' + $this.options.selectId + ' option[value!=""]:selected');
 
             var treeTypeInfo = selected.length + ' ' + $this.options.textSelected;
 
@@ -407,8 +411,6 @@
 
         _updateElement: function() {
             var $this = this;
-
-            $this._updateInfo();
 
             var selected = $this.$tree.getSelectedNodes();
 
@@ -425,7 +427,7 @@
                 $('#' + $this.options.selectId + ' option[value="' + this.key + '"]').prop('selected', true);
             });
 
-            $('#' + $this.options.selectId).change();
+            $('#' + $this.options.selectId).trigger('change');
         },
 
         _addCollapseIcon: function(node) {
@@ -646,8 +648,19 @@
                 $this.tree.removeClass('fancytree-ext-filter fancytree-ext-filter-dimm fancytree-ext-filter-hide');
                 $this.tree.find('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
             }
+        },
+
+        destroy: function() {
+            var $this = this;
+
+            if ($this.tree) {
+                $this.tree.fancytree('destroy');
+            }
+            $('#' + $this.options.modalId).remove();
+            $($this.element).off('click');
+            $($this.element).html('');
         }
-    }
+    };
 
     $.widget( 'ui.TreeType', {
         options: {
@@ -675,6 +688,22 @@
         },
         _create: function() {
             this.TreeType = new TreeType(this);
+        },
+        _destroy: function() {
+            if (this.TreeType) {
+                this.TreeType.destroy();
+            }
+        },
+        treeData: function(value) {
+            if (value === undefined) {
+                return this.options.treeData;
+            }
+
+            this.TreeType.options.treeData = value;
+            if (this.TreeType.tree) {
+                this.TreeType.tree.fancytree('destroy');
+                this.TreeType._constructTree();
+            }
         }
     });
 

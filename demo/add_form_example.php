@@ -12,9 +12,7 @@
     <?php include_once "modules/_mod_top_include.php"?>
 
 </head>
-<body>
-
-<?php include_once "modules/_mod_browser_upgrade.php"?>
+    <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <!-- HEADER:Start -->
 <?php include_once "modules/_mod_header.php"?>
@@ -394,7 +392,7 @@
             if (noErrors) {
                 $this[0].reset();
                 $('#product_example_productCountry').trigger('chosen:updated.chosen');
-                addNotification('1 product has been added.', 'black');
+                addNotification('<i class="fa fa-check-circle"></i><span>1 product has been added.</span>', 'success-full-color');
             } else {
                 errorAlertModal('Please check the fields with errors.', 'Add product errors');
             }

@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
     </head>
-    <body>
-
         <?php include_once "modules/_mod_browser_upgrade.php"?>
 
         <!-- HEADER:Start -->
@@ -132,7 +130,7 @@
                                                 <h4><b>Basic top navigation</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-example" aria-expanded="false" aria-controls="navbar-example"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-example" aria-expanded="false" aria-controls="navbar-example"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-example">
@@ -188,7 +186,7 @@
                                                 <h4><b>Top navigation with profile options</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-login" aria-expanded="false" aria-controls="navbar-with-login"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-login" aria-expanded="false" aria-controls="navbar-with-login"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-with-login">
@@ -258,7 +256,7 @@
                                                 <h4><b>Top navigation with search bar and notifications</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-search-and-notification" aria-expanded="false" aria-controls="navbar-with-search-and-notification"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-search-and-notification" aria-expanded="false" aria-controls="navbar-with-search-and-notification"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-with-search-and-notification">
@@ -349,7 +347,7 @@
                                                 <h4><b>Top navigation with language selector and notifications</b></h4>
                                             </div>
                                             <div class="col-sm-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-localization-and-notifications" aria-expanded="false" aria-controls=navbar-with-localization-and-notifications"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#navbar-with-localization-and-notifications" aria-expanded="false" aria-controls=navbar-with-localization-and-notifications"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="navbar-with-localization-and-notifications">
