@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 </head>
-<body>
 <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <!-- HEADER:Start -->
