@@ -4315,7 +4315,7 @@ function initSidebarEvents() {
                 return self.notAvailable();
             }
 
-            var rCountryCode = getItemStatus(rowObject.countryCode);
+            var rCountryCode = rowObject !== undefined ? getItemStatus(rowObject.countryCode) : getItemStatus(null);
 
             if (rCountryCode.hasNoValue) {
                 if (i.isString && !i.isJson) {
@@ -4339,7 +4339,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.actionsButtons = function (item, options, rowObject) {
+        this.actionsButtons = function (item) {
             var i = getItemStatus(item);
 
             if (i.isJson) {
@@ -4392,7 +4392,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.labelAndTooltip = function (item, options, rowObject) {
+        this.labelAndTooltip = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4431,7 +4431,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.badge = function (item, options, rowObject) {
+        this.badge = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4466,7 +4466,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.price = function (item, options, rowObject) {
+        this.price = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4507,7 +4507,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.product = function (item, options, rowObject) {
+        this.product = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {

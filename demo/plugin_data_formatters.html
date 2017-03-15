@@ -2,7 +2,7 @@
 <html lang="en" class="js">
 <head>
 
-    <title>Start - eMAG Apps UI KIT</title>
+    <title>JS Components - eMAG Apps UI KIT</title>
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -10,7 +10,9 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
+    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -22,34 +24,10 @@
     <script src="../dist/js/lib/html5shiv.min.js"></script>
     <script src="../dist/js/lib/respond.min.js"></script>
 <![endif]-->
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KBSTRWM');</script>
-<!-- End Google Tag Manager -->    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
 </head>
-<!--[if lt IE 9]>
-<body class="lt-ie9">
-<![endif]-->
+<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
 <!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-<!--[if gt IE 8]>
-<body>
-<![endif]-->
-<!--[if !IE]> -->
-<body>
-<!-- <![endif]-->
-
-
 <!-- HEADER:Start -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBSTRWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -536,258 +514,108 @@
                 <div class="jumbotron content-header">
                     <div class="container-fluid">
                         <p>eMAG Apps UI KIT</p>
-                        <p><b>Start</b></p>
+                        <p><b>Data formatters</b></p>
                     </div>
                 </div>
-                <section id="overview" class="pad-top-40">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h2><strong>Overview</strong></h2>
-                            <p><strong>A short description about what's it like to work with eMAG Apps UI KIT:</strong></p>
-                            <div class="pad-sep-20">
 
-                                        <h4><strong>1. Based on Bootstrap 3.3.5.</strong></h4>
-                                        <p>
-                                            Our open source UI KIT is based on the Bootstrap architecture. If you're
-                                            not familiarized with it, check-out their stuff from getbootstrap.com Aside
-                                            from the elements provided by Bootstrap, it comes with its own set of
-                                            unique components, styling and useful plugins that you can use in your
-                                            project.
-                                        </p>
-                                        <br>
-                                        <p><strong>Features:</strong></p>
-                                        <ol class="pad-15 no-padding-top-bottom">
-                                            <li>
-                                                <p>Keeping it light with an average page weight of 500Kb.</p>
-                                            </li>
-                                            <li>
-                                                <p>W3C Compliant</p>
-                                            </li>
-                                            <li>
-                                                <p>WCAG 2.0 Compliant</p>
-                                            </li>
-                                            <li>
-                                                <p>Average page-load time of 1s</p>
-                                            </li>
-                                        </ol>
-                                        <br>
+                <section class="pad-top-40">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
+                            <h2><strong>Data formatters</strong></h2>
 
-                                        <h4><strong>2. Working with Grunt.js</strong></h4>
-                                        <p><strong>Installing Grunt:</strong></p>
-                                        <p>To install Grunt, you must first download and install <a href="https://nodejs.org/en/" target="_blank"><u>node.js</u></a> (which includes npm). Believe it or not, npm stands for <b>node packaged modules</b> and is a way to manage development dependencies through node.js.</p>
-                                        <p>Once you've installed node.js, open up the command line in the root directory.</p>
-                                        <p>Install grunt-cli globally by running <code>npm install -g grunt-cli</code>.</p>
-                                        <p>Afterwards run <code>npm install</code> for npm to look  at the <b>package.json</b> file and automatically install the necessary local dependencies listed there.</p>
-                                        <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
-                                        <br>
-                                        <p><strong>Available Grunt commands:</strong></p>
-<pre>
-<code class="language-bash" data-lang="bash">
-grunt styles            - CSS distribution task
-grunt scripts           - JS distribution task
-grunt plugin_styles     - Generate plugin styles
-grunt plugin_scripts    - Generate plugin scripts
-grunt default           - Generate main styles and scripts
-</code>
-</pre>
-                                        <br>
+                            <div class="code-container">
+                                <div class="row code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b>Demo</b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#dataformatters_code" aria-expanded="false" aria-controls="dataformatters_code"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="dataformatters_code">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#dataformatters_html_source" aria-controls="dataformatters_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#dataformatters_js_source" aria-controls="dataformatters_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#dataformatters_css_source" aria-controls="dataformatters_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
 
-                                        <h4><strong>3. Working with eMAG Apps UI KIT's folder structure:</strong></h4>
-                                        <br>
-                                        <p>Once downloaded, unzip the compressed folder to find the three main folders:</p>
-<pre>
-<code class="language-bash" data-lang="bash">
-eMAG Apps UI KIT/
-|
-├── data/
-│   ├── scripts/
-|   |   ├── base/
-|   |   |   └── custom/
-|   |   └── lib/
-│   ├── styles/
-|   |   ├── base/
-|   |   |   └── custom/
-|   |   └── lib/
-|   └── plugins/
-|
-├── dist/
-│   ├── css/
-|   |   ├── flags/
-|   |   ├── fonts/
-|   |   ├── icons/
-|   |   ├── img/
-|   |   └── lib/
-│   ├── js/
-|   |   └── lib/
-|   └── plugins/
-|
-└── examples/
-└── modules/
-</code>
-</pre>
-                                        <br>
-                                        <h4><strong>4. Precompiled files (dist)</strong></h4>
-                                        <br>
-                                        <ul class="pad-20 no-padding-top-bottom">
-                                            <li>css - Main style CSS files.
-                                                <ul class="pad-20">
-                                                    <li>flags - Countries flags as SVG file on 1:1 and 4:3 ratio.</li>
-                                                    <li>fonts - Fonts files used in eMAG Apps UI KIT.</li>
-                                                    <li>icons - Icons used in eMAG Apps UI KIT (created by eMag and from other libraries).</li>
-                                                    <li>img - Images used in demo pages.</li>
-                                                    <li>lib - Styles required by libraries used in eMAG Apps UI KIT.</li>
-                                                </ul>
-                                            </li>
-                                            <li>js - Main JS script files.
-                                                <ul class="pad-20">
-                                                    <li>lib - Libraries' JS files.</li>
-                                                </ul>
-                                            </li>
-                                            <li>plugins - Plugins used in eMAG Apps UI KIT (CSS and JS files).</li>
-                                        </ul>
-                                        <br>
-
-                                        <h4><strong>5. eMAG Apps UI KIT source code (data)</strong></h4>
-                                        <br>
-                                        <ul class="pad-20 no-padding-top-bottom">
-                                            <li>scripts - JS files.
-                                                <ul class="pad-20">
-                                                    <li>base - Main JS files.
-                                                        <ul class="pad-20 no-padding-top-bottom">
-                                                            <li>custom - Custom wrappers over certain plugins.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>lib - Libraries' JS files.</li>
-                                                </ul>
-                                            </li>
-                                            <li>styles - LESS files.
-                                                <ul class="pad-20">
-                                                    <li>base - Main style LESS files
-                                                        <ul class="pad-20 no-padding-top-bottom">
-                                                            <li>custom - Custom wrappers' LESS files.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>lib - Libraries' LESS files.</li>
-                                                </ul>
-                                            </li>
-                                            <li>plugins - Plugins used in eMAG Apps UI KIT (LESS and JS files).</li>
-                                        </ul>
-                                        <br>
-
-                                        <h4><strong>6. License</strong></h4>
-                                        <br>
-                                        <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
-
-                                        <p><b>You can</b></p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <i class="fa fa-money" aria-hidden="true"></i> Comercial Use
-                                                <ul>
-                                                    <li>
-                                                        You may use the work commercially.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-pencil" aria-hidden="true"></i> Modify
-                                                <ul>
-                                                    <li>
-                                                        You may make changes to the work.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-share-alt" aria-hidden="true"></i> Distribute
-                                                <ul>
-                                                    <li>
-                                                        You may distribute the compiled code and/or source.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Sublicense
-                                                <ul>
-                                                    <li>
-                                                        You may incorporate the work into something that has a more restrictive license.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-lock" aria-hidden="true"></i> Private Use
-                                                <ul>
-                                                    <li>
-                                                        You may use the work for private use.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <p><b>You cannot</b></p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hold Liable
-                                                <ul>
-                                                    <li>
-                                                        The work is provided "as is". You may not hold the author liable.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <p><b>You must</b></p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <i class="fa fa-copyright" aria-hidden="true"></i> Include Copyright
-                                                <ul>
-                                                    <li>
-                                                        You must include the copyright notice in all copies or substantial uses of the work.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Include License
-                                                <ul>
-                                                    <li>
-                                                        You must include the license notice in all copies or substantial uses of the work.<br><br>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
-                                        <p>The full eMAG Apps UI KIT license can be found in <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">project repository</a>.</p>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="getting-started" class="pad-top-30">
-                    <div class="show-panel">
-                        <div class="show-panel-body">
-                            <h2><strong>Getting started</strong></h2>
-                            <p><strong>There are a couple of ways to install eMAG Apps UI KIT:</strong></p>
-                            <div class="pad-sep-20">
-
-                                        <p>1. The easiest way to install is to add the following css line in the head of your webpage:</p>
-                                        <pre class="language-html"><code class="language-html" data-showcase="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</code></pre>
-                                        <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
-                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
-&lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</code></pre>
-                                        <div class="alert alert-info" role="alert">
-                                            <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="dataformatters_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <br>
+                                        <div role="tabpanel" class="tab-pane js-source" id="dataformatters_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="dataformatters_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                        <p>2. You can <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">download the latest release</a> from GitHub.</p>
-                                        <br>
-
-                                        <p>3. You can also clone the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit" target="_blank">Git repository</a> by running the following command:</p>
-                                        <pre>
-<code class="language-bash" data-lang="bash">[sudo] git clone https://github.com/eMAGTechLabs/emag-apps-ui-kit.git</code></pre>
-
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source,drop_source,drop_css,dataformatters_init">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Description</th>
+                                                        <th>Example</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>ID formatter</td>
+                                                        <td><span id="id_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Not available formatter</td>
+                                                        <td><span id="na_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DateTime formatter</td>
+                                                        <td><span id="datetime_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Date formatter</td>
+                                                        <td><span id="date_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Time formatter</td>
+                                                        <td><span id="time_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>User formatter</td>
+                                                        <td><span id="user_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Country formatter</td>
+                                                        <td><span id="country_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Badge formatter</td>
+                                                        <td><span id="badge_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status formatter</td>
+                                                        <td><span id="status_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Product formatter</td>
+                                                        <td><span id="product_formatter"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Price formatter</td>
+                                                        <td><span id="price_formatter"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="alert alert-info" role="alert">
-                                <i class="fa fa-info-circle"></i> Be W3C compliant and everything will be alright!
-                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -806,15 +634,23 @@ eMAG Apps UI KIT/
 </div>
 <!-- PAGE:End -->
 
+<!-- POPUPS:Start -->
+<div id="popSpace"></div>
+<!-- POPUPS:End -->
+
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
-<script src="../dist/js/main_script.min.js"></script>
+
+<script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
+<script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
+
+<script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+<!-- SCRIPTS:End -->
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
-<!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
 <script type="text/javascript">
@@ -822,6 +658,34 @@ eMAG Apps UI KIT/
         console.log('Ready, Captain!');
 
         demoHelpers();  // Require demo_helpers.js
+        showPageCode();
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="dataformatters_init">
+    $(document).ready(function () {
+        $('#id_formatter').html(PhotonDataFormatter.id(12));
+
+        $('#na_formatter').html(PhotonDataFormatter.notAvailable());
+
+        $('#datetime_formatter').html(PhotonDataFormatter.dateTime('15/03/2017 08:38'));
+
+        $('#date_formatter').html(PhotonDataFormatter.date('15/03/2017'));
+
+        $('#time_formatter').html(PhotonDataFormatter.time('08:38:00'));
+
+        $('#user_formatter').html(PhotonDataFormatter.userEmail({user: 'John Doe', email: 'john.doe@emag.ro'}));
+
+        $('#country_formatter').html(PhotonDataFormatter.country({country: 'RO', countryCode: 'ro'}));
+
+        $('#badge_formatter').html(PhotonDataFormatter.badge({text: 'RO', number: '123'}));
+
+        $('#status_formatter').html(PhotonDataFormatter.labelAndTooltip({label: 'Live', labelClass: 'label-success', tooltip: 'Default tooltip'}));
+        $('#status_formatter .label-with-tooltip').tooltip();
+
+        $('#product_formatter').html(PhotonDataFormatter.product({name: 'Samsung S7', link: '#'}));
+
+        $('#price_formatter').html(PhotonDataFormatter.price({value: 1234567.89, currency: 'RON'}));
     });
 </script>
 <!-- DOCUMENT-READY:End -->
