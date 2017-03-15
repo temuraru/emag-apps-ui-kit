@@ -4,8 +4,6 @@
 
     <title>JS Components - eMAG Apps UI KIT</title>
     <?php include_once "modules/_mod_meta.php"?>
-
-    <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
     <?php include_once "modules/_mod_top_include.php"?>
 
 </head>
@@ -42,7 +40,7 @@
                                         <h4><b>Demo</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#dataformatters_code" aria-expanded="false" aria-controls="dataformatters_code"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#dataformatters_code" aria-expanded="false" aria-controls="dataformatters_code"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="dataformatters_code">
@@ -69,7 +67,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source,drop_source,drop_css,dataformatters_init">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source,dataformatters_init">
                                             <table class="table">
                                                 <thead>
                                                     <tr>
@@ -151,7 +149,6 @@
 <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
 <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
-<script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
 
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
