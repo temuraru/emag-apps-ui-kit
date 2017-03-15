@@ -11,8 +11,6 @@
 
     <?php include_once "modules/_mod_top_include.php"?>
 </head>
-<body>
-
 <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <?php include_once "modules/_mod_header.php"?>
@@ -52,7 +50,7 @@
                                         <h4><b>Simple Date Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#simple_date_picker" aria-expanded="false" aria-controls="simple_date_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#simple_date_picker" aria-expanded="false" aria-controls="simple_date_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="simple_date_picker">
@@ -101,7 +99,7 @@
                                         <h4><b>Time Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#time_picker" aria-expanded="false" aria-controls="time_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#time_picker" aria-expanded="false" aria-controls="time_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="time_picker">
@@ -148,7 +146,7 @@
                                         <h4><b>Date/Time Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_time_picker" aria-expanded="false" aria-controls="date_time_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_time_picker" aria-expanded="false" aria-controls="date_time_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="date_time_picker">
@@ -195,7 +193,7 @@
                                         <h4><b>Date Range Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap_date_range" aria-expanded="false" aria-controls="boostrap_date_range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap_date_range" aria-expanded="false" aria-controls="boostrap_date_range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="boostrap_date_range">
@@ -243,7 +241,7 @@
                                         <h4><b>Date/Time Range Picker</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap_date_time_range" aria-expanded="false" aria-controls="boostrap_date_time_range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#boostrap_date_time_range" aria-expanded="false" aria-controls="boostrap_date_time_range"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="boostrap_date_time_range">
@@ -308,7 +306,7 @@
                                         <h4><strong>Standard</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker" aria-expanded="false" aria-controls="date_range_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker" aria-expanded="false" aria-controls="date_range_picker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="date_range_picker">
@@ -362,7 +360,7 @@
                                         <h4><strong>Standard with value</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_with_value" aria-expanded="false" aria-controls="date_range_picker_with_value"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_with_value" aria-expanded="false" aria-controls="date_range_picker_with_value"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="date_range_picker_with_value">
@@ -416,7 +414,7 @@
                                         <h4><strong>Standard with format</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_with_format" aria-expanded="false" aria-controls="date_range_picker_with_format"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_with_format" aria-expanded="false" aria-controls="date_range_picker_with_format"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="date_range_picker_with_format">
@@ -471,7 +469,7 @@
                                         <h4><strong>Standard with predefined intervals</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_predefined_intervals" aria-expanded="false" aria-controls="date_range_picker_predefined_intervals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#date_range_picker_predefined_intervals" aria-expanded="false" aria-controls="date_range_picker_predefined_intervals"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="date_range_picker_predefined_intervals">
@@ -526,7 +524,7 @@
                                         <h4><strong>Standard with predefined intervals whitout calendars</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#drp_predefined_intervals_whitout_calendars" aria-expanded="false" aria-controls="drp_predefined_intervals_whitout_calendars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#drp_predefined_intervals_whitout_calendars" aria-expanded="false" aria-controls="drp_predefined_intervals_whitout_calendars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="drp_predefined_intervals_whitout_calendars">

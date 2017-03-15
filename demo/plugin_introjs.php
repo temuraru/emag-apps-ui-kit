@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../dist/plugins/intro/intro.min.css" data-dependency-name="intro_css">
     <?php include_once "modules/_mod_top_include.php"?>
 </head>
-<body>
 <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <!-- HEADER:Start -->
@@ -38,7 +37,7 @@
                                         <h4><b>Demo</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#introjs" aria-expanded="false" aria-controls="introjs"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#introjs" aria-expanded="false" aria-controls="introjs"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="introjs">

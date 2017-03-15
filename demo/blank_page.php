@@ -7,8 +7,7 @@
     <?php include_once "modules/_mod_top_include.php"?>
 
 </head>
-<body>
-<?php include_once "modules/_mod_browser_upgrade.php"?>
+    <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <!-- HEADER:Start -->
 <?php include_once "modules/_mod_header.php"?>
