@@ -4315,7 +4315,7 @@ function initSidebarEvents() {
                 return self.notAvailable();
             }
 
-            var rCountryCode = getItemStatus(rowObject.countryCode);
+            var rCountryCode = rowObject !== undefined ? getItemStatus(rowObject.countryCode) : getItemStatus(null);
 
             if (rCountryCode.hasNoValue) {
                 if (i.isString && !i.isJson) {
@@ -4339,7 +4339,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.actionsButtons = function (item, options, rowObject) {
+        this.actionsButtons = function (item) {
             var i = getItemStatus(item);
 
             if (i.isJson) {
@@ -4392,7 +4392,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.labelAndTooltip = function (item, options, rowObject) {
+        this.labelAndTooltip = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4431,7 +4431,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.badge = function (item, options, rowObject) {
+        this.badge = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4466,7 +4466,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.price = function (item, options, rowObject) {
+        this.price = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -4507,7 +4507,7 @@ function initSidebarEvents() {
          * @param rowObject
          * @return {string}
          */
-        this.product = function (item, options, rowObject) {
+        this.product = function (item) {
             var i = getItemStatus(item);
 
             if (i.hasNoValue) {
@@ -5898,6 +5898,7 @@ function initSidebarEvents() {
         var $this = this;
         $(document).on("hidden.bs.modal", "#" + this.defaults.id, function (e) {
             $this._isVisible = false;
+            window.alertModalDisplayed = false;
             hiddenCallback(e);
         });
     }
@@ -6600,6 +6601,7 @@ function initSidebarEvents() {
         show: function () {
             if (!this._isVisible) {
                 this._isVisible = true;
+                window.alertModalDisplayed = true;
                 /**
                  * Build alert modal through ajax or with static content
                  */
@@ -6608,6 +6610,7 @@ function initSidebarEvents() {
         },
         hide: function () {
             this._isVisible = false;
+            window.alertModalDisplayed = false;
             /**
              * Hide modal
              */
@@ -6617,7 +6620,14 @@ function initSidebarEvents() {
 
     window.PhotonModal = PhotonModal;
     window.AlertModal = AlertModal;
+    window.alertModalDisplayed = false;
     window.errorAlertModal = function (content, title, showBackgroundOverlay, size) {
+        if (window.alertModalDisplayed === true) {
+            return false;
+        }
+
+        $('#error_alert_modal').remove();
+
         var alertTitle = title || '';
         var alertContent = content || '';
         var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
@@ -6634,6 +6644,12 @@ function initSidebarEvents() {
         alertModal.show();
     };
     window.confirmationAlertModal = function (content, title, showBackgroundOverlay, size) {
+        if (window.alertModalDisplayed === true) {
+            return false;
+        }
+
+        $('#confirmation_alert_modal').remove();
+
         var alertTitle = title || '';
         var alertContent = content || '';
         var alertShowBackgroundOverlay = (showBackgroundOverlay === false) ? false : true;
