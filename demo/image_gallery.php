@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css" data-dependency-name="magnific_css">
         <?php include_once "modules/_mod_top_include.php"?>
     </head>
-    <body>
         <?php include_once "modules/_mod_browser_upgrade.php"?>
 
         <!-- HEADER:Start -->
@@ -47,7 +46,7 @@
                                                 <h4><b>Standard install</b></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#summernote" aria-expanded="false" aria-controls="summernote"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#summernote" aria-expanded="false" aria-controls="summernote"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="summernote">
@@ -107,7 +106,7 @@
                                                 <h4><b>All AJAX</b></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#magnific_ajax" aria-expanded="false" aria-controls="magnific_ajax"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#magnific_ajax" aria-expanded="false" aria-controls="magnific_ajax"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="magnific_ajax">
@@ -148,7 +147,7 @@
                                                 <h4><b>Youtube/Vimeo/etc. embeds</b></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#magnific_embeds" aria-expanded="false" aria-controls="magnific_embeds"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#magnific_embeds" aria-expanded="false" aria-controls="magnific_embeds"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="magnific_embeds">

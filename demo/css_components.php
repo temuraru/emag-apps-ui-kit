@@ -7,7 +7,7 @@
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
     </head>
-    <body>
+    
         <?php include_once "modules/_mod_browser_upgrade.php"?>
 
         <!-- HEADER:Start -->
@@ -621,7 +621,7 @@
                                                 <h4><strong>Basic example</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_table" aria-expanded="false" aria-controls="basic_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_table" aria-expanded="false" aria-controls="basic_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_table">
@@ -684,7 +684,7 @@
                                                 <h4><strong>Striped rows</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#striped_table" aria-expanded="false" aria-controls="striped_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#striped_table" aria-expanded="false" aria-controls="striped_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="striped_table">
@@ -747,7 +747,7 @@
                                                 <h4><strong>Bordered table</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#bordered_table" aria-expanded="false" aria-controls="bordered_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#bordered_table" aria-expanded="false" aria-controls="bordered_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="bordered_table">
@@ -810,7 +810,7 @@
                                                 <h4><strong>Hover rows</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#hover_rows_table" aria-expanded="false" aria-controls="hover_rows_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#hover_rows_table" aria-expanded="false" aria-controls="hover_rows_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="hover_rows_table">
@@ -873,7 +873,7 @@
                                                 <h4><strong>Condensed table</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#condensed_table" aria-expanded="false" aria-controls="condensed_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#condensed_table" aria-expanded="false" aria-controls="condensed_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="condensed_table">
@@ -937,7 +937,7 @@
                                                 <h4><strong>Resposive table</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#resposive_table" aria-expanded="false" aria-controls="resposive_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#resposive_table" aria-expanded="false" aria-controls="resposive_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="resposive_table">
@@ -1021,7 +1021,7 @@
                                                 <h4><strong>Contextual classes</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#contextual_classes_table" aria-expanded="false" aria-controls="contextual_classes_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#contextual_classes_table" aria-expanded="false" aria-controls="contextual_classes_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="contextual_classes_table">
@@ -1099,7 +1099,7 @@
                                                 <h4><strong>Basic example</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_form" aria-expanded="false" aria-controls="basic_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_form" aria-expanded="false" aria-controls="basic_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_form">
@@ -1166,7 +1166,7 @@
                                                 <h4><strong>Inline form example</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#inline_form" aria-expanded="false" aria-controls="inline_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#inline_form" aria-expanded="false" aria-controls="inline_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="inline_form">
@@ -1228,7 +1228,7 @@
                                                 <h4><strong>Horizontal form example</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#horizontal_form" aria-expanded="false" aria-controls="horizontal_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#horizontal_form" aria-expanded="false" aria-controls="horizontal_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="horizontal_form">
@@ -1295,7 +1295,7 @@
                                                 <h4><strong>Form with column sizing example</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#column_sizing_form" aria-expanded="false" aria-controls="column_sizing_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#column_sizing_form" aria-expanded="false" aria-controls="column_sizing_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="column_sizing_form">
@@ -1382,7 +1382,7 @@
                                                 <h4><strong>Individual form controls</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#individual_form" aria-expanded="false" aria-controls="individual_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#individual_form" aria-expanded="false" aria-controls="individual_form"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="individual_form">
@@ -1430,7 +1430,7 @@
                                                 <h4><strong>Form groups with labels and form controls. (only works with form-horizontal)</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#form_groups" aria-expanded="false" aria-controls="form_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#form_groups" aria-expanded="false" aria-controls="form_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="form_groups">
@@ -1490,7 +1490,7 @@
                                                 <h4><strong>States types</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#states_types" aria-expanded="false" aria-controls="states_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#states_types" aria-expanded="false" aria-controls="states_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="states_types">
@@ -1554,7 +1554,7 @@
                                                 <h4><strong>Validation types</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#validation_types" aria-expanded="false" aria-controls="validation_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#validation_types" aria-expanded="false" aria-controls="validation_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="validation_types">
@@ -1636,7 +1636,7 @@
                                                 <h4><strong>Feedback types</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#feedback_types" aria-expanded="false" aria-controls="feedback_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#feedback_types" aria-expanded="false" aria-controls="feedback_types"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="feedback_types">
@@ -1697,7 +1697,7 @@
                                                 <h4><strong>Default styles</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_check_radio" aria-expanded="false" aria-controls="default_check_radio"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_check_radio" aria-expanded="false" aria-controls="default_check_radio"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="default_check_radio">
@@ -1790,7 +1790,7 @@
                                                 <h4><strong>Custom styles</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#custom_check_radio" aria-expanded="false" aria-controls="custom_check_radio"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#custom_check_radio" aria-expanded="false" aria-controls="custom_check_radio"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="custom_check_radio">
@@ -1884,7 +1884,7 @@
                                                 <h4><strong>Default range input</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_range_input" aria-expanded="false" aria-controls="default_range_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_range_input" aria-expanded="false" aria-controls="default_range_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="default_range_input">
@@ -1922,7 +1922,7 @@
                                                 <h4><strong>Disabled range input</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#disabled_range_input" aria-expanded="false" aria-controls="disabled_range_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#disabled_range_input" aria-expanded="false" aria-controls="disabled_range_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="disabled_range_input">
@@ -1964,7 +1964,7 @@
                                                 <h4><strong>Default</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_input_groups" aria-expanded="false" aria-controls="default_input_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_input_groups" aria-expanded="false" aria-controls="default_input_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="default_input_groups">
@@ -2039,7 +2039,7 @@
                                                 <h4><strong>Input groups with checkboxes and radio buttons</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#input_groups_with_checkboxes" aria-expanded="false" aria-controls="input_groups_with_checkboxes"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#input_groups_with_checkboxes" aria-expanded="false" aria-controls="input_groups_with_checkboxes"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="input_groups_with_checkboxes">
@@ -2116,7 +2116,7 @@
                                                 <h4><strong>Default styling</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#buttons_default_styling" aria-expanded="false" aria-controls="buttons_default_styling"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#buttons_default_styling" aria-expanded="false" aria-controls="buttons_default_styling"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="buttons_default_styling">
@@ -2156,7 +2156,7 @@
                                                 <h4><strong>Contextual classes</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#buttons_contextual_classes" aria-expanded="false" aria-controls="buttons_contextual_classes"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#buttons_contextual_classes" aria-expanded="false" aria-controls="buttons_contextual_classes"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="buttons_contextual_classes">
@@ -2205,7 +2205,7 @@
                                                 <h4><strong>Button sizing</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_sizing" aria-expanded="false" aria-controls="button_sizing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_sizing" aria-expanded="false" aria-controls="button_sizing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="button_sizing">
@@ -2241,7 +2241,7 @@
                                                 <h4><strong>Button states</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_states" aria-expanded="false" aria-controls="button_states"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_states" aria-expanded="false" aria-controls="button_states"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="button_states">
@@ -2286,7 +2286,7 @@
                                                 <h4><strong>Button groups</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_groups" aria-expanded="false" aria-controls="button_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_groups" aria-expanded="false" aria-controls="button_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="button_groups">
@@ -2324,7 +2324,7 @@
                                                 <h4><strong>Justified button groups</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#justified_button_groups" aria-expanded="false" aria-controls="justified_button_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#justified_button_groups" aria-expanded="false" aria-controls="justified_button_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="justified_button_groups">
@@ -2374,7 +2374,7 @@
                                                 <h4><strong>Button toolbar</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_toolbar" aria-expanded="false" aria-controls="button_toolbar"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_toolbar" aria-expanded="false" aria-controls="button_toolbar"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="button_toolbar">
@@ -2429,7 +2429,7 @@
                                                 <h4><strong>Button groups sizing</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_groups_sizing" aria-expanded="false" aria-controls="button_groups_sizing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_groups_sizing" aria-expanded="false" aria-controls="button_groups_sizing"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="button_groups_sizing">
@@ -2474,7 +2474,7 @@
                                                 <h4><strong>Button blocks</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_blocks" aria-expanded="false" aria-controls="button_blocks"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#button_blocks" aria-expanded="false" aria-controls="button_blocks"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="button_blocks">
@@ -2535,7 +2535,7 @@
                                                 <h4><strong>CSS Flipswitch</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#flipswitch" aria-expanded="false" aria-controls="flipswitch"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#flipswitch" aria-expanded="false" aria-controls="flipswitch"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="flipswitch">
@@ -2598,7 +2598,7 @@
                                                 <h4><strong>Default label</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_label" aria-expanded="false" aria-controls="default_label"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_label" aria-expanded="false" aria-controls="default_label"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="default_label">
@@ -2633,7 +2633,7 @@
                                                 <h4><strong>Contextual alternatives</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_label_alternatives" aria-expanded="false" aria-controls="default_label_alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_label_alternatives" aria-expanded="false" aria-controls="default_label_alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="default_label_alternatives">
@@ -2671,7 +2671,7 @@
                                                 <h4><strong>Default badge</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_badge" aria-expanded="false" aria-controls="default_badge"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#default_badge" aria-expanded="false" aria-controls="default_badge"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="default_badge">
@@ -2722,7 +2722,7 @@
                                                 <h4><strong>Basic alerts</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_alerts" aria-expanded="false" aria-controls="basic_alerts"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_alerts" aria-expanded="false" aria-controls="basic_alerts"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_alerts">
@@ -2768,7 +2768,7 @@
                                                 <h4><strong>Dismissible alerts</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#dismissible_alerts" aria-expanded="false" aria-controls="dismissible_alerts"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#dismissible_alerts" aria-expanded="false" aria-controls="dismissible_alerts"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="dismissible_alerts">
@@ -2806,7 +2806,7 @@
                                                 <h4><strong>Links in alerts</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#links_in_alerts" aria-expanded="false" aria-controls="links_in_alerts"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#links_in_alerts" aria-expanded="false" aria-controls="links_in_alerts"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="links_in_alerts">
@@ -2844,7 +2844,7 @@
                                                 <h4><strong>Alerts with buttons</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts_with_buttons" aria-expanded="false" aria-controls="alerts_with_buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#alerts_with_buttons" aria-expanded="false" aria-controls="alerts_with_buttons"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="alerts_with_buttons">
@@ -2894,7 +2894,7 @@
                                                 <h4><strong>Basic progress bar</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_progress_bar" aria-expanded="false" aria-controls="basic_progress_bar"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_progress_bar" aria-expanded="false" aria-controls="basic_progress_bar"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_progress_bar">
@@ -2933,7 +2933,7 @@
                                                 <h4><strong>Basic progress bar with label</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_progress_bar_with_label" aria-expanded="false" aria-controls="basic_progress_bar_with_label"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_progress_bar_with_label" aria-expanded="false" aria-controls="basic_progress_bar_with_label"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_progress_bar_with_label">
@@ -2972,7 +2972,7 @@
                                                 <h4><strong>Contextual alternatives</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#contextual_alternatives" aria-expanded="false" aria-controls="contextual_alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#contextual_alternatives" aria-expanded="false" aria-controls="contextual_alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="contextual_alternatives">
@@ -3015,7 +3015,7 @@
                                                 <h4><strong>Striped progress bars</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#striped_progress_bars" aria-expanded="false" aria-controls="striped_progress_bars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#striped_progress_bars" aria-expanded="false" aria-controls="striped_progress_bars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="striped_progress_bars">
@@ -3060,7 +3060,7 @@
                                                 <h4><strong>Stacked progress bars</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#stacked_progress_bars" aria-expanded="false" aria-controls="stacked_progress_bars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#stacked_progress_bars" aria-expanded="false" aria-controls="stacked_progress_bars"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="stacked_progress_bars">
@@ -3126,7 +3126,7 @@
                                                 <h4><strong>Basic panel</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_panel" aria-expanded="false" aria-controls="basic_panel"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_panel" aria-expanded="false" aria-controls="basic_panel"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_panel">
@@ -3168,7 +3168,7 @@
                                                 <h4><strong>Contextual alternatives</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_panel_contextual_alternatives" aria-expanded="false" aria-controls="basic_panel_contextual_alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#basic_panel_contextual_alternatives" aria-expanded="false" aria-controls="basic_panel_contextual_alternatives"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="basic_panel_contextual_alternatives">
@@ -3235,7 +3235,7 @@
                                                 <h4><strong>Panel with table</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel_with_table" aria-expanded="false" aria-controls="panel_with_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel_with_table" aria-expanded="false" aria-controls="panel_with_table"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="panel_with_table">
@@ -3330,7 +3330,7 @@
                                                 <h4><strong>Panel with standard list group</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel_with_list" aria-expanded="false" aria-controls="panel_with_list"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#panel_with_list" aria-expanded="false" aria-controls="panel_with_list"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="panel_with_list">
@@ -3406,7 +3406,7 @@
                                                 <h4><strong>Default styling</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#page_header_default" aria-expanded="false" aria-controls="page_header_default"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#page_header_default" aria-expanded="false" aria-controls="page_header_default"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="page_header_default">
@@ -3459,7 +3459,7 @@
                                                 <h4><strong>Default styling</strong></h4>
                                             </div>
                                             <div class="col-xs-4">
-                                                <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#responsive_embeds" aria-expanded="false" aria-controls="responsive_embeds"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#responsive_embeds" aria-expanded="false" aria-controls="responsive_embeds"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                             </div>
                                         </div>
                                         <div class="collapse code-example"  id="responsive_embeds">

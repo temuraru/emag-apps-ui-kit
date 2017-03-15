@@ -10,8 +10,6 @@
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
 </head>
-<body>
-
 <?php include_once "modules/_mod_browser_upgrade.php"?>
 
 <!-- HEADER:Start -->
@@ -64,7 +62,7 @@
                                         <h4><b>Custom date format</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_custom_date" aria-expanded="false" aria-controls="masked_custom_date"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_custom_date" aria-expanded="false" aria-controls="masked_custom_date"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="masked_custom_date">
@@ -108,7 +106,7 @@
                                         <h4><b>Phone format</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_phone_format" aria-expanded="false" aria-controls="masked_phone_format"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_phone_format" aria-expanded="false" aria-controls="masked_phone_format"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="masked_phone_format">
@@ -152,7 +150,7 @@
                                         <h4><b>Serial number format</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_serial_number" aria-expanded="false" aria-controls="masked_serial_number"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_serial_number" aria-expanded="false" aria-controls="masked_serial_number"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="masked_serial_number">
@@ -196,7 +194,7 @@
                                         <h4><b>Custom number formatting</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_custom_number" aria-expanded="false" aria-controls="masked_custom_number"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#masked_custom_number" aria-expanded="false" aria-controls="masked_custom_number"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="masked_custom_number">
@@ -258,7 +256,7 @@
                                         <h4><b>Message</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#textarea_with_input_limiter" aria-expanded="false" aria-controls="textarea_with_input_limiter"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#textarea_with_input_limiter" aria-expanded="false" aria-controls="textarea_with_input_limiter"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="textarea_with_input_limiter">
@@ -310,7 +308,7 @@
                                         <h4><strong>Style 1</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file_upload_demo_1" aria-expanded="false" aria-controls="file_upload_demo_1"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file_upload_demo_1" aria-expanded="false" aria-controls="file_upload_demo_1"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="file_upload_demo_1">
@@ -356,7 +354,7 @@
                                         <h4><b>Style 2</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file_upload_demo_2" aria-expanded="false" aria-controls="file_upload_demo_2"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file_upload_demo_2" aria-expanded="false" aria-controls="file_upload_demo_2"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="file_upload_demo_2">
@@ -401,7 +399,7 @@
                                         <h4><b>Style 3</b></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file_upload_demo_3" aria-expanded="false" aria-controls="file_upload_demo_3"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#file_upload_demo_3" aria-expanded="false" aria-controls="file_upload_demo_3"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="file_upload_demo_3">
@@ -472,7 +470,7 @@
                                         <h4><strong>Text input</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#text_input" aria-expanded="false" aria-controls="text_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#text_input" aria-expanded="false" aria-controls="text_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="text_input">
@@ -534,7 +532,7 @@
                                         <h4><strong>Text input</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jquery_autocomplete" aria-expanded="false" aria-controls="jquery_autocomplete"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jquery_autocomplete" aria-expanded="false" aria-controls="jquery_autocomplete"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jquery_autocomplete">
@@ -595,7 +593,7 @@
                                         <h4><strong>Text input</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jquery_ui_sliders" aria-expanded="false" aria-controls="jquery_ui_sliders"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jquery_ui_sliders" aria-expanded="false" aria-controls="jquery_ui_sliders"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jquery_ui_sliders">
@@ -677,7 +675,7 @@
                                         <h4><strong>Default</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jquery_numeric_input" aria-expanded="false" aria-controls="jquery_numeric_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jquery_numeric_input" aria-expanded="false" aria-controls="jquery_numeric_input"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="jquery_numeric_input">
@@ -738,7 +736,7 @@
                                         <h4><strong>Autocomplete multiple</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_multiple" aria-expanded="false" aria-controls="autocomplete_multiple"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_multiple" aria-expanded="false" aria-controls="autocomplete_multiple"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="autocomplete_multiple">
@@ -787,7 +785,7 @@
                                         <h4><strong>Autocomplete multiple with option groups (limited to 5)</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_multiple_with_groups" aria-expanded="false" aria-controls="autocomplete_multiple_with_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_multiple_with_groups" aria-expanded="false" aria-controls="autocomplete_multiple_with_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="autocomplete_multiple_with_groups">
@@ -846,7 +844,7 @@
                                         <h4><strong>Autocomplete single</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_single" aria-expanded="false" aria-controls="autocomplete_single"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_single" aria-expanded="false" aria-controls="autocomplete_single"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="autocomplete_single">
@@ -894,7 +892,7 @@
                                         <h4><strong>Autocomplete single with option groups</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_single_with_groups" aria-expanded="false" aria-controls="autocomplete_single_with_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_single_with_groups" aria-expanded="false" aria-controls="autocomplete_single_with_groups"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="autocomplete_single_with_groups">
@@ -953,7 +951,7 @@
                                         <h4><strong>Single select with disabled search</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <button class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_single_with_disabled_search" aria-expanded="false" aria-controls="autocomplete_single_with_disabled_search"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></button>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#autocomplete_single_with_disabled_search" aria-expanded="false" aria-controls="autocomplete_single_with_disabled_search"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
                                 <div class="collapse code-example"  id="autocomplete_single_with_disabled_search">
