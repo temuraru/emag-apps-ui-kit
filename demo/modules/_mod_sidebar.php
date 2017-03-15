@@ -311,6 +311,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_data_formatters.php">
+                                <span class="menu-text">Data formatters</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_fancytree.php">
                                 <span class="menu-text">Fancytree</span>
                             </a>
