@@ -300,6 +300,7 @@ input[type="radio"] {
     }
 }
 
+
 .input-group {
   &.input-group-no-separation {
     .form-control {
@@ -311,7 +312,7 @@ input[type="radio"] {
     }
     .input-group-addon {
       border-left: none;
-      background: none;
+      background-color: transparent;
       cursor: default;
 
       &.cursor-pointer {
@@ -325,12 +326,33 @@ input[type="radio"] {
       &[disabled] {
         color: #ccc;
         cursor: not-allowed;
-        background-color: #f6f6f6;
+        background-color: @gray-96;
         opacity: 1;
       }
     }
   }
 }
+
+
+
+
+// Feedback states
+.has-success {
+  .mod-form-control-validation(@state-success-bg);
+}
+.has-warning {
+  .mod-form-control-validation(@state-warning-bg);
+}
+.has-error {
+  .mod-form-control-validation(@state-danger-bg);
+}
+
+
+
+
+
+
+
 
 select.form-control {
   padding-left: @padding-base-horizontal-select;
