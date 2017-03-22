@@ -12060,7 +12060,7 @@ input[type="radio"].form-radio-control:disabled {
 }
 .input-group.input-group-no-separation .input-group-addon > .form-radio-control,
 .input-group.input-group-no-separation .input-group-addon > .form-checkbox-control {
-  margin-top: 2px!important;
+  margin-top: 2px !important;
 }
 .input-group.input-group-no-separation .input-group-addon[disabled] {
   color: #ccc;
