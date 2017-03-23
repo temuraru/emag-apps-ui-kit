@@ -203,6 +203,9 @@
                     } else {
                         $this._syncSelectToTree();
                     }
+                },
+                hideCallback: function() {
+                    $this._syncSelectToTree();
                 }
             });
 
