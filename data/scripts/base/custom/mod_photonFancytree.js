@@ -92,7 +92,6 @@
                 $('#' + $this.options.selectId + ' option[value!=""]:selected').removeAttr('selected').prop('selected', false);
                 if ($this.$tree != undefined) {
                     $this._resetSearch();
-                    $this.$tree.reload();
                 }
                 $this._updateInfo();
             });
@@ -204,6 +203,9 @@
                     } else {
                         $this._syncSelectToTree();
                     }
+                },
+                hideCallback: function() {
+                    $this._syncSelectToTree();
                 }
             });
 
@@ -215,7 +217,6 @@
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
                 $this._resetSearch();
-                $this.$tree.reload();
                 $this._syncSelectToTree();
             });
 

@@ -12,7 +12,7 @@
      * @private
      * @type {String}
      */
-    var _containerId = 'popSpace';
+    var _containerId = 'pop_space';
     /**
      * Html template for modal
      * @private
