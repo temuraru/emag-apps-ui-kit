@@ -60,7 +60,7 @@
 <!-- PAGE:End -->
 
 <!-- POPUPS:Start -->
-<div id="popSpace"></div>
+<div id="pop_space"></div>
 <!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
