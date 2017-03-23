@@ -470,7 +470,7 @@
 
 <!-- POPUPS:Start -->
 <div data-dependency-name="pop_space">
-    <div id="popSpace"></div>
+    <div id="pop_space"></div>
 </div>
 <!-- POPUPS:End -->
 
