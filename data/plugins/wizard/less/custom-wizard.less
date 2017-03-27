@@ -1,9 +1,7 @@
-@color_1: #ccc;
-@color_2: #FFF;
-@color_3: #005eb7;
-@font_family_1: FontAwesome;
-@background_color_1: #FFF;
-@border_color_1: #005eb7;
+// Core variables and mixins
+@import "../../../styles/base/variables.less";
+@import "../../../styles/base/custom/custom-variables.less";
+@import "../../../styles/base/mixins.less";
 /* Wizard css layout have been made from 0. No need to import their less. */
 .steps {
   list-style: none;
@@ -17,13 +15,13 @@
     display: table-cell;
     text-align: center;
     width: 1%;
-    color: @color_1;
+    color: @gray-80;
     .step {
       border: 5px solid #ccc;
-      color: @color_1;
+      color: @gray-80;
       font-size: 15px;
       border-radius: 100%;
-      background-color: @background_color_1;
+      background-color: @white;
       position: relative;
       z-index: 2;
       display: inline-block;
@@ -77,23 +75,23 @@
   }
   li.active {
     &:before {
-      border-color: @border_color_1;
+      border-color: @brand-primary;
     }
     .step {
-      border-color: @border_color_1;
-      color: @color_3;
+      border-color: @brand-primary;
+      color: @brand-primary;
     }
-    color: @color_3;
+    color: @brand-primary;
   }
   li.complete {
     &:before {
-      border-color: @border_color_1;
+      border-color: @brand-primary;
     }
     .step {
-      border-color: @border_color_1;
+      border-color: @brand-primary;
       cursor: default;
       transition: transform ease 0.1s;
-      color: @color_3;
+      color: @brand-primary;
       &:before {
         display: block;
         position: absolute;
@@ -105,23 +103,24 @@
         text-align: center;
         border-radius: 100%;
         content: "\f00c";
-        background-color: @background_color_1;
+        background-color: @white;
         z-index: 3;
-        font-family: @font_family_1;
+        font-family: FontAwesome;
         font-size: 17px;
-        color: @color_3;
+        color: @brand-primary;
       }
     }
     &:hover {
       .step {
         transform: scale(1.1);
-        border-color: @border_color_1;
+        border-color: @brand-primary;
+        cursor: pointer;
       }
       &:before {
-        border-color: @border_color_1;
+        border-color: @brand-primary;
       }
     }
-    color: @color_3;
+    color: @brand-primary;
   }
 }
 

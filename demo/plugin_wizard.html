@@ -696,7 +696,7 @@
                                                                             <div class="actions pull-right panel-controls">
                                                                                 <button type="button" class="btn btn-default btn-prev">
                                                                                     <i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-                                                                                <button type="button" class="btn btn-success btn-next">
+                                                                                <button type="button" class="btn btn-primary btn-next">
                                                                                     Next <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                                                 </button>
                                                                             </div>
@@ -773,28 +773,28 @@
                             "price": {value: 3230.45, currency: 'RON'},
                             "addingDate": "2017-02-09",
                             "invoiceNo": "ABC12345"
-                        },{
+                        }, {
                             "id": "2",
                             "productName": "Macbook Air",
                             "seller": "eMAG",
                             "price": {value: 2323.45, currency: 'RON'},
                             "addingDate": "2017-05-01",
                             "invoiceNo": "DEF12345"
-                        },{
+                        }, {
                             "id": "3",
                             "productName": "Macbook Pro",
                             "seller": "eMAG",
                             "price": {value: 2063.45, currency: 'RON'},
                             "addingDate": "2017-07-07",
                             "invoiceNo": "MNO12345"
-                        },{
+                        }, {
                             "id": "4",
                             "productName": "iPhone 6s",
                             "seller": "eMAG",
                             "price": {value: 1523.45, currency: 'RON'},
                             "addingDate": "2017-04-05",
                             "invoiceNo": "SFW12345"
-                        },{
+                        }, {
                             "id": "5",
                             "productName": "iPad Pro",
                             "seller": "eMAG",
@@ -867,10 +867,10 @@
                     }
                 });
                 $('#myWizard').on('changed.fu.wizard', function (e, data) {
-                    $('.btn-next').removeClass('btn-default').addClass('btn-success').removeAttr('disabled');
+                    $('.btn-next').removeClass('btn-default').addClass('btn-primary').removeAttr('disabled');
                     if (data.step === 3) {
                         $('.steps li').eq(2).addClass('complete');
-                        $('.btn-next').attr('disabled', 'disabled').removeClass('btn-success').addClass('btn-default');
+                        $('.btn-next').attr('disabled', 'disabled').removeClass('btn-primary').addClass('btn-default');
                     }
                 })
             });
