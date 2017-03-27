@@ -12053,7 +12053,7 @@ input[type="radio"].form-radio-control:disabled {
 }
 .input-group.input-group-no-separation .input-group-addon {
   cursor: default;
-  background: none;
+  background-color: transparent;
   border-left: none;
 }
 .input-group.input-group-no-separation .input-group-addon.cursor-pointer {
@@ -12061,13 +12061,31 @@ input[type="radio"].form-radio-control:disabled {
 }
 .input-group.input-group-no-separation .input-group-addon > .form-radio-control,
 .input-group.input-group-no-separation .input-group-addon > .form-checkbox-control {
-  margin-top: 2px!important;
+  margin-top: 2px !important;
 }
 .input-group.input-group-no-separation .input-group-addon[disabled] {
   color: #ccc;
   cursor: not-allowed;
   background-color: #f6f6f6;
   opacity: 1;
+}
+.has-success .input-group.input-group-no-separation .input-group-addon {
+  background-color: #eafceb;
+}
+.has-success .input-group.input-group-no-separation .input-group-addon[disabled] {
+  background-color: #eafceb;
+}
+.has-warning .input-group.input-group-no-separation .input-group-addon {
+  background-color: #fdf2e0;
+}
+.has-warning .input-group.input-group-no-separation .input-group-addon[disabled] {
+  background-color: #fdf2e0;
+}
+.has-error .input-group.input-group-no-separation .input-group-addon {
+  background-color: #fff0ef;
+}
+.has-error .input-group.input-group-no-separation .input-group-addon[disabled] {
+  background-color: #fff0ef;
 }
 select.form-control {
   padding-left: 5px;
@@ -12581,5 +12599,9 @@ i {
   width: 0;
   height: 34px !important;
   opacity: 0;
+}
+/*Fix for File upload border*/
+.input-group .input-group-btn {
+  z-index: 1;
 }
 /*# sourceMappingURL=main_style_dark.css.map */
