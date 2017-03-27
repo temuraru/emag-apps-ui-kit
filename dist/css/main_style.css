@@ -12096,6 +12096,12 @@ select.form-control option:hover {
 .form-control[disabled] {
   color: #ccc;
 }
+.checkbox-inline label {
+  font-weight: normal;
+}
+.radio-inline label {
+  font-weight: normal;
+}
 .info-tooltip {
   position: relative;
   display: inline-block;

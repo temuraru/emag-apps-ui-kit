@@ -40,7 +40,7 @@
                                 </div>
                             </div>
 
-                            <section id="summernoteStandard" class="pad-top-40">
+                            <section id="wizard_standard" class="pad-top-40">
                                 <div class="show-panel code-example">
                                     <div class="show-panel-body code-example">
                                         <h2><strong>Wizard</strong></h2>
@@ -89,7 +89,7 @@
                                                 <div class="col-sm-12">
                                                     <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css">
                                                         <div class="fuelux">
-                                                            <div class="wizard" data-initialize="wizard"  id="myWizard">
+                                                            <div class="wizard" data-initialize="wizard"  id="my_wizard">
                                                                 <div class="steps-container">
                                                                     <ul class="steps">
                                                                         <li data-step="1" data-name="campaign" class="active">
@@ -128,18 +128,12 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="col-sm-3">
-                                                                                            <p><strong>Include invoice details</strong></p>
+                                                                                            <p><strong>Invoice details</strong></p>
                                                                                             <div class="form-group">
-                                                                                                <div class="radio-inline">
+                                                                                                <div class="checkbox-inline">
                                                                                                     <label>
-                                                                                                        <input type="radio" name="optionsRadios" id="optionsRadios11" class="form-radio-control" value="option11" checked="">
-                                                                                                        Yes
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="radio-inline">
-                                                                                                    <label>
-                                                                                                        <input type="radio" name="optionsRadios" id="optionsRadios11" class="form-radio-control" value="option11" checked="">
-                                                                                                        No
+                                                                                                        <input type="checkbox" class="form-checkbox-control" value="" checked="">
+                                                                                                        Include invoice details
                                                                                                     </label>
                                                                                                 </div>
                                                                                             </div>
@@ -238,7 +232,7 @@
 
         <script type="text/javascript" data-dependency-name="wizard_standard_init">
             $(document).ready(function () {
-                $('#myWizard').wizard();
+                $('#my_wizard').wizard();
                 function getListingDummyData() {
 
                     var dataSet = [
@@ -321,7 +315,7 @@
                     }, 3000);
                 }
 
-                $('#myWizard').on('actionclicked.fu.wizard', function (e, data) {
+                $('#my_wizard').on('actionclicked.fu.wizard', function (e, data) {
                     $('#file_type').parent().removeClass('has-error');
                     if (data.step === 1) {
                         if (!getSelectedRows()) {
@@ -343,7 +337,7 @@
                     }
                 });
 
-                $('#myWizard').on('changed.fu.wizard', function (e, data) {
+                $('#my_wizard').on('changed.fu.wizard', function (e, data) {
                     $('.btn-next').removeClass('btn-default').addClass('btn-primary').removeAttr('disabled');
                     if (data.step === 3) {
                         $('.steps li').eq(2).addClass('complete');
