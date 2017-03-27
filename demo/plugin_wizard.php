@@ -342,6 +342,7 @@
                         }
                     }
                 });
+
                 $('#myWizard').on('changed.fu.wizard', function (e, data) {
                     $('.btn-next').removeClass('btn-default').addClass('btn-primary').removeAttr('disabled');
                     if (data.step === 3) {
