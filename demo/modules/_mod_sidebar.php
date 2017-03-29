@@ -59,6 +59,11 @@
                                 <span class="menu-text">Grid Layout</span>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/helper_classes.php">
+                                <span class="menu-text">Helper classes</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -397,6 +402,11 @@
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/email_template.php">
                                 <span class="menu-text">Email template</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_wizard.php">
+                                <span class="menu-text">Wizard</span>
                             </a>
                         </li>
                     </ul>
