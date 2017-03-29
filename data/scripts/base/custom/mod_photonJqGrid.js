@@ -155,6 +155,7 @@
                     var self = this;
 
                     var dropId = self[0].id + '_drop_jsc';
+                    var drop;
 
                     var $body = $('body');
                     var $button = $(opts.actionButton);
@@ -209,6 +210,7 @@
                                 }
                             });
                             photonResizeGrid();
+                            drop.close();
                         });
 
                         $body.on('click', '#' + dropId + ' .btn-jsc-cancel-btn', function() {
@@ -216,11 +218,12 @@
                             $.each(colModel, function (i) {
                                 $('#' + dropId + ' .jsc-checkbox[value="' + i + '"]').prop('checked', !this.hidden);
                             });
+                            drop.close();
                         });
                     }
 
                     function _initDrop($button) {
-                        var drop = new Drop({
+                        drop = new Drop({
                             target: $button[0],
                             classes: 'drop-actions',
                             content: '<div id="' + dropId + '">' +
