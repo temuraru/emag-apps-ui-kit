@@ -559,7 +559,7 @@
                                 </div>
                             </div>
 
-                            <section id="summernoteStandard" class="pad-top-40">
+                            <section id="wizard_standard" class="pad-top-40">
                                 <div class="show-panel code-example">
                                     <div class="show-panel-body code-example">
                                         <h2><strong>Wizard</strong></h2>
@@ -606,9 +606,9 @@
 
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css">
+                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css,jquery_ui_source,jqgrid_locale_en_source,jqgrid_source,stickykit_source,tether_source,drop_source,wizard_source">
                                                         <div class="fuelux">
-                                                            <div class="wizard" data-initialize="wizard"  id="myWizard">
+                                                            <div class="wizard" data-initialize="wizard"  id="my_wizard">
                                                                 <div class="steps-container">
                                                                     <ul class="steps">
                                                                         <li data-step="1" data-name="campaign" class="active">
@@ -637,7 +637,7 @@
                                                                                     <div class="row">
                                                                                         <div class="col-sm-2">
                                                                                             <div class="form-group">
-                                                                                                <label class="control-label" for="type">Select file type for download</label>
+                                                                                                <label class="control-label" for="type">File type</label>
                                                                                                 <select class="form-control" name="type" id="file_type">
                                                                                                     <option value="0"></option>
                                                                                                     <option value="1">XLS</option>
@@ -647,18 +647,12 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="col-sm-3">
-                                                                                            <p><strong>Include invoice details</strong></p>
+                                                                                            <p><strong>Invoice details</strong></p>
                                                                                             <div class="form-group">
-                                                                                                <div class="radio-inline">
+                                                                                                <div class="checkbox-inline">
                                                                                                     <label>
-                                                                                                        <input type="radio" name="optionsRadios" id="optionsRadios11" class="form-radio-control" value="option11" checked="">
-                                                                                                        Yes
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="radio-inline">
-                                                                                                    <label>
-                                                                                                        <input type="radio" name="optionsRadios" id="optionsRadios11" class="form-radio-control" value="option11" checked="">
-                                                                                                        No
+                                                                                                        <input type="checkbox" class="form-checkbox-control" value="" checked="">
+                                                                                                        Include invoice details
                                                                                                     </label>
                                                                                                 </div>
                                                                                             </div>
@@ -682,7 +676,7 @@
                                                                                             <div class="sk-circle11 sk-circle"></div>
                                                                                             <div class="sk-circle12 sk-circle"></div>
                                                                                         </div>
-                                                                                        <strong>Zipping your file</strong>
+                                                                                        <strong>Zipping your file(s)</strong>
                                                                                     </div>
                                                                                     <div class="file-ready">
                                                                                         <p><i class="fa fa-check text-success fa-3x" aria-hidden="true"></i></p>
@@ -732,14 +726,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
-
-        <script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
-        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
-        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
-        <script src="../dist/plugins/stickyKit/stickyKit.min.js"></script>
-        <script src="../dist/plugins/tether/tether.min.js"></script>
-        <script src="../dist/plugins/drop/drop.min.js"></script>
-
+        <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
+        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
+        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
+        <script src="../dist/plugins/stickyKit/stickyKit.min.js" data-dependency-name="stickykit_source"></script>
+        <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
+        <script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
@@ -762,7 +754,7 @@
 
         <script type="text/javascript" data-dependency-name="wizard_standard_init">
             $(document).ready(function () {
-                $('#myWizard').wizard();
+                $('#my_wizard').wizard();
                 function getListingDummyData() {
 
                     var dataSet = [
@@ -845,7 +837,7 @@
                     }, 3000);
                 }
 
-                $('#myWizard').on('actionclicked.fu.wizard', function (e, data) {
+                $('#my_wizard').on('actionclicked.fu.wizard', function (e, data) {
                     $('#file_type').parent().removeClass('has-error');
                     if (data.step === 1) {
                         if (!getSelectedRows()) {
@@ -867,7 +859,7 @@
                     }
                 });
 
-                $('#myWizard').on('changed.fu.wizard', function (e, data) {
+                $('#my_wizard').on('changed.fu.wizard', function (e, data) {
                     $('.btn-next').removeClass('btn-default').addClass('btn-primary').removeAttr('disabled');
                     if (data.step === 3) {
                         $('.steps li').eq(2).addClass('complete');

@@ -87,7 +87,7 @@
 
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css">
+                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css,jquery_ui_source,jqgrid_locale_en_source,jqgrid_source,stickykit_source,tether_source,drop_source,wizard_source">
                                                         <div class="fuelux">
                                                             <div class="wizard" data-initialize="wizard"  id="my_wizard">
                                                                 <div class="steps-container">
@@ -202,14 +202,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
         <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
-
-        <script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
-        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js"></script>
-        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js"></script>
-        <script src="../dist/plugins/stickyKit/stickyKit.min.js"></script>
-        <script src="../dist/plugins/tether/tether.min.js"></script>
-        <script src="../dist/plugins/drop/drop.min.js"></script>
-
+        <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
+        <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
+        <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
+        <script src="../dist/plugins/stickyKit/stickyKit.min.js" data-dependency-name="stickykit_source"></script>
+        <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
+        <script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
