@@ -118,7 +118,7 @@
                                                                                     <div class="row">
                                                                                         <div class="col-sm-2">
                                                                                             <div class="form-group">
-                                                                                                <label class="control-label" for="type">Select file type for download</label>
+                                                                                                <label class="control-label" for="type">File type</label>
                                                                                                 <select class="form-control" name="type" id="file_type">
                                                                                                     <option value="0"></option>
                                                                                                     <option value="1">XLS</option>
@@ -157,7 +157,7 @@
                                                                                             <div class="sk-circle11 sk-circle"></div>
                                                                                             <div class="sk-circle12 sk-circle"></div>
                                                                                         </div>
-                                                                                        <strong>Zipping your file</strong>
+                                                                                        <strong>Zipping your file(s)</strong>
                                                                                     </div>
                                                                                     <div class="file-ready">
                                                                                         <p><i class="fa fa-check text-success fa-3x" aria-hidden="true"></i></p>
