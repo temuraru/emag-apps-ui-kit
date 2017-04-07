@@ -11282,7 +11282,7 @@ body {
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
-  background-color: #000;
+  background-color: #222;
 }
 .sidebar-inverse .sidebar-inner .menu-item a:active,
 .sidebar-inverse .sidebar-inner .menu-item a:focus,
