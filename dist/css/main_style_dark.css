@@ -10517,7 +10517,7 @@ button.close {
   box-shadow: none;
 }
 .navbar-inverse .form-control,
-.navbar .nav-search .form-control:focus,
+.navbar-inverse .nav-search .form-control:focus,
 .navbar-inverse .input-group-btn .btn {
   border-color: #fff;
 }
