@@ -10576,6 +10576,9 @@ button.close {
   .navbar-blue .navbar-nav > li {
     border-right: 1px solid #0084ff;
   }
+  .navbar-blue .navbar-nav > li:last-child {
+    border-right: none;
+  }
 }
 .navbar-blue .nav-search input[type=text]:focus + div button {
   color: #005eb7;
@@ -10605,6 +10608,9 @@ button.close {
   }
   .navbar-green .navbar-nav > li {
     border-right: 1px solid #4db250;
+  }
+  .navbar-green .navbar-nav > li:last-child {
+    border-right: none;
   }
 }
 .navbar-green .nav-search input[type=text]:focus + div button {
@@ -10636,6 +10642,9 @@ button.close {
   .navbar-purple .navbar-nav > li {
     border-right: 1px solid #d958db;
   }
+  .navbar-purple .navbar-nav > li:last-child {
+    border-right: none;
+  }
 }
 .navbar-purple .nav-search input[type=text]:focus + div button {
   color: #ad46ae;
@@ -10666,6 +10675,9 @@ button.close {
   .navbar-cyan .navbar-nav > li {
     border-right: 1px solid #00bfe0;
   }
+  .navbar-cyan .navbar-nav > li:last-child {
+    border-right: none;
+  }
 }
 .navbar-cyan .nav-search input[type=text]:focus + div button {
   color: #008299;
@@ -10695,6 +10707,9 @@ button.close {
   }
   .navbar-brown .navbar-nav > li {
     border-right: 1px solid #e8c4b7;
+  }
+  .navbar-brown .navbar-nav > li:last-child {
+    border-right: none;
   }
 }
 .navbar-brown .nav-search input[type=text]:focus + div button {
