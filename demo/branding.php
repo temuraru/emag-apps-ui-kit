@@ -102,6 +102,32 @@
                                 </div>
                             </div>
                         </section>
+                        <section id="navigationColours" class="pad-top-40">
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h2><strong>Navigation colors</strong></h2>
+                                    <div class="pad-sep-20">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+                                                    To change navigation colors, use <mark>navbar-inverse</mark> alone or in combination with one of the following classes: <mark>'navbar-blue', 'navbar-green', 'navbar-purple', 'navbar-cyan', 'navbar-brown'</mark>. For sidebar use one of the following classes: <mark>'sidebar-inverse', 'sidebar-blue', 'sidebar-green', 'sidebar-purple', 'sidebar-cyan', 'sidebar-brown'</mark>.
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <button type="button" class="btn btn-default scheme-inverse">Inverse</button>
+                                                <button type="button" class="btn btn-default scheme-blue">Blue</button>
+                                                <button type="button" class="btn btn-default scheme-green">Green</button>
+                                                <button type="button" class="btn btn-default scheme-purple">Purple</button>
+                                                <button type="button" class="btn btn-default scheme-cyan">Cyan</button>
+                                                <button type="button" class="btn btn-default scheme-brown">Brown</button>
+                                                <button type="button" class="btn btn-default scheme-default">Default</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <section id="typography" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
@@ -242,7 +268,40 @@
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">               
             $(document).ready(function () {
-                console.log('Ready, Captain!');
+                var schemeClasses = ['default', 'inverse', 'blue', 'green', 'purple', 'cyan', 'brown'];
+
+                function removeClasses() {
+                    for (var i = 0; i < schemeClasses.length; i++) {
+                        $('.navbar-' + schemeClasses[i]).removeClass('navbar-' + schemeClasses[i]);
+                        $('.sidebar-' + schemeClasses[i]).removeClass('sidebar-' + schemeClasses[i]);
+                    }
+                }
+
+                function changeLogo(scheme) {
+                    if (scheme == 'default') {
+                        $('.navbar-brand').html('<img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">');
+                    } else {
+                        $('.navbar-brand').html('<img src="img/logo-eMAG-apps-ui-kit-white.png" alt="Demo">');
+                    }
+                }
+
+                function addClasses(color) {
+                    $navbar = $('.navbar');
+                    if (color == "default") {
+                        $navbar.addClass('navbar-' + color);
+                    } else {
+                        $navbar.addClass('navbar-inverse').addClass('navbar-' + color);
+                        $('#sidebar').addClass('sidebar-' + color);
+                    }
+                }
+
+                for (var i = 0; i < schemeClasses.length; i++) {
+                    $('.scheme-' + schemeClasses[i]).on('click', {color: schemeClasses[i]}, function (e) {
+                        removeClasses();
+                        addClasses(e.data.color);
+                        changeLogo(e.data.color);
+                    });
+                }
 
                 demoHelpers();  // Require demo_helpers.js
             });

@@ -10580,6 +10580,10 @@ button.close {
 .navbar-blue .nav-search input[type=text]:focus + div button {
   color: #005eb7;
 }
+.navbar-blue .navbar-collapse,
+.navbar-blue .navbar-inverse .navbar-form {
+  border-color: #0084ff;
+}
 .navbar-green {
   background-color: #38833a;
   border-color: #4db250;
@@ -10605,6 +10609,10 @@ button.close {
 }
 .navbar-green .nav-search input[type=text]:focus + div button {
   color: #38833a;
+}
+.navbar-green .navbar-collapse,
+.navbar-green .navbar-inverse .navbar-form {
+  border-color: #4db250;
 }
 .navbar-purple {
   background-color: #ad46ae;
@@ -10632,6 +10640,10 @@ button.close {
 .navbar-purple .nav-search input[type=text]:focus + div button {
   color: #ad46ae;
 }
+.navbar-purple .navbar-collapse,
+.navbar-purple .navbar-inverse .navbar-form {
+  border-color: #d958db;
+}
 .navbar-cyan {
   background-color: #008299;
   border-color: #00bfe0;
@@ -10658,6 +10670,10 @@ button.close {
 .navbar-cyan .nav-search input[type=text]:focus + div button {
   color: #008299;
 }
+.navbar-cyan .navbar-collapse,
+.navbar-cyan .navbar-inverse .navbar-form {
+  border-color: #00bfe0;
+}
 .navbar-brown {
   background-color: #a1887f;
   border-color: #e8c4b7;
@@ -10683,6 +10699,10 @@ button.close {
 }
 .navbar-brown .nav-search input[type=text]:focus + div button {
   color: #a1887f;
+}
+.navbar-brown .navbar-collapse,
+.navbar-brown .navbar-inverse .navbar-form {
+  border-color: #e8c4b7;
 }
 html {
   position: relative;
