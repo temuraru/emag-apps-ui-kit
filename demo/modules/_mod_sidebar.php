@@ -83,6 +83,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/branding.php#navigationThemes">
+                                <span class="menu-text">Navigation themes</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/branding.php#typography">
                                 <span class="menu-text">Typography</span>
                             </a>
