@@ -102,6 +102,46 @@
                                 </div>
                             </div>
                         </section>
+                        <section id="navigationThemes" class="pad-top-40">
+                            <div class="show-panel">
+                                <div class="show-panel-body">
+                                    <h2><strong>Navigation themes</strong></h2>
+                                    <div class="pad-sep-20">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+                                                    To change the navigation theme, use <mark>navbar-inverse</mark> alone or in combination with one of the following classes: <mark>'navbar-blue', 'navbar-green', 'navbar-purple', 'navbar-cyan', 'navbar-brown'</mark>. For sidebar use one of the following classes: <mark>'sidebar-inverse', 'sidebar-blue', 'sidebar-green', 'sidebar-purple', 'sidebar-cyan', 'sidebar-brown'</mark>.
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <p><strong>Inverse theme</strong><button type="button" class="btn btn-default scheme-inverse mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/inverse-theme-preview.png" alt="Inverse theme" class="img-responsive mg-50 no-margin-top no-margin-left-right">
+
+                                                <p><strong>Blue theme</strong> <button type="button" class="btn btn-default scheme-blue mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/blue-theme-preview.png" alt="Blue theme" class="img-responsive mg-50 no-margin-top no-margin-left-right">
+
+                                                <p><strong>Green theme</strong> <button type="button" class="btn btn-default scheme-green mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/green-theme-preview.png" alt="Green theme" class="img-responsive mg-50 no-margin-top no-margin-left-right">
+
+                                                <p><strong>Purple theme</strong> <button type="button" class="btn btn-default scheme-purple mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/purple-theme-preview.png" alt="Purple theme" class="img-responsive mg-50 no-margin-top no-margin-left-right">
+
+                                                <p><strong>Cyan theme</strong> <button type="button" class="btn btn-default scheme-cyan mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/cyan-theme-preview.png" alt="Cyan theme" class="img-responsive mg-50 no-margin-top no-margin-left-right">
+
+                                                <p><strong>Brown theme</strong> <button type="button" class="btn btn-default scheme-brown mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/brown-theme-preview.png" alt="Brown theme" class="img-responsive mg-50 no-margin-top no-margin-left-right">
+
+                                                <p><strong>Default theme</strong> <button type="button" class="btn btn-default scheme-default mg-15 no-margin-top-bottom">Apply</button></p>
+                                                <img src="img/default-theme-preview.png" alt="Default theme" class="img-responsive">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <section id="typography" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
@@ -242,7 +282,40 @@
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">               
             $(document).ready(function () {
-                console.log('Ready, Captain!');
+                var schemeClasses = ['default', 'inverse', 'blue', 'green', 'purple', 'cyan', 'brown'];
+
+                function removeClasses() {
+                    for (var i = 0; i < schemeClasses.length; i++) {
+                        $('.navbar-' + schemeClasses[i]).removeClass('navbar-' + schemeClasses[i]);
+                        $('.sidebar-' + schemeClasses[i]).removeClass('sidebar-' + schemeClasses[i]);
+                    }
+                }
+
+                function changeLogo(scheme) {
+                    if (scheme == 'default') {
+                        $('.navbar-brand').html('<img src="img/logo-eMAG-apps-ui-kit.png" alt="Demo">');
+                    } else {
+                        $('.navbar-brand').html('<img src="img/logo-eMAG-apps-ui-kit-white.png" alt="Demo">');
+                    }
+                }
+
+                function addClasses(color) {
+                    $navbar = $('.navbar');
+                    if (color == "default") {
+                        $navbar.addClass('navbar-' + color);
+                    } else {
+                        $navbar.addClass('navbar-inverse').addClass('navbar-' + color);
+                        $('#sidebar').addClass('sidebar-' + color);
+                    }
+                }
+
+                for (var i = 0; i < schemeClasses.length; i++) {
+                    $('.scheme-' + schemeClasses[i]).on('click', {color: schemeClasses[i]}, function (e) {
+                        removeClasses();
+                        addClasses(e.data.color);
+                        changeLogo(e.data.color);
+                    });
+                }
 
                 demoHelpers();  // Require demo_helpers.js
             });

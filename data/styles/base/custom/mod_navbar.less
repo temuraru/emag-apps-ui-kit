@@ -260,3 +260,82 @@
         }
     }
 }
+
+.navbar-inverse .navbar-text,
+.navbar-inverse .navbar-nav > li > a {
+  color: @white;
+}
+
+.navbar-inverse {
+  border-color: @navbar-inverse-border-color;
+  border-bottom: 1px solid @navbar-inverse-border-color;
+  box-shadow: none;
+}
+
+.navbar-inverse .form-control,
+.navbar-inverse .nav-search .form-control:focus,
+.navbar-inverse .input-group-btn .btn
+{
+  border-color: @white;
+}
+
+.navbar-inverse .navbar-brand {
+  border-right: 1px solid @navbar-inverse-border-color;
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li:first-child {
+    border-left: 1px solid @navbar-inverse-border-color;
+  }
+
+  .navbar-inverse .navbar-nav > li {
+    border-right: 1px solid @navbar-inverse-border-color;
+  }
+}
+
+.navbar-inverse .btn,
+.navbar-inverse .nav-search input[type=text],
+.navbar-inverse .nav-search .btn-default {
+  background: transparent;
+  color: @white
+}
+
+.navbar-inverse .btn.focus,
+.navbar-inverse .btn:focus,
+.navbar-inverse .btn:hover {
+  background: transparent;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: @black;
+}
+
+.navbar-inverse .nav-search input[type=text]:focus,
+.navbar-inverse .nav-search input[type=text]:focus + div button {
+  background: @white;
+  color: @black
+}
+
+.navbar-blue {
+  .navbar-color(@navbar-blue-background-color, @navbar-blue-background-color-hover, @navbar-blue-border-color);
+}
+
+.navbar-green {
+  .navbar-color(@navbar-green-background-color, @navbar-green-background-color-hover, @navbar-green-border-color);
+}
+
+.navbar-purple {
+  .navbar-color(@navbar-purple-background-color, @navbar-purple-background-color-hover, @navbar-purple-border-color);
+}
+
+.navbar-cyan {
+  .navbar-color(@navbar-cyan-background-color, @navbar-cyan-background-color-hover, @navbar-cyan-border-color);
+}
+
+.navbar-brown {
+  .navbar-color(@navbar-brown-background-color, @navbar-brown-background-color-hover, @navbar-brown-border-color);
+}
