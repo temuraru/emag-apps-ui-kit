@@ -106,41 +106,41 @@
 
             var noItemMatchedContent =
                 '<div class="row no-item-matched hidden">' +
-                    '<div class="col-lg-12">' +
-                        '<div class="alert alert-info text-center no-margin-top-bottom">' +
-                            $this.options.noResults +
-                        '</div>' +
-                    '</div>' +
+                '<div class="col-lg-12">' +
+                '<div class="alert alert-info text-center no-margin-top-bottom">' +
+                $this.options.noResults +
+                '</div>' +
+                '</div>' +
                 '</div>';
 
             var modalContent =
                 '<div class="row">' +
-                    '<div class="col-lg-12">' +
-                        '<div>' +
-                            '<label for="' + $this.options.treeSearchId + '">' + $this.options.searchPlaceholder + '</label>' +
-                            '<div class="input-group input-group-no-separation">' +
-                                '<input type="text" id="' + $this.options.treeSearchId + '" class="form-control">' +
-                                '<span class="input-group-addon"><i class="fa fa-search"></i></span>' +
-                            '</div>' +
-                        '</div>' +
-                    '</div>' +
+                '<div class="col-lg-12">' +
+                '<div>' +
+                '<label for="' + $this.options.treeSearchId + '">' + $this.options.searchPlaceholder + '</label>' +
+                '<div class="input-group input-group-no-separation">' +
+                '<input type="text" id="' + $this.options.treeSearchId + '" class="form-control">' +
+                '<span class="input-group-addon"><i class="fa fa-search"></i></span>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
                 '</div>' +
                 '<div class="row">' +
-                    '<div class="col-lg-6">' +
-                        '<div class="checkbox">' +
-                            '<label>' +
-                                '<input type="checkbox" id="' + this.options.treeUnmatchedId + '" ' + unmatched + ' class="form-checkbox-control" /> ' + $this.options.textUnmatched + ' ' +
-                            '</label>' +
-                        '</div>' +
-                    '</div>';
+                '<div class="col-lg-6">' +
+                '<div class="checkbox">' +
+                '<label>' +
+                '<input type="checkbox" id="' + this.options.treeUnmatchedId + '" ' + unmatched + ' class="form-checkbox-control" /> ' + $this.options.textUnmatched + ' ' +
+                '</label>' +
+                '</div>' +
+                '</div>';
             if ($this.options.selectOnlyLeaves == false) {
                 modalContent +=
                     '<div class="col-lg-6">' +
-                        '<div class="checkbox">' +
-                            '<label>' +
-                                '<input type="checkbox" id="' + this.options.treeSelectHierarchyId + '" ' + selectHierarchyChecked + ' class="form-checkbox-control" /> ' + $this.options.textSelectHierarchy + ' ' +
-                            '</label>' +
-                        '</div>' +
+                    '<div class="checkbox">' +
+                    '<label>' +
+                    '<input type="checkbox" id="' + this.options.treeSelectHierarchyId + '" ' + selectHierarchyChecked + ' class="form-checkbox-control" /> ' + $this.options.textSelectHierarchy + ' ' +
+                    '</label>' +
+                    '</div>' +
                     '</div>';
             }
 
@@ -150,9 +150,9 @@
             modalContent +=
                 '</div>' +
                 '<div class="row">' +
-                    '<div class="col-lg-12">' +
-                        '<div id="' + $this.options.treeId + '"' + fancytreeDisabledClass + '></div>' +
-                    '</div>' +
+                '<div class="col-lg-12">' +
+                '<div id="' + $this.options.treeId + '"' + fancytreeDisabledClass + '></div>' +
+                '</div>' +
                 '</div>' + noItemMatchedContent;
 
             $this.modal = new PhotonModal({
@@ -216,7 +216,6 @@
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
-                $this._resetSearch();
                 $this._syncSelectToTree();
             });
 
@@ -362,17 +361,22 @@
             });
         },
 
-        _syncSelectToTree: function() {
+        _syncSelectToTree: function () {
             var $this = this;
 
             /** Reset search */
             $this._resetSearch();
 
             /** Uncheck all tree items */
-            $this.$tree.visit(function(node){
+            var selectedNodes = $this.$tree.getSelectedNodes();
+            $(selectedNodes).each(function (index, node) {
                 $this.programmaticallyNodeSelection = true;
 
-                node.setExpanded(false);
+                var parents = node.getParentList();
+                $(parents).each(function (index, parentNode) {
+                    parentNode.setExpanded(false, {noAnimation: false});
+                });
+
                 node.setSelected(false);
 
                 $this.programmaticallyNodeSelection = false;
@@ -418,7 +422,7 @@
             $('#' + $this.options.selectId + ' option:selected').removeAttr('selected');
             $('#' + $this.options.selectId + ' option:selected').prop('selected', false);
 
-            $(selected).each(function(){
+            $(selected).each(function () {
                 if ( $('#' + $this.options.selectId + ' option[value="' + this.key + '"]').length == 0 ) {
                     $('<option/>', {
                         value: this.key,
@@ -596,7 +600,6 @@
             $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
             /** Regex for finding the pattern in node title */
-            //var rex = new RegExp(searchString, 'i');
             var matchesNo = this.$tree.filterNodes(function (node) {
                 $this._addCollapseIcon(node);
 
@@ -608,7 +611,7 @@
                         //count visible nodes from tree
                         var howManyVisibleNodes = 0;
                         //the icon could not be hidden if the node was not collapsed - so it should come collapsed by default
-                        node.setExpanded(false);
+                        node.setExpanded(false, {noAnimation: false});
 
                         if (node.children) {
                             //get all nodes recursively - even children of children
