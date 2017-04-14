@@ -26,7 +26,16 @@
          * @return {string}
          */
         this.dateTime = function (item) {
-            return dateTimeFormatter(item, 'datetime');
+            return dateTimeFormatter(item, 'datetime', false);
+        };
+
+        /**
+         * DateTime Formatter without icon
+         * @param item
+         * @return {string}
+         */
+        this.dateTimeNoIcon = function (item) {
+            return dateTimeFormatter(item, 'datetime', true);
         };
 
         /**
@@ -35,7 +44,16 @@
          * @return {string}
          */
         this.date = function (item) {
-            return dateTimeFormatter(item, 'date');
+            return dateTimeFormatter(item, 'date', false);
+        };
+
+        /**
+         * Date Formatter without icon
+         * @param item
+         * @return {string}
+         */
+        this.dateNoIcon = function (item) {
+            return dateTimeFormatter(item, 'date', true);
         };
 
         /**
@@ -44,7 +62,16 @@
          * @return {string}
          */
         this.time = function (item) {
-            return dateTimeFormatter(item, 'time');
+            return dateTimeFormatter(item, 'time', false);
+        };
+
+        /**
+         * Time Formatter without icon
+         * @param item
+         * @return {string}
+         */
+        this.timeNoIcon = function (item) {
+            return dateTimeFormatter(item, 'time', true);
         };
 
         /**
@@ -68,29 +95,16 @@
          * @return {string}
          */
         this.userEmail = function (item) {
-            var i = getItemStatus(item);
+            return userEmailFormatter(item, false);
+        };
 
-            if (i.hasNoValue || i.isNumber) {
-                return self.notAvailable();
-            }
-
-            if (i.isString && !i.isJson) {
-                return userEmailFormatterString(item);
-            }
-
-
-            if (i.isJson || i.isObject) {
-                var userEmail = item;
-                if (i.isJson) {
-                    var userEmail = JSON.parse(item);
-                }
-
-                userEmail.user = getUser(userEmail);
-
-                return userEmailFormatterString(userEmail.email, userEmail.user);
-            }
-
-            return item;
+        /**
+         * Cell UserEmail Formatter without icon
+         * @param item
+         * @return {string}
+         */
+        this.userEmailNoIcon = function (item) {
+            return userEmailFormatter(item, true);
         };
 
         /**
@@ -363,7 +377,7 @@
          * @param type - Possible values: 'datetime', 'date', 'time'
          * @return {string}
          */
-        function dateTimeFormatter(item, type) {
+        function dateTimeFormatter(item, type, noIcon) {
             if ($.inArray(type, ['datetime', 'date', 'time']) == -1) {
                 return item;
             }
@@ -381,11 +395,11 @@
                 }
 
                 if (type == 'datetime') {
-                    return dateTimeFormatterString({date: dateTimeArray[0], time: dateTimeArray[1]}, type);
+                    return dateTimeFormatterString({date: dateTimeArray[0], time: dateTimeArray[1]}, type, noIcon);
                 } else {
                     var dateOrTime = {};
                     dateOrTime[type] = dateTimeArray[0];
-                    return dateTimeFormatterString(dateOrTime, type);
+                    return dateTimeFormatterString(dateOrTime, type, noIcon);
                 }
             }
 
@@ -395,7 +409,7 @@
                     dateTimeObject = JSON.parse(item);
                 }
 
-                return dateTimeFormatterString(dateTimeObject, type);
+                return dateTimeFormatterString(dateTimeObject, type, noIcon);
             }
 
             return item;
@@ -407,16 +421,24 @@
          * @param type - Possible values: 'datetime', 'date', 'time'
          * @return {string}
          */
-        function dateTimeFormatterString (dateTime, type) {
+        function dateTimeFormatterString (dateTime, type, noIcon) {
             var result = '<span class="formatter-' + type + '">';
 
+            var iconCalendar = '<i class="fa fa-calendar"></i>' + ' ';
+            var iconClock = '<i class="fa fa-clock-o"></i>' + ' ';
+
+            if (noIcon == true) {
+                iconCalendar = '';
+                iconClock = '';
+            }
+
             if (dateTime.date != '' && dateTime.date != null && typeof(dateTime.date) == 'string') {
-                result += '<span class="text-nowrap"><i class="fa fa-calendar"></i>' + ' ' + dateTime.date + '</span> ';
+                result += '<span class="text-nowrap">'+ iconCalendar + dateTime.date + '</span> ';
             }
 
             if (dateTime.time != '' && dateTime.time != null && typeof(dateTime.time) == 'string') {
                 dateTime.time = timeRemoveMicroseconds(dateTime.time);
-                result += '<span class="text-nowrap"><i class="fa fa-clock-o"></i>' + ' ' + dateTime.time + '</span> ';
+                result += '<span class="text-nowrap">'+ iconClock + dateTime.time + '</span> ';
             }
 
             result += '</span>';
@@ -434,13 +456,52 @@
         }
 
         /**
+         * Create UserEmail formatter
+         * @param item
+         * @param noIcon - Possible values: false, true
+         * @return {string}
+         */
+        function userEmailFormatter (item, noIcon) {
+            var i = getItemStatus(item);
+
+            if (i.hasNoValue || i.isNumber) {
+                return self.notAvailable();
+            }
+
+            if (i.isString && !i.isJson) {
+                return userEmailFormatterString(item, '', noIcon);
+            }
+
+
+            if (i.isJson || i.isObject) {
+                var userEmail = item;
+                if (i.isJson) {
+                    var userEmail = JSON.parse(item);
+                }
+
+                userEmail.user = getUser(userEmail);
+
+                return userEmailFormatterString(userEmail.email, userEmail.user, noIcon);
+            }
+
+            return item;
+        };
+
+        /**
          * Generate UserEmail formatter's string
          * @param email
          * @param user
          * @return {string}
          */
-        function userEmailFormatterString (email, user) {
-            var result = '<span class="formatter-useremail"><i class="fa fa-user"></i> <a href="mailto:' + email + '">';
+        function userEmailFormatterString (email, user, noIcon) {
+            var result = '';
+
+            var icon = '<i class="fa fa-user"></i> ';
+            if (noIcon == true) {
+                icon = '';
+            }
+
+            result = '<span class="formatter-useremail">' + icon + '<a href="mailto:' + email + '">';
 
             if (user != '' && user != null && typeof(user) == 'string') {
                 result += user;
