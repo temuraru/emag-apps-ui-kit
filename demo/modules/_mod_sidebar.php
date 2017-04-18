@@ -274,8 +274,18 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-no-data">
+                                        <span class="menu-text">With no data</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-data-formatters">
                                         <span class="menu-text">With data formatters</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-lot-of-columns-and-data-formatters">
+                                        <span class="menu-text">With lot of columns and data formatters</span>
                                     </a>
                                 </li>
                             </ul>
