@@ -500,6 +500,7 @@
 
                             <a href="#" name="jqGrid-with-lot-of-columns-and-data-formatters" class="title-anchor">&nbsp;</a>
 
+
                             <div class="code-container">
                                 <div class="row code-header no-border-top">
                                     <div class="col-xs-8 module-description">
@@ -533,6 +534,14 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="alert alert-info mg-15 no-margin-bottom " role="alert">
+                                                    <p><i class="fa fa-info-circle"></i>
+                                                        When having pages <strong>with heavy visual load</strong> it is not recommended to use additional graphical elements like icons, especially if the meaning of each displayed value is clear and self-explanatory. </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jq_with_lot_of_columns_and_data_formatters_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20">
                                                 <h5 class="no-margin-top text-danger"><strong>Not recommended</strong></h5>
