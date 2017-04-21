@@ -46,7 +46,11 @@
                 var jqGridOverlay = _getJqGridOverlay();
                 jqGridOverlay.addClass('custom-overlay');
             },
-
+            beforeRequest:function(){
+                var jqGridOverlay = _getJqGridOverlay();
+                //Make overlay background active
+                jqGridOverlay.addClass('custom-overlay');
+            },
             mergeLoadComplete: true,
             loadComplete: function () {
                 var jqGridOverlay = _getJqGridOverlay();
