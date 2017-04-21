@@ -356,7 +356,11 @@
                             </a>
                         </li>
 
-
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_chart.php">
+                                <span class="menu-text">Charts & stats</span>
+                            </a>
+                        </li>
 
 
                         <li class="menu-item">
