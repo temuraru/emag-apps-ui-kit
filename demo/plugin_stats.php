@@ -9,77 +9,7 @@
         <link rel="stylesheet" href="../dist/plugins/chart/chart.min.css" data-dependency-name="chart_css">
         
         <?php include_once "modules/_mod_top_include.php"?>
-        <style>
-            .value-box {
-                padding: 10px;
-                border: 1px solid #cccccc;
-                box-sizing: border-box;
-            }
 
-            .value-box .value {
-                font-size: 38px;
-                font-weight: bold;
-            }
-
-            .value-box.value-box-inverse {
-                background: #000000;
-                color: #fff;
-                border: 1px solid #000000;
-            }
-
-            .value-box.value-box-primary {
-                background: #005eb7;
-                border: 1px solid #005eb7;
-            }
-
-            .value-box.value-box-info {
-                background: #2790f3;
-                border: 1px solid #2790f3;
-            }
-
-            .value-box.value-box-success {
-                background: #38833a;
-                border: 1px solid #38833a;
-            }
-
-            .value-box.value-box-warning {
-                background: #f4b350;
-                border: 1px solid #f4b350;
-            }
-
-            .value-box.value-box-danger {
-                background: #e1302b;
-                border: 1px solid #e1302b;
-            }
-
-            .value-box.value-box-disabled {
-                background: #c3c3c3;
-                border: 1px solid #c3c3c3;
-                pointer-events: none;
-            }
-
-            .flex-container {
-                display: flex;
-                -webkit-flex-flow: row wrap;
-                justify-content: flex-start;
-            }
-
-            .row.flex-container:after, .row.flex-container:before {
-                content: none;
-            }
-
-            .flex-container > div {
-                padding: 15px;
-                display: flex;
-                align-items: stretch;
-            }
-
-            .flex-container > div > div {
-                width: 100%;
-            }
-
-
-        </style>
     </head>
         <?php include_once "modules/_mod_browser_upgrade.php"?>
 
@@ -101,7 +31,7 @@
                             <div class="jumbotron content-header">
                                 <div class="container-fluid">
                                     <p>eMAG Apps UI KIT</p>
-                                    <p><b>Chart.js</b></p>
+                                    <p><b>Stats</b></p>
                                 </div>
                             </div>
 
@@ -144,17 +74,14 @@
 
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,pie_chart_standard_init,chart_source,chart_css">
+                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script">
                                                         <div class="row">
                                                             <div class="col-md-12 col-lg-6">
-
-
-
                                                                 <div class="row flex-container">
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box">
-                                                                            <div class="value">123</div>
-                                                                            <div class="description">orders</div>
+                                                                            <div class="value">520</div>
+                                                                            <div class="description">messages</div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
@@ -166,28 +93,28 @@
 
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box value-box-inverse value-box-info">
-                                                                            <div class="value">123</div>
-                                                                            <div class="description">products added<br>products added<br>products added</div>
+                                                                            <div class="value">423</div>
+                                                                            <div class="description">products added</div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box value-box-inverse value-box-success">
-                                                                            <div class="value">123</div>
+                                                                            <div class="value">341</div>
                                                                             <div class="description">new users</div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box value-box-inverse value-box-warning">
-                                                                            <div class="value">123</div>
-                                                                            <div class="description">warnings<br>warnings</div>
+                                                                            <div class="value">84</div>
+                                                                            <div class="description">warnings</div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box value-box-inverse value-box-danger">
-                                                                            <div class="value">123</div>
+                                                                            <div class="value">88</div>
                                                                             <div class="description">cancelled orders</div>
                                                                         </div>
                                                                     </div>
@@ -195,22 +122,18 @@
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box  value-box-inverse">
                                                                             <div class="value">123</div>
-                                                                            <div class="description">disabled accounts</div>
+                                                                            <div class="description">accounts</div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-xs-12 col-sm-6 col-md-4">
                                                                         <div class="value-box  value-box-inverse value-box-disabled">
-                                                                            <div class="value">123</div>
+                                                                            <div class="value">87</div>
                                                                             <div class="description">disabled accounts</div>
                                                                         </div>
                                                                     </div>
-
                                                                 </div>
-
-
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -221,10 +144,10 @@
 
                             </section>
 
-                            <section id="chart_standard" class="pad-top-40">
+                            <section id="charts" class="pad-top-40">
                                 <div class="show-panel code-example">
                                     <div class="show-panel-body code-example">
-                                        <h2><strong>Charts & stats</strong></h2>
+                                        <h2><strong>Charts</strong></h2>
 
                                         <div class="row">
                                             <div class="col-sm-12 mg-top-20">
@@ -270,10 +193,10 @@
                                                 <div class="col-sm-12">
                                                     <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,pie_chart_standard_init,chart_source,chart_css">
                                                         <div class="row">
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-6 col-md-6 col-lg-3">
                                                                 <canvas id="my_pie_chart" width="400" height="400"></canvas>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-6 col-md-6 col-lg-3">
                                                                 <div id="pie_chart_legend" class="chart-legend"></div>
                                                             </div>
                                                         </div>
@@ -317,10 +240,10 @@
                                                 <div class="col-sm-12">
                                                     <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,line_chart_standard_init,chart_source,chart_css">
                                                         <div class="row">
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-6 col-md-6 col-lg-3">
                                                                 <canvas id="my_line_chart" width="400" height="400"></canvas>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-6 col-md-6 col-lg-3">
                                                                 <div id="line_chart_legend" class="chart-legend"></div>
                                                             </div>
                                                         </div>
