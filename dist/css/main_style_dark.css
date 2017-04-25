@@ -11046,7 +11046,7 @@ body {
   color: #005eb7;
   background-color: #eee;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active > a,
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a {
   color: #fff;
   background-color: #005eb7;
@@ -11107,7 +11107,7 @@ body {
 .sidebar .sidebar-inner .menu-item.menu-item-has-children .sidebar-submenu {
   display: none;
 }
-.sidebar .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a {
+.sidebar .sidebar-inner .menu-item.active > a {
   color: #fff;
   background-color: #005eb7;
 }
@@ -11273,12 +11273,16 @@ body {
 .navbar-fixed-top + .main-container {
   padding-top: 50px;
 }
-.sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+.sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+.sidebar-inverse .sidebar-inner > .menu-item.active a:active,
+.sidebar-inverse .sidebar-inner > .menu-item.active a:focus,
+.sidebar-inverse .sidebar-inner > .menu-item.active a:hover {
   color: #fff;
 }
-.sidebar-inverse .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-inverse .sidebar-inner .menu-item.active > a,
+.sidebar-inverse .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11298,12 +11302,16 @@ body {
 .sidebar-inverse .sidebar-control .sidebar-toggle .btn-link:hover {
   color: #000;
 }
-.sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+.sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+.sidebar-blue .sidebar-inner > .menu-item.active a:active,
+.sidebar-blue .sidebar-inner > .menu-item.active a:focus,
+.sidebar-blue .sidebar-inner > .menu-item.active a:hover {
   color: #fff;
 }
-.sidebar-blue .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-blue .sidebar-inner .menu-item.active > a,
+.sidebar-blue .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11323,12 +11331,16 @@ body {
 .sidebar-blue .sidebar-control .sidebar-toggle .btn-link:hover {
   color: #005eb7;
 }
-.sidebar-green.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+.sidebar-green.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+.sidebar-green .sidebar-inner > .menu-item.active a:active,
+.sidebar-green .sidebar-inner > .menu-item.active a:focus,
+.sidebar-green .sidebar-inner > .menu-item.active a:hover {
   color: #fff;
 }
-.sidebar-green .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-green.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-green.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-green .sidebar-inner .menu-item.active > a,
+.sidebar-green .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11348,12 +11360,16 @@ body {
 .sidebar-green .sidebar-control .sidebar-toggle .btn-link:hover {
   color: #38833a;
 }
-.sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+.sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+.sidebar-purple .sidebar-inner > .menu-item.active a:active,
+.sidebar-purple .sidebar-inner > .menu-item.active a:focus,
+.sidebar-purple .sidebar-inner > .menu-item.active a:hover {
   color: #fff;
 }
-.sidebar-purple .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-purple .sidebar-inner .menu-item.active > a,
+.sidebar-purple .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11373,12 +11389,16 @@ body {
 .sidebar-purple .sidebar-control .sidebar-toggle .btn-link:hover {
   color: #ad46ae;
 }
-.sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+.sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+.sidebar-cyan .sidebar-inner > .menu-item.active a:active,
+.sidebar-cyan .sidebar-inner > .menu-item.active a:focus,
+.sidebar-cyan .sidebar-inner > .menu-item.active a:hover {
   color: #fff;
 }
-.sidebar-cyan .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-cyan .sidebar-inner .menu-item.active > a,
+.sidebar-cyan .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11398,12 +11418,16 @@ body {
 .sidebar-cyan .sidebar-control .sidebar-toggle .btn-link:hover {
   color: #008299;
 }
-.sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+.sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+.sidebar-brown .sidebar-inner > .menu-item.active a:active,
+.sidebar-brown .sidebar-inner > .menu-item.active a:focus,
+.sidebar-brown .sidebar-inner > .menu-item.active a:hover {
   color: #fff;
 }
-.sidebar-brown .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-brown .sidebar-inner .menu-item.active > a,
+.sidebar-brown .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {

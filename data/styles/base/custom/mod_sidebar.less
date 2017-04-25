@@ -182,7 +182,7 @@
                  }
                }
                &.active {
-                 &:not(.menu-item-has-children) > a,
+                 & > a,
                  &.menu-item-has-children > a {
                    background-color: @sidebar-submenu-active-cell-bg;
                    color: @sidebar-submenu-active-cell-text;
@@ -262,11 +262,9 @@
            }
          }
          &.active {
-             &:not(.menu-item-has-children) {
-                 > a {
-                    background-color: @sidebar-menu-active-cell-bg;
-                    color: @sidebar-menu-active-cell-text;
-                 }
+             & > a {
+               background-color: @sidebar-menu-active-cell-bg;
+               color: @sidebar-menu-active-cell-text;
              }
              &.menu-item-has-children {
                  > a {
