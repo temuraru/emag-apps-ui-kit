@@ -11280,6 +11280,7 @@ body {
 .sidebar-inverse .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-inverse .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11305,6 +11306,7 @@ body {
 .sidebar-blue .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-blue .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11330,6 +11332,7 @@ body {
 .sidebar-green .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-green.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-green.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-green .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11355,6 +11358,7 @@ body {
 .sidebar-purple .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-purple .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11380,6 +11384,7 @@ body {
 .sidebar-cyan .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-cyan .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11405,6 +11410,7 @@ body {
 .sidebar-brown .sidebar-inner .menu-item.active.menu-item-has-children > a,
 .sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+.sidebar-brown .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
