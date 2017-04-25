@@ -28,13 +28,19 @@
 
 //generate sidebar colors
 .sidebar-color( @text-color; @background-color) {
-  &.sidebar-min .sidebar-inner > .menu-item.active:hover > a {
+  &.sidebar-min .sidebar-inner > .menu-item.active:hover > a,
+  .sidebar-inner > .menu-item.active a:active,
+  .sidebar-inner > .menu-item.active a:focus,
+  .sidebar-inner > .menu-item.active a:hover
+  {
     color: @white
   }
 
-  .sidebar-inner .menu-item.active.menu-item-has-children > a,
+
   &.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
   &.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
+  .sidebar-inner .menu-item.active > a,
+  .sidebar-inner .menu-item.active.menu-item-has-children > a,
   .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
   .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
   .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {

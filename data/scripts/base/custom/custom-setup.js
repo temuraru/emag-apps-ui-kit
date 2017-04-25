@@ -253,3 +253,19 @@ function addMoreActions(context) {
 $(window).on('resize', function () {
     realignNotifications();
 })
+
+const colorScheme = {
+    'brand_primary' : '#005eb7',
+    'brand_info' : '#2790f3',
+    'brand_success' : '#38833a',
+    'brand_warning' : '#f4b350',
+    'brand_danger' : '#e1302b',
+    'black' : '#000000',
+    'gray_76' : '#c3c3c3',
+    'gray_80' : '#cccccc',
+    'gray_87' : '#dedede',
+    'gray_93' : '#eeeeee',
+    'gray_96' : '#f6f6f6',
+    'gray_98' : '#fafafa',
+    'white' : '#ffffff',
+}

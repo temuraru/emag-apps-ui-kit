@@ -274,8 +274,18 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-no-data">
+                                        <span class="menu-text">With no data</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-data-formatters">
                                         <span class="menu-text">With data formatters</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-lot-of-columns-and-data-formatters">
+                                        <span class="menu-text">With lot of columns and data formatters</span>
                                     </a>
                                 </li>
                             </ul>
@@ -346,14 +356,31 @@
                             </a>
                         </li>
 
-
-
-
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/plugin_wysiwyg.php">
                                 <span class="menu-text">Wysiwyg editor</span>
                             </a>
                         </li>
+
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">
+                                <span class="menu-text">Stats</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_stats.php">
+                                        <span class="menu-text">Value box</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_stats.php#charts">
+                                        <span class="menu-text">Charts</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>
             </li>
