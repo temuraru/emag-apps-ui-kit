@@ -47,7 +47,7 @@
                             <a href="#" name="jqGrid-basic" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid basic</strong></h4>
                                     </div>
@@ -90,7 +90,7 @@
                             <a href="#" name="jqGrid-with-sticky-panels" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with sticky panels</strong></h4>
                                     </div>
@@ -133,7 +133,7 @@
                             <a href="#" name="jqGrid-with-column-chooser" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with column chooser</strong></h4>
                                     </div>
@@ -182,7 +182,7 @@
                             <a href="#" name="jqGrid-with-selectable-rows" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jgGrid with selectable rows</strong></h4>
                                     </div>
@@ -234,7 +234,7 @@
                             <a href="#" name="jqGrid-ierarchical-elements-tree" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
                                     </div>
@@ -277,7 +277,7 @@
                             <a href="#" name="jqGrid-with-subgrid" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with subgrid</strong></h4>
                                     </div>
@@ -320,7 +320,7 @@
                             <a href="#" name="jqGrid-with-inline-editing" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with inline editing</strong></h4>
                                     </div>
@@ -364,7 +364,7 @@
                             <a href="#" name="jqGrid-with-actions" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with actions</strong></h4>
                                     </div>
@@ -408,7 +408,7 @@
                             <a href="#" name="jqGrid-with-no-data" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with no data</strong></h4>
                                     </div>
@@ -451,7 +451,7 @@
                             <a href="#" name="jqGrid-with-data-formatters" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with data formatters</strong></h4>
                                     </div>
@@ -502,7 +502,7 @@
 
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>jqGrid with lot of columns and data formatters</strong></h4>
                                     </div>
