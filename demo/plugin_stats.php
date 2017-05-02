@@ -41,7 +41,7 @@
                                         <h2><strong>Value box</strong></h2>
 
                                         <div class="code-container">
-                                            <div class="row code-header no-border-top">
+                                            <div class="row flex-container code-header no-border-top">
                                                 <div class="col-xs-8 module-description">
                                                     <h4><b>Demo</b></h4>
                                                 </div>
@@ -158,7 +158,7 @@
                                         </div>
 
                                         <div class="code-container">
-                                            <div class="row code-header no-border-top">
+                                            <div class="row flex-container code-header no-border-top">
                                                 <div class="col-xs-8 module-description">
                                                     <h4><b>Pie chart</b></h4>
                                                 </div>
@@ -206,7 +206,7 @@
                                         </div>
 
                                         <div class="code-container">
-                                            <div class="row code-header no-border-top">
+                                            <div class="row flex-container code-header no-border-top">
                                                 <div class="col-xs-8 module-description">
                                                     <h4><b>Line chart</b></h4>
                                                 </div>

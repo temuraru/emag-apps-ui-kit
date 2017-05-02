@@ -57,7 +57,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Custom date format</b></h4>
                                     </div>
@@ -101,7 +101,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Phone format</b></h4>
                                     </div>
@@ -145,7 +145,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Serial number format</b></h4>
                                     </div>
@@ -189,7 +189,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Custom number formatting</b></h4>
                                     </div>
@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Message</b></h4>
                                     </div>
@@ -303,7 +303,7 @@
                             <h2><strong>File upload</strong></h2>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Style 1</strong></h4>
                                     </div>
@@ -349,7 +349,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Style 2</b></h4>
                                     </div>
@@ -394,7 +394,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Style 3</b></h4>
                                     </div>
@@ -465,7 +465,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Text input</strong></h4>
                                     </div>
@@ -527,7 +527,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Text input</strong></h4>
                                     </div>
@@ -588,7 +588,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Text input</strong></h4>
                                     </div>
@@ -670,7 +670,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Default</strong></h4>
                                     </div>
@@ -731,7 +731,7 @@
                             </div>
                             
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Autocomplete multiple</strong></h4>
                                     </div>
@@ -780,7 +780,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Autocomplete multiple with option groups (limited to 5)</strong></h4>
                                     </div>
@@ -839,7 +839,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Autocomplete single</strong></h4>
                                     </div>
@@ -887,7 +887,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Autocomplete single with option groups</strong></h4>
                                     </div>
@@ -946,7 +946,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Single select with disabled search</strong></h4>
                                     </div>

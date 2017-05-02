@@ -54,7 +54,7 @@
                                         </div>
 
                                         <div class="code-container">
-                                            <div class="row code-header no-border-top">
+                                            <div class="row flex-container code-header no-border-top">
                                                 <div class="col-xs-8 module-description">
                                                     <h4><b>Demo</b></h4>
                                                 </div>
