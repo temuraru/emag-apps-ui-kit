@@ -26,9 +26,10 @@
   .code-header {
     border-bottom: 1px solid @gray-80;
     margin: 20px 0 0 0;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
+
+    > div {
+      padding: 0 15px;
+    }
 
     .btn-source {
       border: 0;

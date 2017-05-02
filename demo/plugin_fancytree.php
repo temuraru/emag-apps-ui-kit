@@ -42,7 +42,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>In page</b></h4>
                                     </div>
@@ -82,7 +82,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Category tree</b></h4>
                                     </div>
@@ -178,7 +178,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Category tree disabled</b></h4>
                                     </div>
