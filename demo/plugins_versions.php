@@ -37,12 +37,9 @@
                             <h2><strong>Plugins versions</strong></h2>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-
-
                                     <table class="table table-bordered mg-top-30">
                                         <thead>
                                         <tr>
-
                                             <th>Name</th>
                                             <th>Version</th>
                                             <th>Observations</th>
@@ -62,7 +59,7 @@
                                         <tr>
                                             <td><a href="js_components.php#js-custom-notifications">Bootstrap notify</a></td>
                                             <td><span class="label label-info">3.1.5</span></td>
-                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
+                                            <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_stats.php#charts">Chart</a></td>
@@ -102,12 +99,12 @@
                                         <tr>
                                             <td><a href="plugin_fancytree.php">Fancytree</a><br>Using: jquery.fancytree.filter.js</td>
                                             <td><span class="label label-info">2.15</span><br><span class="label label-info">2.22.0</span></td>
-                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
+                                            <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td>Hierarchicalselect</td>
                                             <td><span class="label label-info">1.0.0</span></td>
-                                            <td><span class="label label-default">internal development</span></td>
+                                            <td><span class="label label-default">eMAG Apps UI KIT plugin</span></td>
                                         </tr>
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsTextareaWithInputLimiter">Input Limiter</a></td>
@@ -122,7 +119,7 @@
                                         <tr>
                                             <td><a href="plugin_jqgrid.php">jqGrid</a></td>
                                             <td><span class="label label-info">5.0.1</span></td>
-                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
+                                            <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td>jQuery Cookie</td>
@@ -153,7 +150,7 @@
                                         <tr>
                                             <td><a href="plugin_jqgrid.php#jqGrid-with-sticky-panels">Sticky-kit</a></td>
                                             <td><span class="label label-info">1.1.2</span></td>
-                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
+                                            <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wysiwyg.php">Summernote</a></td>
