@@ -62,7 +62,7 @@
                                         <tr>
                                             <td><a href="js_components.php#js-custom-notifications">Bootstrap notify</a></td>
                                             <td><span class="label label-info">3.1.5</span></td>
-                                            <td></td>
+                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_stats.php#charts">Chart</a></td>
@@ -72,7 +72,7 @@
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsChosenJsAutocomplete">Chosen</a></td>
                                             <td><span class="label label-info">1.4.2</span></td>
-                                            <td></td>
+                                            <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td>Countdown<br>Using: Moment-timezone</td>
@@ -92,7 +92,7 @@
                                         <tr>
                                             <td>Drop</td>
                                             <td><span class="label label-info">1.4.1</span></td>
-                                            <td></td>
+                                            <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td>Dropzone</td>
@@ -102,7 +102,7 @@
                                         <tr>
                                             <td><a href="plugin_fancytree.php">Fancytree</a><br>Using: jquery.fancytree.filter.js</td>
                                             <td><span class="label label-info">2.15</span><br><span class="label label-info">2.22.0</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
+                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
                                         </tr>
                                         <tr>
                                             <td>Hierarchicalselect</td>
@@ -153,7 +153,7 @@
                                         <tr>
                                             <td><a href="plugin_jqgrid.php#jqGrid-with-sticky-panels">Sticky-kit</a></td>
                                             <td><span class="label label-info">1.1.2</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
+                                            <td><span class="label label-warning">modified</span> <span class="label label-warning">wrapper</span></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wysiwyg.php">Summernote</a></td>
