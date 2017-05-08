@@ -2,7 +2,7 @@
     <div class="sidebar-outer">
         <ul class="sidebar-inner">
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/index.php">
+                <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/index.php">
                     <i class="menu-icon fa fa-flag-checkered"></i>
                     <span class="menu-text">Start</span>
                 </a>
@@ -25,12 +25,12 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/layout.php">
+                <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/layout.php">
                     <i class="menu-icon fa fa-columns"></i>
                     <span class="menu-text">Layout</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/layout.php" class="menu-item-min-link">
+                    <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/layout.php" class="menu-item-min-link">
                         <span class="menu-text">Layout</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -68,12 +68,12 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/branding.php">
+                <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/branding.php">
                     <i class="menu-icon fa fa-paint-brush"></i>
                     <span class="menu-text">Branding</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/branding.php" class="menu-item-min-link">
+                    <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/branding.php" class="menu-item-min-link">
                         <span class="menu-text">Branding</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -101,12 +101,12 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.php">
+                <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/css_components.php">
                     <i class="menu-icon fa fa-archive"></i>
                     <span class="menu-text">CSS Components</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/css_components.php" class="menu-item-min-link">
+                    <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/css_components.php" class="menu-item-min-link">
                         <span class="menu-text">CSS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -169,17 +169,17 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.php">
+                <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/js_components.php">
                     <i class="menu-icon fa fa-code"></i>
                     <span class="menu-text">JS Components</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" data-href="/emag-apps-ui-kit/demo/js_components.php" class="menu-item-min-link">
+                    <a href="javascript:void(0)" data-href="/emag-apps-ui-kit/demo/js_components.php" class="menu-item-min-link">
                         <span class="menu-text">JS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <span class="menu-text">Complex form elements</span>
                             </a>
                             <ul class="sidebar-submenu">
@@ -229,7 +229,7 @@
 
 
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <span class="menu-text">jQGrid</span>
                             </a>
                             <ul class="sidebar-submenu">
@@ -363,7 +363,7 @@
                         </li>
 
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <span class="menu-text">Stats</span>
                             </a>
                             <ul class="sidebar-submenu">
@@ -385,12 +385,12 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <i class="menu-icon fa fa-star"></i>
                     <span class="menu-text">Useful Pages</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" class="menu-item-min-link">
+                    <a href="javascript:void(0)" class="menu-item-min-link">
                         <span class="menu-text">Useful Pages</span>
                     </a>
                     <ul class="sidebar-submenu">
@@ -400,7 +400,7 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <span class="menu-text">Error pages</span>
                             </a>
                             <ul class="sidebar-submenu">
@@ -445,12 +445,12 @@
                 </div>
             </li>
             <li class="menu-item menu-item-has-children">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <i class="menu-icon fa fa-cog"></i>
                     <span class="menu-text">Technical details</span>
                 </a>
                 <div class="menu-item-data">
-                    <a href="#" class="menu-item-min-link">
+                    <a href="javascript:void(0)" class="menu-item-min-link">
                         <span class="menu-text">Technical details</span>
                     </a>
                     <ul class="sidebar-submenu">
