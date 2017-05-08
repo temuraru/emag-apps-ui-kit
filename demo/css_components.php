@@ -616,7 +616,7 @@
                                     <h2><strong>Tables</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Basic example</strong></h4>
                                             </div>
@@ -679,7 +679,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Striped rows</strong></h4>
                                             </div>
@@ -742,7 +742,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Bordered table</strong></h4>
                                             </div>
@@ -805,7 +805,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Hover rows</strong></h4>
                                             </div>
@@ -868,7 +868,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Condensed table</strong></h4>
                                             </div>
@@ -932,7 +932,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Resposive table</strong></h4>
                                             </div>
@@ -1016,7 +1016,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Contextual classes</strong></h4>
                                             </div>
@@ -1094,7 +1094,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Basic example</strong></h4>
                                             </div>
@@ -1161,7 +1161,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Inline form example</strong></h4>
                                             </div>
@@ -1223,7 +1223,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Horizontal form example</strong></h4>
                                             </div>
@@ -1290,7 +1290,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Form with column sizing example</strong></h4>
                                             </div>
@@ -1377,7 +1377,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Individual form controls</strong></h4>
                                             </div>
@@ -1425,7 +1425,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Form groups with labels and form controls. (only works with form-horizontal)</strong></h4>
                                             </div>
@@ -1485,7 +1485,7 @@
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Input</strong></h2>
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>States types</strong></h4>
                                             </div>
@@ -1549,7 +1549,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Validation types</strong></h4>
                                             </div>
@@ -1631,7 +1631,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Feedback types</strong></h4>
                                             </div>
@@ -1692,7 +1692,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default styles</strong></h4>
                                             </div>
@@ -1785,7 +1785,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Custom styles</strong></h4>
                                             </div>
@@ -1879,7 +1879,7 @@
                                     <h2><strong>Range input types</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default range input</strong></h4>
                                             </div>
@@ -1917,7 +1917,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Disabled range input</strong></h4>
                                             </div>
@@ -1959,7 +1959,7 @@
                                     <h2><strong>Input groups</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default</strong></h4>
                                             </div>
@@ -2034,7 +2034,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Input groups with checkboxes and radio buttons</strong></h4>
                                             </div>
@@ -2111,7 +2111,7 @@
                                     <h2><strong>Buttons</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default styling</strong></h4>
                                             </div>
@@ -2151,7 +2151,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Contextual classes</strong></h4>
                                             </div>
@@ -2200,7 +2200,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Button sizing</strong></h4>
                                             </div>
@@ -2236,7 +2236,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Button states</strong></h4>
                                             </div>
@@ -2281,7 +2281,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Button groups</strong></h4>
                                             </div>
@@ -2319,7 +2319,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Justified button groups</strong></h4>
                                             </div>
@@ -2369,7 +2369,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Button toolbar</strong></h4>
                                             </div>
@@ -2424,7 +2424,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Button groups sizing</strong></h4>
                                             </div>
@@ -2469,7 +2469,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Button blocks</strong></h4>
                                             </div>
@@ -2530,7 +2530,7 @@
                                     <h2><strong>CSS Flipswitch</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>CSS Flipswitch</strong></h4>
                                             </div>
@@ -2593,7 +2593,7 @@
                                     <h2><strong>Labels and badges</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default label</strong></h4>
                                             </div>
@@ -2628,7 +2628,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Contextual alternatives</strong></h4>
                                             </div>
@@ -2666,7 +2666,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default badge</strong></h4>
                                             </div>
@@ -2717,7 +2717,7 @@
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Alerts and notifications</strong></h2>
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Basic alerts</strong></h4>
                                             </div>
@@ -2763,7 +2763,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Dismissible alerts</strong></h4>
                                             </div>
@@ -2801,7 +2801,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Links in alerts</strong></h4>
                                             </div>
@@ -2839,7 +2839,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Alerts with buttons</strong></h4>
                                             </div>
@@ -2889,7 +2889,7 @@
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Progress Bars</strong></h2>
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Basic progress bar</strong></h4>
                                             </div>
@@ -2928,7 +2928,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Basic progress bar with label</strong></h4>
                                             </div>
@@ -2967,7 +2967,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Contextual alternatives</strong></h4>
                                             </div>
@@ -3010,7 +3010,7 @@
                                     </div>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Striped progress bars</strong></h4>
                                             </div>
@@ -3055,7 +3055,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Stacked progress bars</strong></h4>
                                             </div>
@@ -3121,7 +3121,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Basic panel</strong></h4>
                                             </div>
@@ -3163,7 +3163,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Contextual alternatives</strong></h4>
                                             </div>
@@ -3230,7 +3230,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Panel with table</strong></h4>
                                             </div>
@@ -3325,7 +3325,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Panel with standard list group</strong></h4>
                                             </div>
@@ -3401,7 +3401,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default styling</strong></h4>
                                             </div>
@@ -3454,7 +3454,7 @@
                                     <h2><strong>Embeds</strong></h2>
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
                                                 <h4><strong>Default styling</strong></h4>
                                             </div>

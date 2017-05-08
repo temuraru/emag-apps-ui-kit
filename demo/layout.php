@@ -125,7 +125,7 @@
                                     <h2><strong>Top Navigation</strong></h2>
                                     <p><strong>The top navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
                                     <div class="code-container">
-                                        <div class="row code-header no-border-top">
+                                        <div class="row flex-container code-header no-border-top">
                                             <div class="col-sm-8 module-description">
                                                 <h4><b>Basic top navigation</b></h4>
                                             </div>
@@ -181,7 +181,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-sm-8 module-description">
                                                 <h4><b>Top navigation with profile options</b></h4>
                                             </div>
@@ -251,7 +251,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-sm-8 module-description">
                                                 <h4><b>Top navigation with search bar and notifications</b></h4>
                                             </div>
@@ -342,7 +342,7 @@
 
 
                                     <div class="code-container">
-                                        <div class="row code-header">
+                                        <div class="row flex-container code-header">
                                             <div class="col-sm-8 module-description">
                                                 <h4><b>Top navigation with language selector and notifications</b></h4>
                                             </div>

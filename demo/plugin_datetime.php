@@ -45,7 +45,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Simple Date Picker</b></h4>
                                     </div>
@@ -94,7 +94,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Time Picker</b></h4>
                                     </div>
@@ -141,7 +141,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Date/Time Picker</b></h4>
                                     </div>
@@ -188,7 +188,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Date Range Picker</b></h4>
                                     </div>
@@ -236,7 +236,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Date/Time Range Picker</b></h4>
                                     </div>
@@ -301,7 +301,7 @@
 
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Standard</strong></h4>
                                     </div>
@@ -355,7 +355,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Standard with value</strong></h4>
                                     </div>
@@ -409,7 +409,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Standard with format</strong></h4>
                                     </div>
@@ -464,7 +464,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Standard with predefined intervals</strong></h4>
                                     </div>
@@ -519,7 +519,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Standard with predefined intervals whitout calendars</strong></h4>
                                     </div>

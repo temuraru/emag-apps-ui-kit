@@ -65,7 +65,7 @@
 
                             </div>
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Default styling</b></h4>
                                     </div>
@@ -142,7 +142,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Ajax modal</b></h4>
                                     </div>
@@ -178,7 +178,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Modals with different sizing</b></h4>
                                     </div>
@@ -220,7 +220,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Alert modals</b></h4>
                                     </div>
@@ -278,7 +278,7 @@
                                 </div>
                             </div>
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Notification types</b></h4>
                                     </div>
@@ -351,7 +351,7 @@
                             <h2><strong>Tooltips</strong></h2>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Types of tooltips</b></h4>
                                     </div>
@@ -403,7 +403,7 @@
                             <h2><strong>Popovers</strong></h2>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Types of popovers</b></h4>
                                     </div>
@@ -455,7 +455,7 @@
                             <h2><strong>Tabs</strong></h2>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Basic example</b></h4>
                                     </div>
@@ -524,7 +524,7 @@
                             <h2><strong>Utilities</strong></h2>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Checkboxes disguised as buttons</strong></h4>
                                     </div>
@@ -580,7 +580,7 @@
                             </div>
 
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><strong>Radio buttons disguised as regular buttons</strong></h4>
                                     </div>
@@ -648,7 +648,7 @@
                                 </div>
                             </div>
                             <div class="code-container">
-                                <div class="row code-header no-border-top">
+                                <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
                                         <h4><b>Demo</b></h4>
                                     </div>
