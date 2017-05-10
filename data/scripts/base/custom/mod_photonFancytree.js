@@ -83,6 +83,7 @@
              */
             $('#' + $this.options.selectId).on('change', function() {
                 $this._updateInfo();
+                $this._syncSelectToTree();
             });
 
             /**
@@ -94,6 +95,7 @@
                     $this._resetSearch();
                 }
                 $this._updateInfo();
+                $this._syncSelectToTree();
             });
         },
 
