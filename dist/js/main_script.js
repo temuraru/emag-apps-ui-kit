@@ -6944,7 +6944,6 @@ function showThisLoader(type, colorClass) {
 };
 
 (function ( $ ) {
-
     $.fn.blockControl = function(options) {
         var pageOverlay = false;
         var settings = $.extend({
@@ -6989,11 +6988,9 @@ function showThisLoader(type, colorClass) {
 }( jQuery ));
 
 (function ( $ ) {
-
     $.fn.unblockControl = function() {
         $(this).unblock();
     };
-
 }( jQuery ));
 
 (function ( $ ) {
@@ -7046,9 +7043,46 @@ function addMoreActions(context) {
     });
 }
 
+function correctSummerNoteFullscreenDimensions($button) {
+    var $noteEditor;
+    if ($button) {
+        $noteEditor = $button.parents('.note-editor.note-frame');
+    } else {
+        $noteEditor = $('.note-editor.note-frame').eq(0);
+    }
+    
+    if ($noteEditor.hasClass('fullscreen')) {
+        setTimeout(function () {
+            $noteEditor.css({
+                left: $('#sidebar').outerWidth(),
+                top: $('.navbar.navbar-fixed-top').outerHeight(),
+                width: ($(window).width() - $('#sidebar').outerWidth()),
+                height: ($(window).height() - $('.navbar.navbar-fixed-top').outerHeight())
+            });
+            $noteEditor.find('textarea.note-codable, .note-editable').css({
+                height: ($(window).height() - $('.navbar.navbar-fixed-top').outerHeight() - $noteEditor.find('.note-toolbar').outerHeight())
+            })
+        }, 0);
+    } else {
+        $noteEditor.css({
+            left: '',
+            top: '',
+            width: '',
+            height: ''
+        });
+    }
+}
+
 $(window).on('resize', function () {
     realignNotifications();
-})
+    correctSummerNoteFullscreenDimensions();
+});
+
+$(function() {
+    $('body').on('click', '.note-editor.note-frame .note-toolbar .note-btn.btn-fullscreen, .note-editor.note-frame .note-toolbar .note-btn.btn-codeview', function () {
+        correctSummerNoteFullscreenDimensions($(this));
+    })
+});
 
 const colorScheme = {
     'brand_primary' : '#005eb7',
