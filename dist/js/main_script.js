@@ -7050,7 +7050,7 @@ function correctSummerNoteFullscreenDimensions($button) {
     } else {
         $noteEditor = $('.note-editor.note-frame').eq(0);
     }
-
+    
     if ($noteEditor.hasClass('fullscreen')) {
         setTimeout(function () {
             $noteEditor.css({
@@ -7076,13 +7076,13 @@ function correctSummerNoteFullscreenDimensions($button) {
 $(window).on('resize', function () {
     realignNotifications();
     correctSummerNoteFullscreenDimensions();
-})
+});
 
 $(function() {
     $('body').on('click', '.note-editor.note-frame .note-toolbar .note-btn.btn-fullscreen, .note-editor.note-frame .note-toolbar .note-btn.btn-codeview', function () {
         correctSummerNoteFullscreenDimensions($(this));
     })
-})
+});
 
 const colorScheme = {
     'brand_primary' : '#005eb7',
