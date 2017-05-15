@@ -24,161 +24,160 @@
 
 
         <!-- PAGE:Start -->
-            <div class="main-container" id="main-container">
-                <div class="main-container-inner">
-                    <!-- SIDEBAR:Start -->
-                    <?php include_once "modules/_mod_sidebar.php"?>
-                    <!-- SIDEBAR:End -->
-                    
-                    <!-- CONTENT:Start -->
-                    <div class="main-content">
-                        <div class="page-content">
-                            <div class="jumbotron content-header">
-                                <div class="container-fluid">
-                                    <p>eMAG Apps UI KIT</p>
-                                    <p><b>Fuelux</b></p>
-                                </div>
+        <div class="main-container" id="main-container">
+            <div class="main-container-inner">
+                <!-- SIDEBAR:Start -->
+                <?php include_once "modules/_mod_sidebar.php"?>
+                <!-- SIDEBAR:End -->
+
+                <!-- CONTENT:Start -->
+                <div class="main-content">
+                    <div class="page-content">
+                        <div class="jumbotron content-header">
+                            <div class="container-fluid">
+                                <p>eMAG Apps UI KIT</p>
+                                <p><b>Fuelux</b></p>
                             </div>
+                        </div>
 
-                            <section id="wizard_standard" class="pad-top-40">
-                                <div class="show-panel code-example">
-                                    <div class="show-panel-body code-example">
-                                        <h2><strong>Wizard</strong></h2>
+                        <section id="wizard_standard" class="pad-top-40">
+                            <div class="show-panel code-example">
+                                <div class="show-panel-body code-example">
+                                    <h2><strong>Wizard</strong></h2>
 
-                                        <div class="row">
-                                            <div class="col-sm-12 mg-top-20">
-                                                <div class="alert alert-info no-margin-bottom" role="alert">
-                                                    <p><i class="fa fa-info-circle"></i>You can familiarize yourself with more options and settings by checking out <a href="http://getfuelux.com/javascript.html#wizard" class="alert-link" target="_blank">getfuelux.com</a></p>
+                                    <div class="row">
+                                        <div class="col-sm-12 mg-top-20">
+                                            <div class="alert alert-info no-margin-bottom" role="alert">
+                                                <p><i class="fa fa-info-circle"></i>You can familiarize yourself with more options and settings by checking out <a href="http://getfuelux.com/javascript.html#wizard" class="alert-link" target="_blank">getfuelux.com</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="code-container">
+                                        <div class="row flex-container code-header no-border-top">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><b>Demo</b></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#wizard" aria-expanded="false" aria-controls="wizard"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="wizard">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#wizard-html-source" aria-controls="wizard-html" role="tab" data-toggle="tab">HTML</a></li>
+                                                <li role="presentation"><a href="#wizard-js-source" aria-controls="wizard-js" role="tab" data-toggle="tab">JS</a></li>
+                                                <li role="presentation"><a href="#wizard-css-source" aria-controls="wizard-css" role="tab" data-toggle="tab">CSS</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="wizard-html-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane js-source" id="wizard-js-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane css-source" id="wizard-css-source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="code-container">
-                                            <div class="row flex-container code-header no-border-top">
-                                                <div class="col-xs-8 module-description">
-                                                    <h4><b>Demo</b></h4>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#wizard" aria-expanded="false" aria-controls="wizard"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="collapse code-example"  id="wizard">
-                                                <!-- Nav tabs -->
-                                                <ul class="nav nav-tabs code-example" role="tablist">
-                                                    <li role="presentation" class="active"><a href="#wizard-html-source" aria-controls="wizard-html" role="tab" data-toggle="tab">HTML</a></li>
-                                                    <li role="presentation"><a href="#wizard-js-source" aria-controls="wizard-js" role="tab" data-toggle="tab">JS</a></li>
-                                                    <li role="presentation"><a href="#wizard-css-source" aria-controls="wizard-css" role="tab" data-toggle="tab">CSS</a></li>
-                                                </ul>
 
-                                                <!-- Tab panes -->
-                                                <div class="tab-content code-example">
-                                                    <div role="tabpanel" class="tab-pane html-source active" id="wizard-html-source">
-                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                    </div>
-                                                    <div role="tabpanel" class="tab-pane js-source" id="wizard-js-source">
-                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                    </div>
-                                                    <div role="tabpanel" class="tab-pane css-source" id="wizard-css-source">
-                                                        <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css,jquery_ui_source,jqgrid_locale_en_source,jqgrid_source,stickykit_source,tether_source,drop_source,wizard_source">
-                                                        <div class="fuelux">
-                                                            <div class="wizard" data-initialize="wizard"  id="my_wizard">
-                                                                <div class="steps-container">
-                                                                    <ul class="steps">
-                                                                        <li data-step="1" data-name="campaign" class="active">
-                                                                            <span class="step">1</span>
-                                                                            <span class="title">Select items(s)</span>
-                                                                        </li>
-                                                                        <li data-step="2">
-                                                                            <span class="step">2</span>
-                                                                            <span class="title">File settings</span>
-                                                                        </li>
-                                                                        <li data-step="3" data-name="template">
-                                                                            <span class="step">3</span>
-                                                                            <span class="title">Download</span>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <hr>
-                                                                <form>
-                                                                    <fieldset>
-                                                                        <div class="panel-body no-margin-left-right">
-                                                                            <div class="step-content">
-                                                                                <div class="step-pane" data-step="1">
-                                                                                    <table id="grid_table_with_selectable_rows" class="table table-bordered"></table>
-                                                                                </div>
-                                                                                <div class="step-pane" data-step="2">
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-2">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="type">File type</label>
-                                                                                                <select class="form-control" name="type" id="file_type">
-                                                                                                    <option value="0"></option>
-                                                                                                    <option value="1">XLS</option>
-                                                                                                    <option value="2">PDF</option>
-                                                                                                    <option value="3">TXT</option>
-                                                                                                </select>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-sm-3">
-                                                                                            <p><strong>Invoice details</strong></p>
-                                                                                            <div class="form-group">
-                                                                                                <div class="checkbox-inline">
-                                                                                                    <label>
-                                                                                                        <input type="checkbox" class="form-checkbox-control" value="" checked="">
-                                                                                                        Include invoice details
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="step-pane text-center" data-step="3">
-                                                                                    <div class="zipping">
-                                                                                        <div class='center-block loader-fading-circle mg-btm-10'>
-                                                                                            <div class="sk-circle1 sk-circle"></div>
-                                                                                            <div class="sk-circle2 sk-circle"></div>
-                                                                                            <div class="sk-circle3 sk-circle"></div>
-                                                                                            <div class="sk-circle4 sk-circle"></div>
-                                                                                            <div class="sk-circle5 sk-circle"></div>
-                                                                                            <div class="sk-circle6 sk-circle"></div>
-                                                                                            <div class="sk-circle7 sk-circle"></div>
-                                                                                            <div class="sk-circle8 sk-circle"></div>
-                                                                                            <div class="sk-circle9 sk-circle"></div>
-                                                                                            <div class="sk-circle10 sk-circle"></div>
-                                                                                            <div class="sk-circle11 sk-circle"></div>
-                                                                                            <div class="sk-circle12 sk-circle"></div>
-                                                                                        </div>
-                                                                                        <strong>Zipping your file(s)</strong>
-                                                                                    </div>
-                                                                                    <div class="file-ready">
-                                                                                        <p><i class="fa fa-check text-success fa-3x" aria-hidden="true"></i></p>
-                                                                                        <p><strong class="text-success">Your file is ready for download.</strong></p>
-                                                                                        Click <a href="#"><u>here</u></a> if the download doesn't start automatically.
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="panel-footer no-margin-left-right">
-                                                                            <div class="actions pull-right panel-controls">
-                                                                                <button type="button" class="btn btn-default btn-prev">
-                                                                                    <i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-                                                                                <button type="button" class="btn btn-primary btn-next">
-                                                                                    Next <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,wizard_standard_init,jqgrid_css,drop_css,css3spinners_css,wizard_css,jquery_ui_source,jqgrid_locale_en_source,jqgrid_source,stickykit_source,tether_source,drop_source,wizard_source">
+                                                    <div class="fuelux">
+                                                        <div class="wizard" data-initialize="wizard"  id="my_wizard">
+                                                            <div class="steps-container">
+                                                                <ul class="steps">
+                                                                    <li data-step="1" data-name="campaign" class="active">
+                                                                        <span class="step">1</span>
+                                                                        <span class="title">Select items(s)</span>
+                                                                    </li>
+                                                                    <li data-step="2">
+                                                                        <span class="step">2</span>
+                                                                        <span class="title">File settings</span>
+                                                                    </li>
+                                                                    <li data-step="3" data-name="template">
+                                                                        <span class="step">3</span>
+                                                                        <span class="title">Download</span>
+                                                                    </li>
+                                                                </ul>
                                                             </div>
+                                                            <hr>
+                                                            <form>
+                                                                <fieldset>
+                                                                    <div class="panel-body no-margin-left-right">
+                                                                        <div class="step-content">
+                                                                            <div class="step-pane" data-step="1">
+                                                                                <table id="grid_table_with_selectable_rows" class="table table-bordered"></table>
+                                                                            </div>
+                                                                            <div class="step-pane" data-step="2">
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-2">
+                                                                                        <div class="form-group">
+                                                                                            <label class="control-label" for="type">File type</label>
+                                                                                            <select class="form-control" name="type" id="file_type">
+                                                                                                <option value="0"></option>
+                                                                                                <option value="1">XLS</option>
+                                                                                                <option value="2">PDF</option>
+                                                                                                <option value="3">TXT</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-3">
+                                                                                        <p><strong>Invoice details</strong></p>
+                                                                                        <div class="form-group">
+                                                                                            <div class="checkbox-inline">
+                                                                                                <label>
+                                                                                                    <input type="checkbox" class="form-checkbox-control" value="" checked="">
+                                                                                                    Include invoice details
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="step-pane text-center" data-step="3">
+                                                                                <div class="zipping">
+                                                                                    <div class='center-block loader-fading-circle mg-btm-10'>
+                                                                                        <div class="sk-circle1 sk-circle"></div>
+                                                                                        <div class="sk-circle2 sk-circle"></div>
+                                                                                        <div class="sk-circle3 sk-circle"></div>
+                                                                                        <div class="sk-circle4 sk-circle"></div>
+                                                                                        <div class="sk-circle5 sk-circle"></div>
+                                                                                        <div class="sk-circle6 sk-circle"></div>
+                                                                                        <div class="sk-circle7 sk-circle"></div>
+                                                                                        <div class="sk-circle8 sk-circle"></div>
+                                                                                        <div class="sk-circle9 sk-circle"></div>
+                                                                                        <div class="sk-circle10 sk-circle"></div>
+                                                                                        <div class="sk-circle11 sk-circle"></div>
+                                                                                        <div class="sk-circle12 sk-circle"></div>
+                                                                                    </div>
+                                                                                    <strong>Zipping your file(s)</strong>
+                                                                                </div>
+                                                                                <div class="file-ready">
+                                                                                    <p><i class="fa fa-check text-success fa-3x" aria-hidden="true"></i></p>
+                                                                                    <p><strong class="text-success">Your file is ready for download.</strong></p>
+                                                                                    Click <a href="#"><u>here</u></a> if the download doesn't start automatically.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer no-margin-left-right">
+                                                                        <div class="actions pull-right panel-controls">
+                                                                            <button type="button" class="btn btn-default btn-prev">
+                                                                                <i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                                                                            <button type="button" class="btn btn-primary btn-next">
+                                                                                Next <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -186,17 +185,25 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                            </section>
-                        </div>
+                        </section>
                     </div>
-                    <!-- CONTENT:End -->
-                    <!-- FOOTER:Start -->
-                    <?php include_once "modules/_mod_footer.php"?>
-                    <!-- FOOTER:End -->
                 </div>
+                <!-- CONTENT:End -->
+                <!-- FOOTER:Start -->
+                <?php include_once "modules/_mod_footer.php"?>
+                <!-- FOOTER:End -->
             </div>
+        </div>
         <!-- PAGE:End -->
+
+        <!-- POPUPS:Start -->
+        <div data-dependency-name="pop_space">
+            <!-- Div with id 'pop_space' must be inserted before the end of the body tag -->
+            <div id="pop_space"></div>
+        </div>
+        <!-- POPUPS:End -->
         
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>

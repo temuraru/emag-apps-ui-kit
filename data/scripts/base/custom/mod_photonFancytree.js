@@ -83,6 +83,9 @@
              */
             $('#' + $this.options.selectId).on('change', function() {
                 $this._updateInfo();
+                if ($this.$tree != undefined) {
+                    $this._syncSelectToTree();
+                }
             });
 
             /**
@@ -92,6 +95,7 @@
                 $('#' + $this.options.selectId + ' option[value!=""]:selected').removeAttr('selected').prop('selected', false);
                 if ($this.$tree != undefined) {
                     $this._resetSearch();
+                    $this._syncSelectToTree();
                 }
                 $this._updateInfo();
             });
