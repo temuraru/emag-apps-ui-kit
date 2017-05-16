@@ -1,3 +1,8 @@
 /node_modules
 /static_projects
 .idea/
+.DS_Store
+demo/.DS_Store
+dist/plugins/daterangepicker/.DS_Store
+dist/plugins/datetimepicker/.DS_Store
+presentation/.DS_Store

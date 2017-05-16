@@ -24,6 +24,26 @@
   width: 100% !important;
 }
 
+.chosen-container {
+  .chosen-choices {
+    li.search-field {
+      input[type=text] {
+        color: #999;
+      }
+    }
+  }
+}
+
+.chosen-container.chosen-container-active {
+  .chosen-choices {
+    li.search-field {
+      input[type=text] {
+        color: @black;
+      }
+    }
+  }
+}
+
 // Feedback states
 .has-success {
   .chosen-form-control-validation(@state-success-text; @state-success-bg);
@@ -102,3 +122,4 @@
   }
   /* @end */
 }
+
