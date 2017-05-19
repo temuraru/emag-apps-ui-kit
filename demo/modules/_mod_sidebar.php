@@ -87,10 +87,22 @@
                                 <span class="menu-text">Navigation themes</span>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/branding.php#typography">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="javascript:void(0)">
                                 <span class="menu-text">Typography</span>
                             </a>
+                            <ul class="sidebar-submenu">
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#typefaces">
+                                        <span class="menu-text">Typefaces</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#styles">
+                                        <span class="menu-text">Styles</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/branding.php#icons">
@@ -110,11 +122,6 @@
                         <span class="menu-text">CSS Components</span>
                     </a>
                     <ul class="sidebar-submenu">
-                        <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.php">
-                                <span class="menu-text">Typefaces variations</span>
-                            </a>
-                        </li>
                         <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.php#css-tables">
                                 <span class="menu-text">Tables</span>
