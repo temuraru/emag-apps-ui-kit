@@ -98,8 +98,73 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/emag-apps-ui-kit/demo/typography.php#styles">
-                                        <span class="menu-text">Styles</span>
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#headings-and-paragraphs">
+                                        <span class="menu-text">Headings and paragraphs</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#utility-tags">
+                                        <span class="menu-text">Utility tags</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#alignment-classes">
+                                        <span class="menu-text">Alignment classes</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#address-example">
+                                        <span class="menu-text">Address example</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#contextual-classes">
+                                        <span class="menu-text">Contextual classes</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#text-case-and-capitalization">
+                                        <span class="menu-text">Text case and capitalization</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#block-quotes">
+                                        <span class="menu-text">Block quotes</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#print">
+                                        <span class="menu-text">Print</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#simple-preformatted-block">
+                                        <span class="menu-text">Simple preformatted block</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#variables">
+                                        <span class="menu-text">Variables</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#sample-output">
+                                        <span class="menu-text">Sample output</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#descriptions">
+                                        <span class="menu-text">Descriptions</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#horizontal-descriptions">
+                                        <span class="menu-text">Horizontal descriptions</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/typography.php#unordered-list">
+                                        <span class="menu-text">Unordered lists</span>
                                     </a>
                                 </li>
                             </ul>

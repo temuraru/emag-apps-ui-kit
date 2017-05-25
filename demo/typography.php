@@ -2,24 +2,24 @@
 <html lang="en" class="js">
     <head>
         <title>Typography - eMAG Apps UI KIT</title>
-        <?php include_once "modules/_mod_meta.php"?>
-        <?php include_once "modules/_mod_top_include.php"?>
+        <?php include_once "modules/_mod_meta.php" ?>
+        <?php include_once "modules/_mod_top_include.php" ?>
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
         <link rel="stylesheet" href="../dist/plugins/magnific/magnific.min.css">
     </head>
 
-        <?php include_once "modules/_mod_browser_upgrade.php"?>
+        <?php include_once "modules/_mod_browser_upgrade.php" ?>
 
         <!-- HEADER:Start -->
-        <?php include_once "modules/_mod_header.php"?>
+        <?php include_once "modules/_mod_header.php" ?>
         <!-- HEADER:End -->
 
         <!-- PAGE:Start -->
         <div class="main-container" id="main-container">
             <div class="main-container-inner">
                 <!-- SIDEBAR:Start -->
-                <?php include_once "modules/_mod_sidebar.php"?>
+                <?php include_once "modules/_mod_sidebar.php" ?>
                 <!-- SIDEBAR:End -->
                 <!-- CONTENT:Start -->
                 <div class="main-content">
@@ -37,7 +37,7 @@
                                     <h2><strong>Typefaces</strong></h2>
 
                                     <h4><strong>Preview</strong></h4>
-                                    <div id="font_previews" class="zoom-gallery zg-grid">
+                                    <div id="font-usage-preview" class="zoom-gallery zg-grid">
                                         <a href="img/eMAG_Apps_UI_KIT_fonts_usage_preview.png" data-source="img/eMAG_Apps_UI_KIT_fonts_usage_preview.png" title="Typography">
                                             <img src="img/eMAG_Apps_UI_KIT_fonts_usage_preview.png" alt="gallery-image">
                                         </a>
@@ -79,11 +79,10 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="styles" class="pad-top-30">
+                        <section id="headings-and-paragraphs" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
-                                    <h2><strong>Styles</strong></h2>
-                                    <p><strong>Headings and Paragraphs:</strong></p>
+                                    <h2><strong>Headings and Paragraphs</strong></h2>
                                     <div class="row">
                                         <div class="col-md-8">
                                             <h1>h1,.h1 - Heading 1</h1>
@@ -99,7 +98,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="type-styles" class="pad-top-30">
+                        <section id="utility-tags" class="pad-top-30">
                             <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Utility tags</strong></h2>
@@ -198,7 +197,9 @@
                                     </div>
                                    </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="alignment-classes" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Alignment classes</strong></h2>
                                     <div class="pad-sep-20">
@@ -260,7 +261,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="address-example" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Address example</strong></h2>
                                     <div class="pad-sep-20">
@@ -291,7 +294,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="contextual-classes" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Contextual classes</strong></h2>
                                     <div class="pad-sep-20">
@@ -347,7 +352,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="text-case-and-capitalization" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Text case and capitalization</strong></h2>
                                     <div class="pad-sep-20">
@@ -385,7 +392,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="block-quotes" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Block quotes</strong></h2>
                                     <div class="pad-sep-20">
@@ -422,7 +431,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="print" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Print</strong></h2>
                                     <div class="mg-top-20">
@@ -460,7 +471,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="simple-preformatted-block" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Simple preformatted block</strong></h2>
                                     <div class="pad-sep-20">
@@ -482,7 +495,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="variables" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Variables</strong></h2>
                                     <div class="pad-sep-20">
@@ -505,7 +520,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="sample-output" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Sample output</strong></h2>
                                     <div class="pad-sep-20">
@@ -528,7 +545,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="descriptions" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Descriptions</strong></h2>
 
@@ -560,7 +579,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="horizontal-descriptions" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Horizontal descriptions</strong></h2>
                                     <div class="pad-sep-20">
@@ -591,7 +612,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show-panel mg-top-30">
+                        </section>
+                        <section id="unordered-list" class="pad-top-30">
+                            <div class="show-panel">
                                 <div class="show-panel-body">
                                     <h2><strong>Unordered list</strong></h2>
 
@@ -657,7 +680,7 @@
                 </div>
                 <!-- CONTENT:End -->
                 <!-- FOOTER:Start -->
-                <?php include_once "modules/_mod_footer.php"?>
+                <?php include_once "modules/_mod_footer.php" ?>
                 <!-- FOOTER:End -->
             </div>
         </div>
@@ -696,7 +719,7 @@
 
                 showPageCode();
 
-                $('#font_previews').magnificPopup({
+                $('#font-usage-preview').magnificPopup({
                     delegate: 'a',
                     type: 'image',
                     closeOnContentClick: false,
