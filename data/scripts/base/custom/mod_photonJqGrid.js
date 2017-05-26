@@ -105,6 +105,8 @@
                     _createContainerForPgSelbox($jqgridContainer,records);
                     _movePgSelbox($jqgridContainer);
                 }
+
+                jqGridOverlay.hide();
             },
             caption: null,
             useCustomColumnChooser: false,
