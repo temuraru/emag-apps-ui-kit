@@ -63,25 +63,8 @@
                 var $jqgridContainer = $('#' + $(tableIdSelector).attr('aria-labelledby'));
                 _updateRecords($jqgridContainer, records);
 
-                //Display no records message.
-                var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
+                _displayNoRecordsMessage(tableId, records);
 
-                var emptyMessage = $(
-                    '<div class="custom-jqgrid-messages-'+ tableId +' custom-jqgrid-no-records-'+ tableId +' alert alert-info">' +
-                    '<i class="fa fa-info-circle"></i> ' +
-                    noRecordsMessage +
-                    '</div>'
-                );
-
-                if (records == 0) {
-                    $('.custom-jqgrid-messages-' + tableId).remove();
-                    $('#' + tableId).parent().append(emptyMessage);
-                    $('#gbox_'+ tableId +' .ui-jqgrid-pager').addClass('hide');
-                } else {
-                    $('#gbox_'+ tableId +' .ui-jqgrid-pager').removeClass('hide');
-                    $('#'+ tableId ).removeClass('hide');
-                    $('.custom-jqgrid-messages-' + tableId).remove();
-                }
                 jqGridOverlay.removeClass('custom-overlay');
             },
             mergeGridComplete: true,
@@ -104,6 +87,10 @@
                     _createContainerForPgSelbox($jqgridContainer,records);
                     _movePgSelbox($jqgridContainer);
                 }
+
+                _displayNoRecordsMessage(tableId, records);
+
+                jqGridOverlay.removeClass('custom-overlay');
             },
             caption: null,
             useCustomColumnChooser: false,
@@ -300,6 +287,28 @@
 
         function _updateRecords($jqgridContainer, records){
             $jqgridContainer.find('.ui-pager-control .no-items').html(records);
+        }
+
+        function _displayNoRecordsMessage(tableId, records) {
+            //Display no records message.
+            var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
+
+            var emptyMessage = $(
+                '<div class="custom-jqgrid-messages-'+ tableId +' custom-jqgrid-no-records-'+ tableId +' alert alert-info">' +
+                '<i class="fa fa-info-circle"></i> ' +
+                noRecordsMessage +
+                '</div>'
+            );
+
+            if (records == 0) {
+                $('.custom-jqgrid-messages-' + tableId).remove();
+                $('#' + tableId).parent().append(emptyMessage);
+                $('#gbox_'+ tableId +' .ui-jqgrid-pager').addClass('hide');
+            } else {
+                $('#gbox_'+ tableId +' .ui-jqgrid-pager').removeClass('hide');
+                $('#'+ tableId ).removeClass('hide');
+                $('.custom-jqgrid-messages-' + tableId).remove();
+            }
         }
 
         this.init = function () {
