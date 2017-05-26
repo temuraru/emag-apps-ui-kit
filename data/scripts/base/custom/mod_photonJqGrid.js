@@ -88,8 +88,7 @@
             gridComplete: function() {
                 var tableId = gridOpts.table;
                 var jqGridOverlay = _getJqGridOverlay();
-                //Make overlay background active
-                jqGridOverlay.addClass('custom-overlay');
+                jqGridOverlay.removeClass('custom-overlay');
 
                 if (gridOpts.stickyButtons && !gridOpts.stickyButtonsInitialized) {
                     _initStickyOnJqGrid(gridOpts);
@@ -105,8 +104,6 @@
                     _createContainerForPgSelbox($jqgridContainer,records);
                     _movePgSelbox($jqgridContainer);
                 }
-
-                jqGridOverlay.hide();
             },
             caption: null,
             useCustomColumnChooser: false,
