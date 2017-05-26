@@ -69,7 +69,8 @@
             },
             mergeGridComplete: true,
             gridComplete: function() {
-                var tableId = gridOpts.table;
+                var tableIdSelector = gridOpts.table;
+                var tableId = tableIdSelector.slice(1);
                 var jqGridOverlay = _getJqGridOverlay();
                 jqGridOverlay.removeClass('custom-overlay');
 
@@ -80,8 +81,8 @@
                     $(document.body).trigger("sticky_kit:recalc");
                 }
 
-                var $jqgridContainer = $('#' + $(tableId).attr('aria-labelledby'));
-                var records = jQuery(tableId).jqGrid('getGridParam', 'records');
+                var $jqgridContainer = $('#' + $(tableIdSelector).attr('aria-labelledby'));
+                var records = jQuery(tableIdSelector).jqGrid('getGridParam', 'records');
 
                 if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
                     _createContainerForPgSelbox($jqgridContainer,records);
