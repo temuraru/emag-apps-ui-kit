@@ -11,15 +11,15 @@
 }
 
 .has-success {
-  .selectize-form-control-validation(@state-success-text; @state-success-bg);
+  .selectize-form-control-validation(@state-success-text; @white);
 }
 
 .has-warning {
-  .selectize-form-control-validation(@state-warning-text; @state-warning-bg);
+  .selectize-form-control-validation(@state-warning-text; @white);
 }
 
 .has-error {
-  .selectize-form-control-validation(@state-danger-text; @state-danger-bg);
+  .selectize-form-control-validation(@state-danger-text; @white);
 }
 
 .selectize-input {
@@ -43,5 +43,7 @@
   .selectize-input {
     border-color: @text-color;
     background: @background-color;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
 }
