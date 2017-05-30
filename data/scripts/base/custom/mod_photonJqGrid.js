@@ -63,33 +63,16 @@
                 var $jqgridContainer = $('#' + $(tableIdSelector).attr('aria-labelledby'));
                 _updateRecords($jqgridContainer, records);
 
-                //Display no records message.
-                var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
+                _displayNoRecordsMessage(tableId, records);
 
-                var emptyMessage = $(
-                    '<div class="custom-jqgrid-messages-'+ tableId +' custom-jqgrid-no-records-'+ tableId +' alert alert-info">' +
-                    '<i class="fa fa-info-circle"></i> ' +
-                    noRecordsMessage +
-                    '</div>'
-                );
-
-                if (records == 0) {
-                    $('.custom-jqgrid-messages-' + tableId).remove();
-                    $('#' + tableId).parent().append(emptyMessage);
-                    $('#gbox_'+ tableId +' .ui-jqgrid-pager').addClass('hide');
-                } else {
-                    $('#gbox_'+ tableId +' .ui-jqgrid-pager').removeClass('hide');
-                    $('#'+ tableId ).removeClass('hide');
-                    $('.custom-jqgrid-messages-' + tableId).remove();
-                }
                 jqGridOverlay.removeClass('custom-overlay');
             },
             mergeGridComplete: true,
             gridComplete: function() {
-                var tableId = gridOpts.table;
+                var tableIdSelector = gridOpts.table;
+                var tableId = tableIdSelector.slice(1);
                 var jqGridOverlay = _getJqGridOverlay();
-                //Make overlay background active
-                jqGridOverlay.addClass('custom-overlay');
+                jqGridOverlay.removeClass('custom-overlay');
 
                 if (gridOpts.stickyButtons && !gridOpts.stickyButtonsInitialized) {
                     _initStickyOnJqGrid(gridOpts);
@@ -98,13 +81,17 @@
                     $(document.body).trigger("sticky_kit:recalc");
                 }
 
-                var $jqgridContainer = $('#' + $(tableId).attr('aria-labelledby'));
-                var records = jQuery(tableId).jqGrid('getGridParam', 'records');
+                var $jqgridContainer = $('#' + $(tableIdSelector).attr('aria-labelledby'));
+                var records = jQuery(tableIdSelector).jqGrid('getGridParam', 'records');
 
                 if(!$jqgridContainer.find('.ui-pg-selbox-container').length){
                     _createContainerForPgSelbox($jqgridContainer,records);
                     _movePgSelbox($jqgridContainer);
                 }
+
+                _displayNoRecordsMessage(tableId, records);
+
+                jqGridOverlay.removeClass('custom-overlay');
             },
             caption: null,
             useCustomColumnChooser: false,
@@ -301,6 +288,28 @@
 
         function _updateRecords($jqgridContainer, records){
             $jqgridContainer.find('.ui-pager-control .no-items').html(records);
+        }
+
+        function _displayNoRecordsMessage(tableId, records) {
+            //Display no records message.
+            var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
+
+            var emptyMessage = $(
+                '<div class="custom-jqgrid-messages-'+ tableId +' custom-jqgrid-no-records-'+ tableId +' alert alert-info">' +
+                '<i class="fa fa-info-circle"></i> ' +
+                noRecordsMessage +
+                '</div>'
+            );
+
+            if (records == 0) {
+                $('.custom-jqgrid-messages-' + tableId).remove();
+                $('#' + tableId).parent().append(emptyMessage);
+                $('#gbox_'+ tableId +' .ui-jqgrid-pager').addClass('hide');
+            } else {
+                $('#gbox_'+ tableId +' .ui-jqgrid-pager').removeClass('hide');
+                $('#'+ tableId ).removeClass('hide');
+                $('.custom-jqgrid-messages-' + tableId).remove();
+            }
         }
 
         this.init = function () {
