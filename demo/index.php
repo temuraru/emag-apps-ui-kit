@@ -36,8 +36,10 @@
                             <h2><strong>Overview</strong></h2>
                             <p><strong>A short description about what's it like to work with eMAG Apps UI KIT:</strong></p>
                             <div class="pad-sep-20">
-
-                                        <h4><strong>1. Based on Bootstrap 3.3.5.</strong></h4>
+                                        <h4><strong>1. Intro</strong></h4>
+                                        <p>eMAG Apps UI Kit is a collection of visual elements and guidelines for eMAG internal applications.The purpose of this collection is to help you build amazing software easier and faster and to maintain a consistent look and feel for all eMAG internal applications. Below you will find details about how you should use these assets in your application.</p>
+                                        <br />
+                                        <h4><strong>2. Based on Bootstrap 3.3.5.</strong></h4>
                                         <p>
                                             Our open source UI KIT is based on the Bootstrap architecture. If you're
                                             not familiarized with it, check-out their stuff from getbootstrap.com Aside
@@ -63,7 +65,7 @@
                                         </ol>
                                         <br>
 
-                                        <h4><strong>2. Working with Grunt.js</strong></h4>
+                                        <h4><strong>3. Working with Grunt.js</strong></h4>
                                         <p><strong>Installing Grunt:</strong></p>
                                         <p>To install Grunt, you must first download and install <a href="https://nodejs.org/en/" target="_blank"><u>node.js</u></a> (which includes npm). Believe it or not, npm stands for <b>node packaged modules</b> and is a way to manage development dependencies through node.js.</p>
                                         <p>Once you've installed node.js, open up the command line in the root directory.</p>
@@ -83,7 +85,7 @@ grunt default           - Generate main styles and scripts
 </pre>
                                         <br>
 
-                                        <h4><strong>3. Working with eMAG Apps UI KIT's folder structure:</strong></h4>
+                                        <h4><strong>4. Working with eMAG Apps UI KIT's folder structure:</strong></h4>
                                         <br>
                                         <p>Once downloaded, unzip the compressed folder to find the three main folders:</p>
 <pre>
@@ -117,7 +119,7 @@ eMAG Apps UI KIT/
 </code>
 </pre>
                                         <br>
-                                        <h4><strong>4. Precompiled files (dist)</strong></h4>
+                                        <h4><strong>5. Precompiled files (dist)</strong></h4>
                                         <br>
                                         <ul class="pad-20 no-padding-top-bottom">
                                             <li>css - Main style CSS files.
@@ -138,7 +140,7 @@ eMAG Apps UI KIT/
                                         </ul>
                                         <br>
 
-                                        <h4><strong>5. eMAG Apps UI KIT source code (data)</strong></h4>
+                                        <h4><strong>6. eMAG Apps UI KIT source code (data)</strong></h4>
                                         <br>
                                         <ul class="pad-20 no-padding-top-bottom">
                                             <li>scripts - JS files.
@@ -165,7 +167,7 @@ eMAG Apps UI KIT/
                                         </ul>
                                         <br>
 
-                                        <h4><strong>6. License</strong></h4>
+                                        <h4><strong>7. License</strong></h4>
                                         <br>
                                         <p>eMAG Apps UI KIT is released under the <a href="https://github.com/eMAGTechLabs/PhotonPowerUIKit/blob/master/LICENSE" target="_blank">MIT license</a>, this means:</p>
 

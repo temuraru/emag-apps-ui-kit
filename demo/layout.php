@@ -124,6 +124,11 @@
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Top Navigation</strong></h2>
                                     <p><strong>The top navigation is based on the Bootstrap 3.3.5. component <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a></strong></p>
+                                    <ul>
+                                        <li>The top navigation should be displayed in all applications and will contain the items displayed in the preview file, as needed.</li>
+                                        <li>Avoid adding other items than the ones from the preview file.</li>
+                                        <li>Always use the same style for all applications you develop.</li>
+                                    </ul>
                                     <div class="code-container">
                                         <div class="row flex-container code-header no-border-top">
                                             <div class="col-sm-8 module-description">
@@ -443,6 +448,11 @@
                                 <div class="show-panel-body">
                                     <h2><strong>Sidebar</strong></h2>
                                     <p><strong>eMAG Apps UI KIT's unique sidebar menu.</strong></p>
+                                    <ul>
+                                        <li>The sidebar navigation will always be placed on-top, on the left side of the screen;</li>
+                                        <li>If the navigation will have more sections, the user can scroll through them;</li>
+                                        <li>Always use the same navigation style for all applications you develop.</li>
+                                    </ul>
                                     <p>You can check the different sidebar states below.</p>
                                     <div class="row">
                                         <div class="col-md-3">
@@ -700,7 +710,7 @@
 
                 showPageCode();
 
-               
+
             });
         </script>
         <!-- DOCUMENT-READY:End -->
