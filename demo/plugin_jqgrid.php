@@ -3,23 +3,23 @@
 <head>
 
         <title>jQGrid - eMAG Apps UI KIT</title>
-        <?php include_once "modules/_mod_meta.php"?>
-        
+        <?php include_once "modules/_mod_meta.php" ?>
+
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
 
-        <?php include_once "modules/_mod_top_include.php"?>
+        <?php include_once "modules/_mod_top_include.php" ?>
 
 </head>
-<?php include_once "modules/_mod_browser_upgrade.php"?>
-<?php include_once "modules/_mod_header.php"?>
+<?php include_once "modules/_mod_browser_upgrade.php" ?>
+<?php include_once "modules/_mod_header.php" ?>
 
 <!-- HEADER:End -->
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
     <div class="main-container-inner">
         <!-- SIDEBAR:Start -->
-        <?php include_once "modules/_mod_sidebar.php"?>
+        <?php include_once "modules/_mod_sidebar.php" ?>
         <!-- SIDEBAR:End -->
         <!-- CONTENT:Start -->
         <div class="main-content">
@@ -79,6 +79,18 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
+                                        <div class="pad-15">
+                                            <ul>
+                                                <li>A list can be used to display information that can be grouped on rows and columns so the user can easily read it;</li>
+                                                <li>A list is part of a panel that can be vertically expanded or collapsed, from the top-right corner;</li>
+                                                <li>The columns' width can be resized by pulling the line that separates them. The columns' width should not be smaller than the text's width from the column's header;</li>
+                                                <li>On top of a list, the buttons with actions that are changing the list's content will be the following: the left side should contain the action buttons that are changing the content that is already in the list (e.g. Export, Delete), the right side should contain the action buttons that are not changing the content that is already in the list (e.g. Add Product, Import Product);</li>
+                                                <li>The content from a column can be sorted ascending or descending, using the sorting arrows, according to what kind of content is in there (e.g. a column showing numerical values, a column showing the item's status);</li>
+                                                <li>The buttons from the "Actions" column should be displayed as groups of maximum 3. If there will be more than 3, a menu button should be displayed. This one will open a drop-down menu displaying the rest of the actions;</li>
+                                                <li>If there's no self-explanatory icon for the action button you need to display, you can use a button with a short descriptive label instead or you can group the actions in a drop-down menu;</li>
+                                                <li>To avoid the horizontal scroll, it's recommended to use the "Select Columns" functionality. This can help you to find and display only the columns you need in your list.</li>
+                                            </ul>
+                                        </div>
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table" class="table table-bordered"></table>
                                             <div id="grid_pager"></div>
@@ -564,7 +576,7 @@
         </div>
         <!-- CONTENT:End -->
         <!-- FOOTER:Start -->
-        <?php include_once "modules/_mod_footer.php"?>
+        <?php include_once "modules/_mod_footer.php" ?>
         <!-- FOOTER:End -->
     </div>
 </div>
