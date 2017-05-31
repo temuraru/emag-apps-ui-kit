@@ -48,8 +48,12 @@
                             <h2><strong>Modals</strong></h2>
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
-                                    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required
-                                        functionality and smart defaults.</p>
+                                    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+                                    <ul>
+                                        <li>A modal is a secondary page component that is displayed in front of the page;</li>
+                                        <li>This component can be used for both displaying and for entering data whose structure does not require a new page development;</li>
+                                        <li>Always use the same style for all applications you develop.</li>
+                                    </ul>
                                     <div class="alert alert-info">
                                         <i class="fa fa-info-circle"></i><strong> Multiple open modals not
                                             supported</strong> Be sure not to open a modal while another is still
@@ -251,7 +255,10 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-xs-12">
+
+                                        <p class="pad-15">The alert modal displays a specific message and at least one action button. It should be used if you want to make sure information comes through to the user. <br />We suggest to use an alert modal when you need to ask the user for permission or to confirm an action.</p>
+
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,alerts_modals_init,pop_space_empty">
                                             <button type="button" id="confirmation_alert" class="btn btn-default">Confirmation</button>
                                             <button type="button" id="confirmation_alert_no_overlay" class="btn btn-default">Confirmation - No overlay</button>
@@ -270,6 +277,15 @@
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
                             <h2><strong>Custom notifications (Growl)</strong></h2>
+
+                            <strong>The alert box should be used to indicate:</strong>
+                            <ul>
+                                <li>A neutral informative change or action (Info alert - blue)</li>
+                                <li>A successful or positive action (Success alert - green)</li>
+                                <li>A warning that might need attention (Warning alert - orange)</li>
+                                <li>A dangerous or potentially negative action (Danger alert - red)</li>
+                            </ul>
+
                             <div class="row">
                                 <div class="col-sm-12 mg-top-20">
                                     <div class="alert alert-info no-margin-bottom" role="alert">
@@ -755,7 +771,7 @@
         <script src="../dist/js/demo_helpers.js"></script>
         <!-- SCRIPTS:End -->
 
-        
+
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
 
@@ -1142,6 +1158,6 @@
             })
         </script>
         <!-- DOCUMENT-READY:End -->
-        
+
 </body>
 </html>
