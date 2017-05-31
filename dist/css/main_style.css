@@ -2098,9 +2098,7 @@ th {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-          filter: none;
-
-  -webkit-filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
@@ -5276,8 +5274,7 @@ fieldset[disabled] .form-control {
   background-color: #f6f6f6;
   opacity: 1;
 
-  -moz-columns: #c3c3c3;
-       columns: #c3c3c3;
+  columns: #c3c3c3;
 }
 .form-control[disabled],
 fieldset[disabled] .form-control {
@@ -10185,9 +10182,7 @@ button.close {
   color: #777;
 }
 .fancytree-disabled {
-          filter: grayscale(100%);
-
-  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .fancytree-disabled .fancytree-plain.fancytree-container span.fancytree-title:hover {
   background: transparent;
@@ -12456,22 +12451,40 @@ input[type="radio"].form-radio-control:disabled {
   opacity: 1;
 }
 .has-success .input-group.input-group-no-separation .input-group-addon {
-  background-color: #eafceb;
+  background-color: #fff;
 }
 .has-success .input-group.input-group-no-separation .input-group-addon[disabled] {
-  background-color: #eafceb;
+  background-color: #fff;
+}
+.has-success .form-control {
+  background-color: #fff;
+}
+.has-success .input-group-addon {
+  background-color: #fff;
 }
 .has-warning .input-group.input-group-no-separation .input-group-addon {
-  background-color: #fdf2e0;
+  background-color: #fff;
 }
 .has-warning .input-group.input-group-no-separation .input-group-addon[disabled] {
-  background-color: #fdf2e0;
+  background-color: #fff;
+}
+.has-warning .form-control {
+  background-color: #fff;
+}
+.has-warning .input-group-addon {
+  background-color: #fff;
 }
 .has-error .input-group.input-group-no-separation .input-group-addon {
-  background-color: #fff0ef;
+  background-color: #fff;
 }
 .has-error .input-group.input-group-no-separation .input-group-addon[disabled] {
-  background-color: #fff0ef;
+  background-color: #fff;
+}
+.has-error .form-control {
+  background-color: #fff;
+}
+.has-error .input-group-addon {
+  background-color: #fff;
 }
 select.form-control {
   padding-left: 5px;
