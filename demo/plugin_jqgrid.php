@@ -8,7 +8,15 @@
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
 
+
+
+
+
+
         <?php include_once "modules/_mod_top_include.php" ?>
+
+
+
 
 </head>
 <?php include_once "modules/_mod_browser_upgrade.php" ?>
@@ -598,7 +606,10 @@
 
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
-<script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
+
+<script src="../data/plugins/jqgrid/js/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
+<script src="../data/scripts/base/custom/mod_photonJqGrid.js" data-dependency-name="jqgrid_source1"></script>
+
 <script src="../dist/plugins/stickyKit/stickyKit.min.js" data-dependency-name="stickykit_source"></script>
 <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
 <script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
@@ -723,7 +734,6 @@
             datatype: 'jsonstring',
             caption: 'Listing caption',
             datastr: getListingDummyData(),
-            styleUI : 'fontAwesome',
             colModel: [
                 { label: 'First Name', name: 'firstname', key: true, width: "100" },
                 { label: 'Last Name', name: 'lastname' },
@@ -747,7 +757,6 @@
             caption: 'Listing caption',
             datastr: getListingDummyData(),
             stickyButtons: true,
-            styleUI : 'fontAwesome',
             colModel: [
                 { label: 'First Name', name: 'firstname', key: true, width: "100" },
                 { label: 'Last Name', name: 'lastname' },
@@ -772,7 +781,6 @@
             datatype: 'jsonstring',
             caption: 'Listing caption',
             datastr: getListingDummyData(),
-            styleUI : 'fontAwesome',
             useCustomColumnChooser: true,
             columnChooserOptions: {
                 selectAllCheckboxLabel: 'Select all',
@@ -804,7 +812,6 @@
             datatype: 'jsonstring',
             caption: 'Listing caption',
             datastr: getListingDummyData(),
-            styleUI : 'fontAwesome',
             colModel: [
                 { label: 'First Name', name: 'firstname', key: true, width: "100" },
                 { label: 'Last Name', name: 'lastname' },
@@ -993,7 +1000,6 @@
             autoResizing: { compact: true },
             data: getListingDummyDataForIerarchicalElements(),
             datatype: "local",
-            styleUI : 'fontAwesome',
             sortable: true,
             colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
             colModel: [
@@ -1028,7 +1034,8 @@
             treeGridModel: 'adjacency',
             treedatatype: 'json',
             ExpandColumn: 'firstname',
-            ExpandColClick : true
+            ExpandColClick : true,
+            styleUI : 'fontAwesome'
         });
     });
 </script>
@@ -1036,11 +1043,10 @@
 <script type="text/javascript" data-dependency-name="jqGrid_with_subgrid_init">
     $(document).ready(function () {
         $("#grid_table_with_subgrid").jqGrid({
-            iconSet: "fontAwesome",
+            iconSet: "Bootstrap",
             autoResizing: { compact: true },
             datatype: "jsonstring",
             datastr: getListingDummyData(),
-            styleUI : 'fontAwesome',
             sortable: true,
             colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
             colModel: [
@@ -1060,6 +1066,7 @@
             height: 'auto',
             rowNum: 10,
             subGrid: true,
+            styleUI : 'fontAwesome',
             subGridRowExpanded: function(subgrid_id, row_id) {
                 // we pass two parameters
                 // subgrid_id is a id of the div tag created within a table
@@ -1073,6 +1080,7 @@
                 jQuery("#"+subgrid_table_id).jqGrid({
                     datatype: "jsonstring",
                     datastr: getListingDummyData(),
+                    styleUI : 'fontAwesome',
                     colModel: [
                         { name: 'id',           index: 'id', hidden: true, width: "20" },
                         { label: 'First Name', name: 'firstname',    index: 'firstname', key: true, width: "100" },
@@ -1100,7 +1108,6 @@
             datatype: 'jsonstring',
             caption: 'Listing caption',
             datastr: getListingDummyData(),
-            styleUI : 'fontAwesome',
             colModel: [
                 { name: 'id',           index: 'id', key: true, hidden: true, width: "20" },
                 { label: 'First Name', name: 'firstname',    index: 'firstname', width: "100", editable: true },
@@ -1616,7 +1623,7 @@
                     },
                     {
                         'id': '237476',
-                        'productDescription': '	Samsung Galaxy S 7 16GB',
+                        'productDescription': 'Samsung Galaxy S 7 16GB',
                         'addedDate': '2016-06-16 11:37:11.000000',
                         'status': statusDeleted,
                         'addedBy': {displayname: 'Ionut Vulpescu', email: 'ionut.popescu@emag.ro'},
@@ -1712,7 +1719,7 @@
                     },
                     {
                         'id': '237476',
-                        'productDescription': '	Samsung Galaxy S 7 16GB',
+                        'productDescription': 'Samsung Galaxy S 7 16GB',
                         'addedDate': '2016-06-16 11:37:11.000000',
                         'status': statusDeleted,
                         'addedBy': {displayname: 'Ionut Vulpescu', email: 'ionut.popescu@emag.ro'},
