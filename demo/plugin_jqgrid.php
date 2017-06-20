@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-
         <title>jQGrid - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php" ?>
-
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
-
-
-
-
-
-
         <?php include_once "modules/_mod_top_include.php" ?>
-
-
-
-
 </head>
 <?php include_once "modules/_mod_browser_upgrade.php" ?>
 <?php include_once "modules/_mod_header.php" ?>
@@ -1041,7 +1029,6 @@
 <script type="text/javascript" data-dependency-name="jqGrid_with_subgrid_init">
     $(document).ready(function () {
         $("#grid_table_with_subgrid").jqGrid({
-            iconSet: "Bootstrap",
             autoResizing: { compact: true },
             datatype: "jsonstring",
             datastr: getListingDummyData(),
@@ -1320,7 +1307,6 @@
             };
             return data;
         }
-
 
         var listingWithNoDataParameters = {
             table: '#grid_table_with_no_data',

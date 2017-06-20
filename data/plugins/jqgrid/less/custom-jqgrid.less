@@ -2,8 +2,6 @@
 @import "../../../styles/base/variables.less";
 @import "../../../styles/base/custom/custom-variables.less";
 @import "../../../styles/base/mixins.less";
-
-
 // Components
 @import "5.2.1/ui.jqgrid-bootstrap.less"; //unmodified 5.2.1 version, just renamed to less instead of css
 
@@ -11,7 +9,7 @@
 .ui-jqgrid {
   border-radius: 0;
   color: #000;
-  border:0;
+  border: 0;
   -webkit-box-shadow: 0px 0px 0px 1px #bebebe;
   box-shadow: 0px 0px 0px 1px #bebebe;
   margin: 1px;
@@ -22,6 +20,7 @@
   content: " ";
   display: table;
 }
+
 .ui-jqgrid .ui-jqgrid-titlebar:after {
   clear: both;
 }
@@ -29,11 +28,13 @@
 .ui-jqgrid .ui-jqgrid-hdiv {
   background: #eee;
 }
+
 .ui-jqgrid .ui-jqgrid-hdiv:before,
 .ui-jqgrid .ui-jqgrid-hdiv:after {
   content: " ";
   display: table;
 }
+
 .ui-jqgrid .ui-jqgrid-hdiv:after {
   clear: both;
 }
@@ -42,16 +43,18 @@
   border-bottom: 2px solid #bebebe;
 }
 
-.ui-jqgrid .ui-jqgrid-htable thead th.active{
+.ui-jqgrid .ui-jqgrid-htable thead th.active {
   background: #f2f9ff;
 }
 
 .ui-jqgrid .ui-jqgrid-htable thead th.ui-th-ltr div .s-ico {
   right: 0;
 }
+
 .ui-jqgrid .ui-jqgrid-htable thead th.ui-th-rtl div {
   padding-left: 10px;
 }
+
 .ui-jqgrid .ui-jqgrid-htable thead th.ui-th-rtl div .s-ico {
   left: 0;
 }
@@ -60,22 +63,23 @@
 .ui-jqgrid .table-bordered th:last-child {
   border-right: 0;
 }
+
 .ui-jqgrid .table-bordered tr.ui-jqgrid-labels th:first-child,
 .ui-jqgrid .table-bordered tr.ui-search-toolbar th:first-child {
   border-left: none;
 }
 
-.ui-jqgrid .table-bordered{
+.ui-jqgrid .table-bordered {
   border-right: 0;
 }
 
 .ui-jqgrid .ui-jqgrid-htable .ui-th-div {
 
-  margin-top:0;
+  margin-top: 0;
 }
 
-.ui-sortable-handle{
-  position:relative;
+.ui-sortable-handle {
+  position: relative;
 }
 
 .ui-jqgrid .ui-jqgrid-resize {
@@ -85,8 +89,9 @@
   cursor: e-resize;
   display: inline;
   overflow: hidden;
-  right:0
+  right: 0
 }
+
 .ui-jqgrid .s-ico {
   position: absolute;
   top: 0;
@@ -94,46 +99,63 @@
   height: 20px;
   width: 10px;
 }
+
 .ui-jqgrid .ui-grid-ico-sort {
   position: absolute;
   height: 10px;
   line-height: 10px;
   font-size: 14px;
   overflow: hidden;
-  margin-left:0
+  margin-left: 0
 }
+
 .ui-jqgrid .ui-icon-asc {
   top: 0;
 }
+
 .ui-jqgrid .ui-icon-desc {
   top: 5px;
 }
+
 .ui-jqgrid .ui-i-asc {
   top: 0;
 }
+
 .ui-jqgrid .ui-i-desc {
   top: 0;
   margin-right: 10px;
 }
+
 .ui-jqgrid .ui-single-sort-asc {
   top: 0;
 }
+
 .ui-jqgrid .ui-jqgrid-sortable {
   cursor: pointer;
 }
 
-
-.ui-subgrid .ui-jqgrid-bdiv .ui-jqgrid-btable{
+.ui-subgrid .ui-jqgrid-bdiv .ui-jqgrid-btable {
   background: #fff;
 }
 
-.ui-jqgrid .ui-jqgrid-btable .ui-sgcollapsed span{ text-align: center; margin-left: -2px; margin-top: 2px}
+.ui-jqgrid .ui-jqgrid-btable .ui-sgcollapsed span {
+  text-align: center;
+  margin-left: -2px;
+  margin-top: 2px
+}
 
-.fa.treeclick{ margin-left: 5px}
+.fa.treeclick {
+  margin-left: 5px
+}
 
-.tree-wrap{ padding-top: 2px}
-.tree-wrap .fa-circle-o{ font-size: 8px; margin-top: 3px}
+.tree-wrap {
+  padding-top: 2px
+}
 
+.tree-wrap .fa-circle-o {
+  font-size: 8px;
+  margin-top: 3px
+}
 
 .glyphicon-triangle-bottom:before {
   content: "\e252";
@@ -142,18 +164,22 @@
 .ui-jqgrid {
   font-size: 13px;
 }
+
 .ui-jqgrid .table-bordered > thead > tr > th {
   border: 1px solid #c3c3c3;
   border-bottom: 0;
   background: #eee;
 }
+
 .ui-jqgrid .table-bordered > tbody > tr > td {
   border-bottom: 1px solid #c3c3c3;
   border-right: 1px solid #c3c3c3;
 }
+
 .ui-jqgrid .table > tbody > tr.success > td {
   background: #f2f9ff;
 }
+
 .ui-jqgrid .table > tbody > tr.active.success > td {
   background-color: #f2f9ff;
 }
@@ -161,9 +187,11 @@
 .ui-jqgrid tr.jqgrow:hover td {
   background-color: #f2f9ff;
 }
+
 .ui-jqgrid .table tr th {
   padding-left: 5px;
 }
+
 .ui-jqgrid .table tr td {
   padding-left: 5px;
 }
@@ -171,23 +199,24 @@
 .ui-jqgrid .ui-jqgrid-htable {
   border-bottom: 1px solid #c3c3c3;
 }
+
 .ui-jqgrid .ui-jqgrid-htable tr > th input[type="checkbox"] {
   margin: 3px 0 0 7px;
   display: block;
 }
+
 .ui-jqgrid .ui-jqgrid-btable .jqgfirstrow td {
   border: 0;
 }
+
 .ui-jqgrid .ui-jqgrid-btable tr > td input[type="checkbox"] {
   margin-left: 7px;
-  margin-top:3px;
+  margin-top: 3px;
 }
+
 .ui-jqgrid .ui-jqgrid-btable {
   border-bottom: none;
 }
-
-
-
 
 .stick-top-panel {
   background: #fff;
@@ -196,17 +225,16 @@
   position: relative;
   margin-bottom: 1px;
 }
+
 .stick-top-panel.is_stuck {
   box-shadow: 0 0 0 1px #fff;
   padding-bottom: 14px;
 }
+
 .ui-jqgrid-hdiv.is_stuck {
   border-top: 1px solid #c3c3c3;
   margin-top: 0;
 }
-
-
-
 
 /* Body */
 .ui-jqgrid table {
@@ -216,9 +244,6 @@
 .ui-jqgrid .ui-jqgrid-btable tr:last-child td {
   border-bottom: none;
 }
-
-
-
 
 /* Pager*/
 .ui-jqgrid .ui-pager-table > tbody > tr > td {
@@ -234,8 +259,8 @@
   width: 100% !important;
 }
 
-.ui-jqgrid .ui-pager-control .ui-pager-table td.ui-pg-button{
-  border-top:1px solid #ccc !important
+.ui-jqgrid .ui-pager-control .ui-pager-table td.ui-pg-button {
+  border-top: 1px solid #ccc !important
 }
 
 .ui-jqgrid .ui-pager-control .ui-pager-table td {
@@ -271,26 +296,33 @@
   text-align: center;
   width: 34px;
 }
+
 .ui-jqgrid .ui-paging-pager td.btn:active {
   box-shadow: none;
 }
+
 .ui-jqgrid .ui-paging-pager td.btn.active {
   box-shadow: none;
 }
+
 .ui-jqgrid .ui-paging-pager td.btn + td.btn {
   border-radius: 0 2px 2px 0;
   margin: 0 0 0 -1px;
 }
+
 .ui-jqgrid .ui-paging-pager .ui-pg-input {
   height: 34px;
   width: 34px;
 }
+
 .ui-jqgrid .ui-paging-pager td.ui-disabled:not([id]) {
   display: none;
 }
+
 .ui-jqgrid .ui-paging-pager td[dir] {
   padding: 0 10px;
 }
+
 .ui-jqgrid .ui-paging-pager td[dir] ~ td[dir] {
   padding: 0;
 }
@@ -315,7 +347,7 @@
   padding: 0px 3px;
   text-align: center;
   font-size: inherit;
-  border:1px solid #ccc
+  border: 1px solid #ccc
 }
 
 .ui-jqgrid .ui-pg-selbox,
@@ -331,11 +363,11 @@
   height: 2px;
   border: none;
   border-top: 2px solid #ccc;
-  /*default*/
   margin: 0;
   padding: 0;
   width: 100%;
 }
+
 @media screen and (min-width: 1024px) {
   .ui-jqgrid .ui-pager-control .ui-pg-selbox-container {
     position: absolute;
@@ -354,6 +386,7 @@
   background: #fff;
   border-bottom: 1px solid #c3c3c3;
 }
+
 .ui-jqgrid .ui-jqgrid-toppager .ui-pg-input {
   height: 34px;
   width: 34px;
@@ -362,9 +395,6 @@
 .ui-jqgrid .ui-jqgrid-pager, .ui-jqgrid .ui-jqgrid-toppager {
   border-top: 1px solid #c3c3c3;
 }
-
-
-/*Subgrid*/
 
 /* loading */
 .ui-jqgrid .loading {
@@ -378,6 +408,7 @@
   font-size: 14px;
   margin: -11px auto auto -35px;
 }
+
 .ui-jqgrid .jqgrid-overlay {
   z-index: 100;
   background-color: #616161;
@@ -391,30 +422,36 @@
   padding: 2px 5px;
   z-index: 99999;
 }
+
 .ui-search-menu.ui-menu .ui-menu-item,
 .ui-nav-menu.ui-menu .ui-menu-item {
   list-style-image: none;
   padding-right: 0;
   padding-left: 0;
 }
+
 .ui-search-menu.ui-menu .ui-menu-item a,
 .ui-nav-menu.ui-menu .ui-menu-item a {
   display: block;
 }
+
 .ui-search-menu.ui-menu .ui-menu-item a.g-menu-item:hover,
 .ui-nav-menu.ui-menu .ui-menu-item a.g-menu-item:hover {
   margin: -1px;
   font-weight: normal;
 }
+
 .ui-jqgrid .ui-search-table {
   padding: 0;
   border: 0 none;
   height: 20px;
   width: 100%;
 }
+
 .ui-jqgrid .ui-search-table .ui-search-oper {
   width: 20px;
 }
+
 a.g-menu-item,
 a.soptclass,
 a.clearsearchclass {
@@ -424,16 +461,19 @@ a.clearsearchclass {
 .ui-jqgrid .ui-scroll-popup {
   width: 100px;
 }
+
 .ui-search-table select,
 .ui-search-table input {
   padding: 4px 3px;
 }
+
 .ui-disabled {
   opacity: .35;
   filter: alpha(opacity=35);
   /* support: IE8 */
   background-image: none;
 }
+
 .ui-overlay {
   top: 0;
   left: 0;
@@ -446,6 +486,7 @@ a.clearsearchclass {
   /* support: IE8 */
   display: none;
 }
+
 .custom-overlay {
   top: 0;
   left: 0;
@@ -457,17 +498,20 @@ a.clearsearchclass {
   filter: alpha(opacity=30);
   /* support: IE8 */
 }
+
 .ui-jqgrid-toppager .ui-pg-table .ui-pg-button:hover {
   background-color: #ddd;
 }
+
 .ui-jqgrid-corner {
   border-radius: 5px;
 }
+
 .ui-resizable-handle {
-  /*position: absolute;*/
   display: block;
   left: 97%;
 }
+
 .ui-jqdialog .ui-resizable-se {
   width: 12px;
   height: 12px;
@@ -475,6 +519,7 @@ a.clearsearchclass {
   bottom: -5px;
   background-position: 16px 16px;
 }
+
 .ui-resizable-se {
   cursor: se-resize;
   width: 12px;
@@ -482,39 +527,48 @@ a.clearsearchclass {
   right: 1px;
   bottom: 1px;
 }
+
 .ui-top-corner {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .ui-bottom-corner {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .ui-search-table {
   margin-bottom: 0;
 }
+
 .ui-search-table .columns,
 .ui-search-table .operators {
   padding-right: 5px;
 }
+
 .opsel {
   float: left;
   width: 100px;
   margin-right: 5px;
 }
+
 .add-group,
 .add-rule,
 .delete-group {
   width: 14%;
   margin-right: 5px;
 }
+
 .delete-rule {
   width: 15px;
 }
+
 ul.ui-search-menu,
 ul.ui-nav-menu {
   list-style-type: none;
 }
+
 ul.ui-search-menu li a,
 ul.ui-nav-menu li a,
 .soptclass,
@@ -522,6 +576,7 @@ ul.ui-nav-menu li a,
   text-decoration: none;
   color: #010101;
 }
+
 ul.ui-search-menu li a:hover,
 ul.ui-nav-menu li a:hover,
 a.soptclass:hover,
@@ -530,46 +585,52 @@ a.clearsearchclass:hover {
   padding: 1px 1px;
   text-decoration: none;
 }
+
 ul.ui-search-menu li,
 ul.ui-nav-menu li {
   padding: 5px 5px;
 }
+
 .ui-menu-item hr {
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
 .searchFilter .ui-search-table td,
 .searchFilter .ui-search-table th {
   border-top: 0px none !important;
 }
+
 .searchFilter .queryresult {
   margin-bottom: 5px;
 }
+
 .searchFilter .queryresult tr td {
   border-top: 0px none;
 }
+
 .ui-search-label {
   padding-left: 5px;
 }
+
 .frozen-div,
 .frozen-bdiv {
   background-color: #fff;
 }
 
-
-
-
-
 /* jqGrid drop.js */
 .ui-jqgrid .btn-group {
   margin: 0 5px;
 }
+
 .ui-jqgrid .alert {
   margin: 15px;
 }
+
 div.drop-actions.drop-target-attached-top {
   top: -7px;
 }
+
 div.drop-actions.drop-target-attached-top::before {
   bottom: -13px;
   color: white;
@@ -579,9 +640,11 @@ div.drop-actions.drop-target-attached-top::before {
   right: 10px;
   text-shadow: 0px 1px 0px #999999, 0 0 0 #999999, 0px 0px 0px #999999;
 }
+
 div.drop-actions.drop-target-attached-bottom {
   top: 7px;
 }
+
 div.drop-actions.drop-target-attached-bottom::before {
   color: white;
   content: "\f0d8";
@@ -591,10 +654,12 @@ div.drop-actions.drop-target-attached-bottom::before {
   text-shadow: 0px -1px 0px #cccccc, 0 0 0 #cccccc, 0px -1px 0px #cccccc;
   top: -14px;
 }
+
 div.drop-actions .drop-content {
   margin: 0;
   padding: 0;
 }
+
 div.drop-actions .drop-content .dropdown-menu {
   border: 0;
   box-shadow: none;
@@ -605,44 +670,55 @@ div.drop-actions .drop-content .dropdown-menu {
   padding: 0;
   position: relative;
 }
+
 div.drop-actions .drop-content .dropdown-menu li {
   border-top: 1px solid #ccc;
 }
+
 div.drop-actions .drop-content .dropdown-menu li:first-of-type {
   border-top: none;
 }
+
 div.drop-actions .drop-content .dropdown-menu li .fa {
   left: 10px;
   position: absolute;
   top: 10px;
   width: 14px;
 }
+
 div.drop-actions .drop-content .dropdown-menu li a {
   padding: 6px 10px 6px 35px;
   position: relative;
   white-space: normal;
 }
+
 div.drop-actions .drop-content .dropdown-menu li a:hover {
   text-decoration: none;
   color: #000;
   background-color: #eee;
 }
+
 div.drop-actions .drop-content .dropdown-menu.dd-jqgrid-select-columns li {
   padding: 7px;
 }
+
 div.drop-actions .drop-content .dropdown-menu.dd-jqgrid-select-columns.dd-jsc-one-item {
   border-bottom: 1px solid #ccc;
 }
+
 div.drop-actions .drop-content .dropdown-menu.dd-jqgrid-select-columns.dd-jsc-buttons {
   border-top: 1px solid #ccc;
 }
+
 div.drop-actions .drop-content .dropdown-menu.dd-jqgrid-select-columns.dd-jsc-checkbox li {
   padding: 5px 10px;
 }
+
 div.drop-actions .drop-content .dropdown-menu.dd-jqgrid-select-columns.dd-jsc-checkbox.dd-jsc-checkbox-all-columns {
   max-height: 305px;
   overflow-y: scroll;
 }
+
 div.drop-actions .drop-content .dropdown-menu > li > a {
   white-space: normal;
 }
