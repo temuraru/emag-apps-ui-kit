@@ -212,7 +212,7 @@ module.exports = function (grunt) {
             },
             jq_grid: {
                 src: [
-                    '<%= pkg.data_plugins %>/jqgrid/js/jquery.jqGrid.min.js',
+                    '<%= pkg.data_plugins %>/jqgrid/js/jquery.jqGrid.js',
                     '<%= pkg.data_scripts %>/base/custom/mod_photonJqGrid.js'
                 ],
                 dest: '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js'
@@ -366,6 +366,7 @@ module.exports = function (grunt) {
 
     // Generate plugin scripts
     grunt.registerTask('plugin_scripts', [
+        'concat:jq_grid',
         'uglify:plugins',
         'uglify:jquery'
     ]);

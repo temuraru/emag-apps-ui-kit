@@ -606,9 +606,7 @@
 
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
-
-<script src="../data/plugins/jqgrid/js/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
-<script src="../data/scripts/base/custom/mod_photonJqGrid.js" data-dependency-name="jqgrid_source1"></script>
+<script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
 
 <script src="../dist/plugins/stickyKit/stickyKit.min.js" data-dependency-name="stickykit_source"></script>
 <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
