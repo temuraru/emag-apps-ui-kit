@@ -1408,7 +1408,7 @@
                     },
                     {
                         'id': 4,
-                        'notAvailable': ['array val 1', 'array val 2'],
+                        'notAvailable': ['1', '2', '3', '4'],
                         'dateTime': {date: '2016-07-29', time: '11:53:59'},
                         'date': {date: '2016-07-29'},
                         'time': {time: '11:53:59'},
