@@ -241,6 +241,12 @@ module.exports = function (grunt) {
                     '<%= pkg.data_plugins %>/jqgrid/js/jquery.jqGrid.js'
                 ],
                 dest: '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js'
+            },
+            summernote: {
+                src: [
+                    '<%= pkg.data_plugins %>/summernote/js/summernote.min.js',
+                ],
+                dest: '<%= pkg.dist_plugins%>/summernote/summernote.min.js'
             }
         },
         php2html: {
@@ -302,7 +308,6 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.1.1.js',
                     '<%= pkg.dist_plugins %>/drop/drop.min.js':'<%= pkg.data_plugins %>/drop/js/drop.js',
                     '<%= pkg.dist_plugins %>/jQueryCookie/jQueryCookie.min.js':'<%= pkg.data_plugins %>/jQueryCookie/js/jquery.cookie.js',
-                    '<%= pkg.dist_plugins %>/summernote/summernote.min.js':'<%= pkg.data_plugins %>/summernote/js/summernote.js',
                     '<%= pkg.dist_plugins %>/wizard/wizard.min.js':'<%= pkg.data_plugins %>/wizard/js/wizard.js',
                     '<%= pkg.dist_plugins %>/chart/chart.min.js':'<%= pkg.data_plugins %>/chart/js/chart.js',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.js':['<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.js', '<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.filter.js', '<%= pkg.data_scripts %>/base/custom/mod_photonFancytree.js'],
@@ -394,8 +399,15 @@ module.exports = function (grunt) {
     // Generate plugin scripts
     grunt.registerTask('plugin_scripts', [
         'concat:jq_grid',
+        'concat:summernote',
         'uglify:plugins',
         'uglify:jquery'
+    ]);
+
+    // Generate plugin files
+    grunt.registerTask('plugins', [
+        'plugin_styles',
+        'plugin_scripts'
     ]);
 
     // Default: Generate main styles and scripts
