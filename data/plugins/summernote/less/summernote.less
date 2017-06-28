@@ -1,4 +1,5 @@
-@import "summernote-mixins.less";
+@import "elements.less";
+@import "icons.less";
 
 /* Theme Variables
  ------------------------------------------*/
@@ -20,7 +21,6 @@
     color: @dropzone-color;
     background-color: white;
     opacity: 0.95;
-    pointer-events: none;
 
     .note-dropzone-message {
       display: table-cell;
@@ -44,6 +44,14 @@
 
     .note-editable {
       outline: none;
+
+      sup {
+        vertical-align: super;
+      }
+
+      sub {
+        vertical-align: sub;
+      }
     }
   }
 }
@@ -105,7 +113,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     z-index: 1050; /* bs3 modal-backdrop: 1030, bs2: 1040 */
     .note-editable {
       background-color: white;
@@ -451,13 +459,4 @@
       }
     }
   }
-}
-
-/* Browser bug workarounds
-------------------------------------------*/
-sup {
-  vertical-align: super;
-}
-sub {
-  vertical-align: sub
 }

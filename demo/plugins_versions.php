@@ -154,7 +154,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wysiwyg.php">Summernote</a></td>
-                                            <td><span class="label label-info">0.7.3</span></td>
+                                            <td><span class="label label-info">0.8.4</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
