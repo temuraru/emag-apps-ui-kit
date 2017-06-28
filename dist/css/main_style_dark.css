@@ -12434,7 +12434,7 @@ input[type="radio"].form-radio-control:disabled {
 }
 .input-group.input-group-no-separation .input-group-addon {
   cursor: default;
-  background-color: transparent;
+  background-color: #fff;
   border-left: none;
 }
 .input-group.input-group-no-separation .input-group-addon.cursor-pointer {

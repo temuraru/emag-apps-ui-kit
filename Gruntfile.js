@@ -77,7 +77,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.data_plugins %>/selectize/less/custom-selectize.less',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.data_plugins %>/css3spinners/less/css3-spinners.less',
-                    '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.data_plugins %>/jqgrid/less/jqgrid.custom.less',
+                    '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.data_plugins %>/jqgrid/less/custom-jqgrid.less',
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.css':'<%= pkg.data_plugins %>/dropzone/less/dropzone.less',
                     '<%= pkg.dist_plugins %>/magnific/magnific.min.css':'<%= pkg.data_plugins %>/magnific/less/magnific.less',
                     '<%= pkg.dist_plugins %>/drop/drop.min.css':'<%= pkg.data_plugins %>/drop/less/drop.less',
@@ -125,18 +125,7 @@ module.exports = function (grunt) {
             }
         },
 
-        // Rearranges CSS properties in a predefined order (see data/styles/base/.csscomb.json)
-        csscomb: {
-            options: {
-                config: '<%= pkg.data_styles %>/base/.csscomb.json'
-            },
-            frontend: {
-                expand: true,
-                cwd: '<%= pkg.dist_styles %>',
-                src: ['*.css', '!*.min.css'],
-                dest: '<%= pkg.dist_styles %>'
-            }
-        },
+
 
         // Minifies CSS files by overriding them
         cssmin: {
@@ -223,24 +212,16 @@ module.exports = function (grunt) {
             },
             jq_grid: {
                 src: [
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.base.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.celledit.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.common.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.filter.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.formedit.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.grouping.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.import.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.inlinedit.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.jqueryui.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.pivot.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.subgrid.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/grid.treegrid.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/jqDnR.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/jqModal.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/jquery.fmatter.js',
-                    '<%= pkg.data_plugins %>/jqgrid/js/jquery.jqGrid.js'
+                    '<%= pkg.data_plugins %>/jqgrid/js/jquery.jqGrid.js',
+                    '<%= pkg.data_scripts %>/base/custom/mod_photonJqGrid.js'
                 ],
                 dest: '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js'
+            },
+            summernote: {
+                src: [
+                    '<%= pkg.data_plugins %>/summernote/js/summernote.min.js',
+                ],
+                dest: '<%= pkg.dist_plugins%>/summernote/summernote.min.js'
             }
         },
         php2html: {
@@ -302,7 +283,6 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.1.1.js',
                     '<%= pkg.dist_plugins %>/drop/drop.min.js':'<%= pkg.data_plugins %>/drop/js/drop.js',
                     '<%= pkg.dist_plugins %>/jQueryCookie/jQueryCookie.min.js':'<%= pkg.data_plugins %>/jQueryCookie/js/jquery.cookie.js',
-                    '<%= pkg.dist_plugins %>/summernote/summernote.min.js':'<%= pkg.data_plugins %>/summernote/js/summernote.js',
                     '<%= pkg.dist_plugins %>/wizard/wizard.min.js':'<%= pkg.data_plugins %>/wizard/js/wizard.js',
                     '<%= pkg.dist_plugins %>/chart/chart.min.js':'<%= pkg.data_plugins %>/chart/js/chart.js',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.js':['<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.js', '<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.filter.js', '<%= pkg.data_scripts %>/base/custom/mod_photonFancytree.js'],
@@ -350,7 +330,6 @@ module.exports = function (grunt) {
     // Load the grunt plugin(s)
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -366,7 +345,6 @@ module.exports = function (grunt) {
         'less:frontend_dark',
         'autoprefixer:frontend',
         'autoprefixer:frontend_dark',
-        'csscomb:frontend',
         'cssmin:frontend',
         'cssmin:frontend_dark'
     ]);
@@ -394,15 +372,21 @@ module.exports = function (grunt) {
     // Generate plugin scripts
     grunt.registerTask('plugin_scripts', [
         'concat:jq_grid',
+        'concat:summernote',
         'uglify:plugins',
         'uglify:jquery'
+    ]);
+
+    // Generate plugin files
+    grunt.registerTask('plugins', [
+        'plugin_styles',
+        'plugin_scripts'
     ]);
 
     // Default: Generate main styles and scripts
     grunt.registerTask('default', [
         'less:frontend',
         'autoprefixer:frontend',
-        'csscomb:frontend',
         'cssmin:frontend',
         'concat:frontend',
         'uglify:frontend'
