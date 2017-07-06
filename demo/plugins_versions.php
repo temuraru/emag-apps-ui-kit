@@ -118,7 +118,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_jqgrid.php">jqGrid</a></td>
-                                            <td><span class="label label-info">5.0.1</span></td>
+                                            <td><span class="label label-info">5.2.1</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
