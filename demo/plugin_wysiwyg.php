@@ -40,7 +40,7 @@
                                     <div class="row">
                                         <div class="col-sm-12 mg-top-20">
                                             <div class="alert alert-info no-margin-bottom" role="alert">
-                                                <p><i class="fa fa-info-circle"></i>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" class="alert-link" target="_blank">summernote.org</a></p>
+                                                <p><i class="fa fa-info-circle"></i>You can familiarize yourself with more options and settings by checking out <a href="http://summernote.org/" class="alert-link" target="_blank">summernote.org</a>. Additional plugin installed  <a href="https://github.com/StudioJunkyard/summernote-cleaner" class="alert-link" target="_blank">summernote-cleaner</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -182,6 +182,7 @@
                     minHeight: 300,
                     dialogsInBody: true,
                     toolbar: [
+                        ['cleaner',['cleaner']],
                         // [groupName, [list of button]]
                         ['style', ['bold', 'italic', 'underline', 'clear']],
                         ['font', ['strikethrough', 'superscript', 'subscript']],
@@ -189,7 +190,19 @@
                         ['color', ['color']],
                         ['para', ['ul', 'ol', 'paragraph']],
                         ['height', ['height']]
-                    ]
+                    ],
+                    cleaner:{
+                        notTime: 2400, // Time to display Notifications.
+                        action: 'both', // both|button|paste 'button' only cleans via toolbar button, 'paste' only clean when pasting content, both does both options.
+                        newline: '<br>', // Summernote's default is to use '<p><br></p>'
+                        notStyle: 'position:absolute;top:0;left:0;right:0', // Position of Notification
+                        icon: '<i class="note-icon">Clean HTML</i>',
+                        keepHtml: false, // Remove all Html formats
+                        keepOnlyTags: ['<p>', '<br>', '<ul>', '<li>', '<b>', '<strong>','<i>', '<a>'], // If keepHtml is true, remove all tags except these
+                        keepClasses: false, // Remove Classes
+                        badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html'], // Remove full tags with contents
+                        badAttributes: ['style', 'start'] // Remove attributes from remaining tags
+                    }
                 });
             });
         </script>
