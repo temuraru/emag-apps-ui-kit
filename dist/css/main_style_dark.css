@@ -183,6 +183,14 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/opensans-bold-latin-webfont.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/*Added for summernote plugin*/
+@font-face {
+  font-family: "summernote";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/summernote.eot?546c01739436985e5a21a8cb325521f3");
+  src: url("fonts/summernote.eot?#iefix") format("embedded-opentype"), url("fonts/summernote.woff?546c01739436985e5a21a8cb325521f3") format("woff"), url("fonts/summernote.ttf?546c01739436985e5a21a8cb325521f3") format("truetype");
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -2081,8 +2089,7 @@ th {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
@@ -5788,8 +5795,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   background-color: #f6f6f6;
-  -moz-columns: #c3c3c3;
-       columns: #c3c3c3;
+  columns: #c3c3c3;
   opacity: 1;
 }
 .form-control[disabled],
@@ -10691,7 +10697,6 @@ button.close {
   font-weight: 400;
 }
 .fancytree-disabled {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 .fancytree-disabled .fancytree-plain.fancytree-container span.fancytree-title:hover {
