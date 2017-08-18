@@ -19,6 +19,11 @@ function addNotification(message, type){
         BOTTOM_LEFT_OFFSET = parseInt($('.page-content').eq(0).css('padding-left'));
     } catch(err) {}
 
+    var highestZIndex = 1;
+    if ($('.modal').length) {
+        var highestZIndex = findHighestZIndex('div');
+    }
+
     var notificationClass = 'notification-default';
     if (type === 'black') {
         notificationClass = 'notification-bottom-left';
@@ -26,7 +31,7 @@ function addNotification(message, type){
 
     var defaultOptions = {
         type: type,
-        template: '<div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0} ' + notificationClass + '" role="alert"><button type="button" aria-hidden="true" class="close" data-notify="dismiss"><i class="fa fa-remove"></i></button><span data-notify="icon"></span> <span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>',
+        template: '<div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0} ' + notificationClass + '" role="alert" style="z-index: ' + highestZIndex + '"><button type="button" aria-hidden="true" class="close" data-notify="dismiss"><i class="fa fa-remove"></i></button><span data-notify="icon"></span> <span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>',
         placement: {
             from: 'top',
             align: 'center'
@@ -34,6 +39,7 @@ function addNotification(message, type){
         offset: {
             y: DEFAULT_OFFSET
         },
+        z_index: highestZIndex,
         animate: {
             enter: 'animations scaleIn',
             exit: 'animations scaleOut'
