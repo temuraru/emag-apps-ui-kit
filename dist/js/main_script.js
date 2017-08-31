@@ -7084,7 +7084,7 @@ function displayFormFieldsErrors (form, fields) {console.log(fields)
 
     for (var fieldName in fields) {
         var fieldData = fields[fieldName];
-        console.log(fieldName, fieldData);
+        
         if (fieldData.errors && fieldData.errors.length > 0) {
             $formGroup = $(form).find('#' + fieldName).parents('.form-group');
             $formGroup.addClass('has-error');
