@@ -7079,12 +7079,12 @@ function correctSummerNoteFullscreenDimensions($button) {
     }
 }
 
-function displayFormFieldsErrors (form, fields) {console.log(fields)
+function displayFormFieldsErrors (form, fields) {
     $(form).find('.has-error .help-block').remove();
 
     for (var fieldName in fields) {
         var fieldData = fields[fieldName];
-        
+
         if (fieldData.errors && fieldData.errors.length > 0) {
             $formGroup = $(form).find('#' + fieldName).parents('.form-group');
             $formGroup.addClass('has-error');
