@@ -7080,17 +7080,42 @@ function correctSummerNoteFullscreenDimensions($button) {
 }
 
 function displayFormFieldsErrors (form, fields) {
-    $(form).find('.has-error .help-block').remove();
+    var $form = $(form);
+    var formName = $form.attr('name');
+    $form.find('.has-error .help-block').remove();
 
-    for (var fieldName in fields) {
-        var fieldData = fields[fieldName];
+    for (var fieldIndex in fields) {
+        var fieldData = fields[fieldIndex];
+        var fieldName = fieldData.field.name || '';
 
-        if (fieldData.errors && fieldData.errors.length > 0) {
-            $formGroup = $(form).find('#' + fieldName).parents('.form-group');
+        if (fieldName) {
+            var messageTemplate = fieldData.message_template || '';
+            var parameters = fieldData.parameters || {};
+            var errorMessage = fieldData.message || '';
+
+            if (messageTemplate && Translator && typeof Translator.trans === 'function') {
+                var translatedErrorMessage = Translator.trans(messageTemplate, parameters);
+
+                if (translatedErrorMessage !== messageTemplate) {
+                    errorMessage = translatedErrorMessage;
+                }
+            }
+
+            if ($form.find('[name="' + fieldName + '"]').length === 0) {
+                var fieldNameParts = fieldName.split('.');
+                var childFormNameParts = fieldNameParts[0].split('[');
+                var childFormName = childFormNameParts[0] || '';
+                var childFormIndex = childFormNameParts[1].replace(']', '') || '';
+                var childFormFieldName = fieldNameParts[1] || '';
+
+                fieldName = formName + '[' + childFormName + '][' + childFormIndex + '][' + childFormFieldName + ']';
+            }
+
+            $formGroup = $form.find('[name="' + fieldName + '"]').parents('.form-group');
             $formGroup.addClass('has-error');
-            $formGroup.append('<div class="help-block">' + fieldData.errors.join('<br/>') + '</div>')
+            $formGroup.append('<div class="help-block">' + errorMessage + '</div>')
         }
-    };
+    }
 }
 
 $(window).on('resize', function () {
