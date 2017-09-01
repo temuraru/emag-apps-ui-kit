@@ -287,6 +287,7 @@ function displayFormFieldsErrors (form, fields) {
     var $form = $(form);
     var formName = $form.attr('name');
     $form.find('.has-error .help-block').remove();
+    $form.find('.has-error').removeClass('has-error');
 
     for (var fieldIndex in fields) {
         var fieldData = fields[fieldIndex];
