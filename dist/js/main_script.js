@@ -7046,6 +7046,12 @@ function addMoreActions(context) {
                 offset: '-5px 0'
             }
         });
+
+        $(window).resize(function() {
+            setTimeout(function(){
+                drop.position();
+            },0);
+        });
     });
 }
 
