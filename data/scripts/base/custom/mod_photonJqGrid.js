@@ -255,7 +255,18 @@
                         var colNames = self.jqGrid('getGridParam', 'colNames');
 
                         $.each(colModel, function(i) {
-                            columnsCheckboxes += '<li><div class="checkbox"><label><input type="checkbox" class="form-checkbox-control jsc-checkbox" value="' + i + '"' + (this.hidden? '' : 'checked="checked"') + '> <span class="jsc-col-name">' + colNames[i] + '</span></label></div></li>';
+                            if (colModel[i].name !== 'cb') {
+                                var checkedStatus = this.hidden? '' : 'checked="checked"';
+
+                                columnsCheckboxes += '<li>' +
+                                        '<div class="checkbox">' +
+                                            '<label>' +
+                                                '<input type="checkbox" class="form-checkbox-control jsc-checkbox" value="' + i + '"' + checkedStatus + '> ' +
+                                                '<span class="jsc-col-name">' + colNames[i] + '</span>' +
+                                            '</label>' +
+                                        '</div>' +
+                                    '</li>';
+                            }
                         });
 
                         return columnsCheckboxes;

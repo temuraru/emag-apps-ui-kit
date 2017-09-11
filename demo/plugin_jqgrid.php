@@ -781,7 +781,8 @@
                 { label: 'Hobby', name: 'jobtype' },
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
-            ]
+            ],
+            multiselect: true
         };
 
         var photonGrid = new PhotonJqGrid(listingParametersWithColumnChooser);
