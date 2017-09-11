@@ -2154,6 +2154,13 @@ var Tooltip = (function ($) {
             constraints: this.config.constraints
           });
 
+          /* fix for tooltips to update position */
+            var tetherElement = this._tether;
+            $(document.body).on('bodyHeightChanged', function () {
+                tetherElement.position();
+            });
+          /* end fix for tooltips and popovers to update position */
+
           Util.reflow(tip);
           this._tether.position();
 
@@ -7046,12 +7053,6 @@ function addMoreActions(context) {
                 offset: '-5px 0'
             }
         });
-
-        $(window).resize(function() {
-            setTimeout(function(){
-                drop.position();
-            },0);
-        });
     });
 }
 
@@ -7151,3 +7152,22 @@ const colorScheme = {
     'gray_98' : '#fafafa',
     'white' : '#ffffff',
 }
+
+function onElementHeightChange(elm, callback){
+    var lastHeight = elm.clientHeight, newHeight;
+    (function updateHeight(){
+        newHeight = elm.clientHeight;
+        if( lastHeight != newHeight )
+            callback();
+        lastHeight = newHeight;
+
+        if( elm.onElementHeightChangeTimer )
+            clearTimeout(elm.onElementHeightChangeTimer);
+
+        elm.onElementHeightChangeTimer = setTimeout(updateHeight, 0);
+    })();
+}
+
+onElementHeightChange(document.body, function(){
+    $(document.body).trigger('bodyHeightChanged');
+});
