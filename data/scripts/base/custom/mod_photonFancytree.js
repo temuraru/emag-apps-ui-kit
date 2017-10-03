@@ -70,11 +70,11 @@
             /**
              * TreeType click
              */
-            $this.element.on('click', function(e){
+            $this.element.off('click').on('click', function(e){
                 if(e.target != this) return;
                 $this.modal.show();
             });
-            $this.element.next().on('click', function(e){
+            $this.element.next().off('click').on('click', function(e){
                 $this.modal.show();
             });
 
@@ -216,7 +216,7 @@
             /**
              * Reset button action
              */
-            $('body').on('click', '.' + $this.options.modalResetBtnClass, function(e) {
+            $('body').off('click', '.' + $this.options.modalResetBtnClass).on('click', '.' + $this.options.modalResetBtnClass, function(e) {
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
@@ -226,7 +226,7 @@
             /**
              * OK button action
              */
-            $('body').on('click', '.' + $this.options.modalOkBtnClass, function(e) {
+            $('body').off('click', '.' + $this.options.modalOkBtnClass).on('click', '.' + $this.options.modalOkBtnClass, function(e) {
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
@@ -240,7 +240,7 @@
             /**
              * Cancel button action
              */
-            $('body').on('click', '.' + $this.options.modalCancelBtnClass, function(e) {
+            $('body').off('click', '.' + $this.options.modalCancelBtnClass).on('click', '.' + $this.options.modalCancelBtnClass, function(e) {
                 /** Remove class for hiding icon for collapse */
                 $('.fancytree-visibility-none').removeClass('fancytree-visibility-none');
 
@@ -332,11 +332,11 @@
 
             $this.$tree.options.filter.mode = $this.options.searchUnmatched ? 'hide' : 'dimm';
 
-            $('#' + $this.options.treeSearchId).on('input', function (event) {
+            $('#' + $this.options.treeSearchId).off('input').on('input', function (event) {
                 $this._searchHandler.call($this);
             });
 
-            $('#' + $this.options.treeSelectHierarchyId).on('change', function () {
+            $('#' + $this.options.treeSelectHierarchyId).off('change').on('change', function () {
                 if ($(this).is(':checked')) {
                     $this.tree.fancytree('option', 'selectMode', 3);
                     $this.$tree.visit(function(node) {
@@ -360,7 +360,7 @@
                 }
             });
 
-            $('#' + $this.options.treeUnmatchedId).on('change', function () {
+            $('#' + $this.options.treeUnmatchedId).off('change').on('change', function () {
                 $this._unmatchedHandler.call($this);
             });
         },
