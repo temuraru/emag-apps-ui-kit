@@ -738,6 +738,56 @@
                                 </div>
                             </div>
 
+                            <a href="#" name="jqGrid-add-new-row-programatically" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid add new row programatically</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jqgrid_add_new_row_programatically" aria-expanded="false" aria-controls="jqgrid_add_new_row_programatically"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jqgrid_add_new_row_programatically">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jqgrid_add_new_row_programatically_html_source" aria-controls="jqgrid_add_new_row_programatically_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jqgrid_add_new_row_programatically_js_source" aria-controls="jqgrid_add_new_row_programatically_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jqgrid_add_new_row_programatically_css_source" aria-controls="jqgrid_add_new_row_programatically_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jqgrid_add_new_row_programatically_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jqgrid_add_new_row_programatically_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jqgrid_add_new_row_programatically_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_add_new_row_programatically_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                            <div class="pad-top-20 pad-btm-20">
+                                                <button type="button" class="btn btn-primary btn-sm add-new-row">Add new row</button>
+                                            </div>
+
+                                            <table id="grid_table_add_new_row_programatically" class="table table-bordered"></table>
+                                            <div id="grid_pager_add_new_row_programatically"></div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="#" name="jqGrid-with-sticky-panels" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
@@ -1379,6 +1429,43 @@
         };
 
         new PhotonJqGrid(listingParameters).init();
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqgrid_add_new_row_programatically_init">
+    $(document).ready(function () {
+        var listingParameters = {
+            table: '#grid_table_add_new_row_programatically',
+            pager: '#grid_pager_add_new_row_programatically',
+            datatype: 'jsonstring',
+            caption: 'jqGrid add new row programatically',
+            datastr: getListingDummyData(),
+            colModel: [
+                { label: 'First Name', name: 'firstname', key: true, width: "100" },
+                { label: 'Last Name', name: 'lastname' },
+                { label: 'Username', name: 'username' }
+            ]
+        };
+
+        new PhotonJqGrid(listingParameters).init();
+        var rowCount = 0;
+        $('.add-new-row').on('click',function () {
+            var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
+            rowCount = $grid_table_add_new_row_programatically.getDataIDs().length + 2
+            $grid_table_add_new_row_programatically.jqGrid(
+                'addRowData',
+                rowCount,
+                {"id": rowCount,"firstname": "Lucian","lastname": "Edmund","username": "lucianus"},
+                "last"
+            );
+
+            $grid_table_add_new_row_programatically.trigger("reloadGrid");
+
+            var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+
+            $grid_table_add_new_row_programatically.jqGrid('setGridParam', { "page": gridLastPage }).trigger("reloadGrid");
+
+        })
     });
 </script>
 
