@@ -250,12 +250,6 @@ function addMoreActions(context) {
                 offset: '-5px 0'
             }
         });
-
-        $(window).resize(function() {
-            setTimeout(function(){
-                drop.position();
-            },0);
-        });
     });
 }
 
@@ -355,3 +349,28 @@ const colorScheme = {
     'gray_98' : '#fafafa',
     'white' : '#ffffff',
 }
+
+$(function () {
+    var elm = document.body;
+    var lastHeight = elm.clientHeight;
+
+    updateHeight(elm, lastHeight);
+});
+
+function updateHeight (elm, lastHeight) {
+    var newHeight = elm.clientHeight;
+    if (lastHeight != newHeight) {
+        $(document.body).trigger('bodyHeightChanged');
+    }
+
+    lastHeight = newHeight;
+
+    if (elm.onElementHeightChangeTimer) {
+        clearTimeout(elm.onElementHeightChangeTimer);
+    }
+
+    elm.onElementHeightChangeTimer = setTimeout(function () {
+        updateHeight(elm, lastHeight);
+    }, 0);
+}
+
