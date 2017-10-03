@@ -793,21 +793,21 @@
             caption: 'jqGrid add new row programatically',
             datastr: getListingDummyData(),
             colModel: [
-                { label: 'First Name', name: 'firstname', key: true, width: "100" },
-                { label: 'Last Name', name: 'lastname' },
-                { label: 'Username', name: 'username' }
+                {label: 'First Name', name: 'firstname', key: true, width: "100"},
+                {label: 'Last Name', name: 'lastname'},
+                {label: 'Username', name: 'username'}
             ]
         };
 
         new PhotonJqGrid(listingParameters).init();
         var rowCount = 0;
-        $('.add-new-row').on('click',function () {
+        $('.add-new-row').on('click', function () {
             var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
             rowCount = $grid_table_add_new_row_programatically.getDataIDs().length + 2
             $grid_table_add_new_row_programatically.jqGrid(
                 'addRowData',
                 rowCount,
-                {"id": rowCount,"firstname": "Lucian","lastname": "Edmund","username": "lucianus"},
+                {"id": rowCount, "firstname": "Lucian", "lastname": "Edmund", "username": "lucianus"},
                 "last"
             );
 
@@ -815,7 +815,7 @@
 
             var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
 
-            $grid_table_add_new_row_programatically.jqGrid('setGridParam', { "page": gridLastPage }).trigger("reloadGrid");
+            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {"page": gridLastPage}).trigger("reloadGrid");
 
         })
     });

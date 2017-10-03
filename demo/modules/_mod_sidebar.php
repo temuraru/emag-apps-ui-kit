@@ -311,6 +311,11 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
+                                    <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-add-new-row-programatically">
+                                        <span class="menu-text">Add new row programatically</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
                                     <a href="/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-sticky-panels">
                                         <span class="menu-text">With sticky panels</span>
                                     </a>
