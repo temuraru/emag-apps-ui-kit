@@ -7153,21 +7153,27 @@ const colorScheme = {
     'white' : '#ffffff',
 }
 
-function onElementHeightChange(elm, callback){
-    var lastHeight = elm.clientHeight, newHeight;
-    (function updateHeight(){
-        newHeight = elm.clientHeight;
-        if( lastHeight != newHeight )
-            callback();
-        lastHeight = newHeight;
+$(function () {
+    var elm = document.body;
+    var lastHeight = elm.clientHeight;
 
-        if( elm.onElementHeightChangeTimer )
-            clearTimeout(elm.onElementHeightChangeTimer);
+    updateHeight(elm, lastHeight);
+});
 
-        elm.onElementHeightChangeTimer = setTimeout(updateHeight, 0);
-    })();
+function updateHeight (elm, lastHeight) {
+    var newHeight = elm.clientHeight;
+    if (lastHeight != newHeight) {
+        $(document.body).trigger('bodyHeightChanged');
+    }
+
+    lastHeight = newHeight;
+
+    if (elm.onElementHeightChangeTimer) {
+        clearTimeout(elm.onElementHeightChangeTimer);
+    }
+
+    elm.onElementHeightChangeTimer = setTimeout(function () {
+        updateHeight(elm, lastHeight);
+    }, 0);
 }
 
-onElementHeightChange(document.body, function(){
-    $(document.body).trigger('bodyHeightChanged');
-});
