@@ -251,6 +251,13 @@ var Tooltip = (function ($) {
             constraints: this.config.constraints
           });
 
+          /* fix for tooltips to update position */
+            var tetherElement = this._tether;
+            $(document.body).on('bodyHeightChanged', function () {
+                tetherElement.position();
+            });
+          /* end fix for tooltips and popovers to update position */
+
           Util.reflow(tip);
           this._tether.position();
 
