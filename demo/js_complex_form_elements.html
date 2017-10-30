@@ -1695,50 +1695,6 @@
 <script src="../dist/plugins/selectize/selectize-0.12.0.min.js" data-dependency-name="selectize_source"></script>
 
 <script src="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.js" data-dependency-name="chosen_source"></script>
-<script type="text/javascript">
-    Chosen.prototype.set_up_html = function() {
-        console.log('new set up html');
-        var container_classes, container_props;
-        container_classes = ["chosen-container"];
-        container_classes.push("chosen-container-" + (this.is_multiple ? "multi" : "single"));
-        if (this.inherit_select_classes && this.form_field.className) {
-            container_classes.push(this.form_field.className);
-        }
-        if (this.is_rtl) {
-            container_classes.push("chosen-rtl");
-        }
-        container_props = {
-            'class': container_classes.join(' '),
-            'style': "width: " + (this.container_width()) + ";",
-            'title': this.form_field.title
-        };
-        if (this.form_field.id.length) {
-            container_props.id = this.form_field.id.replace(/[^\w]/g, '_') + "_chosen";
-        }
-        this.container = $("<div />", container_props);
-        if (this.is_multiple) {
-            this.container.html('<ul class="chosen-choices"><li class="search-field"><input type="text" value="abc123' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" /></li></ul><div class="chosen-drop"><ul class="chosen-results"></ul></div>');
-        } else {
-            this.container.html('<a class="chosen-single chosen-default" tabindex="-1"><span>abc123' + this.default_text + '</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" /></div><ul class="chosen-results"></ul></div>');
-        }
-        this.form_field_jq.hide().after(this.container);
-        this.dropdown = this.container.find('div.chosen-drop').first();
-        this.search_field = this.container.find('input').first();
-        this.search_results = this.container.find('ul.chosen-results').first();
-        this.search_field_scale();
-        this.search_no_results = this.container.find('li.no-results').first();
-        if (this.is_multiple) {
-            this.search_choices = this.container.find('ul.chosen-choices').first();
-            this.search_container = this.container.find('li.search-field').first();
-        } else {
-            this.search_container = this.container.find('div.chosen-search').first();
-            this.selected_item = this.container.find('.chosen-single').first();
-        }
-        this.results_build();
-        this.set_tab_index();
-        return this.set_label_behavior();
-    };
-</script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 <!-- SCRIPTS:End -->
