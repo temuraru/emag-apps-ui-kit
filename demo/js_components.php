@@ -886,19 +886,23 @@
         </script>
         <script type="text/javascript" data-dependency-name="block_ui_init">
             $(document).ready(function () {
-                $('#block_page').on('click', function() {
+                $('#block_page').on('click', function(e) {
+                    var $self = $(e.currentTarget);
+                    $self.blur();
                     $('body').blockControl({
                         loadingIconType: "cubeGrid",
                         iconColorClass: "light",
                         overlayColor : "#000"
                     });
-                    setTimeout(function(){$('body').unblockControl()}, 3000);
+                    setTimeout(function(){$('body').unblockControl();$self.focus();}, 3000);
                 });
 
-                $('#block_section').on('click', function() {
+                $('#block_section').on('click', function(e) {
                     var section = $('#block_ui_demo');
+                    var $self = $(e.currentTarget);
+                    $self.blur();
                     section.blockControl();
-                    setTimeout(function(){section.unblockControl()}, 3000);
+                    setTimeout(function(){section.unblockControl();$self.focus();}, 3000);
                 });
             });
         </script>
