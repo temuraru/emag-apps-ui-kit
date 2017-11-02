@@ -161,8 +161,14 @@ function showThisLoader(type, colorClass) {
             loadingIconType: "dots",
             iconColorClass: "dark",
             overlayColor: "#fff",
-            target: this
+            target: this,
+            blurElement: null
         }, options);
+
+        if(settings.blurElement){
+            $(settings.blurElement).blur();
+        }
+
 
         if(settings.target.selector == "body" || settings.target.selector == "html") {
             var pageOverlay = true;
@@ -198,9 +204,18 @@ function showThisLoader(type, colorClass) {
 }( jQuery ));
 
 (function ( $ ) {
-    $.fn.unblockControl = function() {
+    $.fn.unblockControl = function(options) {
         $(this).unblock();
+
+        var settings = $.extend({
+            focusElement: null
+        }, options);
+
+        if(settings.focusElement){
+            $(settings.focusElement).focus();
+        }
     };
+    
 }( jQuery ));
 
 (function ( $ ) {
