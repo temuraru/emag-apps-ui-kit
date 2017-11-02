@@ -215,7 +215,7 @@ function showThisLoader(type, colorClass) {
             $(settings.focusElement).focus();
         }
     };
-    
+
 }( jQuery ));
 
 (function ( $ ) {

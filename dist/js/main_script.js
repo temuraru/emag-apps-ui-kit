@@ -7009,15 +7009,16 @@ function showThisLoader(type, colorClass) {
 (function ( $ ) {
     $.fn.unblockControl = function(options) {
         $(this).unblock();
+
+        var settings = $.extend({
+            focusElement: null
+        }, options);
+
+        if(settings.focusElement){
+            $(settings.focusElement).focus();
+        }
     };
 
-    var settings = $.extend({
-        focusElement: null
-    }, options);
-
-    if(settings.focusElement){
-        $(settings.focusElement).focus();
-    }
 }( jQuery ));
 
 (function ( $ ) {
