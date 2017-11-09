@@ -413,7 +413,8 @@
         $("#tree").fancytree({
             icon: false,
             checkbox: true,
-            source: fancytreeContent
+            source: fancytreeContent,
+            toggleEffect: false
         });
     });
 </script>
