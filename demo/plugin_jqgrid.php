@@ -1433,13 +1433,13 @@
             caption: 'jqGrid with data formatters',
             datastr: getListingWithFormatterDummyData(),
             colNames: [
-                'id',
-                'notAvailable',
-                'dateTime',
-                'date',
-                'time',
-                'userEmail',
-                'country'
+                'ID',
+                'Not available',
+                'Date & time',
+                'Date',
+                'Time',
+                'User email',
+                'Country'
             ],
             colModel: [
                 {name: 'id', index: 'id', sortable: false, width: 1, formatter: PhotonDataFormatter.id },
@@ -1529,11 +1529,11 @@
             caption: 'jqGrid with data formatters',
             datastr: getListingWithFormatter2DummyData(),
             colNames: [
-                'product',
-                'badge',
-                'price',
-                'dateTime',
-                'status'
+                'Product',
+                'Badge',
+                'Price',
+                'Date & time',
+                'Status'
             ],
             colModel: [
                 {name: 'product', index: 'product', sortable: false, width: 2, formatter: PhotonDataFormatter.product },
