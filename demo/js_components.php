@@ -398,12 +398,29 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source">
-                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip type danger" data-type="danger">Tooltip type danger</button>
-                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip type warning" data-type="warning">Tooltip type warning</button>
-                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip type default" data-type="default">Tooltip type default</button>
-                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip without type">Tooltip without type</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip type danger" data-type="danger">Type danger</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip type warning" data-type="warning">Type warning</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip type default" data-type="default">Type default</button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip without type">Without type</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15">
+                                            <div class="alert alert-warning no-margin-bottom"><p><i class="fa fa-warning fonts-up-140"></i>
+                                                    In case you use tooltip, take care that it can be seen when is open. Bellow you have a <strong>wrong</strong> example. It can not be seen beacause of sidebar. The right way in this case is to align to the <strong>top</strong>, <strong>right</strong> or <strong>bottom</strong>.
+                                                </p></div>
+
+                                            <div class="row mg-top-30">
+                                                <div class="col-sm-6">
+                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Wrong position" data-type="default">Wrong way</button>
+                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Right position" data-type="default">Right way</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -450,16 +467,33 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,tether_source">
-                                            <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type danger">Popover type danger</button>
-                                            <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type warning">Popover type warning</button>
-                                            <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type default">Popover type default</button>
-                                            <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover type danger">Popover without type</button>
+                                            <button type="button" class="btn btn-default" data-type="danger" data-toggle="popover" title="Popover title" data-placement="top" data-content="Popover type danger">Type danger</button>
+                                            <button type="button" class="btn btn-default" data-type="warning" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Popover type warning">Type warning</button>
+                                            <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="left" data-content="Popover type default">Type default</button>
+                                            <button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-placement="right" data-content="Popover without type">Without type</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15">
+                                            <div class="alert alert-warning no-margin-bottom"><p><i class="fa fa-warning fonts-up-140"></i>
+                                                    In case you use popover, take care that it can be seen when is open. Bellow you have a <strong>wrong</strong> example. It can not be seen beacause of sidebar. The right way in this case is to align to the <strong>top</strong>, <strong>right</strong> or <strong>bottom</strong>.
+                                                </p></div>
+
+                                            <div class="row mg-top-30">
+                                                <div class="col-sm-6">
+                                                    <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="left" data-content="Wrong position">Wrong way</button>
+                                                    <button type="button" class="btn btn-default" data-type="default" data-toggle="popover" title="Popover title" data-placement="top" data-content="Right position">Right way</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
 
                         </div>
                     </div>
@@ -1138,8 +1172,15 @@
                     datastr: getListingDummyData(),
                     styleUI : 'fontAwesome',
                     colModel: [
+                        { label: 'id', name: 'id',           index: 'id', key: true, hidden: true, width: "20" },
+                        { label: 'First Name', name: 'firstname',    index: 'firstname', width: "100", editable: true },
+                        { label: 'Last Name', name: 'lastname',     index: 'lastname', editable: true },
+                        { label: 'Username', name: 'username',     index: 'username', editable: true },
+                        { label: 'Job type', name: 'jobtype',      index: 'jobtype', editable: true },
+                        { label: 'Code name', name: 'codename',     index: 'codename', editable: true },
+                        { label: 'Spirit animal', name: 'spirit_animal',index: 'spirit_animal', editable: true },
                         {
-                            name: "actions",
+                            name: "Actions",
                             width: 60,
                             formatter: "actions",
                             formatoptions: {
@@ -1148,14 +1189,7 @@
                                 addOptions: {},
                                 delOptions: {}
                             }
-                        },
-                        { name: 'id',           index: 'id', key: true, hidden: true, width: "20" },
-                        { name: 'firstname',    index: 'firstname', width: "100", editable: true },
-                        { name: 'lastname',     index: 'lastname', editable: true },
-                        { name: 'username',     index: 'username', editable: true },
-                        { name: 'jobtype',      index: 'jobtype', editable: true },
-                        { name: 'codename',     index: 'codename', editable: true },
-                        { name: 'spirit_animal',index: 'spirit_animal', editable: true }
+                        }
                     ]
                 };
 
