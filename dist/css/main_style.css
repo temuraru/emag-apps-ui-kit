@@ -8820,7 +8820,7 @@ button.close {
 }
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 1028;
   display: block;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -8980,7 +8980,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1060;
+  z-index: 1027;
   display: block;
   max-width: 276px;
   padding: 1px;
@@ -11424,7 +11424,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   background-color: #fff;
-  z-index: 100;
+  z-index: 1029;
   display: block;
 }
 .sidebar:before {
