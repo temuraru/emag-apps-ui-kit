@@ -4435,8 +4435,9 @@ function initSidebarEvents() {
 
             if (item.tooltip) {
                 var tooltipType = item.tooltipType || 'default';
+                var tooltipPlacement = item.tooltipPlacement || 'top';
 
-                item.tooltip = ' data-toggle="tooltip" data-placement="top" data-type="' + tooltipType + '" data-original-title="' + item.tooltip + '"';
+                item.tooltip = ' data-toggle="tooltip" data-placement="' + tooltipPlacement + '" data-type="' + tooltipType + '" data-original-title="' + item.tooltip + '"';
                 labelClass += ' label-with-tooltip';
             } else {
                 item.tooltip = '';
