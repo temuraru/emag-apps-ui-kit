@@ -6409,7 +6409,7 @@ function initSidebarEvents() {
                             save: {
                                 label: _saveLabel,
                                 class: 'btn-success',
-                                icon: 'btn-default',
+                                icon: 'fa fa-check',
                                 formSubmitter: true
                             },
                             cancel: {
