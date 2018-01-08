@@ -727,7 +727,7 @@
   .fa {
     font-size: 140%;
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: bottom;
   }
 
   button.close {
@@ -825,4 +825,11 @@
       }
     }
   }
+}
+
+.ui-jqgrid .ui-jqgrid-btable.word-break tbody tr.jqgrow td,
+.ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td.word-break,
+.word-break{
+  white-space: normal;
+  word-break: break-all;
 }

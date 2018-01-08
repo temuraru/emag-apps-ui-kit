@@ -1,5 +1,5 @@
 /*!
- * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2017 eMAG HX Team
+ * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2018 eMAG HX Team
  * Licensed under the ISC license
  */
 /*!
@@ -10705,7 +10705,7 @@ button.close {
 .alert .fa {
   font-size: 140%;
   margin-right: 10px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .alert button.close .fa {
   font-size: 100%;
@@ -10750,6 +10750,12 @@ button.close {
 }
 .alert.alert-black button.close .fa {
   color: #c3c3c3;
+}
+.ui-jqgrid .ui-jqgrid-btable.word-break tbody tr.jqgrow td,
+.ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td.word-break,
+.word-break {
+  white-space: normal;
+  word-break: break-all;
 }
 /* Make clicks pass-through */
 #nprogress {

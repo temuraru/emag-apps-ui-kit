@@ -4435,8 +4435,9 @@ function initSidebarEvents() {
 
             if (item.tooltip) {
                 var tooltipType = item.tooltipType || 'default';
+                var tooltipPlacement = item.tooltipPlacement || 'top';
 
-                item.tooltip = ' data-toggle="tooltip" data-placement="top" data-type="' + tooltipType + '" data-original-title="' + item.tooltip + '"';
+                item.tooltip = ' data-toggle="tooltip" data-placement="' + tooltipPlacement + '" data-type="' + tooltipType + '" data-original-title="' + item.tooltip + '"';
                 labelClass += ' label-with-tooltip';
             } else {
                 item.tooltip = '';
@@ -6408,7 +6409,7 @@ function initSidebarEvents() {
                             save: {
                                 label: _saveLabel,
                                 class: 'btn-success',
-                                icon: 'btn-default',
+                                icon: 'fa fa-check',
                                 formSubmitter: true
                             },
                             cancel: {
@@ -6830,6 +6831,22 @@ function addNotification(message, type){
     var notificationClass = 'notification-default';
     if (type === 'black') {
         notificationClass = 'notification-bottom-left';
+    }
+
+    var fontawesomeIcons = {
+        "info": "fa-info-circle",
+        "info-full-color": "fa-info-circle",
+        "success": "fa-check-circle",
+        "success-full-color": "fa-check-circle",
+        "warning": "fa-warning",
+        "warning-full-color": "fa-warning",
+        "danger": "fa-exclamation-circle",
+        "danger-full-color": "fa-exclamation-circle"
+    };
+
+    if (message.indexOf('fa fa') == -1) {
+        var dummyMessage = message;
+        message = '<i class="fa ' + fontawesomeIcons[type] + '"></i>' + dummyMessage;
     }
 
     var defaultOptions = {
