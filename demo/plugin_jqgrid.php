@@ -88,7 +88,7 @@
                                             </ul>
                                         </div>
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table" class="table table-bordered"></table>
+                                            <table id="grid_table" class="table table-bordered word-break"></table>
                                             <div id="grid_pager"></div>
                                         </div>
                                     </div>
@@ -136,7 +136,7 @@
                                                 <button type="button" class="btn btn-primary btn-sm add-new-row">Add new row</button>
                                             </div>
 
-                                            <table id="grid_table_add_new_row_programatically" class="table table-bordered"></table>
+                                            <table id="grid_table_add_new_row_programatically" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_add_new_row_programatically"></div>
 
 
@@ -181,7 +181,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_sticky_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table_sticky" class="table table-bordered"></table>
+                                            <table id="grid_table_sticky" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_sticky"></div>
                                         </div>
                                     </div>
@@ -230,7 +230,7 @@
                                                 </button>
                                             </div>
 
-                                            <table id="grid_table_column_chooser" class="table table-bordered"></table>
+                                            <table id="grid_table_column_chooser" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_column_chooser"></div>
                                         </div>
                                     </div>
@@ -277,7 +277,7 @@
                                                 <button type="button" class="btn btn-primary btn-sm check_rows" >Get rows</button>
                                             </div>
 
-                                            <table id="grid_table_with_selectable_rows" class="table table-bordered"></table>
+                                            <table id="grid_table_with_selectable_rows" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_with_selectable_rows"></div>
 
                                             <div class="pad-top-20">
@@ -325,7 +325,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table_with_hierarchy" class="table table-bordered"></table>
+                                            <table id="grid_table_with_hierarchy" class="table table-bordered word-break"></table>
 
                                         </div>
                                     </div>
@@ -368,7 +368,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table_with_subgrid" class="table table-bordered"></table>
+                                            <table id="grid_table_with_subgrid" class="table table-bordered word-break"></table>
 
                                         </div>
                                     </div>
@@ -411,7 +411,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_inline_editing_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table_with_inline_edit" class="table table-bordered"></table>
+                                            <table id="grid_table_with_inline_edit" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_with_inline_edit"></div>
 
                                         </div>
@@ -455,7 +455,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_actions_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table_with_actions" class="table table-bordered"></table>
+                                            <table id="grid_table_with_actions" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_with_actions"></div>
 
                                         </div>
@@ -499,7 +499,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_no_data_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table_with_no_data" class="table table-bordered"></table>
+                                            <table id="grid_table_with_no_data" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_with_no_data"></div>
                                         </div>
                                     </div>
@@ -543,11 +543,11 @@
                                     <div class="col-sm-12">
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_data_formatters_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20">
-                                                <table id="grid_with_formatter_table" class="table table-bordered"></table>
+                                                <table id="grid_with_formatter_table" class="table table-bordered word-break"></table>
                                                 <div id="grid_with_formatter_pager"></div>
                                             </div>
                                             <div class="pad-top-20">
-                                                <table id="grid_with_formatter_2_table" class="table table-bordered"></table>
+                                                <table id="grid_with_formatter_2_table" class="table table-bordered word-break"></table>
                                                 <div id="grid_with_formatter_2_pager"></div>
                                             </div>
 
@@ -603,12 +603,12 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jq_with_lot_of_columns_and_data_formatters_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20">
                                                 <h5 class="no-margin-top text-danger"><strong>Not recommended</strong></h5>
-                                                <table id="grid_with_lot_of_columns_and_data_formatters_table_1" class="table table-bordered"></table>
+                                                <table id="grid_with_lot_of_columns_and_data_formatters_table_1" class="table table-bordered word-break"></table>
                                                 <div id="grid_with_lot_of_columns_and_data_formatters_pager_1"></div>
                                             </div>
                                             <div class="pad-top-20">
                                                 <h5 class="no-margin-top text-success"><strong>Recommended</strong></h5>
-                                                <table id="grid_with_lot_of_columns_and_data_formatters_table_2" class="table table-bordered"></table>
+                                                <table id="grid_with_lot_of_columns_and_data_formatters_table_2" class="table table-bordered word-break"></table>
                                                 <div id="grid_with_lot_of_columns_and_data_formatters_pager_2"></div>
                                             </div>
                                         </div>
@@ -774,7 +774,7 @@
                 { label: 'First Name', name: 'firstname', key: true, width: "100" },
                 { label: 'Last Name', name: 'lastname' },
                 { label: 'Username', name: 'username' },
-                { label: 'Hobby', name: 'jobtype' },
+                { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
             ]

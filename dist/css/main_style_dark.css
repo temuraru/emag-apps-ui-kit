@@ -1,5 +1,5 @@
 /*!
- * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2017 eMAG HX Team
+ * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2018 eMAG HX Team
  * Licensed under the ISC license
  */
 /*!
@@ -2089,8 +2089,7 @@ th {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
@@ -5796,8 +5795,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   background-color: #f6f6f6;
-  -moz-columns: #c3c3c3;
-       columns: #c3c3c3;
+  columns: #c3c3c3;
   opacity: 1;
 }
 .form-control[disabled],
@@ -10699,7 +10697,6 @@ button.close {
   font-weight: 400;
 }
 .fancytree-disabled {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 .fancytree-disabled .fancytree-plain.fancytree-container span.fancytree-title:hover {
@@ -10708,7 +10705,7 @@ button.close {
 .alert .fa {
   font-size: 140%;
   margin-right: 10px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .alert button.close .fa {
   font-size: 100%;
@@ -10753,6 +10750,12 @@ button.close {
 }
 .alert.alert-black button.close .fa {
   color: #c3c3c3;
+}
+.ui-jqgrid .ui-jqgrid-btable.word-break tbody tr.jqgrow td,
+.ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td.word-break,
+.word-break {
+  white-space: normal;
+  word-break: break-all;
 }
 /* Make clicks pass-through */
 #nprogress {
