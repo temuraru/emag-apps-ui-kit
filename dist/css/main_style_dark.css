@@ -10705,7 +10705,7 @@ button.close {
 .alert .fa {
   font-size: 140%;
   margin-right: 10px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .alert button.close .fa {
   font-size: 100%;
