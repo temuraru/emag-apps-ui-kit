@@ -7,7 +7,7 @@
 
         <!-- PLUGIN: Chart -->
         <link rel="stylesheet" href="../dist/plugins/chart/chart.min.css" data-dependency-name="chart_css">
-        
+
         <?php include_once "modules/_mod_top_include.php"?>
 
     </head>
@@ -24,7 +24,7 @@
                     <!-- SIDEBAR:Start -->
                     <?php include_once "modules/_mod_sidebar.php"?>
                     <!-- SIDEBAR:End -->
-                    
+
                     <!-- CONTENT:Start -->
                     <div class="main-content">
                         <div class="page-content">
@@ -264,10 +264,10 @@
                 </div>
             </div>
         <!-- PAGE:End -->
-        
+
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.js"></script>
 
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
@@ -282,7 +282,7 @@
         <script src="../dist/plugins/prism/prism.min.js"></script>
 
         <!-- DOCUMENT-READY:Start -->
-        <script type="text/javascript">               
+        <script type="text/javascript">
             $(document).ready(function () {
                 demoHelpers();
                 showPageCode();

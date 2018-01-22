@@ -83,7 +83,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_datetime.php">Datetimepicker</a></td>
-                                            <td><span class="label label-info">4.17.37</span></td>
+                                            <td><span class="label label-info">4.17.47</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
@@ -120,6 +120,11 @@
                                             <td><a href="plugin_jqgrid.php">jqGrid</a></td>
                                             <td><span class="label label-info">5.2.1</span></td>
                                             <td><span class="label label-warning">modified</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>jQuery</td>
+                                            <td><span class="label label-info">3.2.1</span></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>jQuery Cookie</td>
@@ -185,8 +190,8 @@
 <!-- PAGE:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.js"></script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 
