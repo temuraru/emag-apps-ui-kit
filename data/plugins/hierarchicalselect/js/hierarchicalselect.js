@@ -147,7 +147,7 @@
                 }, self.MOUSE_UP_DELAY);
             });
 
-            $(window).resize(function () {
+            $(window).on('resize', function () {
                 self._updateWidths();
             });
         },
@@ -202,7 +202,7 @@
                     } else {
                         $(option).addClass('hidden').attr('disabled', 'disabled');
                     }
-                })
+                });
             });
         },
         _selectGroupSelect: function ($select) {
@@ -308,7 +308,7 @@
             $.each(selectGroups, function (key, value) {
                 $(this).css({
                     'width': ''
-                })
+                });
             });
         },
         _calculateNewWidths: function() {
@@ -427,7 +427,7 @@
             this.visibleRemainingWidthOfItem = this.itemOuterWidth - (this.outsideLeftPosition % this.itemOuterWidth);
 
             if (this.visibleRemainingWidthOfItem == this.itemOuterWidth) {
-                this.visibleRemainingWidthOfItem = 0
+                this.visibleRemainingWidthOfItem = 0;
             }
 
             if (this.outsideLeftPosition > 0) {
@@ -455,7 +455,7 @@
             return this._selectedOptionsInSelectGroups[selectGroupKey] == key;
         },
         _hasDataStructure: function(data) {
-            return (data instanceof Array && data.length > 0)
+            return (data instanceof Array && data.length > 0);
         },
         _getNoOfExistingGroups: function() {
             return this.element.find('.hierarchical-select-group').length;
