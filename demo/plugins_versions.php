@@ -98,7 +98,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_fancytree.php">Fancytree</a><br>Using: jquery.fancytree.filter.js</td>
-                                            <td><span class="label label-info">2.15</span><br><span class="label label-info">2.22.0</span></td>
+                                            <td><span class="label label-info">2.27.0</span><br><span class="label label-info">2.27.0</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
