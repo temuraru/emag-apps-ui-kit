@@ -764,35 +764,64 @@
         <!-- POPUPS:Start -->
 <div data-dependency-name="pop_space">
     <!-- Div with id 'pop_space' must be inserted before the end of the body tag -->
-        <div id="pop_space">
-            <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true"><i class="fa fa-remove"></i></span></button>
-                            <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
+    <div id="pop_space">
+        <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Suspendisse rutrum</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="pad-sep-20">
+                            <span class="caption">Nam scelerisque nunc</span>
                         </div>
-                        <div class="modal-body">
-                            <h2>Suspendisse rutrum</h2>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="pad-sep-20">
-                                <span class="caption">Nam scelerisque nunc</span>
-                            </div>
-                            <p>
-                                Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Pellentesque sed magna nisi.<br>
-                                Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="pull-right panel-controls">
-                                <button class="btn btn-success" data-dismiss="modal"><span>Yeah, got it</span></button>
-                            </div>
+                        <p>
+                            Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Pellentesque sed magna nisi.<br>
+                            Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="pull-right panel-controls">
+                            <button class="btn btn-success" data-dismiss="modal"><span>Yeah, got it</span></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="pop_space">
+    <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+                    <h4 class="modal-title" id="myModalLabel">This is an AJAX modal</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="pad-btm-20 text-center">
+                        This modal can contain any kind of info.<br>
+                        Check out the code documentation on the main page.
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9cNpKRXwaj4" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="pull-right panel-controls">
+                        <button class="btn btn-success" data-dismiss="modal"><span>Save</span></button>
+                        <button class="btn btn-default" data-dismiss="modal"><span>Cancel</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
         <!-- SCRIPTS:Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
@@ -844,6 +873,13 @@
 
                 $('#ajax_modal_start').on('click', function(){
                     modalTest.show();
+                });
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#ajax_modal_start').off('click').on('click', function() {
+                    $('#ajaxModal').modal('show');
                 });
             })
         </script>
