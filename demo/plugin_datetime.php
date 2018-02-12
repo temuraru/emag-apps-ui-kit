@@ -397,7 +397,7 @@
                                                     <div class="form-group">
                                                         <label for="daterangepicker_standard_with_value" class="control-label"></label>
                                                         <div class="input-group">
-                                                            <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="10/10/2016 - 10/30/2016" />
+                                                            <input type="text" id="daterangepicker_standard_with_value" class="form-control" value="01/01/2018 - 22/10/2018" />
                                                             <div class="input-group-addon cursor-pointer"><i class="fa fa-calendar"></i></div>
                                                         </div>
                                                     </div>
