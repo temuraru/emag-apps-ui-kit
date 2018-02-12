@@ -980,13 +980,13 @@
 
                 $('#my_wizard').on('actionclicked.fu.wizard', function (e, data) {
                     $('#file_type').parent().removeClass('has-error');
-                    if (data.step === 1) {
+                    if (data.step === 1 && data.direction === 'next') {
                         if (!getSelectedRows()) {
                             addNotification('<i class="fa fa-exclamation-circle"></i><span>Please select a product</span>', 'danger');
                             e.preventDefault();
                         }
                     }
-                    if (data.step === 2) {
+                    if (data.step === 2 && data.direction === 'next') {
                         var fileType = $('#file_type').val();
 
                         if (fileType == 0) {
