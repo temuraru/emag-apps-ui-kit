@@ -164,7 +164,7 @@
                                         </tr>
                                         <tr>
                                             <td>Tether</td>
-                                            <td><span class="label label-info">1.1.0</span></td>
+                                            <td><span class="label label-info">1.4.3</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
