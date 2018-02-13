@@ -281,7 +281,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.js':'<%= pkg.data_plugins %>/dropzone/js/dropzone.js',
                     '<%= pkg.dist_plugins %>/magnific/magnific.min.js':'<%= pkg.data_plugins %>/magnific/js/magnific.js',
-                    '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.1.1.js',
+                    '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.4.3.js',
                     '<%= pkg.dist_plugins %>/drop/drop.min.js':'<%= pkg.data_plugins %>/drop/js/drop.js',
                     '<%= pkg.dist_plugins %>/jQueryCookie/jQueryCookie.min.js':'<%= pkg.data_plugins %>/jQueryCookie/js/jquery.cookie.js',
                     '<%= pkg.dist_plugins %>/wizard/wizard.min.js':'<%= pkg.data_plugins %>/wizard/js/wizard.js',
