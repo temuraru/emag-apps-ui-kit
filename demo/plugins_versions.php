@@ -169,7 +169,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wizard.php">Wizard</a></td>
-                                            <td><span class="label label-info">3.16.0</span></td>
+                                            <td><span class="label label-info">3.16.3</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         </tbody>
