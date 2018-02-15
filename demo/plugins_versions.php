@@ -63,7 +63,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_stats.php#charts">Chart</a></td>
-                                            <td><span class="label label-info">2.5.0</span></td>
+                                            <td><span class="label label-info">2.7.1</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
