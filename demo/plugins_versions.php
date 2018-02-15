@@ -78,7 +78,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_datetime.php#dateRangePicker">Daterangepicker</a></td>
-                                            <td><span class="label label-info">2.1.24</span></td>
+                                            <td><span class="label label-info">2.1.27</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
