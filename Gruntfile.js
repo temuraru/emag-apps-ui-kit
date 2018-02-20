@@ -219,7 +219,7 @@ module.exports = function (grunt) {
             },
             summernote: {
                 src: [
-                    '<%= pkg.data_plugins %>/summernote/js/summernote.min.js',
+                    '<%= pkg.data_plugins %>/summernote/js/summernote.js',
                     '<%= pkg.data_plugins %>/summernote/js/summernote-cleaner.js'
                 ],
                 dest: '<%= pkg.dist_plugins%>/summernote/summernote.min.js'
