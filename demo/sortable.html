@@ -689,6 +689,8 @@
                     <div class="show-panel code-example">
                         <div class="show-panel-body code-example">
 
+                            <h2><strong>Sortable</strong></h2>
+
                             <div class="code-container">
                                 <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
@@ -722,11 +724,11 @@
 
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <div class="pad-15 no-padding-bottom" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,sortable,sortable_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,sortable-content,sortable_css">
                                             <div class="row">
                                                 <div class="col-sm-12">
 
-                                                    <div id="draggable_container" class="panel-body makeSortable no-margin-left-right no-padding-bottom">
+                                                    <div id="sortable_container" class="panel-body makeSortable no-margin-left-right no-padding-bottom">
                                                         <div class="panel panel-default custom-panel-list-item">
                                                             <div class="panel-body">
                                                                 <div class="content">
@@ -767,6 +769,11 @@
                                                 </div>
                                             </div>
                                         </div>
+
+
+
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -798,9 +805,8 @@
 <!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
 
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
 
@@ -820,7 +826,7 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="sortable">
+<script type="text/javascript" data-dependency-name="sortable-content">
     $(document).ready(function () {
         $(".makeSortable").sortable({
             placeholder: "ui-state-highlight",
@@ -869,7 +875,7 @@
 
 <style data-dependency-name="sortable_css">
     /* DRAGGABLE ITEMS */
-    #draggable_container {
+    #sortable_container {
         position: relative;
     }
 
@@ -901,7 +907,6 @@
         border:1px solid #005eb7;
     }
 </style>
-
 
 </body>
 </html>
