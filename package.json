@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git//git@github.com:eMAGTechLabs/emag-apps-ui-kit.git"
+    "url": "git://git@github.com:eMAGTechLabs/emag-apps-ui-kit.git"
   },
   "devDependencies": {
     "eslint": "^3.11.1",
