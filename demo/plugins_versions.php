@@ -53,7 +53,7 @@
                                         </tr>
                                         <tr>
                                             <td>Bootstrap multiselect</td>
-                                            <td><span class="label label-info">2.0</span></td>
+                                            <td><span class="label label-info">0.9.15</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
