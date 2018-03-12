@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="js">
 <head>
-
-    <title>Layout - eMAG Apps UI KIT</title>
+    <title>JS Components - eMAG Apps UI KIT</title>
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="eMAG Apps UI KIT - The superfast, supersimple UI Kit" />
@@ -10,7 +9,8 @@
 <meta name="author" content="eMAG HX Team">
 
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png">    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
+<link rel="icon" type="image/png" href="../favicon.png">
+    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
 <!-- PHOTON main styles -->
@@ -33,9 +33,7 @@
 
 <!-- Hotjar Tracking Code for http://emagtechlabs.github.io/emag-apps-ui-kit/demo/ -->
 <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:735784,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
-<!-- End Hotjar Tracking Code for http://emagtechlabs.github.io/emag-apps-ui-kit/demo/ -->    <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
-    <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
-
+<!-- End Hotjar Tracking Code for http://emagtechlabs.github.io/emag-apps-ui-kit/demo/ -->
 </head>
 <!--[if lt IE 9]>
 <body class="lt-ie9">
@@ -115,7 +113,6 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav><!-- HEADER:End -->
-
 <!-- PAGE:Start -->
 <div class="main-container" id="main-container">
     <div class="main-container-inner">
@@ -685,157 +682,107 @@
                 <div class="jumbotron content-header">
                     <div class="container-fluid">
                         <p>eMAG Apps UI KIT</p>
-                        <p><b>Technical details</b></p>
+                        <p><b>Sortable | jQuery UI</b></p>
                     </div>
                 </div>
-                <section id="boilerplate" class="pad-top-40">
-                    <div class="panel">
-                        <div class="panel-body">
+                <section id="sortableStandardId" class="pad-top-40">
+                    <div class="show-panel code-example">
+                        <div class="show-panel-body code-example">
 
-                            <h2><strong>Plugins versions</strong></h2>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <table class="table table-bordered mg-top-30">
-                                        <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Version</th>
-                                            <th>Observations</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td><a href="js_components.html#js-block-ui">BlockUI</a></td>
-                                            <td><span class="label label-info">2.70.0</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bootstrap multiselect</td>
-                                            <td><span class="label label-info">0.9.15</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="js_components.html#js-custom-notifications">Bootstrap notify</a></td>
-                                            <td><span class="label label-info">3.1.5</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_stats.html#charts">Chart</a></td>
-                                            <td><span class="label label-info">2.7.1</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="js_complex_form_elements.html#jsChosenJsAutocomplete">Chosen</a></td>
-                                            <td><span class="label label-info">1.4.2</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Countdown<br>Using: Moment-timezone</td>
-                                            <td><span class="label label-info">2.2.0</span><br><span class="label label-info">0.5.5</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_datetime.html#dateRangePicker">Daterangepicker</a></td>
-                                            <td><span class="label label-info">2.1.27</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_datetime.html">Datetimepicker</a></td>
-                                            <td><span class="label label-info">4.17.47</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Drop</td>
-                                            <td><span class="label label-info">1.4.1</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dropzone</td>
-                                            <td><span class="label label-info">4.2.0</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_fancytree.html">Fancytree</a><br>Using: jquery.fancytree.filter.js</td>
-                                            <td><span class="label label-info">2.27.0</span><br><span class="label label-info">2.27.0</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hierarchicalselect</td>
-                                            <td><span class="label label-info">1.0.0</span></td>
-                                            <td><span class="label label-default">eMAG Apps UI KIT plugin</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="js_complex_form_elements.html#jsTextareaWithInputLimiter">Input Limiter</a></td>
-                                            <td><span class="label label-info">1.3.1</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_introjs.html">Intro</a></td>
-                                            <td><span class="label label-info">2.3.0</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_jqgrid.html">jqGrid</a></td>
-                                            <td><span class="label label-info">5.2.1</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>jQuery</td>
-                                            <td><span class="label label-info">3.2.1</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>jQuery Cookie</td>
-                                            <td><span class="label label-info">1.4.1</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="image_gallery.html">Magnific</a></td>
-                                            <td><span class="label label-info">1.1.0</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nprogress</td>
-                                            <td><span class="label label-info">0.2.0</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Prism</td>
-                                            <td><span class="label label-info">1.11.0</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="js_complex_form_elements.html#jsSelectizeTagInput">Selectize</a></td>
-                                            <td><span class="label label-info">0.12.1</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
+                            <h2><strong>Sortable</strong></h2>
 
-                                        <tr>
-                                            <td><a href="plugin_jqgrid.html#jqGrid-with-sticky-panels">Sticky-kit</a></td>
-                                            <td><span class="label label-info">1.1.2</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_wysiwyg.html">Summernote</a></td>
-                                            <td><span class="label label-info">0.8.9</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tether</td>
-                                            <td><span class="label label-info">1.4.3</span></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="plugin_wizard.html">Wizard</a></td>
-                                            <td><span class="label label-info">3.16.3</span></td>
-                                            <td><span class="label label-warning">modified</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><b></b></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#sortable" aria-expanded="false" aria-controls="sortable"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="sortable">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#sortable_html_source" aria-controls="sortable_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#sortable_js_source" aria-controls="sortable_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#sortable_css_source" aria-controls="sortable_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="sortable_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="sortable_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="sortable_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jquery_ui_source,sortable-content,sortable_css">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+
+                                                    <div id="sortable_container" class="panel-body makeSortable no-margin-left-right no-padding-bottom">
+                                                        <div class="panel panel-default custom-panel-list-item">
+                                                            <div class="panel-body">
+                                                                <div class="content">
+                                                                    <h3 class="no-margin-top"><strong>Donec quis feugiat est</strong></h3>
+                                                                    <p>Aenean ultricies, odio sit amet posuere venenatis, nulla felis tincidunt nisi, ac dapibus ex libero non augue.</p>
+                                                                </div>
+                                                                <div class="drag">
+                                                                    <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default custom-panel-list-item">
+                                                            <div class="panel-body">
+                                                                <div class="content">
+                                                                    <h3 class="no-margin-top"><strong>Proin hendrerit arcu</strong></h3>
+                                                                    <p>Donec et pretium odio. Integer pellentesque aliquet enim a dapibus.</p>
+                                                                </div>
+                                                                <div class="drag">
+                                                                    <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default custom-panel-list-item">
+                                                            <div class="panel-body">
+                                                                <div class="content">
+                                                                    <h3 class="no-margin-top"><strong>Donec finibus blandit</strong></h3>
+                                                                    <p>Integer sollicitudin fringilla lorem, non consequat risus fermentum ut.</p>
+                                                                </div>
+                                                                <div class="drag">
+                                                                    <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
+
                     </div>
+
                 </section>
             </div>
         </div>
@@ -850,28 +797,116 @@
 </div>        <!-- FOOTER:End -->
     </div>
 </div>
-<!-- PAGE:End -->
+<!-- POPUPS:Start -->
+<div data-dependency-name="pop_space">
+    <!-- Div with id 'pop_space' must be inserted before the end of the body tag -->
+    <div id="pop_space"></div>
+</div>
+<!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+
+<script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
+
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+<!-- SCRIPTS:End -->
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
-<!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
+
 <script type="text/javascript">
     $(document).ready(function () {
-        console.log('Ready, Captain!');
-
-        demoHelpers();
+        demoHelpers();  // Require demo_helpers.js
+        showPageCode();
     });
 </script>
-<!-- DOCUMENT-READY:End -->
+
+<script type="text/javascript" data-dependency-name="sortable-content">
+    $(document).ready(function () {
+        $(".makeSortable").sortable({
+            placeholder: "ui-state-highlight",
+            axis: "y",
+            cursor: "ns-resize",
+            sort: function (event, ui) {
+                var $sortableObj = $(ui.item);
+                var $sortableObjParent = $(ui.item).parent();
+                var calcY = event.pageY - $sortableObjParent.offset().top - $sortableObj.height() / 2;
+                var max = $sortableObjParent.height() - $sortableObj.height() / 2;
+
+                if (calcY < 0) {
+                    $sortableObj.css({'top': 0});
+                } else {
+                    $sortableObj.css({'top': Math.min(calcY, max)});
+                }
+            },
+            update: function (event, ui) {
+                
+            },
+            stop: function (event, ui) {
+                var $sortableObj = $(ui.item);
+                $sortableObj.removeClass('panel-primary').addClass('panel-default');
+                $sortableObj.find('.drag .fa').removeClass('fa-hand-rock-o').addClass('fa-hand-paper-o');
+            },
+            start: function (event, ui) { // custom algorythm to fix placeholder size
+                ui.placeholder.height(ui.item.innerHeight());
+            }
+
+        });
+
+        $(document.body).on('mousedown', '.custom-panel-list-item', function (e) {
+            $eCurrentTarget = $(e.currentTarget);
+            $eCurrentTarget.removeClass('panel-default').addClass('panel-primary');
+            $eCurrentTarget.find('.drag .fa').removeClass('fa-hand-paper-o').addClass('fa-hand-rock-o');
+
+        });
+
+        $(document.body).on('mouseup', '.custom-panel-list-item', function (e) {
+            $eCurrentTarget = $(e.currentTarget);
+            $eCurrentTarget.removeClass('panel-primary').addClass('panel-default');
+            $eCurrentTarget.find('.drag .fa').removeClass('fa-hand-rock-o').addClass('fa-hand-paper-o');
+        })
+});
+</script>
+
+<style data-dependency-name="sortable_css">
+    /* DRAGGABLE ITEMS */
+    #sortable_container {
+        position: relative;
+    }
+
+    .custom-panel-list-item .fa-hand-rock-o {
+        color: #005eb7;
+    }
+
+    .custom-panel-list-item .panel-body {
+        display: flex;
+    }
+
+    .custom-panel-list-item .panel-body p {
+        margin: 0;
+    }
+
+    .custom-panel-list-item .panel-body .drag {
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-left: 20px;
+    }
+
+    /* END DRAGGABLE ITEMS */
+
+    .ui-state-highlight{
+        margin-bottom: 20px;
+        background: #005eb7;
+        border:1px solid #005eb7;
+    }
+</style>
 
 </body>
 </html>

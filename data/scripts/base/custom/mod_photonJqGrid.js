@@ -177,14 +177,24 @@
                                 $('#' + dropId + ' .jsc-search').val('');
                                 $('#' + dropId + ' .dd-jsc-checkbox-all-columns li').removeClass('hide');
                                 $('#' + dropId + ' .jsc-checkbox').prop('checked', true);
+                                
+                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
                             } else {
                                 $('#' + dropId + ' .jsc-checkbox').prop('checked', false);
+
+                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', true);
                             }
                         });
 
                         $body.on('click', '#' + dropId + ' .jsc-checkbox', function() {
                             if (!this.checked) {
                                 $('#' + dropId + ' .jsc-checkbox-all').prop('checked', false);
+                            }
+
+                            if ($('#' + dropId + ' .jsc-checkbox:checked').length > 0) {
+                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
+                            } else {
+                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', true);
                             }
                         });
 
