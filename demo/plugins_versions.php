@@ -68,7 +68,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsChosenJsAutocomplete">Chosen</a></td>
-                                            <td><span class="label label-info">1.4.2</span></td>
+                                            <td><span class="label label-info">1.8.3</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>

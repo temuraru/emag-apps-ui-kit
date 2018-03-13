@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="../dist/css/lib/jquery-ui-custom.1.11.4.min.css" data-dependency-name="jquery_ui_css">
     <link rel="stylesheet" href="../dist/plugins/selectize/selectize-0.12.0.min.css" data-dependency-name="selectize_css">
-    <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.css" data-dependency-name="chosen_css">
+    <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen.min.css" data-dependency-name="chosen_css">
 
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
@@ -1042,7 +1042,7 @@
 
 <script src="../dist/plugins/selectize/selectize-0.12.0.min.js" data-dependency-name="selectize_source"></script>
 
-<script src="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.js" data-dependency-name="chosen_source"></script>
+<script src="../dist/plugins/chosen/jQuery.chosen.min.js" data-dependency-name="chosen_source"></script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 <!-- SCRIPTS:End -->

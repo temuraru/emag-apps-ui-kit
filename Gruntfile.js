@@ -74,7 +74,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.47.less',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.data_plugins %>/daterangepicker/less/daterangepicker.less',
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.data_plugins %>/selectize/less/custom-selectize.less',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.data_plugins %>/css3spinners/less/css3-spinners.less',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.data_plugins %>/jqgrid/less/custom-jqgrid.less',
@@ -151,7 +151,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css',
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css',
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css',
@@ -278,7 +278,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins%>/hierarchicalselect/hierarchicalselect.min.js' : ['<%= pkg.data_plugins%>/hierarchicalselect/js/hierarchicalselect.js'],
                     '<%= pkg.dist_plugins%>/bootstrap-multiselect/bootstrap-multiselect.min.js' : ['<%= pkg.data_plugins%>/bootstrap-multiselect/js/bootstrap-multiselect.js'],
                     '<%= pkg.dist_plugins%>/countdown/countdown.min.js' : ['<%= pkg.data_plugins%>/countdown/js/moment-timezone-with-data.js', '<%= pkg.data_plugins%>/countdown/js/jquery.countdown.js'],
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.js':'<%= pkg.data_plugins %>/dropzone/js/dropzone.js',
                     '<%= pkg.dist_plugins %>/magnific/magnific.min.js':'<%= pkg.data_plugins %>/magnific/js/magnific.js',
                     '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.4.3.js',
