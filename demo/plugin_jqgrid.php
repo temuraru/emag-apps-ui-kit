@@ -1743,14 +1743,18 @@
             var actions = '[' +
                 '{' +
                 '"icon": "fa-pencil",' +
+                '"group": "0",' +
                 '"attr": {' +
-                '"title": "Edit"' +
+                '"title": "Edit",' +
+                '"class": "btn-no-border"' +
                 '}' +
                 '},' +
                 '{' +
                 '"icon": "fa-trash",' +
+                '"group": "0",' +
                 '"attr": {' +
-                '"title": "Delete"' +
+                '"title": "Delete",' +
+                '"class": "btn-no-border"' +
                 '}' +
                 '}' +
                 ']';
