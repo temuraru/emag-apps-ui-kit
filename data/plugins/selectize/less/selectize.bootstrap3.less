@@ -1,5 +1,5 @@
 /**
- * selectize.bootstrap3.css (v@@version) - Bootstrap 3 Theme
+ * selectize.bootstrap3.css (v0.12.4) - Bootstrap 3 Theme
  * Copyright (c) 2013–2015 Brian Reavis & contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -19,6 +19,8 @@
 @import "../../../styles/base/custom/custom-variables.less";
 @import "../../../styles/base/mixins.less";
 
+/*---------------*/
+
 @import "selectize";
 
 @selectize-font-family: inherit;
@@ -32,8 +34,8 @@
 @selectize-color-input-error: @state-danger-text;
 @selectize-color-input-error-focus: darken(@selectize-color-input-error, 10%);
 @selectize-color-disabled: @input-bg;
-@selectize-color-item: #d9d9d9;
-@selectize-color-item-border: darken(@selectize-color-item,10%);
+@selectize-color-item: #efefef;
+@selectize-color-item-border: rgba(0,0,0,0);
 @selectize-color-item-active: @component-active-bg;
 @selectize-color-item-active-text: #fff;
 @selectize-color-item-active-border: rgba(0,0,0,0);
@@ -42,9 +44,9 @@
 @selectize-color-optgroup-border: @dropdown-divider-bg;
 @selectize-color-dropdown: @dropdown-bg;
 @selectize-color-dropdown-border-top: mix(@input-border, @input-bg, 0.8);
-@selectize-color-dropdown-item-active: @brand-primary;
-@selectize-color-dropdown-item-active-text: #fff;
-@selectize-color-dropdown-item-create-active-text: #fff;
+@selectize-color-dropdown-item-active: @dropdown-link-hover-bg;
+@selectize-color-dropdown-item-active-text: @dropdown-link-hover-color;
+@selectize-color-dropdown-item-create-active-text: @dropdown-link-hover-color;
 @selectize-opacity-disabled: 0.5;
 @selectize-shadow-input: none;
 @selectize-shadow-input-focus: inset 0 1px 2px rgba(0,0,0,0.15);
@@ -53,28 +55,31 @@
 @selectize-border: 1px solid @input-border;
 @selectize-border-radius: @input-border-radius;
 
-@selectize-width-item-border: 1px;
+@selectize-width-item-border: 0;
 @selectize-padding-x: @padding-base-horizontal;
 @selectize-padding-y: @padding-base-vertical;
 @selectize-padding-dropdown-item-x: @padding-base-horizontal;
-@selectize-padding-dropdown-item-y: 6px;
-@selectize-padding-item-x: 6px;
-@selectize-padding-item-y: 0;
-@selectize-margin-item-x: 5px;
+@selectize-padding-dropdown-item-y: 3px;
+@selectize-padding-item-x: 3px;
+@selectize-padding-item-y: 1px;
+@selectize-margin-item-x: 3px;
 @selectize-margin-item-y: 3px;
 @selectize-caret-margin: 0;
+
+@selectize-arrow-size: 5px;
+@selectize-arrow-color: @selectize-color-text;
+@selectize-arrow-offset: @selectize-padding-x + 5px;
 
 .selectize-dropdown, .selectize-dropdown.form-control {
 	height: auto;
 	padding: 0;
-	margin: -1px 0 0;
+	margin: 2px 0 0 0;
 	z-index: @zindex-dropdown;
 	background: @selectize-color-dropdown;
 	border: 1px solid @dropdown-fallback-border;
 	border: 1px solid @dropdown-border;
-    border-top:none;
 	.selectize-border-radius(@border-radius-base);
-	.selectize-box-shadow(0 4px 5px rgba(0,0,0,.15));
+	.selectize-box-shadow(0 6px 12px rgba(0,0,0,.175));
 }
 
 .selectize-dropdown {
@@ -91,11 +96,11 @@
 		.nav-divider();
 		margin-left: @selectize-padding-dropdown-item-x * -1;
 		margin-right: @selectize-padding-dropdown-item-x * -1;
-	}    
+	}
 }
 
 .selectize-dropdown-content {
-	padding: 0;
+	padding: 5px 0;
 }
 
 .selectize-dropdown-header {
@@ -104,6 +109,7 @@
 
 .selectize-input {
 	min-height: @input-height-base;
+
 	&.dropdown-active {
 		.selectize-border-radius(@selectize-border-radius);
 	}
@@ -132,13 +138,11 @@
 .selectize-control {
 	&.multi {
 		.selectize-input.has-items {
-			padding-left: @selectize-padding-x;// - @selectize-padding-item-x;
+			padding-left: @selectize-padding-x - @selectize-padding-item-x;
 			padding-right: @selectize-padding-x - @selectize-padding-item-x;
 		}
 		.selectize-input > div {
 			.selectize-border-radius(@selectize-border-radius - 1px);
-            background-clip: padding-box;
-            box-shadow: 0 0 2px #fff inset,0 1px 0 rgba(0,0,0,.05);
 		}
 	}
 }
@@ -152,6 +156,9 @@
 	.selectize-border-radius(0);
 }
 
+/*---------------*/
+
 @import "../extra_plugins/drag_drop/plugin.less";
 @import "../extra_plugins/optgroup_columns/plugin.less";
 @import "../extra_plugins/remove_button/plugin.less";
+@import "../extra_plugins/dropdown_header/plugin.less";

@@ -148,7 +148,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsSelectizeTagInput">Selectize</a></td>
-                                            <td><span class="label label-info">0.12.1</span></td>
+                                            <td><span class="label label-info">0.12.4</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
 
