@@ -11362,7 +11362,7 @@ body {
 }
 .nav-tabs > li > a {
   margin-bottom: -1px;
-  border-bottom: 1px solid #005eb7;
+  border-bottom: 1px solid transparent;
   border-left: 0;
   border-right: 0;
   background: #eee;
@@ -11374,6 +11374,7 @@ body {
   background: #f6f6f6;
   border-left: 0;
   border-right: 0;
+  border-color: transparent;
 }
 .nav-tabs > li.active {
   border: 1px solid #005eb7;
@@ -11383,6 +11384,8 @@ body {
   border-left: 0;
   border-right: 0;
   border-top-color: #fff;
+  bottom: -1px;
+  padding: 7px 10px 9px 10px;
   margin-top: 0;
   box-shadow: none;
   color: #000;
