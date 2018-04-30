@@ -11418,6 +11418,17 @@ body {
   border: 1px solid #005eb7;
   border-top: 0;
 }
+.btn-group > .btn.btn-default.active,
+.btn-group > .btn.btn-default:hover {
+  box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.07);
+}
+.btn-group > .btn.active,
+.btn-group > .btn:hover {
+  box-shadow: inset 3px 3px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.btn-group > .btn.active.disabled {
+  box-shadow: inset 3px 3px 1px 0px rgba(0, 0, 0, 0.07);
+}
 .sidebar {
   width: 200px;
   top: 0px;
@@ -12755,6 +12766,172 @@ body {
 }
 .modal.modal-alert .modal-dialog .modal-body .alert-modal-content {
   margin-bottom: 15px;
+}
+.btn-no-border {
+  background: transparent;
+  border-color: transparent;
+  color: #000;
+}
+.btn-no-border:focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-no-border:hover {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-no-border.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-no-border.btn-default {
+  background-color: transparent;
+}
+.btn-no-border.btn-default:focus {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #000;
+}
+.btn-no-border.btn-default:hover {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #000;
+}
+.btn-no-border.btn-primary {
+  background-color: transparent;
+  border-color: transparent;
+  color: #005eb7;
+}
+.btn-no-border.btn-primary:focus {
+  background-color: #fff;
+  border-color: #2790f3;
+  color: #2790f3;
+}
+.btn-no-border.btn-primary:hover {
+  background-color: #fff;
+  border-color: #2790f3;
+  color: #2790f3;
+}
+.btn-no-border.btn-success {
+  background-color: transparent;
+  border-color: transparent;
+  color: #38833a;
+}
+.btn-no-border.btn-success:focus {
+  background-color: #fff;
+  border-color: #52bf54;
+  color: #52bf54;
+}
+.btn-no-border.btn-success:hover {
+  background-color: #fff;
+  border-color: #52bf54;
+  color: #52bf54;
+}
+.btn-no-border.btn-danger {
+  background-color: transparent;
+  border-color: transparent;
+  color: #e1302b;
+}
+.btn-no-border.btn-danger:focus {
+  background-color: #fff;
+  border-color: #f35c58;
+  color: #f35c58;
+}
+.btn-no-border.btn-danger:hover {
+  background-color: #fff;
+  border-color: #f35c58;
+  color: #f35c58;
+}
+.btn-no-border.btn-link {
+  color: #005eb7;
+  border-radius: 2px;
+}
+.btn-no-border.btn-link:focus {
+  background-color: #fff;
+  border-color: #005eb7;
+  color: #005eb7;
+}
+.btn-no-border.btn-link:hover {
+  background-color: #fff;
+  border-color: #005eb7;
+  color: #005eb7;
+}
+.btn-no-border.btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #000;
+}
+.btn-no-border.btn-default.disabled.focus {
+  color: #ccc;
+}
+.btn-no-border.btn-default.disabled:focus {
+  color: #ccc;
+}
+.btn-no-border.btn-default.disabled:hover {
+  color: #ccc;
+}
+.btn-no-border.btn-primary.focus {
+  background-color: #fff;
+  border-color: #2790f3;
+  color: #2790f3;
+}
+.btn-no-border.btn-primary.disabled.focus {
+  color: #005eb7;
+}
+.btn-no-border.btn-primary.disabled:focus {
+  color: #005eb7;
+}
+.btn-no-border.btn-primary.disabled:hover {
+  color: #005eb7;
+}
+.btn-no-border.btn-success.focus {
+  background-color: #fff;
+  border-color: #52bf54;
+  color: #52bf54;
+}
+.btn-no-border.btn-success.disabled.focus {
+  color: #38833a;
+}
+.btn-no-border.btn-success.disabled:focus {
+  color: #38833a;
+}
+.btn-no-border.btn-success.disabled:hover {
+  color: #38833a;
+}
+.btn-no-border.btn-danger.focus {
+  background-color: #fff;
+  border-color: #f35c58;
+  color: #f35c58;
+}
+.btn-no-border.btn-danger.disabled.focus {
+  color: #e1302b;
+}
+.btn-no-border.btn-danger.disabled:focus {
+  color: #e1302b;
+}
+.btn-no-border.btn-danger.disabled:hover {
+  color: #e1302b;
+}
+.btn-no-border.btn-link.focus {
+  background-color: #fff;
+  border-color: #005eb7;
+  color: #005eb7;
+}
+.btn-no-border.disabled {
+  border-color: transparent;
+  background: transparent;
+}
+.btn-no-border.disabled:focus {
+  border-color: transparent;
+  background: transparent;
+}
+.btn-no-border.disabled:hover {
+  border-color: transparent;
+  background: transparent;
+}
+.btn-no-border.disabled.focus {
+  border-color: transparent;
+  background: transparent;
 }
 input[type=range] {
   -webkit-appearance: none;
