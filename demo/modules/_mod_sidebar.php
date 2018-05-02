@@ -228,6 +228,11 @@
                             </a>
                         </li>
                         <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#css-panels">
+                                <span class="menu-text">Flexbox cards</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
                             <a href="/emag-apps-ui-kit/demo/css_components.php#css-page-header">
                                 <span class="menu-text">Page header</span>
                             </a>

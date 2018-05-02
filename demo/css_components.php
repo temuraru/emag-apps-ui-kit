@@ -2900,7 +2900,7 @@
                             </div>
                         </section>
                         
-                        <section id="css-panels" class="pad-top-30">
+                        <section id="flexbox-cards" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Flexbox cards</strong></h2>
