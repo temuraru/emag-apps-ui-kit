@@ -2904,15 +2904,11 @@
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
                                     <h2><strong>Flexbox cards</strong></h2>
-
                                     <div class="row">
                                         <div class="col-sm-12">
-
-                                                <p class="mg-top-15">Using flexbox, the cards will resize themselves to match the max height of their siblings. By adding <code>.bt-primary</code>, <code>.bt-info</code>, <code>.bt-success</code>, <code>.bt-warning</code> or <code>.bt-danger</code>, you can add a state to that card.</p>
+                                            <p class="mg-top-15">Using flexbox, the cards will resize themselves to match the max height of their siblings. By adding <code>.bt-primary</code>, <code>.bt-info</code>, <code>.bt-success</code>, <code>.bt-warning</code> or <code>.bt-danger</code>, you can add a state to that card.</p>
                                         </div>
                                     </div>
-
-
                                     <div class="code-container">
                                         <div class="row flex-container code-header">
                                             <div class="col-xs-8 module-description">
@@ -2936,9 +2932,6 @@
 
                                             </div>
                                         </div>
-
-
-
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="pad-15" data-showcase="example" data-dependencies="main_style">
@@ -2978,13 +2971,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-
-
-
-
-
-
                                 </div>
                             </div>
                         </section>
