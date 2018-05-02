@@ -228,7 +228,7 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="/emag-apps-ui-kit/demo/css_components.php#css-panels">
+                            <a href="/emag-apps-ui-kit/demo/css_components.php#flexbox-cards">
                                 <span class="menu-text">Flexbox cards</span>
                             </a>
                         </li>
