@@ -2939,31 +2939,37 @@
                                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                                             <div class="card bt-primary">
                                                                 <h4>Primary</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                                             <div class="card bt-info">
                                                                 <h4>Info</h4>
+                                                                <p>Aliquam cursus mauris vel felis posuere, a dapibus mauris imperdiet. Nullam consectetur lorem ut orci elementum.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                                             <div class="card bt-success">
                                                                 <h4>Success</h4>
+                                                                <p>Morbi eu ex non mi ultrices dapibus vitae ut ex.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                                             <div class="card bt-warning">
                                                                 <h4>Warning</h4>
+                                                                <p>Nulla fermentum nulla et justo ultrices dapibus.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                                             <div class="card bt-danger">
                                                                 <h4>Danger</h4>
+                                                                <p>Nam rutrum nibh nec ligula pulvinar tempus. Mauris dapibus in quam nec tincidunt.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                                             <div class="card">
                                                                 <h4>No state</h4>
+                                                                <p>Nam efficitur tempus ultricies. Nam vulputate at dolor nec laoreet.</p>
                                                             </div>
                                                         </div>
                                                     </div>
