@@ -464,6 +464,11 @@
                             </ul>
                         </li>
 
+                        <li class="menu-item">
+                            <a href="/emag-apps-ui-kit/demo/plugin_table_paster.php">
+                                <span class="menu-text">Table paster</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
