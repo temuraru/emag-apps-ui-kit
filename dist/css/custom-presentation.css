@@ -78,6 +78,7 @@
   padding-left: 15px;
   padding-right: 15px;
   background: white;
+  bottom: 0;
 }
 .nav-tabs.code-example > li > a:hover {
   background: #f6f6f6;

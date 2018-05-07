@@ -2899,6 +2899,88 @@
                                 </div>
                             </div>
                         </section>
+                        
+                        <section id="flexbox-cards" class="pad-top-30">
+                            <div class="show-panel code-example">
+                                <div class="show-panel-body code-example">
+                                    <h2><strong>Flexbox cards</strong></h2>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="mg-top-15">Using flexbox, the cards will resize themselves to match the max height of their siblings. By adding <code>.bt-primary</code>, <code>.bt-info</code>, <code>.bt-success</code>, <code>.bt-warning</code> or <code>.bt-danger</code>, you can add a state to that card.</p>
+                                        </div>
+                                    </div>
+                                    <div class="code-container">
+                                        <div class="row flex-container code-header">
+                                            <div class="col-xs-8 module-description">
+                                                <h4><strong>Flexbox cards</strong></h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#flexbox_cards" aria-expanded="false" aria-controls="flexbox_cards"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="collapse code-example"  id="flexbox_cards">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs code-example" role="tablist">
+                                                <li role="presentation" class="active"><a href="#flexbox_cards_html_source" aria-controls="flexbox_cards_html" role="tab" data-toggle="tab">HTML</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content code-example">
+                                                <div role="tabpanel" class="tab-pane html-source active" id="flexbox_cards_html_source">
+                                                    <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="pad-15" data-showcase="example" data-dependencies="main_style">
+                                                    <div class="row flex-container">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="card bt-primary">
+                                                                <h4>Primary</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="card bt-info">
+                                                                <h4>Info</h4>
+                                                                <p>Aliquam cursus mauris vel felis posuere, a dapibus mauris imperdiet. Nullam consectetur lorem ut orci elementum.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="card bt-success">
+                                                                <h4>Success</h4>
+                                                                <p>Morbi eu ex non mi ultrices dapibus vitae ut ex.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="card bt-warning">
+                                                                <h4>Warning</h4>
+                                                                <p>Nulla fermentum nulla et justo ultrices dapibus.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="card bt-danger">
+                                                                <h4>Danger</h4>
+                                                                <p>Nam rutrum nibh nec ligula pulvinar tempus. Mauris dapibus in quam nec tincidunt.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="card">
+                                                                <h4>No state</h4>
+                                                                <p>Nam efficitur tempus ultricies. Nam vulputate at dolor nec laoreet.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
                         <section id="css-page-header" class="pad-top-30">
                             <div class="show-panel code-example">
                                 <div class="show-panel-body code-example">
