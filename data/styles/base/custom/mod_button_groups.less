@@ -1,13 +1,45 @@
-.btn-group>.btn.btn-default.active,
-.btn-group>.btn.btn-default:hover {
-  box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.07);
-}
 
-.btn-group>.btn.active,
-.btn-group>.btn:hover {
+
+.btn-group[data-toggle="buttons"]>.btn.active:hover,
+.btn-group[data-toggle="buttons"]>.btn.active {
   box-shadow: inset 3px 3px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-.btn-group>.btn.active.disabled {
+.btn-group[data-toggle="buttons"]>.btn.active.disabled {
   box-shadow: inset 3px 3px 1px 0px rgba(0, 0, 0, 0.07);
+}
+
+
+.btn-group[data-toggle="buttons"]>.btn.btn-default.active,
+.btn-group[data-toggle="buttons"]>.btn.btn-default.active:hover {
+  box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.07);
+}
+
+
+.btn-group[data-toggle="buttons"]>.btn.btn-primary.active { 
+  background-color: #004B92;
+}
+
+.btn-group[data-toggle="buttons"]>.btn.btn-primary.active:hover { 
+  background-color: #2076C7;
+}
+
+
+
+.btn-group[data-toggle="buttons"]>.btn.btn-success.active { 
+  background-color: #2C682E;
+}
+
+.btn-group[data-toggle="buttons"]>.btn.btn-success.active:hover { 
+  background-color: #569958;
+}
+
+
+
+.btn-group[data-toggle="buttons"]>.btn.btn-danger.active { 
+  background-color: #B42622;
+}
+
+.btn-group[data-toggle="buttons"]>.btn.btn-danger.active:hover { 
+  background-color: #E8504A;
 }
