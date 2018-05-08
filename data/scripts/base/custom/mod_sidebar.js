@@ -30,7 +30,7 @@ function updateSidebarHeight() {
     var $sidebarInner = $('#sidebar .sidebar-inner');
 
     $sidebarInner.css('height', '');
-    var $sidebarInner = $('#sidebar .sidebar-inner');
+    $sidebarInner = $('#sidebar .sidebar-inner');
     var $firstActiveMenuItem = $('#sidebar .menu-item.active').eq(0);
     var newHeight = newScrollbarHeight($sidebarInner, $firstActiveMenuItem);
 
@@ -189,7 +189,7 @@ function initSidebarEvents() {
         updateScrollbar();
     });
 
-    $document.on('ready', function () {
+    $(function () {
         var sidebarStatus = getCookie('sidebarStatus');
 
         if (sidebarStatus == '') {
@@ -218,7 +218,7 @@ function initSidebarEvents() {
     })
 }
 
-+function ($) {
+jQuery(function($) {
     initScrollbarForSidebar();
     initSidebarEvents();
-}(jQuery);
+});

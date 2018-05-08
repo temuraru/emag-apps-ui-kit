@@ -53,7 +53,7 @@
                                         </tr>
                                         <tr>
                                             <td>Bootstrap multiselect</td>
-                                            <td><span class="label label-info">2.0</span></td>
+                                            <td><span class="label label-info">0.9.15</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
@@ -63,12 +63,12 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_stats.php#charts">Chart</a></td>
-                                            <td><span class="label label-info">2.5.0</span></td>
+                                            <td><span class="label label-info">2.7.1</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsChosenJsAutocomplete">Chosen</a></td>
-                                            <td><span class="label label-info">1.4.2</span></td>
+                                            <td><span class="label label-info">1.8.3</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
@@ -78,12 +78,12 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_datetime.php#dateRangePicker">Daterangepicker</a></td>
-                                            <td><span class="label label-info">2.1.24</span></td>
+                                            <td><span class="label label-info">2.1.27</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_datetime.php">Datetimepicker</a></td>
-                                            <td><span class="label label-info">4.17.37</span></td>
+                                            <td><span class="label label-info">4.17.47</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
@@ -98,7 +98,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_fancytree.php">Fancytree</a><br>Using: jquery.fancytree.filter.js</td>
-                                            <td><span class="label label-info">2.15</span><br><span class="label label-info">2.22.0</span></td>
+                                            <td><span class="label label-info">2.27.0</span><br><span class="label label-info">2.27.0</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
@@ -113,7 +113,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_introjs.php">Intro</a></td>
-                                            <td><span class="label label-info">2.3.0</span></td>
+                                            <td><span class="label label-info">2.7.0</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
@@ -122,13 +122,18 @@
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         <tr>
+                                            <td>jQuery</td>
+                                            <td><span class="label label-info">3.2.1</span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
                                             <td>jQuery Cookie</td>
                                             <td><span class="label label-info">1.4.1</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td><a href="image_gallery.php">Magnific</a></td>
-                                            <td><span class="label label-info">1.0.0</span></td>
+                                            <td><span class="label label-info">1.1.0</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
@@ -138,12 +143,12 @@
                                         </tr>
                                         <tr>
                                             <td>Prism</td>
-                                            <td><span class="label label-info">1.6.0</span></td>
+                                            <td><span class="label label-info">1.11.0</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsSelectizeTagInput">Selectize</a></td>
-                                            <td><span class="label label-info">0.12.1</span></td>
+                                            <td><span class="label label-info">0.12.4</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
 
@@ -154,17 +159,17 @@
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wysiwyg.php">Summernote</a></td>
-                                            <td><span class="label label-info">0.8.4</span></td>
+                                            <td><span class="label label-info">0.8.9</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td>Tether</td>
-                                            <td><span class="label label-info">1.1.0</span></td>
+                                            <td><span class="label label-info">1.4.3</span></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wizard.php">Wizard</a></td>
-                                            <td><span class="label label-info">3.16.0</span></td>
+                                            <td><span class="label label-info">3.16.3</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                         </tr>
                                         </tbody>
@@ -185,8 +190,9 @@
 <!-- PAGE:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 
