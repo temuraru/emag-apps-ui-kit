@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="pad-15">
                                         <label for="example_table_paster">Copy and paste the table here</label>
-                                        <textarea class="form-control" name="tablepaster" id="example_table_paster" rows="3"></textarea>
+                                        <textarea class="form-control" name="tablepaster" id="example_table_paster" style="resize: vertical;min-height: 100px;" rows="3"></textarea>
                                     </div>
                                 </div>
                             </div>
