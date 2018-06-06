@@ -88,7 +88,7 @@
                                             </ul>
                                         </div>
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table" class="table table-bordered word-break"></table>
+                                            <table id="grid_table" class="table word-break"></table>
                                             <div id="grid_pager"></div>
                                         </div>
                                     </div>
@@ -778,7 +778,8 @@
                 { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         new PhotonJqGrid(listingParameters).init();
@@ -797,7 +798,8 @@
                 {label: 'First Name', name: 'firstname', key: true, width: "100"},
                 {label: 'Last Name', name: 'lastname'},
                 {label: 'Username', name: 'username'}
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         new PhotonJqGrid(listingParameters).init();
@@ -838,7 +840,8 @@
                 { label: 'Hobby', name: 'jobtype' },
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         new PhotonJqGrid(listingParametersSticky).init();
@@ -870,7 +873,8 @@
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
             ],
-            multiselect: true
+            multiselect: true,
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         var photonGrid = new PhotonJqGrid(listingParametersWithColumnChooser);
@@ -895,7 +899,8 @@
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
             ],
-            multiselect: true
+            multiselect: true,
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         new PhotonJqGrid(listingParametersWithSelectableRows).init();
@@ -1110,7 +1115,7 @@
             treedatatype: 'json',
             ExpandColumn: 'firstname',
             ExpandColClick : true,
-            styleUI : 'fontAwesome'
+            styleUI : 'fontAwesomeNoBorder'
         });
     });
 </script>
@@ -1140,7 +1145,7 @@
             height: 'auto',
             rowNum: 10,
             subGrid: true,
-            styleUI : 'fontAwesome',
+            styleUI : 'fontAwesomeNoBorder',
             subGridRowExpanded: function(subgrid_id, row_id) {
                 // we pass two parameters
                 // subgrid_id is a id of the div tag created within a table
@@ -1154,7 +1159,7 @@
                 jQuery("#"+subgrid_table_id).jqGrid({
                     datatype: "jsonstring",
                     datastr: getListingDummyData(),
-                    styleUI : 'fontAwesome',
+                    styleUI : 'fontAwesomeNoBorder',
                     colModel: [
                         { name: 'id',           index: 'id', hidden: true, width: "20" },
                         { label: 'First Name', name: 'firstname',    index: 'firstname', key: true, width: "100" },
@@ -1202,7 +1207,8 @@
                         delOptions: {}
                     }
                 }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         new PhotonJqGrid(listingParameters).init();
@@ -1375,6 +1381,7 @@
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
             ],
+            styleUI: 'fontAwesomeNoBorder',
             gridComplete: function() {
                 addMoreActions('#grid_table_with_actions');
                 $('#grid_table_with_actions .label-with-tooltip').tooltip();
@@ -1416,7 +1423,8 @@
                 {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false}
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         new PhotonJqGrid(listingWithNoDataParameters).init();
@@ -1450,7 +1458,8 @@
                 {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
                 {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
                 {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         function getListingWithFormatterDummyData() {
@@ -1542,7 +1551,8 @@
                 {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.price },
                 {name: 'dateTime', index: 'dateTime', sortable: false, width: 1, formatter: PhotonDataFormatter.dateTime },
                 {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.labelAndTooltip }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         function getListingWithFormatter2DummyData() {
@@ -1640,7 +1650,8 @@
                 {name: 'status', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.labelAndTooltip },
                 {name: 'addedBy', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.userEmail },
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         function getListingWithNotRecommendedFormatter() {
@@ -1736,7 +1747,8 @@
                 {name: 'status', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.labelAndTooltip },
                 {name: 'addedBy', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.userEmailNoIcon },
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
-            ]
+            ],
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         function getListingWithRecommendedFormatter() {
@@ -1815,5 +1827,43 @@
     });
 </script>
 <!-- DOCUMENT-READY:End -->
+
+<style>
+.ui-jqgrid.table-no-border{
+    box-shadow: none;
+}
+
+.table-no-border .table-bordered>thead>tr>th{
+    border: 1px solid #fff;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.table-no-border .table-bordered>thead>tr>th.active:before{
+    content:'';
+    position:absolute;
+    width:1px;
+    background:#c3c3c3;
+    height:100%;
+    left:0;
+    top:0;
+    
+}
+
+.table-no-border .ui-jqgrid-htable thead th.active{
+    background: #ebebeb;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 0;
+}
+
+.table-no-border .table-bordered>tbody>tr>td{
+    border-right: 0px solid #fff;
+}
+
+.table-no-border .ui-jqgrid-htable th.ui-th-column, .ui-th-column{
+    position: relative;
+}
+
+</style>
 </body>
 </html>
