@@ -1092,10 +1092,11 @@
                 { name: 'spirit_animal',index: 'spirit_animal' }
             ],
             loadComplete: function(){
-                //remove border---
+                //remove border
                 $this = $(this);
                 $this.find('tr').find('td:visible:last').css({'border-right': '0'});
-                $this.closest('.ui-jqgrid-view').find('tr').find('th:visible:last').css({'border-right': '0'});
+                //comment next line if you use skin with no border
+                //$this.closest('.ui-jqgrid-view').find('tr').find('th:visible:last').css({'border-right': '0'});
                 $this.find('.treeclick').on('click', function () {
                     $this.find('tr').find('td:visible:last').css({'border-right': '0'});
                 })
@@ -1146,6 +1147,11 @@
             rowNum: 10,
             subGrid: true,
             styleUI : 'fontAwesomeNoBorder',
+            loadComplete: function(){
+                //use this for the skin with no border
+                $this = $(this);
+                $this.closest('.ui-jqgrid-view').find('tr').find('th').eq(0).addClass('disable-hover');  
+            },
             subGridRowExpanded: function(subgrid_id, row_id) {
                 // we pass two parameters
                 // subgrid_id is a id of the div tag created within a table
@@ -1828,42 +1834,5 @@
 </script>
 <!-- DOCUMENT-READY:End -->
 
-<style>
-.ui-jqgrid.table-no-border{
-    box-shadow: none;
-}
-
-.table-no-border .table-bordered>thead>tr>th{
-    border: 1px solid #fff;
-    background: #fff;
-    border-bottom: 0;
-}
-
-.table-no-border .table-bordered>thead>tr>th.active:before{
-    content:'';
-    position:absolute;
-    width:1px;
-    background:#c3c3c3;
-    height:100%;
-    left:0;
-    top:0;
-    
-}
-
-.table-no-border .ui-jqgrid-htable thead th.active{
-    background: #ebebeb;
-    border-right: 1px solid #c3c3c3;
-    border-bottom: 0;
-}
-
-.table-no-border .table-bordered>tbody>tr>td{
-    border-right: 0px solid #fff;
-}
-
-.table-no-border .ui-jqgrid-htable th.ui-th-column, .ui-th-column{
-    position: relative;
-}
-
-</style>
 </body>
 </html>

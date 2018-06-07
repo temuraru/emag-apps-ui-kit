@@ -222,6 +222,10 @@
   border-bottom: none;
 }
 
+.ui-jqgrid .ui-jqgrid-btable:focus{
+  outline: none;
+}
+
 .stick-top-panel {
   background: #fff;
   padding: 15px 0 15px 0;
@@ -731,3 +735,63 @@ div.drop-actions .drop-content .dropdown-menu > li > a {
   white-space: normal;
 }
 
+
+/*custom jqgrid with no borders*/
+.ui-jqgrid.table-no-border{
+  box-shadow: none;
+}
+
+.table-no-border .table-bordered>thead>tr>th{
+  border: 1px solid #fff;
+  background: #fff;
+  border-bottom: 0;
+}
+
+.table-no-border .table-bordered>thead>tr>th.active:before{
+  content:'';
+  position:absolute;
+  width:1px;
+  background:#c3c3c3;
+  height:100%;
+  left:0;
+  top:0;
+  
+}
+
+.table-no-border .ui-jqgrid-htable thead th.active{
+  background: #ebebeb;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 0;
+}
+
+.table-no-border .table-bordered>tbody>tr>td{
+  border-right: 0px solid #fff;
+}
+
+.table-no-border .ui-jqgrid-htable th.ui-th-column, .ui-th-column{
+  position: relative;
+}
+
+.table-no-border .ui-jqgrid-hdiv{
+  background: #fff
+}
+
+.table-no-border .ui-jqgrid-htable thead th.active.disable-hover{
+  background:#fff;
+  border-right:1px solid #fff;
+}
+.table-no-border .ui-jqgrid-htable thead th.active.disable-hover:before{
+  content:'';
+  position:absolute;
+  width:0px; 
+}
+
+.ui-jqgrid.table-no-border .table-bordered td:last-child, 
+.ui-jqgrid.table-no-border .table-bordered th:last-child{
+border-right:1px solid #fff;
+}
+
+.ui-jqgrid.table-no-border .table-bordered td:last-child.active, 
+.ui-jqgrid.table-no-border .table-bordered th:last-child.active{
+  border-right: 1px solid #c3c3c3;
+}
