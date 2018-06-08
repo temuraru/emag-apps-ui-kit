@@ -290,7 +290,8 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/prism/prism.min.js':'<%= pkg.data_plugins %>/prism/js/prism.js',
                     '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery.custom-scrollbar.min.js':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js',
-                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.js':'<%= pkg.data_plugins %>/datetimepicker/js/bootstrap-datetimepicker.4.17.47.js'
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.js':'<%= pkg.data_plugins %>/datetimepicker/js/bootstrap-datetimepicker.4.17.47.js',
+                    '<%= pkg.dist_plugins %>/table-paster/table-paster.min.js':'<%= pkg.data_plugins %>/table-paster/table-paster.js'
                 }
             }
         },
