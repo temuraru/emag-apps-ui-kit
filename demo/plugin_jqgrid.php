@@ -1366,7 +1366,6 @@
             return data;
         }
 
-
         var listingWithActionsParameters = {
             table: '#grid_table_with_actions',
             pager: '#grid_pager_with_actions',
@@ -1535,7 +1534,6 @@
         }
 
         new PhotonJqGrid(listingWithFormatterParameters).init();
-
 
         //grid_with_formatter_2_table
         var listingWithFormatter2Parameters = {
@@ -1728,8 +1726,6 @@
 
         new PhotonJqGrid(listingWithNotRecommendedFormatter).init();
 
-
-
         var listingWithRecommendedFormatter = {
             table: '#grid_with_lot_of_columns_and_data_formatters_table_2',
             pager: '#grid_with_lot_of_columns_and_data_formatters_pager_2',
@@ -1828,11 +1824,8 @@
         }
 
         new PhotonJqGrid(listingWithRecommendedFormatter).init();
-
-
     });
 </script>
 <!-- DOCUMENT-READY:End -->
-
 </body>
 </html>
