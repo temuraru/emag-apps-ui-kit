@@ -177,6 +177,7 @@
                                 $('#' + dropId + ' .dd-jsc-checkbox-all-columns').addClass('hide');
                             } else {
                                 $('#' + dropId + ' .dd-jsc-checkbox.dd-jsc-one-item').removeClass('no-border-bottom');
+                                $('#' + dropId + ' .dd-jsc-checkbox-all-columns').removeClass('hide');
                             }
 
                             $('#' + dropId + ' .dd-jsc-checkbox-all-columns li').removeClass('no-border-top');
