@@ -159,7 +159,7 @@
                     function _initColumnChooserEvents() {
                         $body.on('input', '#' + dropId + ' .jsc-search', function() {
                             var searchString = $(this).val().toLowerCase();
-
+                            var results = 0;
                             $('#' + dropId + ' .dd-jsc-checkbox-all-columns .checkbox .jsc-col-name').each(function (i) {
                                 var $this = $(this);
                                 var colName = $this.html();
@@ -168,8 +168,15 @@
                                     $this.parents('.checkbox').parent().addClass('hide');
                                 } else {
                                     $this.parents('.checkbox').parent().removeClass('hide');
+                                    results++;
                                 }
                             });
+
+                            if (!results) {
+                                $('#' + dropId + ' .dd-jsc-checkbox.dd-jsc-one-item').addClass('no-border-bottom');
+                            } else {
+                                $('#' + dropId + ' .dd-jsc-checkbox.dd-jsc-one-item').removeClass('no-border-bottom');
+                            }
 
                             $('#' + dropId + ' .dd-jsc-checkbox-all-columns li').removeClass('no-border-top');
                             $('#' + dropId + ' .dd-jsc-checkbox-all-columns').find('li:not(.hide)').eq(0).addClass('no-border-top');
