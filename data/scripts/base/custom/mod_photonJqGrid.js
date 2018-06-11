@@ -171,6 +171,8 @@
                                 }
                             });
 
+                            $('#' + dropId + ' .dd-jsc-checkbox-all-columns li').removeClass('no-border-top');
+                            $('#' + dropId + ' .dd-jsc-checkbox-all-columns').find('li:not(.hide)').eq(0).addClass('no-border-top');
                         });
 
                         $body.on('click', '#' + dropId + ' .jsc-checkbox-all', function() {
