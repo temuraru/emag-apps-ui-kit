@@ -170,6 +170,7 @@
                                     $this.parents('.checkbox').parent().removeClass('hide');
                                 }
                             });
+
                         });
 
                         $body.on('click', '#' + dropId + ' .jsc-checkbox-all', function() {

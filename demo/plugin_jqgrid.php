@@ -338,34 +338,34 @@
                                 </div>
                             </div>
 
-                            <a href="#" name="jqGrid-ierarchical-elements-tree" class="title-anchor">&nbsp;</a>
+                            <a href="#" name="jqGrid-hierarchical-elements-tree" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
                                 <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
-                                        <h4><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
+                                        <h4><strong>jqGrid with hierarchical elements (Tree)</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_ierarchical_elements" aria-expanded="false" aria-controls="jq_with_ierarchical_elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_hierarchical_elements" aria-expanded="false" aria-controls="jq_with_hierarchical_elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="jq_with_ierarchical_elements">
+                                <div class="collapse code-example"  id="jq_with_hierarchical_elements">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#jq_with_ierarchical_elements_html_source" aria-controls="jq_with_ierarchical_elements_html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#jq_with_ierarchical_elements_js_source" aria-controls="jq_with_ierarchical_elements_js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#jq_with_ierarchical_elements_css_source" aria-controls="jq_with_ierarchical_elements_css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#jq_with_hierarchical_elements_html_source" aria-controls="jq_with_hierarchical_elements_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq_with_hierarchical_elements_js_source" aria-controls="jq_with_hierarchical_elements_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq_with_hierarchical_elements_css_source" aria-controls="jq_with_hierarchical_elements_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_ierarchical_elements_html_source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_hierarchical_elements_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_ierarchical_elements_js_source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_hierarchical_elements_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_ierarchical_elements_css_source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_hierarchical_elements_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -373,7 +373,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_hierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_hierarchy" class="table table-bordered word-break"></table>
 
                                         </div>
@@ -1009,8 +1009,8 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_ierarchical_elements_init">
-    function getListingDummyDataForIerarchicalElements() {
+<script type="text/javascript" data-dependency-name="jqGrid_with_hierarchical_elements_init">
+    function getListingDummyDataForHierarchicalElements() {
 
         var dataSet = [
             {
@@ -1160,7 +1160,7 @@
     $(document).ready(function () {
         $("#grid_table_with_hierarchy").jqGrid({
             autoResizing: { compact: true },
-            data: getListingDummyDataForIerarchicalElements(),
+            data: getListingDummyDataForHierarchicalElements(),
             datatype: "local",
             sortable: true,
             colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
