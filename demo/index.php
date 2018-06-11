@@ -288,7 +288,7 @@ eMAG Apps UI KIT/
         </div>
         <!-- CONTENT:End -->
         <!-- FOOTER:Start -->
-        <?php include_once "modules/_mod_footer.php"?>
+        <?php include_once "modules/_mod_footer.php"; ?>
         <!-- FOOTER:End -->
     </div>
 </div>
@@ -303,6 +303,10 @@ eMAG Apps UI KIT/
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
+
+<!-- BOTTOM SCRIPTS:Start -->
+<?php include_once "modules/_mod_bottom_scripts.php"; ?>
+<!-- BOTTOM SCRIPTS:End -->
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->

@@ -767,7 +767,7 @@
                                             <div class="form-group">
                                                 <label for="chosen_ex1"></label>
                                                 <select id="chosen_ex1" class="form-control chosen-select" data-placeholder="Select a bunch of countries..." multiple>
-                                                    <option value="RO" >Romania</option>
+                                                    <option value="RO" class="abc">Romania</option>
                                                     <option value="HU" >Hungary</option>
                                                     <option value="PL" >Poland</option>
                                                     <option value="FR" >France</option>

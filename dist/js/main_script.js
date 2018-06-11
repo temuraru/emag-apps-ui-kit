@@ -3990,12 +3990,53 @@ var Popover = (function ($) {
 })(jQuery);
 
 /* ========================================================================
- * Photon Admin: mod_sidebar.js v1.0.0
+ * Photon Admin: mod_sidebar.js v1.0.2
  *
  * ========================================================================
  * Copyright 2011-2016 eMAG, Inc.
  * Licensed under MIT
  * ======================================================================== */
+
+'use strict';
+
+function createSidebar(data) {
+    var defaultData = {
+        sidebarContainer: '#sidebar',
+        fixed: 'fixed',                 // Posible values: 'fixed', 'un-fixed'
+        expanded: 'expanded',           // Posible values: 'expanded', 'collapsed'
+        menuItems: []
+    };
+
+    data = $.extend({}, defaultData, data);
+
+    var $sidebarContainer = $(data.sidebarContainer);
+
+    $sidebarContainer.addClass('sidebar');
+    if (data.fixed == 'fixed') {
+        $sidebarContainer.addClass('sidebar-fixed');
+    }
+
+    var $sidebarControl = $('<div>', {
+        class: 'sidebar-control',
+        html: $('<div>', {
+            class: 'sidebar-toggle',
+            html: $('<button>', {
+                id: 'toggle-sidebar-size-btn',
+                class: 'btn btn-default btn-sm',
+                attr: {
+                    type: 'button'
+                }
+                html: $('<i>', {
+                    class: 'menu-icon fa fa-arrow-left'
+                })
+            })
+        })
+    })
+
+    $sidebarContainer.append($sidebarControl);
+    initScrollbarForSidebar();
+    initSidebarEvents();
+}
 
 function initScrollbarForSidebar() {
     $('#sidebar .sidebar-outer').customScrollbar({
