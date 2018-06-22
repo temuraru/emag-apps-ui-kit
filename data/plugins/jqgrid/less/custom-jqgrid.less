@@ -735,6 +735,37 @@ div.drop-actions .drop-content .dropdown-menu > li > a {
   white-space: normal;
 }
 
+/*custom add, edit and error background color*/
+.ui-jqgrid .table>tbody>tr>td {
+  background-color: #ffffff;
+  
+}
+
+.ui-jqgrid .table>tbody>tr.success>td {
+  background-color: #ffffff;
+  animation: color-me-in 2s ease 0s 1;
+}
+
+@keyframes color-me-in {
+  0% {
+    background-color: #e7fbe8;
+  }
+  50% {
+    background-color: #e7fbe8;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+.ui-jqgrid .table>tbody>tr[editable="1"]>td,
+.ui-jqgrid .table>tbody>tr.success[editable="1"]>td
+{
+  background: #f3f3f3;
+  animation: none;
+}
+
+
 /*custom jqgrid with no borders*/
 .ui-jqgrid.table-no-border {
   box-shadow: none;

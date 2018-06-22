@@ -844,12 +844,36 @@
             caption: 'jqGrid add new row programatically',
             datastr: getListingDummyData(),
             colModel: [
-                {label: 'First Name', name: 'firstname', key: true, width: "100"},
-                {label: 'Last Name', name: 'lastname'},
-                {label: 'Username', name: 'username'}
+                {name: 'id', index: 'id', key: true,  hidden: true },
+                {label: 'First Name', name: 'firstname', width: "100", editable: true},
+                {label: 'Last Name', name: 'lastname', editable: true},
+                {label: 'Username', name: 'username', editable: true},
+                {
+                    label: 'Actions',
+                    name: 'actions',
+                    width: 60,
+                    formatter: 'actions',
+                    formatoptions: {
+                        keys: true,
+                        editOptions: {},
+                        addOptions: {},
+                        delOptions: {}
+                    }
+                }
             ],
             styleUI: 'fontAwesome'
         };
+
+        var lastSelection;
+
+        function editRow($grid, rowId) {
+            if (rowId && rowId !== lastSelection) {
+                $grid.jqGrid('restoreRow', lastSelection);
+                $grid.jqGrid('editRow', rowId, true);
+                lastSelection = rowId;
+                $grid.find('#jEditButton_' + rowId).trigger('click');
+            }
+        }
 
         new PhotonJqGrid(listingParameters).init();
         var rowCount = 0;
@@ -859,7 +883,7 @@
             $grid_table_add_new_row_programatically.jqGrid(
                 'addRowData',
                 rowCount,
-                {"id": rowCount, "firstname": "Lucian", "lastname": "Edmund", "username": "lucianus"},
+                {"id": rowCount, "firstname": "", "lastname": "", "username": ""},
                 "last"
             );
 
@@ -868,8 +892,11 @@
             var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
 
             $grid_table_add_new_row_programatically.jqGrid('setGridParam', {"page": gridLastPage}).trigger("reloadGrid");
+            
+            editRow($grid_table_add_new_row_programatically, rowCount);
+        });
 
-        })
+        
     });
 </script>
 

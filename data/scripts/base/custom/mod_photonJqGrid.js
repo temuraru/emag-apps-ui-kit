@@ -65,6 +65,8 @@
                 _displayNoRecordsMessage(tableId, records);
 
                 jqGridOverlay.removeClass('custom-overlay');
+                
+                _formatDefaultButtons(tableId);
             },
             mergeGridComplete: true,
             gridComplete: function() {
@@ -100,6 +102,51 @@
         var gridOpts = $.extend({}, defaultParams, parameters || {});
         gridOpts.caption = null;
         gridOpts.altRows = null;
+
+        function _formatDefaultButtons(tableId){
+            var $table = $('#' + tableId);
+
+            var $buttons = $table.find('.ui-inline-edit, .ui-inline-del, .ui-inline-save, .ui-inline-cancel');
+            var noBorderClass = (gridOpts.styleUI == 'fontAwesomeNoBorder') ? ' btn-no-border' : '';
+
+            $.each($buttons, function (index, value) {
+                $this = $(this);
+                if (!$this.parent().hasClass('btn-group')) {
+                    $this.parent().addClass('btn-group').css({
+                        'margin': '0'
+                    });
+                }
+                $(this).addClass('btn btn-default btn-sm' + noBorderClass);
+            });
+            
+            $table.off('jqGridInlineAfterRestoreRow', onJqGridInlineAfterRestoreRow)
+                    .on('jqGridInlineAfterRestoreRow', onJqGridInlineAfterRestoreRow);
+
+            $table.on('jqGridInlineAfterSaveRow',onJqGridInlineAfterSaveRow)
+                    .on('jqGridInlineAfterSaveRow',onJqGridInlineAfterSaveRow);
+
+            function onJqGridInlineAfterSaveRow (event, rowId){
+                $table.find('tr').removeClass('success');
+                setTimeout(function(){
+                    $table.find('tr#' + rowId).addClass('success');
+                },0)
+            }
+
+            function onJqGridInlineAfterRestoreRow(events,rowId){
+                var $buttons = $table.find('tr#' + rowId).find('.ui-inline-edit, .ui-inline-del, .ui-inline-save, .ui-inline-cancel');
+                var noBorderClass = (gridOpts.styleUI == 'fontAwesomeNoBorder') ? ' btn-no-border' : '';
+
+                $.each($buttons, function (index, value) {
+                    $this = $(this);
+                    if (!$this.parent().hasClass('btn-group')) {
+                        $this.parent().addClass('btn-group').css({
+                            'margin': '0'
+                        });
+                    }
+                    $(this).addClass('btn btn-default btn-sm' + noBorderClass);
+                });
+            }   
+        }
 
         function _initStickyOnJqGrid(gridOpts){
             var tableId = '#gbox_'+ gridOpts.table.slice(1);
@@ -615,7 +662,7 @@
                     fontAwesome : {
                         common : {
                             disabled: "ui-disabled",
-                            highlight : "success",
+                            highlight : "highlight",
                             hover : "active",
                             cornerall: "2px",
                             cornertop: "2px",
@@ -731,7 +778,7 @@
                     fontAwesomeNoBorder : {
                         common : {
                             disabled: "ui-disabled",
-                            highlight : "success",
+                            highlight : "highlight",
                             hover : "active",
                             cornerall: "2px",
                             cornertop: "2px",
