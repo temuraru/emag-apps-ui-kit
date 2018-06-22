@@ -6181,7 +6181,9 @@ $.jgrid.extend({
 $.extend($.jgrid,{
 // Modal functions
 	showModal : function(h) {
+		console.log('showModal');
 		h.w.show();
+
 	},
 	closeModal : function(h) {
 		h.w.hide().attr("aria-hidden","true");
@@ -6238,24 +6240,26 @@ $.extend($.jgrid,{
 		return [offset.left,offset.top];
 	},
 	createModal : function(aIDs, content, p, insertSelector, posSelector, appendsel, css) {
-		p = $.extend(true, {}, $.jgrid.jqModal || {}, p);
+		console.log('createModal')
+		console.log(p)
+		p = $.extend(true, {}, $.jgrid.jqModal || {}, p); //merge recursiv, p este un nou obj cu prop si val combinate
 		var self = this,
 			rtlsup = $(p.gbox).attr("dir") === "rtl" ? true : false,
 			classes = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].modal,
 			common = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].common,
-			mw  = document.createElement('div');
-		css = $.extend({}, css || {});
-		mw.className= "ui-jqdialog " + classes.modal;
-		mw.id = aIDs.themodal;
-		var mh = document.createElement('div');
-		mh.className = "ui-jqdialog-titlebar " + classes.header;
-		mh.id = aIDs.modalhead;
-		$(mh).append("<span class='ui-jqdialog-title'>"+p.caption+"</span>");
-		var ahr= $("<a class='ui-jqdialog-titlebar-close "+common.cornerall+"'></a>")
-		.hover(function(){ahr.addClass(common.hover);},
+			mw  = document.createElement('div');//modal view? - tot modalul first div
+		css = $.extend({}, css || {});// face un nou var css fara sa modifice param css
+		mw.className= "ui-jqdialog " + classes.modal;// string cu clasele de pe first div
+		mw.id = aIDs.themodal;//string de id-ul first div
+		var mh = document.createElement('div');//divul cu titlul
+		mh.className = "ui-jqdialog-titlebar " + classes.header;// clasele de pe divul care contine titlu
+		mh.id = aIDs.modalhead;//id-ul divului care contine titlul
+		$(mh).append("<span class='ui-jqdialog-title'>"+p.caption+"</span>");// adauga in containerul titlului span cu titlul
+		var ahr= $("<a class='ui-jqdialog-titlebar-close "+common.cornerall+"'></a>")// face butonul de close
+		.hover(function(){ahr.addClass(common.hover);},//adauga clasele de hover pe btn de close si le si scoate??
 			function(){ahr.removeClass(common.hover);})
-		.append("<span class='" + common.icon_base+" " + classes.icon_close + "'></span>");
-		$(mh).append(ahr);
+		.append("<span class='" + common.icon_base+" " + classes.icon_close + "'></span>");// adauga icoana in butonul de close
+		$(mh).append(ahr);//adauga butonul de close in divul cu titlu
 		if(rtlsup) {
 			mw.dir = "rtl";
 			$(".ui-jqdialog-title",mh).css("float","right");
@@ -6265,11 +6269,11 @@ $.extend($.jgrid,{
 			$(".ui-jqdialog-title",mh).css("float","left");
 			$(".ui-jqdialog-titlebar-close",mh).css("right",0.3+"em");
 		}
-		var mc = document.createElement('div');
-		$(mc).addClass("ui-jqdialog-content " + classes.content).attr("id",aIDs.modalcontent);
-		$(mc).append(content);
-		mw.appendChild(mc);
-		$(mw).prepend(mh);
+		var mc = document.createElement('div');//face containerul modal body
+		$(mc).addClass("ui-jqdialog-content " + classes.content).attr("id",aIDs.modalcontent);// adauga clase si id containerului modal body
+		$(mc).append(content);// se face append in modal body la ce vine din param content
+		mw.appendChild(mc); // modala(first div) append modal body
+		$(mw).prepend(mh); // modala(first div) append divul cu titlul
 		if(appendsel===true) { 
 			$('body').append(mw); 
 		} //append as first child in body -for alert dialog
@@ -6278,7 +6282,7 @@ $.extend($.jgrid,{
 		} else {
 			$(mw).insertBefore(insertSelector);
 		}
-		$(mw).css(css);
+		$(mw).css(css); // modala(first div) i se adauga css
 		if(p.jqModal === undefined) {p.jqModal = true;} // internal use
 		var coord = {};
 		if ( $.fn.jqm && p.jqModal === true) {
@@ -6294,7 +6298,7 @@ $.extend($.jgrid,{
 			coord.left = p.left;
 			coord.top = p.top+"px";
 		}
-		$("a.ui-jqdialog-titlebar-close",mh).click(function(){
+		$("a.ui-jqdialog-titlebar-close",mh).click(function(){//$(mh).find('a.ui-jqdialog-titlebar-close')
 			var oncm = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;
 			var gboxclose = $("#"+$.jgrid.jqID(aIDs.themodal)).data("gbox") || p.gbox;
 			self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:gboxclose,jqm:p.jqModal,onClose:oncm, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
@@ -6305,7 +6309,7 @@ $.extend($.jgrid,{
 		if(!p.zIndex) {
 			var parentZ = $(insertSelector).parents("*[role=dialog]").filter(':first').css("z-index");
 			if(parentZ) {
-				p.zIndex = parseInt(parentZ,10)+2;
+				p.zIndex = parseInt(parentZ,10)+2;//adauga + 2 la zindex ?
 			} else {
 				p.zIndex = 950;
 			}
@@ -6322,7 +6326,7 @@ $.extend($.jgrid,{
 			height:isNaN(p.height) ? "auto" : p.height + "px",
 			zIndex:p.zIndex,
 			overflow: 'hidden'
-		},coord))
+		},coord))// modala(first div) la css i se face merge de style
 		.attr({tabIndex: "-1","role":"dialog","aria-labelledby":aIDs.modalhead,"aria-hidden":"true"});
 		if(p.drag === undefined) { p.drag=true;}
 		if(p.resize === undefined) {p.resize=true;}
@@ -6350,13 +6354,14 @@ $.extend($.jgrid,{
 		if(p.closeOnEscape === true){
 			$(mw).keydown( function( e ) {
 				if( e.which === 27 ) {
-					var cone = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;
+					var cone = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;//??? pls explicatie la urmatoarele 2 randuri
 					self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:p.gbox,jqm:p.jqModal,onClose: cone, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
 				}
 			});
 		}
 	},
 	viewModal : function (selector,o){
+		console.log('viewModal');
 		o = $.extend({
 			toTop: true,
 			overlay: 10,
@@ -6393,6 +6398,11 @@ $.extend($.jgrid,{
 		}
 	},
 	info_dialog : function(caption, content,c_b, modalopt) {
+		console.log('info_dialog')
+		//console.log(caption) //modal title text
+		//console.log(content) //modal content text only without tags
+		//console.log(c_b)// custom buttons maybe? - string?? - vine 'Close'
+		//console.log(modalopt)// {left: 236, top: 1792, styleUI: "fontAwesomeNoBorder", onClose: ƒ} o sa fie merge mai jos cu mopt
 		var mopt = {
 			width:290,
 			height:'auto',
@@ -6412,22 +6422,24 @@ $.extend($.jgrid,{
 		// if the id is not provided we set it like info_button_+ the index in the array - i.e info_button_0,info_button_1...
 		};
 		$.extend(true, mopt, $.jgrid.jqModal || {}, {caption:"<b>"+caption+"</b>"}, modalopt || {});
+		console.log(mopt)
 		var jm = mopt.jqModal, self = this,
 		classes = $.jgrid.styleUI[(mopt.styleUI || 'jQueryUI')].modal,
 		common = $.jgrid.styleUI[(mopt.styleUI || 'jQueryUI')].common;
 		if($.fn.jqm && !jm) { jm = false; }
 		// in case there is no jqModal
 		var buttstr ="", i;
-		if(mopt.buttons.length > 0) {
+		if(mopt.buttons.length > 0) {//nu stiu cand trece pe aici????
 			for(i=0;i<mopt.buttons.length;i++) {
 				if(mopt.buttons[i].id === undefined) { mopt.buttons[i].id = "info_button_"+i; }
 				buttstr += "<a id='"+mopt.buttons[i].id+"' class='fm-button " + common.button+"'>"+mopt.buttons[i].text+"</a>";
 			}
 		}
-		var dh = isNaN(mopt.dataheight) ? mopt.dataheight : mopt.dataheight+"px",
+		var dh = isNaN(mopt.dataheight) ? mopt.dataheight : mopt.dataheight+"px",// cred ca se poate declara un height fix pt ce intra in modal body
 		cn = "text-align:"+mopt.align+";";
 		var cnt = "<div id='info_id'>";
 		cnt += "<div id='infocnt' style='margin:0px;padding-bottom:1em;width:100%;overflow:auto;position:relative;height:"+dh+";"+cn+"'>"+content+"</div>";
+		//daca exista custom btns adaug si butoanele in caz ca e unul il pun sau daca sunt mai multe le construiesc mai sus si le pun
 		cnt += c_b ? "<div class='" + classes.content + "' style='text-align:"+mopt.buttonalign+";padding-bottom:0.8em;padding-top:0.5em;background-image: none;border-width: 1px 0 0 0;'><a id='closedialog' class='fm-button " + common.button + "'>"+c_b+"</a>"+buttstr+"</div>" :
 			buttstr !== ""  ? "<div class='" + classes.content + "' style='text-align:"+mopt.buttonalign+";padding-bottom:0.8em;padding-top:0.5em;background-image: none;border-width: 1px 0 0 0;'>"+buttstr+"</div>" : "";
 		cnt += "</div>";

@@ -134,6 +134,9 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_add_new_row_programatically_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20 pad-btm-20">
                                                 <button type="button" class="btn btn-primary btn-sm add-new-row">Add new row</button>
+                                                <button type="button" class="btn btn-primary btn-sm add-new-row-with-modal">Add new row modal</button>
+                                                <button type="button" class="btn btn-primary btn-sm edit-row-with-modal">Edit new row modal</button>
+                                                
                                             </div>
 
                                             <table id="grid_table_add_new_row_programatically" class="table table-bordered word-break"></table>
@@ -835,6 +838,7 @@
     });
 </script>
 
+
 <script type="text/javascript" data-dependency-name="jqgrid_add_new_row_programatically_init">
     $(document).ready(function () {
         var listingParameters = {
@@ -845,8 +849,8 @@
             datastr: getListingDummyData(),
             colModel: [
                 {name: 'id', index: 'id', key: true,  hidden: true },
-                {label: 'First Name', name: 'firstname', width: "100", editable: true},
-                {label: 'Last Name', name: 'lastname', editable: true},
+                {label: 'First Name', name: 'firstname', width: "100", editable: true, editrules: { required: true} },
+                {label: 'Last Name', name: 'lastname', editable: true, editrules: { required: true} },
                 {label: 'Username', name: 'username', editable: true},
                 {
                     label: 'Actions',
@@ -861,7 +865,13 @@
                     }
                 }
             ],
-            styleUI: 'fontAwesome'
+            
+            cellEdit : false,
+            cellsubmit : 'clientArray',
+            editurl: 'clientArray',
+            
+            styleUI: 'fontAwesomeNoBorder',
+            useCustomConfirmationModal: true
         };
 
         var lastSelection;
@@ -877,8 +887,14 @@
 
         new PhotonJqGrid(listingParameters).init();
         var rowCount = 0;
+        var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
+
+        function onJqGridAfterInsertRow(){
+                setTimeout(function(){$grid_table_add_new_row_programatically.trigger("reloadGrid");},0)
+        }
+
         $('.add-new-row').on('click', function () {
-            var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
+            $grid_table_add_new_row_programatically.off('jqGridAfterInsertRow', onJqGridAfterInsertRow);
             rowCount = $grid_table_add_new_row_programatically.getDataIDs().length + 2
             $grid_table_add_new_row_programatically.jqGrid(
                 'addRowData',
@@ -896,7 +912,47 @@
             editRow($grid_table_add_new_row_programatically, rowCount);
         });
 
-        
+        $('.add-new-row-with-modal').click(function () {
+            $grid_table_add_new_row_programatically.jqGrid('editGridRow', "new", {
+                jqModal: true,
+                savekey: [true, 13],
+                navkeys: [true, 38, 40],
+                bottominfo: "Fields marked with (*) are required. ",
+                addCaption: 'New Row Values',
+                width: 300,
+                dataheight: 200,
+                recreateForm: true,
+                //checkOnUpdate: true,
+                //checkOnSubmit: true,
+                //reloadAfterSubmit: true,
+                closeOnEscape: true,
+                closeAfterAdd: true,
+                //clearAfterAdd: true,
+            })
+
+            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+        });   
+
+        $('.edit-row-with-modal').click(function () {
+            $grid_table_add_new_row_programatically.jqGrid('editGridRow', $grid_table_add_new_row_programatically.getDataIDs()[0], {
+                jqModal: true,
+                savekey: [true, 13],
+                navkeys: [true, 38, 40],
+                bottominfo: "Fields marked with (*) are required. ",
+                addCaption: 'New Row Values',
+                width: 300,
+                dataheight: 200,
+                recreateForm: true,
+                //checkOnUpdate: true,
+                //checkOnSubmit: true,
+                //reloadAfterSubmit: true,
+                closeOnEscape: true,
+                closeAfterAdd: true,
+                //clearAfterAdd: true, 
+            })
+
+            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+        });
     });
 </script>
 
@@ -1325,6 +1381,11 @@
                     }
                 }
             ],
+            
+            cellEdit : true,
+            cellsubmit : 'clientArray',
+            editurl: 'clientArray',
+
             styleUI: 'fontAwesome'
         };
 
