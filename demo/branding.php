@@ -261,6 +261,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
         <script src="../dist/js/main_script.min.js"></script>
         <script src="../dist/js/demo_helpers.js"></script>
+
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->

@@ -3997,19 +3997,244 @@ var Popover = (function ($) {
  * Licensed under MIT
  * ======================================================================== */
 
-'use strict';
+"use strict";
 
 function createSidebar(data) {
     var defaultData = {
-        sidebarContainer: '#sidebar',
-        fixed: 'fixed',                 // Posible values: 'fixed', 'un-fixed'
         expanded: 'expanded',           // Posible values: 'expanded', 'collapsed'
-        menuItems: []
+        fixed: 'fixed',                 // Posible values: 'fixed', 'un-fixed'
+        menuItems: [],
+        sidebarContainer: '#sidebar',
+        sidebarSearchInputId: 'sidebar_menu_search',
+        withSearch: true
     };
 
     data = $.extend({}, defaultData, data);
 
-    var $sidebarContainer = $(data.sidebarContainer);
+    var $sidebarContainer = $(data.sidebarContainer),
+        menuItemsIdCount = 0,
+        sidebarMenuNodes = {};
+
+    $('body').blockControl({ blurElement: $sidebarContainer });
+
+    var initMenuItemData = function (menuItemData) {
+        var defaultMenuItemData = {
+            'title': '',
+            'href': '',
+            'data-href': '',
+            'icon': 'fa-angle-double-right'
+        };
+
+        return $.extend({}, defaultMenuItemData, menuItemData);
+    },
+    addMenuItemLink = function ($newMenuItem, menuItemData) {
+        var $menuItemLink = $('<a>', {
+            attr: {
+                'href': menuItemData.href,
+                'data-href': menuItemData['data-href']
+            }
+        });
+        $menuItemLink.append($('<i>', { class: 'menu-icon fa ' + menuItemData.icon }));
+        $menuItemLink.append($('<span>', {
+            class: 'menu-text',
+            html: menuItemData.title
+        }));
+        $newMenuItem.append($menuItemLink);
+    },
+    createMenuItemDataContainer = function (menuItemData) {
+        return $('<div>', {
+            class: 'menu-item-data',
+            html: $('<a>', {
+                class: 'menu-item-min-link',
+                attr: {
+                    href: menuItemData.href
+                },
+                html: $('<span>', {
+                    class: 'menu-text',
+                    html: menuItemData.title
+                })
+            })
+        });
+    },
+    addMenuItemChildrenToDataContainer = function (menuItemId, $menuItemDataContainer, menuItemDataChildren) {
+        var $sidebarSubmenu = $('<ul>', { class: 'sidebar-submenu' });
+            
+        for (var j in menuItemDataChildren) {
+            $sidebarSubmenu.append(createSidebarSubmenuItem(menuItemId, menuItemDataChildren[j]));
+        }
+        
+        $menuItemDataContainer.append($sidebarSubmenu);
+    },
+    createSidebarSubmenuItem = function (parentMenuItemId, data) {
+        var defaultData = {
+            'title': '',
+            'href': ''
+        };
+        data = $.extend({}, defaultData, data);
+
+        var menuItemId = getMenuItemId(data, menuItemsIdCount);
+        
+        sidebarMenuNodes[menuItemId] = jQuery.extend({}, data);
+        sidebarMenuNodes[menuItemId].id = menuItemId;
+        sidebarMenuNodes[menuItemId].parent = parentMenuItemId;
+        sidebarMenuNodes[parentMenuItemId].children.push(menuItemId);
+
+        var $newSidebarSubmenuItem = $('<li>', {
+            class: 'menu-item',
+            attr: {
+                id: menuItemId
+            },
+            html: $('<a>', {
+                attr: {
+                    href: data.href
+                },
+                html: $('<span>', {
+                    class: 'menu-text',
+                    html: data.title
+                })
+            })
+        });
+        
+        if (data.children) {
+            sidebarMenuNodes[menuItemId].children = [];
+            $newSidebarSubmenuItem.addClass('menu-item-has-children');
+            addChildrenForSidebarSubmenuItem(menuItemId, $newSidebarSubmenuItem, data)
+        }
+
+        return $newSidebarSubmenuItem;
+    },
+    addChildrenForSidebarSubmenuItem = function (newSidebarSubmenuItemId, $newSidebarSubmenuItem, sidebarSubmenuItemData) {
+        var $sidebar2ndSubmenuList = $('<ul>', { class: 'sidebar-submenu' });
+
+        for (var i in sidebarSubmenuItemData.children) {
+            $sidebar2ndSubmenuList.append(createSidebarSubmenuItem(newSidebarSubmenuItemId, sidebarSubmenuItemData.children[i]));
+        }
+
+        $newSidebarSubmenuItem.append($sidebar2ndSubmenuList);
+
+        return $newSidebarSubmenuItem;
+    },
+    getMenuItemId = function (menuItem) {
+        var menuItemId = '';
+        if (menuItem.id) {
+            menuItemId = menuItem.id;
+        } else {
+            menuItemsIdCount++;
+            menuItemId = 'sidebar_menu_item_' + menuItemsIdCount;
+        }
+
+        return menuItemId;
+    },
+    makeParentsVisible = function (menuItemId) {
+        if (sidebarMenuNodes[menuItemId].parent && sidebarMenuNodes[menuItemId].parent !== null) {
+            $('#' + sidebarMenuNodes[menuItemId].parent).show();
+            makeParentsVisible(sidebarMenuNodes[menuItemId].parent);
+        }
+    },
+    addSearchEvent = function () {
+        var $searchInput = $('#' + data.sidebarSearchInputId),
+            typingTimer,
+            doneTypingInterval = 600,
+            doneTyping = function () {
+                var searchString = $searchInput.val().toLowerCase(),
+                    foundMenuItems = [],
+                    words = searchString.split(" "),
+                    searchRegex = '';
+                
+                if (searchString !== '') {
+                    for (var i = 0; i < words.length; i++) {
+                        searchRegex += "(?=.*" + words[i] + ")";
+                    }
+        
+                    searchRegex = new RegExp(searchRegex + ".+", "gi");
+    
+                    for (var i in sidebarMenuNodes) {
+                        var nodeTitle = sidebarMenuNodes[i].title.toLowerCase(),
+                            nodeKeywords = sidebarMenuNodes[i].keywords ? sidebarMenuNodes[i].keywords.toLowerCase() : '';
+    
+                        if (searchRegex.test(nodeTitle) || searchRegex.test(nodeKeywords)) {
+                            foundMenuItems.push(i);
+                            $('#' + i).show();
+                            makeParentsVisible(i);
+                        } else {
+                            $('#' + i).hide();
+                            
+                            if ($.inArray(sidebarMenuNodes[i].parent, foundMenuItems) !== -1) {
+                                $('#' + i).show();
+                                if (sidebarMenuNodes[i].children && sidebarMenuNodes[i].children.length > 0) {
+                                    foundMenuItems.push(i);
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    for (var i in sidebarMenuNodes) {
+                        $('#' + i).show();
+                    }
+                }
+            };
+
+        $searchInput.on('keyup', function () {
+            clearTimeout(typingTimer);
+            typingTimer = setTimeout(doneTyping, doneTypingInterval);
+        });
+
+        $searchInput.on('keydown', function () {
+            clearTimeout(typingTimer);
+        });
+    };
+
+    $sidebarContainer.append($('<div>', { class: 'sidebar-outer' }));
+    var $sidebarInner = $('<ul>', { class: 'sidebar-inner' });
+
+    if (data.withSearch && data.withSearch === true) {
+        var $searchItem = $('<li>', {
+            class: 'menu-item form-group',
+            attr: {
+                id: 'sidebar_menu_item_search'
+            },
+            html: $('<input>', {
+                class: 'form-control',
+                attr: {
+                    id: data.sidebarSearchInputId,
+                    placeholder: 'Search...',
+                    type: 'text'
+                }
+            })
+        });
+
+        $sidebarInner.append($searchItem);
+    }
+
+    for (var i in data.menuItems) {
+        var menuItemId = getMenuItemId(data.menuItems[i], menuItemsIdCount);
+        
+        sidebarMenuNodes[menuItemId] = data.menuItems[i];
+        sidebarMenuNodes[menuItemId].id = menuItemId;
+        sidebarMenuNodes[menuItemId].parent = null;
+
+        var menuItemData = initMenuItemData(data.menuItems[i]),
+            $newMenuItem = $('<li>', {
+                class: 'menu-item',
+                attr: {
+                    id: menuItemId
+                }
+            });
+
+        addMenuItemLink($newMenuItem, menuItemData);
+
+        var $menuItemDataContainer = createMenuItemDataContainer(menuItemData);
+        if (menuItemData.children) {
+            sidebarMenuNodes[menuItemId].children = [];
+            $newMenuItem.addClass('menu-item-has-children');
+            addMenuItemChildrenToDataContainer(menuItemId, $menuItemDataContainer, menuItemData.children);
+        }
+        $newMenuItem.append($menuItemDataContainer);
+
+        $sidebarInner.append($newMenuItem);
+    }
+
+    $sidebarContainer.find('.sidebar-outer').eq(0).append($sidebarInner);
 
     $sidebarContainer.addClass('sidebar');
     if (data.fixed == 'fixed') {
@@ -4025,7 +4250,7 @@ function createSidebar(data) {
                 class: 'btn btn-default btn-sm',
                 attr: {
                     type: 'button'
-                }
+                },
                 html: $('<i>', {
                     class: 'menu-icon fa fa-arrow-left'
                 })
@@ -4034,8 +4259,16 @@ function createSidebar(data) {
     })
 
     $sidebarContainer.append($sidebarControl);
+
     initScrollbarForSidebar();
-    initSidebarEvents();
+    
+    if (data.withSearch && data.withSearch === true) {
+        addSearchEvent();
+    }
+
+    $('body').unblockControl({ focusElement: $sidebarContainer });
+
+    return sidebarMenuNodes;
 }
 
 function initScrollbarForSidebar() {
@@ -4048,6 +4281,7 @@ function initScrollbarForSidebar() {
 
 function updateScrollbar() {
     $('#sidebar .sidebar-outer').customScrollbar('resize', true);
+    $(window).resize();
 }
 
 function newScrollbarHeight($sidebarInner, $menuItem) {

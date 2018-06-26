@@ -276,7 +276,9 @@
 
         <script src="../dist/plugins/chart/chart.min.js" data-dependency-name="chart_source"></script>
 
-
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
         <!-- SCRIPTS:End -->
 
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
