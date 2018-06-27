@@ -1325,6 +1325,8 @@
                     }
                 }
             ],
+            cellsubmit : 'clientArray',
+            editurl: 'clientArray',
             styleUI: 'fontAwesome'
         };
 
