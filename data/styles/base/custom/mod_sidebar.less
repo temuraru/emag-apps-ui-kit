@@ -35,6 +35,14 @@
 
   &.sidebar-min {
     .sidebar-inner {
+      .sidebar-menu-search-button {
+        display: inline-block;
+      }
+
+      .sidebar-menu-search {
+        display: none;
+      }
+
       & > .menu-item {
         & > a {
           .menu-text {
@@ -95,19 +103,35 @@
       position:relative;      
       display:block;
       z-index: 3;
+
+      .sidebar-menu-search-button {
+        display: none;
+        margin: 3px 2px;
+      }
+
+      .sidebar-menu-search {
+        border: none;
+        display: block;
+      }
+
       .menu-item {
-         display: block;
-         position: relative;
-         padding: 0;
-         margin: 0;
-         border-style: solid;
-         border-width: @sidebar-border-width 0 0;
-         border-color: darken(@sidebar-first-level-bg, 5%);
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border-style: solid;
+        border-width: @sidebar-border-width 0 0;
+        border-color: darken(@sidebar-first-level-bg, 5%);
 
         &:last-of-type {
           border-bottom-width: @sidebar-border-width;
         }
-         a {
+        
+        &.sidebar-menu-item-search {
+          height: 40px;
+        }
+
+        a {
             display: block;
             min-height:@sidebar-cell-height;
             line-height: @sidebar-lineheight;
@@ -182,7 +206,7 @@
                  }
                }
                &.active {
-                 & > a,
+                 &:not(.menu-item-has-children) > a,
                  &.menu-item-has-children > a {
                    background-color: @sidebar-submenu-active-cell-bg;
                    color: @sidebar-submenu-active-cell-text;
@@ -262,7 +286,7 @@
            }
          }
          &.active {
-             & > a {
+             &:not(.menu-item-has-children) > a {
                background-color: @sidebar-menu-active-cell-bg;
                color: @sidebar-menu-active-cell-text;
              }

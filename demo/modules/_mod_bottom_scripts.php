@@ -11,7 +11,7 @@
                     {
                         'title': 'Overview',
                         'href': '/emag-apps-ui-kit/demo/index.php#overview',
-                        'keywords': 'abc'
+                        'keywords': ''
                     },
                     {
                         'title': 'Getting started',

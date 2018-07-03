@@ -4006,6 +4006,7 @@ function createSidebar(data) {
         menuItems: [],
         sidebarContainer: '#sidebar',
         sidebarSearchInputId: 'sidebar_menu_search',
+        sidebarSearchButtonId: 'sidebar_menu_search_button',
         withSearch: true
     };
 
@@ -4182,6 +4183,10 @@ function createSidebar(data) {
         $searchInput.on('keydown', function () {
             clearTimeout(typingTimer);
         });
+
+        $('#' + data.sidebarSearchButtonId).on('click', function () {
+            $('#toggle-sidebar-size-btn').trigger('click');
+        });
     };
 
     $sidebarContainer.append($('<div>', { class: 'sidebar-outer' }));
@@ -4189,19 +4194,34 @@ function createSidebar(data) {
 
     if (data.withSearch && data.withSearch === true) {
         var $searchItem = $('<li>', {
-            class: 'menu-item form-group',
-            attr: {
-                id: 'sidebar_menu_item_search'
-            },
-            html: $('<input>', {
-                class: 'form-control',
+                class: 'menu-item form-group sidebar-menu-item-search',
                 attr: {
-                    id: data.sidebarSearchInputId,
-                    placeholder: 'Search...',
-                    type: 'text'
+                    id: 'sidebar_menu_item_search'
                 }
-            })
-        });
+            }),
+            $searchItem = $('<li>', {
+                class: 'menu-item form-group sidebar-menu-item-search',
+                attr: {
+                    id: 'sidebar_menu_item_search'
+                }
+            });
+        
+        $searchItem.append($('<button>', {
+            attr: {
+                id: data.sidebarSearchButtonId,
+                type: 'button'
+            },
+            class: 'btn btn-no-border sidebar-menu-search-button',
+            html: $('<i>', { class: 'fa fa-search' })
+        }));
+        $searchItem.append($('<input>', {
+            class: 'form-control sidebar-menu-search',
+            attr: {
+                id: data.sidebarSearchInputId,
+                placeholder: 'Search...',
+                type: 'text'
+            }
+        }));
 
         $sidebarInner.append($searchItem);
     }
