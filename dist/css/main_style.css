@@ -11486,7 +11486,7 @@ body {
 .sidebar.sidebar-min .sidebar-inner .sidebar-menu-search-button {
   display: inline-block;
 }
-.sidebar.sidebar-min .sidebar-inner .sidebar-menu-search {
+.sidebar.sidebar-min .sidebar-inner .sidebar-menu-item-search .input-group-no-separation {
   display: none;
 }
 .sidebar.sidebar-min .sidebar-inner > .menu-item > a .menu-text {
@@ -11535,6 +11535,9 @@ body {
   border: none;
   display: block;
 }
+.sidebar .sidebar-inner .sidebar-menu-search-clear-button {
+  border: none;
+}
 .sidebar .sidebar-inner .menu-item {
   display: block;
   position: relative;
@@ -11549,6 +11552,10 @@ body {
 }
 .sidebar .sidebar-inner .menu-item.sidebar-menu-item-search {
   height: 40px;
+}
+.sidebar .sidebar-inner .menu-item.sidebar-menu-item-no-results > a,
+.sidebar .sidebar-inner .menu-item.sidebar-menu-item-no-results .menu-item-data > a {
+  pointer-events: none !important;
 }
 .sidebar .sidebar-inner .menu-item a {
   display: block;

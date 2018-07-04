@@ -15,7 +15,9 @@ function createSidebar(data) {
         menuItems: [],
         sidebarContainer: '#sidebar',
         sidebarSearchInputId: 'sidebar_menu_search',
+        sidebarSearchClearButtonId: 'sidebar_menu_search_clear_button',
         sidebarSearchButtonId: 'sidebar_menu_search_button',
+        noResultsMessage: 'No results found',
         withSearch: true
     };
 
@@ -149,7 +151,8 @@ function createSidebar(data) {
                 var searchString = $searchInput.val().toLowerCase(),
                     foundMenuItems = [],
                     words = searchString.split(" "),
-                    searchRegex = '';
+                    searchRegex = '',
+                    resultsNumber = 0;
                 
                 if (searchString !== '') {
                     for (var i = 0; i < words.length; i++) {
@@ -163,6 +166,7 @@ function createSidebar(data) {
                             nodeKeywords = sidebarMenuNodes[i].keywords ? sidebarMenuNodes[i].keywords.toLowerCase() : '';
     
                         if (searchRegex.test(nodeTitle) || searchRegex.test(nodeKeywords)) {
+                            resultsNumber++;
                             foundMenuItems.push(i);
                             $('#' + i).show();
                             makeParentsVisible(i);
@@ -170,6 +174,7 @@ function createSidebar(data) {
                             $('#' + i).hide();
                             
                             if ($.inArray(sidebarMenuNodes[i].parent, foundMenuItems) !== -1) {
+                                resultsNumber++;
                                 $('#' + i).show();
                                 if (sidebarMenuNodes[i].children && sidebarMenuNodes[i].children.length > 0) {
                                     foundMenuItems.push(i);
@@ -179,18 +184,34 @@ function createSidebar(data) {
                     }
                 } else {
                     for (var i in sidebarMenuNodes) {
+                        resultsNumber++;
                         $('#' + i).show();
                     }
                 }
+
+                if (resultsNumber > 0) {
+                    $('#sidebar_menu_item_no_results').hide();
+                } else {
+                    $('#sidebar_menu_item_no_results').show();
+                }
             };
 
-        $searchInput.on('keyup', function () {
+        $searchInput.on('keyup change paste input', function () {
             clearTimeout(typingTimer);
             typingTimer = setTimeout(doneTyping, doneTypingInterval);
         });
 
+        $searchInput.on('change paste input', function () {
+            clearTimeout(typingTimer);
+            doneTyping();
+        });
+
         $searchInput.on('keydown', function () {
             clearTimeout(typingTimer);
+        });
+
+        $('#' + data.sidebarSearchClearButtonId).on('click', function () {
+            $searchInput.val('').focus().trigger('change');
         });
 
         $('#' + data.sidebarSearchButtonId).on('click', function () {
@@ -223,7 +244,9 @@ function createSidebar(data) {
             class: 'btn btn-no-border sidebar-menu-search-button',
             html: $('<i>', { class: 'fa fa-search' })
         }));
-        $searchItem.append($('<input>', {
+        
+        var $searchInputGroup = $('<div>', { class: 'input-group input-group-no-separation' });
+        $searchInputGroup.append($('<input>', {
             class: 'form-control sidebar-menu-search',
             attr: {
                 id: data.sidebarSearchInputId,
@@ -231,8 +254,51 @@ function createSidebar(data) {
                 type: 'text'
             }
         }));
+        $searchInputGroup.append($('<span>', {
+            attr: {
+                id: data.sidebarSearchClearButtonId
+            },
+            class: 'input-group-addon cursor-pointer sidebar-menu-search-clear-button',
+            html: $('<i>', { class: 'fa fa-times' })
+        }));
+        $searchItem.append($searchInputGroup);
 
+        // var $noResultsItem = $('<li>', {
+        //     attr: {
+        //         id: 'sidebar_menu_item_no_results',
+        //         style: 'display: none;'
+        //     },
+        //     class: 'menu-item sidebar-menu-item-no-results',
+        //     html: $('<a>', {
+        //         attr: {
+        //             href: 'javascript:void(0);'
+        //         }
+        //     })
+        // });
+
+        // $noResultsItem.find('a').append($('<i>', { class: 'menu-icon fa fa-times' }));
+        // $noResultsItem.find('a').append($('<span>', {
+        //     class: 'menu-text',
+        //     html: data.noResultsMessage
+        // }));
+        var noResultsItemData = {
+            'title': data.noResultsMessage,
+            'href': 'javascript:void(0)',
+            'icon': 'fa-times'
+        };
+        noResultsItemData = initMenuItemData(noResultsItemData);
+        var $noResultsItem = $('<li>', {
+                class: 'menu-item sidebar-menu-item-no-results',
+                attr: {
+                    id: 'sidebar_menu_item_no_results',
+                    style: 'display: none;'
+                }
+            });
+        addMenuItemLink($noResultsItem, noResultsItemData);
+        $noResultsItem.append(createMenuItemDataContainer(noResultsItemData));
+        
         $sidebarInner.append($searchItem);
+        $sidebarInner.append($noResultsItem);
     }
 
     for (var i in data.menuItems) {

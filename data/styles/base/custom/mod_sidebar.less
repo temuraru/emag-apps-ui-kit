@@ -39,7 +39,7 @@
         display: inline-block;
       }
 
-      .sidebar-menu-search {
+      .sidebar-menu-item-search .input-group-no-separation {
         display: none;
       }
 
@@ -114,6 +114,10 @@
         display: block;
       }
 
+      .sidebar-menu-search-clear-button {
+        border: none;
+      }
+
       .menu-item {
         display: block;
         position: relative;
@@ -129,6 +133,13 @@
         
         &.sidebar-menu-item-search {
           height: 40px;
+        }
+
+        &.sidebar-menu-item-no-results {
+          & > a,
+          .menu-item-data > a {
+            pointer-events: none !important;
+          }
         }
 
         a {
