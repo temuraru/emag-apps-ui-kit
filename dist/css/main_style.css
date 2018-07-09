@@ -11483,6 +11483,12 @@ body {
   border-color: #ccc;
   background-color: inherit;
 }
+.sidebar.sidebar-min .sidebar-inner .sidebar-menu-search-button {
+  display: inline-block;
+}
+.sidebar.sidebar-min .sidebar-inner .sidebar-menu-item-search .input-group-no-separation {
+  display: none;
+}
 .sidebar.sidebar-min .sidebar-inner > .menu-item > a .menu-text {
   display: none;
 }
@@ -11521,6 +11527,17 @@ body {
   display: block;
   z-index: 3;
 }
+.sidebar .sidebar-inner .sidebar-menu-search-button {
+  display: none;
+  margin: 3px 2px;
+}
+.sidebar .sidebar-inner .sidebar-menu-search {
+  border: none;
+  display: block;
+}
+.sidebar .sidebar-inner .sidebar-menu-search-clear-button {
+  border: none;
+}
 .sidebar .sidebar-inner .menu-item {
   display: block;
   position: relative;
@@ -11532,6 +11549,13 @@ body {
 }
 .sidebar .sidebar-inner .menu-item:last-of-type {
   border-bottom-width: 1px;
+}
+.sidebar .sidebar-inner .menu-item.sidebar-menu-item-search {
+  height: 40px;
+}
+.sidebar .sidebar-inner .menu-item.sidebar-menu-item-no-results > a,
+.sidebar .sidebar-inner .menu-item.sidebar-menu-item-no-results .menu-item-data > a {
+  pointer-events: none !important;
 }
 .sidebar .sidebar-inner .menu-item a {
   display: block;
@@ -11602,7 +11626,7 @@ body {
   background-color: #eee;
   color: #005eb7;
 }
-.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active > a,
+.sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a {
   background-color: #005eb7;
   color: #fff;
@@ -11663,7 +11687,7 @@ body {
 .sidebar .sidebar-inner .menu-item.menu-item-has-children .sidebar-submenu {
   display: none;
 }
-.sidebar .sidebar-inner .menu-item.active > a {
+.sidebar .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a {
   background-color: #005eb7;
   color: #fff;
 }
@@ -11837,8 +11861,7 @@ body {
 }
 .sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-inverse.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
-.sidebar-inverse .sidebar-inner .menu-item.active > a,
-.sidebar-inverse .sidebar-inner .menu-item.active.menu-item-has-children > a,
+.sidebar-inverse .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-inverse .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11866,8 +11889,7 @@ body {
 }
 .sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-blue.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
-.sidebar-blue .sidebar-inner .menu-item.active > a,
-.sidebar-blue .sidebar-inner .menu-item.active.menu-item-has-children > a,
+.sidebar-blue .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-blue .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11895,8 +11917,7 @@ body {
 }
 .sidebar-green.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-green.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
-.sidebar-green .sidebar-inner .menu-item.active > a,
-.sidebar-green .sidebar-inner .menu-item.active.menu-item-has-children > a,
+.sidebar-green .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-green .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11924,8 +11945,7 @@ body {
 }
 .sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-purple.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
-.sidebar-purple .sidebar-inner .menu-item.active > a,
-.sidebar-purple .sidebar-inner .menu-item.active.menu-item-has-children > a,
+.sidebar-purple .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-purple .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11953,8 +11973,7 @@ body {
 }
 .sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-cyan.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
-.sidebar-cyan .sidebar-inner .menu-item.active > a,
-.sidebar-cyan .sidebar-inner .menu-item.active.menu-item-has-children > a,
+.sidebar-cyan .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-cyan .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {
@@ -11982,8 +12001,7 @@ body {
 }
 .sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active > .menu-item-data > .menu-item-min-link,
 .sidebar-brown.sidebar-min .sidebar-inner > .menu-item.active:hover > .menu-item-data > .menu-item-min-link,
-.sidebar-brown .sidebar-inner .menu-item.active > a,
-.sidebar-brown .sidebar-inner .menu-item.active.menu-item-has-children > a,
+.sidebar-brown .sidebar-inner .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active.menu-item-has-children > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item.active:not(.menu-item-has-children) > a,
 .sidebar-brown .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item.active > a {

@@ -205,10 +205,14 @@
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
-        <!-- SCRIPTS:End -->
 
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
+
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
+        <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">

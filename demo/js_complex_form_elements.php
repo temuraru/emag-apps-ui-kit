@@ -767,11 +767,11 @@
                                             <div class="form-group">
                                                 <label for="chosen_ex1"></label>
                                                 <select id="chosen_ex1" class="form-control chosen-select" data-placeholder="Select a bunch of countries..." multiple>
-                                                    <option value="RO" >Romania</option>
-                                                    <option value="HU" >Hungary</option>
-                                                    <option value="PL" >Poland</option>
-                                                    <option value="FR" >France</option>
-                                                    <option value="DE" >Germany</option>
+                                                    <option value="RO">Romania</option>
+                                                    <option value="HU">Hungary</option>
+                                                    <option value="PL">Poland</option>
+                                                    <option value="FR">France</option>
+                                                    <option value="DE">Germany</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -1045,6 +1045,10 @@
 <script src="../dist/plugins/chosen/jQuery.chosen.min.js" data-dependency-name="chosen_source"></script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+
+<!-- BOTTOM SCRIPTS:Start -->
+<?php include_once "modules/_mod_bottom_scripts.php"; ?>
+<!-- BOTTOM SCRIPTS:End -->
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
