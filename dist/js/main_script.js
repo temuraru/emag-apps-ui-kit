@@ -4254,24 +4254,6 @@ function createSidebar(data) {
         }));
         $searchItem.append($searchInputGroup);
 
-        // var $noResultsItem = $('<li>', {
-        //     attr: {
-        //         id: 'sidebar_menu_item_no_results',
-        //         style: 'display: none;'
-        //     },
-        //     class: 'menu-item sidebar-menu-item-no-results',
-        //     html: $('<a>', {
-        //         attr: {
-        //             href: 'javascript:void(0);'
-        //         }
-        //     })
-        // });
-
-        // $noResultsItem.find('a').append($('<i>', { class: 'menu-icon fa fa-times' }));
-        // $noResultsItem.find('a').append($('<span>', {
-        //     class: 'menu-text',
-        //     html: data.noResultsMessage
-        // }));
         var noResultsItemData = {
             'title': data.noResultsMessage,
             'href': 'javascript:void(0)',
