@@ -6186,6 +6186,7 @@ $.extend($.jgrid,{
 
 	},
 	closeModal : function(h) {
+		console.log('closeModal');
 		h.w.hide().attr("aria-hidden","true");
 		if(h.o) {h.o.remove();}
 	},

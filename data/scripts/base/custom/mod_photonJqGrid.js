@@ -184,48 +184,93 @@
             console.log('_initCustomConfirmationModal');
 
             $.extend($.jgrid,{
-                showModal1 : function(h) {
+                showModal : function(h) {
                     //console.log('showModal');
-                    //console.log(h)
+                    
                     //h.w.show();
                     h.w.modal('show');
                 },
+                closeModal : function(h) {
+                    console.log('closeModal');
+                    h.w.hide().attr("aria-hidden","true");
+                    if(h.o) {h.o.remove();}
+                },
+                createModal : function(aIDs, content, p, insertSelector, posSelector, appendsel, css) {
+                    console.log('createModal')
 
-                createModal1 : function(aIDs, content, p, insertSelector, posSelector, appendsel, css) {
-                    console.log(aIDs, content, p, insertSelector, posSelector, appendsel, css)
-                    
                     p = $.extend(true, {}, $.jgrid.jqModal || {}, p); //merge recursiv, p este un nou obj cu prop si val combinate
-		var self = this,
-			rtlsup = $(p.gbox).attr("dir") === "rtl" ? true : false,
-			classes = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].modal,
-			common = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].common;
-
-                    var errorTemplate = 
-                    '<div tabindex="-1" class="modal modal-alert fade" id="' + aIDs.themodal + '" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="' + aIDs.themodal + 'Label">' +
-                        '<div class="modal-dialog " role="document">' +
-                            '<div class="modal-content">' +
-                                '<div class="ui-jqdialog-content modal-body ' + classes.content + '">' + 
-                                    '<h4 class="modal-title alert-modal-title text-danger">' + p.caption + '</h4>' +
-                                    $(content).html() + 
-                                '</div>' +//end modal-body
-                            '</div>' +//end modal-content
-                        '</div>' +//end modal-dialog
-                    '</div>'//end modal
-
-                    if(appendsel===true) { 
-                        $('#pop_space').append(errorTemplate); 
-                    } //append as first child in body -for alert dialog
-                    else if (typeof appendsel === "string") {
-                        $(appendsel).append(errorTemplate);
-                    } else {
-                        $(errorTemplate).insertBefore(insertSelector);
-                    }
-
-                    $('#pop_space').append(errorTemplate);   
+                    var self = this,
+                        classes = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].modal,
+                        $modal  = $('<div>', {
+                            class: "modal ",
+                            attr: {
+                                id: aIDs.themodal,
+                                tabIndex: "-1",
+                                role:"dialog",
+                                "aria-labelledby":aIDs.modalhead,
+                                "aria-hidden":"true",
+                                "aria-labelledby": aIDs.themodal + "Label",
+                                "data-keyboard": "false",
+                                "style": "display:none"
+                            }
+                        });
                     
+                    var $modalDialog = $('<div>', {
+                        class: "modal-dialog",
+                        attr: {
+                            role:"document",    
+                        }
+                    });
+
+                    var $modalContent = $('<div>', {
+                        class: "modal-content"
+                    });
+
+                    var $modalHeader = $('<div>', {
+                        class: "modal-header"
+                    });
+
+                    var $mc = $('<div>',{
+                        class: "ui-jqdialog-content " + classes.content,
+                        attr: {
+                            id: aIDs.modalcontent
+                        }
+                    });//face containerul modal body
+                    
+                    $modal.append($modalDialog); // modala(first div) append modal body
+                    $modalDialog.append($modalContent);
+                    $modalContent.append($modalHeader);
+                    $modalHeader.append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>');
+                    $modalHeader.append('<h4 class="modal-title">' + p.caption + '</h4>');
+                    $modalContent.append($mc);
+                    $mc.append(content);// se face append in modal body la ce vine din param content
+
+                    
+                    $('#pop_space').append($modal);
+                    $(".close",$modalHeader).click(function(){
+                        var oncm = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;
+                        var gboxclose = $("#"+$.jgrid.jqID(aIDs.themodal)).data("gbox") || p.gbox;
+                        self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:gboxclose,jqm:p.jqModal,onClose:oncm, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
+                        return false;
+                    });
+
+                    $('#'+aIDs.themodal).modal({backdrop: "static"});
+
+                    if(p.closeOnEscape === true){
+                        console.log('p.closeOnEscape')
+                        $modal.keydown( function( e ) {
+                            if( e.which === 27 ) {
+                                var cone = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;//??? pls explicatie la urmatoarele 2 randuri
+                                self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:p.gbox,jqm:p.jqModal,onClose: cone, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
+                            }
+                        });
+                    }
+                    
+                    if(p.jqModal === undefined) {p.jqModal = true;} // internal use
+  
                 },
 
-                info_dialog1 : function(caption, content,c_b, modalopt) {
+                info_dialog : function(caption, content,c_b, modalopt) {
                     var mopt = {
                         width:290,
                         height:'auto',
@@ -237,12 +282,12 @@
                         zIndex : 1000,
                         jqModal : true,
                         modal : false,
-                        closeOnEscape : true,
+                        closeOnEscape : false,
                         align: 'left',
                         buttonalign : 'right',
                         buttons : []
                     };
-                    $.extend(true, mopt, $.jgrid.jqModal || {}, {caption:"<b>"+caption+"</b>"}, modalopt || {});
+                    $.extend(true, mopt, $.jgrid.jqModal || {}, {caption:caption}, modalopt || {});
                     
                     var jm = mopt.jqModal, self = this,
                     classes = $.jgrid.styleUI[(mopt.styleUI || 'jQueryUI')].modal,
@@ -256,22 +301,19 @@
                             buttstr += "<a id='"+mopt.buttons[i].id+"' class='fm-button " + common.button+"'>"+mopt.buttons[i].text+"</a>";
                         }
                     }
-                    var dh = isNaN(mopt.dataheight) ? mopt.dataheight : mopt.dataheight+"px",// cred ca se poate declara un height fix pt ce intra in modal body
-                    cn = "text-align:"+mopt.align+";";
+                    var cn = "text-align:"+mopt.align+";";
                     var cnt = "<div class='alert-modal-content'><div id='info_id'>";
-                    cnt += "<div id='infocnt' style='"+cn+"'>"+content+"</div>";
+                    cnt += "<div id='infocnt' class='alert alert-danger' style='"+cn+"'>"+content+"</div>";
                     //daca exista custom btns adaug si butoanele in caz ca e unul il pun sau daca sunt mai multe le construiesc mai sus si le pun
-                    cnt += c_b ? "</div></div><div class='clearfix'><div class='pull-right panel-controls'><a id='closedialog' class='fm-button btn btn-default error-alert-modal-ok " + common.button + "'>"+'OK'+"</a>"+buttstr+"</div></div>" :
-                        buttstr !== ""  ? "</div></div><div class='clearfix'><div class='pull-right panel-controls'>"+buttstr+"</div>" : "";
+                    cnt += c_b ? "</div></div><div class='modal-footer'><div class='pull-right panel-controls'><a id='closedialog' class='fm-button btn btn-default error-alert-modal-ok " + common.button + "'>"+'OK'+"</a>"+buttstr+"</div></div>" :
+                        buttstr !== ""  ? "</div></div><div class='modal-footer'><div class='pull-right panel-controls'>"+buttstr+"</div>" : "";
                     cnt += "</div>";
             
                     try {
-                        //if($("#info_dialog").attr("aria-hidden") === "false") {
-                           // $.jgrid.hideModal("#info_dialog",{jqm:jm});
-                        //}
-                        $("#info_dialog").remove();
-                        $('.modal-backdrop').remove();
-                        $(body).removeClass('modal-open');
+                        if($("#info_dialog").attr("aria-hidden") === "false") {
+                            $.jgrid.hideModal("#info_dialog",{jqm:jm});
+                        }
+                        _destroyModal();
                     } catch (e){}
 
 
@@ -313,7 +355,8 @@
                     try{ $("#info_dialog").focus();} catch (m){}
                 },
 
-                hideModal1 : function (selector,o) {
+                hideModal : function (selector,o) {
+                    console.log('hide modal??')
                     o = $.extend({jqm : true, gb :'', removemodal: false, formprop: false, form : ''}, o || {});
                     var thisgrid = o.gb && typeof o.gb === "string" && o.gb.substr(0,6) === "#gbox_" ? $("#" + o.gb.substr(6))[0] : false;
                     if(o.onClose) {
@@ -346,28 +389,39 @@
                             datawidth: $(frmgr).width()
                         });
                     }
+                    console.log(o.gb)
+                    console.log('--')
                     if ($.fn.jqm && o.jqm === true) {
+                        console.log('aa')// trebuie si aici cred destroy
+                        $(selector).modal('hide');
                         $(selector).attr("aria-hidden","true").jqmHide();
-                        $('.modal-backdrop').remove();
-                        $('body').removeClass('modal-open');
-                        $( window ).trigger('resize')
+                        console.log('a')// trebuie si aici cred destroy
+                        console.log($(selector))
+                        
                     } else {
                         if(o.gb !== '') {
                             try {$(".jqgrid-overlay:first",o.gb).hide();} catch (e){}
                         }
-                        $(selector).hide().attr("aria-hidden","true");
-                        $('.modal-backdrop').remove();
-                        $('body').removeClass('modal-open');
-                        $( window ).trigger('resize')
+                        $(selector).attr("aria-hidden","true");
+                        $(selector).modal('hide');
+                        console.log('b')
+                        //_destroyModal();//????
                     }
                     if( o.removemodal ) {
-                        $('.modal-backdrop').remove();
-                        $('body').removeClass('modal-open');
                         $(selector).remove();
-                        $( window ).trigger('resize')
+                        console.log('c')
+                        _destroyModal();
                     }
                 }
+                
             })  
+        }
+
+        function _destroyModal(){
+            $('.modal-backdrop').remove();
+            $('body').removeClass('modal-open');
+            $('body').css({'padding-right':'0px'});
+            $( window ).trigger('resize');
         }
 
         function _initCustomColumnChooser() {
@@ -862,7 +916,7 @@
                             icon_base : "fa",
                             overlay: "ui-overlay",
                             active : "active",
-                            error : "bg-danger",
+                            error : "alert alert-danger",
                             button : "btn btn-default",
                             content : ""
                         },
@@ -978,7 +1032,7 @@
                             icon_base : "fa",
                             overlay: "ui-overlay",
                             active : "active",
-                            error : "bg-danger",
+                            error : "alert alert-danger",
                             button : "btn btn-default",
                             content : ""
                         },
