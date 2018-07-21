@@ -163,13 +163,13 @@
                                         </tr>
                                         <tr>
                                             <td>Prism</td>
-                                            <td><span class="label label-info">1.11.0</span></td>
+                                            <td><span class="label label-info">1.15.0</span></td>
                                             <td></td>
                                             <td><a href="https://github.com/PrismJS/prism" target="_blank">PrismJS / prism</a></td>
                                         </tr>
                                         <tr>
                                             <td><a href="js_complex_form_elements.php#jsSelectizeTagInput">Selectize</a></td>
-                                            <td><span class="label label-info">0.12.4</span></td>
+                                            <td><span class="label label-info">0.12.6</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                             <td><a href="https://github.com/selectize/selectize.js" target="_blank">selectize / selectize.js</a></td>
                                         </tr>

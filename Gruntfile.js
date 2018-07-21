@@ -152,7 +152,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css',
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css',
-                    '<%= pkg.dist_plugins %>/selectize/selectize.min.css':'<%= pkg.dist_plugins %>/selectize/selectize-0.12.4.min.css',
+                    '<%= pkg.dist_plugins %>/selectize/selectize.min.css':'<%= pkg.dist_plugins %>/selectize/selectize.min.css',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css',
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.css':'<%= pkg.dist_plugins %>/dropzone/dropzone.min.css',
