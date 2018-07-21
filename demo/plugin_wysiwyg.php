@@ -204,7 +204,9 @@
                         keepOnlyTags: ['<p>', '<br>', '<ul>', '<li>', '<b>', '<strong>','<i>', '<a>'], // If keepHtml is true, remove all tags except these
                         keepClasses: false, // Remove Classes
                         badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html'], // Remove full tags with contents
-                        badAttributes: ['style', 'start'] // Remove attributes from remaining tags
+                        badAttributes: ['style', 'start'], // Remove attributes from remaining tags
+                        limitChars: 0, // 0|# 0 disables option
+                        limitDisplay: 'none', // none|text|html|both
                     }
                 });
             });
@@ -214,7 +216,12 @@
             $(document).ready(function () {
                 $('#summernote2').summernote({
                     dialogsInBody: true,
-                    airMode: true
+                    airMode: true,
+                    cleaner:{
+                        notStyle: 'display: none;', // Position of Notification
+                        limitChars: 0, // 0|# 0 disables option
+                        limitDisplay: 'none', // none|text|html|both
+                    }
                 });
             });
         </script>

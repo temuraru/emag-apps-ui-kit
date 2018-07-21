@@ -83,7 +83,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/drop/drop.min.css':'<%= pkg.data_plugins %>/drop/less/drop.less',
                     '<%= pkg.dist_plugins %>/wizard/wizard.min.css':'<%= pkg.data_plugins %>/wizard/less/custom-wizard.less',
                     '<%= pkg.dist_plugins %>/chart/chart.min.css':'<%= pkg.data_plugins %>/chart/less/custom-chart.less',
-                    '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.data_plugins %>/summernote/less/summernote.less',
+                    '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.data_plugins %>/summernote/less/custom-summernote.less',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.data_plugins %>/fancytree/less/ui.fancytree.less',
                     '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.data_plugins %>/prism/less/prism.less',
                     '<%= pkg.dist_plugins %>/intro/intro.min.css': ['<%= pkg.data_plugins %>/intro/less/introjs.less', '<%= pkg.data_plugins %>/intro/less/introjs.custom.less'],
