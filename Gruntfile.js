@@ -74,7 +74,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.47.less',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.data_plugins %>/daterangepicker/less/daterangepicker.less',
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.4.min.css':'<%= pkg.data_plugins %>/selectize/less/custom-selectize.less',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.data_plugins %>/css3spinners/less/css3-spinners.less',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.data_plugins %>/jqgrid/less/custom-jqgrid.less',
@@ -151,7 +151,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css',
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css',
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css',
                     '<%= pkg.dist_plugins %>/selectize/selectize-0.12.4.min.css':'<%= pkg.dist_plugins %>/selectize/selectize-0.12.4.min.css',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css',
