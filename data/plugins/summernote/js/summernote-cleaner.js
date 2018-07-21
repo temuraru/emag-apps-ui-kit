@@ -30,8 +30,8 @@
       keepClasses: false, //Remove Classes
       badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html'], //Remove full tags with contents
       badAttributes: ['style', 'start'], //Remove attributes from remaining tags
-      limitChars: 0, // 0|# 0 disables option
-      limitDisplay: 'none', // none|text|html|both
+      limitChars: 520, // 0|# 0 disables option
+      limitDisplay: 'both', // none|text|html|both
       limitStop: false // true/false
     }
   });
@@ -99,7 +99,7 @@
         });
       }
       this.events = {
-        'summernote.init':function () {
+        'summernote.init':function () { 
           if ($('.note-status-output').length < 1) {
             $('.note-statusbar').prepend('<output class="note-status-output"></output>');
             $("head").append('<style>.note-statusbar .note-status-output{display:block;padding-top:7px;width:100%;font-size:14px;line-height:1.42857143;height:25px;color:#000}.note-statusbar .pull-right{float:right!important}.note-statusbar .note-status-output .text-muted{color:#777}.note-statusbar .note-status-output .text-primary{color:#286090}.note-statusbar .note-status-output .text-success{color:#3c763d}.note-statusbar .note-status-output .text-info{color:#31708f}.note-statusbar .note-status-output .text-warning{color:#8a6d3b}.note-statusbar .note-status-output .text-danger{color:#a94442}.note-statusbar .alert{margin:-7px 0 0 0;padding:2px 10px;border:1px solid transparent;border-radius:0}.note-statusbar .alert .note-icon{margin-right:5px}.note-statusbar .alert-success{color:#3c763d!important;background-color: #dff0d8 !important;border-color:#d6e9c6}.note-statusbar .alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.note-statusbar .alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.note-statusbar .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}</style>');
