@@ -187,13 +187,13 @@
                                         </tr>
                                         <tr>
                                             <td>Tether</td>
-                                            <td><span class="label label-info">1.4.3</span></td>
+                                            <td><span class="label label-info">1.4.4</span></td>
                                             <td></td>
                                             <td><a href="https://github.com/HubSpot/tether" target="_blank">HubSpot / tether</a></td>
                                         </tr>
                                         <tr>
                                             <td><a href="plugin_wizard.php">Wizard</a></td>
-                                            <td><span class="label label-info">3.16.3</span></td>
+                                            <td><span class="label label-info">3.16.7</span></td>
                                             <td><span class="label label-warning">modified</span></td>
                                             <td><a href="https://github.com/ExactTarget/fuelux" target="_blank">ExactTarget / fuelux</a></td>
                                         </tr>
