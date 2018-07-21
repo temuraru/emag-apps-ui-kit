@@ -262,8 +262,8 @@ eMAG Apps UI KIT/
                                         <p>1. The easiest way to install is to add the following css line in the head of your webpage:</p>
                                         <pre class="language-html"><code class="language-html" data-showcase="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;examplepath/to/main_style.min.css&quot;&gt;</code></pre>
                                         <p>And the following javascript files before the end <code>&lt;/body&gt;</code> tag:</p>
-                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-3.2.1.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
+                                                <pre class="language-html"><code class="language-html" data-showcase="code">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-3.3.1.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
 &lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;</code></pre>
                                         <div class="alert alert-info" role="alert">
                                             <i class="fa fa-info-circle"></i> You've guessed it! Much like Boostrap, eMAG Apps UI KIT requires jQuery to run.
@@ -295,8 +295,8 @@ eMAG Apps UI KIT/
 <!-- PAGE:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 <script src="../dist/js/main_script.min.js"></script>
 <script src="../dist/js/demo_helpers.js"></script>
