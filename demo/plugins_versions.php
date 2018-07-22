@@ -103,7 +103,7 @@
                                         </tr>
                                         <tr>
                                             <td>Dropzone</td>
-                                            <td><span class="label label-info">4.2.0</span></td>
+                                            <td><span class="label label-info">5.5.0</span></td>
                                             <td></td>
                                             <td><a href="https://gitlab.com/meno/dropzone" target="_blank">meno / dropzone</a></td>
                                         </tr>
