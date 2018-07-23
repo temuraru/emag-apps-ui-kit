@@ -1,6 +1,6 @@
 /*!
  * eMAG Apps UI KIT
- * Copyright 2011-2016 eMAG.
+ * Copyright 2011-2018 eMAG.
  * Licensed under MIT License
  */
 var browserSync = require('browser-sync');
