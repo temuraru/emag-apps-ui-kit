@@ -272,7 +272,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= pkg.dist_plugins %>/selectize/selectize.min.js': '<%= pkg.data_plugins %>/selectize/js/selectize.js',
                     '<%= pkg.dist_plugins %>/inputlimiter/jQuery.inputlimiter.1.3.1.min.js': '<%= pkg.data_plugins %>/inputLimiter/js/jQuery.inputlimiter.1.3.1.js',
-                    '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : ['<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js', '<%= pkg.data_scripts%>/base/custom/mod_photonJqGrid.js'],
+                    '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js',
                     '<%= pkg.dist_plugins%>/stickyKit/stickyKit.min.js' : ['<%= pkg.data_plugins%>/stickyKit/js/stickyKit.js', '<%= pkg.data_plugins%>/stickyKit/js/stickyKitWrapper.js'],
                     '<%= pkg.dist_plugins%>/intro/intro.min.js' : ['<%= pkg.data_plugins%>/intro/js/intro.js'],
                     '<%= pkg.dist_plugins%>/hierarchicalselect/hierarchicalselect.min.js' : ['<%= pkg.data_plugins%>/hierarchicalselect/js/hierarchicalselect.js'],
