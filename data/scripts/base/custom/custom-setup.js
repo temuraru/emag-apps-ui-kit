@@ -279,7 +279,8 @@ function addMoreActions(context) {
             constrainToScrollParent: false,
             tetherOptions: {
                 offset: '-5px 0'
-            }
+            },
+            remove: true
         });
     });
 }
