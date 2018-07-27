@@ -9,11 +9,11 @@
             afterTypeDelay: 500,
             jsonTermKey: "term",
             keepTypingMsg: "Keep typing...",
-            lookingForMsg: "Looking for"
+            lookingForMsg: "Looking for",
+            doneTypingInterval: 1200            //time in ms
         };
 
         var typingTimer;
-        var doneTypingInterval = 1200;  //time in ms
         var selected_values = [];
 
         function createSelectOptionsWithoutMultiple(option, itemsLength) {
@@ -199,7 +199,7 @@
                             }
                             return chosenXhr = $.ajax(options);
                         }, options.afterTypeDelay);
-                    }, doneTypingInterval);
+                    }, options.doneTypingInterval);
                 }
             });
         });
