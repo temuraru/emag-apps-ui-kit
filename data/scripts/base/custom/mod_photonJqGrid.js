@@ -139,7 +139,7 @@
 
                     var defaultOptions = {
                         selectAllCheckboxLabel: 'Select all',
-                        saveBtnLabel: 'Done',
+                        saveBtnLabel: 'Apply',
                         cancelBtnLabel: 'Cancel',
                         actionButton: ''
                     };
@@ -182,13 +182,15 @@
                             } else {
                                 $('#' + dropId + ' .jsc-checkbox').prop('checked', false);
 
-                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', true);
+                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
                             }
                         });
 
                         $body.on('click', '#' + dropId + ' .jsc-checkbox', function() {
                             if (!this.checked) {
                                 $('#' + dropId + ' .jsc-checkbox-all').prop('checked', false);
+                            } else {
+                                $('#' + dropId + ' .jsc-checkbox-all').prop('checked', _isSelectAll());
                             }
 
                             if ($('#' + dropId + ' .jsc-checkbox:checked').length > 0) {
@@ -220,6 +222,7 @@
                             $.each(colModel, function (i) {
                                 $('#' + dropId + ' .jsc-checkbox[value="' + i + '"]').prop('checked', !this.hidden);
                             });
+                            $('#' + dropId + ' .jsc-checkbox-all').prop('checked', _isSelectAll());
                             drop.close();
                         });
                     }
@@ -257,6 +260,10 @@
                                 offset: '-5px 0'
                             }
                         });
+                    }
+
+                    function _isSelectAll() {
+                        return ($('#' + dropId + ' .jsc-checkbox:checked').length == $('#' + dropId + ' .jsc-checkbox').length);
                     }
 
                     function _getColumnsCheckboxes() {
