@@ -1,6 +1,6 @@
 /*!
  * eMAG Apps UI KIT
- * Copyright 2011-2016 eMAG.
+ * Copyright 2011-2018 eMAG.
  * Licensed under MIT License
  */
 var browserSync = require('browser-sync');
@@ -72,10 +72,10 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.37.less',
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.47.less',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.data_plugins %>/daterangepicker/less/daterangepicker.less',
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
-                    '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.data_plugins %>/selectize/less/custom-selectize.less',
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
+                    '<%= pkg.dist_plugins %>/selectize/selectize.min.css':'<%= pkg.data_plugins %>/selectize/less/custom-selectize.less',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.data_plugins %>/css3spinners/less/css3-spinners.less',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.data_plugins %>/jqgrid/less/custom-jqgrid.less',
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.css':'<%= pkg.data_plugins %>/dropzone/less/dropzone.less',
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/drop/drop.min.css':'<%= pkg.data_plugins %>/drop/less/drop.less',
                     '<%= pkg.dist_plugins %>/wizard/wizard.min.css':'<%= pkg.data_plugins %>/wizard/less/custom-wizard.less',
                     '<%= pkg.dist_plugins %>/chart/chart.min.css':'<%= pkg.data_plugins %>/chart/less/custom-chart.less',
-                    '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.data_plugins %>/summernote/less/summernote.less',
+                    '<%= pkg.dist_plugins %>/summernote/summernote.min.css':'<%= pkg.data_plugins %>/summernote/less/custom-summernote.less',
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.css':'<%= pkg.data_plugins %>/fancytree/less/ui.fancytree.less',
                     '<%= pkg.dist_plugins %>/prism/prism.min.css':'<%= pkg.data_plugins %>/prism/less/prism.less',
                     '<%= pkg.dist_plugins %>/intro/intro.min.css': ['<%= pkg.data_plugins %>/intro/less/introjs.less', '<%= pkg.data_plugins %>/intro/less/introjs.custom.less'],
@@ -149,10 +149,10 @@ module.exports = function (grunt) {
             },
             plugins: {
                 files: {
-                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.37.min.css',
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.css',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css',
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.css',
-                    '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css':'<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.css',
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css',
+                    '<%= pkg.dist_plugins %>/selectize/selectize.min.css':'<%= pkg.dist_plugins %>/selectize/selectize.min.css',
                     '<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css':'<%= pkg.dist_plugins %>/css3spinners/css3-spinners.1.2.2.min.css',
                     '<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css':'<%= pkg.dist_plugins %>/jqgrid/ui.jqgrid.min.css',
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.css':'<%= pkg.dist_plugins %>/dropzone/dropzone.min.css',
@@ -219,7 +219,7 @@ module.exports = function (grunt) {
             },
             summernote: {
                 src: [
-                    '<%= pkg.data_plugins %>/summernote/js/summernote.min.js',
+                    '<%= pkg.data_plugins %>/summernote/js/summernote.js',
                     '<%= pkg.data_plugins %>/summernote/js/summernote-cleaner.js'
                 ],
                 dest: '<%= pkg.dist_plugins%>/summernote/summernote.min.js'
@@ -270,18 +270,18 @@ module.exports = function (grunt) {
             },
             plugins: {
                 files: {
-                    '<%= pkg.dist_plugins %>/selectize/selectize-0.12.0.min.js': '<%= pkg.data_plugins %>/selectize/js/selectize.js',
+                    '<%= pkg.dist_plugins %>/selectize/selectize.min.js': '<%= pkg.data_plugins %>/selectize/js/selectize.js',
                     '<%= pkg.dist_plugins %>/inputlimiter/jQuery.inputlimiter.1.3.1.min.js': '<%= pkg.data_plugins %>/inputLimiter/js/jQuery.inputlimiter.1.3.1.js',
-                    '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : ['<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js', '<%= pkg.data_scripts%>/base/custom/mod_photonJqGrid.js'],
+                    '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js' : '<%= pkg.dist_plugins%>/jqgrid/jquery.jqGrid.min.js',
                     '<%= pkg.dist_plugins%>/stickyKit/stickyKit.min.js' : ['<%= pkg.data_plugins%>/stickyKit/js/stickyKit.js', '<%= pkg.data_plugins%>/stickyKit/js/stickyKitWrapper.js'],
                     '<%= pkg.dist_plugins%>/intro/intro.min.js' : ['<%= pkg.data_plugins%>/intro/js/intro.js'],
                     '<%= pkg.dist_plugins%>/hierarchicalselect/hierarchicalselect.min.js' : ['<%= pkg.data_plugins%>/hierarchicalselect/js/hierarchicalselect.js'],
                     '<%= pkg.dist_plugins%>/bootstrap-multiselect/bootstrap-multiselect.min.js' : ['<%= pkg.data_plugins%>/bootstrap-multiselect/js/bootstrap-multiselect.js'],
                     '<%= pkg.dist_plugins%>/countdown/countdown.min.js' : ['<%= pkg.data_plugins%>/countdown/js/moment-timezone-with-data.js', '<%= pkg.data_plugins%>/countdown/js/jquery.countdown.js'],
-                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen-1.4.2.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
+                    '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.js': ['<%= pkg.data_plugins %>/chosen/js/chosen.jquery.js', '<%= pkg.data_plugins %>/chosen/js/chosen.ajax.js'],
                     '<%= pkg.dist_plugins %>/dropzone/dropzone.min.js':'<%= pkg.data_plugins %>/dropzone/js/dropzone.js',
                     '<%= pkg.dist_plugins %>/magnific/magnific.min.js':'<%= pkg.data_plugins %>/magnific/js/magnific.js',
-                    '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.1.1.js',
+                    '<%= pkg.dist_plugins %>/tether/tether.min.js':'<%= pkg.data_plugins %>/tether/js/tether.1.4.4.js',
                     '<%= pkg.dist_plugins %>/drop/drop.min.js':'<%= pkg.data_plugins %>/drop/js/drop.js',
                     '<%= pkg.dist_plugins %>/jQueryCookie/jQueryCookie.min.js':'<%= pkg.data_plugins %>/jQueryCookie/js/jquery.cookie.js',
                     '<%= pkg.dist_plugins %>/wizard/wizard.min.js':'<%= pkg.data_plugins %>/wizard/js/wizard.js',
@@ -289,7 +289,9 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/fancytree/fancytree.min.js':['<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.js', '<%= pkg.data_plugins %>/fancytree/js/jquery.fancytree.filter.js', '<%= pkg.data_scripts %>/base/custom/mod_photonFancytree.js'],
                     '<%= pkg.dist_plugins %>/prism/prism.min.js':'<%= pkg.data_plugins %>/prism/js/prism.js',
                     '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery.custom-scrollbar.min.js':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
-                    '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js'
+                    '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js',
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.js':'<%= pkg.data_plugins %>/datetimepicker/js/bootstrap-datetimepicker.4.17.47.js',
+                    '<%= pkg.dist_plugins %>/table-paster/table-paster.min.js':'<%= pkg.data_plugins %>/table-paster/table-paster.js'
                 }
             }
         },

@@ -110,6 +110,8 @@ function showPageCode() {
             }
         }
     });
+
+    Prism.highlightAll();
 }
 
 function getModuleParrent($htmlExampleEl) {

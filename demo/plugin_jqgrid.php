@@ -88,7 +88,7 @@
                                             </ul>
                                         </div>
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_basic_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
-                                            <table id="grid_table" class="table table-bordered word-break"></table>
+                                            <table id="grid_table" class="table word-break"></table>
                                             <div id="grid_pager"></div>
                                         </div>
                                     </div>
@@ -237,6 +237,55 @@
                                 </div>
                             </div>
 
+                            <a href="#" name="jqGrid-with-no-border" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with no border</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_no_border" aria-expanded="false" aria-controls="jq_with_no_border"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq_with_no_border">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq_with_no_border_html_source" aria-controls="jq_with_no_border_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq_with_no_border_js_source" aria-controls="jq_with_no_border_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq_with_no_border_css_source" aria-controls="jq_with_no_border_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_no_border_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_no_border_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_no_border_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_no_border_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                            <div class="pad-top-20 pad-btm-20 clearfix">
+                                                <button type="button" id="grid_table_no_border_button" class="btn btn-primary pull-right">
+                                                    Select columns <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+
+                                            <table id="grid_table_no_border" class="table table-bordered word-break"></table>
+                                            <div id="grid_pager_no_border"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="#" name="jqGrid-with-selectable-rows" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
@@ -289,34 +338,34 @@
                                 </div>
                             </div>
 
-                            <a href="#" name="jqGrid-ierarchical-elements-tree" class="title-anchor">&nbsp;</a>
+                            <a href="#" name="jqGrid-hierarchical-elements-tree" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
                                 <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
-                                        <h4><strong>jqGrid with ierarchical elements (Tree)</strong></h4>
+                                        <h4><strong>jqGrid with hierarchical elements (Tree)</strong></h4>
                                     </div>
                                     <div class="col-xs-4">
-                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_ierarchical_elements" aria-expanded="false" aria-controls="jq_with_ierarchical_elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_hierarchical_elements" aria-expanded="false" aria-controls="jq_with_hierarchical_elements"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
                                     </div>
                                 </div>
-                                <div class="collapse code-example"  id="jq_with_ierarchical_elements">
+                                <div class="collapse code-example"  id="jq_with_hierarchical_elements">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs code-example" role="tablist">
-                                        <li role="presentation" class="active"><a href="#jq_with_ierarchical_elements_html_source" aria-controls="jq_with_ierarchical_elements_html" role="tab" data-toggle="tab">HTML</a></li>
-                                        <li role="presentation"><a href="#jq_with_ierarchical_elements_js_source" aria-controls="jq_with_ierarchical_elements_js" role="tab" data-toggle="tab">JS</a></li>
-                                        <li role="presentation"><a href="#jq_with_ierarchical_elements_css_source" aria-controls="jq_with_ierarchical_elements_css" role="tab" data-toggle="tab">CSS</a></li>
+                                        <li role="presentation" class="active"><a href="#jq_with_hierarchical_elements_html_source" aria-controls="jq_with_hierarchical_elements_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq_with_hierarchical_elements_js_source" aria-controls="jq_with_hierarchical_elements_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq_with_hierarchical_elements_css_source" aria-controls="jq_with_hierarchical_elements_css" role="tab" data-toggle="tab">CSS</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
                                     <div class="tab-content code-example">
-                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_ierarchical_elements_html_source">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_hierarchical_elements_html_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_ierarchical_elements_js_source">
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_hierarchical_elements_js_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_ierarchical_elements_css_source">
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_hierarchical_elements_css_source">
                                             <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
                                         </div>
                                     </div>
@@ -324,7 +373,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_ierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_hierarchical_elements_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_hierarchy" class="table table-bordered word-break"></table>
 
                                         </div>
@@ -636,8 +685,9 @@
 <!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-dependency-name="jquery"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
@@ -651,6 +701,10 @@
 <script src="../dist/plugins/drop/drop.min.js" data-dependency-name="drop_source"></script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+
+<!-- BOTTOM SCRIPTS:Start -->
+<?php include_once "modules/_mod_bottom_scripts.php"; ?>
+<!-- BOTTOM SCRIPTS:End -->
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->
@@ -777,7 +831,8 @@
                 { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         new PhotonJqGrid(listingParameters).init();
@@ -793,11 +848,36 @@
             caption: 'jqGrid add new row programatically',
             datastr: getListingDummyData(),
             colModel: [
-                {label: 'First Name', name: 'firstname', key: true, width: "100"},
-                {label: 'Last Name', name: 'lastname'},
-                {label: 'Username', name: 'username'}
-            ]
+                {name: 'id', index: 'id', key: true,  hidden: true },
+                {label: 'First Name', name: 'firstname', width: "100", editable: true},
+                {label: 'Last Name', name: 'lastname', editable: true},
+                {label: 'Username', name: 'username', editable: true},
+                {
+                    label: 'Actions',
+                    name: 'actions',
+                    width: 60,
+                    formatter: 'actions',
+                    formatoptions: {
+                        keys: true,
+                        editOptions: {},
+                        addOptions: {},
+                        delOptions: {}
+                    }
+                }
+            ],
+            styleUI: 'fontAwesome'
         };
+
+        var lastSelection;
+
+        function editRow($grid, rowId) {
+            if (rowId && rowId !== lastSelection) {
+                $grid.jqGrid('restoreRow', lastSelection);
+                $grid.jqGrid('editRow', rowId, true);
+                lastSelection = rowId;
+                $grid.find('#jEditButton_' + rowId).trigger('click');
+            }
+        }
 
         new PhotonJqGrid(listingParameters).init();
         var rowCount = 0;
@@ -807,7 +887,7 @@
             $grid_table_add_new_row_programatically.jqGrid(
                 'addRowData',
                 rowCount,
-                {"id": rowCount, "firstname": "Lucian", "lastname": "Edmund", "username": "lucianus"},
+                {"id": rowCount, "firstname": "", "lastname": "", "username": ""},
                 "last"
             );
 
@@ -816,8 +896,11 @@
             var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
 
             $grid_table_add_new_row_programatically.jqGrid('setGridParam', {"page": gridLastPage}).trigger("reloadGrid");
+            
+            editRow($grid_table_add_new_row_programatically, rowCount);
+        });
 
-        })
+        
     });
 </script>
 
@@ -837,7 +920,8 @@
                 { label: 'Hobby', name: 'jobtype' },
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         new PhotonJqGrid(listingParametersSticky).init();
@@ -869,7 +953,41 @@
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
             ],
-            multiselect: true
+            multiselect: true,
+            styleUI: 'fontAwesome'
+        };
+
+        var photonGrid = new PhotonJqGrid(listingParametersWithColumnChooser);
+        photonGrid.init();
+        $(photonGrid.grid).jqGrid('columnChooser');
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqgrid_with_no_border_init">
+    $(document).ready(function () {
+        var listingParametersWithColumnChooser = {
+            table: '#grid_table_no_border',
+            pager: '#grid_pager_no_border',
+            datatype: 'jsonstring',
+            caption: 'Listing caption',
+            datastr: getListingDummyData(),
+            useCustomColumnChooser: true,
+            columnChooserOptions: {
+                selectAllCheckboxLabel: 'Select all',
+                saveBtnLabel: 'Done',
+                cancelBtnLabel: 'Cancel',
+                actionButton: '#grid_table_no_border_button'
+            },
+            colModel: [
+                { label: 'First Name', name: 'firstname', key: true, width: "100" },
+                { label: 'Last Name', name: 'lastname' },
+                { label: 'Username', name: 'username' },
+                { label: 'Hobby', name: 'jobtype' },
+                { label: 'Nickname', name: 'codename' },
+                { label: 'Spiritual Animal', name: 'spirit_animal' }
+            ],
+            multiselect: true,
+            styleUI: 'fontAwesomeNoBorder'
         };
 
         var photonGrid = new PhotonJqGrid(listingParametersWithColumnChooser);
@@ -894,7 +1012,8 @@
                 { label: 'Nickname', name: 'codename' },
                 { label: 'Spiritual Animal', name: 'spirit_animal' }
             ],
-            multiselect: true
+            multiselect: true,
+            styleUI: 'fontAwesome'
         };
 
         new PhotonJqGrid(listingParametersWithSelectableRows).init();
@@ -921,8 +1040,8 @@
     });
 </script>
 
-<script type="text/javascript" data-dependency-name="jqGrid_with_ierarchical_elements_init">
-    function getListingDummyDataForIerarchicalElements() {
+<script type="text/javascript" data-dependency-name="jqGrid_with_hierarchical_elements_init">
+    function getListingDummyDataForHierarchicalElements() {
 
         var dataSet = [
             {
@@ -1072,7 +1191,7 @@
     $(document).ready(function () {
         $("#grid_table_with_hierarchy").jqGrid({
             autoResizing: { compact: true },
-            data: getListingDummyDataForIerarchicalElements(),
+            data: getListingDummyDataForHierarchicalElements(),
             datatype: "local",
             sortable: true,
             colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
@@ -1086,10 +1205,13 @@
                 { name: 'spirit_animal',index: 'spirit_animal' }
             ],
             loadComplete: function(){
-                //remove border---
+                //remove border
                 $this = $(this);
                 $this.find('tr').find('td:visible:last').css({'border-right': '0'});
+                
+                //comment next line if you use skin with no border - styleUI : 'fontAwesomeNoBorder'
                 $this.closest('.ui-jqgrid-view').find('tr').find('th:visible:last').css({'border-right': '0'});
+                
                 $this.find('.treeclick').on('click', function () {
                     $this.find('tr').find('td:visible:last').css({'border-right': '0'});
                 })
@@ -1140,6 +1262,11 @@
             rowNum: 10,
             subGrid: true,
             styleUI : 'fontAwesome',
+            loadComplete: function(){
+                //use this for the skin with no border
+                $this = $(this);
+                $this.closest('.ui-jqgrid-view').find('tr').find('th').eq(0).addClass('disable-hover');  
+            },
             subGridRowExpanded: function(subgrid_id, row_id) {
                 // we pass two parameters
                 // subgrid_id is a id of the div tag created within a table
@@ -1201,7 +1328,10 @@
                         delOptions: {}
                     }
                 }
-            ]
+            ],
+            cellsubmit : 'clientArray',
+            editurl: 'clientArray',
+            styleUI: 'fontAwesome'
         };
 
         new PhotonJqGrid(listingParameters).init();
@@ -1353,7 +1483,6 @@
             return data;
         }
 
-
         var listingWithActionsParameters = {
             table: '#grid_table_with_actions',
             pager: '#grid_pager_with_actions',
@@ -1374,6 +1503,7 @@
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
             ],
+            styleUI: 'fontAwesome',
             gridComplete: function() {
                 addMoreActions('#grid_table_with_actions');
                 $('#grid_table_with_actions .label-with-tooltip').tooltip();
@@ -1415,7 +1545,8 @@
                 {name: 'platform', index: 'platform', width: 1, sorttype: "text"},
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false}
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         new PhotonJqGrid(listingWithNoDataParameters).init();
@@ -1449,7 +1580,8 @@
                 {name: 'time', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.time },
                 {name: 'userEmail', index: 'userEmail', sortable: false, width: 3, formatter: PhotonDataFormatter.userEmail },
                 {name: 'country', index: 'country', sortable: false, width: 1, formatter: PhotonDataFormatter.country }
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         function getListingWithFormatterDummyData() {
@@ -1520,7 +1652,6 @@
 
         new PhotonJqGrid(listingWithFormatterParameters).init();
 
-
         //grid_with_formatter_2_table
         var listingWithFormatter2Parameters = {
             table: '#grid_with_formatter_2_table',
@@ -1541,7 +1672,8 @@
                 {name: 'price', index: 'price', sortable: false, width: 1, formatter: PhotonDataFormatter.price },
                 {name: 'dateTime', index: 'dateTime', sortable: false, width: 1, formatter: PhotonDataFormatter.dateTime },
                 {name: 'status', index: 'status', sortable: false, width: 1, formatter: PhotonDataFormatter.labelAndTooltip }
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         function getListingWithFormatter2DummyData() {
@@ -1639,7 +1771,8 @@
                 {name: 'status', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.labelAndTooltip },
                 {name: 'addedBy', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.userEmail },
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         function getListingWithNotRecommendedFormatter() {
@@ -1710,8 +1843,6 @@
 
         new PhotonJqGrid(listingWithNotRecommendedFormatter).init();
 
-
-
         var listingWithRecommendedFormatter = {
             table: '#grid_with_lot_of_columns_and_data_formatters_table_2',
             pager: '#grid_with_lot_of_columns_and_data_formatters_pager_2',
@@ -1735,21 +1866,26 @@
                 {name: 'status', index: 'date', sortable: false, width: 2, formatter: PhotonDataFormatter.labelAndTooltip },
                 {name: 'addedBy', index: 'time', sortable: false, width: 2, formatter: PhotonDataFormatter.userEmailNoIcon },
                 {name: 'actions', index: 'actions', width: 2, sortable: false, formatter: PhotonDataFormatter.actionsButtons }
-            ]
+            ],
+            styleUI: 'fontAwesome'
         };
 
         function getListingWithRecommendedFormatter() {
             var actions = '[' +
                 '{' +
                 '"icon": "fa-pencil",' +
+                '"group": "0",' +
                 '"attr": {' +
-                '"title": "Edit"' +
+                '"title": "Edit",' +
+                '"class": "btn-no-border"' +
                 '}' +
                 '},' +
                 '{' +
                 '"icon": "fa-trash",' +
+                '"group": "0",' +
                 '"attr": {' +
-                '"title": "Delete"' +
+                '"title": "Delete",' +
+                '"class": "btn-no-border"' +
                 '}' +
                 '}' +
                 ']';
@@ -1805,8 +1941,6 @@
         }
 
         new PhotonJqGrid(listingWithRecommendedFormatter).init();
-
-
     });
 </script>
 <!-- DOCUMENT-READY:End -->

@@ -764,56 +764,86 @@
         <!-- POPUPS:Start -->
 <div data-dependency-name="pop_space">
     <!-- Div with id 'pop_space' must be inserted before the end of the body tag -->
-        <div id="pop_space">
-            <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true"><i class="fa fa-remove"></i></span></button>
-                            <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
+    <div id="pop_space">
+        <div class="modal fade" id="myDemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Standard modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Suspendisse rutrum</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="pad-sep-20">
+                            <span class="caption">Nam scelerisque nunc</span>
                         </div>
-                        <div class="modal-body">
-                            <h2>Suspendisse rutrum</h2>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="pad-sep-20">
-                                <span class="caption">Nam scelerisque nunc</span>
-                            </div>
-                            <p>
-                                Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Pellentesque sed magna nisi.<br>
-                                Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="pull-right panel-controls">
-                                <button class="btn btn-success" data-dismiss="modal"><span>Yeah, got it</span></button>
-                            </div>
+                        <p>
+                            Curabitur porta non est in consectetur. Aenean ut purus volutpat, sodales sem nec, fermentum massa. Pellentesque sed magna nisi.<br>
+                            Suspendisse venenatis massa quis velit fringilla, ac consequat dolor tincidunt. Etiam nec fermentum lectus, quis dignissim nunc.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="pull-right panel-controls">
+                            <button class="btn btn-success" data-dismiss="modal"><span>Yeah, got it</span></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="pop_space">
+    <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+                    <h4 class="modal-title" id="myModalLabel">This is an AJAX modal</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="pad-btm-20 text-center">
+                        This modal can contain any kind of info.<br>
+                        Check out the code documentation on the main page.
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9cNpKRXwaj4" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="pull-right panel-controls">
+                        <button class="btn btn-success" data-dismiss="modal"><span>Save</span></button>
+                        <button class="btn btn-default" data-dismiss="modal"><span>Cancel</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
         <!-- SCRIPTS:Start -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-dependency-name="jquery"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 
         <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether_source"></script>
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
-        <!-- SCRIPTS:End -->
-
 
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
-
 
         <!-- PLUGIN: jqGrid: Added in demo for boostrap tabs. Is not necessary for boostrap tabs.-->
         <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="grid_locale_en_source"></script>
         <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
 
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
+        <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript" data-dependency-name="ajax_modal_init">
@@ -844,6 +874,13 @@
 
                 $('#ajax_modal_start').on('click', function(){
                     modalTest.show();
+                });
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#ajax_modal_start').off('click').on('click', function() {
+                    $('#ajaxModal').modal('show');
                 });
             })
         </script>
