@@ -182,7 +182,7 @@
                             } else {
                                 $('#' + dropId + ' .jsc-checkbox').prop('checked', false);
 
-                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
+                                $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', true);
                             }
                         });
 
@@ -202,6 +202,10 @@
 
                         $body.off('click', '#' + dropId + ' .btn-jsc-save-btn');
                         $body.off('click', '#' + dropId + ' .btn-jsc-cancel-btn');
+
+                        $body.on('click', '#' + dropId + ' .btn-jsc-cancel-btn', function() {
+                            $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
+                        });
 
                         $body.on('click', '#' + dropId + ' .btn-jsc-save-btn', function() {
                             var colModel = self.jqGrid('getGridParam', 'colModel');
