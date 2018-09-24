@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../dist/css/lib/jquery-ui-custom.1.11.4.min.css">
     <link rel="stylesheet" href="../dist/plugins/fancytree/fancytree.min.css">
     <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen.min.css">
-    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css">
+    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
 
     <?php include_once "modules/_mod_top_include.php"?>
 
@@ -224,7 +224,7 @@
 <script src="../dist/plugins/fancytree/fancytree.min.js"></script>
 <script src="../dist/plugins/chosen/jQuery.chosen.min.js"></script>
 <script src="../dist/plugins/numberformatter/jQuery.numberFormatter-1.0.0.js"></script>
-<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.47.min.js"></script>
+<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
 
 <script src="../dist/js/main_script.min.js"></script>

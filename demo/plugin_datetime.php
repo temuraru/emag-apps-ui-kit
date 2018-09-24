@@ -5,7 +5,7 @@
     <?php include_once "modules/_mod_meta.php"?>
 
     <!-- PLUGIN: DateTimePicker -->
-    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css" data-dependency-name="datetimepicker_css">
+    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css" data-dependency-name="datetimepicker_css">
     <!-- PLUGIN: DateRangePicker -->
     <link rel="stylesheet" href="../dist/plugins/daterangepicker/daterangepicker.min.css" data-dependency-name="daterangepicker_css">
 
@@ -594,7 +594,7 @@
         <!-- PLUGIN: moment.js -->
         <script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js" data-dependency-name="moment_source"></script>
         <!-- PLUGIN: DateTimePicker -->
-        <script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.47.min.js" data-dependency-name="datetimepicker_source"></script>
+        <script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js" data-dependency-name="datetimepicker_source"></script>
         <script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js" data-dependency-name="datetimepicker_en_source"></script>
         <!-- PLUGIN: DateRangePicker -->
         <script src="../dist/plugins/daterangepicker/daterangepicker.min.js" data-dependency-name="daterangepicker_source"></script>

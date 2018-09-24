@@ -72,7 +72,7 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.47.less',
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.css':'<%= pkg.data_plugins %>/datetimepicker/less/bootstrap-datetimepicker.4.17.47.less',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.data_plugins %>/daterangepicker/less/daterangepicker.less',
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css':'<%= pkg.data_plugins %>/chosen/less/custom-jQuery.chosen.less',
                     '<%= pkg.dist_plugins %>/selectize/selectize.min.css':'<%= pkg.data_plugins %>/selectize/less/custom-selectize.less',
@@ -149,7 +149,7 @@ module.exports = function (grunt) {
             },
             plugins: {
                 files: {
-                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css',
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.css':'<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.css',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css':'<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.css',
                     '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css': '<%= pkg.dist_plugins %>/chosen/jQuery.chosen.min.css',
                     '<%= pkg.dist_plugins %>/selectize/selectize.min.css':'<%= pkg.dist_plugins %>/selectize/selectize.min.css',
@@ -290,7 +290,7 @@ module.exports = function (grunt) {
                     '<%= pkg.dist_plugins %>/prism/prism.min.js':'<%= pkg.data_plugins %>/prism/js/prism.js',
                     '<%= pkg.dist_plugins %>/jquery-custom-scrollbar/jquery.custom-scrollbar.min.js':'<%= pkg.data_plugins %>/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js',
                     '<%= pkg.dist_plugins %>/daterangepicker/daterangepicker.min.js':'<%= pkg.data_plugins %>/daterangepicker/js/daterangepicker.js',
-                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.4.17.47.min.js':'<%= pkg.data_plugins %>/datetimepicker/js/bootstrap-datetimepicker.4.17.47.js',
+                    '<%= pkg.dist_plugins %>/datetimepicker/bootstrap-datetimepicker.min.js':'<%= pkg.data_plugins %>/datetimepicker/js/bootstrap-datetimepicker.4.17.47.js',
                     '<%= pkg.dist_plugins %>/table-paster/table-paster.min.js':'<%= pkg.data_plugins %>/table-paster/table-paster.js'
                 }
             }

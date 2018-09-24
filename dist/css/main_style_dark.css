@@ -13103,6 +13103,15 @@ input[type=range]:disabled::-ms-thumb {
     max-width: 200px;
   }
 }
+.upload-button-filename {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  width: calc(100% - 20px);
+  white-space: nowrap;
+}
 input[type="checkbox"].form-checkbox-control {
   width: 15px;
   height: 15px;
