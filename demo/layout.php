@@ -571,7 +571,7 @@
         &#x3C;div class=&#x22;footer-content&#x22;&#x3E;
             &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
                 &#x3C;div class=&#x22;pull-left hidden-xs&#x22;&#x3E;
-                    &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+                    &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2018 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
                 &#x3C;/div&#x3E;
                 &#x3C;div class=&#x22;panel-controls pull-right&#x22;&#x3E;
                     &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; id=&#x22;save-action-ft&#x22;&#x3E;
@@ -585,7 +585,7 @@
                 &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
             &#x3C;div class=&#x22;clearfix text-center pad-top-20 visible-xs-block&#x22;&#x3E;
-                &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+                &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2018 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
@@ -593,7 +593,7 @@
                                     <pre class="language-html" id="footer_unfixed_code"><code class="language-html" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
     &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
         &#x3C;div class=&#x22;footer-content text-center&#x22;&#x3E;
-            &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+            &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2018 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</code></pre>
