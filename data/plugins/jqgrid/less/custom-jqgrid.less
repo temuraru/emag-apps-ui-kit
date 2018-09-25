@@ -3,7 +3,7 @@
 @import "../../../styles/base/custom/custom-variables.less";
 @import "../../../styles/base/mixins.less";
 // Components
-@import "5.2.1/ui.jqgrid-bootstrap.less"; //unmodified 5.2.1 version, just renamed to less instead of css
+@import "5.3.1/ui.jqgrid-bootstrap.less"; //unmodified 5.3.1 version, just renamed to less instead of css
 
 /*Grid*/
 .ui-jqgrid {
@@ -220,6 +220,10 @@
 
 .ui-jqgrid .ui-jqgrid-btable {
   border-bottom: none;
+}
+
+.ui-jqgrid .ui-jqgrid-btable:focus{
+  outline: none;
 }
 
 .stick-top-panel {
@@ -730,3 +734,101 @@ div.drop-actions .drop-content .dropdown-menu.dd-jqgrid-select-columns.dd-jsc-ch
 div.drop-actions .drop-content .dropdown-menu > li > a {
   white-space: normal;
 }
+
+/*custom add, edit and error background color*/
+.ui-jqgrid .table>tbody>tr>td {
+  background-color: #ffffff;
+  
+}
+
+.ui-jqgrid .table>tbody>tr.success>td {
+  background-color: #ffffff;
+  animation: color-me-in 2s ease 0s 1;
+}
+
+@keyframes color-me-in {
+  0% {
+    background-color: #e7fbe8;
+  }
+  50% {
+    background-color: #e7fbe8;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+.ui-jqgrid .table>tbody>tr[editable="1"]>td,
+.ui-jqgrid .table>tbody>tr.success[editable="1"]>td
+{
+  background: #f3f3f3;
+  animation: none;
+}
+
+
+/*custom jqgrid with no borders*/
+.ui-jqgrid.table-no-border {
+  box-shadow: none;
+}
+
+.table-no-border .table-bordered>thead>tr>th {
+  border: 1px solid #fff;
+  background: #fff;
+  border-bottom: 0;
+}
+
+.table-no-border .table-bordered>thead>tr>th.active:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: #c3c3c3;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.table-no-border .ui-jqgrid-htable thead th.active {
+  background: #ebebeb;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 0;
+}
+
+.table-no-border .table-bordered>tbody>tr>td {
+  border-right: 0px solid #fff;
+}
+
+.table-no-border .ui-jqgrid-htable th.ui-th-column,
+.ui-th-column {
+  position: relative;
+}
+
+.table-no-border .ui-jqgrid-hdiv {
+  background: #fff
+}
+
+.table-no-border .ui-jqgrid-htable thead th.active.disable-hover {
+  background: #fff;
+  border-right: 1px solid #fff;
+}
+
+.table-no-border .ui-jqgrid-htable thead th.active.disable-hover:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+}
+
+.ui-jqgrid.table-no-border .table-bordered td:last-child,
+.ui-jqgrid.table-no-border .table-bordered th:last-child {
+  border-right: 1px solid #fff;
+}
+
+.ui-jqgrid.table-no-border .table-bordered td:last-child.active,
+.ui-jqgrid.table-no-border .table-bordered th:last-child.active {
+  border-right: 1px solid #c3c3c3;
+}
+
+.table-no-border .ui-jqgrid-hdiv.is_stuck {
+  box-shadow: 0 7px 4px -4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #fff;
+}
+

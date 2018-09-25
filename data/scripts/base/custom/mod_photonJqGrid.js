@@ -65,6 +65,8 @@
                 _displayNoRecordsMessage(tableId, records);
 
                 jqGridOverlay.removeClass('custom-overlay');
+                
+                _formatDefaultButtons(tableId);
             },
             mergeGridComplete: true,
             gridComplete: function() {
@@ -100,6 +102,51 @@
         var gridOpts = $.extend({}, defaultParams, parameters || {});
         gridOpts.caption = null;
         gridOpts.altRows = null;
+
+        function _formatDefaultButtons(tableId){
+            var $table = $('#' + tableId);
+
+            var $buttons = $table.find('.ui-inline-edit, .ui-inline-del, .ui-inline-save, .ui-inline-cancel');
+            var noBorderClass = (gridOpts.styleUI == 'fontAwesomeNoBorder') ? ' btn-no-border' : '';
+
+            $.each($buttons, function (index, value) {
+                $this = $(this);
+                if (!$this.parent().hasClass('btn-group')) {
+                    $this.parent().addClass('btn-group').css({
+                        'margin': '0'
+                    });
+                }
+                $(this).addClass('btn btn-default btn-sm' + noBorderClass);
+            });
+            
+            $table.off('jqGridInlineAfterRestoreRow', onJqGridInlineAfterRestoreRow)
+                    .on('jqGridInlineAfterRestoreRow', onJqGridInlineAfterRestoreRow);
+
+            $table.on('jqGridInlineAfterSaveRow',onJqGridInlineAfterSaveRow)
+                    .on('jqGridInlineAfterSaveRow',onJqGridInlineAfterSaveRow);
+
+            function onJqGridInlineAfterSaveRow (event, rowId){
+                $table.find('tr').removeClass('success');
+                setTimeout(function(){
+                    $table.find('tr#' + rowId).addClass('success');
+                },0)
+            }
+
+            function onJqGridInlineAfterRestoreRow(events,rowId){
+                var $buttons = $table.find('tr#' + rowId).find('.ui-inline-edit, .ui-inline-del, .ui-inline-save, .ui-inline-cancel');
+                var noBorderClass = (gridOpts.styleUI == 'fontAwesomeNoBorder') ? ' btn-no-border' : '';
+
+                $.each($buttons, function (index, value) {
+                    $this = $(this);
+                    if (!$this.parent().hasClass('btn-group')) {
+                        $this.parent().addClass('btn-group').css({
+                            'margin': '0'
+                        });
+                    }
+                    $(this).addClass('btn btn-default btn-sm' + noBorderClass);
+                });
+            }   
+        }
 
         function _initStickyOnJqGrid(gridOpts){
             var tableId = '#gbox_'+ gridOpts.table.slice(1);
@@ -159,7 +206,7 @@
                     function _initColumnChooserEvents() {
                         $body.on('input', '#' + dropId + ' .jsc-search', function() {
                             var searchString = $(this).val().toLowerCase();
-
+                            var results = 0;
                             $('#' + dropId + ' .dd-jsc-checkbox-all-columns .checkbox .jsc-col-name').each(function (i) {
                                 var $this = $(this);
                                 var colName = $this.html();
@@ -168,8 +215,20 @@
                                     $this.parents('.checkbox').parent().addClass('hide');
                                 } else {
                                     $this.parents('.checkbox').parent().removeClass('hide');
+                                    results++;
                                 }
                             });
+
+                            if (!results) {
+                                $('#' + dropId + ' .dd-jsc-checkbox.dd-jsc-one-item').addClass('no-border-bottom');
+                                $('#' + dropId + ' .dd-jsc-checkbox-all-columns').addClass('hide');
+                            } else {
+                                $('#' + dropId + ' .dd-jsc-checkbox.dd-jsc-one-item').removeClass('no-border-bottom');
+                                $('#' + dropId + ' .dd-jsc-checkbox-all-columns').removeClass('hide');
+                            }
+
+                            $('#' + dropId + ' .dd-jsc-checkbox-all-columns li').removeClass('no-border-top');
+                            $('#' + dropId + ' .dd-jsc-checkbox-all-columns').find('li:not(.hide)').eq(0).addClass('no-border-top');
                         });
 
                         $body.on('click', '#' + dropId + ' .jsc-checkbox-all', function() {
@@ -179,6 +238,9 @@
                                 $('#' + dropId + ' .jsc-checkbox').prop('checked', true);
                                 
                                 $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
+
+                                $('#' + dropId + ' .dd-jsc-checkbox.dd-jsc-one-item').removeClass('no-border-bottom');
+                                $('#' + dropId + ' .dd-jsc-checkbox-all-columns').removeClass('hide');
                             } else {
                                 $('#' + dropId + ' .jsc-checkbox').prop('checked', false);
 
@@ -611,7 +673,7 @@
                     fontAwesome : {
                         common : {
                             disabled: "ui-disabled",
-                            highlight : "success",
+                            highlight : "highlight",
                             hover : "active",
                             cornerall: "2px",
                             cornertop: "2px",
@@ -640,6 +702,122 @@
                             loadingBox : "row",
                             rownumBox :  "active",
                             scrollBox : "",
+                            multiBox : "checkbox",
+                            pagerBox : "ui-pager-box",
+                            pagerTable : "table",
+                            toppagerBox : "",
+                            pgInput : "form-control",
+                            pgSelectBox : "form-control",
+                            pgButtonBox : "btn btn-default",
+                            icon_first : "fa-angle-double-left",
+                            icon_prev : "fa-angle-left",
+                            icon_next: "fa-angle-right",
+                            icon_end: "fa-angle-double-right",
+                            icon_asc : "fa-caret-up",
+                            icon_desc : "fa-caret-down",
+                            icon_caption_open : "fa-chevron-up",
+                            icon_caption_close : "fa-chevron-down"
+                        },
+                        modal : {
+                            modal : "modal-content",
+                            header : "modal-header",
+                            title : "modal-title",
+                            content :"modal-body",
+                            resizable : "",
+                            icon_close : "fa-remove",
+                            icon_resizable : ""
+                        },
+                        celledit : {
+                            inputClass : 'form-control'
+                        },
+                        inlinedit : {
+                            inputClass : 'form-control',
+                            icon_edit_nav : "fa-pencil",
+                            icon_add_nav : "fa-plus",
+                            icon_save_nav : "fa-check-circle",
+                            icon_cancel_nav : "fa-remove"
+                        },
+                        formedit : {
+                            inputClass : "form-control",
+                            icon_prev : "fa-step-backward",
+                            icon_next : "fa-step-forward",
+                            icon_save : "fa-check-circle",
+                            icon_close : "fa-remove",
+                            icon_del : "fa-trash",
+                            icon_cancel : "fa-remove"
+                        },
+                        navigator : {
+                            icon_edit_nav : "fa-pencil",
+                            icon_add_nav : "fa-plus",
+                            icon_del_nav : "fa-trash",
+                            icon_search_nav : "fa-search",
+                            icon_refresh_nav : "fa-refresh",
+                            icon_view_nav : "fa-eye",
+                            icon_newbutton_nav : "fa-external-link-square"
+                        },
+                        grouping : {
+                            icon_plus : 'fa-expand',
+                            icon_minus : 'fa-compress'
+                        },
+                        filter : {
+                            table_widget : 'table table-condensed',
+                            srSelect : 'form-control',
+                            srInput : 'form-control',
+                            menu_widget : '',
+                            icon_search : 'fa-search',
+                            icon_reset : 'fa-refresh',
+                            icon_query :'fa-comment'
+                        },
+                        subgrid : {
+                            icon_plus : 'fa-caret-right',
+                            icon_minus : 'fa-caret-down',
+                            icon_leaf : 'fa-circle-o'
+                        },
+                        treegrid : {
+                            icon_plus : 'fa-caret-right',
+                            icon_minus : 'fa-caret-down',
+                            icon_leaf : 'fa-circle-o'
+                        },
+                        fmatter : {
+                            icon_edit : "fa-pencil",
+                            icon_add : "fa-plus",
+                            icon_save : "fa-check-circle",
+                            icon_cancel : "fa-remove",
+                            icon_del : "fa-trash"
+                        }
+                    },
+                    fontAwesomeNoBorder : {
+                        common : {
+                            disabled: "ui-disabled",
+                            highlight : "highlight",
+                            hover : "active",
+                            cornerall: "2px",
+                            cornertop: "2px",
+                            cornerbottom : "2px",
+                            hidden : "sr-only",
+                            icon_base : "fa",
+                            overlay: "ui-overlay",
+                            active : "active",
+                            error : "bg-danger",
+                            button : "btn btn-default",
+                            content : ""
+                        },
+                        base : {
+                            entrieBox : "table-no-border",
+                            viewBox : "table-responsive",
+                            headerTable : "table table-bordered",
+                            headerBox : "bb",
+                            rowTable : "table table-bordered",
+                            rowBox : "cc",
+                            footerTable : "table table-bordered",
+                            footerBox : "dd",
+                            headerDiv : "ff",
+                            gridtitleBox : "gg",
+                            customtoolbarBox : "hh",
+                            //overlayBox: "ui-overlay",
+                            loadingBox : "row ii",
+                            rownumBox :  "active",
+                            scrollBox : "jj",
                             multiBox : "checkbox",
                             pagerBox : "ui-pager-box",
                             pagerTable : "table",
