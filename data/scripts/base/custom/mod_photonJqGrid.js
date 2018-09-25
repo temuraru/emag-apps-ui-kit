@@ -186,7 +186,7 @@
 
                     var defaultOptions = {
                         selectAllCheckboxLabel: 'Select all',
-                        saveBtnLabel: 'Done',
+                        saveBtnLabel: 'Apply',
                         cancelBtnLabel: 'Cancel',
                         actionButton: ''
                     };
@@ -251,6 +251,8 @@
                         $body.on('click', '#' + dropId + ' .jsc-checkbox', function() {
                             if (!this.checked) {
                                 $('#' + dropId + ' .jsc-checkbox-all').prop('checked', false);
+                            } else {
+                                $('#' + dropId + ' .jsc-checkbox-all').prop('checked', _isSelectAll());
                             }
 
                             if ($('#' + dropId + ' .jsc-checkbox:checked').length > 0) {
@@ -262,6 +264,10 @@
 
                         $body.off('click', '#' + dropId + ' .btn-jsc-save-btn');
                         $body.off('click', '#' + dropId + ' .btn-jsc-cancel-btn');
+
+                        $body.on('click', '#' + dropId + ' .btn-jsc-cancel-btn', function() {
+                            $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
+                        });
 
                         $body.on('click', '#' + dropId + ' .btn-jsc-save-btn', function() {
                             var colModel = self.jqGrid('getGridParam', 'colModel');
@@ -282,6 +288,7 @@
                             $.each(colModel, function (i) {
                                 $('#' + dropId + ' .jsc-checkbox[value="' + i + '"]').prop('checked', !this.hidden);
                             });
+                            $('#' + dropId + ' .jsc-checkbox-all').prop('checked', _isSelectAll());
                             drop.close();
                         });
                     }
@@ -319,6 +326,10 @@
                                 offset: '-5px 0'
                             }
                         });
+                    }
+
+                    function _isSelectAll() {
+                        return ($('#' + dropId + ' .jsc-checkbox:checked').length == $('#' + dropId + ' .jsc-checkbox').length);
                     }
 
                     function _getColumnsCheckboxes() {

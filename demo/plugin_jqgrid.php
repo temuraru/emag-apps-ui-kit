@@ -941,7 +941,7 @@
             useCustomColumnChooser: true,
             columnChooserOptions: {
                 selectAllCheckboxLabel: 'Select all',
-                saveBtnLabel: 'Done',
+                saveBtnLabel: 'Apply',
                 cancelBtnLabel: 'Cancel',
                 actionButton: '#grid_table_column_chooser_button'
             },
