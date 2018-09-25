@@ -4,8 +4,8 @@
     <title>Complex form elements - eMAG Apps UI KIT</title>
 
     <link rel="stylesheet" href="../dist/css/lib/jquery-ui-custom.1.11.4.min.css" data-dependency-name="jquery_ui_css">
-    <link rel="stylesheet" href="../dist/plugins/selectize/selectize-0.12.0.min.css" data-dependency-name="selectize_css">
-    <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.css" data-dependency-name="chosen_css">
+    <link rel="stylesheet" href="../dist/plugins/selectize/selectize.min.css" data-dependency-name="selectize_css">
+    <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen.min.css" data-dependency-name="chosen_css">
 
     <?php include_once "modules/_mod_meta.php"?>
     <?php include_once "modules/_mod_top_include.php"?>
@@ -339,7 +339,7 @@
                                             <div class="form-group">
                                                 <label for="testfile" class="btn btn-primary">
                                                     <i class="fa fa-upload"></i>
-                                                    <span>Choose a file to upload</span>
+                                                    <span class="upload-button-filename">Choose a file to upload</span>
                                                     <input type="file" name="testfile" id="testfile" class="form-input-control" data-multiple-caption="{count} files selected" multiple/>
                                                 </label>
                                             </div>
@@ -384,7 +384,7 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery">
                                             <div class="form-group">
                                                 <label for="testfile2" class="btn btn-link">
-                                                    <i class="fa fa-upload"></i><span>Choose a file to upload</span>
+                                                    <i class="fa fa-upload"></i><span class="upload-button-filename">Choose a file to upload</span>
                                                     <input type="file" name="testfile2" id="testfile2" class="form-input-control" data-multiple-caption="{count} files selected" multiple/>
                                                 </label>
                                             </div>
@@ -433,7 +433,7 @@
                                                     <div class="input-group-btn">
                                                         <label for="testfile3" class="btn btn-default">
                                                             <i class="fa fa-upload"></i>
-                                                            <span>Choose a file</span>
+                                                            <span class="upload-button-filename">Choose a file</span>
                                                             <input type="file" name="testfile3" id="testfile3" class="form-input-control" data-multiple-caption="{count} files selected" multiple/>
                                                         </label>
                                                         <button class="btn btn-default" type="button">Upload</button>
@@ -729,7 +729,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="code-container">
                                 <div class="row flex-container code-header no-border-top">
                                     <div class="col-xs-8 module-description">
@@ -767,11 +767,11 @@
                                             <div class="form-group">
                                                 <label for="chosen_ex1"></label>
                                                 <select id="chosen_ex1" class="form-control chosen-select" data-placeholder="Select a bunch of countries..." multiple>
-                                                    <option value="RO" >Romania</option>
-                                                    <option value="HU" >Hungary</option>
-                                                    <option value="PL" >Poland</option>
-                                                    <option value="FR" >France</option>
-                                                    <option value="DE" >Germany</option>
+                                                    <option value="RO">Romania</option>
+                                                    <option value="HU">Hungary</option>
+                                                    <option value="PL">Poland</option>
+                                                    <option value="FR">France</option>
+                                                    <option value="DE">Germany</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -1024,8 +1024,9 @@
 <div id="pop_space"></div>
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-dependency-name="jquery"></script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
@@ -1039,11 +1040,15 @@
 
 <script src="../dist/plugins/inputlimiter/jQuery.inputlimiter.1.3.1.min.js" data-dependency-name="input_limiter_source"></script>
 
-<script src="../dist/plugins/selectize/selectize-0.12.0.min.js" data-dependency-name="selectize_source"></script>
+<script src="../dist/plugins/selectize/selectize.min.js" data-dependency-name="selectize_source"></script>
 
-<script src="../dist/plugins/chosen/jQuery.chosen-1.4.2.min.js" data-dependency-name="chosen_source"></script>
+<script src="../dist/plugins/chosen/jQuery.chosen.min.js" data-dependency-name="chosen_source"></script>
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+
+<!-- BOTTOM SCRIPTS:Start -->
+<?php include_once "modules/_mod_bottom_scripts.php"; ?>
+<!-- BOTTOM SCRIPTS:End -->
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->

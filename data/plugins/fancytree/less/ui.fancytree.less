@@ -22,6 +22,12 @@
 @fancy-select-color: @blue-active;
 @fancy-hover-color: @blue-disabled;
 
+
+ul.fancytree-container {
+	border: 1px solid #ccc;
+    overflow-y: scroll;
+    max-height: 400px;
+}
 /*******************************************************************************
  * Plain tree
  * Modifier classes on <ul> container:
@@ -204,7 +210,7 @@ span.fancytree-node.fancytree-drop-target {
 		// Active tree:
 		&.fancytree-treefocus {
 			span.fancytree-node.fancytree-focused span.fancytree-title {
-				border-color: @brand-primary;
+				// border-color: @brand-primary;
 			}
 			span.fancytree-node.fancytree-active span.fancytree-title {
 				background-color: @fancy-active-color;

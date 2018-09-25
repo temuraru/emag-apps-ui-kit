@@ -99,8 +99,8 @@
         <span class="text-success">&lt;!-- POPUPS:End --&gt;
 
         &lt;!-- SCRIPTS:Start --&gt;</span>
-        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-        &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-1.11.3.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;window.jQuery || document.write(&quot;&lt;script src=\&quot;../dist/js/lib/jquery-3.3.1.min.js\&quot;&gt;&quot;+&quot;&lt;&quot;+&quot;/script&gt;&quot;)&lt;/script&gt;
 
         <span class="text-success">&lt;!-- The main script file contains all the essential Bootstrap & eMAG Apps UI KIT utilities --&gt;</span>
         &lt;script src=&quot;../dist/js/main_script.min.js&quot;&gt;&lt;/script&gt;
@@ -571,7 +571,7 @@
         &#x3C;div class=&#x22;footer-content&#x22;&#x3E;
             &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
                 &#x3C;div class=&#x22;pull-left hidden-xs&#x22;&#x3E;
-                    &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+                    &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2018 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
                 &#x3C;/div&#x3E;
                 &#x3C;div class=&#x22;panel-controls pull-right&#x22;&#x3E;
                     &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; id=&#x22;save-action-ft&#x22;&#x3E;
@@ -585,7 +585,7 @@
                 &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
             &#x3C;div class=&#x22;clearfix text-center pad-top-20 visible-xs-block&#x22;&#x3E;
-                &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+                &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2018 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
@@ -593,7 +593,7 @@
                                     <pre class="language-html" id="footer_unfixed_code"><code class="language-html" data-showcase="code">&#x3C;div id=&#x22;main_footer&#x22; class=&#x22;footer&#x22;&#x3E;
     &#x3C;div class=&#x22;footer-inner&#x22;&#x3E;
         &#x3C;div class=&#x22;footer-content text-center&#x22;&#x3E;
-            &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2016 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
+            &#x3C;span&#x3E;Copyright &#xA9; 2011 - 2018 &#x3C;strong&#x3E;eMAG&#x3C;/strong&#x3E;. &#x3C;br class=&#x22;visible-xs-inline&#x22;&#x3E;All rights reserved.&#x3C;/span&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</code></pre>
@@ -685,13 +685,18 @@
         <!-- PAGE:End -->
 
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-dependency-name="jquery"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-1.11.3.min.js\">"+"<"+"/script>")</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-dependency-name="jquery"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
         <script src="../dist/js/demo_helpers.js"></script>
 
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
+
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
         <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
