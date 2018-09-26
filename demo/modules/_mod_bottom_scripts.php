@@ -31,46 +31,16 @@
                 'href': '/emag-apps-ui-kit/demo/css_components.php#buttons'
             },
             {
-                'title': 'Color scheme',
-                'href': '/emag-apps-ui-kit/demo/branding.php'
+                'title': 'Charts',
+                'href': '/emag-apps-ui-kit/demo/plugin_stats.php#charts'
             },
             {
-                'title': 'Complex form elements',
-                'href': 'javascript:void(0)',
-                'children': [
-                    {
-                        'title': 'Masked inputs',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php'
-                    },
-                    {
-                        'title': 'Textarea with input limiter',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsTextareaWithInputLimiter'
-                    },
-                    {
-                        'title': 'File upload',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsFileUpload'
-                    },
-                    {
-                        'title': 'Selectize tag input',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsSelectizeTagInput'
-                    },
-                    {
-                        'title': 'jQuery UI autocomplete',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUIAutocomplete'
-                    },
-                    {
-                        'title': 'jQuery UI sliders',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUISliders'
-                    },
-                    {
-                        'title': 'jQuery UI numeric input (Spinner)',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryNumericInput'
-                    },
-                    {
-                        'title': 'Chosen.js autocomplete',
-                        'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsChosenJsAutocomplete'
-                    }
-                ]
+                'title': 'Chosen.js autocomplete',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsChosenJsAutocomplete'
+            },
+            {
+                'title': 'Color scheme',
+                'href': '/emag-apps-ui-kit/demo/branding.php'
             },
             {
                 'title': 'CSS Flipswitch',
@@ -119,12 +89,16 @@
                 ]
             },
             {
-                'title': 'Footer',
-                'href': '/emag-apps-ui-kit/demo/layout.php#main-footer'
-            },
-            {
                 'title': 'Fancytree',
                 'href': '/emag-apps-ui-kit/demo/plugin_fancytree.php'
+            },
+            {
+                'title': 'File upload',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsFileUpload'
+            },
+            {
+                'title': 'Footer',
+                'href': '/emag-apps-ui-kit/demo/layout.php#main-footer'
             },
             {
                 'title': 'Forms',
@@ -209,12 +183,28 @@
                 ]
             },
             {
+                'title': 'jQuery UI autocomplete',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUIAutocomplete'
+            },
+            {
+                'title': 'jQuery UI numeric input (Spinner)',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryNumericInput'
+            },
+            {
+                'title': 'jQuery UI sliders',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsJQueryUISliders'
+            },
+            {
                 'title': 'Labels and badges',
                 'href': '/emag-apps-ui-kit/demo/css_components.php#css-labels-and-badges'
             },
             {
                 'title': 'Log In & Sign Up',
                 'href': '/emag-apps-ui-kit/demo/authentication.php'
+            },
+            {
+                'title': 'Masked inputs',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php'
             },
             {
                 'title': 'Modals',
@@ -249,22 +239,12 @@
                 'href': '/emag-apps-ui-kit/demo/layout.php#main-sidebar'
             },
             {
-                'title': 'Sortable',
-                'href': '/emag-apps-ui-kit/demo/sortable.php'
+                'title': 'Selectize tag input',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsSelectizeTagInput'
             },
             {
-                'title': 'Stats',
-                'href': 'javascript:void(0)',
-                'children': [
-                    {
-                        'title': 'Charts',
-                        'href': '/emag-apps-ui-kit/demo/plugin_stats.php#charts'
-                    },
-                    {
-                        'title': 'Value box',
-                        'href': '/emag-apps-ui-kit/demo/plugin_stats.php'
-                    }
-                ]
+                'title': 'Sortable',
+                'href': '/emag-apps-ui-kit/demo/sortable.php'
             },
             {
                 'title': 'Tables',
@@ -273,6 +253,10 @@
             {
                 'title': 'Tabs',
                 'href': '/emag-apps-ui-kit/demo/js_components.php#js-tabs'
+            },
+            {
+                'title': 'Textarea with input limiter',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.php#jsTextareaWithInputLimiter'
             },
             {
                 'title': 'Tooltips',
@@ -347,6 +331,10 @@
             {
                 'title': 'Utilities',
                 'href': '/emag-apps-ui-kit/demo/js_components.php#js-utilities'
+            },
+            {
+                'title': 'Value box',
+                'href': '/emag-apps-ui-kit/demo/plugin_stats.php'
             },
             {
                 'title': 'Wysiwyg editor',
