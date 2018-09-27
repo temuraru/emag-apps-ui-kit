@@ -89,7 +89,7 @@
                 'href': '/emag-apps-ui-kit/demo/css_components.php#css-embeds'
             },
             {
-                'icon': 'fa-exclamation-triangle',
+                'icon': 'fa-none',
                 'title': 'Error pages',
                 'href': 'javascript:void(0)',
                 'children': [
@@ -158,7 +158,7 @@
                 'href': '/emag-apps-ui-kit/demo/image_gallery.php'
             },
             {
-                'icon': 'fa-table',
+                'icon': 'fa-none',
                 'title': 'jQGrid',
                 'href': 'javascript:void(0)',
                 'children': [
@@ -318,7 +318,7 @@
                 'href': '/emag-apps-ui-kit/demo/layout.php#top-navigation'
             },
             {
-                'icon': 'fa-paint-brush',
+                'icon': 'fa-none',
                 'title': 'Typography',
                 'href': 'javascript:void(0)',
                 'children': [
