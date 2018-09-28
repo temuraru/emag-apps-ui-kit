@@ -4329,7 +4329,13 @@ function createSidebar(data) {
         })
     
         $sidebarContainer.append($sidebarControl);
+    } else {
         setCookie('sidebarStatus', 'open');
+        // $sidebar.removeClass('sidebar-min');
+        // $(window).trigger('maximize.photon.sidebar');
+        // updateScrollbar();
+        // $(window).resize();
+        // realignNotifications();
     }
 
     initScrollbarForSidebar();

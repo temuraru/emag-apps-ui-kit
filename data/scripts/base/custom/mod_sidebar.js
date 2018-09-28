@@ -338,6 +338,7 @@ function createSidebar(data) {
         })
     
         $sidebarContainer.append($sidebarControl);
+    } else {
         setCookie('sidebarStatus', 'open');
     }
 
