@@ -4329,6 +4329,7 @@ function createSidebar(data) {
         })
     
         $sidebarContainer.append($sidebarControl);
+        setCookie('sidebarStatus', 'open');
     }
 
     initScrollbarForSidebar();
