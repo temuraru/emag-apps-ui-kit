@@ -4331,11 +4331,6 @@ function createSidebar(data) {
         $sidebarContainer.append($sidebarControl);
     } else {
         setCookie('sidebarStatus', 'open');
-        // $sidebar.removeClass('sidebar-min');
-        // $(window).trigger('maximize.photon.sidebar');
-        // updateScrollbar();
-        // $(window).resize();
-        // realignNotifications();
     }
 
     initScrollbarForSidebar();
@@ -4416,7 +4411,14 @@ function staticNavigation(path) {
         }
     });
 
+    scrollActiveMenuItemIntoView();
+
     $(window).resize();
+}
+
+function scrollActiveMenuItemIntoView() {
+    $('#sidebar .sidebar-outer').customScrollbar('scrollTo', '.menu-item.active:last');
+    // $("#sidebar .sidebar-outer").customScrollbar('scrollToY', 0);
 }
 
 function initSidebarEvents() {

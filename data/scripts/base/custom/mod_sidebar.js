@@ -420,7 +420,14 @@ function staticNavigation(path) {
         }
     });
 
+    scrollActiveMenuItemIntoView();
+
     $(window).resize();
+}
+
+function scrollActiveMenuItemIntoView() {
+    $('#sidebar .sidebar-outer').customScrollbar('scrollTo', '.menu-item.active:last');
+    // $("#sidebar .sidebar-outer").customScrollbar('scrollToY', 0);
 }
 
 function initSidebarEvents() {
