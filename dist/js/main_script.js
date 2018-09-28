@@ -4410,6 +4410,8 @@ function staticNavigation(path) {
             $(this).closest('.menu-item').addClass('active');
         }
     });
+    updateSidebarHeight();
+    updateScrollbar();
 
     scrollActiveMenuItemIntoView();
 
@@ -4418,7 +4420,6 @@ function staticNavigation(path) {
 
 function scrollActiveMenuItemIntoView() {
     $('#sidebar .sidebar-outer').customScrollbar('scrollTo', '.menu-item.active:last');
-    // $("#sidebar .sidebar-outer").customScrollbar('scrollToY', 0);
 }
 
 function initSidebarEvents() {
