@@ -18,7 +18,8 @@ function createSidebar(data) {
         sidebarSearchClearButtonId: 'sidebar_menu_search_clear_button',
         sidebarSearchButtonId: 'sidebar_menu_search_button',
         noResultsMessage: 'No results found',
-        withSearch: true
+        withSearch: true,
+        withExpandCollapseButton: true
     };
 
     data = $.extend({}, defaultData, data);
@@ -318,24 +319,28 @@ function createSidebar(data) {
         $sidebarContainer.addClass('sidebar-fixed');
     }
 
-    var $sidebarControl = $('<div>', {
-        class: 'sidebar-control',
-        html: $('<div>', {
-            class: 'sidebar-toggle',
-            html: $('<button>', {
-                id: 'toggle-sidebar-size-btn',
-                class: 'btn btn-default btn-sm',
-                attr: {
-                    type: 'button'
-                },
-                html: $('<i>', {
-                    class: 'menu-icon fa fa-arrow-left'
+    if (data.withExpandCollapseButton && data.withExpandCollapseButton === true) {
+        var $sidebarControl = $('<div>', {
+            class: 'sidebar-control',
+            html: $('<div>', {
+                class: 'sidebar-toggle',
+                html: $('<button>', {
+                    id: 'toggle-sidebar-size-btn',
+                    class: 'btn btn-default btn-sm',
+                    attr: {
+                        type: 'button'
+                    },
+                    html: $('<i>', {
+                        class: 'menu-icon fa fa-arrow-left'
+                    })
                 })
             })
         })
-    })
-
-    $sidebarContainer.append($sidebarControl);
+    
+        $sidebarContainer.append($sidebarControl);
+    } else {
+        setCookie('sidebarStatus', 'open');
+    }
 
     initScrollbarForSidebar();
     
@@ -414,8 +419,16 @@ function staticNavigation(path) {
             $(this).closest('.menu-item').addClass('active');
         }
     });
+    updateSidebarHeight();
+    updateScrollbar();
+
+    scrollActiveMenuItemIntoView();
 
     $(window).resize();
+}
+
+function scrollActiveMenuItemIntoView() {
+    $('#sidebar .sidebar-outer').customScrollbar('scrollTo', '.menu-item.active:last');
 }
 
 function initSidebarEvents() {
