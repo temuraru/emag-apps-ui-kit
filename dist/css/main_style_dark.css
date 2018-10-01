@@ -11635,7 +11635,7 @@ body {
   border-color: #f2f2f2;
 }
 .sidebar .sidebar-inner .menu-item .menu-item-data .sidebar-submenu > .menu-item .sidebar-submenu .menu-item > a {
-  padding-left: 50px;
+  padding-left: 60px;
   font-family: "Open_sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -11701,6 +11701,14 @@ body {
 }
 .sidebar .sidebar-inner .menu-item.active.menu-item-has-children > .sidebar-submenu {
   display: block;
+}
+.sidebar .sidebar-inner .menu-item.active.menu-item-has-children .menu-item,
+.sidebar .sidebar-inner .menu-item.active.menu-item-has-children .menu-item a {
+  background: #f6f6f6;
+  color: #000;
+}
+.sidebar .sidebar-inner .menu-item.active.menu-item-has-children .menu-item a {
+  padding-left: 50px;
 }
 .sidebar .sidebar-inner .menu-item.active.menu-item-has-children > .menu-item-data {
   display: block;

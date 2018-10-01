@@ -227,7 +227,7 @@
                  .menu-item {
                    border-color: darken(@sidebar-third-level-bg, 5%);
                    > a {
-                     padding-left: (@sidebar-min-width + 10);
+                     padding-left: (@sidebar-min-width + 20);
                      font-family: @sidebar-fontfamily;
                      font-weight: @sidebar-fontweight-third-level;
                      font-size: @sidebar-fontsize-third-level;
@@ -311,9 +311,21 @@
                     }
                  }
 
-                & > .sidebar-submenu {
-                  display: block;
-                }
+                 & > .sidebar-submenu {
+                   display: block;
+                 }
+
+                 & .menu-item {
+                    &,
+                    & a {
+                        background: @sidebar-menu-active-submenu-cell-bg;
+                        color: @sidebar-menu-active-submenu-cell-text;  
+                    }
+
+                    & a {
+                      padding-left: (@sidebar-min-width + 10);
+                    }
+                 }
 
                  & > .menu-item-data {
                    display:block;
