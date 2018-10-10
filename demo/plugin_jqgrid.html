@@ -234,8 +234,9 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_add_new_row_programatically_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20 pad-btm-20">
                                                 <button type="button" class="btn btn-primary btn-sm add-new-row">Add new row</button>
-                                                <button type="button" class="btn btn-primary btn-sm add-new-row-with-modal">Add new row modal</button>
-                                                <button type="button" class="btn btn-primary btn-sm edit-row-with-modal">Edit new row modal</button>
+                                                <button type="button" class="btn btn-primary btn-sm add-new-row-with-modal">Add new row with modal</button>
+                                                <button type="button" class="btn btn-primary btn-sm edit-row-with-modal">Edit row with modal</button>
+                                                <button type="button" class="btn btn-primary btn-sm search-with-modal">Search with modal</button>
                                                 
                                             </div>
 
@@ -992,6 +993,10 @@
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser'
                     },
                     {
+                        'title': 'jqGrid with no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-no-border'
+                    },
+                    {
                         'title': 'With selectable rows',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows'
                     },
@@ -1361,11 +1366,40 @@
             datatype: 'jsonstring',
             caption: 'jqGrid add new row programatically',
             datastr: getListingDummyData(),
-            colModel: [
-                {name: 'id', index: 'id', key: true,  hidden: true },
-                {label: 'First Name', name: 'firstname', width: "100", editable: true, editrules: { required: true} },
-                {label: 'Last Name', name: 'lastname', editable: true, editrules: { required: true} },
-                {label: 'Username', name: 'username', editable: true},
+            colModel: [{
+                    name: 'id',
+                    index: 'id',
+                    key: true,
+                    hidden: true
+                },
+                {
+                    label: 'First Name',
+                    name: 'firstname',
+                    width: "100",
+                    editable: true,
+                    editrules: {
+                        required: true
+                    },
+                    formoptions: {
+                        label: "First name <span class='required-elem'>*</span>"
+                    }
+                },
+                {
+                    label: 'Last Name',
+                    name: 'lastname',
+                    editable: true,
+                    editrules: {
+                        required: true
+                    },
+                    formoptions: {
+                        label: "Last name <span class='required-elem'>*</span>"
+                    }
+                },
+                {
+                    label: 'Username',
+                    name: 'username',
+                    editable: true
+                },
                 {
                     label: 'Actions',
                     name: 'actions',
@@ -1376,14 +1410,15 @@
                         editOptions: {},
                         addOptions: {},
                         delOptions: {}
-                    }
+                    },
+                    sortable: false,
+                    search: false
                 }
             ],
-            
-            cellEdit : true,
-            cellsubmit : 'clientArray',
+
+            cellEdit: false,
+            cellsubmit: 'clientArray',
             editurl: 'clientArray',
-            
             styleUI: 'fontAwesomeNoBorder',
             useCustomConfirmationModal: true
         };
@@ -1391,11 +1426,13 @@
         var lastSelection;
 
         function editRow($grid, rowId) {
+
             if (rowId && rowId !== lastSelection) {
                 $grid.jqGrid('restoreRow', lastSelection);
                 $grid.jqGrid('editRow', rowId, true);
                 lastSelection = rowId;
                 $grid.find('#jEditButton_' + rowId).trigger('click');
+                //$grid.jqGrid('saveRow', rowId, true);
             }
         }
 
@@ -1403,30 +1440,79 @@
         var rowCount = 0;
         var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
 
-        function onJqGridAfterInsertRow(){
-                setTimeout(function(){$grid_table_add_new_row_programatically.trigger("reloadGrid");},0)
+        function onJqGridAfterInsertRow() {
+            setTimeout(function () {
+                $grid_table_add_new_row_programatically.trigger("reloadGrid");
+            }, 0)
         }
 
         $('.add-new-row').on('click', function () {
             $grid_table_add_new_row_programatically.off('jqGridAfterInsertRow', onJqGridAfterInsertRow);
-            rowCount = $grid_table_add_new_row_programatically.getDataIDs().length + 2
-            $grid_table_add_new_row_programatically.jqGrid(
-                'addRowData',
-                rowCount,
-                {"id": rowCount, "firstname": "", "lastname": "", "username": ""},
-                "last"
-            );
+            var rowBefore = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 1;
+            $grid_table_add_new_row_programatically.find('#jSaveButton_' + rowBefore).trigger('click');
 
-            $grid_table_add_new_row_programatically.trigger("reloadGrid");
+            var names = [
+                "Jack",
+                "Smith",
+                "Amelia",
+                "Jacob",
+                "Charlie",
+                "Thomas",
+                "James",
+                "William",
+                "Rhys",
+                "Richard",
+                "Michael"
+            ];
 
-            var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+            var namesSelected = [];
 
-            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {"page": gridLastPage}).trigger("reloadGrid");
-            
-            editRow($grid_table_add_new_row_programatically, rowCount);
+            for (var i = 0; i < 2; i++) {
+                namesSelected.push(names[Math.floor(Math.random() * names.length)]);
+                if(namesSelected[0] == namesSelected[1]){
+                    namesSelected[0]=names[Math.floor(Math.random() * names.length)];
+                }
+            }
+
+            if ($('#info_dialog').length == 0) {
+                rowCount = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 2
+                $grid_table_add_new_row_programatically.jqGrid(
+                    'addRowData',
+                    rowCount, {
+                        "id": rowCount,
+                        "firstname": namesSelected[0],
+                        "lastname": namesSelected[1],
+                        "username": ""
+                    },
+                    "last"
+                );
+
+                $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+                $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                    "page": gridLastPage
+                }).trigger("reloadGrid");
+
+                if (rowCount && rowCount !== lastSelection) {
+                    $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, true);
+                    $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
+
+                    var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+                    $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                        "page": gridLastPage
+                    }).trigger("reloadGrid");
+
+                    $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
+
+                }
+            }
+ 
         });
 
         $('.add-new-row-with-modal').click(function () {
+            var rowBefore =  $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records')+1;
+            $grid_table_add_new_row_programatically.find('#jCancelButton_' + rowBefore).trigger('click');
+
             $grid_table_add_new_row_programatically.jqGrid('editGridRow', "new", {
                 jqModal: true,
                 savekey: [true, 13],
@@ -1439,16 +1525,26 @@
                 //checkOnUpdate: true,
                 //checkOnSubmit: true,
                 //reloadAfterSubmit: true,
-                closeOnEscape: true,
+                closeOnEscape: false,
                 closeAfterAdd: true,
                 //clearAfterAdd: true,
             })
 
             $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+        });  
+        
+        $('.search-with-modal').click(function () {
+            $grid_table_add_new_row_programatically.jqGrid('searchGrid', {
+                closeAfterSearch: true
+            } )
         });   
 
         $('.edit-row-with-modal').click(function () {
-            $grid_table_add_new_row_programatically.jqGrid('editGridRow', $grid_table_add_new_row_programatically.getDataIDs()[0], {
+
+            var selectedRowId = 
+            $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'selrow') ? $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'selrow') : $grid_table_add_new_row_programatically.getDataIDs()[0]
+
+            $grid_table_add_new_row_programatically.jqGrid('editGridRow', selectedRowId, {
                 jqModal: true,
                 savekey: [true, 13],
                 navkeys: [true, 38, 40],
@@ -1460,13 +1556,14 @@
                 //checkOnUpdate: true,
                 //checkOnSubmit: true,
                 //reloadAfterSubmit: true,
-                closeOnEscape: true,
-                closeAfterAdd: true,
+                closeOnEscape: false,
+                closeAfterEdit: true,
                 //clearAfterAdd: true, 
             })
 
             $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
         });
+
     });
 </script>
 
@@ -1895,13 +1992,11 @@
                     }
                 }
             ],
-<<<<<<< HEAD
-
             
-=======
+            cellEdit : true,
             cellsubmit : 'clientArray',
             editurl: 'clientArray',
->>>>>>> master
+
             styleUI: 'fontAwesome'
         };
 
