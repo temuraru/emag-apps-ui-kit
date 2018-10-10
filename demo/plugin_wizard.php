@@ -206,8 +206,8 @@
         <!-- POPUPS:End -->
 
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-dependency-name="jquery"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 
         <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
@@ -222,11 +222,13 @@
 
         <script src="../dist/plugins/wizard/wizard.min.js" data-dependency-name="wizard_source"></script>
 
-
-        <!-- SCRIPTS:End -->
-
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
+
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
+        <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">

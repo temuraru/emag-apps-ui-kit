@@ -181,24 +181,17 @@
         }
 
         function _initCustomConfirmationModal() {
-            console.log('_initCustomConfirmationModal');
 
             $.extend($.jgrid,{
                 showModal : function(h) {
-                    //console.log('showModal');
-                    
-                    //h.w.show();
                     h.w.modal('show');
                 },
                 closeModal : function(h) {
-                    console.log('closeModal');
                     h.w.hide().attr("aria-hidden","true");
                     if(h.o) {h.o.remove();}
                 },
                 createModal : function(aIDs, content, p, insertSelector, posSelector, appendsel, css) {
-                    console.log('createModal')
-
-                    p = $.extend(true, {}, $.jgrid.jqModal || {}, p); //merge recursiv, p este un nou obj cu prop si val combinate
+                    p = $.extend(true, {}, $.jgrid.jqModal || {}, p); 
                     var self = this,
                         classes = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].modal,
                         $modal  = $('<div>', {
@@ -235,16 +228,15 @@
                         attr: {
                             id: aIDs.modalcontent
                         }
-                    });//face containerul modal body
+                    });
                     
-                    $modal.append($modalDialog); // modala(first div) append modal body
+                    $modal.append($modalDialog); 
                     $modalDialog.append($modalContent);
                     $modalContent.append($modalHeader);
                     $modalHeader.append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>');
                     $modalHeader.append('<h4 class="modal-title">' + p.caption + '</h4>');
                     $modalContent.append($mc);
-                    $mc.append(content);// se face append in modal body la ce vine din param content
-
+                    $mc.append(content);
                     
                     $('#pop_space').append($modal);
                     $(".close",$modalHeader).click(function(){
@@ -257,10 +249,9 @@
                     $('#'+aIDs.themodal).modal({backdrop: "static"});
 
                     if(p.closeOnEscape === true){
-                        console.log('p.closeOnEscape')
                         $modal.keydown( function( e ) {
                             if( e.which === 27 ) {
-                                var cone = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;//??? pls explicatie la urmatoarele 2 randuri
+                                var cone = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;
                                 self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:p.gbox,jqm:p.jqModal,onClose: cone, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
                             }
                         });
@@ -356,7 +347,6 @@
                 },
 
                 hideModal : function (selector,o) {
-                    console.log('hide modal??')
                     o = $.extend({jqm : true, gb :'', removemodal: false, formprop: false, form : ''}, o || {});
                     var thisgrid = o.gb && typeof o.gb === "string" && o.gb.substr(0,6) === "#gbox_" ? $("#" + o.gb.substr(6))[0] : false;
                     if(o.onClose) {
@@ -389,31 +379,22 @@
                             datawidth: $(frmgr).width()
                         });
                     }
-                    console.log(o.gb)
-                    console.log('--')
+
                     if ($.fn.jqm && o.jqm === true) {
-                        console.log('aa')// trebuie si aici cred destroy
                         $(selector).modal('hide');
                         $(selector).attr("aria-hidden","true").jqmHide();
-                        console.log('a')// trebuie si aici cred destroy
-                        console.log($(selector))
-                        
                     } else {
                         if(o.gb !== '') {
                             try {$(".jqgrid-overlay:first",o.gb).hide();} catch (e){}
                         }
                         $(selector).attr("aria-hidden","true");
                         $(selector).modal('hide');
-                        console.log('b')
-                        //_destroyModal();//????
                     }
                     if( o.removemodal ) {
                         $(selector).remove();
-                        console.log('c')
                         _destroyModal();
                     }
                 }
-                
             })  
         }
 
@@ -431,7 +412,7 @@
 
                     var defaultOptions = {
                         selectAllCheckboxLabel: 'Select all',
-                        saveBtnLabel: 'Done',
+                        saveBtnLabel: 'Apply',
                         cancelBtnLabel: 'Cancel',
                         actionButton: ''
                     };
@@ -496,6 +477,8 @@
                         $body.on('click', '#' + dropId + ' .jsc-checkbox', function() {
                             if (!this.checked) {
                                 $('#' + dropId + ' .jsc-checkbox-all').prop('checked', false);
+                            } else {
+                                $('#' + dropId + ' .jsc-checkbox-all').prop('checked', _isSelectAll());
                             }
 
                             if ($('#' + dropId + ' .jsc-checkbox:checked').length > 0) {
@@ -507,6 +490,10 @@
 
                         $body.off('click', '#' + dropId + ' .btn-jsc-save-btn');
                         $body.off('click', '#' + dropId + ' .btn-jsc-cancel-btn');
+
+                        $body.on('click', '#' + dropId + ' .btn-jsc-cancel-btn', function() {
+                            $('#' + dropId + ' .btn-jsc-save-btn').prop('disabled', false);
+                        });
 
                         $body.on('click', '#' + dropId + ' .btn-jsc-save-btn', function() {
                             var colModel = self.jqGrid('getGridParam', 'colModel');
@@ -527,6 +514,7 @@
                             $.each(colModel, function (i) {
                                 $('#' + dropId + ' .jsc-checkbox[value="' + i + '"]').prop('checked', !this.hidden);
                             });
+                            $('#' + dropId + ' .jsc-checkbox-all').prop('checked', _isSelectAll());
                             drop.close();
                         });
                     }
@@ -564,6 +552,10 @@
                                 offset: '-5px 0'
                             }
                         });
+                    }
+
+                    function _isSelectAll() {
+                        return ($('#' + dropId + ' .jsc-checkbox:checked').length == $('#' + dropId + ' .jsc-checkbox').length);
                     }
 
                     function _getColumnsCheckboxes() {

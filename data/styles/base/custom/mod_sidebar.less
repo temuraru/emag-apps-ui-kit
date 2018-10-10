@@ -35,6 +35,14 @@
 
   &.sidebar-min {
     .sidebar-inner {
+      .sidebar-menu-search-button {
+        display: inline-block;
+      }
+
+      .sidebar-menu-item-search .input-group-no-separation {
+        display: none;
+      }
+
       & > .menu-item {
         & > a {
           .menu-text {
@@ -95,19 +103,46 @@
       position:relative;      
       display:block;
       z-index: 3;
+
+      .sidebar-menu-search-button {
+        display: none;
+        margin: 3px 2px;
+      }
+
+      .sidebar-menu-search {
+        border: none;
+        display: block;
+      }
+
+      .sidebar-menu-search-clear-button {
+        border: none;
+      }
+
       .menu-item {
-         display: block;
-         position: relative;
-         padding: 0;
-         margin: 0;
-         border-style: solid;
-         border-width: @sidebar-border-width 0 0;
-         border-color: darken(@sidebar-first-level-bg, 5%);
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border-style: solid;
+        border-width: @sidebar-border-width 0 0;
+        border-color: darken(@sidebar-first-level-bg, 5%);
 
         &:last-of-type {
           border-bottom-width: @sidebar-border-width;
         }
-         a {
+        
+        &.sidebar-menu-item-search {
+          height: 40px;
+        }
+
+        &.sidebar-menu-item-no-results {
+          & > a,
+          .menu-item-data > a {
+            pointer-events: none !important;
+          }
+        }
+
+        a {
             display: block;
             min-height:@sidebar-cell-height;
             line-height: @sidebar-lineheight;
@@ -182,7 +217,7 @@
                  }
                }
                &.active {
-                 & > a,
+                 &:not(.menu-item-has-children) > a,
                  &.menu-item-has-children > a {
                    background-color: @sidebar-submenu-active-cell-bg;
                    color: @sidebar-submenu-active-cell-text;
@@ -192,7 +227,7 @@
                  .menu-item {
                    border-color: darken(@sidebar-third-level-bg, 5%);
                    > a {
-                     padding-left: (@sidebar-min-width + 10);
+                     padding-left: (@sidebar-min-width + 20);
                      font-family: @sidebar-fontfamily;
                      font-weight: @sidebar-fontweight-third-level;
                      font-size: @sidebar-fontsize-third-level;
@@ -262,7 +297,7 @@
            }
          }
          &.active {
-             & > a {
+             &:not(.menu-item-has-children) > a {
                background-color: @sidebar-menu-active-cell-bg;
                color: @sidebar-menu-active-cell-text;
              }
@@ -276,9 +311,21 @@
                     }
                  }
 
-                & > .sidebar-submenu {
-                  display: block;
-                }
+                 & > .sidebar-submenu {
+                   display: block;
+                 }
+
+                 & .menu-item {
+                    &,
+                    & a {
+                        background: @sidebar-menu-active-submenu-cell-bg;
+                        color: @sidebar-menu-active-submenu-cell-text;  
+                    }
+
+                    & a {
+                      padding-left: (@sidebar-min-width + 10);
+                    }
+                 }
 
                  & > .menu-item-data {
                    display:block;

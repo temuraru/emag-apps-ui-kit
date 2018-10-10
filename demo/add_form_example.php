@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../dist/css/lib/jquery-ui-custom.1.11.4.min.css">
     <link rel="stylesheet" href="../dist/plugins/fancytree/fancytree.min.css">
     <link rel="stylesheet" href="../dist/plugins/chosen/jQuery.chosen.min.css">
-    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.47.min.css">
+    <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
 
     <?php include_once "modules/_mod_top_include.php"?>
 
@@ -214,9 +214,9 @@
 <!-- POPUPS:End -->
 
 <!-- SCRIPTS:Start -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
+<script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js"></script>
@@ -224,11 +224,15 @@
 <script src="../dist/plugins/fancytree/fancytree.min.js"></script>
 <script src="../dist/plugins/chosen/jQuery.chosen.min.js"></script>
 <script src="../dist/plugins/numberformatter/jQuery.numberFormatter-1.0.0.js"></script>
-<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.4.17.47.min.js"></script>
+<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
 
 <script src="../dist/js/main_script.min.js"></script>
 <script src="../dist/js/demo_helpers.js"></script>
+
+<!-- BOTTOM SCRIPTS:Start -->
+<?php include_once "modules/_mod_bottom_scripts.php"; ?>
+<!-- BOTTOM SCRIPTS:End -->
 <!-- SCRIPTS:End -->
 
 <!-- DOCUMENT-READY:Start -->

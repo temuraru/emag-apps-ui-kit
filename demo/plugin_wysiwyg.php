@@ -153,8 +153,8 @@
         <!-- POPUPS:End -->
 
         <!-- SCRIPTS:Start -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-dependency-name="jquery"></script>
-        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.2.1.min.js\">"+"<"+"/script>")</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-dependency-name="jquery"></script>
+        <script>window.jQuery || document.write("<script src=\"../dist/js/lib/jquery-3.3.1.min.js\">"+"<"+"/script>")</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 
         <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
@@ -163,11 +163,13 @@
         <script src="../dist/plugins/tether/tether.min.js" data-dependency-name="tether"></script>
         <script src="../dist/plugins/summernote/summernote.min.js" data-dependency-name="summernote_source"></script>
 
-
-        <!-- SCRIPTS:End -->
-
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
         <script src="../dist/plugins/prism/prism.min.js"></script>
+
+        <!-- BOTTOM SCRIPTS:Start -->
+        <?php include_once "modules/_mod_bottom_scripts.php"; ?>
+        <!-- BOTTOM SCRIPTS:End -->
+        <!-- SCRIPTS:End -->
 
         <!-- DOCUMENT-READY:Start -->
         <script type="text/javascript">
@@ -202,7 +204,9 @@
                         keepOnlyTags: ['<p>', '<br>', '<ul>', '<li>', '<b>', '<strong>','<i>', '<a>'], // If keepHtml is true, remove all tags except these
                         keepClasses: false, // Remove Classes
                         badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html'], // Remove full tags with contents
-                        badAttributes: ['style', 'start'] // Remove attributes from remaining tags
+                        badAttributes: ['style', 'start'], // Remove attributes from remaining tags
+                        limitChars: 0, // 0|# 0 disables option
+                        limitDisplay: 'none', // none|text|html|both
                     }
                 });
             });
@@ -212,7 +216,12 @@
             $(document).ready(function () {
                 $('#summernote2').summernote({
                     dialogsInBody: true,
-                    airMode: true
+                    airMode: true,
+                    cleaner:{
+                        notStyle: 'display: none;', // Position of Notification
+                        limitChars: 0, // 0|# 0 disables option
+                        limitDisplay: 'none', // none|text|html|both
+                    }
                 });
             });
         </script>
