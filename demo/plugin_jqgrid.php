@@ -135,14 +135,12 @@
                                             <div class="pad-top-20 pad-btm-20">
                                                 <button type="button" class="btn btn-primary btn-sm add-new-row">Add new row</button>
                                                 <button type="button" class="btn btn-primary btn-sm add-new-row-with-modal">Add new row with modal</button>
-                                                <button type="button" class="btn btn-primary btn-sm edit-row-with-modal">Edit row with modal</button>
+                                                <!--<button type="button" class="btn btn-primary btn-sm edit-row-with-modal">Edit row with modal</button>-->
                                                 <!--<button type="button" class="btn btn-primary btn-sm search-with-modal">Search with modal</button>-->
                                             </div>
 
                                             <table id="grid_table_add_new_row_programatically" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_add_new_row_programatically"></div>
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -1024,7 +1022,7 @@
                 closeAfterSearch: true
             } )
         });   
-        */
+        
         $('.edit-row-with-modal').click(function () {
 
             var selectedRowId = 
@@ -1049,6 +1047,7 @@
 
             $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
         });
+        */
 
     });
 </script>
