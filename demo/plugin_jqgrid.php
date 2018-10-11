@@ -926,6 +926,10 @@
         function onJqGridAfterInsertRow() {
             setTimeout(function () {
                 $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+                $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                    "page": gridLastPage
+                }).trigger("reloadGrid");
             }, 0)
         }
 
@@ -1014,6 +1018,10 @@
             })
 
             $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+
+            
+
+           
         });  
         
         /*
