@@ -1532,9 +1532,12 @@
             })
 
             $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
-
-            
-
+            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', function(){
+                setTimeout(function () {
+                    $grid_table_add_new_row_programatically.find(">tbody>tr.jqgrow:last").addClass('success');
+            }, 0)
+                
+            });
            
         });  
         
