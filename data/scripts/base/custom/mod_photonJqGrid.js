@@ -1224,4 +1224,91 @@
     window.photonAddGridError = photonAddGridError;
     window.photonResizeGrid = photonResizeGrid;
 
+    //---- Override formaters
+    $.fn.fmatter.rowactions = function(act) {
+		var $tr = $(this).closest("tr.jqgrow"),
+			rid = $tr.attr("id"),
+			$id = $(this).closest("table.ui-jqgrid-btable").attr('id').replace(/_frozen([^_]*)$/,'$1'),
+			$grid = $("#"+$id),
+			$t = $grid[0],
+			p = $t.p,
+			cm = p.colModel[$.jgrid.getCellIndex(this)],
+			$actionsDiv = cm.frozen ? $("tr#"+rid+" td:eq("+$.jgrid.getCellIndex(this)+") > div",$grid) :$(this).parent(),
+			op = {
+				extraparam: {}
+			},
+			saverow = function(rowid, res) {
+				if($.isFunction(op.afterSave)) { op.afterSave.call($t, rowid, res); }
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+			},
+			restorerow = function(rowid) {
+				if($.isFunction(op.afterRestore)) { op.afterRestore.call($t, rowid); }
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+			};
+
+		if (cm.formatoptions !== undefined) {
+			// Deep clone before copying over to op, to avoid creating unintentional references.
+			// Otherwise, the assignment of op.extraparam[p.prmNames.oper] below may persist into the colModel config.
+			var formatoptionsClone = $.extend(true, {}, cm.formatoptions);
+			op = $.extend(op, formatoptionsClone);
+		}
+		if (p.editOptions !== undefined) {
+			op.editOptions = p.editOptions;
+		}
+		if (p.delOptions !== undefined) {
+			op.delOptions = p.delOptions;
+		}
+		if ($tr.hasClass("jqgrid-new-row")){
+			op.extraparam[p.prmNames.oper] = p.prmNames.addoper;
+		}
+		var actop = {
+			keys: op.keys,
+			oneditfunc: op.onEdit,
+			successfunc: op.onSuccess,
+			url: op.url,
+			extraparam: op.extraparam,
+			aftersavefunc: saverow,
+			errorfunc: op.onError,
+			afterrestorefunc: restorerow,
+			restoreAfterError: op.restoreAfterError,
+			mtype: op.mtype
+		};
+		switch(act)
+		{
+			case 'edit':
+				$grid.jqGrid('editRow', rid, actop);
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").hide();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").show();
+                $grid.triggerHandler("jqGridAfterGridComplete");
+                $grid.triggerHandler("photonJqGridAfterRowEdit", rid);
+				break;
+			case 'save':
+				if ($grid.jqGrid('saveRow', rid, actop)) {
+					$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+					$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+                    $grid.triggerHandler("jqGridAfterGridComplete");
+                    $grid.triggerHandler("photonJqGridAfterRowSave", rid);
+				}
+				break;
+			case 'cancel' :
+				$grid.jqGrid('restoreRow', rid, restorerow);
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+                $grid.triggerHandler("jqGridAfterGridComplete");
+                $grid.triggerHandler("photonJqGridAfterRowCancel",rid);
+				break;
+			case 'del':
+                $grid.jqGrid('delGridRow', rid, op.delOptions);
+                $grid.triggerHandler("photonJqGridBeforeRowDelete", rid);
+				break;
+			case 'formedit':
+				$grid.jqGrid('setSelection', rid);
+                $grid.jqGrid('editGridRow', rid, op.editOptions);
+                $grid.triggerHandler("photonJqGridAfterFormEdit", rid);
+				break;
+		}
+	};
+
 }(window, jQuery));

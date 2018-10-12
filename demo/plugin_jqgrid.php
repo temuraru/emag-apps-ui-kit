@@ -3,6 +3,9 @@
 <head>
         <title>jQGrid - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php" ?>
+
+        <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
+
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
         <?php include_once "modules/_mod_top_include.php" ?>
@@ -693,6 +696,11 @@
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
 
+
+<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
+<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
+
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
@@ -727,7 +735,8 @@
                     "username": "ironman",
                     "jobtype": "Philantropist",
                     "codename": "Iron Man",
-                    "spirit_animal": "Tiger"
+                    "spirit_animal": "Tiger",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "2",
@@ -736,7 +745,8 @@
                     "username": "hulk_smash",
                     "jobtype": "Doctor",
                     "codename": "The Hulk",
-                    "spirit_animal": "Gorilla"
+                    "spirit_animal": "Gorilla",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "3",
@@ -745,7 +755,8 @@
                     "username": "thehammer",
                     "jobtype": "God",
                     "codename": "Thor",
-                    "spirit_animal": "Lion"
+                    "spirit_animal": "Lion",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "4",
@@ -754,7 +765,8 @@
                     "username": "hawkyey",
                     "jobtype": "Archer",
                     "codename": "Hawkeye",
-                    "spirit_animal": "Hawk"
+                    "spirit_animal": "Hawk",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "5",
@@ -763,7 +775,8 @@
                     "username": "rogerthat",
                     "jobtype": "Captain",
                     "codename": "Captain America",
-                    "spirit_animal": "Eagle"
+                    "spirit_animal": "Eagle",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "6",
@@ -772,7 +785,8 @@
                     "username": "notawidow",
                     "jobtype": "Event planner",
                     "codename": "Black Widow",
-                    "spirit_animal": "Spider"
+                    "spirit_animal": "Spider",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "7",
@@ -781,7 +795,8 @@
                     "username": "goliath",
                     "jobtype": "Unemployed",
                     "codename": "Ant-Man",
-                    "spirit_animal": "Dog"
+                    "spirit_animal": "Dog",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "8",
@@ -790,7 +805,8 @@
                     "username": "tchiao",
                     "jobtype": "Self-employed",
                     "codename": "Black Panther",
-                    "spirit_animal": "Jaguar"
+                    "spirit_animal": "Jaguar",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "9",
@@ -799,7 +815,8 @@
                     "username": "imallseeing",
                     "jobtype": "Self-employed",
                     "codename": "The Vision",
-                    "spirit_animal": "Dolphin"
+                    "spirit_animal": "Dolphin",
+                    "data": "01/01/2015 03:30"
                 },
                 {
                     "id": "10",
@@ -808,7 +825,8 @@
                     "username": "photon",
                     "jobtype": "Self-employed",
                     "codename": "Captain Marvel",
-                    "spirit_animal": "Mustang"
+                    "spirit_animal": "Mustang",
+                    "data": "01/01/2015 03:30"
 
                 }
             ];
@@ -831,9 +849,37 @@
                 { label: 'Username', name: 'username' },
                 { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
                 { label: 'Nickname', name: 'codename' },
-                { label: 'Spiritual Animal', name: 'spirit_animal' }
+                { label: 'Spiritual Animal', name: 'spirit_animal' },
+                { 
+                    name: 'data', 
+                    index: 'data', width: 150, 
+                     editrules: { required: true },
+                     formatter: 'date',
+                     formatoptions: {
+                         newformat: 'd/m/Y H:i:s'
+                     },
+                     editable: true, 
+                     editoptions: {
+                         dataInit: function (el) {
+                             console.log(el)
+                             $(el).parent().append('<div class="ora" style="position:relative"></div>');
+                             $(el).parent().find('.ora').append($(el))
+                             $(el).datetimepicker({
+                                //widgetParent: '#outer'
+                             });
+                         }
+                     }
+                }
             ],
-            styleUI: 'fontAwesome'
+            ondblClickRow: function (rowid) {
+                    var $this = $(this), selRowId = $this.jqGrid("getGridParam", "selrow");
+                    if (selRowId !== rowid) {
+                        $this.jqGrid("setSelection", rowid);
+                    }
+                    $this.jqGrid("editRow", rowid, {});
+                },
+            styleUI: 'fontAwesome',
+            
         };
 
         new PhotonJqGrid(listingParameters).init();
@@ -865,7 +911,8 @@
                     },
                     formoptions: {
                         label: "First name <span class='required-elem'>*</span>"
-                    }
+                    },
+                    sortable: false,
                 },
                 {
                     label: 'Last Name',
@@ -876,12 +923,14 @@
                     },
                     formoptions: {
                         label: "Last name <span class='required-elem'>*</span>"
-                    }
+                    },
+                    sortable: false,
                 },
                 {
                     label: 'Username',
                     name: 'username',
-                    editable: true
+                    editable: true,
+                    sortable: false,
                 },
                 {
                     label: 'Actions',
@@ -892,7 +941,14 @@
                         keys: true,
                         editOptions: {},
                         addOptions: {},
-                        delOptions: {}
+                        delOptions: {
+                            onclickSubmit: function(options, rowid) {
+                                console.log("delOptions::onclickSubmit"); 
+                                setTimeout(function(){
+                                    goToLastPage();
+                                },0);
+                            },
+                        }
                     },
                     sortable: false,
                     search: false
@@ -908,17 +964,6 @@
 
         var lastSelection;
 
-        function editRow($grid, rowId) {
-
-            if (rowId && rowId !== lastSelection) {
-                $grid.jqGrid('restoreRow', lastSelection);
-                $grid.jqGrid('editRow', rowId, true);
-                lastSelection = rowId;
-                $grid.find('#jEditButton_' + rowId).trigger('click');
-                //$grid.jqGrid('saveRow', rowId, true);
-            }
-        }
-
         new PhotonJqGrid(listingParameters).init();
         var rowCount = 0;
         var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
@@ -933,67 +978,81 @@
             }, 0)
         }
 
+        function goToLastPage(){
+            $grid_table_add_new_row_programatically.trigger("reloadGrid");
+            var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                "page": gridLastPage
+            }).trigger("reloadGrid");
+        }
+
+        function isInAddedRowsList(rowId) {
+            var index = addedRowsList.indexOf(Number(rowId));
+            if (index > -1) {
+                return true;
+            }
+            return false;
+        }
+
+        function getIndexOfItem(rowId){
+            var index = addedRowsList.indexOf(Number(rowId));
+            if (index > -1) {
+                return index;
+            }
+            return false;
+        }
+
+        function removeFromAddedRowsList(index){
+            addedRowsList.splice(index, 1);
+        }
+
+        var addedRowsList = [];
+
         $('.add-new-row').on('click', function () {
             $grid_table_add_new_row_programatically.off('jqGridAfterInsertRow', onJqGridAfterInsertRow);
-            var rowBefore = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 1;
+            var rowBefore = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records');
             $grid_table_add_new_row_programatically.find('#jSaveButton_' + rowBefore).trigger('click');
 
-            var names = [
-                "Jack",
-                "Smith",
-                "Amelia",
-                "Jacob",
-                "Charlie",
-                "Thomas",
-                "James",
-                "William",
-                "Rhys",
-                "Richard",
-                "Michael"
-            ];
-
-            var namesSelected = [];
-
-            for (var i = 0; i < 2; i++) {
-                namesSelected.push(names[Math.floor(Math.random() * names.length)]);
-                if(namesSelected[0] == namesSelected[1]){
-                    namesSelected[0]=names[Math.floor(Math.random() * names.length)];
-                }
-            }
-
-            if ($('#info_dialog').length == 0) {
-                rowCount = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 2
+            if ($('#info_dialog').length == 0) {//if there is no error
+                $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                rowCount = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 1
+                addedRowsList.push(rowCount);
                 $grid_table_add_new_row_programatically.jqGrid(
                     'addRowData',
                     rowCount, {
                         "id": rowCount,
-                        "firstname": namesSelected[0],
-                        "lastname": namesSelected[1],
+                        "firstname": '',
+                        "lastname": '',
                         "username": ""
                     },
                     "last"
                 );
 
-                $grid_table_add_new_row_programatically.trigger("reloadGrid");
-                var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
-                $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
-                    "page": gridLastPage
-                }).trigger("reloadGrid");
+                goToLastPage();
+                
+                $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, true);
+                $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
 
-                if (rowCount && rowCount !== lastSelection) {
-                    $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, true);
-                    $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
+                $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
+                
+                $grid_table_add_new_row_programatically.one('photonJqGridAfterRowCancel', function (e, rowId) {
+                    console.log('photonJqGridAfterRowCancel');
+                    if (isInAddedRowsList(rowId)) {
+                        removeFromAddedRowsList(getIndexOfItem(rowId));
+                        console.log(addedRowsList)
 
-                    var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
-                    $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
-                        "page": gridLastPage
-                    }).trigger("reloadGrid");
+                        $grid_table_add_new_row_programatically.jqGrid('delRowData', rowId);
+                        goToLastPage();
+                    }
+                });
 
-                    $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
-
-                }
+                $grid_table_add_new_row_programatically.one('photonJqGridAfterRowSave', function (e,rowId){
+                    console.log('photonJqGridAfterRowSave');
+                    if (isInAddedRowsList(rowId)) {
+                        removeFromAddedRowsList(getIndexOfItem(rowId));
+                    }
+                });
             }
- 
         });
 
         $('.add-new-row-with-modal').click(function () {
@@ -1017,8 +1076,8 @@
                 //clearAfterAdd: true,
             })
 
-            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
-            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', function(){
+            $grid_table_add_new_row_programatically.one('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+            $grid_table_add_new_row_programatically.one('jqGridAfterInsertRow', function(){
                 setTimeout(function () {
                     $grid_table_add_new_row_programatically.find(">tbody>tr.jqgrow:last").addClass('success');
             }, 0)
