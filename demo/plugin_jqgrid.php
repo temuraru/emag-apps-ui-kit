@@ -1012,7 +1012,7 @@
 
                 goToLastPage();
                 
-                $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, true);
+                $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, false);
                 $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
                 
                 $grid_table_add_new_row_programatically.one('photonJqGridAfterRowCancel', function (e, rowId) {
