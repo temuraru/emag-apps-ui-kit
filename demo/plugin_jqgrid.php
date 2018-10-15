@@ -1012,7 +1012,21 @@
 
                 goToLastPage();
                 
-                $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, false);
+                $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, 
+                { 
+                    keys : true, 
+                    afterrestorefunc: function(rowId) {
+                        $grid_table_add_new_row_programatically.jqGrid('delRowData', rowId);
+                        
+                        $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                        setTimeout(function () {
+                            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                                "page": $grid_table_add_new_row_programatically.getGridParam('lastpage')
+                            }).trigger("reloadGrid");
+                        }, 0);
+                    }
+                });
+                
                 $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
                 
                 $grid_table_add_new_row_programatically.one('photonJqGridAfterRowCancel', function (e, rowId) {
