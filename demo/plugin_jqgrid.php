@@ -4,8 +4,6 @@
         <title>jQGrid - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php" ?>
 
-        <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
-
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
         <?php include_once "modules/_mod_top_include.php" ?>
@@ -696,11 +694,6 @@
 <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <script src="../dist/plugins/prism/prism.min.js"></script>
 
-
-<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
-<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>
-<script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
-
 <script src="../dist/js/lib/jquery-ui.1.11.4.min.js" data-dependency-name="jquery_ui_source"></script>
 <script src="../dist/plugins/jqgrid/i18n/grid.locale-en.js" data-dependency-name="jqgrid_locale_en_source"></script>
 <script src="../dist/plugins/jqgrid/jquery.jqGrid.min.js" data-dependency-name="jqgrid_source"></script>
@@ -736,7 +729,7 @@
                     "jobtype": "Philantropist",
                     "codename": "Iron Man",
                     "spirit_animal": "Tiger",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "2",
@@ -746,7 +739,7 @@
                     "jobtype": "Doctor",
                     "codename": "The Hulk",
                     "spirit_animal": "Gorilla",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "3",
@@ -756,7 +749,7 @@
                     "jobtype": "God",
                     "codename": "Thor",
                     "spirit_animal": "Lion",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "4",
@@ -766,7 +759,7 @@
                     "jobtype": "Archer",
                     "codename": "Hawkeye",
                     "spirit_animal": "Hawk",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "5",
@@ -776,7 +769,7 @@
                     "jobtype": "Captain",
                     "codename": "Captain America",
                     "spirit_animal": "Eagle",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "6",
@@ -786,7 +779,7 @@
                     "jobtype": "Event planner",
                     "codename": "Black Widow",
                     "spirit_animal": "Spider",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "7",
@@ -796,7 +789,7 @@
                     "jobtype": "Unemployed",
                     "codename": "Ant-Man",
                     "spirit_animal": "Dog",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "8",
@@ -806,7 +799,7 @@
                     "jobtype": "Self-employed",
                     "codename": "Black Panther",
                     "spirit_animal": "Jaguar",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "9",
@@ -816,7 +809,7 @@
                     "jobtype": "Self-employed",
                     "codename": "The Vision",
                     "spirit_animal": "Dolphin",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "10",
@@ -826,7 +819,7 @@
                     "jobtype": "Self-employed",
                     "codename": "Captain Marvel",
                     "spirit_animal": "Mustang",
-                    "data": "01/01/2015 03:30"
+                    "data": "01/01/2018"
 
                 }
             ];
@@ -849,39 +842,10 @@
                 { label: 'Username', name: 'username' },
                 { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
                 { label: 'Nickname', name: 'codename' },
-                { label: 'Spiritual Animal', name: 'spirit_animal' },
-                { 
-                    name: 'data', 
-                    index: 'data', width: 150, 
-                     editrules: { required: true },
-                     formatter: 'date',
-                     formatoptions: {
-                         newformat: 'd/m/Y H:i:s'
-                     },
-                     editable: true, 
-                     editoptions: {
-                         dataInit: function (el) {
-                             console.log(el)
-                             $(el).parent().append('<div class="ora" style="position:relative"></div>');
-                             $(el).parent().find('.ora').append($(el))
-                             $(el).datetimepicker({
-                                //widgetParent: '#outer'
-                             });
-                         }
-                     }
-                }
+                { label: 'Spiritual Animal', name: 'spirit_animal' }
             ],
-            ondblClickRow: function (rowid) {
-                    var $this = $(this), selRowId = $this.jqGrid("getGridParam", "selrow");
-                    if (selRowId !== rowid) {
-                        $this.jqGrid("setSelection", rowid);
-                    }
-                    $this.jqGrid("editRow", rowid, {});
-                },
-            styleUI: 'fontAwesome',
-            
+            styleUI: 'fontAwesome'
         };
-
         new PhotonJqGrid(listingParameters).init();
     });
 </script>
@@ -943,7 +907,6 @@
                         addOptions: {},
                         delOptions: {
                             onclickSubmit: function(options, rowid) {
-                                console.log("delOptions::onclickSubmit"); 
                                 setTimeout(function(){
                                     goToLastPage();
                                 },0);
@@ -1032,22 +995,16 @@
                 
                 $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, true);
                 $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
-
-                $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
                 
                 $grid_table_add_new_row_programatically.one('photonJqGridAfterRowCancel', function (e, rowId) {
-                    console.log('photonJqGridAfterRowCancel');
                     if (isInAddedRowsList(rowId)) {
                         removeFromAddedRowsList(getIndexOfItem(rowId));
-                        console.log(addedRowsList)
-
                         $grid_table_add_new_row_programatically.jqGrid('delRowData', rowId);
                         goToLastPage();
                     }
                 });
 
                 $grid_table_add_new_row_programatically.one('photonJqGridAfterRowSave', function (e,rowId){
-                    console.log('photonJqGridAfterRowSave');
                     if (isInAddedRowsList(rowId)) {
                         removeFromAddedRowsList(getIndexOfItem(rowId));
                     }
