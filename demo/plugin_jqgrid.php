@@ -934,7 +934,7 @@
                 }
 
                 if (reload) {
-                    $(jgGridId).trigger("reloadGrid")
+                    $(jgGridId).trigger("reloadGrid");
                     setTimeout(function () {
                         $(jgGridId).jqGrid('setGridParam', {
                             "page": $(jgGridId).getGridParam('lastpage')
