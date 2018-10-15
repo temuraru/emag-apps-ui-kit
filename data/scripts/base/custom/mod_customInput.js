@@ -4,7 +4,6 @@
  */
 
 'use strict';
-
 ;( function ( document, window, index )
 {
     var inputs = document.querySelectorAll( '.form-input-control' );
@@ -20,16 +19,17 @@
             } else {
                 fileName = e.target.value.split('\\').pop();
             }
-
+            console.log('aaaaaaaaaaaaaaaa');
             if( fileName ) {
                 label.querySelector('span').innerHTML = fileName;
-            } else {
-                label.innerHTML = labelVal;
             }
         });
 
         // Firefox bug fix
         input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
         input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+
     });
+
+
 }( document, window, 0 ));
