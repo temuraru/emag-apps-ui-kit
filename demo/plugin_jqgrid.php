@@ -1026,7 +1026,7 @@
                         }, 0);
                     }
                 });
-                
+
                 $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
                 
                 $grid_table_add_new_row_programatically.one('photonJqGridAfterRowCancel', function (e, rowId) {
@@ -1064,7 +1064,7 @@
                 //checkOnUpdate: true,
                 //checkOnSubmit: true,
                 //reloadAfterSubmit: true,
-                closeOnEscape: false,
+                closeOnEscape: true,
                 closeAfterAdd: true,
                 //clearAfterAdd: true,
             })
