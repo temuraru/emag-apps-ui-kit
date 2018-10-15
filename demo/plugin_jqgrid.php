@@ -923,16 +923,24 @@
             editurl: 'clientArray',
             styleUI: 'fontAwesomeNoBorder',
             useCustomConfirmationModal: true,
-            onPaging:function(jgGridId){
-                var data = $(jgGridId).jqGrid('getGridParam','data');
-                for (var i = 0; i < data.length; i++){
-                    if(data[i].firstname == '' || data[i].lastname == ''){
-                        $(jgGridId).jqGrid('delRowData', i+1);  
+            onPaging: function (jgGridId) {
+                var data = $(jgGridId).jqGrid('getGridParam', 'data');
+                var reload = false;
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].firstname == '' || data[i].lastname == '') {
+                        $(jgGridId).jqGrid('delRowData', i + 1);
+                        reload = true;
                     }
                 }
-                $(jgGridId).jqGrid('setGridParam', {
-                    "page": $(jgGridId).getGridParam('lastpage')
-                }).trigger("reloadGrid");
+
+                if (reload) {
+                    $(jgGridId).trigger("reloadGrid")
+                    setTimeout(function () {
+                        $(jgGridId).jqGrid('setGridParam', {
+                            "page": $(jgGridId).getGridParam('lastpage')
+                        }).trigger("reloadGrid");
+                    }, 0);
+                }
             }
         };
 
