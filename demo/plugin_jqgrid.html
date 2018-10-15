@@ -1500,9 +1500,7 @@
             $grid_table_add_new_row_programatically.off('jqGridAfterInsertRow', onJqGridAfterInsertRow);
             var rowBefore = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records');
             $grid_table_add_new_row_programatically.find('#jSaveButton_' + rowBefore).trigger('click');
-            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow',function(){
-                    console.log('jqGridAfterInsertRow');
-                })
+           
             if ($('#info_dialog').length == 0) {//if there is no error
                 $grid_table_add_new_row_programatically.trigger("reloadGrid");
                 rowCount = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 1
@@ -1532,7 +1530,6 @@
                 });
 
                 $grid_table_add_new_row_programatically.one('photonJqGridAfterRowSave', function (e,rowId){
-                    console.log('save')
                     if (isInAddedRowsList(rowId)) {
                         removeFromAddedRowsList(getIndexOfItem(rowId));
                     }
