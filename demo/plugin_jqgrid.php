@@ -424,6 +424,49 @@
                                 </div>
                             </div>
 
+                            <a href="#" name="jqGrid-with-subgrid-and-no-border" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with subgrid and no border</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_subgrid_and_no_border" aria-expanded="false" aria-controls="jq_with_subgrid_and_no_border"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq_with_subgrid_and_no_border">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq_with_subgrid_and_no_border_html_source" aria-controls="jq_with_subgrid_and_no_border_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq_with_subgrid_and_no_border_js_source" aria-controls="jq_with_subgrid_and_no_border_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq_with_subgrid_and_no_border_css_source" aria-controls="jq_with_subgrid_and_no_border_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_subgrid_and_no_border_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_subgrid_and_no_border_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_subgrid_and_no_border_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                            <table id="grid_table_with_subgrid_and_no_border" class="table table-bordered word-break"></table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="#" name="jqGrid-with-inline-editing" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
@@ -1262,6 +1305,7 @@
             rowNum: 10,
             subGrid: true,
             styleUI : 'fontAwesome',
+            multiselect: false,
             loadComplete: function(){
                 //use this for the skin with no border
                 $this = $(this);
@@ -1293,7 +1337,74 @@
                     height: '100%',
                     rowNum:5,
                     sortname: 'num',
-                    sortorder: "asc"
+                    sortorder: "asc",
+                    multiselect: false,
+                });
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqGrid_with_subgrid_and_no_border_init">
+    $(document).ready(function () {
+        $("#grid_table_with_subgrid_and_no_border").jqGrid({
+            autoResizing: { compact: true },
+            datatype: "jsonstring",
+            datastr: getListingDummyData(),
+            sortable: true,
+            colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
+            colModel: [
+                { name: 'id',           index: 'id', hidden: true, width: "20" },
+                { name: 'firstname',    index: 'firstname', key: true, width: "100" },
+                { name: 'lastname',     index: 'lastname' },
+                { name: 'username',     index: 'username' },
+                { name: 'jobtype',      index: 'jobtype' },
+                { name: 'codename',     index: 'codename' },
+                { name: 'spirit_animal',index: 'spirit_animal' }
+            ],
+            altRows: false,
+            autowidth: true,
+            viewrecords: true,
+            shrinkToFit: true,
+            width: 'auto',
+            height: 'auto',
+            rowNum: 10,
+            subGrid: true,
+            styleUI : 'fontAwesomeNoBorder',
+            multiselect: false,
+            loadComplete: function(){
+                //use this for the skin with no border
+                $this = $(this);
+                $this.closest('.ui-jqgrid-view').find('tr').find('th').eq(0).addClass('disable-hover');  
+            },
+            subGridRowExpanded: function(subgrid_id, row_id) {
+                // we pass two parameters
+                // subgrid_id is a id of the div tag created within a table
+                // the row_id is the id of the row
+                // If we want to pass additional parameters to the url we can use
+                // the method getRowData(row_id) - which returns associative array in type name-value
+                // here we can easy construct the following
+                var subgrid_table_id;
+                subgrid_table_id = subgrid_id+"_t";
+                jQuery("#"+subgrid_id).html("<table id='"+subgrid_table_id+"' class='table'></table>");
+                jQuery("#"+subgrid_table_id).jqGrid({
+                    datatype: "jsonstring",
+                    datastr: getListingDummyData(),
+                    styleUI : 'fontAwesomeNoBorder',
+                    colModel: [
+                        { name: 'id',           index: 'id', hidden: true, width: "20" },
+                        { label: 'First Name', name: 'firstname',    index: 'firstname', key: true, width: "100" },
+                        { label: 'Last Name', name: 'lastname',     index: 'lastname' },
+                        { label: 'Username', name: 'username',     index: 'username' },
+                        { label: 'Hobby', name: 'jobtype',      index: 'jobtype' },
+                        { label: 'Nickname', name: 'codename',     index: 'codename' },
+                        { label: 'Spiritual Animal', name: 'spirit_animal',index: 'spirit_animal' }
+                    ],
+                    height: '100%',
+                    rowNum:5,
+                    sortname: 'num',
+                    sortorder: "asc",
+                    multiselect: false,
                 });
             }
         });
