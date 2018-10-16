@@ -1049,7 +1049,8 @@
         });
 
         $('.add-new-row-with-modal').click(function () {
-            var rowBefore =  $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records')+1;
+            var rowBefore =  $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records');
+            
             $grid_table_add_new_row_programatically.find('#jCancelButton_' + rowBefore).trigger('click');
 
             $grid_table_add_new_row_programatically.jqGrid('editGridRow', "new", {
