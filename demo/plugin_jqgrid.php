@@ -459,7 +459,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_and_no_border_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <table id="grid_table_with_subgrid_and_no_border" class="table table-bordered word-break"></table>
 
                                         </div>
