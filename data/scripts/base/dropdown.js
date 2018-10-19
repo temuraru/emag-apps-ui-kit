@@ -152,6 +152,12 @@
   }
 
 
+  // DROPDOWN MOBILE BUG FIXED
+  function closeDropdown () {
+    if($(".navbar-collapse").hasClass('in'))
+        $('.navbar-collapse').collapse('hide')
+  }
+
   // APPLY TO STANDARD DROPDOWN ELEMENTS
   // ===================================
 
@@ -161,5 +167,7 @@
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
+    .on('click', ':not(.dropdown-toggle)', closeDropdown)
 
 }(jQuery);
+
