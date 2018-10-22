@@ -481,6 +481,49 @@
                                 </div>
                             </div>
 
+                            <a href="#" name="jqGrid-hierarchical-elements-tree-and-no-border" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with hierarchical elements and no border (Tree)</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_hierarchical_elements_and_no_border" aria-expanded="false" aria-controls="jq_with_hierarchical_elements_and_no_border"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq_with_hierarchical_elements_and_no_border">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq_with_hierarchical_elements_and_no_border_html_source" aria-controls="jq_with_hierarchical_elements_and_no_border_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq_with_hierarchical_elements_and_no_border_js_source" aria-controls="jq_with_hierarchical_elements_and_no_border_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq_with_hierarchical_elements_and_no_border_css_source" aria-controls="jq_with_hierarchical_elements_and_no_border_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_hierarchical_elements_and_no_border_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_hierarchical_elements_and_no_border_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_hierarchical_elements_and_no_border_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,jqGrid_with_hierarchical_elements_and_no_border_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                            <table id="grid_table_with_hierarchy_and_no_border" class="table table-bordered word-break"></table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="#" name="jqGrid-with-subgrid" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
@@ -995,6 +1038,10 @@
                     {
                         'title': 'With hierarchical elements (Tree)',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-hierarchical-elements-tree'
+                    },
+                    {
+                        'title': 'With hierarchical elements and no border (Tree)',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-hierarchical-elements-tree-and-no-border'
                     },
                     {
                         'title': 'With subgrid',
@@ -1744,6 +1791,322 @@
             styleUI : 'fontAwesome'
         });
     });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqGrid_with_hierarchical_elements_and_no_border_init">
+    function getListingDummyDataForHierarchicalElements() {
+
+        var actions1 = [
+                {
+                    icon: 'fa-pencil',
+                    attr: {
+                        title: 'Edit',
+                        class: 'btn-no-border'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-trash',
+                    attr: {
+                        title: 'Delete',
+                        class: 'btn-no-border'
+                    },
+                    group: 0
+                },
+                {
+                    icon: 'fa-ellipsis-h',
+                    attr: {
+                        title: 'More actions',
+                        class: 'btn-no-border'
+                    },
+                    group: 0,
+                    dropdown: [
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 1',
+                            attr: {
+                                title: 'Action 1'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 2',
+                            attr: {
+                                title: 'Action 2'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 3',
+                            attr: {
+                                title: 'Action 3'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 4',
+                            attr: {
+                                title: 'Action 4'
+                            }
+                        },
+                        {
+                            icon: 'fa-square',
+                            label: 'Action 5',
+                            attr: {
+                                title: 'Action 5'
+                            }
+                        }
+                    ]
+                },
+            ];
+
+        var actions = '[' +
+                '{' +
+                '"icon": "fa-pencil",' +
+                '"group": "0",' +
+                '"attr": {' +
+                '"title": "Edit",' +
+                '"class": "btn-no-border"' +
+                '}' +
+                '},' +
+                '{' +
+                '"icon": "fa-trash",' +
+                '"group": "0",' +
+                '"attr": {' +
+                '"title": "Delete",' +
+                '"class": "btn-no-border"' +
+                '}' +
+                '}' +
+                ']';
+
+        var dataSet = [
+            {
+                "id": "1",
+                "firstname": "Tony",
+                "lastname": "Stark",
+                "username": "ironman",
+                "jobtype": "Philantropist",
+                "codename": "Iron Man",
+                "spirit_animal": "Tiger",
+                level:"0",
+                parent: null,
+                isLeaf: false,
+                expanded:true,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "2",
+                "firstname": "Bruce",
+                "lastname": "Banner",
+                "username": "hulk_smash",
+                "jobtype": "Doctor",
+                "codename": "The Hulk",
+                "spirit_animal": "Gorilla",
+                level: "1",
+                parent: "1",
+                isLeaf: true,
+                expanded: false,
+                loaded: true,
+                "actions":actions
+            },
+            {
+                "id": "3",
+                "firstname": "Thor",
+                "lastname": "Odinson",
+                "username": "thehammer",
+                "jobtype": "God",
+                "codename": "Thor",
+                "spirit_animal": "Lion",
+                level:"1",
+                parent: "1",
+                isLeaf: true,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "4",
+                "firstname": "Clinton",
+                "lastname": "Barton",
+                "username": "hawkyey",
+                "jobtype": "Archer",
+                "codename": "Hawkeye",
+                "spirit_animal": "Hawk",
+                level:"0",
+                parent: null,
+                isLeaf: false,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "5",
+                "firstname": "Steven",
+                "lastname": "Rogers",
+                "username": "rogerthat",
+                "jobtype": "Captain",
+                "codename": "Captain America",
+                "spirit_animal": "Eagle",
+                level:"1",
+                parent: "4",
+                isLeaf: true,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "6",
+                "firstname": "Natalia",
+                "lastname": "Romanova",
+                "username": "notawidow",
+                "jobtype": "Event planner",
+                "codename": "Black Widow",
+                "spirit_animal": "Spider",
+                level:"1",
+                parent: "4",
+                isLeaf: true,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "7",
+                "firstname": "Henry",
+                "lastname": "Pym",
+                "username": "goliath",
+                "jobtype": "Unemployed",
+                "codename": "Ant-Man",
+                "spirit_animal": "Dog",
+                level:"0",
+                parent: null,
+                isLeaf: false,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "8",
+                "firstname": "Luke",
+                "lastname": "Charles",
+                "username": "tchiao",
+                "jobtype": "Self-employed",
+                "codename": "Black Panther",
+                "spirit_animal": "Jaguar",
+                level:"1",
+                parent: "7",
+                isLeaf: false,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "9",
+                "firstname": "Victor",
+                "lastname": "Shade",
+                "username": "imallseeing",
+                "jobtype": "Self-employed",
+                "codename": "The Vision",
+                "spirit_animal": "Dolphin",
+                level:"2",
+                parent: "8",
+                isLeaf: true,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            },
+            {
+                "id": "10",
+                "firstname": "Monica",
+                "lastname": "Rambeau",
+                "username": "photon",
+                "jobtype": "Self-employed",
+                "codename": "Captain Marvel",
+                "spirit_animal": "Mustang",
+                level:"2",
+                parent: "8",
+                isLeaf: true,
+                expanded:false,
+                loaded:true,
+                "actions":actions
+            }
+        ];
+
+        return dataSet;
+    }
+    $(document).ready(function () {
+        $("#grid_table_with_hierarchy_and_no_border").jqGrid({
+            autoResizing: { compact: true },
+            data: getListingDummyDataForHierarchicalElements(),
+            datatype: "local",
+            sortable: true,
+            colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal', 'Actions'],
+            colModel: [
+                { name: 'id',           index: 'id',       key: true, hidden: true,   width: "20" },
+                { name: 'firstname',    index: 'firstname',       width: "100", sortable:false },
+                { name: 'lastname',     index: 'lastname' , sortable:false },
+                { name: 'username',     index: 'username' , sortable:false },
+                { name: 'jobtype',      index: 'jobtype' , sortable:false },
+                { name: 'codename',     index: 'codename' , sortable:false },
+                { name: 'spirit_animal',index: 'spirit_animal', sortable:false }, 
+                { name: 'actions',      index: 'actions', formatter: PhotonDataFormatter.actionsButtons , sortable:false }
+            ],
+            loadComplete: function(){
+                //remove border
+                $this = $(this);
+                $this.find('tr').find('td:visible:last').css({'border-right': '0'});
+                
+                //comment next line if you use skin with no border - styleUI : 'fontAwesomeNoBorder'
+                //$this.closest('.ui-jqgrid-view').find('tr').find('th:visible:last').css({'border-right': '0'});
+                
+                $this.find('.treeclick').on('click', function () {
+                    $this.find('tr').find('td:visible:last').css({'border-right': '0'});
+                })
+                //add next line if you use styleUI : 'fontAwesomeNoBorder'
+                $("#grid_table_with_hierarchy").find('tr:visible:last').addClass('border-bottom-0');
+                
+            },
+            //add next line if you use formatter: PhotonDataFormatter.actionsButtons with dropdown buttons
+            gridComplete: function() {
+                addMoreActions('#grid_table_with_hierarchy');
+                $('#grid_table_with_hierarchy .label-with-tooltip').tooltip();
+            },
+            //add next line if you use styleUI : 'fontAwesomeNoBorder'
+            onSortCol: function (index, columnIndex, sortOrder) {
+                $("#grid_table_with_hierarchy").find('tr').removeClass('border-bottom-0');
+            },
+            autowidth: true,
+            viewrecords: false,
+            shrinkToFit: true,
+            width: 'auto',
+            height: 'auto',
+            scrollrows :true,
+            rowNum: 10,
+            gridview: true,
+            //sortname: 'firstname',
+            treeGrid: true,
+            loadonce: true,
+            treeGridModel: 'adjacency',
+            treedatatype: 'json',
+            ExpandColumn: 'firstname',
+            ExpandColClick : true,
+            styleUI : 'fontAwesomeNoBorder',
+            
+        });
+    });
+
+    //add next line if you use styleUI : 'fontAwesomeNoBorder'
+    $("#grid_table_with_hierarchy").on('jqGridBeforeExpandTreeGridNode',function(options,rowId){
+        $this = $(this);
+        $this.find('tr#' + rowId).removeClass('border-bottom-0');
+        $("#grid_table_with_hierarchy").find('tr:visible:last').addClass('border-bottom-0');
+    });
+
+    //add next line if you use styleUI : 'fontAwesomeNoBorder'
+    $("#grid_table_with_hierarchy").on('jqGridAfterCollapseTreeGridNode',function(options,rowId){
+        $("#grid_table_with_hierarchy").find('tr:visible:last').addClass('border-bottom-0');
+    });
+    
 </script>
 
 <script type="text/javascript" data-dependency-name="jqGrid_with_subgrid_init">

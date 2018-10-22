@@ -187,6 +187,10 @@
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-hierarchical-elements-tree'
                     },
                     {
+                        'title': 'With hierarchical elements and no border (Tree)',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-hierarchical-elements-tree-and-no-border'
+                    },
+                    {
                         'title': 'With subgrid',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-subgrid'
                     },
