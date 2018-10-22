@@ -191,6 +191,10 @@
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-subgrid'
                     },
                     {
+                        'title': 'With subgrid and no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-subgrid-and-no-border'
+                    },
+                    {
                         'title': 'With inline editing',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-inline-editing'
                     },
