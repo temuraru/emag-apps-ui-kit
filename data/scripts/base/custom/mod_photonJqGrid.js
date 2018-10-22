@@ -96,6 +96,7 @@
             },
             caption: null,
             useCustomColumnChooser: false,
+            useCustomConfirmationModal: false,
             columnChooserOptions: {}
         };
 
@@ -177,6 +178,339 @@
             if(_hasCustomCallback(mergeCallbackOption, customCallbacks[mergeCallbackOption])) {
                 _mergeCustomCallback(customCallbacks[mergeCallbackOption]);
             }
+        }
+
+        function _initCustomConfirmationModal() {
+
+            $.extend($.jgrid,{
+                showModal : function(h) {
+                    h.w.modal('show');
+                },
+                closeModal : function(h) {
+                    h.w.hide().attr("aria-hidden","true");
+                    if(h.o) {h.o.remove();}
+                },
+                createModal : function(aIDs, content, p, insertSelector, posSelector, appendsel, css) {
+                    p = $.extend(true, {}, $.jgrid.jqModal || {}, p); 
+                    var self = this,
+                        classes = $.jgrid.styleUI[(p.styleUI || 'jQueryUI')].modal,
+                        $modal  = $('<div>', {
+                            class: "modal ",
+                            attr: {
+                                id: aIDs.themodal,
+                                tabIndex: "-1",
+                                role:"dialog",
+                                "aria-labelledby":aIDs.modalhead,
+                                "aria-hidden":"true",
+                                "aria-labelledby": aIDs.themodal + "Label",
+                                "data-keyboard": "false",
+                                "style": "display:none"
+                            }
+                        });
+                    
+                    var $modalDialog = $('<div>', {
+                        class: "modal-dialog",
+                        attr: {
+                            role:"document",    
+                        }
+                    });
+
+                    var $modalContent = $('<div>', {
+                        class: "modal-content"
+                    });
+
+                    var $modalHeader = $('<div>', {
+                        class: "modal-header"
+                    });
+
+                    var $mc = $('<div>',{
+                        class: "ui-jqdialog-content " + classes.content,
+                        attr: {
+                            id: aIDs.modalcontent
+                        }
+                    });
+                    
+                    $modal.append($modalDialog); 
+                    $modalDialog.append($modalContent);
+                    $modalContent.append($modalHeader);
+                    $modalHeader.append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>');
+                    $modalHeader.append('<h4 class="modal-title">' + p.caption + '</h4>');
+                    $modalContent.append($mc);
+                    $mc.append(content);
+                    
+                    $('#pop_space').append($modal);
+                    $(".close",$modalHeader).click(function(){
+                        var oncm = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;
+                        var gboxclose = $("#"+$.jgrid.jqID(aIDs.themodal)).data("gbox") || p.gbox;
+                        self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:gboxclose,jqm:p.jqModal,onClose:oncm, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
+                        return false;
+                    });
+
+                    $('#'+aIDs.themodal).modal({backdrop: "static"});
+
+                    if(p.closeOnEscape === true){
+                        $modal.keydown( function( e ) {
+                            if( e.which === 27 ) {
+                                var cone = $("#"+$.jgrid.jqID(aIDs.themodal)).data("onClose") || p.onClose;
+                                self.hideModal("#"+$.jgrid.jqID(aIDs.themodal),{gb:p.gbox,jqm:p.jqModal,onClose: cone, removemodal: p.removemodal || false, formprop : !p.recreateForm || false, form: p.form || ''});
+                            }
+                        });
+                    }
+                    
+                    if(p.jqModal === undefined) {p.jqModal = true;} // internal use
+  
+                },
+
+                info_dialog : function(caption, content,c_b, modalopt) {
+                    var mopt = {
+                        width:290,
+                        height:'auto',
+                        dataheight: 'auto',
+                        drag: false,
+                        resize: false,
+                        left:250,
+                        top:170,
+                        zIndex : 1000,
+                        jqModal : true,
+                        modal : false,
+                        closeOnEscape : false,
+                        align: 'left',
+                        buttonalign : 'right',
+                        buttons : []
+                    };
+                    $.extend(true, mopt, $.jgrid.jqModal || {}, {caption:caption}, modalopt || {});
+                    
+                    var jm = mopt.jqModal, self = this,
+                    classes = $.jgrid.styleUI[(mopt.styleUI || 'jQueryUI')].modal,
+                    common = $.jgrid.styleUI[(mopt.styleUI || 'jQueryUI')].common;
+                    if($.fn.jqm && !jm) { jm = false; }
+                    // in case there is no jqModal
+                    var buttstr ="", i;
+                    if(mopt.buttons.length > 0) {//nu stiu cand trece pe aici????
+                        for(i=0;i<mopt.buttons.length;i++) {
+                            if(mopt.buttons[i].id === undefined) { mopt.buttons[i].id = "info_button_"+i; }
+                            buttstr += "<a id='"+mopt.buttons[i].id+"' class='fm-button " + common.button+"'>"+mopt.buttons[i].text+"</a>";
+                        }
+                    }
+                    var cn = "text-align:"+mopt.align+";";
+                    var cnt = "<div class='alert-modal-content'><div id='info_id'>";
+                    cnt += "<div id='infocnt' class='alert alert-danger' style='"+cn+"'>"+content+"</div>";
+                    //daca exista custom btns adaug si butoanele in caz ca e unul il pun sau daca sunt mai multe le construiesc mai sus si le pun
+                    cnt += c_b ? "</div></div><div class='modal-footer'><div class='pull-right panel-controls'><a id='closedialog' class='fm-button btn btn-default error-alert-modal-ok " + common.button + "'>"+'OK'+"</a>"+buttstr+"</div></div>" :
+                        buttstr !== ""  ? "</div></div><div class='modal-footer'><div class='pull-right panel-controls'>"+buttstr+"</div>" : "";
+                    cnt += "</div>";
+            
+                    try {
+                        if($("#info_dialog").attr("aria-hidden") === "false") {
+                            $.jgrid.hideModal("#info_dialog",{jqm:jm});
+                        }
+                        _destroyModal();
+                    } catch (e){}
+
+
+                    $.jgrid.createModal({
+                        themodal:'info_dialog',
+                        modalhead:'info_head',
+                        modalcontent:'info_content',
+                        scrollelm: 'infocnt'},
+                        cnt,
+                        mopt,
+                        '','',true
+                    );
+                    // attach onclick after inserting into the dom
+                    if(buttstr) {
+                        $.each(mopt.buttons,function(i){
+                            $("#"+$.jgrid.jqID(this.id),"#info_id").on('click',function(){mopt.buttons[i].onClick.call($("#info_dialog")); return false;});
+                        });
+                    }
+                    $("#closedialog").on('click',function(){
+                        self.hideModal("#info_dialog",{
+                            jqm:jm,
+                            onClose: $("#info_dialog").data("onClose") || mopt.onClose,
+                            gb: $("#info_dialog").data("gbox") || mopt.gbox
+                        });
+                        return false;
+                    });
+
+                    if($.isFunction(mopt.beforeOpen) ) { mopt.beforeOpen(); }
+
+                    $.jgrid.viewModal("#info_dialog",{
+                        onHide: function(h) {
+                            h.w.hide().remove();
+                            if(h.o) { h.o.remove(); }
+                        },
+                        modal :mopt.modal,
+                        jqm:jm
+                    });
+                    if($.isFunction(mopt.afterOpen) ) { mopt.afterOpen(); }
+                    try{ $("#info_dialog").focus();} catch (m){}
+                },
+
+                hideModal : function (selector,o) {
+                    o = $.extend({jqm : true, gb :'', removemodal: false, formprop: false, form : ''}, o || {});
+                    var thisgrid = o.gb && typeof o.gb === "string" && o.gb.substr(0,6) === "#gbox_" ? $("#" + o.gb.substr(6))[0] : false;
+                    if(o.onClose) {
+                        var oncret = thisgrid ? o.onClose.call(thisgrid, selector) : o.onClose(selector);
+                        if (typeof oncret === 'boolean'  && !oncret ) { return; }
+                    }
+                    if( o.formprop && thisgrid  && o.form) {
+                        var fh = $(selector)[0].style.height,
+                        fw = $(selector)[0].style.width;
+                        if(fh.indexOf("px") > -1 ) {
+                            fh = parseFloat(fh);
+                        }
+                        if(fw.indexOf("px") > -1 ) {
+                            fw = parseFloat(fw);
+                        }
+                        var frmgr, frmdata;
+                        if(o.form==='edit'){
+                            frmgr = '#' +$.jgrid.jqID("FrmGrid_"+ o.gb.substr(6));
+                            frmdata = "formProp";
+                        } else if( o.form === 'view') {
+                            frmgr = '#' +$.jgrid.jqID("ViewGrid_"+ o.gb.substr(6));
+                            frmdata = "viewProp";
+                        }
+                        $(thisgrid).data(frmdata, {
+                            top:parseFloat($(selector).css("top")),
+                            left : parseFloat($(selector).css("left")),
+                            width : fw,
+                            height : fh,
+                            dataheight : $(frmgr).height(),
+                            datawidth: $(frmgr).width()
+                        });
+                    }
+
+                    if ($.fn.jqm && o.jqm === true) {
+                        $(selector).modal('hide');
+                        $(selector).attr("aria-hidden","true").jqmHide();
+                    } else {
+                        if(o.gb !== '') {
+                            try {$(".jqgrid-overlay:first",o.gb).hide();} catch (e){}
+                        }
+                        $(selector).attr("aria-hidden","true");
+                        $(selector).modal('hide');
+                    }
+                    if( o.removemodal ) {
+                        $(selector).remove();
+                        _destroyModal();
+                    }
+                },
+
+                checkValues : function(val, valref, customobject, nam) {
+                    var edtrul,i, nm, dft, len, g = this, cm = g.p.colModel,
+                    msg = $.jgrid.getRegional(this, 'edit.msg'), fmtdate,
+                    isNum = function(vn) {
+                        var vn = vn.toString();
+                        if(vn.length >= 2) {
+                            var chkv, dot;
+                            if(vn[0] === "-" ) {
+                                chkv = vn[1];
+                                if(vn[2]) { dot = vn[2];}
+                            } else {
+                                chkv = vn[0];
+                                if(vn[1]) { dot = vn[1];}
+                            }
+                            if( chkv === "0"  && dot !== ".") {
+                                return false; //octal
+                            } 
+                        }
+                        return typeof parseFloat(vn) === 'number' && isFinite(vn); 
+                    };
+            
+                    if(customobject === undefined) {
+                        if(typeof valref==='string'){
+                            for( i =0, len=cm.length;i<len; i++){
+                                if(cm[i].name===valref) {
+                                    edtrul = cm[i].editrules;
+                                    valref = i;
+                                    if(cm[i].formoptions != null) { nm = cm[i].formoptions.label; }
+                                    break;
+                                }
+                            }
+                        } else if(valref >=0) {
+                            edtrul = cm[valref].editrules;
+                        }
+                    } else {
+                        edtrul = customobject;
+                        nm = nam===undefined ? "_" : nam;
+                    }
+                    if(edtrul) {
+                        if(!nm) { nm = g.p.colNames != null ? g.p.colNames[valref] : cm[valref].label; }
+                        if(edtrul.required === true) {
+                            if( $.jgrid.isEmpty(val) )  { return [false,nm.replace("<span class='required-elem'>*</span>", "").trim()+": "+msg.required,""]; }
+                        }
+                        // force required
+                        var rqfield = edtrul.required === false ? false : true;
+                        if(edtrul.number === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                                if(!isNum(val)) { return [false,nm+": "+msg.number,""]; }
+                            }
+                        }
+                        if(edtrul.minValue !== undefined && !isNaN(edtrul.minValue)) {
+                            if (parseFloat(val) < parseFloat(edtrul.minValue) ) { return [false,nm+": "+msg.minValue+" "+edtrul.minValue,""];}
+                        }
+                        if(edtrul.maxValue !== undefined && !isNaN(edtrul.maxValue)) {
+                            if (parseFloat(val) > parseFloat(edtrul.maxValue) ) { return [false,nm+": "+msg.maxValue+" "+edtrul.maxValue,""];}
+                        }
+                        var filter;
+                        if(edtrul.email === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                            // taken from $ Validate plugin
+                                filter = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i;
+                                if(!filter.test(val)) {return [false,nm+": "+msg.email,""];}
+                            }
+                        }
+                        if(edtrul.integer === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                                if(!isNum(val)) { return [false,nm+": "+msg.integer,""]; }
+                                if ((val % 1 !== 0) || (val.indexOf('.') !== -1)) { return [false,nm+": "+msg.integer,""];}
+                            }
+                        }
+                        if(edtrul.date === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                                if(cm[valref].formatoptions && cm[valref].formatoptions.newformat) {
+                                    dft = cm[valref].formatoptions.newformat;
+                                    fmtdate = $.jgrid.getRegional(g, 'formatter.date.masks');
+                                    if(fmtdate && fmtdate.hasOwnProperty(dft) ) {
+                                        dft = fmtdate[dft];
+                                    }
+                                } else {
+                                    dft = cm[valref].datefmt || "Y-m-d";
+                                }
+                                if(!$.jgrid.checkDate (dft, val)) { return [false,nm+": "+msg.date+" - "+dft,""]; }
+                            }
+                        }
+                        if(edtrul.time === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                                if(!$.jgrid.checkTime (val)) { return [false,nm+": "+msg.date+" - hh:mm (am/pm)",""]; }
+                            }
+                        }
+                        if(edtrul.url === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                                filter = /^(((https?)|(ftp)):\/\/([\-\w]+\.)+\w{2,3}(\/[%\-\w]+(\.\w{2,})?)*(([\w\-\.\?\\\/+@&#;`~=%!]*)(\.\w{2,})?)*\/?)/i;
+                                if(!filter.test(val)) {return [false,nm+": "+msg.url,""];}
+                            }
+                        }
+                        if(edtrul.custom === true) {
+                            if( !(rqfield === false && $.jgrid.isEmpty(val)) ) {
+                                if($.isFunction(edtrul.custom_func)) {
+                                    var ret = edtrul.custom_func.call(g,val,nm,valref);
+                                    return $.isArray(ret) ? ret : [false,msg.customarray,""];
+                                }
+                                return [false,msg.customfcheck,""];
+                            }
+                        }
+                    }
+                    return [true,"",""];
+                }
+            })  
+        }
+
+        function _destroyModal(){
+            $('.modal-backdrop').remove();
+            $('body').removeClass('modal-open');
+            $('body').css({'padding-right':'0px'});
+            $( window ).trigger('resize');
         }
 
         function _initCustomColumnChooser() {
@@ -682,7 +1016,7 @@
                             icon_base : "fa",
                             overlay: "ui-overlay",
                             active : "active",
-                            error : "bg-danger",
+                            error : "alert alert-danger",
                             button : "btn btn-default",
                             content : ""
                         },
@@ -739,12 +1073,12 @@
                         },
                         formedit : {
                             inputClass : "form-control",
-                            icon_prev : "fa-step-backward",
-                            icon_next : "fa-step-forward",
-                            icon_save : "fa-check-circle",
-                            icon_close : "fa-remove",
-                            icon_del : "fa-trash",
-                            icon_cancel : "fa-remove"
+                            icon_prev : "fa fa-chevron-left",
+                            icon_next : "fa fa-chevron-right",
+                            icon_save : "",
+                            icon_close : "",
+                            icon_del : "",
+                            icon_cancel : ""
                         },
                         navigator : {
                             icon_edit_nav : "fa-pencil",
@@ -798,7 +1132,7 @@
                             icon_base : "fa",
                             overlay: "ui-overlay",
                             active : "active",
-                            error : "bg-danger",
+                            error : "alert alert-danger",
                             button : "btn btn-default",
                             content : ""
                         },
@@ -855,12 +1189,12 @@
                         },
                         formedit : {
                             inputClass : "form-control",
-                            icon_prev : "fa-step-backward",
-                            icon_next : "fa-step-forward",
-                            icon_save : "fa-check-circle",
-                            icon_close : "fa-remove",
-                            icon_del : "fa-trash",
-                            icon_cancel : "fa-remove"
+                            icon_prev : "fa fa-chevron-left",
+                            icon_next : "fa fa-chevron-right",
+                            icon_save : "",
+                            icon_close : "",
+                            icon_del : "",
+                            icon_cancel : ""
                         },
                         navigator : {
                             icon_edit_nav : "fa-pencil",
@@ -913,6 +1247,9 @@
             }
             if(gridOpts.useCustomColumnChooser) {
                 _initCustomColumnChooser();
+            }
+            if(gridOpts.useCustomConfirmationModal) {
+                _initCustomConfirmationModal();
             }
             if(gridOpts.useAutocompleteRow) {
                 $($this.grid).parents('.ui-jqgrid-bdiv:first').addClass('reset-overflow');
@@ -994,5 +1331,92 @@
     window.PhotonJqGrid = PhotonJqGrid;
     window.photonAddGridError = photonAddGridError;
     window.photonResizeGrid = photonResizeGrid;
+
+    //---- Override formaters
+    $.fn.fmatter.rowactions = function(act) {
+		var $tr = $(this).closest("tr.jqgrow"),
+			rid = $tr.attr("id"),
+			$id = $(this).closest("table.ui-jqgrid-btable").attr('id').replace(/_frozen([^_]*)$/,'$1'),
+			$grid = $("#"+$id),
+			$t = $grid[0],
+			p = $t.p,
+			cm = p.colModel[$.jgrid.getCellIndex(this)],
+			$actionsDiv = cm.frozen ? $("tr#"+rid+" td:eq("+$.jgrid.getCellIndex(this)+") > div",$grid) :$(this).parent(),
+			op = {
+				extraparam: {}
+			},
+			saverow = function(rowid, res) {
+				if($.isFunction(op.afterSave)) { op.afterSave.call($t, rowid, res); }
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+			},
+			restorerow = function(rowid) {
+				if($.isFunction(op.afterRestore)) { op.afterRestore.call($t, rowid); }
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+			};
+
+		if (cm.formatoptions !== undefined) {
+			// Deep clone before copying over to op, to avoid creating unintentional references.
+			// Otherwise, the assignment of op.extraparam[p.prmNames.oper] below may persist into the colModel config.
+			var formatoptionsClone = $.extend(true, {}, cm.formatoptions);
+			op = $.extend(op, formatoptionsClone);
+		}
+		if (p.editOptions !== undefined) {
+			op.editOptions = p.editOptions;
+		}
+		if (p.delOptions !== undefined) {
+			op.delOptions = p.delOptions;
+		}
+		if ($tr.hasClass("jqgrid-new-row")){
+			op.extraparam[p.prmNames.oper] = p.prmNames.addoper;
+		}
+		var actop = {
+			keys: op.keys,
+			oneditfunc: op.onEdit,
+			successfunc: op.onSuccess,
+			url: op.url,
+			extraparam: op.extraparam,
+			aftersavefunc: saverow,
+			errorfunc: op.onError,
+			afterrestorefunc: restorerow,
+			restoreAfterError: op.restoreAfterError,
+			mtype: op.mtype
+		};
+		switch(act)
+		{
+			case 'edit':
+				$grid.jqGrid('editRow', rid, actop);
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").hide();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").show();
+                $grid.triggerHandler("jqGridAfterGridComplete");
+                $grid.triggerHandler("photonJqGridAfterRowEdit", rid);
+				break;
+			case 'save':
+				if ($grid.jqGrid('saveRow', rid, actop)) {
+					$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+					$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+                    $grid.triggerHandler("jqGridAfterGridComplete");
+                    $grid.triggerHandler("photonJqGridAfterRowSave", rid);
+				}
+				break;
+			case 'cancel' :
+				$grid.jqGrid('restoreRow', rid, restorerow);
+				$actionsDiv.find("div.ui-inline-edit,div.ui-inline-del").show();
+				$actionsDiv.find("div.ui-inline-save,div.ui-inline-cancel").hide();
+                $grid.triggerHandler("jqGridAfterGridComplete");
+                $grid.triggerHandler("photonJqGridAfterRowCancel",rid);
+				break;
+			case 'del':
+                $grid.jqGrid('delGridRow', rid, op.delOptions);
+                $grid.triggerHandler("photonJqGridBeforeRowDelete", rid);
+				break;
+			case 'formedit':
+				$grid.jqGrid('setSelection', rid);
+                $grid.jqGrid('editGridRow', rid, op.editOptions);
+                $grid.triggerHandler("photonJqGridAfterFormEdit", rid);
+				break;
+		}
+	};
 
 }(window, jQuery));
