@@ -1413,7 +1413,7 @@ var Util = (function ($) {
   // =========================
 
   var backdrop = '.dropdown-backdrop'
-  var toggle   = '[data-toggle="dropdown"]'
+  var toggle = '[data-toggle="dropdown"]'
   var Dropdown = function (element) {
     $(element).on('click.bs.dropdown', this.toggle)
   }
@@ -1437,8 +1437,8 @@ var Util = (function ($) {
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
-      var $this         = $(this)
-      var $parent       = getParent($this)
+      var $this = $(this)
+      var $parent = getParent($this)
       var relatedTarget = { relatedTarget: this }
 
       if (!$parent.hasClass('open')) return
@@ -1459,7 +1459,7 @@ var Util = (function ($) {
 
     if ($this.is('.disabled, :disabled')) return
 
-    var $parent  = getParent($this)
+    var $parent = getParent($this)
     var isActive = $parent.hasClass('open')
 
     clearMenus()
@@ -1500,7 +1500,7 @@ var Util = (function ($) {
 
     if ($this.is('.disabled, :disabled')) return
 
-    var $parent  = getParent($this)
+    var $parent = getParent($this)
     var isActive = $parent.hasClass('open')
 
     if (!isActive && e.which != 27 || isActive && e.which == 27) {
@@ -1515,9 +1515,9 @@ var Util = (function ($) {
 
     var index = $items.index(e.target)
 
-    if (e.which == 38 && index > 0)                 index--         // up
+    if (e.which == 38 && index > 0) index--         // up
     if (e.which == 40 && index < $items.length - 1) index++         // down
-    if (!~index)                                    index = 0
+    if (!~index) index = 0
 
     $items.eq(index).trigger('focus')
   }
@@ -1529,7 +1529,7 @@ var Util = (function ($) {
   function Plugin(option) {
     return this.each(function () {
       var $this = $(this)
-      var data  = $this.data('bs.dropdown')
+      var data = $this.data('bs.dropdown')
 
       if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
       if (typeof option == 'string') data[option].call($this)
@@ -1538,7 +1538,7 @@ var Util = (function ($) {
 
   var old = $.fn.dropdown
 
-  $.fn.dropdown             = Plugin
+  $.fn.dropdown = Plugin
   $.fn.dropdown.Constructor = Dropdown
 
 
@@ -1552,11 +1552,20 @@ var Util = (function ($) {
 
 
   // MENU CLOSES MOBILE BUG FIXED
-  function closeDropdown () {
-    if($(".navbar-collapse").hasClass('in'))
-        $('.navbar-collapse').collapse('hide')
-    alert('helloooooo');
-  }
+  // function closeDropdown () {
+  //   if($(".navbar-collapse").hasClass('in'))
+  //       $('.navbar-collapse').collapse('hide')
+  //   alert('helloooooo');
+  // }
+  $("#main-container").click(function (e) { // When any `div.container` is clicked
+    alert('ana');
+    // if (!$(this).parents().hasClass("navbar")) { // to check if it's not the menu links that are clicked
+    //   if ($('.nav-collapse').hasClass('in')) { //if the navbar is open (we only want to close it when it is open or else it causes a glitch when you first click outside)
+    //     $('.nav-collapse').collapse('hide'); //hide the navbar
+    //   }
+    //   console.log('sdsdsd');
+    // }
+  });
 
   // APPLY TO STANDARD DROPDOWN ELEMENTS
   // ===================================
@@ -1567,7 +1576,7 @@ var Util = (function ($) {
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
-    .on('click', ':not(.dropdown-toggle)', closeDropdown)
+  // .on('click', ':not(.dropdown-toggle)', closeDropdown)
 
 }(jQuery);
 
