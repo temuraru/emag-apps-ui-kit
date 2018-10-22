@@ -1239,13 +1239,13 @@
             sortable: true,
             colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
             colModel: [
-                { name: 'id',           index: 'id',       key: true, hidden: true,   width: "20" },
-                { name: 'firstname',    index: 'firstname',       width: "100" },
-                { name: 'lastname',     index: 'lastname' },
-                { name: 'username',     index: 'username' },
-                { name: 'jobtype',      index: 'jobtype' },
-                { name: 'codename',     index: 'codename' },
-                { name: 'spirit_animal',index: 'spirit_animal' }
+                { name: 'id',           index: 'id',       key: true, hidden: true,   width: "20", sortable:false},
+                { name: 'firstname',    index: 'firstname',       width: "100", sortable:false },
+                { name: 'lastname',     index: 'lastname', sortable:false },
+                { name: 'username',     index: 'username', sortable:false },
+                { name: 'jobtype',      index: 'jobtype', sortable:false },
+                { name: 'codename',     index: 'codename', sortable:false },
+                { name: 'spirit_animal',index: 'spirit_animal', sortable:false }
             ],
             loadComplete: function(){
                 //remove border
