@@ -152,10 +152,11 @@
   }
 
 
-  // DROPDOWN MOBILE BUG FIXED
+  // MENU CLOSES MOBILE BUG FIXED
   function closeDropdown () {
     if($(".navbar-collapse").hasClass('in'))
         $('.navbar-collapse').collapse('hide')
+    alert('helloooooo');
   }
 
   // APPLY TO STANDARD DROPDOWN ELEMENTS
