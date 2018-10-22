@@ -153,20 +153,13 @@
 
 
   // MENU CLOSES MOBILE BUG FIXED
-  function closeDropdown (e) {
+  $("#main-container").click(function (e) { // When any `div.container` is clicked
     if (!$(this).parents().hasClass("navbar")) { // to check if it's not the menu links that are clicked
       if ($('.navbar-collapse').hasClass('in')) { //if the navbar is open (we only want to close it when it is open or else it causes a glitch when you first click outside)
         $('.navbar-collapse').collapse('hide'); //hide the navbar
       }
     }
-  }
-  // $("#main-container").click(function (e) { // When any `div.container` is clicked
-  //   if (!$(this).parents().hasClass("navbar")) { // to check if it's not the menu links that are clicked
-  //     if ($('.navbar-collapse').hasClass('in')) { //if the navbar is open (we only want to close it when it is open or else it causes a glitch when you first click outside)
-  //       $('.navbar-collapse').collapse('hide'); //hide the navbar
-  //     }
-  //   }
-  // });
+  });
 
   // APPLY TO STANDARD DROPDOWN ELEMENTS
   // ===================================
@@ -177,7 +170,6 @@
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
-    .on('click', closeDropdown)
 
 }(jQuery);
 
