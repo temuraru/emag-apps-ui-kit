@@ -1549,17 +1549,17 @@
                     $this.find('tr').find('td:visible:last').css({'border-right': '0'});
                 })
                 //add next line if you use styleUI : 'fontAwesomeNoBorder'
-                $("#grid_table_with_hierarchy").find('tr:visible:last').addClass('border-bottom-0');
+                $("#grid_table_with_hierarchy_and_no_border").find('tr:visible:last').addClass('border-bottom-0');
                 
             },
             //add next line if you use formatter: PhotonDataFormatter.actionsButtons with dropdown buttons
             gridComplete: function() {
-                addMoreActions('#grid_table_with_hierarchy');
-                $('#grid_table_with_hierarchy .label-with-tooltip').tooltip();
+                addMoreActions('#grid_table_with_hierarchy_and_no_border');
+                $('#grid_table_with_hierarchy_and_no_border .label-with-tooltip').tooltip();
             },
             //add next line if you use styleUI : 'fontAwesomeNoBorder'
             onSortCol: function (index, columnIndex, sortOrder) {
-                $("#grid_table_with_hierarchy").find('tr').removeClass('border-bottom-0');
+                $("#grid_table_with_hierarchy_and_no_border").find('tr').removeClass('border-bottom-0');
             },
             autowidth: true,
             viewrecords: false,
@@ -1582,15 +1582,15 @@
     });
 
     //add next line if you use styleUI : 'fontAwesomeNoBorder'
-    $("#grid_table_with_hierarchy").on('jqGridBeforeExpandTreeGridNode',function(options,rowId){
+    $("#grid_table_with_hierarchy_and_no_border").on('jqGridBeforeExpandTreeGridNode',function(options,rowId){
         $this = $(this);
         $this.find('tr#' + rowId).removeClass('border-bottom-0');
-        $("#grid_table_with_hierarchy").find('tr:visible:last').addClass('border-bottom-0');
+        $("#grid_table_with_hierarchy_and_no_border").find('tr:visible:last').addClass('border-bottom-0');
     });
 
     //add next line if you use styleUI : 'fontAwesomeNoBorder'
-    $("#grid_table_with_hierarchy").on('jqGridAfterCollapseTreeGridNode',function(options,rowId){
-        $("#grid_table_with_hierarchy").find('tr:visible:last').addClass('border-bottom-0');
+    $("#grid_table_with_hierarchy_and_no_border").on('jqGridAfterCollapseTreeGridNode',function(options,rowId){
+        $("#grid_table_with_hierarchy_and_no_border").find('tr:visible:last').addClass('border-bottom-0');
     });
     
 </script>
