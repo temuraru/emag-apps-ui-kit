@@ -412,428 +412,413 @@ eMAG Apps UI KIT/
 <!-- BOTTOM SCRIPTS:Start -->
 <script type="text/javascript">
     var sidebar = {
+        withExpandCollapseButton: false,
         menuItems: [
             {
-                'title': 'Start',
-                'href': 'javascript:void(0)',
-                'data-href': '/emag-apps-ui-kit/demo/index.html',
                 'icon': 'fa-flag-checkered',
-                'keywords': '',
+                'title': 'Getting started',
+                'href': '/emag-apps-ui-kit/demo/index.html#overview',
+                'keywords': ''
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Add form example',
+                'href': '/emag-apps-ui-kit/demo/add_form_example.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Alerts and notifications',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-alerts-and-notifications'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Block UI',
+                'href': '/emag-apps-ui-kit/demo/js_components.html#js-block-ui'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Blank page',
+                'href': '/emag-apps-ui-kit/demo/blank_page.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Boilerplate',
+                'href': '/emag-apps-ui-kit/demo/layout.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Buttons',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#buttons'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Charts',
+                'href': '/emag-apps-ui-kit/demo/plugin_stats.html#charts'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Chosen.js autocomplete',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsChosenJsAutocomplete'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Color scheme',
+                'href': '/emag-apps-ui-kit/demo/branding.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'CSS Flipswitch',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-flipswitch'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Custom notifications (Growl)',
+                'href': '/emag-apps-ui-kit/demo/js_components.html#js-custom-notifications'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Data formatters',
+                'href': '/emag-apps-ui-kit/demo/plugin_data_formatters.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Date & Time',
+                'href': '/emag-apps-ui-kit/demo/plugin_datetime.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Descriptions',
+                'href': '/emag-apps-ui-kit/demo/typography.html#descriptions'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Email template',
+                'href': '/emag-apps-ui-kit/demo/email_template.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Embeds',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-embeds'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Error pages',
+                'href': 'javascript:void(0)',
                 'children': [
                     {
-                        'title': 'Overview',
-                        'href': '/emag-apps-ui-kit/demo/index.html#overview',
-                        'keywords': ''
+                        'title': '404',
+                        'href': '/emag-apps-ui-kit/demo/err_404.html'
                     },
                     {
-                        'title': 'Getting started',
-                        'href': '/emag-apps-ui-kit/demo/index.html#getting-started',
-                        'keywords': ''
+                        'title': '503',
+                        'href': '/emag-apps-ui-kit/demo/err_503.html'
+                    },
+                    {
+                        'title': 'Logged out',
+                        'href': '/emag-apps-ui-kit/demo/err_logged_out.html'
                     }
                 ]
             },
             {
-                'title': 'Layout',
+                'icon': 'fa-none',
+                'title': 'Fancytree',
+                'href': '/emag-apps-ui-kit/demo/plugin_fancytree.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'File upload',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsFileUpload'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Footer',
+                'href': '/emag-apps-ui-kit/demo/layout.html#main-footer'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Forms',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#basic-forms'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Grid Layout',
+                'href': '/emag-apps-ui-kit/demo/layout.html#grid-layout'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Helper classes',
+                'href': '/emag-apps-ui-kit/demo/helper_classes.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Hierarchical select',
+                'href': '/emag-apps-ui-kit/demo/plugin_hierarchicalselect.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Icons & flags',
+                'href': '/emag-apps-ui-kit/demo/branding.html#icons'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'IntroJS',
+                'href': '/emag-apps-ui-kit/demo/plugin_introjs.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Image gallery',
+                'href': '/emag-apps-ui-kit/demo/image_gallery.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'jQGrid',
                 'href': 'javascript:void(0)',
-                'data-href': '/emag-apps-ui-kit/demo/layout.html',
-                'icon': 'fa-columns',
-                'keywords': '',
                 'children': [
                     {
-                        'title': 'Boilerplate',
-                        'href': '/emag-apps-ui-kit/demo/layout.html'
+                        'title': 'Basic',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html'
                     },
                     {
-                        'title': 'Top Navigation',
-                        'href': '/emag-apps-ui-kit/demo/layout.html#top-navigation'
+                        'title': 'Add new row programatically',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-add-new-row-programatically'
                     },
                     {
-                        'title': 'Sidebar',
-                        'href': '/emag-apps-ui-kit/demo/layout.html#main-sidebar'
+                        'title': 'With sticky panels',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-sticky-panels'
                     },
                     {
-                        'title': 'Footer',
-                        'href': '/emag-apps-ui-kit/demo/layout.html#main-footer'
+                        'title': 'With column chooser',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser'
                     },
                     {
-                        'title': 'Grid Layout',
-                        'href': '/emag-apps-ui-kit/demo/layout.html#grid-layout'
+                        'title': 'jqGrid with no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-no-border'
                     },
                     {
-                        'title': 'Helper classes',
-                        'href': '/emag-apps-ui-kit/demo/helper_classes.html'
+                        'title': 'With selectable rows',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows'
+                    },
+                    {
+                        'title': 'With hierarchical elements (Tree)',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-hierarchical-elements-tree'
+                    },
+                    {
+                        'title': 'With subgrid',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid'
+                    },
+                    {
+                        'title': 'With subgrid and no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid-and-no-border'
+                    },
+                    {
+                        'title': 'With inline editing',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-inline-editing'
+                    },
+                    {
+                        'title': 'With actions',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-actions'
+                    },
+                    {
+                        'title': 'With no data',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-no-data'
+                    },
+                    {
+                        'title': 'With data formatters',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-data-formatters'
+                    },
+                    {
+                        'title': 'With lot of columns and data formatters',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-lot-of-columns-and-data-formatters'
                     }
                 ]
             },
             {
-                'title': 'Branding',
+                'icon': 'fa-none',
+                'title': 'jQuery UI autocomplete',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUIAutocomplete'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'jQuery UI numeric input (Spinner)',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryNumericInput'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'jQuery UI sliders',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUISliders'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Labels and badges',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-labels-and-badges'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Log In & Sign Up',
+                'href': '/emag-apps-ui-kit/demo/authentication.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Masked inputs',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Modals',
+                'href': '/emag-apps-ui-kit/demo/js_components.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Navigation themes',
+                'href': '/emag-apps-ui-kit/demo/branding.html#navigationThemes'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Page header',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-page-header'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Panels',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-panels'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Plugins versions',
+                'href': '/emag-apps-ui-kit/demo/plugins_versions.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Popovers',
+                'href': '/emag-apps-ui-kit/demo/js_components.html#js-popovers'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Progress Bars',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-progressbars'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Sidebar',
+                'href': '/emag-apps-ui-kit/demo/layout.html#main-sidebar'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Selectize tag input',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsSelectizeTagInput'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Sortable',
+                'href': '/emag-apps-ui-kit/demo/sortable.html'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Tables',
+                'href': '/emag-apps-ui-kit/demo/css_components.html#css-tables'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Tabs',
+                'href': '/emag-apps-ui-kit/demo/js_components.html#js-tabs'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Textarea with input limiter',
+                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsTextareaWithInputLimiter'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Tooltips',
+                'href': '/emag-apps-ui-kit/demo/js_components.html#js-tooltips'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Top Navigation',
+                'href': '/emag-apps-ui-kit/demo/layout.html#top-navigation'
+            },
+            {
+                'icon': 'fa-none',
+                'title': 'Typography',
                 'href': 'javascript:void(0)',
-                'data-href': '/emag-apps-ui-kit/demo/branding.html',
-                'icon': 'fa-paint-brush',
-                'keywords': '',
                 'children': [
                     {
-                        'title': 'Color scheme',
-                        'href': '/emag-apps-ui-kit/demo/branding.html'
+                        'title': 'Address example',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#address-example'
                     },
                     {
-                        'title': 'Navigation themes',
-                        'href': '/emag-apps-ui-kit/demo/branding.html#navigationThemes'
+                        'title': 'Alignment classes',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#alignment-classes'
                     },
                     {
-                        'title': 'Typography',
-                        'href': 'javascript:void(0)',
-                        'children': [
-                            {
-                                'title': 'Typefaces',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#typefaces'
-                            },
-                            {
-                                'title': 'Headings and paragraphs',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#headings-and-paragraphs'
-                            },
-                            {
-                                'title': 'Utility tags',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#utility-tags'
-                            },
-                            {
-                                'title': 'Alignment classes',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#alignment-classes'
-                            },
-                            {
-                                'title': 'Address example',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#address-example'
-                            },
-                            {
-                                'title': 'Contextual classes',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#contextual-classes'
-                            },
-                            {
-                                'title': 'Text case and capitalization',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#text-case-and-capitalization'
-                            },
-                            {
-                                'title': 'Block quotes',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#block-quotes'
-                            },
-                            {
-                                'title': 'Print',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#print'
-                            },
-                            {
-                                'title': 'Simple preformatted block',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#simple-preformatted-block'
-                            },
-                            {
-                                'title': 'Variables',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#variables'
-                            },
-                            {
-                                'title': 'Sample output',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#sample-output'
-                            },
-                            {
-                                'title': 'Descriptions',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#descriptions'
-                            },
-                            {
-                                'title': 'Horizontal descriptions',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#horizontal-descriptions'
-                            },
-                            {
-                                'title': 'Unordered lists',
-                                'href': '/emag-apps-ui-kit/demo/typography.html#unordered-list'
-                            }
-                        ]
+                        'title': 'Block quotes',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#block-quotes'
                     },
                     {
-                        'title': 'Icons & flags',
-                        'href': '/emag-apps-ui-kit/demo/branding.html#icons'
+                        'title': 'Contextual classes',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#contextual-classes'
+                    },
+                    {
+                        'title': 'Headings and paragraphs',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#headings-and-paragraphs'
+                    },
+                    {
+                        'title': 'Horizontal descriptions',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#horizontal-descriptions'
+                    },
+                    {
+                        'title': 'Print',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#print'
+                    },
+                    {
+                        'title': 'Sample output',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#sample-output'
+                    },
+                    {
+                        'title': 'Simple preformatted block',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#simple-preformatted-block'
+                    },
+                    {
+                        'title': 'Text case and capitalization',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#text-case-and-capitalization'
+                    },
+                    {
+                        'title': 'Typefaces',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#typefaces'
+                    },
+                    {
+                        'title': 'Unordered lists',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#unordered-list'
+                    },
+                    {
+                        'title': 'Utility tags',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#utility-tags'
+                    },
+                    {
+                        'title': 'Variables',
+                        'href': '/emag-apps-ui-kit/demo/typography.html#variables'
                     }
                 ]
             },
             {
-                'title': 'CSS Components',
-                'href': 'javascript:void(0)',
-                'data-href': '/emag-apps-ui-kit/demo/css_components.html',
-                'icon': 'fa-archive',
-                'keywords': '',
-                'children': [
-                    {
-                        'title': 'Tables',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-tables'
-                    },
-                    {
-                        'title': 'Forms',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#basic-forms'
-                    },
-                    {
-                        'title': 'Buttons',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#buttons'
-                    },
-                    {
-                        'title': 'CSS Flipswitch',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-flipswitch'
-                    },
-                    {
-                        'title': 'Labels and badges',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-labels-and-badges'
-                    },
-                    {
-                        'title': 'Alerts and notifications',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-alerts-and-notifications'
-                    },
-                    {
-                        'title': 'Progress Bars',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-progressbars'
-                    },
-                    {
-                        'title': 'Panels',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-panels'
-                    },
-                    {
-                        'title': 'Page header',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-page-header'
-                    },
-                    {
-                        'title': 'Embeds',
-                        'href': '/emag-apps-ui-kit/demo/css_components.html#css-embeds'
-                    }
-                ]
+                'icon': 'fa-none',
+                'title': 'Utilities',
+                'href': '/emag-apps-ui-kit/demo/js_components.html#js-utilities'
             },
             {
-                'title': 'JS Components',
-                'href': 'javascript:void(0)',
-                'data-href': '/emag-apps-ui-kit/demo/js_components.html',
-                'icon': 'fa-code',
-                'keywords': '',
-                'children': [
-                    {
-                        'title': 'Complex form elements',
-                        'href': 'javascript:void(0)',
-                        'children': [
-                            {
-                                'title': 'Masked inputs',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html'
-                            },
-                            {
-                                'title': 'Textarea with input limiter',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsTextareaWithInputLimiter'
-                            },
-                            {
-                                'title': 'File upload',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsFileUpload'
-                            },
-                            {
-                                'title': 'Selectize tag input',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsSelectizeTagInput'
-                            },
-                            {
-                                'title': 'jQuery UI autocomplete',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUIAutocomplete'
-                            },
-                            {
-                                'title': 'jQuery UI sliders',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryUISliders'
-                            },
-                            {
-                                'title': 'jQuery UI numeric input (Spinner)',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsJQueryNumericInput'
-                            },
-                            {
-                                'title': 'Chosen.js autocomplete',
-                                'href': '/emag-apps-ui-kit/demo/js_complex_form_elements.html#jsChosenJsAutocomplete'
-                            }
-                        ]
-                    },
-                    {
-                        'title': 'jQGrid',
-                        'href': 'javascript:void(0)',
-                        'children': [
-                            {
-                                'title': 'Basic',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html'
-                            },
-                            {
-                                'title': 'Add new row programatically',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-add-new-row-programatically'
-                            },
-                            {
-                                'title': 'With sticky panels',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-sticky-panels'
-                            },
-                            {
-                                'title': 'With column chooser',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser'
-                            },
-                            {
-                                'title': 'With selectable rows',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows'
-                            },
-                            {
-                                'title': 'With hierarchical elements (Tree)',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-hierarchical-elements-tree'
-                            },
-                            {
-                                'title': 'With subgrid',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid'
-                            },
-                            {
-                                'title': 'With inline editing',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-inline-editing'
-                            },
-                            {
-                                'title': 'With actions',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-actions'
-                            },
-                            {
-                                'title': 'With no data',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-no-data'
-                            },
-                            {
-                                'title': 'With data formatters',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-data-formatters'
-                            },
-                            {
-                                'title': 'With lot of columns and data formatters',
-                                'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-lot-of-columns-and-data-formatters'
-                            }
-                        ]
-                    },
-                    {
-                        'title': 'Modals',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html'
-                    },
-                    {
-                        'title': 'Custom notifications (Growl)',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html#js-custom-notifications'
-                    },
-                    {
-                        'title': 'Tooltips',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html#js-tooltips'
-                    },
-                    {
-                        'title': 'Popovers',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html#js-popovers'
-                    },
-                    {
-                        'title': 'Tabs',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html#js-tabs'
-                    },
-                    {
-                        'title': 'Utilities',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html#js-utilities'
-                    },
-                    {
-                        'title': 'Block UI',
-                        'href': '/emag-apps-ui-kit/demo/js_components.html#js-block-ui'
-                    },
-                    {
-                        'title': 'Date & Time',
-                        'href': '/emag-apps-ui-kit/demo/plugin_datetime.html'
-                    },
-                    {
-                        'title': 'Data formatters',
-                        'href': '/emag-apps-ui-kit/demo/plugin_data_formatters.html'
-                    },
-                    {
-                        'title': 'Fancytree',
-                        'href': '/emag-apps-ui-kit/demo/plugin_fancytree.html'
-                    },
-                    {
-                        'title': 'Hierarchical select',
-                        'href': '/emag-apps-ui-kit/demo/plugin_hierarchicalselect.html'
-                    },
-                    {
-                        'title': 'IntroJS',
-                        'href': '/emag-apps-ui-kit/demo/plugin_introjs.html'
-                    },
-                    {
-                        'title': 'Image gallery',
-                        'href': '/emag-apps-ui-kit/demo/image_gallery.html'
-                    },
-                    {
-                        'title': 'Wysiwyg editor',
-                        'href': '/emag-apps-ui-kit/demo/plugin_wysiwyg.html'
-                    },
-                    {
-                        'title': 'Sortable',
-                        'href': '/emag-apps-ui-kit/demo/sortable.html'
-                    },
-                    {
-                        'title': 'Stats',
-                        'href': 'javascript:void(0)',
-                        'children': [
-                            {
-                                'title': 'Value box',
-                                'href': '/emag-apps-ui-kit/demo/plugin_stats.html'
-                            },
-                            {
-                                'title': 'Charts',
-                                'href': '/emag-apps-ui-kit/demo/plugin_stats.html#charts'
-                            }
-                        ]
-                    }
-                ]
+                'icon': 'fa-none',
+                'title': 'Value box',
+                'href': '/emag-apps-ui-kit/demo/plugin_stats.html'
             },
             {
-                'title': 'Useful Pages',
-                'href': 'javascript:void(0)',
-                'data-href': '',
-                'icon': 'fa-star',
-                'keywords': '',
-                'children': [
-                    {
-                        'title': 'Log In & Sign Up',
-                        'href': '/emag-apps-ui-kit/demo/authentication.html'
-                    },
-                    {
-                        'title': 'Error pages',
-                        'href': 'javascript:void(0)',
-                        'children': [
-                            {
-                                'title': '404',
-                                'href': '/emag-apps-ui-kit/demo/err_404.html'
-                            },
-                            {
-                                'title': '503',
-                                'href': '/emag-apps-ui-kit/demo/err_503.html'
-                            },
-                            {
-                                'title': 'Logged out',
-                                'href': '/emag-apps-ui-kit/demo/err_logged_out.html'
-                            }
-                        ]
-                    },
-                    {
-                        'title': 'Add form example',
-                        'href': '/emag-apps-ui-kit/demo/add_form_example.html'
-                    },
-                    {
-                        'title': 'Blank page',
-                        'href': '/emag-apps-ui-kit/demo/blank_page.html'
-                    },
-                    {
-                        'title': 'Email template',
-                        'href': '/emag-apps-ui-kit/demo/email_template.html'
-                    },
-                    {
-                        'title': 'Wizard',
-                        'href': '/emag-apps-ui-kit/demo/plugin_wizard.html'
-                    }
-                ]
+                'icon': 'fa-none',
+                'title': 'Wysiwyg editor',
+                'href': '/emag-apps-ui-kit/demo/plugin_wysiwyg.html'
             },
             {
-                'title': 'Technical details',
-                'href': 'javascript:void(0)',
-                'data-href': '',
-                'icon': 'fa-cog',
-                'children': [
-                    {
-                        'title': 'Plugins versions',
-                        'href': '/emag-apps-ui-kit/demo/plugins_versions.html'
-                    }
-                ]
+                'icon': 'fa-none',
+                'title': 'Wizard',
+                'href': '/emag-apps-ui-kit/demo/plugin_wizard.html'
             }
         ]
     };

@@ -63,7 +63,7 @@ $.jgrid.regional["en"] = {
 	edit : {
 		addCaption: "Add Record",
 		editCaption: "Edit Record",
-		bSubmit: "Submit",
+		bSubmit: "Save",
 		bCancel: "Cancel",
 		bClose: "Close",
 		saveData: "Data has been changed! Save changes?",

@@ -179,6 +179,10 @@
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-column-chooser'
                     },
                     {
+                        'title': 'jqGrid with no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-no-border'
+                    },
+                    {
                         'title': 'With selectable rows',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-selectable-rows'
                     },
@@ -189,6 +193,10 @@
                     {
                         'title': 'With subgrid',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-subgrid'
+                    },
+                    {
+                        'title': 'With subgrid and no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.php#jqGrid-with-subgrid-and-no-border'
                     },
                     {
                         'title': 'With inline editing',
