@@ -3,6 +3,7 @@
 <head>
         <title>jQGrid - eMAG Apps UI KIT</title>
         <?php include_once "modules/_mod_meta.php" ?>
+
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
         <?php include_once "modules/_mod_top_include.php" ?>
@@ -134,12 +135,13 @@
                                         <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_add_new_row_programatically_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
                                             <div class="pad-top-20 pad-btm-20">
                                                 <button type="button" class="btn btn-primary btn-sm add-new-row">Add new row</button>
+                                                <button type="button" class="btn btn-primary btn-sm add-new-row-with-modal">Add new row with modal</button>
+                                                <!--<button type="button" class="btn btn-primary btn-sm edit-row-with-modal">Edit row with modal</button>-->
+                                                <!--<button type="button" class="btn btn-primary btn-sm search-with-modal">Search with modal</button>-->
                                             </div>
 
                                             <table id="grid_table_add_new_row_programatically" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_add_new_row_programatically"></div>
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -467,6 +469,49 @@
                                 </div>
                             </div>
 
+                            <a href="#" name="jqGrid-with-subgrid-and-no-border" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with subgrid and no border</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jq_with_subgrid_and_no_border" aria-expanded="false" aria-controls="jq_with_subgrid_and_no_border"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jq_with_subgrid_and_no_border">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jq_with_subgrid_and_no_border_html_source" aria-controls="jq_with_subgrid_and_no_border_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jq_with_subgrid_and_no_border_js_source" aria-controls="jq_with_subgrid_and_no_border_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jq_with_subgrid_and_no_border_css_source" aria-controls="jq_with_subgrid_and_no_border_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jq_with_subgrid_and_no_border_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jq_with_subgrid_and_no_border_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jq_with_subgrid_and_no_border_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqGrid_with_subgrid_and_no_border_init,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css">
+                                            <table id="grid_table_with_subgrid_and_no_border" class="table table-bordered word-break"></table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="#" name="jqGrid-with-inline-editing" class="title-anchor">&nbsp;</a>
 
                             <div class="code-container">
@@ -769,7 +814,8 @@
                     "username": "ironman",
                     "jobtype": "Philantropist",
                     "codename": "Iron Man",
-                    "spirit_animal": "Tiger"
+                    "spirit_animal": "Tiger",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "2",
@@ -778,7 +824,8 @@
                     "username": "hulk_smash",
                     "jobtype": "Doctor",
                     "codename": "The Hulk",
-                    "spirit_animal": "Gorilla"
+                    "spirit_animal": "Gorilla",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "3",
@@ -787,7 +834,8 @@
                     "username": "thehammer",
                     "jobtype": "God",
                     "codename": "Thor",
-                    "spirit_animal": "Lion"
+                    "spirit_animal": "Lion",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "4",
@@ -796,7 +844,8 @@
                     "username": "hawkyey",
                     "jobtype": "Archer",
                     "codename": "Hawkeye",
-                    "spirit_animal": "Hawk"
+                    "spirit_animal": "Hawk",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "5",
@@ -805,7 +854,8 @@
                     "username": "rogerthat",
                     "jobtype": "Captain",
                     "codename": "Captain America",
-                    "spirit_animal": "Eagle"
+                    "spirit_animal": "Eagle",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "6",
@@ -814,7 +864,8 @@
                     "username": "notawidow",
                     "jobtype": "Event planner",
                     "codename": "Black Widow",
-                    "spirit_animal": "Spider"
+                    "spirit_animal": "Spider",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "7",
@@ -823,7 +874,8 @@
                     "username": "goliath",
                     "jobtype": "Unemployed",
                     "codename": "Ant-Man",
-                    "spirit_animal": "Dog"
+                    "spirit_animal": "Dog",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "8",
@@ -832,7 +884,8 @@
                     "username": "tchiao",
                     "jobtype": "Self-employed",
                     "codename": "Black Panther",
-                    "spirit_animal": "Jaguar"
+                    "spirit_animal": "Jaguar",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "9",
@@ -841,7 +894,8 @@
                     "username": "imallseeing",
                     "jobtype": "Self-employed",
                     "codename": "The Vision",
-                    "spirit_animal": "Dolphin"
+                    "spirit_animal": "Dolphin",
+                    "data": "01/01/2018"
                 },
                 {
                     "id": "10",
@@ -850,7 +904,8 @@
                     "username": "photon",
                     "jobtype": "Self-employed",
                     "codename": "Captain Marvel",
-                    "spirit_animal": "Mustang"
+                    "spirit_animal": "Mustang",
+                    "data": "01/01/2018"
 
                 }
             ];
@@ -877,10 +932,10 @@
             ],
             styleUI: 'fontAwesome'
         };
-
         new PhotonJqGrid(listingParameters).init();
     });
 </script>
+
 
 <script type="text/javascript" data-dependency-name="jqgrid_add_new_row_programatically_init">
     $(document).ready(function () {
@@ -890,11 +945,43 @@
             datatype: 'jsonstring',
             caption: 'jqGrid add new row programatically',
             datastr: getListingDummyData(),
-            colModel: [
-                {name: 'id', index: 'id', key: true,  hidden: true },
-                {label: 'First Name', name: 'firstname', width: "100", editable: true},
-                {label: 'Last Name', name: 'lastname', editable: true},
-                {label: 'Username', name: 'username', editable: true},
+            colModel: [{
+                    name: 'id',
+                    index: 'id',
+                    key: true,
+                    hidden: true
+                },
+                {
+                    label: 'First Name',
+                    name: 'firstname',
+                    width: "100",
+                    editable: true,
+                    editrules: {
+                        required: true
+                    },
+                    formoptions: {
+                        label: "First name <span class='required-elem'>*</span>"
+                    },
+                    sortable: false,
+                },
+                {
+                    label: 'Last Name',
+                    name: 'lastname',
+                    editable: true,
+                    editrules: {
+                        required: true
+                    },
+                    formoptions: {
+                        label: "Last name <span class='required-elem'>*</span>"
+                    },
+                    sortable: false,
+                },
+                {
+                    label: 'Username',
+                    name: 'username',
+                    editable: true,
+                    sortable: false,
+                },
                 {
                     label: 'Actions',
                     name: 'actions',
@@ -904,46 +991,214 @@
                         keys: true,
                         editOptions: {},
                         addOptions: {},
-                        delOptions: {}
-                    }
+                        delOptions: {
+                            onclickSubmit: function(options, rowid) {
+                                setTimeout(function(){
+                                    goToLastPage();
+                                },0);
+                            },
+                        }
+                    },
+                    sortable: false,
+                    search: false
                 }
             ],
-            styleUI: 'fontAwesome'
+
+            cellEdit: false,
+            cellsubmit: 'clientArray',
+            editurl: 'clientArray',
+            styleUI: 'fontAwesomeNoBorder',
+            useCustomConfirmationModal: true,
+            onPaging: function (jgGridId) {
+                var data = $(jgGridId).jqGrid('getGridParam', 'data');
+                var reload = false;
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].firstname == '' || data[i].lastname == '') {
+                        $(jgGridId).jqGrid('delRowData', i + 1);
+                        reload = true;
+                    }
+                }
+
+                if (reload) {
+                    $(jgGridId).trigger("reloadGrid");
+                    setTimeout(function () {
+                        $(jgGridId).jqGrid('setGridParam', {
+                            "page": $(jgGridId).getGridParam('lastpage')
+                        }).trigger("reloadGrid");
+                    }, 0);
+                }
+            }
         };
 
         var lastSelection;
 
-        function editRow($grid, rowId) {
-            if (rowId && rowId !== lastSelection) {
-                $grid.jqGrid('restoreRow', lastSelection);
-                $grid.jqGrid('editRow', rowId, true);
-                lastSelection = rowId;
-                $grid.find('#jEditButton_' + rowId).trigger('click');
-            }
-        }
-
         new PhotonJqGrid(listingParameters).init();
         var rowCount = 0;
-        $('.add-new-row').on('click', function () {
-            var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
-            rowCount = $grid_table_add_new_row_programatically.getDataIDs().length + 2
-            $grid_table_add_new_row_programatically.jqGrid(
-                'addRowData',
-                rowCount,
-                {"id": rowCount, "firstname": "", "lastname": "", "username": ""},
-                "last"
-            );
+        var $grid_table_add_new_row_programatically = $("#grid_table_add_new_row_programatically");
 
+        function onJqGridAfterInsertRow() {
+            setTimeout(function () {
+                $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+                $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                    "page": gridLastPage
+                }).trigger("reloadGrid");
+            }, 0)
+        }
+
+        function goToLastPage(){
             $grid_table_add_new_row_programatically.trigger("reloadGrid");
-
             var gridLastPage = $grid_table_add_new_row_programatically.getGridParam('lastpage');
+            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                "page": gridLastPage
+            }).trigger("reloadGrid");
+        }
 
-            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {"page": gridLastPage}).trigger("reloadGrid");
-            
-            editRow($grid_table_add_new_row_programatically, rowCount);
+        function isInAddedRowsList(rowId) {
+            var index = addedRowsList.indexOf(Number(rowId));
+            if (index > -1) {
+                return true;
+            }
+            return false;
+        }
+
+        function getIndexOfItem(rowId){
+            var index = addedRowsList.indexOf(Number(rowId));
+            if (index > -1) {
+                return index;
+            }
+            return false;
+        }
+
+        function removeFromAddedRowsList(index){
+            addedRowsList.splice(index, 1);
+        }
+
+        var addedRowsList = [];
+
+        $('.add-new-row').on('click', function () {
+            $grid_table_add_new_row_programatically.off('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+            var rowBefore = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records');
+            $grid_table_add_new_row_programatically.find('#jSaveButton_' + rowBefore).trigger('click');
+           
+            if ($('#info_dialog').length == 0) {//if there is no error
+                $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                rowCount = $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records') + 1
+                addedRowsList.push(rowCount);
+                $grid_table_add_new_row_programatically.jqGrid(
+                    'addRowData',
+                    rowCount, {
+                        "id": rowCount,
+                        "firstname": '',
+                        "lastname": '',
+                        "username": ""
+                    },
+                    "last"
+                );
+
+                goToLastPage();
+                
+                $grid_table_add_new_row_programatically.jqGrid('editRow', rowCount, 
+                { 
+                    keys : true, 
+                    afterrestorefunc: function(rowId) {
+                        $grid_table_add_new_row_programatically.jqGrid('delRowData', rowId);
+                        
+                        $grid_table_add_new_row_programatically.trigger("reloadGrid");
+                        setTimeout(function () {
+                            $grid_table_add_new_row_programatically.jqGrid('setGridParam', {
+                                "page": $grid_table_add_new_row_programatically.getGridParam('lastpage')
+                            }).trigger("reloadGrid");
+                        }, 0);
+                    }
+                });
+
+                $grid_table_add_new_row_programatically.find('#jEditButton_' + rowCount).trigger('click');
+                
+                $grid_table_add_new_row_programatically.one('photonJqGridAfterRowCancel', function (e, rowId) {
+                    if (isInAddedRowsList(rowId)) {
+                        removeFromAddedRowsList(getIndexOfItem(rowId));
+                        $grid_table_add_new_row_programatically.jqGrid('delRowData', rowId);
+                        goToLastPage();
+                    }
+                });
+
+                $grid_table_add_new_row_programatically.one('photonJqGridAfterRowSave', function (e,rowId){
+                    if (isInAddedRowsList(rowId)) {
+                        removeFromAddedRowsList(getIndexOfItem(rowId));
+                    }
+                });
+
+                
+                
+            }
         });
 
+        $('.add-new-row-with-modal').click(function () {
+            var rowBefore =  $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'records');
+            
+            $grid_table_add_new_row_programatically.find('#jCancelButton_' + rowBefore).trigger('click');
+
+            $grid_table_add_new_row_programatically.jqGrid('editGridRow', "new", {
+                jqModal: true,
+                savekey: [true, 13],
+                navkeys: [true, 38, 40],
+                bottominfo: "Fields marked with (*) are required. ",
+                addCaption: 'New Row Values',
+                width: 300,
+                dataheight: 200,
+                recreateForm: true,
+                //checkOnUpdate: true,
+                //checkOnSubmit: true,
+                //reloadAfterSubmit: true,
+                closeOnEscape: true,
+                closeAfterAdd: true,
+                //clearAfterAdd: true,
+            })
+
+            $grid_table_add_new_row_programatically.one('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+            $grid_table_add_new_row_programatically.one('jqGridAfterInsertRow', function(){
+                setTimeout(function () {
+                    $grid_table_add_new_row_programatically.find(">tbody>tr.jqgrow:last").addClass('success');
+            }, 0)
+                
+            });
+           
+        });  
         
+        /*
+        $('.search-with-modal').click(function () {
+            $grid_table_add_new_row_programatically.jqGrid('searchGrid', {
+                closeAfterSearch: true
+            } )
+        });   
+        
+        $('.edit-row-with-modal').click(function () {
+
+            var selectedRowId = 
+            $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'selrow') ? $grid_table_add_new_row_programatically.jqGrid('getGridParam', 'selrow') : $grid_table_add_new_row_programatically.getDataIDs()[0]
+
+            $grid_table_add_new_row_programatically.jqGrid('editGridRow', selectedRowId, {
+                jqModal: true,
+                savekey: [true, 13],
+                navkeys: [true, 38, 40],
+                bottominfo: "Fields marked with (*) are required. ",
+                addCaption: 'New Row Values',
+                width: 300,
+                dataheight: 200,
+                recreateForm: true,
+                //checkOnUpdate: true,
+                //checkOnSubmit: true,
+                //reloadAfterSubmit: true,
+                closeOnEscape: false,
+                closeAfterEdit: true,
+                //clearAfterAdd: true, 
+            })
+
+            $grid_table_add_new_row_programatically.on('jqGridAfterInsertRow', onJqGridAfterInsertRow);
+        });
+        */
+
     });
 </script>
 
@@ -1621,6 +1876,7 @@
             rowNum: 10,
             subGrid: true,
             styleUI : 'fontAwesome',
+            multiselect: false,
             loadComplete: function(){
                 //use this for the skin with no border
                 $this = $(this);
@@ -1652,7 +1908,74 @@
                     height: '100%',
                     rowNum:5,
                     sortname: 'num',
-                    sortorder: "asc"
+                    sortorder: "asc",
+                    multiselect: false,
+                });
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqGrid_with_subgrid_and_no_border_init">
+    $(document).ready(function () {
+        $("#grid_table_with_subgrid_and_no_border").jqGrid({
+            autoResizing: { compact: true },
+            datatype: "jsonstring",
+            datastr: getListingDummyData(),
+            sortable: true,
+            colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
+            colModel: [
+                { name: 'id',           index: 'id', hidden: true, width: "20" },
+                { name: 'firstname',    index: 'firstname', key: true, width: "100" },
+                { name: 'lastname',     index: 'lastname' },
+                { name: 'username',     index: 'username' },
+                { name: 'jobtype',      index: 'jobtype' },
+                { name: 'codename',     index: 'codename' },
+                { name: 'spirit_animal',index: 'spirit_animal' }
+            ],
+            altRows: false,
+            autowidth: true,
+            viewrecords: true,
+            shrinkToFit: true,
+            width: 'auto',
+            height: 'auto',
+            rowNum: 10,
+            subGrid: true,
+            styleUI : 'fontAwesomeNoBorder',
+            multiselect: false,
+            loadComplete: function(){
+                //use this for the skin with no border
+                $this = $(this);
+                $this.closest('.ui-jqgrid-view').find('tr').find('th').eq(0).addClass('disable-hover');  
+            },
+            subGridRowExpanded: function(subgrid_id, row_id) {
+                // we pass two parameters
+                // subgrid_id is a id of the div tag created within a table
+                // the row_id is the id of the row
+                // If we want to pass additional parameters to the url we can use
+                // the method getRowData(row_id) - which returns associative array in type name-value
+                // here we can easy construct the following
+                var subgrid_table_id;
+                subgrid_table_id = subgrid_id+"_t";
+                jQuery("#"+subgrid_id).html("<table id='"+subgrid_table_id+"' class='table'></table>");
+                jQuery("#"+subgrid_table_id).jqGrid({
+                    datatype: "jsonstring",
+                    datastr: getListingDummyData(),
+                    styleUI : 'fontAwesomeNoBorder',
+                    colModel: [
+                        { name: 'id',           index: 'id', hidden: true, width: "20" },
+                        { label: 'First Name', name: 'firstname',    index: 'firstname', key: true, width: "100" },
+                        { label: 'Last Name', name: 'lastname',     index: 'lastname' },
+                        { label: 'Username', name: 'username',     index: 'username' },
+                        { label: 'Hobby', name: 'jobtype',      index: 'jobtype' },
+                        { label: 'Nickname', name: 'codename',     index: 'codename' },
+                        { label: 'Spiritual Animal', name: 'spirit_animal',index: 'spirit_animal' }
+                    ],
+                    height: '100%',
+                    rowNum:5,
+                    sortname: 'num',
+                    sortorder: "asc",
+                    multiselect: false,
                 });
             }
         });
@@ -1688,8 +2011,11 @@
                     }
                 }
             ],
+            
+            cellEdit : true,
             cellsubmit : 'clientArray',
             editurl: 'clientArray',
+
             styleUI: 'fontAwesome'
         };
 
