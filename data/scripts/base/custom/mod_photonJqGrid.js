@@ -41,9 +41,38 @@
 
             mergeOnPaging: true,
             useAutocompleteRow: false,
-            onPaging: function() {
+            onPaging: function(pgButton) {
                 var jqGridOverlay = _getJqGridOverlay();
                 jqGridOverlay.addClass('custom-overlay');
+
+                var tableIdSelector = gridOpts.table;
+                
+
+                // if user has entered page number
+                if (pgButton == "user") {
+                    setTimeout(function(){
+
+                        console.log(pgButton)
+                        // find out the requested and last page
+                        var requestedPage =  $(tableIdSelector).getGridParam("page");
+                        var lastPage =  $(tableIdSelector).getGridParam("lastpage");
+                        
+                        console.log($(tableIdSelector))
+                        console.log("-----requestedPage------")
+                        console.log(requestedPage)
+                        console.log("-----lastPage------")
+                        console.log(lastPage)
+
+                        // if the requested page is higher than the last page value 
+                        if (parseInt(requestedPage) > parseInt(lastPage)) {
+                            //alert("Setting to " + lastPage);
+                            // set the requested page to the last page value - then reload
+                            $(tableIdSelector).setGridParam({page:lastPage}).trigger("reloadGrid");
+                        }
+
+                    },0)
+                    
+                }
             },
 
             beforeRequest: function () {
@@ -1261,8 +1290,10 @@
             var defaultCallback = defaultParams[callback];
             var customCallback = parameters[callback];
             gridOpts[callback] = function () {
-                defaultCallback();
-                customCallback(gridOpts.table);
+                var args = Array.prototype.slice.call(arguments);
+                defaultCallback.apply(null, args);
+                args.unshift(gridOpts.table);
+                customCallback.apply(null, args);
             }
         }
 
