@@ -57,7 +57,7 @@
 
                         // if the requested page is higher than the last page value 
                         if (parseInt(requestedPage) > parseInt(lastPage)) {
-                            //alert("Setting to " + lastPage);
+                            
                             // set the requested page to the last page value - then reload
                             $(tableIdSelector).setGridParam({page:lastPage}).trigger("reloadGrid");
                         }
