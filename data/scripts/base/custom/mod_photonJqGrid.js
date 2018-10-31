@@ -47,21 +47,13 @@
 
                 var tableIdSelector = gridOpts.table;
                 
-
                 // if user has entered page number
                 if (pgButton == "user") {
                     setTimeout(function(){
 
-                        console.log(pgButton)
                         // find out the requested and last page
                         var requestedPage =  $(tableIdSelector).getGridParam("page");
                         var lastPage =  $(tableIdSelector).getGridParam("lastpage");
-                        
-                        console.log($(tableIdSelector))
-                        console.log("-----requestedPage------")
-                        console.log(requestedPage)
-                        console.log("-----lastPage------")
-                        console.log(lastPage)
 
                         // if the requested page is higher than the last page value 
                         if (parseInt(requestedPage) > parseInt(lastPage)) {
@@ -70,7 +62,7 @@
                             $(tableIdSelector).setGridParam({page:lastPage}).trigger("reloadGrid");
                         }
 
-                    },0)
+                    },0);
                     
                 }
             },
