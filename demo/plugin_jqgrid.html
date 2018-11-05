@@ -12,6 +12,9 @@
 <link rel="icon" type="image/png" href="../favicon.png">
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
+
+        <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
+
         <!-- PLUGIN: PRISM: This plugin helps display demo code. Don't add it everywhere -->
 <link rel="stylesheet" href="../dist/plugins/prism/prism.min.css">
 
@@ -895,6 +898,10 @@
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 
+<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
+<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
+
 <!-- BOTTOM SCRIPTS:Start -->
 <script type="text/javascript">
     var sidebar = {
@@ -1337,7 +1344,7 @@
                     "jobtype": "Philantropist",
                     "codename": "Iron Man",
                     "spirit_animal": "Tiger",
-                    "data": "01/01/2018"
+                    "data": "21/05/2018  01:24"
                 },
                 {
                     "id": "2",
@@ -1347,7 +1354,7 @@
                     "jobtype": "Doctor",
                     "codename": "The Hulk",
                     "spirit_animal": "Gorilla",
-                    "data": "01/01/2018"
+                    "data": "11/03/2018  04:31"
                 },
                 {
                     "id": "3",
@@ -1357,7 +1364,7 @@
                     "jobtype": "God",
                     "codename": "Thor",
                     "spirit_animal": "Lion",
-                    "data": "01/01/2018"
+                    "data": "01/01/2018  03:34"
                 },
                 {
                     "id": "4",
@@ -1367,7 +1374,7 @@
                     "jobtype": "Archer",
                     "codename": "Hawkeye",
                     "spirit_animal": "Hawk",
-                    "data": "01/01/2018"
+                    "data": "08/08/2018  03:30"
                 },
                 {
                     "id": "5",
@@ -1377,7 +1384,7 @@
                     "jobtype": "Captain",
                     "codename": "Captain America",
                     "spirit_animal": "Eagle",
-                    "data": "01/01/2018"
+                    "data": "03/07/2018  05:30"
                 },
                 {
                     "id": "6",
@@ -1387,7 +1394,7 @@
                     "jobtype": "Event planner",
                     "codename": "Black Widow",
                     "spirit_animal": "Spider",
-                    "data": "01/01/2018"
+                    "data": "03/03/2018  03:33"
                 },
                 {
                     "id": "7",
@@ -1397,7 +1404,7 @@
                     "jobtype": "Unemployed",
                     "codename": "Ant-Man",
                     "spirit_animal": "Dog",
-                    "data": "01/01/2018"
+                    "data": "02/01/2018  02:32"
                 },
                 {
                     "id": "8",
@@ -1407,7 +1414,7 @@
                     "jobtype": "Self-employed",
                     "codename": "Black Panther",
                     "spirit_animal": "Jaguar",
-                    "data": "01/01/2018"
+                    "data": "07/01/2018  07:30"
                 },
                 {
                     "id": "9",
@@ -1417,7 +1424,7 @@
                     "jobtype": "Self-employed",
                     "codename": "The Vision",
                     "spirit_animal": "Dolphin",
-                    "data": "01/01/2018"
+                    "data": "08/01/2018  03:38"
                 },
                 {
                     "id": "10",
@@ -1427,7 +1434,7 @@
                     "jobtype": "Self-employed",
                     "codename": "Captain Marvel",
                     "spirit_animal": "Mustang",
-                    "data": "01/01/2018"
+                    "data": "09/02/2018  03:39"
 
                 }
             ];
@@ -1445,14 +1452,94 @@
             caption: 'Listing caption',
             datastr: getListingDummyData(),
             colModel: [
-                { label: 'First Name', name: 'firstname', key: true, width: "100" },
-                { label: 'Last Name', name: 'lastname' },
-                { label: 'Username', name: 'username' },
-                { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
-                { label: 'Nickname', name: 'codename' },
-                { label: 'Spiritual Animal', name: 'spirit_animal' }
+                {label: 'First Name',name: 'firstname',key: true,width: "100"},
+                {label: 'Last Name',name: 'lastname'},
+                {label: 'Username',name: 'username'},
+                {label: 'Hobby',name: 'jobtype',classes: 'word-break'},
+                {label: 'Nickname',name: 'codename'},
+                {label: 'Spiritual Animal',name: 'spirit_animal'},
+                
+                {name: 'data',classes: 'data-custom',index: 'data',width: 150,
+
+                    editrules: {
+                        required: true
+                    },
+                    //formatter: 'date',
+                    formatoptions: {
+                        newformat: 'd/m/Y H:i'
+                    },
+                    editable: true,
+                    editoptions: {
+                        dataInit: function (el) {
+                            $(el).datetimepicker({
+                                locale: 'en-GB',
+                                format: 'DD/MM/YYYY HH:MM',
+                                //debug: true,
+                                widgetPositioning: {
+                                    horizontal: 'right',
+                                    vertical: 'bottom'
+                                },
+                                widgetParent: '#gbox_grid_table'
+                            });
+                            // fix position of the datetimepicker
+
+                            $(el).on("dp.show", function () {
+                                console.log('dp.show')
+                                var $datepicker = $("#gbox_grid_table .bootstrap-datetimepicker-widget");
+                                var yPos = $(el).offset().top - $('#gbox_grid_table').offset().top + $(el).outerHeight();
+                                var xPos = $(el).offset().left - $('#gbox_grid_table').offset().left - $datepicker.outerWidth() + $(el).outerWidth();
+
+                                if (xPos < 0) {
+                                    xPos = 0
+                                }
+
+                                if ($datepicker.length > 0) {
+                                    $datepicker.css({
+                                        'top': yPos,
+                                        'position': 'absolute',
+                                        'left': xPos,
+                                        'right': '',
+                                        'bottom': ''
+
+                                    });
+                                }
+
+                                $('a[data-action="togglePicker"]').on('click', function () {
+                                    setTimeout(function () {
+                                        $datepicker.css({
+                                            'top': yPos,
+                                            'position': 'absolute',
+                                            'left': xPos,
+                                            'right': '',
+                                            'bottom': ''
+                                        });
+                                    }, 0)
+                                })
+                            });
+
+                            $(el).on("dp.hide", function () {
+                                selRowId = $("#grid_table").jqGrid("getGridParam", "selrow");
+                                $("#grid_table").jqGrid('saveRow', selRowId)
+                            })
+                        }
+                    }
+                }
             ],
-            styleUI: 'fontAwesome'
+            onCellSelect: function (rowId, iCol, content, event) {
+                console.log('onCellSelect')
+                if ($(event.target).hasClass('data-custom')) {
+                    var $this = $(this),
+                        selRowId = $this.jqGrid("getGridParam", "selrow");
+                    if (selRowId !== rowId) {
+                        $this.jqGrid("setSelection", rowId);
+                    }
+                    $this.jqGrid("editRow", rowId, {});
+                }
+            },
+            styleUI: 'fontAwesome',
+            cellsubmit : 'clientArray',
+            editurl: 'clientArray',
+            stickyButtons: true, 
         };
         new PhotonJqGrid(listingParameters).init();
     });
