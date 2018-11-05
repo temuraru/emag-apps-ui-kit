@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../dist/plugins/jqgrid/ui.jqgrid.min.css" data-dependency-name="jqgrid_css">
         <link rel="stylesheet" href="../dist/plugins/drop/drop.min.css" data-dependency-name="drop_css">
 
-        <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.css" data-dependency-name="jqgrid_datetimepicker_css">
 
         <?php include_once "modules/_mod_top_include.php" ?>
 </head>
@@ -145,6 +145,57 @@
 
                                             <table id="grid_table_add_new_row_programatically" class="table table-bordered word-break"></table>
                                             <div id="grid_pager_add_new_row_programatically"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" name="jqGrid-with-datetimepicker" class="title-anchor">&nbsp;</a>
+
+                            <div class="code-container">
+                                <div class="row flex-container code-header no-border-top">
+                                    <div class="col-xs-8 module-description">
+                                        <h4><strong>jqGrid with datetimepicker (bootstrap-datetimepicker)</strong></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a class="btn btn-default btn-sm pull-right btn-source collapsed"  data-toggle="collapse" href="#jqgrid_with_datetimepicker" aria-expanded="false" aria-controls="jqgrid_with_datetimepicker"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><span>CODE</span></a>
+                                    </div>
+                                </div>
+                                <div class="collapse code-example"  id="jqgrid_with_datetimepicker">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs code-example" role="tablist">
+                                        <li role="presentation" class="active"><a href="#jqgrid_with_datetimepicker_html_source" aria-controls="jqgrid_with_datetimepicker_html" role="tab" data-toggle="tab">HTML</a></li>
+                                        <li role="presentation"><a href="#jqgrid_with_datetimepicker_js_source" aria-controls="jqgrid_with_datetimepicker_js" role="tab" data-toggle="tab">JS</a></li>
+                                        <li role="presentation"><a href="#jqgrid_with_datetimepicker_css_source" aria-controls="jqgrid_with_datetimepicker_css" role="tab" data-toggle="tab">CSS</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content code-example">
+                                        <div role="tabpanel" class="tab-pane html-source active" id="jqgrid_with_datetimepicker_html_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane js-source" id="jqgrid_with_datetimepicker_js_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane css-source" id="jqgrid_with_datetimepicker_css_source">
+                                            <pre class="language-html"><code class="language-html" data-showcase="code"></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pad-15">
+                                            <p>Datetimepicker can be integrated in jqGrid with the future additional work:</p>
+                                            <ul>
+
+                                            <li>You need to use inline editing for jqGrid. This means you need to make your on validation function for date, and use the other advantages and disadvantages.</li>
+                                            <li>Datetimepicker can support a parent element declaration for opening of date and time container. That means you can calculate on your own the position of date and time container. This element is recommended to be open on bottom of the input element because his height is different on date mode and time mode and it will have distance issues. Other display issues appear on  window resize or other elements resize. You need to hook on every page elements visual modifications.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="pad-15" data-showcase="example" data-dependencies="main_style,main_script,jquery,jqgrid_css,jqgrid_source,jqgrid_locale_en_source,listing_dummy_data,jqgrid_with_datetimepicker_init,datetimepicker_moment_source,datetimepicker_bootstrap_source,datetimepicker_locales_source,jquery_ui_source,stickykit_source,tether_source,drop_source,drop_css,jqgrid_datetimepicker_css">
+                                            <table id="grid_table_datetimepicker" class="table word-break"></table>
+                                            <div id="grid_pager_datetimepicker"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -793,9 +844,9 @@
 <script src="../dist/js/main_script.min.js" data-dependency-name="main_script"></script>
 <script src="../dist/js/demo_helpers.js"></script>
 
-<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js"></script>
-<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>
-<script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js"></script>
+<script src="../dist/plugins/datetimepicker/moment.2.10.6.min.js" data-dependency-name="datetimepicker_moment_source"></script>
+<script src="../dist/plugins/datetimepicker/bootstrap-datetimepicker.min.js" data-dependency-name="datetimepicker_bootstrap_source"></script>
+<script src="../dist/plugins/datetimepicker/locales/bootstrap-datetimepicker.min.en.js" data-dependency-name="datetimepicker_locales_source"></script>
 
 <!-- BOTTOM SCRIPTS:Start -->
 <?php include_once "modules/_mod_bottom_scripts.php"; ?>
@@ -822,7 +873,7 @@
                     "jobtype": "Philantropist",
                     "codename": "Iron Man",
                     "spirit_animal": "Tiger",
-                    "data": "21/05/2018  01:24"
+                    "data": "21/05/2018 01:24"
                 },
                 {
                     "id": "2",
@@ -832,7 +883,7 @@
                     "jobtype": "Doctor",
                     "codename": "The Hulk",
                     "spirit_animal": "Gorilla",
-                    "data": "11/03/2018  04:31"
+                    "data": "11/03/2018 04:31"
                 },
                 {
                     "id": "3",
@@ -842,7 +893,7 @@
                     "jobtype": "God",
                     "codename": "Thor",
                     "spirit_animal": "Lion",
-                    "data": "01/01/2018  03:34"
+                    "data": "01/01/2018 03:34"
                 },
                 {
                     "id": "4",
@@ -852,7 +903,7 @@
                     "jobtype": "Archer",
                     "codename": "Hawkeye",
                     "spirit_animal": "Hawk",
-                    "data": "08/08/2018  03:30"
+                    "data": "08/08/2018 03:30"
                 },
                 {
                     "id": "5",
@@ -862,7 +913,7 @@
                     "jobtype": "Captain",
                     "codename": "Captain America",
                     "spirit_animal": "Eagle",
-                    "data": "03/07/2018  05:30"
+                    "data": "03/07/2018 05:30"
                 },
                 {
                     "id": "6",
@@ -872,7 +923,7 @@
                     "jobtype": "Event planner",
                     "codename": "Black Widow",
                     "spirit_animal": "Spider",
-                    "data": "03/03/2018  03:33"
+                    "data": "03/03/2018 03:33"
                 },
                 {
                     "id": "7",
@@ -882,7 +933,7 @@
                     "jobtype": "Unemployed",
                     "codename": "Ant-Man",
                     "spirit_animal": "Dog",
-                    "data": "02/01/2018  02:32"
+                    "data": "02/01/2018 02:32"
                 },
                 {
                     "id": "8",
@@ -892,7 +943,7 @@
                     "jobtype": "Self-employed",
                     "codename": "Black Panther",
                     "spirit_animal": "Jaguar",
-                    "data": "07/01/2018  07:30"
+                    "data": "07/01/2018 07:30"
                 },
                 {
                     "id": "9",
@@ -902,7 +953,7 @@
                     "jobtype": "Self-employed",
                     "codename": "The Vision",
                     "spirit_animal": "Dolphin",
-                    "data": "08/01/2018  03:38"
+                    "data": "08/01/2018 03:38"
                 },
                 {
                     "id": "10",
@@ -912,7 +963,7 @@
                     "jobtype": "Self-employed",
                     "codename": "Captain Marvel",
                     "spirit_animal": "Mustang",
-                    "data": "09/02/2018  03:39"
+                    "data": "09/02/2018 03:39"
 
                 }
             ];
@@ -923,104 +974,25 @@
 
 <script type="text/javascript" data-dependency-name="jqgrid_basic_init">
     $(document).ready(function () {
-        var listingParameters = {
-            table: '#grid_table',
-            pager: '#grid_pager',
-            datatype: 'jsonstring',
-            caption: 'Listing caption',
-            datastr: getListingDummyData(),
-            colModel: [
-                {label: 'First Name',name: 'firstname',key: true,width: "100"},
-                {label: 'Last Name',name: 'lastname'},
-                {label: 'Username',name: 'username'},
-                {label: 'Hobby',name: 'jobtype',classes: 'word-break'},
-                {label: 'Nickname',name: 'codename'},
-                {label: 'Spiritual Animal',name: 'spirit_animal'},
-                
-                {name: 'data',classes: 'data-custom',index: 'data',width: 150,
+    var listingParameters = {
+        table: '#grid_table',
+        pager: '#grid_pager',
+        datatype: 'jsonstring',
+        caption: 'Listing caption',
+        datastr: getListingDummyData(),
+        colModel: [
+            { label: 'First Name', name: 'firstname', key: true, width: "100" },
+            { label: 'Last Name', name: 'lastname' },
+            { label: 'Username', name: 'username' },
+            { label: 'Hobby', name: 'jobtype', classes: 'word-break' },
+            { label: 'Nickname', name: 'codename' },
+            { label: 'Spiritual Animal', name: 'spirit_animal' }
+        ],
+        styleUI: 'fontAwesome'
+    };
 
-                    editrules: {
-                        required: true
-                    },
-                    //formatter: 'date',
-                    formatoptions: {
-                        newformat: 'd/m/Y H:i'
-                    },
-                    editable: true,
-                    editoptions: {
-                        dataInit: function (el) {
-                            $(el).datetimepicker({
-                                locale: 'en-GB',
-                                format: 'DD/MM/YYYY HH:MM',
-                                //debug: true,
-                                widgetPositioning: {
-                                    horizontal: 'right',
-                                    vertical: 'bottom'
-                                },
-                                widgetParent: '#gbox_grid_table'
-                            });
-                            // fix position of the datetimepicker
-
-                            $(el).on("dp.show", function () {
-                                console.log('dp.show')
-                                var $datepicker = $("#gbox_grid_table .bootstrap-datetimepicker-widget");
-                                var yPos = $(el).offset().top - $('#gbox_grid_table').offset().top + $(el).outerHeight();
-                                var xPos = $(el).offset().left - $('#gbox_grid_table').offset().left - $datepicker.outerWidth() + $(el).outerWidth();
-
-                                if (xPos < 0) {
-                                    xPos = 0
-                                }
-
-                                if ($datepicker.length > 0) {
-                                    $datepicker.css({
-                                        'top': yPos,
-                                        'position': 'absolute',
-                                        'left': xPos,
-                                        'right': '',
-                                        'bottom': ''
-
-                                    });
-                                }
-
-                                $('a[data-action="togglePicker"]').on('click', function () {
-                                    setTimeout(function () {
-                                        $datepicker.css({
-                                            'top': yPos,
-                                            'position': 'absolute',
-                                            'left': xPos,
-                                            'right': '',
-                                            'bottom': ''
-                                        });
-                                    }, 0)
-                                })
-                            });
-
-                            $(el).on("dp.hide", function () {
-                                selRowId = $("#grid_table").jqGrid("getGridParam", "selrow");
-                                $("#grid_table").jqGrid('saveRow', selRowId)
-                            })
-                        }
-                    }
-                }
-            ],
-            onCellSelect: function (rowId, iCol, content, event) {
-                console.log('onCellSelect')
-                if ($(event.target).hasClass('data-custom')) {
-                    var $this = $(this),
-                        selRowId = $this.jqGrid("getGridParam", "selrow");
-                    if (selRowId !== rowId) {
-                        $this.jqGrid("setSelection", rowId);
-                    }
-                    $this.jqGrid("editRow", rowId, {});
-                }
-            },
-            styleUI: 'fontAwesome',
-            cellsubmit : 'clientArray',
-            editurl: 'clientArray',
-            stickyButtons: true, 
-        };
-        new PhotonJqGrid(listingParameters).init();
-    });
+    new PhotonJqGrid(listingParameters).init();
+});
 </script>
 
 
@@ -1286,6 +1258,104 @@
         });
         */
 
+    });
+</script>
+
+<script type="text/javascript" data-dependency-name="jqgrid_with_datetimepicker_init">
+    $(document).ready(function () {
+        var listingParameters = {
+            table: '#grid_table_datetimepicker',
+            pager: '#grid_pager_datetimepicker',
+            datatype: 'jsonstring',
+            caption: 'Listing caption',
+            datastr: getListingDummyData(),
+            colModel: [
+                {label: 'First Name',name: 'firstname',key: true,width: "100"},
+                {label: 'Last Name',name: 'lastname'},
+                {label: 'Username',name: 'username'},
+                {label: 'Spiritual Animal',name: 'spirit_animal'},
+                
+                {label: 'Data', name: 'data', classes: 'data-custom', index: 'data',width: 150,
+                    editrules: {
+                        required: true
+                    },
+                    /*
+                    formatter: 'date',
+                    formatoptions: {
+                        newformat: 'd/m/Y H:i'
+                    },*/
+                    editable: true,
+                    editoptions: {
+                        dataInit: function (el) {
+                            $(el).datetimepicker({
+                                //locale: 'en-GB',
+                                //see http://momentjs.com/docs/#/displaying/format/ for format key bellow
+                                format: 'DD/MM/YYYY HH:mm',
+                                //debug: true,
+                                widgetPositioning: {
+                                    horizontal: 'right',
+                                    vertical: 'bottom'
+                                },
+                                widgetParent: '#gbox_grid_table_datetimepicker'
+                            });
+                            // fix position of the datetimepicker
+
+                            $(el).on("dp.show", function () {
+                                var $datepicker = $("#gbox_grid_table_datetimepicker .bootstrap-datetimepicker-widget");
+                                var yPos = $(el).offset().top - $('#gbox_grid_table_datetimepicker').offset().top + $(el).outerHeight();
+                                var xPos = $(el).offset().left - $('#gbox_grid_table_datetimepicker').offset().left - $datepicker.outerWidth() + $(el).outerWidth();
+
+                                if (xPos < 0) {
+                                    xPos = 0
+                                }
+
+                                if ($datepicker.length > 0) {
+                                    $datepicker.css({
+                                        'top': yPos,
+                                        'position': 'absolute',
+                                        'left': xPos,
+                                        'right': '',
+                                        'bottom': ''
+                                    });
+                                }
+
+                                $('a[data-action="togglePicker"]').on('click', function () {
+                                    setTimeout(function () {
+                                        $datepicker.css({
+                                            'top': yPos,
+                                            'position': 'absolute',
+                                            'left': xPos,
+                                            'right': '',
+                                            'bottom': ''
+                                        });
+                                    }, 0)
+                                })
+                            });
+
+                            $(el).on("dp.hide", function () {
+                                selRowId = $("#grid_table_datetimepicker").jqGrid("getGridParam", "selrow");
+                                $("#grid_table_datetimepicker").jqGrid('saveRow', selRowId)
+                            })
+                        }
+                    }
+                }
+            ],
+            onCellSelect: function (rowId, iCol, content, event) {
+                if ($(event.target).hasClass('data-custom')) {
+                    var $this = $(this),
+                        selRowId = $this.jqGrid("getGridParam", "selrow");
+                    if (selRowId !== rowId) {
+                        $this.jqGrid("setSelection", rowId);
+                    }
+                    $this.jqGrid("editRow", rowId, {});
+                }
+            },
+            styleUI: 'fontAwesome',
+            cellsubmit : 'clientArray',
+            editurl: 'clientArray',
+            stickyButtons: false, 
+        };
+        new PhotonJqGrid(listingParameters).init();
     });
 </script>
 
