@@ -8733,7 +8733,7 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 30px 0 30px 15px;
 }
 .modal-content {
   position: relative;
@@ -12821,6 +12821,28 @@ body {
 }
 .modal.modal-alert .modal-dialog .modal-body .alert-modal-content {
   margin-bottom: 15px;
+}
+.modal-wh {
+  box-sizing: border-box;
+}
+.modal-wh .modal-dialog {
+  max-height: calc(100vh - 60px);
+  box-sizing: border-box;
+}
+.modal-wh .modal-content {
+  max-height: calc(100vh - 60px);
+  min-height: 120px;
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.modal-wh .modal-header {
+  min-height: 39px;
+}
+.modal-wh .modal-body {
+  overflow: auto;
 }
 .btn-no-border {
   background: transparent;

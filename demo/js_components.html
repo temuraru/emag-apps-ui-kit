@@ -318,6 +318,7 @@
                                             <button type="button" id="mySmallDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Small</button>
                                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Normal</button>
                                             <button type="button" id="myLargeDemoModal" class="btn btn-default" data-toggle="modal" data-target="#myDemoModal">Large</button>
+                                            <button id="btnModalWithScrollInside" type="button" class="btn btn-default">Modal with scroll inside</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1127,6 +1128,10 @@
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-column-chooser'
                     },
                     {
+                        'title': 'jqGrid with no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-no-border'
+                    },
+                    {
                         'title': 'With selectable rows',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-selectable-rows'
                     },
@@ -1135,8 +1140,16 @@
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-hierarchical-elements-tree'
                     },
                     {
+                        'title': 'With hierarchical elements and no border (Tree)',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-hierarchical-elements-tree-and-no-border'
+                    },
+                    {
                         'title': 'With subgrid',
                         'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid'
+                    },
+                    {
+                        'title': 'With subgrid and no border',
+                        'href': '/emag-apps-ui-kit/demo/plugin_jqgrid.html#jqGrid-with-subgrid-and-no-border'
                     },
                     {
                         'title': 'With inline editing',
@@ -1416,6 +1429,30 @@
                 }
 
                 modalSizing();
+
+                $('#btnModalWithScrollInside').on('click', function () {
+                    var modalTest = new PhotonModal({
+                        id: 'testModal',
+                        title: 'Modal with scroll inside',
+                        content: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus risus vel enim viverra lacinia. Integer orci mauris, dictum non velit eget, rhoncus dictum mi. Sed eget libero mollis, malesuada ex a, vulputate ligula. Pellentesque dignissim egestas neque id luctus. Donec vitae luctus turpis. Ut eu convallis nulla, at semper augue. Integer ultricies, nisi non efficitur pharetra, ipsum lorem lacinia libero, sit amet finibus massa lacus id lorem. Duis sollicitudin elementum tristique. Nunc tempus auctor erat, in ornare velit molestie ac. In varius purus ut pellentesque mollis.</p><p>Aliquam ultrices in neque et consectetur. Nam eget tellus sit amet ex facilisis aliquam a non turpis. Sed placerat, est vel ullamcorper tempor, sem lectus gravida sapien, ac lacinia massa risus at nunc. Nulla vulputate leo vel neque egestas fermentum. Quisque ullamcorper nulla vel urna faucibus eleifend. Morbi risus leo, mollis vel felis eget, iaculis lacinia ex. Suspendisse eu congue erat. Praesent rutrum, leo ac laoreet lacinia, enim risus feugiat tellus, ac feugiat erat ligula id quam. Vivamus vel sapien orci. Mauris nec risus sed erat sollicitudin commodo. Phasellus vel fermentum dolor, sed bibendum turpis.</p><p>Vestibulum auctor nisi dignissim, tempor libero sed, semper neque. Praesent ornare nibh vel odio mattis, nec dictum purus fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dictum quis leo nec tincidunt. Nulla quis elit at odio vestibulum fringilla ac gravida odio. Phasellus ut elit vitae mauris auctor lobortis a vel mi. Pellentesque tempus metus quis turpis vehicula, non accumsan ex mattis. Nullam lacinia rhoncus ante, vel faucibus lacus semper ut. Sed quis magna vitae diam tristique cursus. Suspendisse faucibus aliquet pulvinar.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus risus vel enim viverra lacinia. Integer orci mauris, dictum non velit eget, rhoncus dictum mi. Sed eget libero mollis, malesuada ex a, vulputate ligula. Pellentesque dignissim egestas neque id luctus. Donec vitae luctus turpis. Ut eu convallis nulla, at semper augue. Integer ultricies, nisi non efficitur pharetra, ipsum lorem lacinia libero, sit amet finibus massa lacus id lorem. Duis sollicitudin elementum tristique. Nunc tempus auctor erat, in ornare velit molestie ac. In varius purus ut pellentesque mollis.</p><p>Aliquam ultrices in neque et consectetur. Nam eget tellus sit amet ex facilisis aliquam a non turpis. Sed placerat, est vel ullamcorper tempor, sem lectus gravida sapien, ac lacinia massa risus at nunc. Nulla vulputate leo vel neque egestas fermentum. Quisque ullamcorper nulla vel urna faucibus eleifend. Morbi risus leo, mollis vel felis eget, iaculis lacinia ex. Suspendisse eu congue erat. Praesent rutrum, leo ac laoreet lacinia, enim risus feugiat tellus, ac feugiat erat ligula id quam. Vivamus vel sapien orci. Mauris nec risus sed erat sollicitudin commodo. Phasellus vel fermentum dolor, sed bibendum turpis.</p><p>Vestibulum auctor nisi dignissim, tempor libero sed, semper neque. Praesent ornare nibh vel odio mattis, nec dictum purus fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dictum quis leo nec tincidunt. Nulla quis elit at odio vestibulum fringilla ac gravida odio. Phasellus ut elit vitae mauris auctor lobortis a vel mi. Pellentesque tempus metus quis turpis vehicula, non accumsan ex mattis. Nullam lacinia rhoncus ante, vel faucibus lacus semper ut. Sed quis magna vitae diam tristique cursus. Suspendisse faucibus aliquet pulvinar.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus risus vel enim viverra lacinia. Integer orci mauris, dictum non velit eget, rhoncus dictum mi. Sed eget libero mollis, malesuada ex a, vulputate ligula. Pellentesque dignissim egestas neque id luctus. Donec vitae luctus turpis. Ut eu convallis nulla, at semper augue. Integer ultricies, nisi non efficitur pharetra, ipsum lorem lacinia libero, sit amet finibus massa lacus id lorem. Duis sollicitudin elementum tristique. Nunc tempus auctor erat, in ornare velit molestie ac. In varius purus ut pellentesque mollis.</p><p>Aliquam ultrices in neque et consectetur. Nam eget tellus sit amet ex facilisis aliquam a non turpis. Sed placerat, est vel ullamcorper tempor, sem lectus gravida sapien, ac lacinia massa risus at nunc. Nulla vulputate leo vel neque egestas fermentum. Quisque ullamcorper nulla vel urna faucibus eleifend. Morbi risus leo, mollis vel felis eget, iaculis lacinia ex. Suspendisse eu congue erat. Praesent rutrum, leo ac laoreet lacinia, enim risus feugiat tellus, ac feugiat erat ligula id quam. Vivamus vel sapien orci. Mauris nec risus sed erat sollicitudin commodo. Phasellus vel fermentum dolor, sed bibendum turpis.</p><p>Vestibulum auctor nisi dignissim, tempor libero sed, semper neque. Praesent ornare nibh vel odio mattis, nec dictum purus fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dictum quis leo nec tincidunt. Nulla quis elit at odio vestibulum fringilla ac gravida odio. Phasellus ut elit vitae mauris auctor lobortis a vel mi. Pellentesque tempus metus quis turpis vehicula, non accumsan ex mattis. Nullam lacinia rhoncus ante, vel faucibus lacus semper ut. Sed quis magna vitae diam tristique cursus. Suspendisse faucibus aliquet pulvinar.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus risus vel enim viverra lacinia. Integer orci mauris, dictum non velit eget, rhoncus dictum mi. Sed eget libero mollis, malesuada ex a, vulputate ligula. Pellentesque dignissim egestas neque id luctus. Donec vitae luctus turpis. Ut eu convallis nulla, at semper augue. Integer ultricies, nisi non efficitur pharetra, ipsum lorem lacinia libero, sit amet finibus massa lacus id lorem. Duis sollicitudin elementum tristique. Nunc tempus auctor erat, in ornare velit molestie ac. In varius purus ut pellentesque mollis.</p><p>Aliquam ultrices in neque et consectetur. Nam eget tellus sit amet ex facilisis aliquam a non turpis. Sed placerat, est vel ullamcorper tempor, sem lectus gravida sapien, ac lacinia massa risus at nunc. Nulla vulputate leo vel neque egestas fermentum. Quisque ullamcorper nulla vel urna faucibus eleifend. Morbi risus leo, mollis vel felis eget, iaculis lacinia ex. Suspendisse eu congue erat. Praesent rutrum, leo ac laoreet lacinia, enim risus feugiat tellus, ac feugiat erat ligula id quam. Vivamus vel sapien orci. Mauris nec risus sed erat sollicitudin commodo. Phasellus vel fermentum dolor, sed bibendum turpis.</p><p>Vestibulum auctor nisi dignissim, tempor libero sed, semper neque. Praesent ornare nibh vel odio mattis, nec dictum purus fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dictum quis leo nec tincidunt. Nulla quis elit at odio vestibulum fringilla ac gravida odio. Phasellus ut elit vitae mauris auctor lobortis a vel mi. Pellentesque tempus metus quis turpis vehicula, non accumsan ex mattis. Nullam lacinia rhoncus ante, vel faucibus lacus semper ut. Sed quis magna vitae diam tristique cursus. Suspendisse faucibus aliquet pulvinar.</p>',
+                        size: 'default',
+                        type: 'preview',
+                        classes: 'modal-wh',
+                        buttons: {
+                            save: {
+                                label: 'Save',
+                                class: 'btn-success',
+                                closeModal: true
+                            },
+                            cancel: {
+                                label: 'Cancel',
+                                class: 'btn-default',
+                                closeModal: true
+                            }
+                        }
+                    });
+                    modalTest.show();
+                });
             })
         </script>
         <script type="text/javascript" data-dependency-name="alerts_modals_init">

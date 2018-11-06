@@ -4,7 +4,6 @@
  */
 
 'use strict';
-
 ;( function ( document, window, index )
 {
     var inputs = document.querySelectorAll( '.form-input-control' );
@@ -20,11 +19,8 @@
             } else {
                 fileName = e.target.value.split('\\').pop();
             }
-
             if( fileName ) {
                 label.querySelector('span').innerHTML = fileName;
-            } else {
-                label.innerHTML = labelVal;
             }
         });
 
