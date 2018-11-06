@@ -18,3 +18,24 @@
     }
   }
 }
+
+.modal-wh {
+  box-sizing: border-box;
+  .modal-dialog {
+    max-height: calc(100vh - 60px);
+    box-sizing: border-box;
+  }
+  .modal-content {
+    max-height: calc(100vh - 60px);
+    min-height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-header {
+    min-height: 39px;
+  }
+  .modal-body{
+    overflow: auto;
+  }
+}

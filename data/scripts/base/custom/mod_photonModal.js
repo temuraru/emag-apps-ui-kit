@@ -257,7 +257,7 @@
          * Create the html for the page and append it into container that has a containerId
          */
         _template =
-            '<div class="modal fade" id="' + this.defaults.id + '" tabindex="-1" role="dialog" aria-labelledby="' +  this.defaults.id + 'Label' + '"' + closeOnClickOutsideAttr + '>' +
+            '<div class="modal fade ' + this.defaults.classes + '" id="' + this.defaults.id + '" tabindex="-1" role="dialog" aria-labelledby="' +  this.defaults.id + 'Label' + '"' + closeOnClickOutsideAttr + '>' +
             '<div class="modal-dialog ' + (_modalNotificationType.indexOf(this.geFormStylingJson().class) !== -1 ? 'modal-feedback ' + (classOfModal ? ' ' + classOfModal : '') + ' ' : '') + this.getSizeCssClass() + '" role="document">' +
             '<div class="modal-content">' +
             '<div class="modal-header">' +
@@ -391,6 +391,12 @@
              size: 'default',
             /**
              * Id of modal
+             * @public
+             * @type {String}
+             */
+            classes: '',
+            /**
+             * Classes for modal
              * @public
              * @type {String}
              */
