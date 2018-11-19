@@ -740,8 +740,6 @@
         }
 
         function _displayNoRecordsMessage(tableId, records) {
-            
-
             //Display no records message.
             var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
 
@@ -760,7 +758,6 @@
                 if(gridOpts.onNoResultsHideHeader){
                     $('#gbox_' + tableId).addClass('on-no-results-hide-header');
                 }
-
             } else {
                 $('#gbox_'+ tableId +' .ui-jqgrid-pager').removeClass('hide');
                 $('#'+ tableId ).removeClass('hide');
