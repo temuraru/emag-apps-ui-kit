@@ -2231,7 +2231,8 @@
                 {name: 'products', index: 'products', width: 2, sorttype: "text"},
                 {name: 'actions', index: 'actions', width: 2, sortable: false}
             ],
-            styleUI: 'fontAwesome'
+            styleUI: 'fontAwesome',
+            onNoResultsHideHeader: true
         };
 
         new PhotonJqGrid(listingWithNoDataParameters).init();

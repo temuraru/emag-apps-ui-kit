@@ -38,6 +38,7 @@
             height: '100%',
 
             stickyButtons: false,
+            onNoResultsHideHeader: false,
 
             mergeOnPaging: true,
             useAutocompleteRow: false,
@@ -739,6 +740,8 @@
         }
 
         function _displayNoRecordsMessage(tableId, records) {
+            
+
             //Display no records message.
             var noRecordsMessage = photonTranslations.listing[photonPageLang].noResults;
 
@@ -753,10 +756,19 @@
                 $('.custom-jqgrid-messages-' + tableId).remove();
                 $('#' + tableId).parent().append(emptyMessage);
                 $('#gbox_'+ tableId +' .ui-jqgrid-pager').addClass('hide');
+
+                if(gridOpts.onNoResultsHideHeader){
+                    $('#gbox_' + tableId).addClass('on-no-results-hide-header');
+                }
+
             } else {
                 $('#gbox_'+ tableId +' .ui-jqgrid-pager').removeClass('hide');
                 $('#'+ tableId ).removeClass('hide');
                 $('.custom-jqgrid-messages-' + tableId).remove();
+
+                if(gridOpts.onNoResultsHideHeader){
+                    $('#gbox_' + tableId).removeClass('on-no-results-hide-header');
+                }
             }
         }
 
