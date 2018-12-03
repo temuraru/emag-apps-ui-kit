@@ -274,6 +274,9 @@ plugin_scripts.forEach(function (taskName) {
             .pipe(plumberInit())
             .pipe(concat(pluginsScripts[taskName].dist_name))
             .pipe(terser())
+            .pipe(banner(comment, {
+                pkg: pkg
+            }))
             .pipe(gulp.dest(pluginsScripts[taskName].dist_folder))
     });
 });
