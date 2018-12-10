@@ -296,7 +296,7 @@ plugin_scripts.forEach(function (taskName) {
                 pkg: pkg
             }))
             .pipe(gulp.dest(pluginsScripts[taskName].dist_folder))
-            .pipe(livereload())
+            //.pipe(livereload())
     });
 });
 
