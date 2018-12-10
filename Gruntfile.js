@@ -301,28 +301,28 @@ module.exports = function (grunt) {
         watch: {
             styles: {
                 files: ['<%= pkg.data_styles %>/**/*.less'],
-                tasks: ['lesslint', 'styles'],
+                tasks: ['styles'],
                 options: {
                     nospawn: true
                 }
             },
             plugin_styles: {
                 files: ['<%= pkg.data_plugins %>/**/*.less'],
-                tasks: ['lesslint', 'plugin_styles'],
+                tasks: ['plugin_styles'],
                 options: {
                     nospawn: true
                 }
             },
             scripts: {
               files: ['<%= pkg.data_scripts %>/**/*.js'],
-              tasks: ['eslint', 'scripts'],
+              tasks: ['scripts'],
               options: {
                   nospawn: true
               }
             },
             plugin_scripts: {
               files: ['<%= pkg.data_plugins %>/**/*.js', '<%= pkg.data_scripts %>/**/*.js'],
-              tasks: ['eslint', 'plugin_scripts'],
+              tasks: ['plugin_scripts'],
               options: {
                   nospawn: true
               }
