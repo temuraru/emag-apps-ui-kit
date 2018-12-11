@@ -10,7 +10,7 @@ var banner = require('gulp-banner');
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require("gulp-rename");
 
-var livereload = require('gulp-livereload');
+var browserSync = require('browser-sync').create();
 
 //less plugins: 
 var less = require('gulp-less');
@@ -36,11 +36,10 @@ const plumberInit = () => plumber(function (err) {
     console.log('error');
     console.log(err);
     this.emit('end');
-})
+});
 
-function reload(){
-    return gulp.src('demo/*.html')
-                .pipe(livereload())
+function reload() {
+    browserSync.reload();
 }
 
 /*------ styles --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
@@ -57,8 +56,7 @@ gulp.task('main_style.css', function () {
                 .pipe(rename("main_style.css"))
                 .pipe(sourcemaps.write(''))
                 .pipe(gulp.dest(export_folder + 'css'))
-                //.pipe(livereload())
-})
+});
 
 gulp.task('main_style.min.css', function () {
     return gulp.src('data/styles/base/bootstrap.less')
@@ -72,8 +70,7 @@ gulp.task('main_style.min.css', function () {
                 .pipe(minifyCss()) 
                 .pipe(rename("main_style.min.css"))
                 .pipe(gulp.dest(export_folder + 'css'))
-                //.pipe(livereload())
-})
+});
 
 gulp.task('main_style_dark.css', function () {
     return gulp.src('data/styles/base/dark/bootstrap_dark.less') 
@@ -88,9 +85,7 @@ gulp.task('main_style_dark.css', function () {
                 .pipe(rename("main_style_dark.css"))
                 .pipe(sourcemaps.write(''))
                 .pipe(gulp.dest(export_folder + 'css'))
-                //.pipe(livereload())
-
-})
+});
 
 gulp.task('main_style_dark.min.css', function () {
     return gulp.src('data/styles/base/dark/bootstrap_dark.less')
@@ -104,12 +99,11 @@ gulp.task('main_style_dark.min.css', function () {
                 .pipe(minifyCss()) 
                 .pipe(rename("main_style_dark.min.css"))
                 .pipe(gulp.dest(export_folder + 'css'))
-                //.pipe(livereload())
-})
+});
 
-gulp.task('styles',[ 'main_style.css', 'main_style.min.css', 'main_style_dark.css', 'main_style_dark.min.css' ])
+gulp.task('styles',[ 'main_style.css', 'main_style.min.css', 'main_style_dark.css', 'main_style_dark.min.css' ]);
 
-gulp.task('styles_livereload',['styles'], reload)
+gulp.task('styles_reload',['styles'], reload);
 
 /*------ plugin_styles -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
 var distCssPluginsFolder = export_folder + 'plugins/';
@@ -155,7 +149,6 @@ plugin_styles.forEach(function (taskName) {
                     .pipe(minifyCss())
                     .pipe(rename(pluginsStyles[taskName].dist_name))
                     .pipe(gulp.dest(pluginsStyles[taskName].dist_folder))
-                    //.pipe(livereload())
     });
 });
 
@@ -166,14 +159,13 @@ gulp.task('jqueryUiStyle', function () {
                         .pipe(minifyCss())
                         .pipe(rename('jquery-ui-custom.1.11.4.min.css'))
                         .pipe(gulp.dest(export_folder + 'css/lib'))
-                        //.pipe(livereload())
 })
 
-plugin_styles.push('jqueryUiStyle')
+plugin_styles.push('jqueryUiStyle');
 
 gulp.task('plugin_styles', plugin_styles);
 
-gulp.task('plugin_styles_livereload',['plugin_styles'], reload);
+gulp.task('plugin_styles_reload',['plugin_styles'], reload);
 
 
 /*------ presentation_site -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
@@ -194,7 +186,7 @@ gulp.task('presentation_site', function(){
                             .pipe(gulp.dest(export_folder + 'css')) 
 
     return presentation_site;
-})
+});
 
 
 /*------ scripts -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
@@ -237,10 +229,9 @@ gulp.task('scripts', function() {
                         pkg: pkg
                     }))
                     .pipe(gulp.dest(export_folder + 'js'))
-                    //.pipe(livereload())
 });
 
-gulp.task('scripts_livereload',['scripts'], reload)
+gulp.task('scripts_reload',['scripts'], reload);
 
 
 /*------ plugin_scripts -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
@@ -296,13 +287,12 @@ plugin_scripts.forEach(function (taskName) {
                 pkg: pkg
             }))
             .pipe(gulp.dest(pluginsScripts[taskName].dist_folder))
-            //.pipe(livereload())
     });
 });
 
 gulp.task('plugin_scripts', plugin_scripts);
 
-gulp.task('plugin_scripts_livereload',['plugin_scripts'], reload)
+gulp.task('plugin_scripts_reload',['plugin_scripts'], reload);
 
 
 /*------ php2html --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
@@ -314,32 +304,29 @@ gulp.task('php2html', function () {
                 .pipe(gulp.dest('demo'))      
 })
 
-gulp.task('php2html_livereload',['php2html'], reload)
-
-/*------ default --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
-gulp.task('default', function(){
-    
-})
+gulp.task('php2html_reload',['php2html'], reload);
 
 
 /*------ Watch and reload --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
-gulp.task('watch', function(){
-    var StaticServer = require('static-server');
-
-    var server = new StaticServer({
-        rootPath: './',
-        port: 3000
+gulp.task('default', function() {
+    browserSync.init({
+        startPath: '/demo',
+        server: {
+            baseDir: "./",
+            routes: {
+                '/emag-apps-ui-kit/demo': './demo',
+                '/emag-apps-ui-kit/dist': './dist'
+            }
+        }
     });
 
-    server.start(function(){
-        console.log('Server started on port ' + server.rootPath)
-    });
-
-    livereload.listen();
-    gulp.watch('./data/plugins/**/*.less',['plugin_styles_livereload']);
-    gulp.watch('./data/styles/**/*.less',['styles_livereload']);
-    gulp.watch('./data/plugins/**/*.js',['plugin_scripts_livereload']);
-    gulp.watch('./data/scripts/**/*.less',['scripts_livereload']);
-    gulp.watch('./demo/**/*.php',['php2html_livereload']);
-})
+    gulp.watch('./data/plugins/**/*.less',['plugin_styles_reload']);
+    gulp.watch('./data/styles/**/*.less',['styles_reload']);
+    gulp.watch('./data/plugins/**/*.js',['plugin_scripts_reload']);
+    gulp.watch('./data/scripts/**/*.less',['scripts_reload']);
+    gulp.watch('./demo/**/*.php',['php2html_reload']);
+});
 /*------ END Watch and reload --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+
+
+
