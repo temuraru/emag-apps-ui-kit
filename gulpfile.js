@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var terser = require('gulp-terser');
 var concat = require('gulp-concat');
 var minifyCss = require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer');//nu merge pentru less
+var autoprefixer = require('gulp-autoprefixer');//does not work for less
 var plumber = require('gulp-plumber');
 var php2html = require("gulp-php2html");
 var replace = require('gulp-replace');
@@ -308,7 +308,14 @@ gulp.task('php2html_reload',['php2html'], reload);
 
 
 /*------ Watch and reload --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
-gulp.task('default', function() {
+gulp.task('add_browsersync_script', function () {
+    return gulp.src('demo/*.html')
+                .pipe(replace('\<script async=\"\" src=\"http:\/\/localhost:3000\/browser-sync\/browser-sync-client.js\"\>\<\/script\>', ''))
+                .pipe(replace('\<\/head\>', '\<script async=\"\" src=\"http:\/\/localhost:3000\/browser-sync\/browser-sync-client.js\"\>\<\/script\>\<\/head\>'))
+                .pipe(gulp.dest('demo'))      
+})
+
+gulp.task('watch', ['add_browsersync_script'],function() {
     browserSync.init({
         startPath: '/demo',
         server: {
@@ -318,6 +325,7 @@ gulp.task('default', function() {
                 '/emag-apps-ui-kit/dist': './dist'
             }
         }
+        
     });
 
     gulp.watch('./data/plugins/**/*.less',['plugin_styles_reload']);
@@ -326,7 +334,14 @@ gulp.task('default', function() {
     gulp.watch('./data/scripts/**/*.less',['scripts_reload']);
     gulp.watch('./demo/**/*.php',['php2html_reload']);
 });
+
 /*------ END Watch and reload --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
 
+/*------ BEFORE commit run clean_html task --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+gulp.task('clean_html', function () {
+    return gulp.src('demo/*.html')
+                .pipe(replace('\<script async=\"\" src=\"http:\/\/localhost:3000\/browser-sync\/browser-sync-client.js\"\>\<\/script\>', ''))
+                .pipe(gulp.dest('demo'))      
+})
 
 
