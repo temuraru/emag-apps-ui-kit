@@ -90,7 +90,8 @@
   border-color: #ccc;
   border-bottom: 1px solid #112236;
   border-top-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: white;
   margin-top: 0;
   padding: 8px 15px 7px 15px;
@@ -139,4 +140,5 @@
 .nav-tabs.code-example > li + li.active a:focus {
   border-left-color: #ccc;
 }
+
 /*# sourceMappingURL=custom-presentation.css.map */
