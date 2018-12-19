@@ -11,6 +11,7 @@
     "url": "git://git@github.com:eMAGTechLabs/emag-apps-ui-kit.git"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "eslint": "^3.11.1",
     "eslint-config-es5": "^0.5.0",
     "grunt": "^0.4.5",
