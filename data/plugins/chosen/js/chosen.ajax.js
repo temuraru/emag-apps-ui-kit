@@ -192,6 +192,12 @@
                             }
                             return field.val(untrimmed_val);
                         };
+                        options.error = function () {
+                            return;
+                        };
+                        options.timeout = function () {
+                            return;
+                        };
 
                         return $this[0].timer = setTimeout(function () {
                             if (chosenXhr) {
