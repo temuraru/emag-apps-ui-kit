@@ -100,9 +100,11 @@ var bs4_pluginsStyles = {
     bs4_customScrollbarStyle: { plugin_resource: ['src/jquery-custom-scrollbar/scss/custom-scrollbar.scss'], dist_name: 'jquery-custom-scrollbar-0.5.5.min.css', dist_folder: 'jquery-custom-scrollbar/'}
 }
 
+var bs4_pluginsStyles_files = [];
+
 for (var key in bs4_pluginsStyles){
     for (var j = 0; j < bs4_pluginsStyles[key].plugin_resource.length; j++) {
-        bs4_pluginsStyles[key].plugin_resource[j] = bs4_pluginsStyles[key].plugin_resource[j];
+        bs4_pluginsStyles_files.push(bs4_pluginsStyles[key].plugin_resource[j]);
     }
     bs4_pluginsStyles[key].dist_folder = distCssPluginsFolder + bs4_pluginsStyles[key].dist_folder;
 }
@@ -162,22 +164,23 @@ gulp.task('bs4_presentation_site', function(){
 
 
 /*------ scripts -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+var bs4_scripts_files = [
+    'src/others/js/custom-photonTranslations.js',
+    'node_modules/nprogress/nprogress.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js',
+    'src/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js', // it is concatenated in plugins scripts to
+    'src/others/js/custom-sidebar.js',
+    'src/others/js/custom-photonDataFormatter.js',
+    'node_modules/bootstrap4-notify/bootstrap-notify.min.js', //css is not loaded
+    'node_modules/blockui-npm/jquery.blockUI.js',
+    'src/others/js/custom-photonModal.js',
+    'src/others/js/custom-input.js',
+    'src/others/js/custom-tooltip.js',
+    'src/others/js/custom-popover.js',
+    'src/others/js/custom-setup.js'
+    ]
 gulp.task('bs4_scripts', function() {
-    return gulp.src([
-                    'src/others/js/custom-photonTranslations.js',
-                    'node_modules/nprogress/nprogress.js',
-                    'node_modules/bootstrap/dist/js/bootstrap.js',
-                    'src/jquery-custom-scrollbar/js/jquery.custom-scrollbar.js', // it is concatenated in plugins scripts to
-                    'src/others/js/custom-sidebar.js',
-                    'src/others/js/custom-photonDataFormatter.js',
-                    'node_modules/bootstrap4-notify/bootstrap-notify.min.js', //css is not loaded
-                    'node_modules/blockui-npm/jquery.blockUI.js',
-                    'src/others/js/custom-photonModal.js',
-                    'src/others/js/custom-input.js',
-                    'src/others/js/custom-tooltip.js',
-                    'src/others/js/custom-popover.js',
-                    'src/others/js/custom-setup.js'
-                    ])
+    return gulp.src(bs4_scripts_files)
                     .pipe(concat('main_script.js'))
                     .pipe(banner(comment, {
                         pkg: pkg
@@ -225,10 +228,13 @@ var pluginsScripts = {
     bs4_tablePasterJs: { plugin_resource: ['src/table-paster/js/table-paster.js'], dist_name: 'table-paster.min.js', dist_folder: 'table-paster/'}
 }
 
+var bs4_pluginsScripts_files = [];
+
 for (var key in pluginsScripts) {
     for (var j = 0; j < pluginsScripts[key].plugin_resource.length; j++) {
-        pluginsScripts[key].plugin_resource[j] = pluginsScripts[key].plugin_resource[j];
+        bs4_pluginsScripts_files.push(pluginsScripts[key].plugin_resource[j]);
     }
+    
     pluginsScripts[key].dist_folder = distJsPluginsFolder + pluginsScripts[key].dist_folder;
 }
 
@@ -272,6 +278,12 @@ gulp.task('dist_to_dist_bs4',['bs4_php2html_reload'], function () {
                 .pipe(gulp.dest('demo'))      
 })
 
+gulp.task('dist_bs4_to_dist', function () {
+    return gulp.src('demo/*.html')
+                .pipe(replace('dist_bs4\/', 'dist\/'))
+                .pipe(gulp.dest('demo'))      
+})
+
 /*------ Watch and reload --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
 gulp.task('add_browsersync_script', function () {
     return gulp.src('demo/*.html')
@@ -293,16 +305,10 @@ gulp.task('watch', ['add_browsersync_script'],function() {
         
     });
 
-    // gulp.watch('./data/plugins/**/*.less',['bs4_plugin_styles_reload']);
-    // gulp.watch('./data/styles/**/*.less',['bs4_styles_reload']);
-    // gulp.watch('./data/plugins/**/*.js',['bs4_plugin_scripts_reload']);
-    // gulp.watch('./data/scripts/**/*.less',['bs4_scripts_reload']);
-    // gulp.watch('./demo/**/*.php',['php2html_reload']);
-
-    gulp.watch(['./src/**/*.scss','!./src/bootstrap/**/*.scss'],['bs4_plugin_styles_reload']);
+    gulp.watch(bs4_pluginsStyles_files,['bs4_plugin_styles_reload']);
     gulp.watch('./src/bootstrap/**/*.scss',['bs4_styles_reload']);
-    gulp.watch(['./src/**/*.js','!./src/**/*.js'],['bs4_plugin_scripts_reload']);
-    gulp.watch('./src/**/*.js',['bs4_scripts_reload']);
+    gulp.watch(bs4_pluginsScripts_files,['bs4_plugin_scripts_reload']); 
+    gulp.watch(bs4_scripts_files,['bs4_scripts_reload']);
     gulp.watch('./demo/**/*.php',['dist_to_dist_bs4']);
 });
 

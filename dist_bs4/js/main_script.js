@@ -1,5 +1,5 @@
 /*!
- * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2018 eMAG HX Team
+ * eMAG Apps UI KIT v1.0.0 * Copyright 2001-2019 eMAG HX Team
  * Licensed under the ISC license
  */
 window.photonPageLang = document.documentElement.lang || 'en';
