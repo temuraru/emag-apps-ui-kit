@@ -338,10 +338,22 @@ gulp.task('watch', ['add_browsersync_script'],function() {
 /*------ END Watch and reload --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
 
 /*------ BEFORE commit run clean_html task --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
-gulp.task('clean_html', function () {
-    return gulp.src('demo/*.html')
-                .pipe(replace('\<script async=\"\" src=\"http:\/\/localhost:3000\/browser-sync\/browser-sync-client.js\"\>\<\/script\>', ''))
-                .pipe(gulp.dest('demo'))      
-})
+const strToReplace = '\<script async=\"\" src=\"http:\/\/localhost:3000\/browser-sync\/browser-sync-client.js\"\>\<\/script\>';
+
+gulp.task('clean_php', () => (
+    gulp
+        .src('demo/modules/*.php')
+        .pipe(replace(strToReplace, ''))
+        .pipe(gulp.dest('demo/modules'))
+))
+
+gulp.task('clean_html', () => (
+    gulp.src('demo/*.html')
+        .pipe(replace(strToReplace, ''))
+        .pipe(gulp.dest('demo'))
+))
+
+gulp.task('clean', ['clean_php', 'clean_html'])
+
 
 
