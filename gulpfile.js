@@ -331,7 +331,7 @@ gulp.task('watch', ['add_browsersync_script'],function() {
     gulp.watch('./data/plugins/**/*.less',['plugin_styles_reload']);
     gulp.watch('./data/styles/**/*.less',['styles_reload']);
     gulp.watch('./data/plugins/**/*.js',['plugin_scripts_reload']);
-    gulp.watch('./data/scripts/**/*.less',['scripts_reload']);
+    gulp.watch('./data/scripts/**/*.js',['scripts_reload']);
     gulp.watch('./demo/**/*.php',['php2html_reload']);
 });
 

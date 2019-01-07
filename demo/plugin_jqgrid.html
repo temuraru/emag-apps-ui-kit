@@ -864,7 +864,7 @@
         <div id="main_footer" class="footer">
     <div class="footer-inner text-center">
         <div class="footer-content">
-            <span>Copyright &copy; 2011 - 2018 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
+            <span>Copyright &copy; 2011 - 2019 <strong>eMAG</strong>. <br class="visible-xs-inline">All rights reserved.</span>
         </div>
     </div>
 </div>        <!-- FOOTER:End -->
@@ -1436,6 +1436,115 @@
 
             return dataSet;
         }
+
+        function getData() {
+
+            var dataSet = [
+                {
+                    "ids": "1",
+                    "firstnames": "Tony",
+                    "lastnames": "Stark",
+                    "usernames": "ironman",
+                    "jobtypes": "Philantropist",
+                    "codenames": "Iron Man",
+                    "spirit_animals": "Tiger",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "2",
+                    "firstnames": "Bruce",
+                    "lastnames": "Banner",
+                    "usernames": "hulk_smash",
+                    "jobtypes": "Doctor",
+                    "codenames": "The Hulk",
+                    "spirit_animals": "Gorilla",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "3",
+                    "firstnames": "Thor",
+                    "lastnames": "Odinson",
+                    "usernames": "thehammer",
+                    "jobtypes": "God",
+                    "codenames": "Thor",
+                    "spirit_animals": "Lion",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "4",
+                    "firstnames": "Clinton",
+                    "lastnames": "Barton",
+                    "usernames": "hawkyey",
+                    "jobtypes": "Archer",
+                    "codenames": "Hawkeye",
+                    "spirit_animals": "Hawk",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "5",
+                    "firstnames": "Steven",
+                    "lastnames": "Rogers",
+                    "usernames": "rogerthat",
+                    "jobtypes": "Captain",
+                    "codenames": "Captain America",
+                    "spirit_animals": "Eagle",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "6",
+                    "firstnames": "Natalia",
+                    "lastnames": "Romanova",
+                    "usernames": "notawidsow",
+                    "jobtypes": "Event planner",
+                    "codenames": "Black Widsow",
+                    "spirit_animals": "Spidser",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "7",
+                    "firstnames": "Henry",
+                    "lastnames": "Pym",
+                    "usernames": "goliath",
+                    "jobtypes": "Unemployed",
+                    "codenames": "Ant-Man",
+                    "spirit_animals": "Dog",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "8",
+                    "firstnames": "Luke",
+                    "lastnames": "Charles",
+                    "usernames": "tchiao",
+                    "jobtypes": "Self-employed",
+                    "codenames": "Black Panther",
+                    "spirit_animals": "Jaguar",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "9",
+                    "firstnames": "Victor",
+                    "lastnames": "Shade",
+                    "usernames": "imallseeing",
+                    "jobtypes": "Self-employed",
+                    "codenames": "The Vision",
+                    "spirit_animals": "Dolphin",
+                    "data": "01/01/2018"
+                },
+                {
+                    "ids": "10",
+                    "firstnames": "Monica",
+                    "lastnames": "Rambeau",
+                    "usernames": "photon",
+                    "jobtypes": "Self-employed",
+                    "codenames": "Captain Marvel",
+                    "spirit_animals": "Mustang",
+                    "data": "01/01/2018"
+
+                }
+            ];
+
+            return dataSet;
+            }
 </script>
 
 <script type="text/javascript" data-dependency-name="jqgrid_basic_init">
@@ -2029,10 +2138,14 @@
             loadComplete: function(){
                 //remove border
                 $this = $(this);
-                $this.find('tr').find('td:visible:last').css({'border-right': '0'});
+                // $this.find('tr').find('td:visible:last').css({'border-right': '0'});
+
+                $this.find('div').find('#ui-jqgrid-view table-responsive').css({'border-right': '0'});
                 
-                //comment next line if you use skin with no border - styleUI : 'fontAwesomeNoBorder'
-                $this.closest('.ui-jqgrid-view').find('tr').find('th:visible:last').css({'border-right': '0'});
+                // comment next line if you use skin with no border - styleUI : 'fontAwesomeNoBorder'
+                // $this.closest('.ui-jqgrid-view').find('tr').find('th:visible:last').css({'border-right': '0'});
+
+                $this.closest('.ui-jqgrid-view').find('tr:visible:last').find('td').css({'border-bottom': '0'}); //ana
                 
                 $this.find('.treeclick').on('click', function () {
                     $this.find('tr').find('td:visible:last').css({'border-right': '0'});
@@ -2415,25 +2528,27 @@
                 // here we can easy construct the following
                 var subgrid_table_id;
                 subgrid_table_id = subgrid_id+"_t";
+                // jQuery('#'+subgrid_table_id).sortable('destroy');
                 jQuery("#"+subgrid_id).html("<table id='"+subgrid_table_id+"' class='table'></table>");
                 jQuery("#"+subgrid_table_id).jqGrid({
                     datatype: "jsonstring",
-                    datastr: getListingDummyData(),
+                    datastr: getData(),
                     styleUI : 'fontAwesome',
+                    colNames: ['Id', 'First Name', 'Last Name', 'Username', 'Hobby', 'Nickname', 'Spiritual Animal'],
                     colModel: [
-                        { name: 'id',           index: 'id', hidden: true, width: "20" },
-                        { label: 'First Name', name: 'firstname',    index: 'firstname', key: true, width: "100" },
-                        { label: 'Last Name', name: 'lastname',     index: 'lastname' },
-                        { label: 'Username', name: 'username',     index: 'username' },
-                        { label: 'Hobby', name: 'jobtype',      index: 'jobtype' },
-                        { label: 'Nickname', name: 'codename',     index: 'codename' },
-                        { label: 'Spiritual Animal', name: 'spirit_animal',index: 'spirit_animal' }
+                        { name: 'ids',           index: 'id', hidden: true, width: "20" },
+                        { label: 'First Name', name: 'firstnames',    index: 'firstname', key: true, width: "100" },
+                        { label: 'Last Name', name: 'lastnames',     index: 'lastname' },
+                        { label: 'Username', name: 'usernames',     index: 'username' },
+                        { label: 'Hobby', name: 'jobtypes',      index: 'jobtype' },
+                        { label: 'Nickname', name: 'codenames',     index: 'codename' },
+                        { label: 'Spiritual Animal', name: 'spirit_animals',index: 'spirit_animal' }
                     ],
                     height: '100%',
                     rowNum:5,
                     sortname: 'num',
                     sortorder: "asc",
-                    multiselect: false,
+                    multiselect: false
                 });
             }
         });
