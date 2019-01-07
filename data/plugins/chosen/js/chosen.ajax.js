@@ -192,6 +192,28 @@
                             }
                             return field.val(untrimmed_val);
                         };
+                        options.error = function () {
+                            var fieldVal = field.val();
+                            select.data().chosen.results_showing = false;
+                            select.trigger("chosen:updated");
+                            select.data().chosen.results_showing = true;
+                            select.data().chosen.no_results_clear();
+                            select.data().chosen.no_results(fieldVal);
+                            field.width(calculateFieldWidth(field, chosenSearchContainer));
+
+                            return;
+                        };
+                        options.timeout = function () {
+                            var fieldVal = field.val();
+                            select.data().chosen.results_showing = false;
+                            select.trigger("chosen:updated");
+                            select.data().chosen.results_showing = true;
+                            select.data().chosen.no_results_clear();
+                            select.data().chosen.no_results(fieldVal);
+                            field.width(calculateFieldWidth(field, chosenSearchContainer));
+                            
+                            return;
+                        };
 
                         return $this[0].timer = setTimeout(function () {
                             if (chosenXhr) {
